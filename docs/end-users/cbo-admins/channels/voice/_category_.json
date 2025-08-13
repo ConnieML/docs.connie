@@ -1,0 +1,7 @@
+{
+  "label": "Voice",
+  "position": 1,
+  "collapsible": true,
+  "collapsed": false,
+  "description": "Voice communications including live calls, voicemail, and call forwarding setup"
+}

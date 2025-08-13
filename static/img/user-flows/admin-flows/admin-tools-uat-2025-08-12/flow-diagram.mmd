@@ -1,0 +1,31 @@
+graph TD
+    Start["Admin Tools & Data<br/>Entry point for all admin functions<br/>connie.plus/admin-tools-data"]
+
+    Start -->|"Click 'Access Channel Manager'"| CM["Channel Manager<br/>Manage voice, SMS, fax numbers<br/>connie.plus/channels"]
+
+    Start -->|"Click 'View Reports'"| DC["Data Center Hub<br/>Analytics & Media Playback<br/>connie.plus/data-center"]
+
+    DC -->|"Click 'Daily Data'"| Dashboard["NSS Live Dashboard<br/>Real-time metrics<br/>Total Calls<br/>Agent Utilization<br/>Queue Status<br/>connie.plus/data-center/nss-dashboard"]
+
+    DC -->|"Click 'Load Voicemails'"| VM["Voicemail Playback<br/>Listen to messages<br/>50 most recent<br/>Audio controls<br/>Transcriptions<br/>connie.plus/data-center/voicemails"]
+
+    DC -->|"Click 'Load Faxes'"| Fax["Fax Viewer<br/>View PDF faxes<br/>18 recent faxes<br/>PDF preview<br/>Download option<br/>connie.plus/data-center/faxes"]
+
+    CM -->|"Manage"| Numbers["Active Numbers<br/>NSS Phone Lines:<br/>+1 725-999-9678 (Main)<br/>+1 725-444-7060 (Intake)<br/>+1 702-996-8438 (H2H)<br/>+1 702-718-5383 (Fax)"]
+
+    DC -->|"Click 'Adhoc Data'"| Adhoc["Ad Hoc Reports<br/>Coming Soon"]
+
+    %% Styling
+    classDef entryPoint fill:#e3f2fd,stroke:#1976d2,stroke-width:3px,color:#000
+    classDef channelPath fill:#e8f5e9,stroke:#4caf50,stroke-width:2px,color:#000
+    classDef dataPath fill:#fff3e0,stroke:#ff9800,stroke-width:2px,color:#000
+    classDef endpoint fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px,color:#000
+    classDef comingSoon fill:#fafafa,stroke:#9e9e9e,stroke-width:1px,stroke-dasharray: 5 5,color:#666
+
+    class Start entryPoint
+    class CM,Numbers channelPath
+    class DC,Dashboard,VM,Fax dataPath
+    class Adhoc comingSoon
+
+    %% Link styling
+    linkStyle default stroke:#333,stroke-width:2px
