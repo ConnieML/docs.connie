@@ -1,3 +1,7 @@
+<a  href="https://www.connieconnect.com">
+<img  src="https://i.postimg.cc/dVVphpxS/connie-contact-rtc-logo.png"  alt="Connie SaaS For Nonprofits"  width="250"  />
+</a>
+
 # Connie Documentation Site
 
 This website is built using [Docusaurus 2](https://docusaurus.io/) and serves as the comprehensive documentation for the Connie platform, organized by user type and communication channels.
@@ -195,31 +199,122 @@ Group features by communication channel:
 
 ## 🚀 Deployment
 
+### 🚨 CRITICAL: First-Time GitHub Pages Setup
+
+**If setting up GitHub Pages for the first time, follow these steps EXACTLY:**
+
+#### Step 1: Enable GitHub Pages
+1. Navigate to: **Settings → Pages** in your GitHub repository
+2. Under **"Source"**, select **"Deploy from a branch"**
+3. Select Branch: **`gh-pages`** ⚠️ NOT `main`!
+4. Select Folder: **`/ (root)`**
+5. Click **Save**
+
+#### Step 2: Configure Custom Domain
+1. In the **"Custom domain"** field, enter: `docs.connie.one`
+2. Wait for **"DNS check successful"** message (may take 5-10 minutes)
+3. Check the box for **"Enforce HTTPS"**
+4. Click **Save**
+
+#### Step 3: Create Repository Variable
+1. Navigate to: **Settings → Secrets and variables → Actions**
+2. Click on **"Variables"** tab
+3. Click **"New repository variable"**
+4. Add the following:
+   - Name: `DEPLOY_DOCS`
+   - Value: `true`
+5. Click **"Add variable"**
+
+#### Step 4: Create CNAME File
+Ensure the file `static/CNAME` exists with your domain:
+```bash
+echo "docs.connie.one" > static/CNAME
+git add static/CNAME
+git commit -m "Add CNAME for custom domain"
+git push origin main
+```
+
+#### Step 5: DNS Configuration
+Ensure your DNS provider has a CNAME record:
+- **Name**: `docs` (or `@` for apex domain)
+- **Value**: `connieml.github.io`
+- **TTL**: 3600 (or provider default)
+
 ### Automatic Deployment
 
+Once GitHub Pages is configured:
+
 - **Trigger**: Push to `main` branch
-- **Platform**: GitHub Pages
+- **Platform**: GitHub Pages via `gh-pages` branch
 - **URL**: https://docs.connie.one/
 - **Build time**: ~2-3 minutes
+
+```bash
+# Deploy changes
+git add .
+git commit -m "Your descriptive message"
+git push origin main
+
+# Monitor deployment (requires GitHub CLI)
+gh run list --limit 1
+```
 
 ### Manual Deployment Check
 
 ```bash
-# Check build locally
+# Check build locally FIRST
 npm run build
 
-# Serve built site
-npm run serve
+# If build succeeds, push to GitHub
+git push origin main
+
+# Verify deployment succeeded (after 2-3 minutes)
+curl -I https://docs.connie.one/
+# Should return: HTTP/2 200
 ```
 
 ### Troubleshooting Deployment
 
-1. **Check GitHub Actions** in the repository for build errors
-2. **Common issues**:
-   - Broken internal links (will fail build)
-   - Missing images or assets
-   - Invalid markdown syntax
-   - Sidebar configuration errors
+#### Common Issues and Solutions
+
+**Issue: Site shows 404 after successful deployment**
+- **Cause**: GitHub Pages is looking at wrong branch
+- **Solution**: Ensure GitHub Pages Source is set to `gh-pages` branch, NOT `main`
+
+**Issue: "DEPLOY_DOCS is not true" in GitHub Actions logs**
+- **Cause**: Repository variable not set
+- **Solution**: Add `DEPLOY_DOCS=true` repository variable (see Step 3 above)
+
+**Issue: Custom domain not working**
+- **Cause**: CNAME file missing or DNS misconfigured
+- **Solution**: 
+  1. Verify `static/CNAME` exists with correct domain
+  2. Check DNS CNAME record points to `connieml.github.io`
+  3. Wait 10-30 minutes for DNS propagation
+
+**Issue: Deployment succeeds but content doesn't update**
+- **Cause**: Browser cache or CDN cache
+- **Solution**: 
+  1. Clear browser cache or use incognito mode
+  2. Wait 5-10 minutes for CDN cache to expire
+  3. Add `?v=timestamp` to URL to bypass cache
+
+**Issue: Build fails with "broken links" error**
+- **Cause**: Internal documentation links are broken
+- **Solution**: 
+  1. Run `npm run build` locally to identify broken links
+  2. Fix all broken links
+  3. Temporarily set `onBrokenLinks: "warn"` in `docusaurus.config.js` if urgent
+
+### Deployment Checklist
+
+Before deploying, verify:
+- [ ] **GitHub Pages Source**: Set to `gh-pages` branch
+- [ ] **DEPLOY_DOCS variable**: Set to `true`
+- [ ] **CNAME file**: Contains your custom domain
+- [ ] **Build passes**: `npm run build` succeeds locally
+- [ ] **No broken links**: All internal links validated
+- [ ] **DNS configured**: CNAME record points to GitHub Pages
 
 ---
 
