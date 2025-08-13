@@ -51,11 +51,14 @@ docs/
 
 ## **🎪 CDO Operational Standards**
 
-### **Pre-Deployment Requirements**
+### **Pre-Deployment Requirements (MANDATORY)**
 - ✅ **Build validation**: `npm run build` must pass
-- ✅ **Link verification**: All internal links tested
+- ✅ **Link verification**: All internal links tested  
+- ✅ **URL validation**: All deliverable URLs manually tested and confirmed working
+- ✅ **UAT package verification**: Every client deliverable URL validated before "complete" status
 - ✅ **Accessibility**: WCAG 2.1 AA compliance verified
 - ✅ **Multi-device testing**: Mobile and desktop layouts confirmed
+- ✅ **CEO sign-off**: No deployment marked complete without CEO confirmation
 
 ### **Content Quality Standards**
 - **Plain Language**: Nonprofit administrators must understand every guide
@@ -65,9 +68,11 @@ docs/
 
 ### **Critical Rules (No Exceptions)**
 1. **Absolute Paths Only**: `/end-users/guide` never `../guide`
-2. **No Secrets**: Never commit API keys, tokens, or credentials
+2. **No Secrets**: Never commit API keys, tokens, or credentials  
 3. **Build Before Push**: Broken builds break deployment pipeline
 4. **Mobile First**: All content must work on small screens
+5. **VALIDATE ALL URLS**: Every deliverable URL must be tested and working before deployment
+6. **NO "MISSION COMPLETE"**: Until CEO confirms all deliverables are accessible and functional
 
 ## **🚀 CDO Capabilities**
 
