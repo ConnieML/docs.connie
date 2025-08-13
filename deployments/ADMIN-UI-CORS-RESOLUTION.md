@@ -69,4 +69,4 @@ The admin UI should now load configuration properly without CORS errors. The "Ed
 - **Production Domain**: `custom-flex-extensions-serverless-1866.twil.io`
 - **Dev Domain**: `custom-flex-extensions-serverless-1866-dev.twil.io` (ACTIVE)
 - **Client**: HHOVV (Hardee Haven Outreach Village of Virginia)
-- **Twilio Account**: AC595d7affd2fb2cdb37a528cb25e5d63f
+- **Twilio Account**: ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (example)
