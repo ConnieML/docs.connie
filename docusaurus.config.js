@@ -56,15 +56,6 @@ const config = {
         toExtensions: ["html"],
       },
     ],
-    [
-      require.resolve("@cmfcmf/docusaurus-search-local"),
-      {
-        // Options here
-        indexDocs: true,
-        indexBlog: false,
-        language: "en",
-      },
-    ],
     'docusaurus-plugin-sass'
   ],
   
