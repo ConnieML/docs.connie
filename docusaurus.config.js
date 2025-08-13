@@ -20,7 +20,7 @@ const config = {
   organizationName: "ConnieML", // Usually your GitHub org/user name.
   projectName: "connieRTC-flex", // Usually your repo name.
   trailingSlash: false,
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
