@@ -59,6 +59,7 @@ docs/
 - ✅ **Accessibility**: WCAG 2.1 AA compliance verified
 - ✅ **Multi-device testing**: Mobile and desktop layouts confirmed
 - ✅ **CEO sign-off**: No deployment marked complete without CEO confirmation
+- ✅ **No Claude marketing**: NEVER append Claude marketing attribution to commit messages
 
 ### **Content Quality Standards**
 - **Plain Language**: Nonprofit administrators must understand every guide
@@ -104,11 +105,91 @@ npm start            # Local development server
 npm run build        # Production build validation
 ```
 
-### **Deployment Pipeline**
-1. **Commit** to main branch
-2. **GitHub Actions** builds and validates
-3. **GitHub Pages** deploys to docs.connie.one
-4. **CDN** propagates globally within minutes
+## **🚨 CRITICAL: GitHub Pages Deployment Guide**
+
+### **FIRST-TIME GITHUB PAGES SETUP (MANDATORY FOR NEW DEPLOYMENTS)**
+
+**Step 1: Enable GitHub Pages**
+1. Go to: https://github.com/ConnieML/docs.connie/settings/pages
+2. Under "Source", select **"Deploy from a branch"**
+3. Select Branch: **`gh-pages`** (NOT main!)
+4. Select Folder: **`/ (root)`**
+5. Click **Save**
+
+**Step 2: Configure Custom Domain**
+1. In the "Custom domain" field, enter: `docs.connie.one`
+2. Wait for "DNS check successful" message
+3. Check **"Enforce HTTPS"**
+4. Click **Save**
+
+**Step 3: Set Repository Variable**
+1. Go to: https://github.com/ConnieML/docs.connie/settings/variables/actions
+2. Click **"New repository variable"**
+3. Name: `DEPLOY_DOCS`
+4. Value: `true`
+5. Click **"Add variable"**
+
+**Step 4: Verify CNAME File**
+```bash
+# Check that static/CNAME exists with correct domain
+cat static/CNAME
+# Should output: docs.connie.one
+```
+
+### **DEPLOYMENT WORKFLOW (FOR EVERY DEPLOYMENT)**
+
+**Automatic Deployment (Recommended)**
+```bash
+# 1. Make your changes
+git add .
+git commit -m "Your descriptive commit message"
+git push origin main
+
+# 2. Monitor deployment
+gh run list --limit 1
+
+# 3. Wait 2-3 minutes, then verify
+curl -I https://docs.connie.one/
+```
+
+**Manual Deployment Verification**
+```bash
+# Check if deployment succeeded
+gh run list --limit 5
+
+# If deployment failed, check logs
+gh run view [RUN_ID] --log-failed
+
+# Verify gh-pages branch was updated
+git fetch origin gh-pages
+git log origin/gh-pages --oneline -5
+```
+
+### **TROUBLESHOOTING DEPLOYMENT ISSUES**
+
+**Issue: Site shows 404 after deployment**
+- **Cause**: GitHub Pages not configured correctly
+- **Fix**: Ensure Source is set to `gh-pages` branch, not `main`
+
+**Issue: Deployment succeeds but content doesn't update**
+- **Cause**: Browser cache or CDN propagation delay
+- **Fix**: Wait 5-10 minutes, clear browser cache, try incognito mode
+
+**Issue: "DEPLOY_DOCS is not true" in logs**
+- **Cause**: Repository variable not set
+- **Fix**: Set DEPLOY_DOCS=true in repository settings (see Step 3 above)
+
+**Issue: Custom domain not working**
+- **Cause**: CNAME file missing or DNS not configured
+- **Fix**: Ensure static/CNAME exists and DNS points to connieml.github.io
+
+### **CRITICAL DEPLOYMENT CHECKLIST**
+- [ ] GitHub Pages Source: `gh-pages` branch (NOT main!)
+- [ ] DEPLOY_DOCS variable: Set to `true`
+- [ ] CNAME file: Contains `docs.connie.one`
+- [ ] Build passes: `npm run build` succeeds locally
+- [ ] Links validated: No broken links in build
+- [ ] URLs tested: All critical pages accessible after deployment
 
 ### **Emergency Procedures**
 - **Broken Build**: Revert immediately, fix offline
