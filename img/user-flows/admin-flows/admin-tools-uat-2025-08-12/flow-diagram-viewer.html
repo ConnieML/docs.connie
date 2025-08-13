@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSS Admin Tools v2.0 - User Flow Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            border: 2px solid #1e1e1e;
+        }
+        .header h1 {
+            color: #1e1e1e;
+            margin: 0;
+            font-size: 24px;
+        }
+        .header p {
+            color: #495057;
+            margin: 10px 0 0 0;
+            font-size: 16px;
+        }
+        .flow-container {
+            position: relative;
+            width: 100%;
+            height: 1200px;
+            margin: 0 auto;
+        }
+        .screenshot {
+            position: absolute;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+        .screenshot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        .screenshot-label {
+            position: absolute;
+            top: -35px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+            color: #1e1e1e;
+        }
+        .step-1 {
+            top: 100px;
+            left: 100px;
+            width: 320px;
+            height: 240px;
+        }
+        .step-1 .screenshot-label {
+            color: #1e1e1e;
+        }
+        .step-2 {
+            top: 100px;
+            left: 500px;
+            width: 320px;
+            height: 240px;
+        }
+        .step-2 .screenshot-label {
+            color: #1e1e1e;
+        }
+        .step-3a {
+            top: 530px;
+            left: 100px;
+            width: 320px;
+            height: 240px;
+        }
+        .step-3a .screenshot-label {
+            color: #2f9e44;
+        }
+        .step-3b {
+            top: 530px;
+            left: 920px;
+            width: 320px;
+            height: 240px;
+        }
+        .step-3b .screenshot-label {
+            color: #d6336c;
+        }
+        .step-4a {
+            top: 930px;
+            left: 500px;
+            width: 320px;
+            height: 240px;
+        }
+        .step-4a .screenshot-label {
+            color: #7048e8;
+        }
+        .step-4b {
+            top: 930px;
+            left: 920px;
+            width: 320px;
+            height: 240px;
+        }
+        .step-4b .screenshot-label {
+            color: #7048e8;
+        }
+        .step-4c {
+            top: 930px;
+            left: 1340px;
+            width: 320px;
+            height: 240px;
+        }
+        .step-4c .screenshot-label {
+            color: #7048e8;
+        }
+        .arrow {
+            position: absolute;
+            z-index: 10;
+        }
+        .arrow-1 {
+            top: 215px;
+            left: 420px;
+            width: 80px;
+            height: 10px;
+            background: linear-gradient(to right, transparent, #1971c2);
+            border-radius: 5px;
+        }
+        .arrow-1::after {
+            content: '';
+            position: absolute;
+            right: -5px;
+            top: -5px;
+            width: 0;
+            height: 0;
+            border-left: 10px solid #1971c2;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+        .arrow-label {
+            position: absolute;
+            font-size: 12px;
+            font-weight: bold;
+            background: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        .arrow-1-label {
+            top: 195px;
+            left: 430px;
+            color: #1971c2;
+        }
+        .arrow-2a {
+            top: 360px;
+            left: 380px;
+            width: 2px;
+            height: 150px;
+            background: #2f9e44;
+            transform: rotate(-35deg);
+            transform-origin: top;
+        }
+        .arrow-2a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: -5px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid #2f9e44;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+        }
+        .arrow-2a-label {
+            top: 410px;
+            left: 320px;
+            color: #2f9e44;
+        }
+        .arrow-2b {
+            top: 360px;
+            left: 740px;
+            width: 2px;
+            height: 150px;
+            background: #d6336c;
+            transform: rotate(35deg);
+            transform-origin: top;
+        }
+        .arrow-2b::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: -5px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid #d6336c;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+        }
+        .arrow-2b-label {
+            top: 410px;
+            left: 760px;
+            color: #d6336c;
+        }
+        .arrow-3a {
+            top: 790px;
+            left: 700px;
+            width: 2px;
+            height: 120px;
+            background: #7048e8;
+            transform: rotate(-35deg);
+            transform-origin: top;
+        }
+        .arrow-3a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: -5px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid #7048e8;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+        }
+        .arrow-3a-label {
+            top: 830px;
+            left: 640px;
+            color: #7048e8;
+        }
+        .arrow-3b {
+            top: 790px;
+            left: 1080px;
+            width: 2px;
+            height: 120px;
+            background: #7048e8;
+        }
+        .arrow-3b::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: -5px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid #7048e8;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+        }
+        .arrow-3b-label {
+            top: 830px;
+            left: 1020px;
+            color: #7048e8;
+        }
+        .arrow-3c {
+            top: 790px;
+            left: 1240px;
+            width: 2px;
+            height: 120px;
+            background: #7048e8;
+            transform: rotate(35deg);
+            transform-origin: top;
+        }
+        .arrow-3c::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: -5px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid #7048e8;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+        }
+        .arrow-3c-label {
+            top: 830px;
+            left: 1280px;
+            color: #7048e8;
+        }
+        .instructions {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #e3f2fd;
+            border-radius: 8px;
+            border-left: 4px solid #1976d2;
+        }
+        .instructions h3 {
+            color: #1976d2;
+            margin-top: 0;
+        }
+        .instructions ul {
+            margin: 10px 0;
+        }
+        .instructions li {
+            margin: 5px 0;
+        }
+        @media print {
+            body {
+                background-color: white;
+            }
+            .container {
+                box-shadow: none;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>NSS Admin Tools v2.0 - User Flow Guide for UAT Testing</h1>
+            <p>Follow this visual guide to navigate through all new admin features. Click the buttons and links as shown in each screenshot.</p>
+        </div>
+        
+        <div class="flow-container">
+            <!-- Step 1: Start -->
+            <div class="screenshot step-1">
+                <div class="screenshot-label">1. START: ConnieRTC Flex View<br>(Default NSS Environment)</div>
+                <img src="./screenshots/00-default-connieRTC.png" alt="ConnieRTC Default View">
+            </div>
+            
+            <!-- Step 2: Entry Point -->
+            <div class="screenshot step-2">
+                <div class="screenshot-label">2. Admin Tools & Data Page<br>(Entry Point)</div>
+                <img src="./screenshots/01-admin-tools-entry.png" alt="Admin Tools Entry">
+            </div>
+            
+            <!-- Step 3A: Channel Manager -->
+            <div class="screenshot step-3a">
+                <div class="screenshot-label">3A. Channel Manager<br>(NSS Phone Numbers)</div>
+                <img src="./screenshots/02-channel-manager.png" alt="Channel Manager">
+            </div>
+            
+            <!-- Step 3B: Data Center -->
+            <div class="screenshot step-3b">
+                <div class="screenshot-label">3B. Data Center Hub<br>(Analytics & Playback)</div>
+                <img src="./screenshots/03-data-center-hub.png" alt="Data Center Hub">
+            </div>
+            
+            <!-- Step 4A: Voicemail -->
+            <div class="screenshot step-4a">
+                <div class="screenshot-label">4A. Voicemail Playback<br>(Listen to Messages)</div>
+                <img src="./screenshots/04-voicemail-playback.png" alt="Voicemail Playback">
+            </div>
+            
+            <!-- Step 4B: Fax Viewer -->
+            <div class="screenshot step-4b">
+                <div class="screenshot-label">4B. Fax Viewer<br>(View PDF Documents)</div>
+                <img src="./screenshots/05-fax-viewer.png" alt="Fax Viewer">
+            </div>
+            
+            <!-- Step 4C: Analytics Dashboard -->
+            <div class="screenshot step-4c">
+                <div class="screenshot-label">4C. NSS Analytics Dashboard<br>(Live Contact Center Data)</div>
+                <img src="./screenshots/06-nss-dashboard.png" alt="NSS Analytics Dashboard">
+            </div>
+            
+            <!-- Arrows and Labels -->
+            <div class="arrow arrow-1"></div>
+            <div class="arrow-label arrow-1-label">Click "Admin Tools & Data"</div>
+            
+            <div class="arrow arrow-2a"></div>
+            <div class="arrow-label arrow-2a-label">PATH A: Access Channel Manager</div>
+            
+            <div class="arrow arrow-2b"></div>
+            <div class="arrow-label arrow-2b-label">PATH B: View Reports</div>
+            
+            <div class="arrow arrow-3a"></div>
+            <div class="arrow-label arrow-3a-label">Load Voicemails</div>
+            
+            <div class="arrow arrow-3b"></div>
+            <div class="arrow-label arrow-3b-label">Load Faxes</div>
+            
+            <div class="arrow arrow-3c"></div>
+            <div class="arrow-label arrow-3c-label">Daily Data (Analytics)</div>
+        </div>
+        
+        <div class="instructions">
+            <h3>Testing Instructions for NSS Team:</h3>
+            <ul>
+                <li><strong>Start at Step 1:</strong> Begin in your normal ConnieRTC Flex environment</li>
+                <li><strong>Navigate to Step 2:</strong> Click the "Admin Tools & Data" button in the main interface</li>
+                <li><strong>Choose Your Path:</strong>
+                    <ul>
+                        <li><strong>Path A (Green):</strong> Test Channel Manager features - view NSS phone numbers and configurations</li>
+                        <li><strong>Path B (Red):</strong> Test Data Center features - access analytics and playback tools</li>
+                    </ul>
+                </li>
+                <li><strong>Test All Features:</strong> From the Data Center Hub, test all three sections:
+                    <ul>
+                        <li>Voicemail Playback (Purple) - Listen to recent voicemail messages</li>
+                        <li>Fax Viewer (Purple) - View and download fax documents</li>
+                        <li>Analytics Dashboard (Purple) - Review live contact center performance data</li>
+                    </ul>
+                </li>
+                <li><strong>Report Issues:</strong> Document any errors, slow loading, or unexpected behavior at each step</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

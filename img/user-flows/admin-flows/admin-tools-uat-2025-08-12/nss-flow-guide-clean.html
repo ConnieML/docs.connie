@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSS Admin Tools v2.0 - Navigation Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .header-logo {
+            position: absolute;
+            left: 25px;
+            height: 90px;
+            width: auto;
+            mix-blend-mode: screen;
+        }
+        
+        .header h1 {
+            margin: 0 0 10px 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .header p {
+            margin: 0;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .flow-section {
+            margin-bottom: 50px;
+        }
+        
+        .step-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            border-left: 5px solid #007bff;
+        }
+        
+        .step-number {
+            background: #007bff;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .step-content {
+            flex: 1;
+        }
+        
+        .step-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 0 0 10px 0;
+        }
+        
+        .step-description {
+            color: #6c757d;
+            font-size: 16px;
+            margin: 0 0 15px 0;
+        }
+        
+        .step-url {
+            background: #e9ecef;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 14px;
+            color: #495057;
+            display: inline-block;
+        }
+        
+        .screenshot {
+            width: 300px;
+            height: auto;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            margin-left: 30px;
+            flex-shrink: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .screenshot-small {
+            width: 200px;
+            height: auto;
+            border: 2px solid #6f42c1;
+            border-radius: 6px;
+            margin: 10px auto;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .arrow-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .arrow {
+            font-size: 30px;
+            color: #007bff;
+            margin: 0 10px;
+        }
+        
+        .arrow-label {
+            display: block;
+            font-size: 14px;
+            color: #6c757d;
+            margin-top: 5px;
+            font-style: italic;
+        }
+        
+        .split-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+        
+        .path {
+            flex: 1;
+            margin: 0 20px;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .path-left {
+            background-color: #d4edda;
+            border-left: 5px solid #28a745;
+        }
+        
+        .path-right {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+        }
+        
+        .path-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .path-left .path-title {
+            color: #155724;
+        }
+        
+        .path-right .path-title {
+            color: #856404;
+        }
+        
+        .sub-steps {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f1f3f4;
+            border-radius: 8px;
+        }
+        
+        .sub-step {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 6px;
+            border-left: 3px solid #6f42c1;
+        }
+        
+        .sub-step:last-child {
+            margin-bottom: 0;
+        }
+        
+        .sub-step-title {
+            font-weight: bold;
+            color: #6f42c1;
+            margin-bottom: 8px;
+        }
+        
+        .sub-step-desc {
+            color: #6c757d;
+            font-size: 14px;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding: 25px;
+            background-color: #e9ecef;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .footer h3 {
+            color: #2c3e50;
+            margin: 0 0 15px 0;
+        }
+        
+        .footer p {
+            color: #6c757d;
+            margin: 0;
+        }
+        
+        .footer-logo {
+            display: block;
+            margin: 15px auto 0 auto;
+            height: 30px;
+            width: auto;
+            opacity: 0.7;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+            }
+            .container {
+                box-shadow: none;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="../../../logos/connie-rtc-docs-logo.png" alt="Connie Logo" class="header-logo">
+            <div>
+                <h1>NSS Admin Tools v2.0 - Navigation Guide</h1>
+                <p>Complete testing flow for Nevada Senior Services UAT Team</p>
+            </div>
+        </div>
+
+        <!-- Step 0: Starting Point -->
+        <div class="step-container">
+            <div class="step-number">0</div>
+            <div class="step-content">
+                <div class="step-title">Starting Point: Your Normal ConnieRTC Home Page</div>
+                <div class="step-description">This is where you normally work in ConnieRTC. Look for the Admin Tools & Data option.</div>
+                <div class="step-url">Your usual ConnieRTC home page</div>
+            </div>
+            <img src="screenshots/00-default-connieRTC.png" alt="ConnieRTC Default View" class="screenshot">
+        </div>
+
+        <div class="arrow-container">
+            <span class="arrow">↓</span>
+            <span class="arrow-label">Click "Admin Tools & Data"</span>
+        </div>
+
+        <!-- Step 1: Entry Point -->
+        <div class="step-container">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <div class="step-title">Admin Tools & Data Hub</div>
+                <div class="step-description">New centralized entry point with two main options. This is your starting point for all admin functions.</div>
+                <div class="step-url">connie.plus/admin-tools-data</div>
+            </div>
+            <img src="screenshots/01-admin-tools-entry.png" alt="Admin Tools Entry Page" class="screenshot">
+        </div>
+
+        <div class="arrow-container">
+            <span class="arrow">↙</span>
+            <span class="arrow-label">Choose your path</span>
+            <span class="arrow">↘</span>
+        </div>
+
+        <!-- Split Paths -->
+        <div class="split-container">
+            <!-- Path A: Channel Manager -->
+            <div class="path path-left">
+                <div class="path-title">🟢 Path A: Channel Manager</div>
+                <div class="step-container" style="background-color: white; border-left-color: #28a745;">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <div class="step-title">Channel Manager</div>
+                        <div class="step-description">View and manage all your NSS phone numbers</div>
+                        <div class="step-url">connie.plus/channels</div>
+                    </div>
+                </div>
+                <img src="screenshots/02-channel-manager.png" alt="Channel Manager Page" class="screenshot-small" style="border-color: #28a745;">
+                
+                <div class="arrow-container">
+                    <span class="arrow" style="color: #28a745;">↓</span>
+                    <span class="arrow-label">Explore phone numbers</span>
+                </div>
+                
+                <div style="background-color: white; padding: 15px; border-radius: 8px; margin-top: 20px;">
+                    <strong>NSS Phone Lines:</strong><br/>
+                    📞 +1 725-999-9678 (Main)<br/>
+                    📞 +1 725-444-7060 (Intake)<br/>
+                    📞 +1 702-996-8438 (H2H)<br/>
+                    📠 +1 702-718-5383 (Fax)
+                </div>
+            </div>
+
+            <!-- Path B: Data Center -->
+            <div class="path path-right">
+                <div class="path-title">🟡 Path B: Data & Reporting</div>
+                <div class="step-container" style="background-color: white; border-left-color: #ffc107;">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <div class="step-title">Data Center Hub</div>
+                        <div class="step-description">Access analytics dashboard and media playback features</div>
+                        <div class="step-url">connie.plus/data-center</div>
+                    </div>
+                </div>
+                <img src="screenshots/03-data-center-hub.png" alt="Data Center Hub Page" class="screenshot-small" style="border-color: #ffc107;">
+
+                <div class="sub-steps">
+                    <div class="sub-step">
+                        <div class="sub-step-title">📊 Live Dashboard</div>
+                        <div class="sub-step-desc">Real-time NSS metrics and analytics</div>
+                        <img src="screenshots/06-nss-dashboard.png" alt="NSS Dashboard" class="screenshot-small">
+                    </div>
+                    <div class="sub-step">
+                        <div class="sub-step-title">🎧 Voicemail Playback</div>
+                        <div class="sub-step-desc">Listen to your 50 most recent voicemails</div>
+                        <img src="screenshots/04-voicemail-playback.png" alt="Voicemail Playback" class="screenshot-small">
+                    </div>
+                    <div class="sub-step">
+                        <div class="sub-step-title">📠 Fax Viewer</div>
+                        <div class="sub-step-desc">View PDF faxes with preview and download</div>
+                        <img src="screenshots/05-fax-viewer.png" alt="Fax Viewer" class="screenshot-small">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h3>🧪 Testing Instructions</h3>
+            <p>
+                <strong>Try both paths!</strong> Test the Channel Manager to see your phone numbers, 
+                then explore the Data Center to see your live voicemails and faxes. 
+                <br/><br/>
+                <strong>What we want to know:</strong> Is the layout clear? Does navigation make sense? 
+                Do the live features work as expected?
+            </p>
+            <img src="../../../logos/connie-rtc-docs-logo.png" alt="Connie" class="footer-logo">
+        </div>
+    </div>
+</body>
+</html>

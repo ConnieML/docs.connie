@@ -1,0 +1,31 @@
+graph TD
+    Start["<b>🏠 Admin Tools & Data</b><br/>Entry point for all admin functions<br/><i>connie.plus/admin-tools-data</i>"]
+    
+    Start -->|"Click 'Access<br/>Channel Manager'"| CM["<b>📞 Channel Manager</b><br/>Manage voice, SMS, fax numbers<br/><i>connie.plus/channels</i>"]
+    
+    Start -->|"Click 'View Reports'"| DC["<b>📊 Data Center Hub</b><br/>Analytics & Media Playback<br/><i>connie.plus/data-center</i>"]
+    
+    DC -->|"Click 'Daily Data'"| Dashboard["<b>📈 NSS Live Dashboard</b><br/>Real-time metrics<br/>• Total Calls<br/>• Agent Utilization<br/>• Queue Status<br/><i>connie.plus/data-center/nss-dashboard</i>"]
+    
+    DC -->|"Click 'Load<br/>Voicemails'"| VM["<b>🎧 Voicemail Playback</b><br/>Listen to messages<br/>• 50 most recent<br/>• Audio controls<br/>• Transcriptions<br/><i>connie.plus/data-center/voicemails</i>"]
+    
+    DC -->|"Click 'Load Faxes'"| Fax["<b>📠 Fax Viewer</b><br/>View PDF faxes<br/>• 18 recent faxes<br/>• PDF preview<br/>• Download option<br/><i>connie.plus/data-center/faxes</i>"]
+    
+    CM -->|"Manage"| Numbers["<b>☎️ Active Numbers</b><br/>NSS Phone Lines:<br/>• +1 725-999-9678 (Main)<br/>• +1 725-444-7060 (Intake)<br/>• +1 702-996-8438 (H2H)<br/>• +1 702-718-5383 (Fax)"]
+    
+    DC -->|"Click 'Adhoc Data'"| Adhoc["<b>🔍 Ad Hoc Reports</b><br/><i>Coming Soon</i>"]
+    
+    %% Styling
+    classDef entryPoint fill:#e3f2fd,stroke:#1976d2,stroke-width:3px,color:#000
+    classDef channelPath fill:#e8f5e9,stroke:#4caf50,stroke-width:2px,color:#000
+    classDef dataPath fill:#fff3e0,stroke:#ff9800,stroke-width:2px,color:#000
+    classDef endpoint fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px,color:#000
+    classDef comingSoon fill:#fafafa,stroke:#9e9e9e,stroke-width:1px,stroke-dasharray: 5 5,color:#666
+    
+    class Start entryPoint
+    class CM,Numbers channelPath
+    class DC,Dashboard,VM,Fax dataPath
+    class Adhoc comingSoon
+    
+    %% Link styling
+    linkStyle default stroke:#333,stroke-width:2px
