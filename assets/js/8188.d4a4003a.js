@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkflex_project_template_docs=self.webpackChunkflex_project_template_docs||[]).push([[8188],{38188:(e,c,t)=>{t.d(c,{createPieServices:()=>s.f});var s=t(19786);t(58198)}}]);

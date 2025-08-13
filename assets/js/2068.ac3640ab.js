@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkflex_project_template_docs=self.webpackChunkflex_project_template_docs||[]).push([[2068],{32068:(e,c,t)=>{t.d(c,{createInfoServices:()=>s.v});var s=t(41366);t(58198)}}]);
