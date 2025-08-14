@@ -1,14 +1,14 @@
 ---
 sidebar_label: schedule-manager
-title: Twilio Flex Schedule Manager
+title: Connie Schedule Manager
 ---
 import PluginLibraryFeature from "./_plugin-library-feature.md";
 
 <PluginLibraryFeature />
 
-This solution provides a flexible, robust, and scalable way to manage open and closed hours for Twilio Flex applications.
+This solution provides a flexible, robust, and scalable way to manage open and closed hours for ConnieRTC applications.
 
-![Schedule manager](/img/features/schedule-manager/schedules.png)
+![Schedule manager](/img/features/schedule-manager/schedules.jpg)
 
 ## Disclaimer
 
@@ -18,9 +18,9 @@ This solution provides a flexible, robust, and scalable way to manage open and c
 
 The schedule manager uses two main concepts: rules and schedules. Rules define a single or recurring event, such as "open Monday - Friday 8 AM - 5 PM," or "closed for holiday on 9/5/2022." Schedules are comprised of one or more rules (along with a time zone to apply the rules for). When checking the schedule from your application, such as a Studio flow, the status of the schedule will be returned (open or closed), and if it is closed, information from the matching rule (such as closed for holiday) will also be provided to allow for flexible handling.
 
-To manage rules and schedules, a Flex plugin is provided which adds a Schedule Manager item to the side navigation for workers with the `admin` role. This allows viewing the current configuration, the status of each schedule, and publishing updates to the configuration.
+To manage rules and schedules, a ConnieRTC plugin is provided which adds a Schedule Manager item to the side navigation for workers with the `admin` role. This allows viewing the current configuration, the status of each schedule, and publishing updates to the configuration.
 
-![Rules view](/img/features/schedule-manager/rules.png)
+![Rules view](/img/features/schedule-manager/rules.jpg)
 
 To allow for greater scalability than provided by Twilio Sync and some other solutions, configuration is stored within a Twilio Asset behind a Twilio Function. When updates to the configuration are being saved, a new asset version is generated and included in a new build, which is deployed when completed. This means that publishing schedules may take a few moments.
 
@@ -58,7 +58,7 @@ Note the domain name that is output when the deploy completes--this will be refe
 
 **Note: If you need to re-deploy via CLI in the future, be sure to first verify your local `serverless-schedule-manager/assets/config.private.json` file contains any configuration changes made from the UI. This is done automatically by `npm run deploy` if the service already exists, but it is recommended to first run `npm run fetch-config` before attempting a re-deploy to ensure the latest file is present.**
 
-Then, update your flex-config ui_attributes file(s) with the serverless function domain from above:
+Then, update your ConnieRTC config ui_attributes file(s) with the serverless function domain from above:
 
 ```
 {
@@ -138,7 +138,7 @@ Content-Type: application/json
 
 ## Get the status of all schedules
 
-Schedule data may be useful within Flex, such as during queue transfers. The included utility classes in the plugin component provide an easy way to get the status of all schedules:
+Schedule data may be useful within ConnieRTC, such as during queue transfers. The included utility classes in the plugin component provide an easy way to get the status of all schedules:
 
 ```js
 import { loadScheduleData } from 'utils/schedule-manager';
@@ -148,7 +148,7 @@ import { loadScheduleData } from 'utils/schedule-manager';
 const scheduleData = await loadScheduleData();
 ```
 
-This calls the `admin/list` function, which requires the Flex user token. `scheduleData` will include a `data` object with a `schedules` array, containing each schedule. Each schedule will have a `status` object, which contains the same object you would get from calling the `check-schedules` function.
+This calls the `admin/list` function, which requires the ConnieRTC user token. `scheduleData` will include a `data` object with a `schedules` array, containing each schedule. Each schedule will have a `status` object, which contains the same object you would get from calling the `check-schedules` function.
 
 ## Using within Studio
 
@@ -185,11 +185,11 @@ Thank you for calling and have a great day.
 
 ## Preventing conflicting configuration updates
 
-The Flex plugin loads the configuration interface for workers with the `admin` role, of which there may be more than one. Therefore, it is a possibility that multiple people may attempt to update the schedule configuration at the same time. To prevent workers overwriting each other's changes, a few guards have been put in place:
+The ConnieRTC plugin loads the configuration interface for workers with the `admin` role, of which there may be more than one. Therefore, it is a possibility that multiple people may attempt to update the schedule configuration at the same time. To prevent workers overwriting each other's changes, a few guards have been put in place:
 
 - When updating configuration with the `update-schedules` function, the `version` property must be provided with the same `version` that was retrieved from the `list-schedules` function which loaded the initial data. If this does not match, the request will fail. In the user interface, the following alert will be shown: `Schedule was updated by someone else and cannot be published. Please reload and try again.` This allows the worker to rescue the changes they were attempting to make, and merge them with the changes that were saved first.
 - When retrieving configuration from this `list-schedules` function, a check is made that the latest build is what is deployed. The `versionIsDeployed` property is returned indicating whether this is the case. If it is not, this means another user is in the middle of publishing changes. In the user interface, the following alert will be shown: `Another schedule publish is in progress. Publishing now will overwrite other changes.` This allows the worker to wait for the publish to complete before making changes.
 
 ## Development
 
-Run `twilio flex:plugins --help` to see all the commands we currently support. For further details on Flex Plugins refer to our documentation on the [Twilio Docs](https://www.twilio.com/docs/flex/developer/plugins/cli) page.
+Run `twilio flex:plugins --help` to see all the commands we currently support. For further details on ConnieRTC Plugins refer to our documentation on the [Twilio Docs](https://www.twilio.com/docs/flex/developer/plugins/cli) page.
