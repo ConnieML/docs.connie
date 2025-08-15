@@ -8,7 +8,7 @@ title: "Web Forms Implementation Guide"
 
 ## Overview
 
-This comprehensive guide covers implementing web forms integration within ConnieRTC. Web forms enable seamless website visitor interactions that automatically create tasks in Twilio Flex for staff processing, providing a complete digital intake and referral system.
+This comprehensive guide covers implementing web forms integration within ConnieRTC. Web forms enable seamless website visitor interactions that automatically create tasks in Twilio ConnieRTC for staff processing, providing a complete digital intake and referral system.
 
 ## Workflow Architecture
 
@@ -22,7 +22,7 @@ flowchart TB
     D --> E[Document Generation]
     E --> F[Email to ConnieRTC]
     F --> G[Studio Flow Processing]
-    G --> H[Task Creation in Flex]
+    G --> H[Task Creation in ConnieRTC]
     H --> I[Staff Assignment & Processing]
     
     J[Website Admin] --> K[Form Configuration]
@@ -61,7 +61,7 @@ flowchart LR
     C --> D[PDF Document Generation]
     D --> E[Email: forms@connie.host]
     E --> F[Studio Flow Processing]
-    F --> G[Flex Task with PDF Attachment]
+    F --> G[ConnieRTC Task with PDF Attachment]
 ```
 
 **Technical Stack:**
@@ -447,7 +447,7 @@ function extractOrganization(emailAddress) {
       "properties": {
         "service": "YOUR_MESSAGING_SERVICE_SID",
         "to": "SUPERVISOR_PHONE_NUMBER",
-        "body": "EMERGENCY web form submission from {{widgets.process_form_email.parsed.client_name}}. Service needed: {{widgets.process_form_email.parsed.service_type}}. Task created in Flex queue.",
+        "body": "EMERGENCY web form submission from {{widgets.process_form_email.parsed.client_name}}. Service needed: {{widgets.process_form_email.parsed.service_type}}. Task created in ConnieRTC queue.",
         "offset": { "x": 800, "y": 250 }
       }
     },
@@ -479,7 +479,7 @@ function extractOrganization(emailAddress) {
 
 ### 4. Task Management Configuration
 
-#### Flex Task Attributes
+#### ConnieRTC Task Attributes
 ```javascript
 // Standard task attributes for web form submissions
 const webFormTaskAttributes = {
@@ -1071,7 +1071,7 @@ const debugTaskAttributes = (taskData) => {
 ## Future Enhancements Roadmap
 
 ### Phase 1: Enhanced Form Processing (Q3 2024)
-- **Inline Form Preview:** Display form data directly in Flex task panel
+- **Inline Form Preview:** Display form data directly in ConnieRTC task panel
 - **Multi-language Support:** Forms available in Spanish, Chinese, and Arabic
 - **Advanced Validation:** Real-time field validation with custom rules
 

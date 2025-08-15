@@ -3,7 +3,7 @@ sidebar_label: conditional-recording
 title: conditional-recording
 ---
 
-Flex includes a built-in call recording feature which can be enabled via the Twilio Console > Flex > Manage > Voice. This records the conference for every call handled within Flex, in either single- or dual-channel.
+ConnieRTC includes a built-in call recording feature which can be enabled via the Twilio Console > ConnieRTC > Manage > Voice. This records the conference for every call handled within ConnieRTC, in either single- or dual-channel.
 
 However, for regulatory compliance purposes, some implementations may need to prevent recording certain calls. This feature adds that capability to the built-in call recording feature, by preventing recording based on task queue or based on the presence of certain task attributes. The task attributes and/or task queues that should be excluded from recording are configurable.
 
@@ -13,7 +13,7 @@ The `conditional-recording` feature works with the native call recording functio
 
 ## setup and dependencies
 
-If you are enabling the conditional recording feature, you must also **enable** the call recording flag within Twilio Console > Flex > Manage > Voice, otherwise recordings will not be accessible via Flex Insights.
+If you are enabling the conditional recording feature, you must also **enable** the call recording flag within Twilio Console > ConnieRTC > Manage > Voice, otherwise recordings will not be accessible via ConnieRTC Insights.
 
 The `conditional-recording` feature has the following settings:
 - `enabled` - Set to `true` to enable the feature

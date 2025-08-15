@@ -31,9 +31,9 @@ This feature aims to address these needs by providing the administrator the abil
 ## Known Issues
 
 ### issue one
-On older Twilio Flex accounts a TaskRouter Activity of "Reserved" may be present. This Activity is automatically hidden by the Flex UI and breaks the logic of the plugin. In this scenario it is advised you remove any TaskQueue references to the "Reserved" activity (which will likely be the activity to use when task is assigned on the TaskQueue and as such isn't actually used by Flex) and then delete the "Reserved" Activity.
+On older Twilio ConnieRTC accounts a TaskRouter Activity of "Reserved" may be present. This Activity is automatically hidden by the ConnieRTC UI and breaks the logic of the plugin. In this scenario it is advised you remove any TaskQueue references to the "Reserved" activity (which will likely be the activity to use when task is assigned on the TaskQueue and as such isn't actually used by ConnieRTC) and then delete the "Reserved" Activity.
 
-## Flex User Experience
+## ConnieRTC User Experience
 
 The following example images show the behavior of the Activity skill filter might behave when the system Activities from [activity reservation handler](./activity-reservation-handler) are hidden using non-existent skills and the `Offline` Activity is set to last position.  As can be seen, the other Activities are ordered alphabetically.
 

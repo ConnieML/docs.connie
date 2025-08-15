@@ -42,7 +42,7 @@ flowchart TB
 3. **Adobe Processing**: Form data is sent to Adobe Acrobat Sign for professional PDF creation
 4. **Email Routing**: Completed form emailed to your ConnieRTC endpoint (e.g., `referrals@connie.host`)
 5. **Automatic Processing**: Studio Flow processes email and extracts form data
-6. **Task Creation**: Professional task created in Flex queue with proper skill routing
+6. **Task Creation**: Professional task created in ConnieRTC queue with proper skill routing
 7. **Staff Review**: Agent receives task showing "Web Form Submission" with complete form data
 
 ## Proven Success Example
@@ -146,7 +146,7 @@ Use this template for your Studio Flow:
 **Key Components**:
 - **Email Trigger**: Activated by form completion emails
 - **Data Extraction**: Parse form data from PDF attachment
-- **Task Creation**: Create Flex task with proper skill routing
+- **Task Creation**: Create ConnieRTC task with proper skill routing
 - **Error Handling**: Alert administrators of processing failures
 
 **Task Attributes**:
@@ -339,7 +339,7 @@ Skill Routing: "H2H.WEB_REFERRAL"
 ## Future Enhancements
 
 ### Phase 1: Enhanced UI (Q3 2024)
-- **Inline Form Preview**: Display form data directly in Flex task panel
+- **Inline Form Preview**: Display form data directly in ConnieRTC task panel
 - **Field-by-Field Display**: Show form fields in structured format within ConnieRTC
 - **Quick Actions**: Add buttons for common follow-up actions
 

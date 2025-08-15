@@ -113,7 +113,7 @@ graph TB
     D --> F
     E --> F
     F --> G[Studio Flow Processing]
-    G --> H[Flex Task Creation]
+    G --> H[ConnieRTC Task Creation]
 ```
 
 ### Multi-Platform Benefits:

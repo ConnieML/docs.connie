@@ -34,7 +34,7 @@ This is the most advanced voicemail option in the legacy architecture. If you ne
 4. Professional formatting with all call details
 
 **Agent Experience:**
-1. Voicemail tasks appear normally in Flex
+1. Voicemail tasks appear normally in ConnieRTC
 2. All standard callback and voicemail handling
 3. No workflow changes required
 
@@ -193,12 +193,12 @@ HTTP Status: 200
 Before proceeding, ensure you have ALL of the following information:
 :::
 
-**✅ Twilio Account Details:**
+**✅ Connie Account Details:**
 - [ ] Account SID (format: `AC...`)
 - [ ] Auth Token
 - [ ] Twilio CLI profile configured and active
 
-**✅ Twilio Flex Configuration:**
+**✅ Twilio ConnieRTC Configuration:**
 - [ ] Workspace SID (format: `WS...`)
 - [ ] "Assign to Anyone" Workflow SID (format: `WW...`)
 
@@ -223,7 +223,7 @@ In your Connie deployment, add these environment variables to Twilio Functions:
 
 ```bash
 # REQUIRED ENVIRONMENT VARIABLES
-# Add these to your Twilio Functions environment
+# Add these to your Connie Functions environment
 
 ADMIN_EMAIL=admin@clientdomain.com
 MAILGUN_DOMAIN=voicemail.clientdomain.com  
@@ -249,7 +249,7 @@ To send notifications to multiple administrators, use comma-separated emails. Th
 
 ### Update Feature Configuration
 
-Enable the feature in your Flex configuration:
+Enable the feature in your ConnieRTC configuration:
 
 ```json
 {
@@ -285,7 +285,7 @@ const enqueuedWorkflowSid = 'WW...'; // YOUR "Assign to Anyone" workflow SID
 
 **How to find your workflow SID:**
 1. Twilio Console → **TaskRouter** → **Workspaces**
-2. Select your Flex workspace
+2. Select your ConnieRTC workspace
 3. Click **Workflows**
 4. Find "Assign to Anyone" workflow
 5. Copy the SID (starts with `WW`)
@@ -360,7 +360,7 @@ This creates:
 - ✅ All required serverless functions
 
 :::info Correct Terminology
-In the Studio Flow Send to Flex widget, the field is called **"Hold Music TwiML URL"** (NOT "Wait URL"). This URL handles the caller experience while waiting in queue.
+In the Studio Flow Send to ConnieRTC widget, the field is called **"Hold Music TwiML URL"** (NOT "Wait URL"). This URL handles the caller experience while waiting in queue.
 
 ### Connect to Phone Number
 
@@ -475,7 +475,7 @@ This test script catches 90% of configuration issues before manual testing, savi
 
 ### Expected Results
 
-**In Flex:**
+**In ConnieRTC:**
 - Voicemail task appears in the queue
 - Task contains recording and transcription
 - Agents can handle normally
@@ -606,7 +606,7 @@ curl -s -w "\nHTTP Status: %{http_code}\n" --user "api:[YOUR_KEY]" \
 
 ### Mailgun Costs
 - **Free tier:** 100 emails/day
-- **Flex plans:** Start at $35/month for 1,250/month
+- **ConnieRTC plans:** Start at $35/month for 1,250/month
 - **Pay-as-you-go:** Available for variable volume
 
 ### Estimating Volume

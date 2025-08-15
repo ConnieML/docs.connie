@@ -41,7 +41,7 @@ We've deployed new admin tools to your Connie platform for testing. Takes just 2
 - Improved layout for better visibility
 
 **How to Test:**
-1. Open your Flex/CRM Container
+1. Open your ConnieRTC/CRM Container
 2. Navigate to Admin Tools & Data
 3. Click either button and explore
 4. Let us know what you think!

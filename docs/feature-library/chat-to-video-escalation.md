@@ -3,7 +3,7 @@ sidebar_label: chat-to-video
 title: chat-to-video-escalation
 ---
 
-This feature shows how an agent can initiate a video room from a messaging conversation within Flex.
+This feature shows how an agent can initiate a video room from a messaging conversation within ConnieRTC.
 
 ---
 
@@ -25,14 +25,14 @@ This feature shows how an agent can initiate a video room from a messaging conve
 
 This feature is broken down into three main sections:
 
-- **Flex Plugin** - starting at the root of the directory:
+- **ConnieRTC Plugin** - starting at the root of the directory:
   - The `./custom-components` folder contains the components to initiate and join the video room
 - **Twilio Serverless** - within the `/serverless-functions/src/functions/features/chat-to-video-escalation` directory:
   - This houses the Twilio Function paths which orchestrate the facilitation of access token generation, video room creation, and video room completion
   - The assets are utilized to host the build output of the [video web application](https://github.com/twilio-professional-services/flex-project-template/tree/main/web-app-examples/twilio-video-demo-app) that joins the agent and customer into the video session; for further details on how this application works & setup, see the [application folder](https://github.com/twilio-professional-services/flex-project-template/tree/main/web-app-examples/twilio-video-demo-app) within the `/web-app-examples` folder at the root of this template
 - **Video App** - within the `/web-app-examples/twilio-video-demo-app` directory:
   - A Next JS application built with React, TypeScript, and Twilio Paste design system
-  - This application is used by the agent (embedded into Flex) and the customer (via invite link) to connect to the video session
+  - This application is used by the agent (embedded into ConnieRTC) and the customer (via invite link) to connect to the video session
 
 ### Technical Components
 
@@ -42,15 +42,15 @@ This feature is broken down into three main sections:
 
 ### Example Walkthrough
 
-1. The video session can only be initiated by the Agent within Flex. Once determined a video session would be appropriate to resolve the customer's use case, the Agent clicks the `Video Icon` button in the `Task Canvas Header`:
+1. The video session can only be initiated by the Agent within ConnieRTC. Once determined a video session would be appropriate to resolve the customer's use case, the Agent clicks the `Video Icon` button in the `Task Canvas Header`:
 
    ![Agent switch to video button](/img/features/chat-to-video/video-button.png)
 
-2. After clicking the button, a request is sent to the Twilio function to generate a unique code, which serves as the video room name. Upon success, the unique code and full url to join the video session are returned to the Flex UI, which then auto-sends a message to the conversation with the customer:
+2. After clicking the button, a request is sent to the Twilio function to generate a unique code, which serves as the video room name. Upon success, the unique code and full url to join the video session are returned to the ConnieRTC UI, which then auto-sends a message to the conversation with the customer:
 
    ![Join video message](/img/features/chat-to-video/join-video-message.png)
 
-3. Within the Flex UI, a new tab is visible to the Agent within the `Task Canvas Tabs`, labeled `Video Room`:
+3. Within the ConnieRTC UI, a new tab is visible to the Agent within the `Task Canvas Tabs`, labeled `Video Room`:
 
    ![Agent join video room button](/img/features/chat-to-video/join-room-button.png)
 

@@ -6,7 +6,7 @@ const { github: lightCodeTheme, dracula: darkCodeTheme } = require("prism-react-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Connie Documentation",
-  tagline: "Twilio Professional Services",
+  tagline: "Connie Professional Services",
   favicon: "img/logos/connie-rtc-icon.png",
 
   // Set the production url of your site here
@@ -60,6 +60,7 @@ const config = {
   ],
   
   stylesheets: [
+    // Note: Consider replacing with Connie-specific fonts if available
     'https://assets.twilio.com/public_assets/paste-fonts/1.5.1/fonts.css',
   ],
 

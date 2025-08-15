@@ -3,7 +3,7 @@ sidebar_label: datadog-log-integration
 title: datadog-log-integration
 ---
 
-This feature forwards logs emitted by the Flex Project Template to Datadog.
+This feature forwards logs emitted by the ConnieRTC Project Template to Datadog.
 
 ### Configuration
 
@@ -18,9 +18,9 @@ This feature allows the following configuration settings.
 | Intake Region | The [Datadog Site](https://docs.datadoghq.com/getting_started/site/) for your account. Valid values are `us` | `us5` | `us3` | `eu`.
 | Flush Timeout | In milliseconds. Because we send logs to datadog over HTTP - we do not want to make an HTTP request for every log written. This feature will buffer log messages for the flush timeout before making a single HTTP request to Datadog with all buffered log messages. If there are no logs within the Flush timeout, there is no HTTP request to Datadog. |
 
-### Flex User Experience
+### ConnieRTC User Experience
 
-Logs are forwarded automatically with no indication to the Flex User.
+Logs are forwarded automatically with no indication to the ConnieRTC User.
 
 ### Dependencies
 

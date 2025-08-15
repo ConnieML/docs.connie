@@ -31,16 +31,16 @@ The feature extends the callback-and-voicemail functionality with an additional 
 
 1. **Caller Experience**: Identical to standard callback/voicemail feature
 2. **Voicemail Processing**: Standard Twilio recording and transcription
-3. **Task Creation**: Normal Flex task routing for agent handling
+3. **Task Creation**: Normal ConnieRTC task routing for agent handling
 4. **Email Notification**: Parallel process that sends voicemail via email
 
 ### Email Integration
 
 When a voicemail is recorded:
 
-1. The voicemail is processed normally through Flex workflows
+1. The voicemail is processed normally through ConnieRTC workflows
 2. A separate email function is triggered asynchronously
-3. The recording is fetched from Twilio's servers
+3. The recording is fetched from Connie's servers
 4. An email is composed with the recording as a .wav attachment
 5. The email is sent via the configured email provider (Mailgun)
 6. Both processes complete independently for resilience
@@ -56,7 +56,7 @@ When a voicemail is recorded:
 
 ### Environment Variables
 
-The feature requires these additional environment variables in your Twilio Functions:
+The feature requires these additional environment variables in your Connie Functions:
 
 ```bash
 # Email Configuration
@@ -67,7 +67,7 @@ MAILGUN_API_KEY=key-1234567890abcdef1234567890abcdef
 
 ### Feature Configuration
 
-Enable the feature in your Flex configuration:
+Enable the feature in your ConnieRTC configuration:
 
 ```json
 {
@@ -255,7 +255,7 @@ For high-volume deployments:
 |---------|---------------------|----------------------------------|
 | Callback Requests | ✅ | ✅ |
 | Voicemail Recording | ✅ | ✅ |
-| Flex Task Creation | ✅ | ✅ |
+| ConnieRTC Task Creation | ✅ | ✅ |
 | Agent Interface | ✅ | ✅ |
 | Email Notifications | ❌ | ✅ |
 | Voicemail Attachments | ❌ | ✅ |

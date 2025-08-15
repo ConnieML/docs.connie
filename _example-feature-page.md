@@ -7,7 +7,7 @@ title: name-of-feature
 
 _high level summary of what the feature does_
 
-## Flex User Experience
+## ConnieRTC User Experience
 
 _animations with descriptions if necessary of the user experience in Flex_
 

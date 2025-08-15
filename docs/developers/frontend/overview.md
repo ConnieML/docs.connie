@@ -13,7 +13,7 @@ Welcome to ConnieRTC frontend development! This section covers everything you ne
 ConnieRTC's frontend is built with:
 - **React** - Component-based UI library
 - **TypeScript** - Type-safe JavaScript
-- **Twilio Flex** - Contact center framework
+- **Twilio ConnieRTC** - Contact center framework
 - **Twilio Paste** - Design system components
 
 ## Coming Soon
@@ -21,7 +21,7 @@ ConnieRTC's frontend is built with:
 Comprehensive frontend documentation is currently in development. This section will include:
 
 - **Component Library**: Reusable UI components
-- **Flex Hooks**: Integration with Twilio Flex
+- **ConnieRTC Hooks**: Integration with Twilio ConnieRTC
 - **Styling Guide**: CSS and theming best practices
 - **State Management**: Managing application state
 - **Testing**: Frontend testing strategies

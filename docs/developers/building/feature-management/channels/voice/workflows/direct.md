@@ -87,6 +87,6 @@ To upgrade from Connie Voice Direct to more advanced experiences:
 - **No ring tone**: Check Studio Flow routing logic
 
 ### Quick Fixes
-- Restart agent sessions in Flex
+- Restart agent sessions in ConnieRTC
 - Verify phone number configuration
 - Check TaskRouter activity status

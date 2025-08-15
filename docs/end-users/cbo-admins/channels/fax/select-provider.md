@@ -19,7 +19,7 @@ flowchart LR
     A[Incoming Fax] --> B[Fax Provider - Sinch/eFax/iFax]
     B --> C[ConnieRTC Platform]
     C --> D[Email Notification]
-    C --> E[Flex Task Queue]
+    C --> E[ConnieRTC Task Queue]
     E --> F[Staff Agent Review]
     
     style A fill:#e1f5fe
@@ -33,7 +33,7 @@ flowchart LR
 **The Process**:
 - **Receive Faxes**: Faxes are received by your chosen provider and converted to digital format
 - **Automatic Processing**: ConnieRTC automatically processes incoming faxes
-- **Task Creation**: Each fax becomes a task in your Flex queue for staff review
+- **Task Creation**: Each fax becomes a task in your ConnieRTC queue for staff review
 - **Email Notifications**: Staff receive email alerts with fax attachments
 - **Centralized Management**: All fax communications are tracked within ConnieRTC
 
@@ -93,14 +93,14 @@ Choose your fax service provider below to view setup instructions and integratio
 | **Status** | ✅ Production Ready | 🚧 Coming Soon | 🚧 Coming Soon |
 | **Cost per Page** | $0.045 | TBD | TBD |
 | **Email Integration** | ✅ Yes | TBD | TBD |
-| **Flex Task Creation** | ✅ Yes | TBD | TBD |
+| **ConnieRTC Task Creation** | ✅ Yes | TBD | TBD |
 | **PDF Attachments** | ✅ Yes | TBD | TBD |
 | **API Integration** | ✅ Full API | TBD | TBD |
 
 ## Key Features
 
 ### Seamless Workflow Integration
-- **Automatic Task Creation**: Incoming faxes automatically create tasks in Flex queue
+- **Automatic Task Creation**: Incoming faxes automatically create tasks in ConnieRTC queue
 - **Email Notifications**: Staff receive immediate email alerts with PDF attachments
 - **Centralized Management**: All fax communications tracked in ConnieRTC dashboard
 
@@ -125,7 +125,7 @@ Choose your fax service provider below to view setup instructions and integratio
 ### Technical Requirements
 - **Internet Connection**: Reliable internet for fax processing
 - **Email Setup**: Working email addresses for staff notifications
-- **ConnieRTC Access**: Active Flex accounts for task management
+- **ConnieRTC Access**: Active ConnieRTC accounts for task management
 - **PDF Viewing**: Ability to view PDF attachments
 
 ### Compliance & Security

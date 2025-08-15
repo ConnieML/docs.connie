@@ -6,9 +6,9 @@ import PluginLibraryFeature from "./_plugin-library-feature.md";
 
 <PluginLibraryFeature />
 
-This feature enables the user to define which number on the Twilio account to use when dialing outbound using the dialpad.
+This feature enables the user to define which number on the Connie account to use when dialing outbound using the dialpad.
 
-## flex-user-experience
+## rtc-user-experience
 
 the vanilla feature without any further customizations will look like this
 
@@ -20,7 +20,7 @@ the vanilla feature without any further customizations will look like this
 
 There are no additional dependencies for setup beyond ensuring the flag is enabled within the `flex-config` attributes.
 
-There is an optional configuration property (`include_outgoing_only_numbers`) controlling whether or not outgoing-only caller IDs (i.e. verified non-Twilio phone numbers) are displayed in the dropdown. This is enabled by default, but can be disabled to hide these numbers.
+There is an optional configuration property (`include_outgoing_only_numbers`) controlling whether or not outgoing-only caller IDs (i.e. verified non-Connie phone numbers) are displayed in the dropdown. This is enabled by default, but can be disabled to hide these numbers.
 
 ```json
 "caller_id": {
@@ -31,15 +31,15 @@ There is an optional configuration property (`include_outgoing_only_numbers`) co
 
 ### Outbound Call Configuration
 
-The Flex Dialpad must be enabled in order to be able to place outbound calls from within Flex. If this has not yet been configured, you will not be able to use this feature. This can be enabled in the Twilio Console > Flex > Manage > Voice, or by using the Flex Configuration API:
+The ConnieRTC Dialpad must be enabled in order to be able to place outbound calls from within ConnieRTC. If this has not yet been configured, you will not be able to use this feature. This can be enabled in the Twilio Console > ConnieRTC > Manage > Voice, or by using the ConnieRTC Configuration API:
 
 ```
 POST https://flex-api.twilio.com/v1/Configuration
-Authorization: Basic {base64-encoded Twilio Account SID : Auth Token}
+Authorization: Basic {base64-encoded Connie Account SID : Auth Token}
 Content-Type: application/json
 
 {
-  "account_sid": "Enter your Twilio Account SID here",
+  "account_sid": "Enter your Connie Account SID here",
   "outbound_call_flows": {
     "default": {
       "workflow_sid": "WWxxxc",

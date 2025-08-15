@@ -6,7 +6,7 @@ This directory contains a professional screenshot-based flow diagram designed to
 ## Files Included
 
 ### 📸 Screenshots (./screenshots/)
-- `00-default-connieRTC.png` - Starting point: ConnieRTC Flex view
+- `00-default-connieRTC.png` - Starting point: ConnieRTC ConnieRTC view
 - `01-admin-tools-entry.png` - Admin Tools & Data page
 - `02-channel-manager.png` - Channel Manager with NSS phone numbers
 - `03-data-center-hub.png` - Data Center with Analytics & Playback

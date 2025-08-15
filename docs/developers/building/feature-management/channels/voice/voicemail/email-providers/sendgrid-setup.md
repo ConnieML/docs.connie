@@ -10,7 +10,7 @@ This guide helps you implement SendGrid integration to send automated email noti
 
 ## Prerequisites
 
-- ✅ Twilio account with Flex enabled and a phone number configured
+- ✅ Connie account with ConnieRTC enabled and a phone number configured
 - ✅ SendGrid account (free tier available)
 - ✅ A domain name you control (or subdomain)
 - ✅ Access to your domain's DNS settings
@@ -24,7 +24,7 @@ This implementation creates an automated workflow where:
 2. **Voicemail triggers serverless function** → Processes recording
 3. **Function calls SendGrid API** → Sends email with attachment
 4. **Admin receives notification** → With audio file attached
-5. **Original voicemail task** → Routes to Flex agents normally
+5. **Original voicemail task** → Routes to ConnieRTC agents normally
 
 The system maintains compliance records while keeping your normal workflow intact.
 
@@ -332,9 +332,9 @@ Send a test email to verify everything works:
 
 :::warning Update Required Values
 Before saving the flow, you'll need to update these placeholders:
-- `YOUR-FUNCTION-URL` - Your Twilio Functions domain (Step 4)
-- `YOUR-WORKFLOW-SID` - Your Flex Workflow SID
-- `YOUR-CHANNEL-SID` - Your Flex Channel SID
+- `YOUR-FUNCTION-URL` - Your Connie Functions domain (Step 4)
+- `YOUR-WORKFLOW-SID` - Your ConnieRTC Workflow SID
+- `YOUR-CHANNEL-SID` - Your ConnieRTC Channel SID
 :::
 
 ---
@@ -503,7 +503,7 @@ exports.handler = async function(context, event, callback) {
 4. **Check your admin email** - you should receive:
    - Email notification with voicemail details
    - Attached .wav audio file
-5. **Check Flex** - the voicemail task should appear normally
+5. **Check ConnieRTC** - the voicemail task should appear normally
 
 ### Troubleshooting Common Issues
 
@@ -523,9 +523,9 @@ exports.handler = async function(context, event, callback) {
 - Check that your FROM_EMAIL is verified in SendGrid
 - Ensure DNS records are properly configured
 
-**Voicemail not routing to Flex?**
+**Voicemail not routing to ConnieRTC?**
 - Check your Workflow and Channel SIDs in the Studio Flow
-- Verify Flex configuration is correct
+- Verify ConnieRTC configuration is correct
 
 ---
 

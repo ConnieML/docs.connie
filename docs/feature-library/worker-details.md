@@ -10,7 +10,7 @@ This feature adds a section to the the Worker Canvas (Agent Activity & Skills) i
 
 The Supervisor can select a worker to view or edit from the Teams view. The Worker Canvas side panel displays the Worker Skills and possibly one or more other features related to the worker (for example Supervisor Capacity) in different tabs.  The Details tab shows the agent name and the attributes.  The list of available **Teams** and **Departments** is read from the common configuration in the Admin UI.
 
-As noted in the [Flex insights docs](https://www.twilio.com/docs/flex/developer/insights/enhance-integration#enhance-agent-data)
+As noted in the [ConnieRTC insights docs](https://www.twilio.com/docs/flex/developer/insights/enhance-integration#enhance-agent-data)
   
 - The `team_id` attribute is required to display `team_name`.
 - The `department_id` attribute is required to display `department_name`.
@@ -42,7 +42,7 @@ Use the `boolean_attrbutes` property to provide an array of boolean (true/false)
 }
 ```
 
-## Flex User Experience
+## ConnieRTC User Experience
 
 ![WorkerDetails](/img/features/worker-details/WorkerDetails.png)
 

@@ -8,11 +8,11 @@ import PluginLibraryFeature from "./_plugin-library-feature.md";
 
 ## Overview
 
-Dispositions are useful for tracking the outcomes of various tasks. This feature allows you to provide a custom list of dispositions that agents may select before completing their task. Disposition selection may be optional or required, and dispositions may be global or queue-specific. You may also optionally enable a free-form notes field. Dispositions are available in Flex Insights under "Outcome", and notes are available under "Content". 
+Dispositions are useful for tracking the outcomes of various tasks. This feature allows you to provide a custom list of dispositions that agents may select before completing their task. Disposition selection may be optional or required, and dispositions may be global or queue-specific. You may also optionally enable a free-form notes field. Dispositions are available in ConnieRTC Insights under "Outcome", and notes are available under "Content". 
 
 To capture additional data elements on this wrap-up form, you may also configure a set of text and/or selection attributes with labels and mappings to save to conversations attributes for reporting purposes.
 
-## Flex User Experience
+## ConnieRTC User Experience
 
 ![Dispositions demo](/img/features/dispositions/dispositions.gif)
 
@@ -65,14 +65,14 @@ Each entry in a `text_attributes` array should have the below format, including 
 {
   "form_label": "Twilio Products",
   "conversation_attribute": "conversation_attribute_2",
-  "options": ["Flex", "Studio", "Voice", "Chat", "SMS", "Functions"],
+  "options": ["ConnieRTC", "Studio", "Voice", "Chat", "SMS", "Functions"],
   "required": true,
   "multi_select": true
 }
 ```
 When provided with `required: true`, the disposition form will enforce that the user selects a value.
 
-When provided with `multi_select: true`, the options will be rendered as checkboxes, to allow multiple selections. Checked values are concatenated into a pipe delimited string in the attributes ("Flex|Voice|Studio", for the above example). This means that you should not include pipes within the configured `options`.
+When provided with `multi_select: true`, the options will be rendered as checkboxes, to allow multiple selections. Checked values are concatenated into a pipe delimited string in the attributes ("ConnieRTC|Voice|Studio", for the above example). This means that you should not include pipes within the configured `options`.
 
 ### Notes ###
 

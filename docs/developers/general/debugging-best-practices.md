@@ -338,7 +338,7 @@ curl -X POST http://localhost:3001/features/[FEATURE_NAME]/[FUNCTION_NAME] \
 
 ### Scenario 3: Studio Flow not executing
 
-**Symptoms**: Calls not reaching Flex or functions
+**Symptoms**: Calls not reaching ConnieRTC or functions
 
 **Investigation Steps**:
 1. Verify phone number webhook configuration

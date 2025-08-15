@@ -5,13 +5,13 @@ title: Contacts
 
 ## Overview
 
-This feature adds a contacts directory to Flex. The contacts directory consists of recent contacts, personal contacts, and shared contacts.
+This feature adds a contacts directory to ConnieRTC. The contacts directory consists of recent contacts, personal contacts, and shared contacts.
 
 - Recent contacts are populated based on completed voice and chat tasks, and allow for an agent to easily redial that contact. Recents are persisted for 14 days by default, and agents can choose to clear their recents.
 - Personal contacts are contacts which are created by the worker, and are specific to that worker. The worker can add, modify, or delete any of their personal contacts.
 - Shared contacts are contacts which are visible to all workers. By default, only workers with the admin or supervisor role can add, modify, or delete shared contacts. However, these can be optionally made editable for agents as well.
 
-Contacts can be viewed, managed, and dialed using the contacts view added to Flex. In addition, a "Call Contact" section is added to the outbound dialer panel, allowing easy dialing of contacts from any view. Also, if the `custom-transfer-directory` feature is enabled, contacts are available in the transfer panel for cold or warm transfer, and shared contacts can be configured to disable cold and/or warm transfer capability.
+Contacts can be viewed, managed, and dialed using the contacts view added to ConnieRTC. In addition, a "Call Contact" section is added to the outbound dialer panel, allowing easy dialing of contacts from any view. Also, if the `custom-transfer-directory` feature is enabled, contacts are available in the transfer panel for cold or warm transfer, and shared contacts can be configured to disable cold and/or warm transfer capability.
 
 ## User experience
 

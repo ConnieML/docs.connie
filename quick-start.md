@@ -7,7 +7,7 @@
 Before you begin, make sure you have:
 
 - ✅ **Node.js 18+** - [Download here](https://nodejs.org)
-- ✅ **Twilio Account** - [Sign up free](https://www.twilio.com/try-twilio)
+- ✅ **Connie Account** - [Sign up free](https://www.twilio.com/try-twilio)
 - ✅ **Twilio CLI** - [Install guide](https://www.twilio.com/docs/twilio-cli/quickstart)
 - ✅ **Google Account** - For Google Sheets integration
 
@@ -29,7 +29,7 @@ The script will:
 2. ✅ Set up Twilio credentials
 3. ✅ Create sample customer database
 4. ✅ Deploy serverless functions
-5. ✅ Configure basic Flex plugin
+5. ✅ Configure basic ConnieRTC plugin
 6. ✅ Provide test phone numbers
 
 ## Option 2: Manual Setup
@@ -45,7 +45,7 @@ npm install
 ### Step 2: Configure Twilio
 
 ```bash
-# Set up your Twilio profile
+# Set up your Connie profile
 twilio profiles:create
 
 # Or set environment variables
@@ -61,7 +61,7 @@ npm install
 npm run deploy
 ```
 
-### Step 4: Deploy Flex Plugin
+### Step 4: Deploy ConnieRTC Plugin
 
 ```bash
 cd ../flex-plugin
@@ -74,7 +74,7 @@ npm run deploy
 
 1. Import the sample Studio Flow from `examples/studio-flows/basic-crm-lookup.json`
 2. Update the serverless function URLs
-3. Assign the flow to your Twilio phone number
+3. Assign the flow to your Connie phone number
 
 ## Testing Your Deployment
 
@@ -86,7 +86,7 @@ Once deployed, test with these sample numbers:
 
 ## What You'll See
 
-When a call comes in, your Flex agent will see:
+When a call comes in, your ConnieRTC agent will see:
 
 ```
 ┌─────────────────────────────────────┐

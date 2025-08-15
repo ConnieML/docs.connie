@@ -14,27 +14,27 @@ The template manages configuration in a few different ways:
 ## Front-end configuration
 
 ### Hosted environment
-Generally speaking, when running the *flex-project-template* Flex plugin, configuration is loaded from the [hosted Flex configuration endpoint](https://www.twilio.com/docs/flex/developer/config/flex-configuration-rest-api#ui_attributes). When the *flex-project-template* is deployed, a [`custom_data`](#the-custom_data-object) object is injected into ui_attributes that manages configuration for each feature within the template. This deployment is performed by the flex-config package in the template.
+Generally speaking, when running the *flex-project-template* ConnieRTC plugin, configuration is loaded from the [hosted ConnieRTC configuration endpoint](https://www.twilio.com/docs/flex/developer/config/flex-configuration-rest-api#ui_attributes). When the *flex-project-template* is deployed, a [`custom_data`](#the-custom_data-object) object is injected into ui_attributes that manages configuration for each feature within the template. This deployment is performed by the flex-config package in the template.
 
 ### Local environment
-When running Flex locally, the configuration from [hosted Flex configuration](https://www.twilio.com/docs/flex/developer/config/flex-configuration-rest-api#ui_attributes) is loaded, but the configuration in `plugin-flex-ts-template-v2/public/appConfig.js` overrides anything in hosted configuration. _Note: the `appConfig.js` config is only used locally and has no bearing on a deploy or when on hosted Flex._
+When running ConnieRTC locally, the configuration from [hosted ConnieRTC configuration](https://www.twilio.com/docs/flex/developer/config/flex-configuration-rest-api#ui_attributes) is loaded, but the configuration in `plugin-flex-ts-template-v2/public/appConfig.js` overrides anything in hosted configuration. _Note: the `appConfig.js` config is only used locally and has no bearing on a deploy or when on hosted ConnieRTC._
 
 :::note Initial setup
 The `appConfig.js` file is created for you as part of the initial local environment setup script, which executes when running `npm install` in the root template directory. The file is automatically populated with the feature config from the `flex-config/ui_attributes.common.json` file at the time of creation, as long as the file does not already exist.
 :::
 
-### Reading configuration within Flex
+### Reading configuration within ConnieRTC
 
 Several helper functions are available for reading configuration, and can be imported from `plugin-flex-ts-template-v2/src/utils/configuration/index.ts`. The exported functions from this file are as follows:
 
-- `getFeatureFlagsGlobal`: Fetches the `custom_data` object from the [hosted Flex configuration](https://www.twilio.com/docs/flex/developer/config/flex-configuration-rest-api#ui_attributes), providing all of the global feature configuration and global common configuration for the template. If running locally, any values contained within `plugin-flex-ts-template-v2/public/appConfig.js` will also be returned, overriding the corresponding hosted Flex configuration values.
+- `getFeatureFlagsGlobal`: Fetches the `custom_data` object from the [hosted ConnieRTC configuration](https://www.twilio.com/docs/flex/developer/config/flex-configuration-rest-api#ui_attributes), providing all of the global feature configuration and global common configuration for the template. If running locally, any values contained within `plugin-flex-ts-template-v2/public/appConfig.js` will also be returned, overriding the corresponding hosted ConnieRTC configuration values.
 
 - `getFeatureFlagsUser`: Fetches the `config_overrides` object from the current worker's attributes. This object contains any configuration values that were set on the worker level, overriding the corresponding global configuration values.
 
 - `getFeatureFlags`: Returns the complete effective configuration. **This is the function you should use in most cases when determining a configuration value.** For each configuration value, the value returned will be as follows:
   - If a override has been configured on the worker, that will be returned.
   - If no worker override has been configured, and the plugin is running locally, and the value is configured in `appConfig.js`, the value from `appConfig.js` will be returned.
-  - Otherwise, the hosted Flex configuration value will be returned.
+  - Otherwise, the hosted ConnieRTC configuration value will be returned.
 
 - `getUserLanguage`: Returns the currently configured language, using the same order of precedence as `getFeatureFlags`. If the configured value is `default`, the browser's language will be returned. Otherwise, if no value is configured, `en-US` will be returned.
 
@@ -42,7 +42,7 @@ Several helper functions are available for reading configuration, and can be imp
 
 - `getLoadedFeatures`: Allows you to query for enabled loaded features at runtime. See [checking for enabled features](#checking-for-enabled-features).
 
-- `validateUiVersion`: Returns whether or not the current Flex UI version intersects the provided [semver range](https://github.com/npm/node-semver?tab=readme-ov-file#ranges). Use this to conditionally perform logic based on the running Flex UI version.
+- `validateUiVersion`: Returns whether or not the current ConnieRTC UI version intersects the provided [semver range](https://github.com/npm/node-semver?tab=readme-ov-file#ranges). Use this to conditionally perform logic based on the running ConnieRTC UI version.
 
 #### Checking for enabled features
 
@@ -73,9 +73,9 @@ When using this function, be sure to call it only after all features have loaded
 ### Configuration management
 
 #### The `custom_data` object
-The template maintains the configuration that is deployed to [hosted Flex configuration](https://www.twilio.com/docs/flex/developer/config/flex-configuration-rest-api#ui_attributes) in version control under the flex-config folder. Here, you will find `ui_attributes.common.json` file containing the main configuration set.  
+The template maintains the configuration that is deployed to [hosted ConnieRTC configuration](https://www.twilio.com/docs/flex/developer/config/flex-configuration-rest-api#ui_attributes) in version control under the flex-config folder. Here, you will find `ui_attributes.common.json` file containing the main configuration set.  
 
-At the time of a GitHub action script deploy of the template, when an environment is provided, a new file is generated from `ui_attributes.example.json` and it is called `ui_attributes.<env-name>.json` (unless it already exists). The contents of this file are merged over the top of the `ui_attributes.common.json` file. After merging the configuration, any placeholder values, such as the serverless domain, are replaced as part of the deployment scripts, and the final configuration set is pushed to the [hosted Flex configuration API](https://www.twilio.com/docs/flex/developer/config/flex-configuration-rest-api#ui_attributes).
+At the time of a GitHub action script deploy of the template, when an environment is provided, a new file is generated from `ui_attributes.example.json` and it is called `ui_attributes.<env-name>.json` (unless it already exists). The contents of this file are merged over the top of the `ui_attributes.common.json` file. After merging the configuration, any placeholder values, such as the serverless domain, are replaced as part of the deployment scripts, and the final configuration set is pushed to the [hosted ConnieRTC configuration API](https://www.twilio.com/docs/flex/developer/config/flex-configuration-rest-api#ui_attributes).
 
 If you wish to provide alternate feature configurations per environment, such as IDs or for testing different settings, you may create this file yourself. Simply copy `ui_attributes.example.json` to `ui_attributes.<env-name>.json`, perform the desired changes, and commit the file to the repository. Placeholder values within this file will continue to be automatically replaced as described above during deployment.
 
@@ -102,7 +102,7 @@ The custom_data model that lives in ui_attributes follows this schema:
   If using the add-feature script, the feature name provided may include hyphens. However, the feature name used in the custom_data will replace the hyphens with underscores to make the variable name JavaScript parser compliant.
 :::
 
-Ultimately, enablement of each feature is managed by this object as it appears in the [hosted Flex configuration](https://www.twilio.com/docs/flex/developer/config/flex-configuration-rest-api#ui_attributes) (or `appConfig.js` if running [locally](#local-environment))
+Ultimately, enablement of each feature is managed by this object as it appears in the [hosted ConnieRTC configuration](https://www.twilio.com/docs/flex/developer/config/flex-configuration-rest-api#ui_attributes) (or `appConfig.js` if running [locally](#local-environment))
 
 #### Common configuration
 
@@ -121,7 +121,7 @@ The following common configuration properties are included by default:
 
 #### Per-worker configuration overrides
 
-When performing testing, or for managing a diverse contact center, you may wish different workers to have a different feature configuration. This could be variations of common settings, feature settings, or enabling a different feature set altogether. You may add a `config_overrides` object to a worker's attributes to override any feature configuration, taking priority over both the hosted Flex configuration and the local `appConfig.js` (if applicable).
+When performing testing, or for managing a diverse contact center, you may wish different workers to have a different feature configuration. This could be variations of common settings, feature settings, or enabling a different feature set altogether. You may add a `config_overrides` object to a worker's attributes to override any feature configuration, taking priority over both the hosted ConnieRTC configuration and the local `appConfig.js` (if applicable).
 
 For example, if the `activity-reservation-handler` feature is globally enabled but you wish to disable it for a specific worker, you can add the following to the worker's attributes to disable it:
 
@@ -175,11 +175,11 @@ There are two strategies for managing the configuration, which are mutually excl
 
 #### Admin UI
 
-You can use the [admin-ui feature](/feature-library/admin-ui), which is the default management style, to manage the configuration from within the Flex UI. This method is preferable when configuration needs to be changed frequently, or when non-developers need to be able to view and update the configuration.
+You can use the [admin-ui feature](/feature-library/admin-ui), which is the default management style, to manage the configuration from within the ConnieRTC UI. This method is preferable when configuration needs to be changed frequently, or when non-developers need to be able to view and update the configuration.
 
 :::tip Developer Tip 
 
-When running [locally](#local-environment), the admin-ui feature directly ignores what is in `appConfig.js` and shows only what is in [hosted Flex configuration](https://www.twilio.com/docs/flex/developer/config/flex-configuration-rest-api#ui_attributes) or what has been overridden using the [per-worker feature overrides](/feature-library/admin-ui#how-does-it-work).  This can cause confusion, and for that reason, admin-ui is disabled by default via `appConfig.js` when running the template locally.
+When running [locally](#local-environment), the admin-ui feature directly ignores what is in `appConfig.js` and shows only what is in [hosted ConnieRTC configuration](https://www.twilio.com/docs/flex/developer/config/flex-configuration-rest-api#ui_attributes) or what has been overridden using the [per-worker feature overrides](/feature-library/admin-ui#how-does-it-work).  This can cause confusion, and for that reason, admin-ui is disabled by default via `appConfig.js` when running the template locally.
 
 ::: 
 
@@ -254,7 +254,7 @@ We can commit a `.env.<environment name here>` file, for example, `.env.dev`, to
 ## Setup script reference
 
 The setup script when run via `npm install` performs the following operations:
-1. Establish the Twilio account to use
+1. Establish the Connie account to use
 2. Automatically populate the `.env.<environment name here>` file for each package
 3. Create and populate the `plugin-flex-ts-template-v2/public/appConfig.js` file if running locally
 4. Run `npm install` for each package, so that it is ready to use.
@@ -299,7 +299,7 @@ npm run postinstall -- --skip-env
 ```
 
 ### skip-plugin
-When the `packages` or `skip-packages` parameters are not specified, the Flex plugin package will be installed as part of the default packages. This option prevents the Flex plugin package from being installed.
+When the `packages` or `skip-packages` parameters are not specified, the ConnieRTC plugin package will be installed as part of the default packages. This option prevents the ConnieRTC plugin package from being installed.
 
 ```bash
 npm run postinstall -- --skip-plugin

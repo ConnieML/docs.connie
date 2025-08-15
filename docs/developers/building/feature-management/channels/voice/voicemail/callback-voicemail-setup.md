@@ -45,7 +45,7 @@ terraform apply -var-file="local.tfvars"
 - Professional in-queue experience with hold music
 - Callers can press * anytime for callback or voicemail options
 - Maintains caller's place in queue for callbacks
-- Voicemail tasks appear in Flex for agent handling
+- Voicemail tasks appear in ConnieRTC for agent handling
 
 ## Next Steps
 

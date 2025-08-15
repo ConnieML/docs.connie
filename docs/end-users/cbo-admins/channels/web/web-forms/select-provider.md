@@ -20,7 +20,7 @@ flowchart LR
     B --> C[Form Validation & Processing]
     C --> D[Email to ConnieRTC]
     D --> E[Twilio Studio Flow]
-    E --> F[Flex Task Queue]
+    E --> F[ConnieRTC Task Queue]
     F --> G[Staff Agent Review]
     
     style A fill:#e1f5fe
@@ -37,7 +37,7 @@ flowchart LR
 - **Validation & Processing**: Your chosen provider validates and processes the submission
 - **Email Routing**: Form data is emailed to your ConnieRTC endpoint (e.g., `referrals@connie.host`)
 - **Automatic Processing**: ConnieRTC Studio Flow processes the email and form data
-- **Task Creation**: Each form submission becomes a task in your Flex queue for staff review
+- **Task Creation**: Each form submission becomes a task in your ConnieRTC queue for staff review
 - **Centralized Management**: All form submissions are tracked within ConnieRTC
 
 ## Select Your Web Forms Provider
@@ -96,7 +96,7 @@ Choose your web forms service provider below to view setup instructions and inte
 | **Status** | ✅ Production Ready | 📋 Coming Soon | 📋 Coming Soon |
 | **Form Type** | PDF-based professional forms | Web-native forms | Interactive conversational forms |
 | **Email Integration** | ✅ Yes | TBD | TBD |
-| **Flex Task Creation** | ✅ Yes | TBD | TBD |
+| **ConnieRTC Task Creation** | ✅ Yes | TBD | TBD |
 | **PDF Generation** | ✅ Yes | TBD | TBD |
 | **Validation** | ✅ Professional validation | TBD | TBD |
 | **Workflow Integration** | ✅ WordPress + Adobe + Email | TBD | TBD |
@@ -104,7 +104,7 @@ Choose your web forms service provider below to view setup instructions and inte
 ## Key Features
 
 ### Seamless Workflow Integration
-- **Automatic Task Creation**: Form submissions automatically create tasks in Flex queue
+- **Automatic Task Creation**: Form submissions automatically create tasks in ConnieRTC queue
 - **Email Processing**: Studio Flow processes form emails with full data capture
 - **Centralized Management**: All form submissions tracked in ConnieRTC dashboard
 - **Professional Display**: Tasks show as "Web Form Submission" with proper attribution
@@ -163,7 +163,7 @@ Task Skill: "H2H.ORG Web Referral"
 - **Email Configuration**: Dedicated email addresses for form routing (e.g., `referrals@connie.host`)
 - **Twilio Email Channel**: Configured email channel for form processing
 - **Studio Flow**: Custom Studio Flow for form-to-task conversion
-- **ConnieRTC Access**: Active Flex accounts for task management
+- **ConnieRTC Access**: Active ConnieRTC accounts for task management
 
 ### Compliance & Security
 - **Data Protection**: All form data encrypted in transit and at rest
@@ -190,7 +190,7 @@ Task Skill: "H2H.ORG Web Referral"
 - **Professional Display**: Branded task names and descriptions
 
 ### Phase 2: Planned Enhancements
-- **Inline Form Preview**: View form submissions directly in Flex interface
+- **Inline Form Preview**: View form submissions directly in ConnieRTC interface
 - **CRM Container Integration**: Enhanced form data display within tasks
 - **Advanced Routing**: Complex routing based on form field values
 - **Analytics Dashboard**: Form submission metrics and analytics

@@ -12,16 +12,16 @@ This template feature will remain available for use cases that are not supported
 
 <PluginLibraryFeature />
 
-There are various ways to enable call recordings with Twilio Flex. Let's outline those methods to better understand when using this custom solution would be preferable.
+There are various ways to enable call recordings with Twilio ConnieRTC. Let's outline those methods to better understand when using this custom solution would be preferable.
 
-1. The simplest approach is to turn on "Call Recording" in [Flex Settings](https://www.twilio.com/console/flex/settings) on the Twilio Console. Enabling this setting records the conference and automatically updates the task attribute `conversations.segment_link` with the recording URL so it can be played back in Flex Insights.
+1. The simplest approach is to turn on "Call Recording" in [ConnieRTC Settings](https://www.twilio.com/console/flex/settings) on the Twilio Console. Enabling this setting records the conference and automatically updates the task attribute `conversations.segment_link` with the recording URL so it can be played back in ConnieRTC Insights.
    - Pros:
      - One click configuration, no custom code or setup required
      - All inbound and outbound calls are automatically recorded
    - Cons:
-     - Conference recordings are single channel, or mono, recordings. This means analytics tools like Flex Insights are unable to determine if the customer or the agent is speaking, limiting capabilities of those tools such as detecting cross talk.
+     - Conference recordings are single channel, or mono, recordings. This means analytics tools like ConnieRTC Insights are unable to determine if the customer or the agent is speaking, limiting capabilities of those tools such as detecting cross talk.
      - No option for custom business logic to determine which calls are recorded. All calls, inbound and outbound, are recorded.
-1. Follow our [Enabling Dual-Channel Recordings](https://www.twilio.com/docs/flex/developer/insights/enable-dual-channel-recordings#using-studio-to-enable-recordings) guide to start a dual-channel recording in Studio and capture recording metadata on the task attributes for playback in Flex Insights
+1. Follow our [Enabling Dual-Channel Recordings](https://www.twilio.com/docs/flex/developer/insights/enable-dual-channel-recordings#using-studio-to-enable-recordings) guide to start a dual-channel recording in Studio and capture recording metadata on the task attributes for playback in ConnieRTC Insights
    - Pros:
      - No custom code required. Configuration is done entirely in Studio's graphical interface.
      - Recordings are dual-channel, capturing customer and agent audio in their own audio channels
@@ -29,8 +29,8 @@ There are various ways to enable call recordings with Twilio Flex. Let's outline
      - All audio played to the customer by the IVR can be included in the recording, depending where in the Studio flow the recording is started. This is helpful for situations when you need to capture a specific message played to the customer, such as a notification that the call is being recorded.
    - Cons:
      - All audio played to the caller while they wait in queue for an agent to become available will be included in the recording. This is likely not an issue for contact centers with low wait times, but when wait times are long, recording durations will increase along with recording storage costs.
-     - This method does not address outbound calls from Flex as Studio flows are only triggered by inbound calls. So a custom solution would be required to record outbound calls.
-1. The solution in this feature is the third method we'll consider. Recordings are started from a this plugin, leveraging a server side Twilio Function to call the Twilio Recordings API. The task attribute `conversations.media` is updated with the recording metadata so Flex Insights can play the recording.
+     - This method does not address outbound calls from ConnieRTC as Studio flows are only triggered by inbound calls. So a custom solution would be required to record outbound calls.
+1. The solution in this feature is the third method we'll consider. Recordings are started from a this plugin, leveraging a server side Twilio Function to call the Twilio Recordings API. The task attribute `conversations.media` is updated with the recording metadata so ConnieRTC Insights can play the recording.
    - Pros:
      - Recordings are dual-channel, capturing customer and agent audio in their own audio channels
      - The same solution works for both inbound and outbound calls
@@ -39,13 +39,13 @@ There are various ways to enable call recordings with Twilio Flex. Let's outline
    - Cons:
      - Custom code is required, both on the front end and the backend (facilitated by this feature)
      - If it's desired to record the IVR messaging, that will not be included
-     - If the worker uses the "Join Call" button in Flex UI when multiple instances are open, and the worker call leg is the one being recorded, the recording will not restart when the new instance's call leg starts.
+     - If the worker uses the "Join Call" button in ConnieRTC UI when multiple instances are open, and the worker call leg is the one being recorded, the recording will not restart when the new instance's call leg starts.
 
 ## setup and dependencies
 
 The feature is enabled via flex-config asset for your environment. There is also a `channel` configuration property to choose which perspective should be recorded--the customer perspective or the worker perspective. For example, if the customer is on hold and `channel` is set to `customer`, the recording will contain hold music. If `channel` is set to `worker`, the recording will not contain hold music and the worker will be heard instead.
 
-If enabling the dual channel recording feature - you should also **disable** the call recording flag in the Flex Configuration within Twilio Console > Flex > Manage > Voice.
+If enabling the dual channel recording feature - you should also **disable** the call recording flag in the ConnieRTC Configuration within Twilio Console > ConnieRTC > Manage > Voice.
 
 You may also optionally specify task attributes and/or queues that should exclude a task from being recorded by the dual-channel recording feature:
 - To exclude recording tasks based on the task attributes present, set the `exclude_attributes` configuration property to an array of key/value pair objects. For example, to prevent recording outbound calls:

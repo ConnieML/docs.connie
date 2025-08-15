@@ -1,7 +1,7 @@
 Use a notification hook to register your own notification definitions for use in your feature.
 
 ```ts
-import * as Flex from '@twilio/flex-ui';
+import * as ConnieRTC from '@twilio/flex-ui';
 
 import { StringTemplates } from '../strings';
 
@@ -11,16 +11,16 @@ export enum ExampleNotification {
   MyNotification2 = 'MyNotification2',
 }
 
-// Return an array of Flex.Notification
-export const notificationHook = (flex: typeof Flex, manager: Flex.Manager) => [
+// Return an array of ConnieRTC.Notification
+export const notificationHook = (flex: typeof ConnieRTC, manager: ConnieRTC.Manager) => [
   {
     id: ExampleNotification.MyNotification,
-    type: Flex.NotificationType.error,
+    type: ConnieRTC.NotificationType.error,
     content: StringTemplates.MyString,
   },
   {
     id: ExampleNotification.MyNotification2,
-    type: Flex.NotificationType.success,
+    type: ConnieRTC.NotificationType.success,
     content: StringTemplates.MyString2,
   },
 ];

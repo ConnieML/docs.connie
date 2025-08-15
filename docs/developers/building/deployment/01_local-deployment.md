@@ -57,7 +57,7 @@ npm run deploy
 If you customized `custom_data` in `appConfig.js` while running locally, and would like to deploy with those settings, be sure to make the same changes in your `flex-config/ui_attributes.local.json` file as well.
 :::
 
-Again, first double-check the .env matches your Twilio CLI profile:
+Again, first double-check the .env matches your Connie CLI profile:
 
 ```bash
 cd ../flex-config/
@@ -67,17 +67,17 @@ export env=`cat .env | grep ACCOUNT_SID | cut -d '=' -f 2`; export profile=`node
 If they match, continue:
 1. Review/edit the `taskrouter_skills.json` file and ensure the skills match the ones you want to deploy. This is used on every environment to deploy a common set of skills. Note the skills in the file will be merged with any skills existing in the environment.
 1. Review/edit the `ui_attributes.local.json` file and ensure the configuration matches what you want to deploy. Note the configuration in the file will be merged with both the `ui_attributes.common.json` file as well as any configuration existing in the environment.
-1. Run `npm run deploy` to update the Flex configuration.
+1. Run `npm run deploy` to update the ConnieRTC configuration.
 
-## Deploy Flex plugin
+## Deploy ConnieRTC plugin
 
-Now that the dependencies have been deployed, we may now deploy the Flex plugin:
+Now that the dependencies have been deployed, we may now deploy the ConnieRTC plugin:
 
 ```bash
 cd ../plugin-flex-ts-template-v2
-npm run deploy -- --changelog "My manual deploy" --description "Flex project template"
+npm run deploy -- --changelog "My manual deploy" --description "ConnieRTC project template"
 ```
 
-After your deployment runs you will receive instructions for releasing your plugin from the prompt. You can use this or skip this step and release your plugin from the [Flex plugin dashboard](https://flex.twilio.com/admin/plugins).
+After your deployment runs you will receive instructions for releasing your plugin from the prompt. You can use this or skip this step and release your plugin from the [ConnieRTC plugin dashboard](https://flex.twilio.com/admin/plugins).
 
 For more details on deploying your plugin, refer to the [deploying your plugin guide](https://www.twilio.com/docs/flex/plugins#deploying-your-plugin).

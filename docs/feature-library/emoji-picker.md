@@ -3,9 +3,9 @@ sidebar_label: emoji-picker
 title: emoji-picker
 ---
 
-This feature adds an [EmojiMart emoji picker](https://missiveapp.com/open/emoji-mart/) to Flex messaging.
+This feature adds an [EmojiMart emoji picker](https://missiveapp.com/open/emoji-mart/) to ConnieRTC messaging.
 
-## flex-user-experience
+## rtc-user-experience
 
 ![Emoji picker demo](/img/features/emoji-picker/emoji-picker.gif)
 
@@ -23,4 +23,4 @@ To enable the emoji picker feature, under your `flex-config` attributes set the 
 
 ## how does it work?
 
-This feature embeds the [EmojiMart emoji picker](https://missiveapp.com/open/emoji-mart/). Emoji data is fetched dynamically when the picker loads, to prevent bloating the plugin size. When an emoji is selected, the Flex UI `SetInputText` action is invoked to append the emoji to the message input field.
+This feature embeds the [EmojiMart emoji picker](https://missiveapp.com/open/emoji-mart/). Emoji data is fetched dynamically when the picker loads, to prevent bloating the plugin size. When an emoji is selected, the ConnieRTC UI `SetInputText` action is invoked to append the emoji to the message input field.

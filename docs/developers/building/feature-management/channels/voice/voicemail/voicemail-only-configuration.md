@@ -17,7 +17,7 @@ This configuration uses a special parameter to enable voicemail-only mode. Witho
 Some organizations need dedicated voicemail lines that:
 - Skip all callback and hold options
 - Direct callers immediately to voicemail recording
-- Still create Flex tasks and send email notifications
+- Still create ConnieRTC tasks and send email notifications
 - Use the same infrastructure as regular lines
 
 ## Implementation
@@ -29,7 +29,7 @@ In your Studio Flow for the voicemail-only number:
 1. **Add a Say/Play Widget** (optional)
    - Welcome message: "Thank you for calling [Organization]. Please leave your message after the tone."
    
-2. **Configure Send to Flex Widget**
+2. **Configure Send to ConnieRTC Widget**
    - **Hold Music TwiML URL**: Add the `voicemailOnly=true` parameter
    ```
    https://[YOUR-DOMAIN]/features/callback-and-voicemail-with-email/studio/wait-experience?voicemailOnly=true
@@ -44,7 +44,7 @@ When `voicemailOnly=true` is passed:
 
 1. **Skips** all callback and hold queue logic
 2. **Immediately prompts** for voicemail recording
-3. **Creates Flex task** with voicemail attributes
+3. **Creates ConnieRTC task** with voicemail attributes
 4. **Sends email** to configured admins
 5. **Uses same workflow** and routing as regular voicemails
 
@@ -56,7 +56,7 @@ When `voicemailOnly=true` is passed:
 4. **Verify**:
    - No callback or hold options offered
    - Direct to voicemail recording
-   - Task appears in Flex
+   - Task appears in ConnieRTC
    - Email notification sent
 
 ## Technical Details

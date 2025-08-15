@@ -23,7 +23,7 @@ It also enables the addition of an external directory, enabling the following be
 - present a list of external transfer numbers from the `contacts` feature if enabled
   - validation checks performed on transfer numbers with notifications of any validation failures
 
-## flex-user-experience
+## rtc-user-experience
 
 Example queue transfer
 
@@ -61,7 +61,7 @@ Enable the feature in the flex-config asset for your environment.
 }
 ```
 
-NOTE: warm transfer for external directory entries is only available if either the 'conference' feature is also enabled OR Flex's native warm transfer feature is enabled (currently in beta). If neither of these are enabled, a notification will be posted at login informing the user that warm transfers will not be available.
+NOTE: warm transfer for external directory entries is only available if either the 'conference' feature is also enabled OR ConnieRTC's native warm transfer feature is enabled (currently in beta). If neither of these are enabled, a notification will be posted at login informing the user that warm transfers will not be available.
 
 Example worker attribute setting for when the `enforce_queue_filter_from_worker_object` setting is enabled:
 
@@ -73,4 +73,4 @@ worker.attributes : {
 
 ## how does it work?
 
-The queue and worker tabs are replaced with custom components using the Flex component framework. When the component is rendered, a list is loaded from the TaskRouter SDK and cached. Then the insights client is used to load the real time stats for all the queues. The real time stats are appended to each queue retrieved in the insights client and then any filters are applied. Various events trigger a re-evaluation of the filtered list including queue updates (update, add or remove) or an entry into the search field.
+The queue and worker tabs are replaced with custom components using the ConnieRTC component framework. When the component is rendered, a list is loaded from the TaskRouter SDK and cached. Then the insights client is used to load the real time stats for all the queues. The real time stats are appended to each queue retrieved in the insights client and then any filters are applied. Various events trigger a re-evaluation of the filtered list including queue updates (update, add or remove) or an entry into the search field.

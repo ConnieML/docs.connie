@@ -5,7 +5,7 @@ title: attribute-viewer
 
 This feature displays task attributes in the task info tab, and displays worker attributes in the teams view worker panel.
 
-## flex-user-experience
+## rtc-user-experience
 
 ![Task attributes screenshot](/img/features/attribute-viewer/attribute-viewer.png)
 

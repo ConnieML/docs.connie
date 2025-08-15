@@ -4,14 +4,14 @@ title: teams-view-enhancements
 ---
 
 ## Overview
- In Flex, Supervisors can monitory agent activity in the [Teams View](https://www.twilio.com/docs/flex/end-user-guide/insights/monitor-agent-activity). The Teams View displays the agent's status and the tasks they are working on. Supervisors can also listen to live calls and view the chat/messaging conversations. 
+ In ConnieRTC, Supervisors can monitory agent activity in the [Teams View](https://www.twilio.com/docs/flex/end-user-guide/insights/monitor-agent-activity). The Teams View displays the agent's status and the tasks they are working on. Supervisors can also listen to live calls and view the chat/messaging conversations. 
 
 The Teams View can be modified by adding and removing columns in the [WorkersDataTable](https://www.twilio.com/docs/flex/developer/ui/components#add-columns-to-workersdatatable) to display some of the agent attributes or their skills.  The TaskCard component can be enhanced to show different information for each task or to change it's visual appearance.
 
 ## How does it work?
 
 ### Add Columns with Worker Attributes
-The workers skills array can be re-formatted and shown in an additional column in the WorksDataTable of the Teams View.  This gives Supervisors a quicker way to review worker skills. Additionally, extra columns can be added to display worker attributes such as `team_name`, `department_name`, `location` or other custom attributes. It is highly recommended to configure these worker attributes via [Flex SSO](https://www.twilio.com/docs/flex/admin-guide/setup/sso-configuration#flex-insights)
+The workers skills array can be re-formatted and shown in an additional column in the WorksDataTable of the Teams View.  This gives Supervisors a quicker way to review worker skills. Additionally, extra columns can be added to display worker attributes such as `team_name`, `department_name`, `location` or other custom attributes. It is highly recommended to configure these worker attributes via [ConnieRTC SSO](https://www.twilio.com/docs/flex/admin-guide/setup/sso-configuration#flex-insights)
 
 ### Highlight Tasks
 We can highlight tasks that have a long handle time by adding a colored border around the Task Card based on the task age. For example, if the task is older than 3 minutes (180 seconds) we can show a yellow border. And if the task age exceeds 5 minutes (300 seconds) we can show red border. This task highlighting may assist supervisors with observing how agents are performing, or if they are having challenges completing tasks within expected handling time ranges.  
@@ -19,7 +19,7 @@ We can highlight tasks that have a long handle time by adding a colored border a
 ### Task Queue Name
 
 :::caution Deprecated
-The task queue name is displayed on the task card by default in Flex UI 2.11 and later, so this option is no longer needed in these versions.
+The task queue name is displayed on the task card by default in ConnieRTC UI 2.11 and later, so this option is no longer needed in these versions.
 :::
 
 By default, the [SupervisorTaskCardHeader template string](https://www.twilio.com/docs/flex/developer/ui/v1/localization-and-templating#list-of-available-content-strings) displays the `{{task.defaultFrom}}` value which can be either the caller's phone number or the chat customer's name (identity).  This specific task detail may not be useful for Supervisors so we could change that template string to `{{task.queueName}}` to be able to see which queues the agent is working in. 
@@ -35,7 +35,7 @@ This feature can be enabled via the `flex-config` attributes. Just set the `team
 
 In the list of `columns`, select which worker attributes (team, department, location, agent_skills) to display in the WorkersTable.
 
-By default the Teams View shows both the Calls and other Tasks for each worker.  For a voice-only Flex implementation, you can remove the Tasks column by setting `other_tasks = false`. Likewise for chat/messaging only Flex implementations, you could remove the Calls column.
+By default the Teams View shows both the Calls and other Tasks for each worker.  For a voice-only ConnieRTC implementation, you can remove the Tasks column by setting `other_tasks = false`. Likewise for chat/messaging only ConnieRTC implementations, you could remove the Calls column.
 
 The `activity_icon` column display an activity indicator for each agent using the same activity configuration (icons & colors) from the [Metrics Data Tiles](metrics-data-tiles.md).
 
@@ -66,7 +66,7 @@ Note: The Teams View can only display up to 200 agents, so the worker data avail
     }
 ```
 
-## Flex User Experience
+## ConnieRTC User Experience
 
 ![TeamsViewColumns](/img/features/teams-view-enhancements/teams-view-columns.png)
 

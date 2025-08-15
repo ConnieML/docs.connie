@@ -12,7 +12,7 @@ Welcome to ConnieRTC development! Whether you're contributing to the platform or
 
 ### Prerequisites
 - ✅ **Node.js 18+** - [Download here](https://nodejs.org)
-- ✅ **Twilio Account** - [Sign up free](https://www.twilio.com/try-twilio)
+- ✅ **Connie Account** - [Sign up free](https://www.twilio.com/try-twilio)
 - ✅ **Twilio CLI** - [Install guide](https://www.twilio.com/docs/twilio-cli/quickstart)
 - ✅ **Git** - For version control
 
@@ -113,7 +113,7 @@ git push origin feature/your-feature-name
 
 ### Frontend Development
 - **React Components** - UI component library
-- **Flex Hooks** - Integration with Twilio Flex
+- **ConnieRTC Hooks** - Integration with Twilio ConnieRTC
 - **Styling Guide** - CSS and theming
 
 ### Backend Development  

@@ -1,7 +1,7 @@
 # Admin UI CORS Configuration Summary
 
 ## Issue Resolution
-Fixed the Flex template admin UI "Edit Common Settings" CORS errors by ensuring the correct environment configuration and implementing proper CORS headers.
+Fixed the ConnieRTC template admin UI "Edit Common Settings" CORS errors by ensuring the correct environment configuration and implementing proper CORS headers.
 
 ## Environment Configuration
 - **Active Environment**: Development (`custom-flex-extensions-serverless-1866-dev.twil.io`)
@@ -9,7 +9,7 @@ Fixed the Flex template admin UI "Edit Common Settings" CORS errors by ensuring 
 - **Plugin Configuration**: Updated `appConfig.js` to point to dev environment
 
 ## CORS Implementation
-Added proper CORS headers to serverless functions using Twilio's recommended approach:
+Added proper CORS headers to serverless functions using Connie's recommended approach:
 
 ### Files Modified:
 1. `/serverless-functions/src/functions/features/admin-ui/flex/fetch-config.js`
@@ -63,10 +63,10 @@ curl -i "https://custom-flex-extensions-serverless-1866-dev.twil.io/features/adm
 5. OPTIONS preflight requests must be handled explicitly
 
 ## Next Steps
-The admin UI should now load configuration properly without CORS errors. The "Edit Common Settings" functionality should work correctly when accessed from the Flex interface.
+The admin UI should now load configuration properly without CORS errors. The "Edit Common Settings" functionality should work correctly when accessed from the ConnieRTC interface.
 
 ## Environment Documentation
 - **Production Domain**: `custom-flex-extensions-serverless-1866.twil.io`
 - **Dev Domain**: `custom-flex-extensions-serverless-1866-dev.twil.io` (ACTIVE)
 - **Client**: HHOVV (Hardee Haven Outreach Village of Virginia)
-- **Twilio Account**: ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (example)
+- **Connie Account**: ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (example)

@@ -18,7 +18,7 @@ Comprehensive reference for diagnosing and fixing specific error codes in Connie
 **Common Causes**:
 - Webhook URL is incorrect or inaccessible
 - SSL certificate issues
-- Firewall blocking Twilio's requests
+- Firewall blocking Connie's requests
 - Server overload or downtime
 
 **Solutions**:
@@ -161,7 +161,7 @@ exports.handler = async (context, event, callback) => {
 **Description**: No agents available to handle the task
 
 **Diagnostic Steps**:
-1. Check agent availability in Flex interface
+1. Check agent availability in ConnieRTC interface
 2. Verify agent skills match task requirements
 3. Review agent capacity settings
 4. Check activity states (Available vs Away)

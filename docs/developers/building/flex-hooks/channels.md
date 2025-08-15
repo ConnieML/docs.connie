@@ -1,12 +1,12 @@
 Use a channels hook to register new [task channel definitions](https://www.twilio.com/docs/flex/developer/ui/task-channel-definitions).
 
 ```ts
-import * as Flex from '@twilio/flex-ui';
+import * as ConnieRTC from '@twilio/flex-ui';
 import PhoneCallbackIcon from '@material-ui/icons/PhoneCallback';
 
 import { TaskAttributes } from '../../../../types/task-router/Task';
 
-export const channelHook = function createCallbackChannel(flex: typeof Flex, manager: Flex.Manager) {
+export const channelHook = function createCallbackChannel(flex: typeof ConnieRTC, manager: ConnieRTC.Manager) {
   const channelDefinition = flex.DefaultTaskChannels.createDefaultTaskChannel(
     'callback',
     (task) => {
@@ -19,21 +19,21 @@ export const channelHook = function createCallbackChannel(flex: typeof Flex, man
   );
 
   const { templates } = channelDefinition;
-  const CallbackChannel: Flex.TaskChannelDefinition = {
+  const CallbackChannel: ConnieRTC.TaskChannelDefinition = {
     ...channelDefinition,
     templates: {
       ...templates,
       TaskListItem: {
         ...templates?.TaskListItem,
-        firstLine: (task: Flex.ITask) => `${task.queueName}: ${task.attributes.name}`,
+        firstLine: (task: ConnieRTC.ITask) => `${task.queueName}: ${task.attributes.name}`,
       },
       TaskCanvasHeader: {
         ...templates?.TaskCanvasHeader,
-        title: (task: Flex.ITask) => `${task.queueName}: ${task.attributes.name}`,
+        title: (task: ConnieRTC.ITask) => `${task.queueName}: ${task.attributes.name}`,
       },
       IncomingTaskCanvas: {
         ...templates?.IncomingTaskCanvas,
-        firstLine: (task: Flex.ITask) => task.queueName,
+        firstLine: (task: ConnieRTC.ITask) => task.queueName,
       },
     },
     icons: {
@@ -50,13 +50,13 @@ export const channelHook = function createCallbackChannel(flex: typeof Flex, man
 Alternatively, you can use a channels hook to modify an existing task channel definition.
 
 ```ts
-import * as Flex from '@twilio/flex-ui';
+import * as ConnieRTC from '@twilio/flex-ui';
 
 import CustomerAvatarObject from '../../custom-components/CustomerAvatarObject';
 
 export const channelHook = function overrideCallChannelToUseCustomerAttribute(
-  flex: typeof Flex,
-  _manager: Flex.Manager,
+  flex: typeof ConnieRTC,
+  _manager: ConnieRTC.Manager,
 ) {
   const channelDefinition = flex.DefaultTaskChannels.Call;
   const { templates, icons } = channelDefinition;
@@ -65,11 +65,11 @@ export const channelHook = function overrideCallChannelToUseCustomerAttribute(
     ...templates,
     TaskListItem: {
       ...flex.DefaultTaskChannels.Call.templates?.TaskListItem,
-      firstLine: (task: Flex.ITask) => `(${task.attributes.customer}) ${task.defaultFrom}`,
+      firstLine: (task: ConnieRTC.ITask) => `(${task.attributes.customer}) ${task.defaultFrom}`,
     },
     TaskCanvasHeader: {
       ...flex.DefaultTaskChannels.Call.templates?.TaskCanvasHeader,
-      title: (task: Flex.ITask) => `(${task.attributes.customer}) ${task.defaultFrom}`,
+      title: (task: ConnieRTC.ITask) => `(${task.attributes.customer}) ${task.defaultFrom}`,
     },
   };
 

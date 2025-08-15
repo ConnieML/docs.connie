@@ -38,7 +38,7 @@ The `remove-features` script performs the following operations:
 
 1. Remove feature references from the infra-as-code package
 2. Remove feature references from flex-config JSON files
-3. Remove feature directories from the Flex plugin
+3. Remove feature directories from the ConnieRTC plugin
 4. Remove feature directories from the serverless functions and assets
 5. Remove the schedule-manager serverless package if the feature is not being excluded
 6. Remove the chat-to-video-escalation web app package if the feature is not being excluded

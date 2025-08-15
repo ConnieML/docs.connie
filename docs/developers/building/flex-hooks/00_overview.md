@@ -1,12 +1,12 @@
 ---
 sidebar_label: Overview
 sidebar_position: 0
-title: Flex hooks overview
+title: ConnieRTC hooks overview
 ---
 
 The plugin works by cycling through each of the `feature-library` directories at initialization, and calling each feature's `register` function, which in turn cycles through each of the modules in the `flex-hooks` directory of the feature.
 
-Whether hooking into the [actions framework](https://www.twilio.com/docs/flex/developer/ui/actions) or [injecting, adding or removing components from the JSX tree](https://www.twilio.com/docs/flex/developer/ui/components) or maybe one of the many of other ways Flex can be customized and extended, its extremely useful to see at a glance what extensions have been made to what hook points. The plugin logs each hook for each feature as it is loaded. This is particularly useful when layering up multiple features and extensions as we need to see where our custom behaviors might overlap with other custom behaviors.
+Whether hooking into the [actions framework](https://www.twilio.com/docs/flex/developer/ui/actions) or [injecting, adding or removing components from the JSX tree](https://www.twilio.com/docs/flex/developer/ui/components) or maybe one of the many of other ways ConnieRTC can be customized and extended, its extremely useful to see at a glance what extensions have been made to what hook points. The plugin logs each hook for each feature as it is loaded. This is particularly useful when layering up multiple features and extensions as we need to see where our custom behaviors might overlap with other custom behaviors.
 
 ![scripts](/img/guides/feature-loader.png)
 

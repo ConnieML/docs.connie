@@ -8,7 +8,7 @@ import PluginLibraryFeature from "./_plugin-library-feature.md";
 
 This feature provides the supervisor the ability to remotely complete an agents reservation that is in the wrapping status.
 
-## flex-user-experience
+## rtc-user-experience
 
 a supervisor remotely completing a task that has been sitting in a wrap up state for too long
 
@@ -18,7 +18,7 @@ a supervisor remotely completing a task that has been sitting in a wrap up state
 
 There are no additional dependencies for setup beyond ensuring the flag is enabled within the `flex-config` attributes.
 
-To enable the `Supervisor Complete Reservation` feature, under the `flex-config` attributes set the `supervisor_complete_reservation` `enabled` flag to `true`. You may also configure a custom `outcome` which will be displayed in Flex Insights.
+To enable the `Supervisor Complete Reservation` feature, under the `flex-config` attributes set the `supervisor_complete_reservation` `enabled` flag to `true`. You may also configure a custom `outcome` which will be displayed in ConnieRTC Insights.
 
 ```json
 "supervisor_complete_reservation": {
@@ -31,5 +31,5 @@ To enable the `Supervisor Complete Reservation` feature, under the `flex-config`
 
 When enabled, this feature adds a button to the TaskOverviewCanvas that when clicked opens a dialog to confirm the completion of the task. Upon confirmation two requests are made:
 
-- First, task attributes are updated to set the conversation outcome displayed Flex Insights based on the `outcome` setting
+- First, task attributes are updated to set the conversation outcome displayed ConnieRTC Insights based on the `outcome` setting
 - Then, a request is made to a twilio function that takes the task sid and reservation id and updates the reservation to the completed state.

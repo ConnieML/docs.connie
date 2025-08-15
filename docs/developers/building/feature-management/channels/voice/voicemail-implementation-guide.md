@@ -15,7 +15,7 @@ This page contains legacy documentation for the previous voicemail architecture.
 
 # Legacy Voicemail Implementation Guide
 
-This guide helps you choose and implement the right voicemail solution for older Twilio Professional Services template deployments.
+This guide helps you choose and implement the right voicemail solution for older Connie Professional Services template deployments.
 
 ## Migration to New Architecture
 
@@ -38,7 +38,7 @@ The voice system has been restructured for better clarity and modularity. Here's
 | Option | Features | Setup Complexity | Best For |
 |--------|----------|------------------|----------|
 | **A - Basic Voicemail** | Studio recording only | Simple | Quick setup, minimal features |
-| **B - Callback + Voicemail** | Voicemail + Flex task creation | Moderate | Most organizations |
+| **B - Callback + Voicemail** | Voicemail + ConnieRTC task creation | Moderate | Most organizations |
 | **C - Callback + Voicemail + Email** | Full notifications + email alerts | Advanced | Complete solution |
 
 ## Why We Changed
@@ -65,4 +65,4 @@ The new modular architecture provides:
 
 - **New Implementations**: Follow the [Voice Overview](./overview) guide
 - **Existing Deployments**: Continue using current setup or plan migration
-- **Professional Services**: Contact your Twilio Professional Services representative
+- **Professional Services**: Contact your Connie Professional Services representative

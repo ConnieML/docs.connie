@@ -5,17 +5,17 @@ title: admin-ui
 
 ## Feature summary
 
-This feature adds a user interface to Flex for easily managing the configuration of features within the template. Every feature can be enabled or disabled, and each feature's deployed configuration is editable. Configuration changes can be made globally or to only the current user, allowing for easy testing and development. The admin panel is fully dynamic, automatically showing features added to the template. In most cases, feature developers do not need to do anything for the feature to be shown and manage-able via admin-ui. However, features with complex configuration requirements may use the provided hook pattern to register their own configuration component (see "Extending the configuration interface" below).
+This feature adds a user interface to ConnieRTC for easily managing the configuration of features within the template. Every feature can be enabled or disabled, and each feature's deployed configuration is editable. Configuration changes can be made globally or to only the current user, allowing for easy testing and development. The admin panel is fully dynamic, automatically showing features added to the template. In most cases, feature developers do not need to do anything for the feature to be shown and manage-able via admin-ui. However, features with complex configuration requirements may use the provided hook pattern to register their own configuration component (see "Extending the configuration interface" below).
 
 :::info local development
 
-When running Flex locally, the configuration in `public/appConfig.js` overrides any global settings. Admin UI works only with the hosted Flex configuration. As such, `appConfig.js` overrides can create confusion when using this feature.
+When running ConnieRTC locally, the configuration in `public/appConfig.js` overrides any global settings. Admin UI works only with the hosted ConnieRTC configuration. As such, `appConfig.js` overrides can create confusion when using this feature.
 
 For this reason, the admin-ui feature is automatically disabled by default when the local environment is initially setup.  This is done using `appConfig.js` to avoid confusion with the feature. The panel can still be enabled locally, but it is advised when doing so to first clear out all the overrides from `appConfig.js` under `custom_data.features`.
 
 ::: 
 
-## Flex User Experience
+## ConnieRTC User Experience
 
 ![Admin-ui demo](/img/features/admin-ui/admin-ui.gif)
 
@@ -23,13 +23,13 @@ For this reason, the admin-ui feature is automatically disabled by default when 
 
 This feature is enabled by default and requires no further configuration.
 
-If you are using an infrastructure-as-code deployment strategy, exposing a configuration interface outside of the code repository is undesirable. For such deployments, it is suggested to disable this feature, and set the `OVERWRITE_CONFIG=true` environment variable as part of the flex-config deployment (this is set up as an input variable on the `Deploy Flex` github actions script). This will result in the repository flex-config as the source of truth.
+If you are using an infrastructure-as-code deployment strategy, exposing a configuration interface outside of the code repository is undesirable. For such deployments, it is suggested to disable this feature, and set the `OVERWRITE_CONFIG=true` environment variable as part of the flex-config deployment (this is set up as an input variable on the `Deploy ConnieRTC` github actions script). This will result in the repository flex-config as the source of truth.
 
 By default, the admin UI saves [audit logs](../developers/building/template-utilities/audit-logging) for all configuration changes. This can be disabled by setting `"enable_audit_logging": false` in your flex-config `ui_attributes` file's `admin_ui` section.
 
 ## How does it work?
 
-This feature uses the Flex Configuration API to retrieve and store global feature settings. To store per-user setting overrides, worker attributes are stored for only the overridden features, in order to prevent reaching the maximum worker attributes size. Only configuration that has already been deployed is available in the interface--that means flex-config must have been deployed first (which it should be if the setup instructions were followed).
+This feature uses the ConnieRTC Configuration API to retrieve and store global feature settings. To store per-user setting overrides, worker attributes are stored for only the overridden features, in order to prevent reaching the maximum worker attributes size. Only configuration that has already been deployed is available in the interface--that means flex-config must have been deployed first (which it should be if the setup instructions were followed).
 
 To prevent accidentally overwriting changes made by other users at the same time, when a global change is made, a Sync stream is used to fan out a message to all clients with the admin-ui open. This message shows affected clients an alert, disables the save functionality, and offers an option to reload the config.
 
