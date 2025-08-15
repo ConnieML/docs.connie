@@ -37,7 +37,7 @@ flowchart LR
 - **Online Forms**: Visitors complete intake, referral, or application forms on your website
 - **Professional Processing**: Forms are validated and converted to professional PDF documents
 - **Automatic Routing**: Form submissions are automatically emailed to ConnieRTC endpoints
-- **Task Creation**: Each submission becomes a properly labeled task in your Flex queue
+- **Task Creation**: Each submission becomes a properly labeled task in your ConnieRTC queue
 - **Staff Assignment**: Tasks are routed to appropriate staff based on form type and content
 
 ## Key Benefits
@@ -94,10 +94,10 @@ flowchart LR
 ### ConnieRTC Configuration
 - **Email Channel**: Dedicated email addresses for form processing (e.g., `forms@connie.host`)
 - **Studio Flow**: Custom workflow for form-to-task conversion
-- **Flex Queue**: Proper skill routing for different form types
+- **ConnieRTC Queue**: Proper skill routing for different form types
 
 ### Staff Requirements
-- **Flex Access**: Staff need active ConnieRTC Flex accounts
+- **ConnieRTC Access**: Staff need active ConnieRTC ConnieRTC accounts
 - **PDF Viewing**: Ability to view and process PDF attachments
 - **Email Access**: For backup notifications and confirmations
 

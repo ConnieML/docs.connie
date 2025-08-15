@@ -5,7 +5,7 @@
 ### **Screenshot Flow (7 screens total):**
 
 ```
-00-connie-rtc-default.png         # Starting point: ConnieRTC Flex view before clicking Admin Tools
+00-connie-rtc-default.png         # Starting point: ConnieRTC ConnieRTC view before clicking Admin Tools
 01-admin-tools-entry.png          # Admin Tools & Data main page  
 02-channel-manager.png            # Channel Manager with NSS phone numbers
 03-data-center-hub.png            # Data Center with Analytics & Playbook sections
@@ -36,7 +36,7 @@ This is EXACTLY the right approach for UAT because:
 
 With the complete screenshot collection, the email can reference:
 
-> "The attached flow guide shows the complete journey from your normal Flex view through all the new admin features. Start with screenshot 00 to see exactly where to begin."
+> "The attached flow guide shows the complete journey from your normal ConnieRTC view through all the new admin features. Start with screenshot 00 to see exactly where to begin."
 
 ## 🔄 Pattern for Future Packages
 

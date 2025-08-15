@@ -18,7 +18,7 @@ The **Direct+ workflow** provides:
 - Professional call center experience with hold music
 - In-queue options: Press * for callback or voicemail
 - Automated email notifications with voicemail attachments
-- Complete Flex task management integration
+- Complete ConnieRTC task management integration
 
 **Caller Experience:**
 1. Caller dials number → Professional greeting
@@ -74,7 +74,7 @@ TWILIO_WORKSPACE_SID="[Found in Phase 3]"
 TWILIO_WORKFLOW_SID="[Found in Phase 3]"
 ```
 
-## 1.2 Twilio Account Validation
+## 1.2 Connie Account Validation
 
 **Verify Twilio CLI Access:**
 ```bash
@@ -243,9 +243,9 @@ twilio api:taskrouter:v1:workspaces:workflows:list \
 
 ## 3.3 Feature Configuration
 
-**Update Flex Configuration:**
+**Update ConnieRTC Configuration:**
 
-Add to your Flex configuration JSON:
+Add to your ConnieRTC configuration JSON:
 ```json
 {
   "features": {
@@ -382,7 +382,7 @@ curl -X POST "https://YOUR-DEPLOYMENT-DOMAIN/features/callback-and-voicemail-wit
 | Immediately | Call connects, professional greeting plays |
 | 0-30 seconds | Hold music plays, can press * for options |
 | After pressing *,2 | Voicemail prompt plays, recording starts |
-| 1-2 minutes after hangup | Voicemail task appears in Flex |
+| 1-2 minutes after hangup | Voicemail task appears in ConnieRTC |
 | 2-5 minutes after hangup | Email arrives at admin address |
 
 ## 5.3 Email Validation
@@ -414,9 +414,9 @@ The audio recording is attached to this email.
 This is an automated message. Please do not reply.
 ```
 
-## 5.4 Flex Task Validation
+## 5.4 ConnieRTC Task Validation
 
-**Verify in Flex Interface:**
+**Verify in ConnieRTC Interface:**
 - ✅ Voicemail task appears in queue
 - ✅ Task includes recording URL
 - ✅ Transcription visible (if available)
@@ -433,7 +433,7 @@ This is an automated message. Please do not reply.
 | **"Option not available"** | Options menu doesn't work | Wrong workflow SID in code | Update wait-experience.js line 135 |
 | **401 Email Error** | No emails sent | Wrong API key type | Use domain sending key, not private key |
 | **No Flow in Phone Config** | Can't select Studio Flow | Flow creation failed | Use CLI method to create flow |
-| **Tasks Not Created** | No voicemail tasks in Flex | Code deployment issue | Check function logs, redeploy |
+| **Tasks Not Created** | No voicemail tasks in ConnieRTC | Code deployment issue | Check function logs, redeploy |
 
 ## Email Troubleshooting
 
@@ -508,7 +508,7 @@ twilio serverless:logs --service-sid ZS... --environment-sid ZE...
 - Test that callback/voicemail still works
 
 **Revert to Basic Direct Calling:**
-- Change phone number webhook to simple Flex Studio Flow
+- Change phone number webhook to simple ConnieRTC Studio Flow
 - Test that direct calls work normally
 
 ---
@@ -557,7 +557,7 @@ twilio serverless:logs --service-sid ZS... --environment-sid ZE...
 - [ ] Hold music plays during queue wait
 - [ ] * key activates options menu  
 - [ ] Option 2 successfully records voicemail
-- [ ] Voicemail tasks appear in Flex
+- [ ] Voicemail tasks appear in ConnieRTC
 - [ ] Email notifications sent within 5 minutes
 - [ ] Email includes audio attachment and transcription
 
@@ -583,7 +583,7 @@ twilio serverless:logs --service-sid ZS... --environment-sid ZE...
 3. Test individual components (email, Studio Flow, TaskRouter)
 
 **For Complex Issues:**
-- Escalate to Twilio Professional Services team
+- Escalate to Connie Professional Services team
 - Provide complete configuration details and error logs
 - Include test call recordings and email delivery logs
 

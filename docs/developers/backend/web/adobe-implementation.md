@@ -8,7 +8,7 @@ title: "Adobe Acrobat Sign Web Forms Implementation"
 
 ## Overview
 
-This document provides comprehensive technical details for implementing Adobe Acrobat Sign web forms integration within ConnieRTC. The integration enables seamless form-to-email-to-task workflows that automatically create properly labeled tasks in Twilio Flex for staff processing.
+This document provides comprehensive technical details for implementing Adobe Acrobat Sign web forms integration within ConnieRTC. The integration enables seamless form-to-email-to-task workflows that automatically create properly labeled tasks in Twilio ConnieRTC for staff processing.
 
 ## Workflow Summary
 
@@ -23,13 +23,13 @@ flowchart TB
     E --> F[Email to: referrals@connie.host]
     F --> G[Twilio Studio Flow: WebFormProcessor]
     G --> H[Form Email Processing Function]
-    H --> I[Studio creates Flex Task]
-    I --> J[Task appears in Flex Queue]
+    H --> I[Studio creates ConnieRTC Task]
+    I --> J[Task appears in ConnieRTC Queue]
     J --> K[Agent receives task with PDF attachment]
     
     L[Staff Agent] --> M[Reviews form via task]
     M --> N[Processes form content]
-    N --> O[Completes task in Flex]
+    N --> O[Completes task in ConnieRTC]
     
     style A fill:#e1f5fe
     style B fill:#f3e5f5
@@ -146,7 +146,7 @@ This is the working Studio Flow configuration that processes incoming form email
 
 ```json
 {
-  "description": "Web Form Processing Flow - Converts form emails to Flex tasks",
+  "description": "Web Form Processing Flow - Converts form emails to ConnieRTC tasks",
   "states": [
     {
       "name": "Trigger",
@@ -285,7 +285,7 @@ This is the working Studio Flow configuration that processes incoming form email
 
 1. **Email Trigger**: Activated when form emails arrive at FORM_TYPE@connie.host
 2. **Form Processing**: Extracts PDF attachments and form metadata
-3. **Task Creation**: Creates properly labeled Flex tasks with form context
+3. **Task Creation**: Creates properly labeled ConnieRTC tasks with form context
 4. **Error Handling**: Alerts administrators of processing failures
 5. **Skill Routing**: Routes tasks to appropriate department/skill groups
 
@@ -561,9 +561,9 @@ feedback@connie.host     # Client feedback forms
 3. **Set Variables**: Update all PLACEHOLDER values with your actual IDs
 4. **Test Flow**: Submit test form to verify complete processing
 
-### 5. Twilio Flex Configuration
+### 5. Twilio ConnieRTC Configuration
 
-Ensure your Flex instance is configured for web form tasks:
+Ensure your ConnieRTC instance is configured for web form tasks:
 
 ```javascript
 // Task attributes for web form tasks
@@ -656,7 +656,7 @@ const FormAnalytics = {
 - [ ] **PDF Generation**: Verify Adobe generates professional PDF documents
 - [ ] **Email Delivery**: Check form completion emails reach ConnieRTC endpoint
 - [ ] **Studio Flow**: Verify flow processes email correctly
-- [ ] **Task Creation**: Check Flex task appears with proper labeling and data
+- [ ] **Task Creation**: Check ConnieRTC task appears with proper labeling and data
 - [ ] **PDF Attachment**: Confirm PDF is accessible to agents
 - [ ] **Data Integrity**: Verify all form fields preserved in task
 
@@ -802,7 +802,7 @@ const FormOptimizer = {
 
 - **Adobe Acrobat Sign API**: [https://secure.echosign.com/public/docs/restapi/v6](https://secure.echosign.com/public/docs/restapi/v6)
 - **Twilio Studio**: [https://www.twilio.com/docs/studio](https://www.twilio.com/docs/studio)
-- **Twilio Flex**: [https://www.twilio.com/docs/flex](https://www.twilio.com/docs/flex)
+- **Twilio ConnieRTC**: [https://www.twilio.com/docs/flex](https://www.twilio.com/docs/flex)
 - **WordPress REST API**: [https://developer.wordpress.org/rest-api/](https://developer.wordpress.org/rest-api/)
 
 ## Future Enhancements

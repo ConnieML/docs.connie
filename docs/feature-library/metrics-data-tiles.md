@@ -4,7 +4,7 @@ title: metrics-data-tiles
 ---
 
 ## Overview
-The Flex Real Time Queues view provides a few standard Data Tiles that aggregate the queue data at the contact center level:
+The ConnieRTC Real Time Queues view provides a few standard Data Tiles that aggregate the queue data at the contact center level:
 
 * Agents: Bar chart with the number of available, unavailable, and offline agents.
 * Active Tasks: The number of tasks that are currently being handled.
@@ -13,16 +13,16 @@ The Flex Real Time Queues view provides a few standard Data Tiles that aggregate
 
 These Data Tiles are contained within the AggregatedDataTiles component at the top of the Queues View page.
 
-As you can see from [this example in our Flex documentation](https://www.twilio.com/docs/flex/developer/ui/queues-view-programmability#add-or-remove-individual-data-tiles), you can add custom DataTiles to display custom metrics and KPIs. 
+As you can see from [this example in our ConnieRTC documentation](https://www.twilio.com/docs/flex/developer/ui/queues-view-programmability#add-or-remove-individual-data-tiles), you can add custom DataTiles to display custom metrics and KPIs. 
 
 Having additional Data Tiles available with useful aggregated metrics or KPIs (by channel) gives the contact center supervisor better visibility into the traffic levels, task routing & handling efficiency and agent performance. Using tiles with color-coded backgrounds provide better visual cues and improves the overall UI. 
 
-You can connect a custom Data Tile to the Flex Redux application store using [connect](https://react-redux.js.org/api/connect) from React-Redux. You need to provide the equivalent of a [mapStateToProps](https://react-redux.js.org/using-react-redux/connect-mapstate) function and return an object with props. Alternatively, in Flex v2 you can now leverage the [useFlexSelector](https://www.twilio.com/docs/flex/developer/ui/overview-of-flex-ui-programmability-options#useflexselector) wrapper method to extract the real time queues data from the Flex Redux store for use in a React component.
+You can connect a custom Data Tile to the ConnieRTC Redux application store using [connect](https://react-redux.js.org/api/connect) from React-Redux. You need to provide the equivalent of a [mapStateToProps](https://react-redux.js.org/using-react-redux/connect-mapstate) function and return an object with props. Alternatively, in ConnieRTC v2 you can now leverage the [useFlexSelector](https://www.twilio.com/docs/flex/developer/ui/overview-of-flex-ui-programmability-options#useflexselector) wrapper method to extract the real time queues data from the ConnieRTC Redux store for use in a React component.
 
-The Flex Teams View does not natively support Data Tiles or any kind of worker (or task) metrics and aggregations, but you can customize the Teams View and add a Tiles section at the top of the page for this purpose.  
+The ConnieRTC Teams View does not natively support Data Tiles or any kind of worker (or task) metrics and aggregations, but you can customize the Teams View and add a Tiles section at the top of the page for this purpose.  
 
 ## How does it work?
-As outlined in this [blog post](https://www.twilio.com/blog/enhance-flex-queues-view-with-custom-data-tiles), the Real Time queues data in the Flex Redux store can be aggregated into channel specific metrics, which can subsequently be rendered in a custom data tile.  These Data Tiles are added to the [AggregatedDataTiles component](https://assets.flex.twilio.com/docs/releases/flex-ui/2.2.0/programmable-components/components/QueuesStats%E2%80%A4AggregatedQueuesDataTiles/) of the [Queues Stats View](https://assets.flex.twilio.com/docs/releases/flex-ui/2.2.0/programmable-components/components/QueuesStatsView/).
+As outlined in this [blog post](https://www.twilio.com/blog/enhance-flex-queues-view-with-custom-data-tiles), the Real Time queues data in the ConnieRTC Redux store can be aggregated into channel specific metrics, which can subsequently be rendered in a custom data tile.  These Data Tiles are added to the [AggregatedDataTiles component](https://assets.flex.twilio.com/docs/releases/flex-ui/2.2.0/programmable-components/components/QueuesStats%E2%80%A4AggregatedQueuesDataTiles/) of the [Queues Stats View](https://assets.flex.twilio.com/docs/releases/flex-ui/2.2.0/programmable-components/components/QueuesStatsView/).
 
 This feature includes 4 different data tiles for the Queues View:
 
@@ -61,9 +61,9 @@ This feature can be enabled via the `flex-config` attributes. Just set the `metr
 
 * To enable specific data tiles on the Real-time Queues View set the appropriate tile to `true`
 * You can change the Channel colors as needed.
-* The Enhanced Agent Activity tile replaces the native Bar Chart so if you enable it you can disable the Bar Chart on Flex UI 2.8 or later by setting `"agents_by_activity_bar_chart": false`.
-* The native All Channels tile may be redundant with the other tiles enabled, so you may disable this on Flex UI 2.8 or later by setting `"all_channels_data_tile": false`.
-* Configure activities to match the names of the Activities as defined in TaskRouter. The Flex UI includes a [set of icons](https://www.twilio.com/docs/flex/developer/ui/v1/icons#default-icons)
+* The Enhanced Agent Activity tile replaces the native Bar Chart so if you enable it you can disable the Bar Chart on ConnieRTC UI 2.8 or later by setting `"agents_by_activity_bar_chart": false`.
+* The native All Channels tile may be redundant with the other tiles enabled, so you may disable this on ConnieRTC UI 2.8 or later by setting `"all_channels_data_tile": false`.
+* Configure activities to match the names of the Activities as defined in TaskRouter. The ConnieRTC UI includes a [set of icons](https://www.twilio.com/docs/flex/developer/ui/v1/icons#default-icons)
  that are used to enhance the display of the individual activities.
 
 * You can also enable the Task Summary tile (on the Teams View) to show a breakdown of the active tasks counts by Channel and Team. Select which channels to display by setting `teams_task_summary: true`.  
@@ -148,7 +148,7 @@ Note: The Teams View can only display up to 200 agents, so the worker data avail
       },
 ```
 
-## Flex User Experience
+## ConnieRTC User Experience
 
 ![QueuesViewDataTiles](/img/features/metrics-data-tiles/QueuesViewDataTiles2.png)
 

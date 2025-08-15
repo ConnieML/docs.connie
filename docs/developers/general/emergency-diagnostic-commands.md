@@ -109,7 +109,7 @@ twilio api:core:calls:feedback:fetch --call-sid [CALL_SID]
 # Connie Serverless Service
 SERVICE_SID="ZS906734499c94e8fb7c2eca7c708f8f6b"
 
-# Flex Workspace
+# ConnieRTC Workspace
 WORKSPACE_SID="WS7d3bcedb08a791b201aa4ec4fdadcfe6"
 
 # Common Commands with SIDs

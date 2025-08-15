@@ -7,7 +7,7 @@ title: inline-media
 
 This feature embeds image, video, audio, and PDF attachments directly within message bubbles, eliminating the requirement to click a link to open them in a new tab.
 
-## Flex User Experience
+## ConnieRTC User Experience
 
 ![inline-media screenshot](/img/features/inline-media/inline-media.png)
 

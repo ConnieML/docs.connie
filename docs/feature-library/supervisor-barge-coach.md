@@ -10,7 +10,7 @@ This feature provides the ability for a supervisor to barge in to a call (i.e. j
 
 There are additional features that have been added to allow the agent to see who is actively coaching them, along with giving the supervisor the ability to go into a "private" mode if they wish to. The additional features require specific feature flags to be enabled, which we will review in the setup and dependencies section below.
 
-## Flex User Experience
+## ConnieRTC User Experience
 
 First, select the call/worker you wish to monitor:
 
@@ -64,7 +64,7 @@ To enable the Supervisor Alert Toggle, set the `supervisor_barge_coach` `supervi
 
 ## Local Testing
 
-To test this functionality locally, it is helpful to setup an [SSO configuration](https://www.twilio.com/docs/flex/admin-guide/setup/sso-configuration) to login as an `agent` role in one Flex session, and a `supervisor` or `admin` role in another tab/browser.
+To test this functionality locally, it is helpful to setup an [SSO configuration](https://www.twilio.com/docs/flex/admin-guide/setup/sso-configuration) to login as an `agent` role in one ConnieRTC session, and a `supervisor` or `admin` role in another tab/browser.
 
 ## How does it work?
 

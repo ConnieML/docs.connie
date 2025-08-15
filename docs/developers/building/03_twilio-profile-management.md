@@ -8,7 +8,7 @@ This guide covers best practices for managing Twilio CLI profiles and troublesho
 
 ## Overview
 
-The Twilio Flex template supports multiple environments (dev, staging, production) and relies on proper Twilio CLI profile configuration to ensure deployments target the correct Twilio account and Flex instance.
+The ConnieRTC template supports multiple environments (dev, staging, production) and relies on proper Twilio CLI profile configuration to ensure deployments target the correct Connie account and ConnieRTC instance.
 
 ## Common Issues
 
@@ -19,7 +19,7 @@ The Twilio Flex template supports multiple environments (dev, staging, productio
 **Symptoms**:
 - Admin UI fails to load with CORS errors
 - Serverless functions deployed to wrong account
-- Flex configuration pointing to wrong serverless domain
+- ConnieRTC configuration pointing to wrong serverless domain
 
 **Root Cause**: Twilio CLI profile doesn't match the intended deployment environment.
 
@@ -53,7 +53,7 @@ echo -e 'serverless .env: \t' ${env}
 echo -e 'CLI profile: \t' ${profile}
 ```
 
-**For Flex Config:**
+**For ConnieRTC Config:**
 ```bash
 cd flex-config
 export env=`cat .env | grep ACCOUNT_SID | cut -d '=' -f 2`
@@ -98,9 +98,9 @@ This will regenerate all .env files based on your current CLI profile.
 
 ## CORS Troubleshooting
 
-### Understanding CORS in the Flex Template
+### Understanding CORS in the ConnieRTC Template
 
-The Twilio Flex template has built-in CORS handling via middleware. **Do not add additional CORS headers unless absolutely necessary.**
+The ConnieRTC template has built-in CORS handling via middleware. **Do not add additional CORS headers unless absolutely necessary.**
 
 ### Common CORS Errors
 
@@ -165,7 +165,7 @@ exports.handler = function(context, event, callback) {
 
 ### Development Environment
 
-For development, ensure your Flex configuration points to the correct serverless domain:
+For development, ensure your ConnieRTC configuration points to the correct serverless domain:
 
 ```json
 // flex-config/ui_attributes.production.json
@@ -194,7 +194,7 @@ Before deploying any component:
 
 1. ✅ Verify CLI profile matches target environment
 2. ✅ Check .env files are up to date
-3. ✅ Ensure serverless domain in Flex config is correct
+3. ✅ Ensure serverless domain in ConnieRTC config is correct
 4. ✅ Test CORS with browser requests after deployment
 5. ✅ Verify admin UI functionality
 
@@ -212,7 +212,7 @@ If you encounter CORS or profile issues:
    ```bash
    # Check all environments match
    cd serverless-functions && export env=`cat .env | grep ACCOUNT_SID | cut -d '=' -f 2` && echo "Serverless: ${env}"
-   cd ../flex-config && export env=`cat .env | grep ACCOUNT_SID | cut -d '=' -f 2` && echo "Flex Config: ${env}"
+   cd ../flex-config && export env=`cat .env | grep ACCOUNT_SID | cut -d '=' -f 2` && echo "ConnieRTC Config: ${env}"
    cd .. && export profile=`node scripts/print-profile-account.mjs` && echo "CLI Profile: ${profile}"
    ```
 
@@ -234,7 +234,7 @@ If you encounter CORS or profile issues:
    # Redeploy serverless functions
    cd serverless-functions && npm run deploy
    
-   # Redeploy flex config
+   # Redeploy ConnieRTC config
    cd ../flex-config && npm run deploy
    ```
 

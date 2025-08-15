@@ -43,7 +43,7 @@ Quick solutions for common issues with Connie's voice workflows and add-ons.
 **Quick Solutions**:
 - Verify agent skills match queue configuration
 - Check TaskRouter worker capacity settings  
-- Review agent availability status in Flex
+- Review agent availability status in ConnieRTC
 
 #### Direct Plus Workflow Issues {#direct-plus}
 **Common Issues with Direct + Options Workflow**:
@@ -79,10 +79,10 @@ curl -X POST "https://your-webhook-url.com/studio-flow" \
 **Symptoms**: Studio Flow works but calls don't reach agents
 
 **Quick Fixes**:
-- Check agent availability in Flex (Available vs Away status)
+- Check agent availability in ConnieRTC (Available vs Away status)
 - Verify TaskRouter queue configuration
 - Confirm agent skills match queue requirements
-- Restart agent browser/Flex session
+- Restart agent browser/ConnieRTC session
 
 **Diagnostic Steps**:
 1. Go to Twilio Console > TaskRouter > Queues

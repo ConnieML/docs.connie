@@ -135,7 +135,7 @@ exports.handler = async (context, event, callback) => {
 
 #### Agent Screen Population
 ```javascript
-// Flex plugin integration to display caller context
+// ConnieRTC plugin integration to display caller context
 const CallerInfoPanel = ({ task }) => {
   const [callerData, setCallerData] = useState(null);
   

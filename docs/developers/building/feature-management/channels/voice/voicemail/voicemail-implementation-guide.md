@@ -31,7 +31,7 @@ Choose the option that best fits your client's requirements:
 **Perfect for:** Simple organizations that just need voicemail recording and task routing.
 
 **What callers experience:**
-- Call comes in → Record voicemail → Voicemail appears as task in Flex
+- Call comes in → Record voicemail → Voicemail appears as task in ConnieRTC
 
 **What you'll deploy:**
 - Basic voicemail recording functionality

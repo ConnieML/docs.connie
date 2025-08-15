@@ -33,7 +33,7 @@ Choose Custom Build when you need:
 ### Basic Setup
 
 1. **Create a New Studio Flow**
-   - Log into your Twilio Console
+   - Log into your Connie Console
    - Navigate to Studio Flows
    - Click "Create new Flow"
    - Choose "Start from scratch"
@@ -45,7 +45,7 @@ Choose Custom Build when you need:
    - Test your flow thoroughly
 
 3. **Connect to Your Phone Number**
-   - Configure your Twilio phone number to use your custom flow
+   - Configure your Connie phone number to use your custom flow
    - Update webhook URLs as needed
    - Test end-to-end functionality
 

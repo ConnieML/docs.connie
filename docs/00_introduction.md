@@ -120,14 +120,14 @@ Select your role to get started with the documentation that's right for you:
 This documentation covers all the key components and features of the ConnieRTC platform:
 
 - **Scalable Solutions**: Can be used for large projects or simple standalone features
-- **Feature-Rich**: Many of the most common features requested by Flex customers [are already packaged in the template](/feature-library/overview)
+- **Feature-Rich**: Many of the most common features requested by ConnieRTC customers [are already packaged in the template](/feature-library/overview)
 - **Modular Design**: Each feature is self-contained and easily removed if desired  
 - **Admin Control**: Features can be turned on and off using an [administration panel](/feature-library/admin-ui)
 - **Quick Deployment**: You can [deploy this solution and use it to build in just a few minutes](/getting-started/install-template) by providing your account SID, API key, and API secret
 
 ## Why Choose ConnieRTC?
 
-The Twilio platform is a robust suite of tools that can be orchestrated together to create incredible custom solutions. The biggest challenge is how to automatically configure and orchestrate these different tools together from a single source of truth. This is the problem ConnieRTC aims to resolve.
+The Connie platform is a robust suite of tools that can be orchestrated together to create incredible custom solutions. The biggest challenge is how to automatically configure and orchestrate these different tools together from a single source of truth. This is the problem ConnieRTC aims to resolve.
 
 ConnieRTC provides a comprehensive solution specifically designed for **nonprofit organizations and community-based organizations** that need powerful, affordable communication tools to serve their communities better.
 

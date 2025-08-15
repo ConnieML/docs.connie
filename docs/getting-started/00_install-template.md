@@ -1,6 +1,6 @@
 ---
 sidebar_label: Install the template
-title: Install the template on hosted Flex
+title: Install the template on hosted ConnieRTC
 ---
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
@@ -10,7 +10,7 @@ Time to complete: _~8 minutes_
 
 :::info INFO
 
-These steps require a [currently-maintained version of Flex UI 2.x](https://www.twilio.com/docs/flex/flex-ui-eol-reference) to be configured on your Flex account, and the TaskRouter workspace name to be the default "Flex Task Assignment".
+These steps require a [currently-maintained version of ConnieRTC UI 2.x](https://www.twilio.com/docs/flex/flex-ui-eol-reference) to be configured on your ConnieRTC account, and the TaskRouter workspace name to be the default "ConnieRTC Task Assignment".
 
 :::
 
@@ -29,9 +29,9 @@ These steps require a [currently-maintained version of Flex UI 2.x](https://www.
    - your environment secrets should look something like this (TF_ENCRYPTION_KEY can be a repo or environment secret)
    ![image](/img/guides/github-secrets.png)
 
-4. Log in to Flex, open the admin panel, and validate Flex UI 2.x is the configured version.
-5. _Optionally_ navigate to the Flex console and enable the [Flex dialpad](https://console.twilio.com/us1/develop/flex/manage/voice?frameUrl=%2Fconsole%2Fflex%2Fvoice%3Fx-target-region%3Dus1) (this is required for some features)
-6. Navigate over to GitHub actions of your repository and select the `Deploy Flex` action script, _select the environment_ you want to deploy, and check the boxes for
+4. Log in to ConnieRTC, open the admin panel, and validate ConnieRTC UI 2.x is the configured version.
+5. _Optionally_ navigate to the ConnieRTC console and enable the [ConnieRTC dialpad](https://console.twilio.com/us1/develop/flex/manage/voice?frameUrl=%2Fconsole%2Fflex%2Fvoice%3Fx-target-region%3Dus1) (this is required for some features)
+6. Navigate over to GitHub actions of your repository and select the `Deploy ConnieRTC` action script, _select the environment_ you want to deploy, and check the boxes for
    - `Is this the first release to the environment?`
    - `Deploy Terraform?`  (as *cautioned* below)
 
@@ -59,7 +59,7 @@ These deploy steps will set up TaskRouter and Studio configuration to allow more
 
 | Name | Existing or New  | Description |
 | -----| --------------------| ------------|
-| Template Example Everyone | New | Same as out-of-box Flex version  |
+| Template Example Everyone | New | Same as out-of-box ConnieRTC version  |
 | Template Example Sales| New | Sample queue for "Sales" calls |
 | Template Example Support | New | Sample queue for "Support" calls |
 | Template Example Internal Calls | New | Queue that supports the [internal call](/feature-library/internal-call) feature|
@@ -81,8 +81,8 @@ These deploy steps will set up TaskRouter and Studio configuration to allow more
 
 | Name | Existing or New  | Description |
 | -----| --------------------| ------------|
-| Chat | Existing | No modifications from out-of-box Flex version |
-| Voice | Existing | No modifications from out-of-box Flex version |
+| Chat | Existing | No modifications from out-of-box ConnieRTC version |
+| Voice | Existing | No modifications from out-of-box ConnieRTC version |
 
 </TabItem>
 
@@ -110,7 +110,7 @@ Unchecking this means features mentioned in the resource descriptions above will
 
 7. Run the workflow.
    - This will deploy the assets to your environment with the default features enabled. See [Feature library Information](/feature-library/overview) for further details of whats enabled by default.
-   - Environment properties will be automatically populated based on the deployed Flex configuration, including service and workflow SIDs. See [this page](/developers/building/template-utilities/configuration#influencing-the-automatic-configuration) for information on how to influence this configuration.
+   - Environment properties will be automatically populated based on the deployed ConnieRTC configuration, including service and workflow SIDs. See [this page](/developers/building/template-utilities/configuration#influencing-the-automatic-configuration) for information on how to influence this configuration.
  
 
 All done! Once the workflow successfully completes, the template has been installed.

@@ -61,7 +61,7 @@ This workflow uses the simplest possible Studio Flow:
    ```
 
 4. **Optional: Task Creation**
-   - Create Flex task for each voicemail
+   - Create ConnieRTC task for each voicemail
    - Include caller information and recording URL
    - Route to appropriate agent queue
 

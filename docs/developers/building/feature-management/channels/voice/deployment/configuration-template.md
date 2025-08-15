@@ -201,7 +201,7 @@ email_template:
 
 ## Technical Environment Configuration
 
-### Twilio Account Details
+### Connie Account Details
 ```yaml
 twilio_configuration:
   account_sid: "AC____________________________________"
@@ -297,7 +297,7 @@ testing_plan:
     - [ ] Email notification delivery
     - [ ] Audio attachment quality
     - [ ] Transcription accuracy
-    - [ ] Flex task handling
+    - [ ] ConnieRTC task handling
   
   acceptance_criteria:
     call_connection_success_rate: "______ %" # (typical: 99%+)
@@ -380,7 +380,7 @@ Once this template is complete, verify:
 - [ ] **Phone number configuration details confirmed**
 - [ ] **Email setup requirements documented**
 - [ ] **DNS access and permissions confirmed**
-- [ ] **Twilio account details gathered**
+- [ ] **Connie account details gathered**
 - [ ] **Testing plan agreed upon**
 - [ ] **Go-live schedule established**
 - [ ] **Compliance requirements understood**
@@ -389,7 +389,7 @@ Once this template is complete, verify:
 With this configuration template complete:
 
 1. **Validate Information**: Confirm all details with client stakeholders
-2. **Technical Verification**: Verify Twilio account access and resources  
+2. **Technical Verification**: Verify Connie account access and resources  
 3. **Begin Deployment**: Use [Pre-Deployment Checklist](/developers/building/feature-management/channels/voice/deployment/pre-deployment-checklist)
 4. **Schedule Deployment**: Follow [Direct+ Deployment Guide](/developers/building/feature-management/channels/voice/deployment/direct-plus-deployment-guide)
 

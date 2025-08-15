@@ -15,7 +15,7 @@ This feature provides the following functionality:
 - A notable shortcoming with the OOTB CRM container is that it re-renders as you toggle between tasks. This CRMContainer will only render once and the component is simply hidden as you toggle between tasks. Furthermore, using a task attribute of parentTask we can ensure related tasks only render the one component. A typical example of this is when creating a callback which starts as one task and creates a separate outbound call task to dial the customer. When toggling between these tasks, the component will render the same instance.
   - This effectively allows agents to safely input text into the IFramed webpage without that text getting lost when switching between tasks.
 
-## flex-user-experience
+## rtc-user-experience
 
 Below is a demonstration showing the CRM container maintained for outbound callbacks, as well as the extensible tabbed interface (using canned responses as an example).
 
@@ -50,14 +50,14 @@ The component keeps a array of each task and renders a component for each one. B
 To register a tab in the enhanced CRM component, other features can register an `actions` flex-hook to inject their component and a tab title. Here is an example:
 
 ```tsx
-import * as Flex from '@twilio/flex-ui';
+import * as ConnieRTC from '@twilio/flex-ui';
 
 import MyCRMTab from '../../custom-components/MyCRMTab';
 import { FlexActionEvent } from '../../../../types/feature-loader';
 
 export const actionEvent = FlexActionEvent.before;
 export const actionName = 'LoadCRMContainerTabs';
-export const actionHook = function addToEnhancedCRM(flex: typeof Flex, manager: Flex.Manager) {
+export const actionHook = function addToEnhancedCRM(flex: typeof ConnieRTC, manager: ConnieRTC.Manager) {
   flex.Actions.addListener(`${actionEvent}${actionName}`, async (payload) => {
     // Remove this condition if you'd like to render even without a task selected
     // You may also conditionally return based on task attributes, etc.

@@ -8,7 +8,7 @@ title: "Sinch Fax Integration Implementation"
 
 ## Overview
 
-This document provides comprehensive technical details for implementing Sinch fax services within ConnieRTC. The integration enables seamless fax-to-email workflows that automatically create tasks in Twilio Flex for staff processing.
+This document provides comprehensive technical details for implementing Sinch fax services within ConnieRTC. The integration enables seamless fax-to-email workflows that automatically create tasks in Twilio ConnieRTC for staff processing.
 
 ## Workflow Summary
 
@@ -20,13 +20,13 @@ flowchart TB
     B --> C[Sinch processes & converts to email]
     C --> D[Email sent to: PHONE_NUMBER@connie.host]
     D --> E[Twilio Studio Flow: H2HFax]
-    E --> F[Studio creates Flex Task]
-    F --> G[Task appears in Flex Queue]
+    E --> F[Studio creates ConnieRTC Task]
+    F --> G[Task appears in ConnieRTC Queue]
     G --> H[Agent receives task with PDF attachment]
     
     I[Staff Agent] --> J[Reviews fax via task]
     J --> K[Processes fax content]
-    K --> L[Completes task in Flex]
+    K --> L[Completes task in ConnieRTC]
     
     style A fill:#e1f5fe
     style B fill:#f3e5f5
@@ -124,7 +124,7 @@ This is the working Studio Flow configuration that processes incoming fax emails
 
 ```json
 {
-  "description": "H2H Fax Processing Flow - Converts fax emails to Flex tasks",
+  "description": "H2H Fax Processing Flow - Converts fax emails to ConnieRTC tasks",
   "states": [
     {
       "name": "Trigger",
@@ -259,7 +259,7 @@ This is the working Studio Flow configuration that processes incoming fax emails
 
 1. **Email Trigger**: Activated when fax emails arrive at PHONE_NUMBER@connie.host
 2. **Fax Processing**: Extracts PDF attachments and metadata
-3. **Task Creation**: Creates properly labeled Flex tasks with fax context
+3. **Task Creation**: Creates properly labeled ConnieRTC tasks with fax context
 4. **Error Handling**: Alerts administrators of processing failures
 
 ## Serverless Function Implementation
@@ -357,9 +357,9 @@ PHONE_NUMBER@connie.host
 3. **Set Variables**: Update all PLACEHOLDER values
 4. **Test Flow**: Send test fax to verify processing
 
-### 4. Twilio Flex Configuration
+### 4. Twilio ConnieRTC Configuration
 
-Ensure your Flex instance is configured for fax tasks:
+Ensure your ConnieRTC instance is configured for fax tasks:
 
 ```javascript
 // Task attributes for fax tasks
@@ -418,7 +418,7 @@ CREATE TABLE fax_usage (
 - [ ] **Send Test Fax**: Verify fax reaches Sinch service
 - [ ] **Email Processing**: Confirm email arrives at PHONE_NUMBER@connie.host  
 - [ ] **Studio Flow**: Verify flow processes email correctly
-- [ ] **Task Creation**: Check Flex task appears with proper labeling
+- [ ] **Task Creation**: Check ConnieRTC task appears with proper labeling
 - [ ] **PDF Attachment**: Confirm PDF is accessible to agents
 - [ ] **Cost Tracking**: Verify cost calculation accuracy
 
@@ -457,8 +457,8 @@ curl -X GET "https://us.fax.api.sinch.com/xms/v1/YOUR_PROJECT_ID/batches/BATCH_I
    - Check serverless function PDF processing
    - Confirm Twilio media URL accessibility
 
-3. **Tasks Not Appearing in Flex**
-   - Verify Flex workflow SID in Studio Flow
+3. **Tasks Not Appearing in ConnieRTC**
+   - Verify ConnieRTC workflow SID in Studio Flow
    - Check task attributes format
    - Confirm channel type is set to "chat"
 
@@ -484,13 +484,13 @@ twilio serverless:logs --service-sid SERVICE_SID
 
 - **Sinch Fax API**: [https://developers.sinch.com/docs/fax/](https://developers.sinch.com/docs/fax/)
 - **Twilio Studio**: [https://www.twilio.com/docs/studio](https://www.twilio.com/docs/studio)
-- **Twilio Flex**: [https://www.twilio.com/docs/flex](https://www.twilio.com/docs/flex)
+- **Twilio ConnieRTC**: [https://www.twilio.com/docs/flex](https://www.twilio.com/docs/flex)
 
 ## Future Enhancements
 
 ### Phase 1: Inline Preview (UX Improvement)
-- **Goal**: Display fax content directly in Flex task panel
-- **Implementation**: Embed PDF viewer in Flex UI
+- **Goal**: Display fax content directly in ConnieRTC task panel
+- **Implementation**: Embed PDF viewer in ConnieRTC UI
 - **Timeline**: Q3 2024
 
 ### Phase 2: CRM Container Integration  
@@ -499,8 +499,8 @@ twilio serverless:logs --service-sid SERVICE_SID
 - **Timeline**: Q4 2024
 
 ### Phase 3: Outbound Fax Sending
-- **Goal**: Enable agents to send faxes directly from Flex
-- **Implementation**: Add send fax button to Flex UI
+- **Goal**: Enable agents to send faxes directly from ConnieRTC
+- **Implementation**: Add send fax button to ConnieRTC UI
 - **Timeline**: Q1 2025
 
 ## Support & Resources

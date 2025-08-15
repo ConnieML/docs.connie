@@ -4,13 +4,13 @@ title: CI deployment
 
 The template includes several GitHub Actions workflows, which provides a full deployment pipeline out-of-the-box. While these workflows as written are specific to GitHub, they could be adapted to other solutions.
 
-## Deploy Flex
+## Deploy ConnieRTC
 
 Location: `.github/workflows/flex_deploy.yaml`
 
 This workflow encapsulates the logic for deploying the entire template. It can be invoked manually via GitHub, or by calling from another workflow. It performs the following:
 1. Injects GitHub environment secrets and variables into the runner's environment, making them available to the setup script
-1. Validates that the environment secrets and variables required for deployment are present and valid, and that the Flex account is configured properly
+1. Validates that the environment secrets and variables required for deployment are present and valid, and that the ConnieRTC account is configured properly
 1. Sets the `ENVIRONMENT` variable based on the selected environment
 1. Deploys all serverless services and add-ons
    - As part of this process, the setup script executes in order to generate the environment file used by the deployment. See [serverless configuration](/developers/building/template-utilities/configuration#serverless-configuration) for details on how this works.
@@ -19,8 +19,8 @@ This workflow encapsulates the logic for deploying the entire template. It can b
 1. Deploys Terraform
    - If the option to deploy Terraform was selected, the [Terraform deploy](#terraform-deploy) workflow is executed to deploy resources using Terraform.
    - If this is the first time the template has been deployed, there is a chicken-egg problem with the serverless and Terraform deployments (Terraform wants the serverless service to exist, but the serverless service wants the dependencies deployed by Terraform to exist). To solve this, when the initial release option is selected, the serverless services are deployed twice: Once before Terraform (in a state where some dependencies are missing), then again after Terraform (once the dependencies have been deployed).
-1. Deploys the Flex configuration by running `npm run deploy` from the `flex-config` package
-1. Deploys and releases the Flex plugin using the Twilio CLI
+1. Deploys the ConnieRTC configuration by running `npm run deploy` from the `flex-config` package
+1. Deploys and releases the ConnieRTC plugin using the Twilio CLI
 
 ### Options
 
@@ -44,7 +44,7 @@ Determines whether the source of truth for configuration is the repository or th
 
 Location: `.github/examples/merge_deploy.yaml`
 
-This workflow is an example of how you can call the [Deploy Flex](#deploy-flex) workflow in response to events. This example will deploy whenever a commit is pushed to the `main` or `develop` branches, using the 'production' environment when pushing to the main branch, or 'dev' environment when pushing to the develop branch.
+This workflow is an example of how you can call the [Deploy ConnieRTC](#deploy-flex) workflow in response to events. This example will deploy whenever a commit is pushed to the `main` or `develop` branches, using the 'production' environment when pushing to the main branch, or 'dev' environment when pushing to the develop branch.
 
 To use this workflow, move it to the `.github/workflows` directory and make the necessary adjustments for your use case.
 

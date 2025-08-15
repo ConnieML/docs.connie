@@ -4,7 +4,7 @@ title: Adding a new feature
 ---
 
 
-If you want to add a new feature, after following the steps to [run Flex locally](/getting-started/run-locally), from the root of the repository you can run the following:
+If you want to add a new feature, after following the steps to [run ConnieRTC locally](/getting-started/run-locally), from the root of the repository you can run the following:
 
 ```bash
 npm run add-feature <my-new-feature-name>

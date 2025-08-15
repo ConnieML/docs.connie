@@ -162,12 +162,12 @@ graph LR
     C --> D[Trigger Function]
     D --> E[Email Service API]
     E --> F[Admin Notification]
-    C --> G[Route to Flex]
+    C --> G[Route to ConnieRTC]
 ```
 
 ## Next Steps
 
 1. **Choose your email provider** from the options above
 2. **Follow the provider-specific setup guide** for technical implementation
-3. **Configure your Twilio Studio Flow** with the provided JSON templates
+3. **Configure your Connie Studio Flow** with the provided JSON templates
 4. **Deploy and test** the complete notification system

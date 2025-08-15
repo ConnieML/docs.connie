@@ -189,7 +189,7 @@ twilio api:core:incoming-phone-numbers:update \
 
 **Terraform Errors:**
 - Resource conflicts → Check existing resources
-- Permission errors → Verify Twilio account permissions
+- Permission errors → Verify Connie account permissions
 - Variable validation → Check terraform.tfvars format
 
 **Studio Flow Issues:**

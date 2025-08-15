@@ -13,7 +13,7 @@ need to be exhausted before the user would ever qualify for voice work.
 
 To address this, this feature toggles agents between the configured chat capacity and a chat capacity of 1, ensuring taskrouter can route the most important piece of work to the user across both channels.
 
-## flex-user-experience
+## rtc-user-experience
 
 Example delivery of callbacks (on voice channel of capacity 1) and chat tasks (max capacity 2) where the task backlog is ordered callback, chat, callback, chat, callback, chat, callback, chat, callback
 

@@ -5,12 +5,12 @@ title: conversation-transfer
 import PluginLibraryFeature from "./_plugin-library-feature.md";
 
 :::caution Native feature now available
-A new [native messaging transfers feature](https://www.twilio.com/docs/flex/admin-guide/setup/conversations/messaging-transfers) is available in Flex UI 2.8 and later. The native feature does not support warm transfers, invite tracking, or email, so the template feature remains available with support for these items, however both features cannot be enabled simultaneously.
+A new [native messaging transfers feature](https://www.twilio.com/docs/flex/admin-guide/setup/conversations/messaging-transfers) is available in ConnieRTC UI 2.8 and later. The native feature does not support warm transfers, invite tracking, or email, so the template feature remains available with support for these items, however both features cannot be enabled simultaneously.
 :::
 
 <PluginLibraryFeature />
 
-This feature implements transferring of chats between agents and multiple agents in the same chat. It supports webchat, SMS and whatsapp that use [Flex Conversations](https://www.twilio.com/docs/flex/conversations).
+This feature implements transferring of chats between agents and multiple agents in the same chat. It supports webchat, SMS and whatsapp that use [ConnieRTC Conversations](https://www.twilio.com/docs/flex/conversations).
 
 **Config options allows for two different options:**
 
@@ -71,7 +71,7 @@ TWILIO_FLEX_CHAT_TRANSFER_WORKFLOW_SID=WWxxx
 
 ## Implementation Notes
 
-Flex 2.x used [Conversation Based Messaging (CBM)](https://www.twilio.com/docs/flex/conversations) for Chat (webchat, SMS, whatsApp). CBM makes use of the [Interactions API](https://www.twilio.com/docs/flex/developer/conversations/interactions-api) to orchestrate Conversations and Tasks.
+ConnieRTC 2.x used [Conversation Based Messaging (CBM)](https://www.twilio.com/docs/flex/conversations) for Chat (webchat, SMS, whatsApp). CBM makes use of the [Interactions API](https://www.twilio.com/docs/flex/developer/conversations/interactions-api) to orchestrate Conversations and Tasks.
 
 This plugin makes use of the Interaction API [Invite](https://www.twilio.com/docs/flex/developer/conversations/interactions-api/invites-subresource) and [Participants](https://www.twilio.com/docs/flex/developer/conversations/interactions-api/interaction-channel-participants) endpoints.
 

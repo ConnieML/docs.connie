@@ -50,7 +50,7 @@ import { Template, templates } from '@twilio/flex-ui';
 
 ## System strings
 
-If you wish to replace built-in Flex UI strings, rather than defining new strings for use within your feature, you may use a system string hook. This will override Flex UI strings that use the provided name.
+If you wish to replace built-in ConnieRTC UI strings, rather than defining new strings for use within your feature, you may use a system string hook. This will override ConnieRTC UI strings that use the provided name.
 
 ```ts
 export const systemStringHook = () => ({

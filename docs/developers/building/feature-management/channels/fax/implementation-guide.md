@@ -17,7 +17,7 @@ Choose the option that best fits your client's requirements:
 | 📥 **Receive Faxes** | ✅ | ✅ | ✅ |
 | 📤 **Send Faxes** | ❌ | ✅ | ✅ |
 | 📧 **Email Delivery** | ✅ | ✅ | ✅ |
-| 🔄 **Flex Task Routing** | ❌ | ✅ | ✅ |
+| 🔄 **ConnieRTC Task Routing** | ❌ | ✅ | ✅ |
 | 📎 **PDF Attachments** | ✅ | ✅ | ✅ |
 | 🔐 **HIPAA Compliance** | ✅ | ✅ | ✅ |
 | 🔧 **Setup Complexity** | Simple | Moderate | Advanced |
@@ -47,13 +47,13 @@ Choose the option that best fits your client's requirements:
 **Perfect for:** Organizations that need to both send and receive faxes with agent tracking.
 
 **What users experience:**
-- Receive: Fax arrives → Creates task in Flex → Agent handles fax
+- Receive: Fax arrives → Creates task in ConnieRTC → Agent handles fax
 - Send: Agent initiates → Uploads document → Sends via Sinch API
 
 **What you'll deploy:**
 - Complete Professional Services Template fax feature
 - Sinch API integration
-- Flex UI components for fax sending
+- ConnieRTC UI components for fax sending
 - Task routing for inbound faxes
 
 **Next steps:** → [Set up Bidirectional Fax](/developers/building/feature-management/channels/fax/bidirectional-fax-setup)
@@ -95,7 +95,7 @@ Choose the option that best fits your client's requirements:
 - ✅ Email addresses for fax delivery
 
 ### Additional for Option B:
-- ✅ Flex UI deployment access
+- ✅ ConnieRTC UI deployment access
 - ✅ Understanding of task routing configuration
 
 ### Additional for Option C:
@@ -171,7 +171,7 @@ graph LR
     C --> E[Backup Provider]
     D --> F[Delivery]
     E --> F
-    F --> G[Email/Flex/Integration]
+    F --> G[Email/ConnieRTC/Integration]
 ```
 
 This ensures:

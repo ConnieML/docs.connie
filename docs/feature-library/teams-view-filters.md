@@ -3,7 +3,7 @@ sidebar_label: teams-view-filters
 title: teams-view-filters
 ---
 
-Flex allows plugins to define [Advanced Team View Filters](https://www.twilio.com/docs/flex/developer/ui/team-view-filters), which provide a convenient way to add in your own filters to your Flex contact center based on your own worker attributes.
+ConnieRTC allows plugins to define [Advanced Team View Filters](https://www.twilio.com/docs/flex/developer/ui/team-view-filters), which provide a convenient way to add in your own filters to your ConnieRTC contact center based on your own worker attributes.
 
 This configurable feature provides sample filters typically used in most contact centers:
 
@@ -19,7 +19,7 @@ As well as sample React components to support alternative filter selection optio
 - SelectFilter (configurable to a single drop down or multi select drop down)
 - Free Form Text Filter
 
-## flex-user-experience
+## rtc-user-experience
 
 ![Supervisor View](/img/features/teams-view-filters/flex-user-experience.gif)
 
@@ -65,7 +65,7 @@ The result set shows up as the list of agents in the team view. It is worth reme
 
 ### email
 
-This filter simply matches against the worker attribute `email`. In Flex this is already a required field to set up. The filter looks like the following:
+This filter simply matches against the worker attribute `email`. In ConnieRTC this is already a required field to set up. The filter looks like the following:
 
 ```js
 {
@@ -77,9 +77,9 @@ This filter simply matches against the worker attribute `email`. In Flex this is
 
 ### department
 
-This filter is based on the model of the worker attributes adopted from Flex insights. A definition of that model is [here](https://www.twilio.com/docs/flex/developer/insights/enhance-integration#enhance-agent-data).
+This filter is based on the model of the worker attributes adopted from ConnieRTC insights. A definition of that model is [here](https://www.twilio.com/docs/flex/developer/insights/enhance-integration#enhance-agent-data).
 
-The worker attribute `department_name` may be pushed into the worker object through SSO or it may be managed directly in Flex using the [worker-details](worker-details) feature. In either case a predefined list of departments needs to be configured so that it can be selected from to search the workers with that applied department.
+The worker attribute `department_name` may be pushed into the worker object through SSO or it may be managed directly in ConnieRTC using the [worker-details](worker-details) feature. In either case a predefined list of departments needs to be configured so that it can be selected from to search the workers with that applied department.
 
 Ideally we would be able to get a unique lit of department_names from a lookup but there is no consistent way to do this without a backend solution. If building tooling in the solution to allow supervisors the ability to edit and apply department name, synchronizing these options should be a consideration.
 
@@ -97,9 +97,9 @@ The filter matches against the worker attribute `department_name`. The filter lo
 
 ### team
 
-This filter is based on the model of the worker attributes adopted from Flex Insights. A definition of that model is [here](https://www.twilio.com/docs/flex/developer/insights/enhance-integration#enhance-agent-data).
+This filter is based on the model of the worker attributes adopted from ConnieRTC Insights. A definition of that model is [here](https://www.twilio.com/docs/flex/developer/insights/enhance-integration#enhance-agent-data).
 
-The worker attribute `team_name` may be pushed into the worker object through SSO, or it may be managed directly in Flex using the [worker-details](worker-details) feature. In either case, a predefined list of teams needs to be configured so that it can be selected from to search the workers with that applied team name.
+The worker attribute `team_name` may be pushed into the worker object through SSO, or it may be managed directly in ConnieRTC using the [worker-details](worker-details) feature. In either case, a predefined list of teams needs to be configured so that it can be selected from to search the workers with that applied team name.
 
 Ideally we would be able to get a unique list of team names from a lookup, but there is no consistent way to do this without a backend solution. If building tooling in the solution to allow supervisors the ability to edit and apply team names, synchronizing these options should be a consideration.
 
@@ -117,7 +117,7 @@ The filter matches against the worker attribute `team_name`. The filter looks li
 
 ### agent_skills
 
-This filter is based on the skills model within Flex. It is entirely possible a different skills model could be adopted in which case this filter would need to be modified appropriately.
+This filter is based on the skills model within ConnieRTC. It is entirely possible a different skills model could be adopted in which case this filter would need to be modified appropriately.
 
 The filter does an OR'd match on any of the selected skills. In other words, if an agent has any of the selected skills, they will be returned in the search results.
 
@@ -144,7 +144,7 @@ A more comprehensive solution can be found by leveraging a backend to keep track
 
 #### known issue
 
-Due to the way the `queue_no_worker_data` filter injects multiple `data.attributes` queries into the filters array, if another filter examines the same data element, that last array item to match that element shows up for that filter. As an example (visible in [flex-user-experience](#flex-user-experience)), if a queue has an expression `routing.skills HAS 'Retention'` it will produce a filter with
+Due to the way the `queue_no_worker_data` filter injects multiple `data.attributes` queries into the filters array, if another filter examines the same data element, that last array item to match that element shows up for that filter. As an example (visible in [rtc-user-experience](#rtc-user-experience)), if a queue has an expression `routing.skills HAS 'Retention'` it will produce a filter with
 
 ```js
 name: `data.atttributes.routing.skills`;

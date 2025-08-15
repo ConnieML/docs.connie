@@ -9,7 +9,7 @@ This feature adds a pause/park button to messaging conversations so that while w
 
 Furthermore, you have the option to enable the 'Parked Interactions' list, which empowers agents to access and manage parked conversations, with a specific focus on Web Chat and WhatsApp. This list allows agents to efficiently unpark conversations directly from their interface. Details [here](#parked-interactions-list-details).
 
-## Flex User Experience
+## ConnieRTC User Experience
 
 ![Park interaction demo](/img/features/park-interaction/park-interaction.gif)
 
@@ -32,7 +32,7 @@ You may need a different use case then what this plugin does today. For example,
 
 ## How does it work?
 
-This feature is based in the instructions given on our doc on how to [Park an Interaction](https://www.twilio.com/docs/flex/developer/conversations/park-an-interaction). In the legacy Flex this functionality was known as "long-lived channels".
+This feature is based in the instructions given on our doc on how to [Park an Interaction](https://www.twilio.com/docs/flex/developer/conversations/park-an-interaction). In the legacy ConnieRTC this functionality was known as "long-lived channels".
 
 ### Parked Interactions List details
 - This feature leverages Sync MapItems to store the state of recently parked interactions

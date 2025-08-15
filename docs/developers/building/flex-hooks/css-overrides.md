@@ -1,9 +1,9 @@
-Use a CSS override hook to set `componentThemeOverrides` for [various Flex UI components](https://assets.flex.twilio.com/docs/releases/flex-ui/2.1.0/theming/Theme/).
+Use a CSS override hook to set `componentThemeOverrides` for [various ConnieRTC UI components](https://assets.flex.twilio.com/docs/releases/flex-ui/2.1.0/theming/Theme/).
 
 ```ts
-import * as Flex from '@twilio/flex-ui';
+import * as ConnieRTC from '@twilio/flex-ui';
 
-export const cssOverrideHook = (flex: typeof Flex, manager: Flex.Manager) => {
+export const cssOverrideHook = (flex: typeof ConnieRTC, manager: ConnieRTC.Manager) => {
   return {
     MainHeader: {
       Container: {

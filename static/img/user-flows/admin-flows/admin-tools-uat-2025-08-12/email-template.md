@@ -23,7 +23,7 @@ We've deployed new admin tools to your Connie platform for testing. Takes just 2
 - **Quick access buttons** - Streamlined navigation to key functions
 
 ### How to Test:
-1. **Open your Flex/CRM Container** (as you normally do)
+1. **Open your ConnieRTC/CRM Container** (as you normally do)
 2. **Navigate to Admin Tools & Data** (new centralized entry point)
 3. **Try both paths**: Channel Manager and Data & Reporting
 4. **Test the live features**: Play a voicemail, view a fax

@@ -20,9 +20,9 @@ This feature synchronizes the agent's [TaskRouter Activity](https://www.twilio.c
 ### context
 In many typical legacy contact centers there is a concept of an [Aux Code](https://cxcentral.com.au/glossary/auxiliary-codes/) which is used to track the reason that an agent is not receiving work from the Automatic Call Distributor (ACD). This Aux code includes explicitly distinguishing when an agent is on a live task and when an agent is in wrap up.
 
-Twilio TaskRouter models things slightly differently. An agent's [Activity](https://www.twilio.com/docs/taskrouter/api/activity) is the concept in TaskRouter that manages availability for the agent to receive the next item of work.  This Activity status does not change throughout the life cycle of a task.  In Twilio Flex, reporting on an agent's productivity is typically done via the examining the lifecycle of the tasks worked.
+Twilio TaskRouter models things slightly differently. An agent's [Activity](https://www.twilio.com/docs/taskrouter/api/activity) is the concept in TaskRouter that manages availability for the agent to receive the next item of work.  This Activity status does not change throughout the life cycle of a task.  In Twilio ConnieRTC, reporting on an agent's productivity is typically done via the examining the lifecycle of the tasks worked.
 
-This paradigm shift can be a difficult one for legacy contact centers to adopt when migrating to Twilio Flex. 
+This paradigm shift can be a difficult one for legacy contact centers to adopt when migrating to Twilio ConnieRTC. 
 
 ### objective
 This feature aims to make such a shift easier by introducing a mechanism to automatically sync the agent Activity with the status of the work the agent is handling. This can aid with reporting strategies.
@@ -33,19 +33,19 @@ Given it is not desirable to select the system activities, the [agent skill filt
 ## Known Issues
 
 ### issue one
-Flex places a limitation on changing Activity while a task is in a pending state.  In other words, if a task has been pushed to the agent but the agent has not accepted, then Flex can only change Activity to an offline Activity which will reject the task.
+ConnieRTC places a limitation on changing Activity while a task is in a pending state.  In other words, if a task has been pushed to the agent but the agent has not accepted, then ConnieRTC can only change Activity to an offline Activity which will reject the task.
 
 As a result, while a pending task appears in an agents task list, toggling between tasks will not update the Activity.  For this reason it is recommended to use this feature along with an [agent automation](./agent-automation) to auto accept tasks.
 
 ### issue two
-Flex allows supervisors to move the Activity of an agent from the Supervisor Teams View.  Doing so pushes an Activity update to the worker which triggers the event `workerActivityUpdated` on the agent's client, which in turn triggers a re-evaluation of the correct state to be in, again on the client side. This has two drawbacks:
+ConnieRTC allows supervisors to move the Activity of an agent from the Supervisor Teams View.  Doing so pushes an Activity update to the worker which triggers the event `workerActivityUpdated` on the agent's client, which in turn triggers a re-evaluation of the correct state to be in, again on the client side. This has two drawbacks:
 
 1. The agent will be in the wrong state for a second
 2. If the agents client is not running, there will be nothing to process the event and could end up in an erroneous state.
 
 The reason we cannot change the agent's state directly to the correct resolved state is because we have no direct access to update the pending state on the agents local storage.  To accomplish this a future update will be required to leverage a different messaging schema that can trigger the evaluation on the agents side.
 
-## Flex User Experience
+## ConnieRTC User Experience
 
 !["Activity Reservation Handler"](/img/features/activity-reservation-handler/activty-reservation-handler.gif)
 
@@ -119,7 +119,7 @@ As we want to place a worker into a variant of the `On A Task` activity while th
 
 #### supervisor worker updates
 
-As vanilla Flex enables a supervisor to move an agents activity from the TeamsView.  It is possible for such a change to interfere with the agents-Activity correctly reflecting the agents tasks-in-flight.  Although "system activities" such as `On A Task` are rejected if the supervisor tries to select them.  To preserve existing functionality, non "system activities" are not.  The state change will be pushed and the `workerActivityUpdated` event handler on the agents side will then push the agent back into the correct "system activity" they are supposed to be in. Note [Known Issue 2](#issue-two). If a supervisor wishes to move an agent to a non "system activity" while the agent has tasks in flight, the agent will first need to make sure the tasks are completed.  This can be accomplished by enabling the [supervisor-complete-reservation](/feature-library/supervisor-complete-reservation) feature.
+As vanilla ConnieRTC enables a supervisor to move an agents activity from the TeamsView.  It is possible for such a change to interfere with the agents-Activity correctly reflecting the agents tasks-in-flight.  Although "system activities" such as `On A Task` are rejected if the supervisor tries to select them.  To preserve existing functionality, non "system activities" are not.  The state change will be pushed and the `workerActivityUpdated` event handler on the agents side will then push the agent back into the correct "system activity" they are supposed to be in. Note [Known Issue 2](#issue-two). If a supervisor wishes to move an agent to a non "system activity" while the agent has tasks in flight, the agent will first need to make sure the tasks are completed.  This can be accomplished by enabling the [supervisor-complete-reservation](/feature-library/supervisor-complete-reservation) feature.
 
 
 ### sequence diagram

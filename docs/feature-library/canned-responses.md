@@ -6,19 +6,19 @@ import PluginLibraryFeature from "./_plugin-library-feature.md";
 
 <PluginLibraryFeature />
 
-The Canned Chat Responses feature helps demonstrate how Agents can select from a pre-determined list of chat responses from within the CRM panel or Message Input Actions within Flex. The canned responses are returned from a Twilio Serverless function, which is contained within the `../../../../serverless-functions/src/functions/features/canned-responses/flex/chat-responses.js` file.
+The Canned Chat Responses feature helps demonstrate how Agents can select from a pre-determined list of chat responses from within the CRM panel or Message Input Actions within ConnieRTC. The canned responses are returned from a Twilio Serverless function, which is contained within the `../../../../serverless-functions/src/functions/features/canned-responses/flex/chat-responses.js` file.
 
 The JSON object of canned responses is broken down into categories, with the various responses nested under each category. To see the raw JSON structure of the payload, please [see the file](https://github.com/twilio-professional-services/flex-project-template/blob/main/serverless-functions/src/assets/features/canned-responses/responses.private.json) located in the `assets` folder.
 
-## flex-user-experience
+## rtc-user-experience
 
-There are two options for the placement of the canned responses component within the Flex User Interface (see [Setup & Dependencies](#setup-and-dependencies) for more information).
+There are two options for the placement of the canned responses component within the ConnieRTC User Interface (see [Setup & Dependencies](#setup-and-dependencies) for more information).
 
 ### CRM Panel
 
 ![alt text](/img/features/canned-responses/CRMPanel-UI.gif)
 
-By default, when this features is enabled within the `flex-config`, the canned responses will render in the CRM Panel on the righthand side of Flex. The responses are separated by categories, with the individual responses housing two buttons:
+By default, when this features is enabled within the `flex-config`, the canned responses will render in the CRM Panel on the righthand side of ConnieRTC. The responses are separated by categories, with the individual responses housing two buttons:
 
 - `Insert` - will insert the text response into the `Input Text` component for the active task using the `SetInputText` action
 - `Send` - will send the canned response into the active conversation using the `SendMessage` action
@@ -31,7 +31,7 @@ The second option for the canned responses will render them within the `Message 
 
 ## setup and dependencies
 
-### Flex Config
+### ConnieRTC Config
 
 To enable this feature, you need to enable the feature within the `flex-config` directory for your specific environment and determine the UI placement of the responses (`CRM` or `MessageInputActions`):
 

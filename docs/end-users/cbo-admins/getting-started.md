@@ -20,7 +20,7 @@ ConnieRTC transforms your organization's communication capabilities by providing
 
 Make sure you have:
 - ✅ **Administrative access** to your organization's systems
-- ✅ **Twilio account** (free tier available)
+- ✅ **Connie account** (free tier available)
 - ✅ **Customer database** (Google Sheets, Excel, or existing CRM)
 - ✅ **30 minutes** for initial setup
 

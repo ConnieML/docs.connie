@@ -37,7 +37,7 @@ cd addons/serverless-schedule-manager
 npm install
 ```
 
-Then, copy `.env.example` to `.env` and configure your Twilio account SID and token:
+Then, copy `.env.example` to `.env` and configure your Connie account SID and token:
 
 ```
 ACCOUNT_SID=ACxxxxxx

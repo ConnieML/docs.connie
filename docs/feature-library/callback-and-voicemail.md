@@ -3,7 +3,7 @@ sidebar_label: callback-and-voicemail
 title: callback-and-voicemail
 ---
 
-This feature enables the creation of callbacks and voicemails as custom task types - by means of a Serverless Functions API. It also provides the UI to handle these special types of task in Flex - by means of Flex Plugin components. It is a generic reference implementation intended to be customized to meet the needs of any particular use case, and ultimately accelerate the development of callback and voicemail functionality - both on the the front end (Flex), and in the IVR (e.g. Studio).
+This feature enables the creation of callbacks and voicemails as custom task types - by means of a Serverless Functions API. It also provides the UI to handle these special types of task in ConnieRTC - by means of ConnieRTC Plugin components. It is a generic reference implementation intended to be customized to meet the needs of any particular use case, and ultimately accelerate the development of callback and voicemail functionality - both on the the front end (ConnieRTC), and in the IVR (e.g. Studio).
 
 The feature is inspired by the work in the [Queued Callback and Voicemail](https://www.twilio.com/docs/flex/solutions-library/queued-callback-and-voicemail) Twilio Solution Library, however it has a few key aspects that it improves upon:
 
@@ -16,7 +16,7 @@ The feature is inspired by the work in the [Queued Callback and Voicemail](https
 - Voicemail retrieval works with recording media HTTP authentication enabled or disabled
 - In-queue callback and voicemail requests keep their place in line by using the original task's start time for the callback request
 
-## Flex User Experience
+## ConnieRTC User Experience
 
 The vanilla feature without any further customizations will look like this for callbacks
 
@@ -32,13 +32,13 @@ And Voicemails created from the Transcription Callback URL will look like this
 
 ## How Does it Work?
 
-The feature works by registering custom Flex Channels for callbacks and voicemails. These channels are a presentation only layer, on top of the TaskRouter Task Channel, which remains 'voice'.
+The feature works by registering custom ConnieRTC Channels for callbacks and voicemails. These channels are a presentation only layer, on top of the TaskRouter Task Channel, which remains 'voice'.
 
 When the channel is registered, it renders custom components based on the task attribute; _taskType: callback_ or _taskType: voicemail_
 
 There are assorted serverless functions for creating a callback, re-queueing a callback, and for orchestrating a wait experience that offers an in-queue callback option.
 
-When retrieving voicemail, the `fetch-voicemail` function is invoked. This fetches the recording media using HTTP authentication and returns it base64-encoded to Flex UI.
+When retrieving voicemail, the `fetch-voicemail` function is invoked. This fetches the recording media using HTTP authentication and returns it base64-encoded to ConnieRTC UI.
 
 ## Setup and Dependencies
 
@@ -60,7 +60,7 @@ This serverless function can be used from anywhere, not just the studio flow, to
 
 #### Specifying the Workflow to Use
 
-The creation of a task requires a workflow. You may create a custom workflow, that uses some collected data to organize the tasks into different queues or maybe something more complex. You may also just want to use the default "Assign To Anyone" workflow that is spawned on a vanilla Flex instance.
+The creation of a task requires a workflow. You may create a custom workflow, that uses some collected data to organize the tasks into different queues or maybe something more complex. You may also just want to use the default "Assign To Anyone" workflow that is spawned on a vanilla ConnieRTC instance.
 
 Once you have decided which workflow you are using, you can either reference it in the environment file for your serverless-functions (`TWILIO_FLEX_CALLBACK_WORKFLOW_SID`), or you can explicitly provide a `workflowSid` in the call to the function. 
 
@@ -91,7 +91,7 @@ The above steps assume there's logic in your IVR to allow a customer to request 
 
 If you also want to offer up a post-IVR "wait experience" to your customers - to allow them to request a callback or leave a voicemail while they are waiting in queue (i.e. while waiting for TaskRouter to route their call task to an agent), the template provides a boilerplate implementation of exactly this in the _wait-experience_ Serverless Function.
 
-Simply set this function's URL as **_Hold Music URL_** in the Studio Send to Flex widget, or as the `waitUrl` if using the `<Enqueue>` TwiML verb. e.g.
+Simply set this function's URL as **_Hold Music URL_** in the Studio Send to ConnieRTC widget, or as the `waitUrl` if using the `<Enqueue>` TwiML verb. e.g.
 
 `https://custom-flex-extensions-serverless-XXXX-dev.twil.io/features/callback-and-voicemail/studio/wait-experience`
 
@@ -100,7 +100,7 @@ The in-queue logic is designed to maintain the initial task's workflow, attribut
 #### Noteworthy Points Regarding the _wait-experience_ Logic
 
 - **Creating a callback (or voicemail) via the _wait-experience_ logic will _retain_ your place in queue by default** - when we create a new task representing the callback or voicemail request, by default we set the `virtualStartTime` parameter to the original task's `dateCreated` timestamp. This effectively orders the new task within the queue the same as the original task. This may optionally be disabled within the options under `wait-experience.protected.js`.
-- **We are able to set useful reporting attributes by programmatically canceling the original call task when a customer chooses to request a callback (or leave a voicemail)** - rather than letting the task auto-cancel via native TaskRouter orchestration when the call ends. This includes a custom cancelation reason, as well as marking the task as `abandoned: "Follow-Up"` in the `conversations` attribute - which prevents Flex Insights from including this call in any Abandoned metrics (see [Track Abandoned Conversations in Flex Insights](https://www.twilio.com/docs/flex/end-user-guide/insights/abandoned-conversations#abandoned)).
+- **We are able to set useful reporting attributes by programmatically canceling the original call task when a customer chooses to request a callback (or leave a voicemail)** - rather than letting the task auto-cancel via native TaskRouter orchestration when the call ends. This includes a custom cancelation reason, as well as marking the task as `abandoned: "Follow-Up"` in the `conversations` attribute - which prevents ConnieRTC Insights from including this call in any Abandoned metrics (see [Track Abandoned Conversations in ConnieRTC Insights](https://www.twilio.com/docs/flex/end-user-guide/insights/abandoned-conversations#abandoned)).
 - **Cancelling the ongoing call task programmatically also prevents the call task reaching an agent when the customer has already committed to leaving a voicemail (or requesting a callback)**. We leave this task cancellation until the very last possible moment - to maximize the opportunity for an agent to answer.
 - **It is essential to lookup and retain the task SID of the ongoing call task immediately - so that we can cancel it later and make changes to its reporting attributes as mentioned above.** Our implementation (see _getPendingTaskByCallSid()_) immediately retrieves the top 20 most recent `pending` or `reserved` (i.e. not-yet-accepted) tasks on the provided `workflowSid`, and finds the one with the matching `call_sid` attribute. Since this lookup occurs immediately on entering our configured `waitUrl` TwiML application - milliseconds after the associated task is created - this approach works very reliably and has been extensively load tested (100% success over a 1000 call test at a rate of 30 calls per second).
 - **If for some reason the _wait-experience_ logic fails to find the task for the ongoing call's call SID, it will fail gracefully** by informing the customer that the callback and voicemail capability is currently unavailable.

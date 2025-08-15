@@ -17,12 +17,12 @@ If you wish to modify the template in any way, you will need to set up your deve
   - We also need to instruct `npm` to use Git Bash for executing scripts. To do so, run: `npm config set script-shell "C:\\Program Files\\git\\bin\\bash.exe"` (adjust as needed for the installed Git location)
 
 :::caution Feature Functionality
- some features may not be functional without a deployment of the TaskRouter configuration and studio flows. It is recommended to do at least one initial deploy to your environment using the [Deploy Flex GitHub workflow](install-template)
+ some features may not be functional without a deployment of the TaskRouter configuration and studio flows. It is recommended to do at least one initial deploy to your environment using the [Deploy ConnieRTC GitHub workflow](install-template)
 :::
 
 ## Setup
 
-1. Follow the steps to do an initial [deploy to hosted Flex](install-template) at least once
+1. Follow the steps to do an initial [deploy to hosted ConnieRTC](install-template) at least once
 2. Clone the new repository that you just created
 ``` bash
 git clone <repo-url>
@@ -50,5 +50,5 @@ the admin panel is disabled by default when working locally. See the [admin pane
 :::
 
 :::caution Development Gotcha
-When developing locally, Flex config is overridden by anything in your `plugin-flex-ts-template-v2/public/appConfig.js`. appConfig is only applicable when running the plugin locally, so you can edit this file to toggle features on and off for your locally running web server. You can also tweak the api endpoint for your serverless functions if you need to.
+When developing locally, ConnieRTC config is overridden by anything in your `plugin-flex-ts-template-v2/public/appConfig.js`. appConfig is only applicable when running the plugin locally, so you can edit this file to toggle features on and off for your locally running web server. You can also tweak the api endpoint for your serverless functions if you need to.
 :::
