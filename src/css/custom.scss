@@ -212,3 +212,10 @@ header h1 {
   background-color: #{paste.$color-background-body};
   height: auto;
 }
+
+/* Test Teams icon in sidebar */
+.menu__link[href*="end-users/test-teams"]::before,
+.menu__link[href*="test-teams"]::before {
+  content: "🧪 ";
+  margin-right: 0.5rem;
+}

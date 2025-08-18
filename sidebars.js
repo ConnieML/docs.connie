@@ -58,6 +58,18 @@ const sidebars = {
     },
   ],
 
+  endUserTestTeams: [
+    {
+      type: 'category',
+      label: 'Connie End User - Test Teams',
+      collapsed: false,
+      items: [
+        'end-users/test-teams/overview',
+        // Add more test teams pages here as they're created
+      ],
+    },
+  ],
+
   // Connie Developer Documentation Sidebar
   developer: [
     {
