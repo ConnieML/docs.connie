@@ -1,0 +1,430 @@
+{
+  "feature": {
+    "name": "conversation-transfer",
+    "title": "Conversation Transfer",
+    "description": "Enable transfer of calls, SMS, webchat, and WhatsApp conversations between agents and queues in ConnieRTC",
+    "version": "2.8+",
+    "status": "production",
+    "last_updated": "2025-01-22",
+    "production_deployment": {
+      "nss_deployment_date": "2025-01-21",
+      "resolution_date": "2025-01-22",
+      "critical_fixes_applied": [
+        "workflow_sid_configuration_fix",
+        "taskrouter_routing_validation", 
+        "cross_channel_transfer_testing",
+        "bad_request_error_resolution",
+        "multi_account_workflow_sid_discovery",
+        "environment_variable_validation",
+        "workflow_status_verification"
+      ],
+      "validation_status": "complete_and_validated",
+      "implementation_learnings": {
+        "workflow_sid_discovery": {
+          "issue": "Each CBO requires unique workflow SIDs - cannot be shared between accounts",
+          "solution": "Use TaskRouter console to identify correct Chat Transfer workflow for each CBO account",
+          "validation_command": "echo $TWILIO_FLEX_CHAT_TRANSFER_WORKFLOW_SID - should return WWxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx format",
+          "critical_step": "Verify workflow Status is Active in TaskRouter console"
+        },
+        "common_production_issues": [
+          {
+            "error": "TaskRouter error: Bad Request",
+            "frequency": "most_common",
+            "cause": "Incorrect or missing workflow SID configuration",
+            "resolution": "Verify workflow SID matches active Chat Transfer workflow in TaskRouter console",
+            "resolution_time": "5-10 minutes once identified"
+          },
+          {
+            "error": "Transfers failing silently",
+            "cause": "Workflow exists but is inactive",
+            "resolution": "Ensure workflow status is Active in TaskRouter console",
+            "prevention": "Monitor workflow status as part of deployment validation"
+          },
+          {
+            "error": "Environment variable reset",
+            "cause": "Service restarts or deployments clearing custom environment variables",
+            "resolution": "Verify environment variable persistence after service restarts",
+            "monitoring": "Include environment variable validation in health checks"
+          }
+        ],
+        "testing_validation": {
+          "required_tests": [
+            "Cold transfer agent-to-agent",
+            "Cold transfer agent-to-queue", 
+            "Warm transfer with multi-participant",
+            "Transfer failure handling",
+            "Cross-queue transfer routing",
+            "Conversation history preservation",
+            "TaskRouter dashboard validation"
+          ],
+          "success_criteria": [
+            "Transfer completes within 10 seconds",
+            "No participant disconnections",
+            "Conversation history fully preserved",
+            "Proper error messages on failures",
+            "Zero TaskRouter error: Bad Request messages",
+            "Agent notifications delivered within 5 seconds",
+            "Transfer success rate >95%"
+          ],
+          "monitoring_period": "First 2 hours post-deployment"
+        },
+        "deployment_protocol": {
+          "pre_deployment": [
+            "Verify workflow SID for each CBO account",
+            "Test workflow discovery process",
+            "Validate environment variable format",
+            "Confirm workflow active status"
+          ],
+          "post_deployment": [
+            "Test transfers within 15 minutes",
+            "Monitor TaskRouter dashboard",
+            "Validate no Bad Request errors",
+            "Check transfer success rate dashboard"
+          ],
+          "rollback_triggers": [
+            "Transfer success rate <90% for >15 minutes",
+            "TaskRouter error: Bad Request messages",
+            "Environment variable corruption"
+          ]
+        }
+      }
+    }
+  },
+  "audiences": {
+    "cbo_users": {
+      "agents": {
+        "url": "/cbo-users/agents/conversation-transfer",
+        "key_tasks": [
+          "transfer_conversation_to_agent",
+          "transfer_conversation_to_queue", 
+          "use_cold_transfer",
+          "use_warm_transfer",
+          "add_transfer_notes"
+        ],
+        "user_interface_elements": [
+          "transfer_button",
+          "agent_dropdown",
+          "queue_dropdown",
+          "transfer_notes_field"
+        ]
+      },
+      "supervisors": {
+        "url": "/cbo-users/supervisors/conversation-transfer",
+        "key_tasks": [
+          "monitor_agent_transfers",
+          "review_transfer_patterns",
+          "train_agents_on_transfers",
+          "manage_transfer_queues"
+        ],
+        "metrics": [
+          "transfer_rate_by_agent",
+          "transfer_success_rate",
+          "average_transfer_time",
+          "customer_satisfaction_post_transfer"
+        ]
+      },
+      "administrators": {
+        "url": "/cbo-users/administrators/conversation-transfer",
+        "key_tasks": [
+          "enable_conversation_transfer_feature",
+          "configure_transfer_queues",
+          "set_agent_permissions",
+          "monitor_system_performance"
+        ],
+        "configuration": {
+          "feature_settings": {
+            "enabled": "boolean",
+            "cold_transfer": "boolean",
+            "multi_participant": "boolean"
+          },
+          "environment_variables": [
+            "TWILIO_FLEX_CHAT_TRANSFER_WORKFLOW_SID"
+          ]
+        }
+      }
+    },
+    "platform_developers": {
+      "url": "/platform-developers/conversation-transfer",
+      "key_concepts": [
+        "conversation_based_messaging",
+        "interactions_api",
+        "taskrouter_workflows",
+        "participant_management"
+      ],
+      "apis": {
+        "transfer_conversation": {
+          "endpoint": "/conversation-transfer/transfer-conversation",
+          "method": "POST",
+          "parameters": {
+            "conversationSid": "string (required)",
+            "targetType": "enum ['worker', 'queue'] (required)",
+            "targetSid": "string (required)",
+            "transferReason": "string (optional)",
+            "transferNotes": "string (optional)"
+          },
+          "response": {
+            "success": "boolean",
+            "inviteSid": "string"
+          }
+        }
+      },
+      "task_attributes": {
+        "transferTargetType": "worker | queue",
+        "transferTargetSid": "Worker SID for agent transfers",
+        "transferQueueName": "Queue friendly name for queue transfers",
+        "workerSidsInConversation": "array of current participant worker SIDs",
+        "originalConversationSid": "source conversation identifier",
+        "transferReason": "optional categorization",
+        "transferNotes": "optional context for receiving agent"
+      }
+    },
+    "support_team": {
+      "url": "/support-team/conversation-transfer-troubleshooting",
+      "common_issues": [
+        {
+          "issue": "transfer_button_missing",
+          "quick_checks": [
+            "feature_enabled",
+            "agent_permissions",
+            "conversation_type_supported"
+          ]
+        },
+        {
+          "issue": "transfer_stuck_loading", 
+          "quick_checks": [
+            "target_agent_availability",
+            "taskrouter_workflow_status",
+            "timeout_configuration"
+          ]
+        },
+        {
+          "issue": "agent_no_transfer_notification",
+          "quick_checks": [
+            "notification_settings",
+            "agent_availability",
+            "queue_assignments"
+          ]
+        },
+        {
+          "issue": "transfer_failures_with_errors",
+          "quick_checks": [
+            "system_status",
+            "workflow_configuration",
+            "recent_deployments"
+          ]
+        }
+      ],
+      "escalation_data": [
+        "conversation_sid",
+        "agent_information",
+        "timestamp",
+        "error_messages",
+        "browser_device_info"
+      ]
+    }
+  },
+  "technical_specifications": {
+    "supported_channels": [
+      "voice",
+      "sms", 
+      "webchat",
+      "whatsapp"
+    ],
+    "transfer_types": {
+      "cold_transfer": {
+        "description": "Immediate transfer with agent disconnection",
+        "use_cases": ["simple_handoffs", "queue_distribution"]
+      },
+      "warm_transfer": {
+        "description": "Collaborative transfer with multi-participant support",
+        "use_cases": ["complex_handoffs", "training_scenarios", "escalations"]
+      }
+    },
+    "requirements": {
+      "connieRTC_version": "2.8+",
+      "taskrouter_workflow": "Chat Transfer workflow required",
+      "permissions": [
+        "conversations.transfer.send",
+        "conversations.transfer.receive"
+      ]
+    }
+  },
+  "integration_points": {
+    "taskrouter": {
+      "workflow_sid": "TWILIO_FLEX_CHAT_TRANSFER_WORKFLOW_SID",
+      "task_routing_logic": "Routes based on transferTargetType and transferTargetSid"
+    },
+    "interactions_api": {
+      "invites_endpoint": "Creates transfer invitations",
+      "participants_endpoint": "Manages conversation participants"
+    },
+    "frontend_hooks": [
+      "actions_hook",
+      "components_hook",
+      "events_hook"
+    ]
+  },
+  "configuration_examples": {
+    "basic_feature_config": {
+      "enabled": true,
+      "cold_transfer": true,
+      "multi_participant": true
+    },
+    "workflow_json": {
+      "task_routing": {
+        "filters": [
+          {
+            "expression": "transferTargetType == 'worker'",
+            "targets": [
+              {
+                "queue": "everyone",
+                "known_worker_sid": "{{task.transferTargetSid}}"
+              }
+            ]
+          },
+          {
+            "expression": "transferTargetType == 'queue'",
+            "targets": [
+              {
+                "queue": "{{task.transferQueueName}}"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "monitoring_metrics": {
+    "performance": [
+      "transfer_success_rate",
+      "average_transfer_time", 
+      "transfer_abandonment_rate"
+    ],
+    "usage": [
+      "transfers_per_day",
+      "cold_vs_warm_transfer_ratio",
+      "most_common_transfer_reasons"
+    ],
+    "quality": [
+      "customer_satisfaction_post_transfer",
+      "first_call_resolution_after_transfer",
+      "transfer_loop_incidents"
+    ]
+  },
+  "error_codes": {
+    "20001": "Target agent unavailable",
+    "20404": "Transfer target not found", 
+    "50001": "Transfer timeout",
+    "50002": "Invalid conversation state",
+    "50003": "Insufficient permissions",
+    "70001": "Invalid workflow SID configuration",
+    "70002": "TaskRouter workflow not found or inactive"
+  },
+  "production_troubleshooting": {
+    "workflow_sid_issues": {
+      "symptoms": [
+        "transfers_fail_immediately",
+        "error_20404_on_all_transfers",
+        "taskrouter_not_routing",
+        "bad_request_errors_on_transfer_attempts",
+        "missing_transfer_button_ui",
+        "silent_transfer_failures"
+      ],
+      "resolution": [
+        "verify_TWILIO_FLEX_CHAT_TRANSFER_WORKFLOW_SID_environment_variable",
+        "check_workflow_exists_in_taskrouter_console",
+        "ensure_workflow_name_matches_chat_transfer_convention",
+        "validate_workflow_active_status",
+        "confirm_workflow_json_routing_logic_correct",
+        "verify_workflow_sid_format_34_characters",
+        "check_environment_variable_persistence_after_restart"
+      ],
+      "prevention": [
+        "test_transfers_in_staging_before_production",
+        "verify_environment_variables_during_deployment",
+        "monitor_transfer_success_rates_post_deployment",
+        "implement_automated_workflow_sid_validation",
+        "include_workflow_status_in_health_checks",
+        "document_workflow_sids_per_cbo_account"
+      ],
+      "nss_specific_resolution": {
+        "workflow_sid_discovery_process": [
+          "Login to Twilio Console for specific CBO account",
+          "Navigate to TaskRouter > Workflows",
+          "Identify workflow named 'Chat Transfer' or similar",
+          "CRITICAL: Verify Status is Active",
+          "Copy Workflow SID (format: WWxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx - exactly 34 characters)",
+          "Update TWILIO_FLEX_CHAT_TRANSFER_WORKFLOW_SID environment variable",
+          "Restart ConnieRTC service (required for env var changes)",
+          "Test transfers immediately after restart",
+          "Monitor for 2 hours post-change"
+        ],
+        "validation_commands": [
+          "echo $TWILIO_FLEX_CHAT_TRANSFER_WORKFLOW_SID",
+          "curl -X POST /conversation-transfer/test-workflow-sid",
+          "Check TaskRouter dashboard for recent transfer tasks",
+          "Monitor ConnieRTC logs for transfer success/failure",
+          "Test agent-to-agent and agent-to-queue transfers"
+        ],
+        "success_indicators": [
+          "Transfer success rate >95%",
+          "Zero TaskRouter error: Bad Request messages",
+          "Transfer completion time <10 seconds",
+          "Agent notifications working normally"
+        ]
+      }
+    },
+    "deployment_checklist": {
+      "pre_deployment": [
+        "Backup current environment variables",
+        "Test transfer functionality in staging",
+        "Verify TaskRouter workflow configuration for each CBO",
+        "Confirm agent permissions for transfers",
+        "Document current workflow SIDs",
+        "Validate workflow active status",
+        "Test workflow discovery process"
+      ],
+      "post_deployment": [
+        "Test cold transfers within first 15 minutes",
+        "Test warm transfers with multiple participants",
+        "Monitor error rates for first 2 hours",
+        "Validate conversation history preservation",
+        "Confirm success metrics are reporting correctly",
+        "Check TaskRouter dashboard for transfer task creation",
+        "Monitor for TaskRouter error: Bad Request messages",
+        "Verify environment variable persistence",
+        "Test cross-queue transfer routing"
+      ],
+      "emergency_procedures": [
+        "Immediate rollback if transfer success rate <85%",
+        "Emergency workflow SID correction process",
+        "Agent communication protocol for transfer outages",
+        "Escalation path for unresolved issues"
+      ]
+    }
+  },
+  "related_features": [
+    "multi-call",
+    "supervisor-barge-coach",
+    "chat-transfer",
+    "internal-call"
+  ],
+  "migration_notes": {
+    "from_legacy": "Replaces previous chat-transfer feature with unified conversation handling",
+    "breaking_changes": "Requires TaskRouter workflow update and new environment variable"
+  },
+  "ai_assistant_guidance": {
+    "when_users_ask_about": {
+      "how_to_transfer": "Direct to appropriate audience-specific documentation",
+      "transfer_not_working": "Start with support team troubleshooting guide",
+      "customization_needs": "Refer to platform developers documentation",
+      "reporting_metrics": "Point to supervisor or administrator docs"
+    },
+    "context_clues": {
+      "user_mentions_taking_calls": "Likely CBO staff agent",
+      "user_mentions_configuring_system": "Likely CBO administrator",
+      "user_mentions_code_or_apis": "Likely platform developer",
+      "user_mentions_helping_users": "Likely support team member"
+    }
+  }
+}

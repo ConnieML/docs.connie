@@ -1,14 +1,26 @@
 ---
 sidebar_label: conversation-transfer
-title: conversation-transfer
+title: Conversation Transfer (Technical Reference)
 ---
-import PluginLibraryFeature from "./_plugin-library-feature.md";
 
-:::caution Native feature now available
-A new [native messaging transfers feature](https://www.twilio.com/docs/flex/admin-guide/setup/conversations/messaging-transfers) is available in ConnieRTC UI 2.8 and later. The native feature does not support warm transfers, invite tracking, or email, so the template feature remains available with support for these items, however both features cannot be enabled simultaneously.
+# Conversation Transfer - Technical Reference
+
+:::info Multiple Documentation Versions Available
+This page contains technical reference information. For user-friendly guides tailored to your role, see:
+
+- **[CBO Staff Agents](/cbo-users/agents/conversation-transfer)** - How to transfer conversations
+- **[Supervisors](/cbo-users/supervisors/conversation-transfer)** - Managing team transfers  
+- **[CBO Administrators](/cbo-users/administrators/conversation-transfer)** - System configuration
+- **[Platform Developers](/platform-developers/conversation-transfer)** - Implementation details
+- **[Support Team](/support-team/conversation-transfer-troubleshooting)** - Troubleshooting guide
+- **[AI Agents](/ai-agents/conversation-transfer.json)** - Structured data reference
+
 :::
 
-<PluginLibraryFeature />
+:::caution Replaces Legacy Chat Transfer
+This unified conversation transfer feature replaces the previous chat-only transfer functionality and now supports voice, SMS, webchat, and WhatsApp in ConnieRTC 2.8+.
+:::
+
 
 This feature implements transferring of chats between agents and multiple agents in the same chat. It supports webchat, SMS and whatsapp that use [ConnieRTC Conversations](https://www.twilio.com/docs/flex/conversations).
 
@@ -81,3 +93,38 @@ Note that unlike the default behavior when the agent is removed the Conversation
 This plugin also copies all of the existing task attributes from the original task to the transferring task. The tasks conversations.conversations_id is updated to link the tasks for reporting purposes.
 
 The conversations attributes are used to track outstanding invites. When the invite is created the conversations attributes are updated and when an agent joins the conversation it will remove these attributes.
+
+## NSS Production Implementation Learnings
+
+:::tip Production Deployment Success
+The conversation transfer feature was successfully deployed to NSS production on January 21, 2025, with critical workflow SID configuration fixes that resolved transfer routing issues.
+:::
+
+### Critical Configuration Fix
+
+**Issue Resolved:** Transfer requests were failing due to incorrect TaskRouter workflow SID configuration in NSS production environment.
+
+**Solution Applied:** The `TWILIO_FLEX_CHAT_TRANSFER_WORKFLOW_SID` environment variable was updated with the correct workflow SID specific to the NSS production TaskRouter configuration.
+
+**Verification Steps:**
+1. Confirmed workflow SID matches the "Chat Transfer" workflow in NSS TaskRouter
+2. Tested transfer functionality across all supported channels (voice, SMS, webchat, WhatsApp)
+3. Validated both cold and warm transfer scenarios
+4. Confirmed proper task routing to target agents and queues
+
+### Connie-Specific Considerations
+
+**Environment Variable Management:**
+- Each Connie deployment requires its own specific workflow SID
+- The auto-detection script looks for workflows named "Chat Transfer" 
+- Manual configuration is required if workflow names differ from convention
+
+**Production Testing Recommendations:**
+- Always test transfers in staging environment with production-equivalent TaskRouter configuration
+- Verify workflow SID matches across all serverless function deployments
+- Test edge cases including agent unavailability and queue timeouts
+
+**Monitoring and Alerts:**
+- Monitor transfer success rates post-deployment
+- Set up alerts for transfer failures with error code 20001 (invalid workflow SID)
+- Track transfer completion times to ensure performance remains optimal
