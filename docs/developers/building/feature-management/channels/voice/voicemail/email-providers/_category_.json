@@ -1,7 +1,7 @@
 {
   "label": "Email Providers",
   "position": 3,
-  "collapsed": false,
+  "collapsed": true,
   "collapsible": true,
   "description": "Setup guides for specific email service providers"
 }

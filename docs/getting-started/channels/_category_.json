@@ -1,0 +1,12 @@
+{
+  "label": "Channels",
+  "position": 1,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "Communication Channels",
+    "description": "Explore all the communication channels available in ConnieRTC",
+    "slug": "/getting-started/channels"
+  }
+}

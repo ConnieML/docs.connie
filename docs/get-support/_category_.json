@@ -1,0 +1,10 @@
+{
+  "label": "🆘 Get Support",
+  "position": 99,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "🆘 Get Support",
+    "description": "Find help, resources, and support for your ConnieRTC implementation"
+  }
+}

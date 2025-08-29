@@ -8,7 +8,7 @@ There are currently no steps provided for manually deploying Terraform from your
 
 Time to complete: _~20-30 minutes_
 
-Before following any of these steps, first complete the steps for [local setup and use](/getting-started/run-locally).
+Before following any of these steps, first complete the steps for [local setup and use](/developers/run-locally).
 
 ## Deploy add-ons
 

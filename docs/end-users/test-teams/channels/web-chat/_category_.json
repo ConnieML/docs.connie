@@ -1,0 +1,8 @@
+{
+  "label": "Web Chat",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Testing protocols for web chat functionality"
+  }
+}

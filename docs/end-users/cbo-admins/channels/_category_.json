@@ -1,7 +1,7 @@
 {
   "label": "Channels",
   "position": 2,
-  "collapsed": false,
+  "collapsed": true,
   "collapsible": true,
   "description": "Communication channel configuration and setup guides"
 }

@@ -1,6 +1,7 @@
 ---
 sidebar_label: Use for a specific feature
 title: Use the template for a specific feature
+sidebar_position: 7
 ---
 
 You may wish to deploy only a single feature from the template. There are two ways to remove features from the template:

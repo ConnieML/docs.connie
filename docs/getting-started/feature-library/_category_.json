@@ -1,0 +1,12 @@
+{
+  "label": "Features Overview",
+  "position": 2,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "ConnieRTC Features",
+    "description": "Explore all the features available in the ConnieRTC platform",
+    "slug": "/getting-started/features"
+  }
+}

@@ -9,7 +9,7 @@ This feature forwards logs emitted by the ConnieRTC Project Template to Datadog.
 
 This feature allows the following configuration settings.
 
-![datadog-log-integration settings](../../static/img/features/datadog-log-integration/settings.png)
+![datadog-log-integration settings](/img/features/datadog-log-integration/settings.png)
 
 | Setting | Description |
 | --------| ------------|

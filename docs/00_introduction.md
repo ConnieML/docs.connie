@@ -263,10 +263,10 @@ Find your documentation path based on how you interact with ConnieRTC:
 This documentation covers all the key components and features of the ConnieRTC platform:
 
 - **Scalable Solutions**: Can be used for large projects or simple standalone features
-- **Feature-Rich**: Many of the most common features requested by ConnieRTC customers [are already packaged in the template](/feature-library/overview)
+- **Feature-Rich**: Many of the most common features requested by ConnieRTC customers [are already packaged in the template](/getting-started/feature-library/overview)
 - **Modular Design**: Each feature is self-contained and easily removed if desired  
-- **Admin Control**: Features can be turned on and off using an [administration panel](/feature-library/admin-ui)
-- **Quick Deployment**: You can [deploy this solution and use it to build in just a few minutes](/getting-started/install-template) by providing your account SID, API key, and API secret
+- **Admin Control**: Features can be turned on and off using an [administration panel](/getting-started/feature-library/admin-ui)
+- **Quick Deployment**: You can [deploy this solution and use it to build in just a few minutes](/developers/install-template) by providing your account SID, API key, and API secret
 
 ## Why Choose ConnieRTC?
 

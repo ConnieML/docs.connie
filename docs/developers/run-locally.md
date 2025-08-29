@@ -1,6 +1,7 @@
 ---
 sidebar_label: Run the template locally
 title: Run the template locally
+sidebar_position: 6
 ---
 
 If you wish to modify the template in any way, you will need to set up your development environment to run the template locally using the following steps.
@@ -46,7 +47,7 @@ npm start
 ```
 
 :::info Feature Limitation
-the admin panel is disabled by default when working locally. See the [admin panel docs](/feature-library/admin-ui) for more information
+the admin panel is disabled by default when working locally. See the [admin panel docs](/getting-started/feature-library/admin-ui) for more information
 :::
 
 :::caution Development Gotcha
