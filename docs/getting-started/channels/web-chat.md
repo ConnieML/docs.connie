@@ -1,6 +1,6 @@
 ---
 sidebar_label: Web Chat
-sidebar_position: 2
+sidebar_position: 3
 title: "Web Chat Channel"
 ---
 
@@ -14,17 +14,71 @@ Web Chat enables instant communication between your organization and website vis
 
 ## Key Features
 
-### Chat Management
-- **Real-time Messaging** - Instant two-way communication
-- **Queue Management** - Handle multiple chat sessions efficiently
-- **Typing Indicators** - See when agents or visitors are typing
-- **Chat Transfer** - Move conversations between agents seamlessly
-
-### Enhanced Capabilities
-- **Pre-chat Forms** - Collect visitor information before chat starts
-- **File Sharing** - Exchange documents and images during chat
-- **Canned Responses** - Quick access to common answers
-- **Chat Transcripts** - Automatic email delivery of conversation history
+<div className="row">
+  <div className="col col--6 margin-bottom--lg">
+    <div className="card">
+      <div className="card__header">
+        <h3>💬 Chat Management</h3>
+      </div>
+      <div className="card__body">
+        <ul>
+          <li><strong>Real-time Messaging</strong> - Instant two-way communication</li>
+          <li><strong>Queue Management</strong> - Handle multiple sessions efficiently</li>
+          <li><strong>Typing Indicators</strong> - See when users are typing</li>
+          <li><strong>Chat Transfer</strong> - Seamless agent handoffs</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div className="col col--6 margin-bottom--lg">
+    <div className="card">
+      <div className="card__header">
+        <h3>🚀 Enhanced Capabilities</h3>
+      </div>
+      <div className="card__body">
+        <ul>
+          <li><strong>Pre-chat Forms</strong> - Collect visitor information</li>
+          <li><strong>File Sharing</strong> - Exchange documents & images</li>
+          <li><strong>Canned Responses</strong> - Quick access to answers</li>
+          <li><strong>Chat Transcripts</strong> - Automatic email delivery</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div className="col col--6 margin-bottom--lg">
+    <div className="card">
+      <div className="card__header">
+        <h3>🎨 Widget Customization</h3>
+      </div>
+      <div className="card__body">
+        <ul>
+          <li><strong>Brand Appearance</strong> - Match your colors & style</li>
+          <li><strong>Smart Positioning</strong> - Optimal widget placement</li>
+          <li><strong>Auto-Behavior</strong> - Popup and greeting rules</li>
+          <li><strong>Multi-Language</strong> - Localization support</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div className="col col--6 margin-bottom--lg">
+    <div className="card">
+      <div className="card__header">
+        <h3>📊 Analytics & Insights</h3>
+      </div>
+      <div className="card__body">
+        <ul>
+          <li><strong>Chat Metrics</strong> - Response times & volume</li>
+          <li><strong>Satisfaction Surveys</strong> - Post-chat feedback</li>
+          <li><strong>Agent Performance</strong> - Individual & team stats</li>
+          <li><strong>Visitor Journey</strong> - Complete interaction tracking</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 ## Implementation Options
 
@@ -46,13 +100,6 @@ Complete chat solution
 - Satisfaction surveys
 - Advanced analytics
 - Custom branding
-
-## Widget Customization
-
-- **Appearance** - Match your brand colors and style
-- **Position** - Choose widget placement on your site
-- **Behavior** - Configure auto-popup and greeting rules
-- **Languages** - Multi-language support available
 
 ## Getting Started
 

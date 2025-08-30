@@ -1,6 +1,6 @@
 ---
 sidebar_label: SMS/Text
-sidebar_position: 5
+sidebar_position: 2
 title: "SMS/Text Channel"
 ---
 
@@ -14,17 +14,71 @@ The SMS/Text channel enables quick, convenient communication via text messaging.
 
 ## Key Features
 
-### Messaging Capabilities
-- **Two-way Texting** - Full conversational SMS support
-- **MMS Support** - Send and receive images and files
-- **Group Messaging** - Broadcast to multiple recipients
-- **Short Codes** - Easy-to-remember numbers for campaigns
-
-### Automation Features
-- **Auto-Responders** - Instant replies to common keywords
-- **Appointment Reminders** - Automated scheduling notifications
-- **Alert Systems** - Emergency and important updates
-- **Opt-in/Opt-out** - Compliance management built-in
+<div className="row">
+  <div className="col col--6 margin-bottom--lg">
+    <div className="card">
+      <div className="card__header">
+        <h3>📱 Messaging Capabilities</h3>
+      </div>
+      <div className="card__body">
+        <ul>
+          <li><strong>Two-way Texting</strong> - Full conversational SMS</li>
+          <li><strong>MMS Support</strong> - Images and file sharing</li>
+          <li><strong>Group Messaging</strong> - Multi-recipient broadcasts</li>
+          <li><strong>Short Codes</strong> - Easy campaign numbers</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div className="col col--6 margin-bottom--lg">
+    <div className="card">
+      <div className="card__header">
+        <h3>🤖 Automation Features</h3>
+      </div>
+      <div className="card__body">
+        <ul>
+          <li><strong>Auto-Responders</strong> - Keyword-triggered replies</li>
+          <li><strong>Appointment Reminders</strong> - Automated scheduling</li>
+          <li><strong>Alert Systems</strong> - Emergency notifications</li>
+          <li><strong>Opt-in/Opt-out</strong> - Built-in compliance</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div className="col col--6 margin-bottom--lg">
+    <div className="card">
+      <div className="card__header">
+        <h3>🎯 Use Cases</h3>
+      </div>
+      <div className="card__body">
+        <ul>
+          <li><strong>Appointments</strong> - Confirmations & reminders</li>
+          <li><strong>Outreach</strong> - Events & program updates</li>
+          <li><strong>Support</strong> - Quick Q&A and status updates</li>
+          <li><strong>Campaigns</strong> - Volunteer & donation drives</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div className="col col--6 margin-bottom--lg">
+    <div className="card">
+      <div className="card__header">
+        <h3>⚖️ Compliance & Best Practices</h3>
+      </div>
+      <div className="card__body">
+        <ul>
+          <li><strong>TCPA Compliance</strong> - Proper consent management</li>
+          <li><strong>10DLC Registration</strong> - Business messaging setup</li>
+          <li><strong>STOP/HELP Keywords</strong> - Required opt-out support</li>
+          <li><strong>Quiet Hours</strong> - Respect messaging windows</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 ## Use Cases
 

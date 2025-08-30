@@ -1,12 +1,12 @@
 {
   "label": "Channels",
-  "position": 1,
+  "position": 3,
   "collapsible": true,
   "collapsed": true,
   "link": {
     "type": "generated-index",
     "title": "Communication Channels",
-    "description": "Explore all the communication channels available in ConnieRTC",
+    "description": "Your clients and partners want to interact with your CBO using a variety of messaging channels. With Connie, your clients can make contact with your CBO from whatever channel or device they prefer to use and your agents can easily respond from one, unified desktop application and one, easy to use screen using the Connie Realtime Center Agent Desktop (ConnieRTC). As of prototype v1.5 Connie ships with 6 functioning channels (Voice, SMS, Webchat, Social Media, Email, and Fax).",
     "slug": "/getting-started/channels"
   }
 }

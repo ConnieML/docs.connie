@@ -14,17 +14,71 @@ The Voice channel provides traditional phone-based communication with modern con
 
 ## Key Features
 
-### Call Management
-- **Inbound/Outbound Calling** - Handle both incoming and outgoing calls
-- **Call Routing** - Intelligent routing based on skills, availability, and priority
-- **Queue Management** - Efficient handling of multiple simultaneous calls
-- **Call Recording** - Optional recording for quality and compliance
-
-### Advanced Features
-- **IVR System** - Interactive Voice Response for self-service options
-- **Voicemail** - Customizable voicemail with transcription
-- **Call Forwarding** - Flexible forwarding rules and schedules
-- **Conference Calling** - Multi-party call capabilities
+<div className="row">
+  <div className="col col--6 margin-bottom--lg">
+    <div className="card">
+      <div className="card__header">
+        <h3>📞 Call Management</h3>
+      </div>
+      <div className="card__body">
+        <ul>
+          <li><strong>Inbound/Outbound</strong> - Handle all call directions</li>
+          <li><strong>Smart Routing</strong> - Skills-based distribution</li>
+          <li><strong>Queue Management</strong> - Efficient call handling</li>
+          <li><strong>Call Recording</strong> - Quality & compliance</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div className="col col--6 margin-bottom--lg">
+    <div className="card">
+      <div className="card__header">
+        <h3>🎯 Advanced Features</h3>
+      </div>
+      <div className="card__body">
+        <ul>
+          <li><strong>IVR System</strong> - Self-service options</li>
+          <li><strong>Voicemail</strong> - With transcription</li>
+          <li><strong>Call Forwarding</strong> - Flexible rules</li>
+          <li><strong>Conference Calls</strong> - Multi-party support</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div className="col col--6 margin-bottom--lg">
+    <div className="card">
+      <div className="card__header">
+        <h3>🔊 Quality Management</h3>
+      </div>
+      <div className="card__body">
+        <ul>
+          <li><strong>Call Monitoring</strong> - Real-time supervision</li>
+          <li><strong>Whisper Coaching</strong> - In-call guidance</li>
+          <li><strong>Call Barging</strong> - Emergency intervention</li>
+          <li><strong>Analytics</strong> - Performance metrics</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div className="col col--6 margin-bottom--lg">
+    <div className="card">
+      <div className="card__header">
+        <h3>⚡ Productivity Tools</h3>
+      </div>
+      <div className="card__body">
+        <ul>
+          <li><strong>Click-to-Call</strong> - One-click dialing</li>
+          <li><strong>Call Transfer</strong> - Warm & cold transfers</li>
+          <li><strong>Hold Music</strong> - Custom audio</li>
+          <li><strong>Call Notes</strong> - Integrated documentation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 ## Provider Integration
 

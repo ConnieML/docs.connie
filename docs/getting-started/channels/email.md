@@ -1,6 +1,6 @@
 ---
 sidebar_label: Email
-sidebar_position: 3
+sidebar_position: 5
 title: "Email Channel"
 ---
 
@@ -14,38 +14,72 @@ The Email channel centralizes all email communications into your unified contact
 
 ## Key Features
 
-### Email Management
-- **Unified Inbox** - All emails in one centralized location
-- **Auto-Distribution** - Intelligent routing to appropriate agents
-- **Priority Handling** - Urgent email identification and escalation
-- **Thread Tracking** - Complete conversation history maintained
+<div className="row">
+  <div className="col col--6 margin-bottom--lg">
+    <div className="card">
+      <div className="card__header">
+        <h3>📧 Email Management</h3>
+      </div>
+      <div className="card__body">
+        <ul>
+          <li><strong>Unified Inbox</strong> - All emails centralized</li>
+          <li><strong>Auto-Distribution</strong> - Intelligent agent routing</li>
+          <li><strong>Priority Handling</strong> - Urgent email escalation</li>
+          <li><strong>Thread Tracking</strong> - Complete conversation history</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div className="col col--6 margin-bottom--lg">
+    <div className="card">
+      <div className="card__header">
+        <h3>⚡ Productivity Tools</h3>
+      </div>
+      <div className="card__body">
+        <ul>
+          <li><strong>Email Templates</strong> - Standardized responses</li>
+          <li><strong>Auto-Acknowledgment</strong> - Instant confirmations</li>
+          <li><strong>Scheduled Sending</strong> - Optimal delivery timing</li>
+          <li><strong>Bulk Operations</strong> - Multi-email handling</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div className="col col--6 margin-bottom--lg">
+    <div className="card">
+      <div className="card__header">
+        <h3>🔗 Integration Options</h3>
+      </div>
+      <div className="card__body">
+        <ul>
+          <li><strong>Gmail/Google Workspace</strong> - Full Google integration</li>
+          <li><strong>Microsoft 365</strong> - Seamless Exchange connectivity</li>
+          <li><strong>IMAP/SMTP</strong> - Universal email support</li>
+          <li><strong>Custom Domains</strong> - Your organization's addresses</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div className="col col--6 margin-bottom--lg">
+    <div className="card">
+      <div className="card__header">
+        <h3>🤖 Automation Features</h3>
+      </div>
+      <div className="card__body">
+        <ul>
+          <li><strong>Auto-Responders</strong> - Immediate acknowledgments</li>
+          <li><strong>Smart Routing</strong> - Keyword-based distribution</li>
+          <li><strong>Escalation Rules</strong> - Time-based priorities</li>
+          <li><strong>Out-of-Office</strong> - After-hours handling</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
-### Productivity Tools
-- **Email Templates** - Standardized responses for common inquiries
-- **Auto-Acknowledgment** - Immediate confirmation emails to senders
-- **Scheduled Sending** - Queue emails for optimal delivery times
-- **Bulk Operations** - Handle multiple emails efficiently
-
-## Integration Options
-
-### Email Providers
-- **Gmail/Google Workspace** - Full integration with Google services
-- **Microsoft 365/Outlook** - Seamless Exchange connectivity
-- **IMAP/SMTP** - Support for any standard email service
-- **Custom Domains** - Use your organization's email addresses
-
-### CRM Integration
-- Automatic contact matching
-- Email history in contact records
-- Activity tracking and reporting
-- Tag and categorization sync
-
-## Automation Features
-
-- **Auto-Responders** - Immediate acknowledgment messages
-- **Smart Routing** - Keyword-based distribution rules
-- **Escalation Rules** - Time-based priority increases
-- **Out-of-Office** - Automatic handling during non-business hours
 
 ## Getting Started
 

@@ -1,40 +1,19 @@
 ---
-sidebar_label: Overview
-sidebar_position: 0
-title: Feature Overview
+sidebar_label: Overview2
+sidebar_position: 0.1
+title: Feature Overview2
 hide_table_of_contents: true
 ---
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
-# Empowering Nonprofits to Serve Their Communities
-
-**ConnieRTC** is a comprehensive communication platform designed specifically for nonprofits and community-based organizations. Our features help you **Connect** with your clients, **Engage** your community, and **Deliver** critical services efficiently.
-
-## Feature Categories
-
-Every ConnieRTC feature is designed to support one of three core objectives:
-
-- **🔗 Connect** - Establish and maintain communication channels with those you serve
-- **💬 Engage** - Build meaningful interactions and relationships with your community  
-- **📦 Deliver** - Provide programs and services effectively to people in need
-
-## Feature Availability
-
-The following tables show all available features organized by communication channel. The **Availability** column indicates each feature's development status:
-
-- ✅ **Production Ready** - Fully tested and ready for deployment
-- 🚧 **Beta** - Available for testing with limited support
-- 🔬 **Experimental** - Proof of concept requiring customization
-- 📅 **Roadmap** - Planned for future release
+The **ConnieRTC Project Template** comes with a set of features enabled by default within the ConnieRTC configuration, along with additional features that can be enabled. Features that are also available from the [ConnieRTC Plugin Library](https://www.twilio.com/docs/flex/developer/plugins/plugin-library) are marked in the "Library" column.
 
 <Tabs queryString="type">
 <TabItem value="voice" label="Voice" default>
 
-| Feature                                                            | Description                                                                                                                                                             | Availability |
+| Feature                                                            | Description                                                                                                                                                             | Library |
 | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| [Unified Channel Manager](unified-channel-manager)                 | _seamlessly manage all communication channels from a single, intuitive interface - handle voice, SMS, chat, email, and social from one unified agent desktop_           | ✅ |
-| [Workflow Manager](workflow-manager)                               | _automate complex business processes and client journeys with visual workflow design - create custom routing, escalations, and automated responses_                     | ✅ |
 | [Admin UI](admin-ui)                                               | _adds a feature settings view to ConnieRTC for customizing the template_ <br/> **note by default this is disabled locally as this feature is only intended for hosted ConnieRTC.* |   |
 | [Agent Automation](agent-automation)                               | _adds auto accept and auto wrapup behaviors to agent desktop_                                                                                                           | ✅ |
 | [Attribute Viewer](attribute-viewer)                               | _easily view task and worker attributes within ConnieRTC_                                                                                                                    |   |
@@ -59,17 +38,17 @@ The following tables show all available features organized by communication chan
 | [Supervisor Barge & Coach](supervisor-barge-coach)                 | _introduce advanced supervisor barge and coach features_                                                                                                                | ✅ |
 | [Supervisor Capacity](supervisor-capacity)                         | _allow supervisors to update worker capacity configuration within ConnieRTC_                                                                                                 | ✅ |
 | [Supervisor Complete Reservation](supervisor-complete-reservation) | _allows supervisor to remotely complete agent tasks_                                                                                                                    | ✅ |
-| [Teams View Enhancements](overview2/teams-view-enhancements)                 | _adds optional columns (Team, Dept, Location, Skills) to the Workers Table. <br/> enable task highlighting based on task age_                                           |   |
-| [Teams View Filters](overview2/teams-view-filters)                           | _adds additional filtering options to the supervisor teams view_                                                                                                        |   |
-| [Worker Canvas Tabs](overview2/worker-canvas-tabs)                           | _consolidates the worker canvas sections into tabs_                                                                                                                     |   |
-| [Worker Details](overview2/worker-details)                                   | _view or update worker attributes_                                                                                                                                      |   |
+| [Teams View Enhancements](teams-view-enhancements)                 | _adds optional columns (Team, Dept, Location, Skills) to the Workers Table. <br/> enable task highlighting based on task age_                                           |   |
+| [Teams View Filters](teams-view-filters)                           | _adds additional filtering options to the supervisor teams view_                                                                                                        |   |
+| [Worker Canvas Tabs](worker-canvas-tabs)                           | _consolidates the worker canvas sections into tabs_                                                                                                                     |   |
+| [Worker Details](worker-details)                                   | _view or update worker attributes_                                                                                                                                      |   |
 
 ---
 
 </TabItem>
 <TabItem value="sms" label="SMS/Text">
 
-| Feature                                                      | Description                                                                                                                                                                | Availability |
+| Feature                                                      | Description                                                                                                                                                                | Library |
 | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | [Activity Reservation Handler](activity-reservation-handler) | _synchronize agent activities to reservation states_                                                                                                                       | ✅ |
 | [Activity Skill Filter](activity-skill-filter)               | _manage visibility for activities based on agent skills_                                                                                                                   | ✅ |
@@ -91,7 +70,7 @@ The following tables show all available features organized by communication chan
 </TabItem>
 <TabItem value="webchat" label="Web Chat">
 
-| Feature                                                      | Description                                                                                                                                                                | Availability |
+| Feature                                                      | Description                                                                                                                                                                | Library |
 | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | [Canned Responses](canned-responses)                         | _provide agents with pre-canned chat responses_                                                                                                                           | ✅ |
 | [Chat Transfer](chat-transfer)                               | _introduce chat transfer functionality for agents_                                                                                                                         | ✅ |
@@ -100,21 +79,21 @@ The following tables show all available features organized by communication chan
 </TabItem>
 <TabItem value="social" label="Social Media">
 
-| Feature                                                      | Description                                                                                                                                                                | Availability |
+| Feature                                                      | Description                                                                                                                                                                | Library |
 | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | [Conversation Transfer](conversation-transfer)               | _introduce conversation-based messaging transfer functionality for agents_                                                                                                 | ✅ |
 
 </TabItem>
 <TabItem value="email" label="Email">
 
-| Feature                                                      | Description                                                                                                                                                                | Availability |
+| Feature                                                      | Description                                                                                                                                                                | Library |
 | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | [Conversation Transfer](conversation-transfer)               | _introduce conversation-based messaging transfer functionality for agents_                                                                                                 | ✅ |
 
 </TabItem>
 <TabItem value="fax" label="Fax">
 
-| Feature                                                      | Description                                                                                                                                                                | Availability |
+| Feature                                                      | Description                                                                                                                                                                | Library |
 | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | [Conversation Transfer](conversation-transfer)               | _introduce conversation-based messaging transfer functionality for agents_                                                                                                 | ✅ |
 
@@ -127,10 +106,10 @@ These features will require modification for usage in a production setting. They
 
 ::: 
 
-| Feature                                              | Description                                                                                         | Availability |
-| ---------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------ |
-| [Chat-to-Video Escalation](chat-to-video-escalation) | _provide agents ability to elevate a chat conversation to a video conversation with screen sharing_ | 🔬 |
-| [Multi-call](multi-call)                             | _allow agents to receive a transferred call while already on a call_                                | 🔬 |
+| Feature                                              | Description                                                                                         |
+| ---------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| [Chat-to-Video Escalation](chat-to-video-escalation) | _provide agents ability to elevate a chat conversation to a video conversation with screen sharing_ |
+| [Multi-call](multi-call)                             | _allow agents to receive a transferred call while already on a call_                                |
 
 </TabItem>
 </Tabs>
