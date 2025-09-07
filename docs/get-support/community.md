@@ -11,6 +11,12 @@ title: "Community Support"
 
 **Peer-to-Peer Assistance** - Connect with experienced ConnieRTC users and share knowledge.
 
+<div style={{textAlign: 'center', margin: '24px 0'}}>
+  <a href="https://join.slack.com/t/connie-xqe6685/shared_invite/zt-3cyphps44-jQ_XaSmM1tSkk03fbXiaVg" target="_blank" rel="noopener noreferrer">
+    <img src="/img/support/slack_button-7610f9c51d82009ad912aded124c2d88.svg" alt="Join our Slack community" style={{width: '200px', height: 'auto'}} />
+  </a>
+</div>
+
 ## When to Use Community Support
 
 Community Support is ideal when you want to:
