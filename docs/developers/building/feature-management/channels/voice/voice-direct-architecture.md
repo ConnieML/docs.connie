@@ -145,10 +145,10 @@ MAILGUN_API_KEY=key-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ## Related Documentation
 
-- [Voice Direct Workflows](./direct.md)
-- [Voicemail-Only Configuration](./voicemail-only.md)
-- [Callback and Voicemail Feature](../../../feature-library/callback-and-voicemail.md)
-- [Email Notifications Setup](../add-ons/email-notifications.md)
+- [Voice Direct Workflows](./workflows/direct.md)
+- [Voicemail-Only Configuration](./workflows/voicemail-only.md)
+- [Callback and Voicemail Feature](/getting-started/feature-library/overview2/callback-and-voicemail.md)
+- [Email Notifications Setup](./add-ons/email-notifications.md)
 
 ## Developer Notes
 

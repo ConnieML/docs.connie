@@ -39,7 +39,7 @@ Choose the option that best fits your client's requirements:
 - Dedicated fax number provisioning
 - Email routing rules
 
-**Next steps:** → [Set up Basic Inbound Fax](/developers/building/feature-management/channels/fax/basic-fax-setup)
+**Next steps:** → [Set up Basic Inbound Fax](/developers/backend/fax/sinch-implementation)
 
 ---
 
@@ -56,7 +56,7 @@ Choose the option that best fits your client's requirements:
 - ConnieRTC UI components for fax sending
 - Task routing for inbound faxes
 
-**Next steps:** → [Set up Bidirectional Fax](/developers/building/feature-management/channels/fax/bidirectional-fax-setup)
+**Next steps:** → [Set up Bidirectional Fax](/developers/backend/fax/sinch-implementation)
 
 ---
 
@@ -82,7 +82,7 @@ Choose the option that best fits your client's requirements:
 - Enhanced security features
 - Compliance reporting
 
-**Next steps:** → [Set up Full Fax Integration](/developers/building/feature-management/channels/fax/full-integration-setup)
+**Next steps:** → [Set up Full Fax Integration](/developers/backend/fax/sinch-implementation)
 
 ---
 

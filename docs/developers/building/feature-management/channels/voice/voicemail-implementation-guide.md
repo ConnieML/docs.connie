@@ -9,8 +9,8 @@ This page contains legacy documentation for the previous voicemail architecture.
 
 **For new implementations, please use the updated modular voice system:**
 - [Voice Channel Overview](./overview) - Modern modular architecture
-- [Core Workflows](/developers/building/feature-management/channels/voice/workflows/) - Choose your base workflow
-- [Add-On Features](/developers/building/feature-management/channels/voice/add-ons/) - Add email, transcription, etc.
+- [Core Workflows](./workflows/) - Choose your base workflow
+- [Add-On Features](./add-ons/) - Add email, transcription, etc.
 :::
 
 # Legacy Voicemail Implementation Guide
@@ -53,8 +53,8 @@ The new modular architecture provides:
 
 ### New Architecture (Recommended)
 - [Voice Overview](./overview) - Start here for new implementations
-- [Core Workflows](/developers/building/feature-management/channels/voice/workflows/) - Base call handling patterns
-- [Add-On Features](/developers/building/feature-management/channels/voice/add-ons/) - Email, transcription, CRM integration
+- [Core Workflows](./workflows/) - Base call handling patterns
+- [Add-On Features](./add-ons/) - Email, transcription, CRM integration
 - [Troubleshooting](./troubleshooting/) - Common issues and solutions
 
 ### Legacy Resources (Existing Deployments)

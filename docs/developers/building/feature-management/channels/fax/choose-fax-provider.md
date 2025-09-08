@@ -45,7 +45,7 @@ Choose the provider that best fits your organization's requirements:
 - 24/7 technical support included
 - API rate limits suitable for bulk operations
 
-**Implementation:** → [Sinch Fax Setup Guide](/developers/building/feature-management/channels/fax/providers/sinch-setup)
+**Implementation:** → [Sinch Fax Setup Guide](/developers/backend/fax/sinch-implementation)
 
 ---
 
@@ -200,7 +200,7 @@ Consider these factors when choosing your fax provider:
 
 ## 📞 Ready to Implement?
 
-- **Sinch Users:** → [Continue to Sinch Setup Guide](/developers/building/feature-management/channels/fax/providers/sinch-setup)
+- **Sinch Users:** → [Continue to Sinch Setup Guide](/developers/backend/fax/sinch-implementation)
 - **eFax/iFax Users:** Join our [provider waitlist](https://connie.one/contact) for early access
 
 :::info Professional Services
