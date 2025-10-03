@@ -30,7 +30,7 @@ Find your documentation path based on how you interact with ConnieRTC:
     </p>
     <div style={{borderTop: '1px solid #c8e6c9', paddingTop: '16px', marginTop: '16px'}}>
       <div style={{marginBottom: '12px'}}>
-        <a href="/cbo-users/agents/conversation-transfer" style={{
+        <a href="/cbo-users/staff-agents" style={{
           display: 'flex',
           alignItems: 'center',
           padding: '10px 16px',
@@ -251,7 +251,7 @@ Find your documentation path based on how you interact with ConnieRTC:
   <h3 style={{marginTop: 0, color: '#333'}}>🎯 Not Sure Where to Start?</h3>
   <ul style={{marginBottom: 0}}>
     <li><strong>Running a nonprofit?</strong> You're a CBO User - start with <a href="/cbo-users/administrators/overview">CBO Administrators</a></li>
-    <li><strong>Taking calls/chats?</strong> You're a Staff Agent - go to <a href="/cbo-users/agents/overview">Staff Agents</a></li>
+    <li><strong>Taking calls/chats?</strong> You're a Staff Agent - go to <a href="/cbo-users/staff-agents">Staff Agents</a></li>
     <li><strong>Writing code?</strong> You're a Platform Developer - check out <a href="/platform-developers/getting-started">Platform Developers</a></li>
     <li><strong>Helping users?</strong> You're Connie Support - visit <a href="/support-team/knowledge-base">Support Team</a></li>
     <li><strong>You're an AI?</strong> Access <a href="/ai-agents/structured-data">AI Agent Resources</a></li>
