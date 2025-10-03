@@ -1,9 +1,10 @@
 ---
-sidebar_label: "Transferring Conversations"
-title: "How to Transfer Conversations"
+sidebar_label: "Transferring Tasks"
+title: "Transferring Tasks"
+sidebar_position: 4
 ---
 
-# How to Transfer Conversations
+# Transferring Tasks
 
 As a staff agent, you can transfer conversations (calls and chats) to other agents or supervisors when you need help or when a client needs specialized assistance.
 
