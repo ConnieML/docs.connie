@@ -117,7 +117,32 @@ const config = {
       },
     }),
 
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: [
+    '@docusaurus/theme-mermaid',
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        // Index all docs for search
+        indexDocs: true,
+        indexDocSidebarParentCategories: 0,
+        indexBlog: false,
+        indexPages: false,
+        language: "en",
+        style: undefined,
+        maxSearchResults: 8,
+        // Lunr.js search engine configuration
+        lunr: {
+          tokenizerSeparator: /[\s\-]+/,
+          b: 0.75,              // Length normalization
+          k1: 1.2,              // Term frequency saturation
+          titleBoost: 5,        // Boost title matches
+          contentBoost: 1,      // Normal content weight
+          tagsBoost: 3,         // Boost tag matches
+          parentCategoriesBoost: 2  // Boost parent category matches
+        }
+      }
+    ]
+  ],
     // In order for Mermaid code blocks in Markdown to work,
     // you also need to enable the Remark plugin with this option
     markdown: {

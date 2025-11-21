@@ -1,0 +1,7 @@
+{
+  "label": "Authentication & SSO",
+  "position": 2,
+  "collapsible": true,
+  "collapsed": false,
+  "description": "Identity architecture and SSO configuration for multi-tenant Connie deployments"
+}
