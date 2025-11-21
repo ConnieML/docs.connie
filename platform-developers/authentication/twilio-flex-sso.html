@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-platform-developers/authentication/twilio-flex-sso" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Twilio Flex SSO Configuration | Connie Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.connie.one/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.connie.one/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.connie.one/platform-developers/authentication/twilio-flex-sso"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Twilio Flex SSO Configuration | Connie Documentation"><meta data-rh="true" name="description" content="Complete guide to configuring SAML-based Single Sign-On for Twilio Flex using Auth0."><meta data-rh="true" property="og:description" content="Complete guide to configuring SAML-based Single Sign-On for Twilio Flex using Auth0."><link data-rh="true" rel="icon" href="/img/logos/connie-rtc-icon.png"><link data-rh="true" rel="canonical" href="https://docs.connie.one/platform-developers/authentication/twilio-flex-sso"><link data-rh="true" rel="alternate" href="https://docs.connie.one/platform-developers/authentication/twilio-flex-sso" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.connie.one/platform-developers/authentication/twilio-flex-sso" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Twilio Flex SSO","item":"https://docs.connie.one/platform-developers/authentication/twilio-flex-sso"}]}</script><link rel="stylesheet" href="https://assets.twilio.com/public_assets/paste-fonts/1.5.1/fonts.css"><link rel="stylesheet" href="/assets/css/styles.4a88184e.css">
+<script src="/assets/js/runtime~main.49e3bc68.js" defer="defer"></script>
+<script src="/assets/js/main.f8ba662d.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logos/connie-rtc-icon.png" alt="Connie Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logos/connie-rtc-icon.png" alt="Connie Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Connie Documentation</b></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/ConnieML/connieRTC-flex" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="dsla-search-wrapper"><div class="dsla-search-field" data-tags="default,docs-default-current"></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/">Introduction</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/getting-started">Getting started</a><button aria-label="Expand sidebar category &#x27;Getting started&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/category/cbo-users">CBO Users</a><button aria-label="Expand sidebar category &#x27;CBO Users&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/platform-developers/authentication/overview">Platform Developers</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/platform-developers/authentication/overview">Authentication &amp; SSO</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/platform-developers/authentication/overview">Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/platform-developers/authentication/pattern-a-multi-program">Pattern A - Multi-Program</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/platform-developers/authentication/pattern-b-isolated">Pattern B - Isolated Orgs</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/platform-developers/authentication/auth0-configuration">Auth0 Configuration</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/platform-developers/authentication/twilio-flex-sso">Twilio Flex SSO</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/platform-developers/authentication/troubleshooting">Troubleshooting</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/platform-developers/authentication/testing-checklist">Testing Checklist</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/platform-developers/authentication/okta-legacy">OKTA (Legacy)</a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/platform-developers/conversation-transfer">Conversation Transfer API</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/developers">Developers</a><button aria-label="Expand sidebar category &#x27;Developers&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/support-team/conversation-transfer-troubleshooting">Support Team</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/end-users/cbo-admins/getting-started">End Users</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/category/-get-support">🛟 Get Support</a><button aria-label="Expand sidebar category &#x27;🛟 Get Support&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Platform Developers</span></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Authentication &amp; SSO</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Twilio Flex SSO</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Twilio Flex SSO Configuration</h1></header>
+<p>Complete guide to configuring SAML-based Single Sign-On for Twilio Flex using Auth0.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-purpose">🎯 Purpose<a href="#-purpose" class="hash-link" aria-label="Direct link to 🎯 Purpose" title="Direct link to 🎯 Purpose">​</a></h2>
+<p>This guide covers the Twilio Flex side of SSO configuration. Complete Auth0 configuration first using the <a href="/platform-developers/authentication/auth0-configuration">Auth0 Configuration Guide</a>.</p>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Auth0 tenant configured with SAML application</li>
+<li>Auth0 SAML metadata URL available</li>
+<li>Twilio Flex instance provisioned</li>
+<li>Admin access to Twilio Console</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-sso-architecture">🏗️ SSO Architecture<a href="#️-sso-architecture" class="hash-link" aria-label="Direct link to 🏗️ SSO Architecture" title="Direct link to 🏗️ SSO Architecture">​</a></h2>
+<!-- -->
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-prerequisites-checklist">📋 Prerequisites Checklist<a href="#-prerequisites-checklist" class="hash-link" aria-label="Direct link to 📋 Prerequisites Checklist" title="Direct link to 📋 Prerequisites Checklist">​</a></h2>
+<p>Before beginning Flex SSO setup:</p>
+<p><strong>From Auth0:</strong></p>
+<ul>
+<li>✅ SAML metadata URL (e.g., <code>https://YOUR_TENANT.auth0.com/samlp/metadata/YOUR_CLIENT_ID</code>)</li>
+<li>✅ Auth0 application configured for SAML</li>
+<li>✅ Post-Login Action deployed</li>
+<li>✅ Test user created</li>
+</ul>
+<p><strong>From Twilio:</strong></p>
+<ul>
+<li>✅ Flex instance SID (e.g., <code>FO...</code>)</li>
+<li>✅ Account SID and Auth Token</li>
+<li>✅ Admin role in Twilio Console</li>
+</ul>
+<p><strong>Vanity Domain:</strong></p>
+<ul>
+<li>✅ Domain decided (e.g., <code>nss.connie.team</code>)</li>
+<li>✅ DNS configured (if using custom domain)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-configuration-steps">🚀 Configuration Steps<a href="#-configuration-steps" class="hash-link" aria-label="Direct link to 🚀 Configuration Steps" title="Direct link to 🚀 Configuration Steps">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-access-twilio-flex-console">Step 1: Access Twilio Flex Console<a href="#step-1-access-twilio-flex-console" class="hash-link" aria-label="Direct link to Step 1: Access Twilio Flex Console" title="Direct link to Step 1: Access Twilio Flex Console">​</a></h3>
+<p><strong>1.1 Login to Twilio Console</strong></p>
+<ul>
+<li>URL: <code>https://console.twilio.com/</code></li>
+<li>Use credentials for appropriate account:<!-- -->
+<ul>
+<li><strong>Pattern A:</strong> Main organization account</li>
+<li><strong>Pattern B:</strong> Organization-specific account</li>
+</ul>
+</li>
+</ul>
+<p><strong>1.2 Navigate to Flex</strong></p>
+<ul>
+<li>Left sidebar: <strong>Flex</strong> → <strong>Admin</strong></li>
+<li>Or direct URL: <code>https://console.twilio.com/us1/develop/flex</code></li>
+</ul>
+<p><strong>1.3 Verify Flex Instance</strong></p>
+<ul>
+<li>Note your Flex instance SID (starts with <code>FO</code>)</li>
+<li>Example: <code>FO7e8c9d0a1b2c3d4e5f6g7h8i9j0k1l</code></li>
+</ul>
+<p><strong>📸 Screenshot Placeholder:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[Screenshot: Twilio Console - Flex Admin Panel]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: Shows Flex admin navigation and instance SID location</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Location: Twilio Console → Flex → Admin</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-configure-sso-settings">Step 2: Configure SSO Settings<a href="#step-2-configure-sso-settings" class="hash-link" aria-label="Direct link to Step 2: Configure SSO Settings" title="Direct link to Step 2: Configure SSO Settings">​</a></h3>
+<p><strong>2.1 Navigate to SSO Configuration</strong></p>
+<ul>
+<li>Twilio Console → <strong>Flex</strong> → <strong>Admin</strong> → <strong>Single Sign-On</strong></li>
+<li>Or search for &quot;SSO&quot; in console search bar</li>
+</ul>
+<p><strong>2.2 Enable SSO</strong></p>
+<ul>
+<li>Toggle <strong>&quot;Enable Single Sign-On&quot;</strong> to ON</li>
+<li>This reveals SSO configuration fields</li>
+</ul>
+<p><strong>📸 Screenshot Placeholder:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[Screenshot: Twilio Flex - Enable SSO Toggle]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: Shows the SSO enable toggle in the ON position</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Location: Flex → Admin → Single Sign-On</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-add-identity-provider-auth0">Step 3: Add Identity Provider (Auth0)<a href="#step-3-add-identity-provider-auth0" class="hash-link" aria-label="Direct link to Step 3: Add Identity Provider (Auth0)" title="Direct link to Step 3: Add Identity Provider (Auth0)">​</a></h3>
+<p><strong>3.1 Add New Identity Provider</strong></p>
+<ul>
+<li>Click <strong>&quot;Add Identity Provider&quot;</strong> button</li>
+<li>Select <strong>&quot;SAML 2.0&quot;</strong> as protocol</li>
+</ul>
+<p><strong>3.2 Configure Identity Provider Settings</strong></p>
+<p><strong>Basic Information:</strong></p>
+<table><thead><tr><th>Field</th><th>Value</th><th>Example</th></tr></thead><tbody><tr><td><strong>Name</strong></td><td><code>Auth0 - [Organization]</code></td><td><code>Auth0 - Nevada Senior Services</code></td></tr><tr><td><strong>Entity ID</strong></td><td>From Auth0 SAML metadata</td><td><code>urn:auth0:YOUR_TENANT:YOUR_CLIENT</code></td></tr><tr><td><strong>SSO URL</strong></td><td>From Auth0 SAML metadata</td><td><code>https://YOUR_TENANT.auth0.com/...</code></td></tr></tbody></table>
+<p><strong>3.3 Upload Auth0 Metadata</strong></p>
+<p><strong>Option A: Metadata URL (Recommended)</strong></p>
+<ul>
+<li>Select <strong>&quot;Metadata URL&quot;</strong> option</li>
+<li>Enter: <code>https://YOUR_TENANT.auth0.com/samlp/metadata/YOUR_CLIENT_ID</code></li>
+<li>Click <strong>&quot;Fetch Metadata&quot;</strong></li>
+<li>Twilio will auto-populate Entity ID and SSO URL</li>
+</ul>
+<p><strong>Option B: Manual Entry</strong></p>
+<ul>
+<li>Download Auth0 SAML metadata XML</li>
+<li>Copy Entity ID and SSO URL manually</li>
+<li>Upload certificate from metadata</li>
+</ul>
+<p><strong>📸 Screenshot Placeholder:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[Screenshot: Twilio Flex - Add Identity Provider Form]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: Shows the SAML 2.0 identity provider configuration form with Auth0 metadata URL</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Location: Flex → Single Sign-On → Add Identity Provider</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-4-configure-attribute-mapping">Step 4: Configure Attribute Mapping<a href="#step-4-configure-attribute-mapping" class="hash-link" aria-label="Direct link to Step 4: Configure Attribute Mapping" title="Direct link to Step 4: Configure Attribute Mapping">​</a></h3>
+<p>Flex requires specific SAML attributes to create user sessions.</p>
+<p><strong>4.1 Navigate to Attribute Mapping</strong></p>
+<ul>
+<li>In SSO configuration, scroll to <strong>&quot;Attribute Mapping&quot;</strong> section</li>
+</ul>
+<p><strong>4.2 Configure Required Attributes</strong></p>
+<p>Map Auth0 SAML attributes to Flex worker attributes:</p>
+<table><thead><tr><th>Flex Attribute</th><th>Auth0 SAML Attribute</th><th>Required</th><th>Purpose</th></tr></thead><tbody><tr><td><code>email</code></td><td><code>email</code></td><td>✅ Yes</td><td>User identifier</td></tr><tr><td><code>full_name</code></td><td><code>full_name</code></td><td>✅ Yes</td><td>Display name</td></tr><tr><td><code>roles</code></td><td><code>roles</code></td><td>✅ Yes</td><td>Permission level</td></tr><tr><td><code>team</code></td><td><code>team</code></td><td>⚠️ Pattern A</td><td>Team visibility filter</td></tr><tr><td><code>program</code></td><td><code>program</code></td><td>❌ Optional</td><td>Usage tracking</td></tr></tbody></table>
+<p><strong>Example Configuration:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Flex: email          ← SAML: email</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Flex: full_name      ← SAML: full_name</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Flex: roles          ← SAML: roles</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Flex: team           ← SAML: team</span><br></span></code></pre></div></div>
+<p><strong>📸 Screenshot Placeholder:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[Screenshot: Twilio Flex - SAML Attribute Mapping]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: Shows attribute mapping configuration with email, full_name, roles, and team mappings</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Location: Flex → Single Sign-On → Attribute Mapping</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-5-configure-vanity-domain">Step 5: Configure Vanity Domain<a href="#step-5-configure-vanity-domain" class="hash-link" aria-label="Direct link to Step 5: Configure Vanity Domain" title="Direct link to Step 5: Configure Vanity Domain">​</a></h3>
+<p><strong>5.1 Navigate to Vanity Domain Settings</strong></p>
+<ul>
+<li>Flex Admin → <strong>Single Sign-On</strong> → <strong>Vanity URL</strong></li>
+<li>Or: Flex Admin → <strong>Settings</strong> → <strong>Vanity URL</strong></li>
+</ul>
+<p><strong>5.2 Set Vanity Domain</strong></p>
+<p><strong>Option A: Connie Subdomain (Recommended)</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">https://nss.connie.team</span><br></span></code></pre></div></div>
+<p><strong>Option B: Organization&#x27;s Custom Domain</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">https://flex.organization.org</span><br></span></code></pre></div></div>
+<p><strong>5.3 DNS Configuration (If Custom Domain)</strong></p>
+<p>If using organization&#x27;s own domain, configure DNS:</p>
+<p><strong>CNAME Record:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">flex.organization.org  →  flex.twilio.com</span><br></span></code></pre></div></div>
+<p><strong>Or A Record:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Contact Twilio support for IP addresses</span><br></span></code></pre></div></div>
+<p><strong>5.4 Save Vanity Domain</strong></p>
+<ul>
+<li>Click <strong>Save</strong></li>
+<li>Wait for DNS propagation (if custom domain)</li>
+<li>Test domain accessibility</li>
+</ul>
+<p><strong>📸 Screenshot Placeholder:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[Screenshot: Twilio Flex - Vanity URL Configuration]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: Shows vanity URL field with example domain nss.connie.team</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Location: Flex → Admin → Settings → Vanity URL</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-6-configure-auth0-callback-urls">Step 6: Configure Auth0 Callback URLs<a href="#step-6-configure-auth0-callback-urls" class="hash-link" aria-label="Direct link to Step 6: Configure Auth0 Callback URLs" title="Direct link to Step 6: Configure Auth0 Callback URLs">​</a></h3>
+<p><strong>Return to Auth0 to complete the loop:</strong></p>
+<p><strong>6.1 Get Flex Callback URL</strong></p>
+<p>From Twilio Flex SSO settings, copy:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">https://iam.twilio.com/v2/saml2/authenticate/[YOUR_FLEX_INSTANCE_SID]</span><br></span></code></pre></div></div>
+<p><strong>6.2 Update Auth0 Application</strong></p>
+<ul>
+<li>Auth0 Dashboard → <strong>Applications</strong> → [Your Flex App]</li>
+<li>Navigate to <strong>Settings</strong> tab</li>
+</ul>
+<p><strong>6.3 Add Callback URLs</strong></p>
+<p><strong>Allowed Callback URLs:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">https://iam.twilio.com/v2/saml2/authenticate/[YOUR_FLEX_INSTANCE_SID]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">https://iam.twilio.com/v2/saml2/authenticate/[YOUR_FLEX_INSTANCE_SID]/callback</span><br></span></code></pre></div></div>
+<p><strong>Allowed Logout URLs:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">https://flex.twilio.com/logout</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">https://[YOUR_VANITY_DOMAIN]/logout</span><br></span></code></pre></div></div>
+<p><strong>Example:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">https://iam.twilio.com/v2/saml2/authenticate/FO7e8c9d0a1b2c3d4e5f6g7h8i9j0k1l</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">https://iam.twilio.com/v2/saml2/authenticate/FO7e8c9d0a1b2c3d4e5f6g7h8i9j0k1l/callback</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">https://flex.twilio.com/logout</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">https://nss.connie.team/logout</span><br></span></code></pre></div></div>
+<p><strong>6.4 Save Auth0 Settings</strong></p>
+<p><strong>📸 Screenshot Placeholder:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[Screenshot: Auth0 - Application Callback URLs]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: Shows the Allowed Callback URLs and Allowed Logout URLs fields with Flex URLs</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Location: Auth0 → Applications → [Flex App] → Settings</span><br></span></code></pre></div></div>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-7-test-sso-configuration">Step 7: Test SSO Configuration<a href="#step-7-test-sso-configuration" class="hash-link" aria-label="Direct link to Step 7: Test SSO Configuration" title="Direct link to Step 7: Test SSO Configuration">​</a></h3>
+<p><strong>7.1 Initiate Test Login</strong></p>
+<p><strong>Method 1: Via Vanity Domain</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Navigate to: https://nss.connie.team</span><br></span></code></pre></div></div>
+<p><strong>Method 2: Via Direct Flex URL</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Navigate to: https://flex.twilio.com</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Click &quot;Sign in with SSO&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Enter vanity domain: nss.connie.team</span><br></span></code></pre></div></div>
+<p><strong>7.2 Expected Flow</strong></p>
+<ol>
+<li>Redirected to Auth0 login page</li>
+<li>Enter credentials</li>
+<li>Auth0 validates and adds metadata</li>
+<li>Redirected back to Flex</li>
+<li>Flex creates session with attributes</li>
+<li>Flex Desktop UI loads</li>
+</ol>
+<p><strong>7.3 Verify Successful Login</strong></p>
+<ul>
+<li>✅ Flex UI loads</li>
+<li>✅ User&#x27;s name appears in top right</li>
+<li>✅ Appropriate role features visible</li>
+<li>✅ Team View shows correct team members (Pattern A)</li>
+</ul>
+<p><strong>📸 Screenshot Placeholder:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[Screenshot: Twilio Flex - SSO Login Flow]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: Shows the Auth0 login page accessed via vanity domain</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Location: Browser at https://nss.connie.team</span><br></span></code></pre></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-advanced-configuration">🔧 Advanced Configuration<a href="#-advanced-configuration" class="hash-link" aria-label="Direct link to 🔧 Advanced Configuration" title="Direct link to 🔧 Advanced Configuration">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="multiple-identity-providers-advanced">Multiple Identity Providers (Advanced)<a href="#multiple-identity-providers-advanced" class="hash-link" aria-label="Direct link to Multiple Identity Providers (Advanced)" title="Direct link to Multiple Identity Providers (Advanced)">​</a></h3>
+<p>Flex supports multiple IdPs for different user groups:</p>
+<p><strong>Use Case:</strong> Contractors use different SSO than staff</p>
+<p><strong>Configuration:</strong></p>
+<ol>
+<li>Add second Identity Provider in Flex SSO settings</li>
+<li>Configure separate vanity domain or login path</li>
+<li>Each IdP has own attribute mappings</li>
+</ol>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="just-in-time-jit-provisioning">Just-In-Time (JIT) Provisioning<a href="#just-in-time-jit-provisioning" class="hash-link" aria-label="Direct link to Just-In-Time (JIT) Provisioning" title="Direct link to Just-In-Time (JIT) Provisioning">​</a></h3>
+<p><strong>Enabled by default:</strong> Flex creates worker records automatically on first login.</p>
+<p><strong>Worker Attributes from SAML:</strong></p>
+<ul>
+<li>Email → Worker contact URI</li>
+<li>Full Name → Worker friendly name</li>
+<li>Roles → Worker roles in Flex</li>
+<li>Team → Custom worker attribute</li>
+</ul>
+<p><strong>Manual Verification:</strong></p>
+<ul>
+<li>Twilio Console → <strong>TaskRouter</strong> → <strong>Workers</strong></li>
+<li>Verify worker created with correct attributes</li>
+</ul>
+<p><strong>📸 Screenshot Placeholder:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[Screenshot: Twilio TaskRouter - Workers List]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description: Shows worker list with attributes populated from SAML</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Location: Twilio Console → TaskRouter → Workers</span><br></span></code></pre></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-debugging-sso-issues">🔍 Debugging SSO Issues<a href="#-debugging-sso-issues" class="hash-link" aria-label="Direct link to 🔍 Debugging SSO Issues" title="Direct link to 🔍 Debugging SSO Issues">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="issue-redirect-loop-after-login">Issue: Redirect Loop After Login<a href="#issue-redirect-loop-after-login" class="hash-link" aria-label="Direct link to Issue: Redirect Loop After Login" title="Direct link to Issue: Redirect Loop After Login">​</a></h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li>User logs into Auth0 successfully</li>
+<li>Redirected back to Auth0 repeatedly</li>
+<li>Never reaches Flex UI</li>
+</ul>
+<p><strong>Diagnosis:</strong></p>
+<ol>
+<li>Check Auth0 Allowed Callback URLs</li>
+<li>Verify Flex instance SID in callback URL</li>
+<li>Check Auth0 logs for error messages</li>
+</ol>
+<p><strong>Fix:</strong></p>
+<ul>
+<li>Ensure callback URLs include correct Flex instance SID</li>
+<li>Verify SAML metadata URL is correct in Flex</li>
+<li>Check for typos in URLs</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="issue-invalid-saml-response-error">Issue: &quot;Invalid SAML Response&quot; Error<a href="#issue-invalid-saml-response-error" class="hash-link" aria-label="Direct link to Issue: &quot;Invalid SAML Response&quot; Error" title="Direct link to Issue: &quot;Invalid SAML Response&quot; Error">​</a></h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li>Error message after Auth0 redirect</li>
+<li>Flex rejects SAML response</li>
+</ul>
+<p><strong>Diagnosis:</strong></p>
+<ol>
+<li>Verify Auth0 SAML metadata URL in Flex is correct</li>
+<li>Check SAML certificate hasn&#x27;t expired</li>
+<li>Review Flex SSO logs in Twilio Console</li>
+</ol>
+<p><strong>Fix:</strong></p>
+<ul>
+<li>Re-fetch Auth0 metadata in Flex SSO settings</li>
+<li>Verify Entity ID and SSO URL match Auth0</li>
+<li>Check clock sync between Auth0 and Twilio (rare)</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="issue-user-has-no-roles-in-flex">Issue: User Has No Roles in Flex<a href="#issue-user-has-no-roles-in-flex" class="hash-link" aria-label="Direct link to Issue: User Has No Roles in Flex" title="Direct link to Issue: User Has No Roles in Flex">​</a></h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li>Login successful but user has no permissions</li>
+<li>Flex UI loads but features missing</li>
+</ul>
+<p><strong>Diagnosis:</strong></p>
+<ol>
+<li>Check user&#x27;s <code>app_metadata.flex.roles</code> in Auth0</li>
+<li>Verify Auth0 Action is deployed and in login flow</li>
+<li>Check SAML response in Auth0 logs for <code>roles</code> attribute</li>
+<li>Verify attribute mapping in Flex SSO settings</li>
+</ol>
+<p><strong>Fix:</strong></p>
+<ul>
+<li>Add roles to user metadata in Auth0</li>
+<li>Deploy Auth0 Post-Login Action</li>
+<li>Verify <code>roles</code> attribute mapped in Flex</li>
+<li>User must re-login after metadata changes</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="issue-team-visibility-not-working-pattern-a">Issue: Team Visibility Not Working (Pattern A)<a href="#issue-team-visibility-not-working-pattern-a" class="hash-link" aria-label="Direct link to Issue: Team Visibility Not Working (Pattern A)" title="Direct link to Issue: Team Visibility Not Working (Pattern A)">​</a></h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li>User sees all teams instead of own team</li>
+<li>Supervisor sees wrong team members</li>
+</ul>
+<p><strong>Diagnosis:</strong></p>
+<ol>
+<li>Verify <code>team</code> attribute in SAML response (Auth0 logs)</li>
+<li>Check <code>team</code> attribute mapping in Flex SSO settings</li>
+<li>Verify user has <code>flex.team</code> in Auth0 app_metadata</li>
+<li>Check worker attributes in TaskRouter</li>
+</ol>
+<p><strong>Fix:</strong></p>
+<ul>
+<li>Add <code>team</code> to attribute mapping in Flex</li>
+<li>Ensure Auth0 Action includes team attribute (Pattern A code)</li>
+<li>Add <code>flex.team</code> to user metadata in Auth0</li>
+<li>User must re-login for changes to take effect</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-monitoring-sso-health">📊 Monitoring SSO Health<a href="#-monitoring-sso-health" class="hash-link" aria-label="Direct link to 📊 Monitoring SSO Health" title="Direct link to 📊 Monitoring SSO Health">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="twilio-console-logs">Twilio Console Logs<a href="#twilio-console-logs" class="hash-link" aria-label="Direct link to Twilio Console Logs" title="Direct link to Twilio Console Logs">​</a></h3>
+<p><strong>Access SSO Logs:</strong></p>
+<ul>
+<li>Twilio Console → <strong>Monitor</strong> → <strong>Logs</strong> → <strong>Errors</strong></li>
+<li>Filter by &quot;Flex SSO&quot; or &quot;SAML&quot;</li>
+</ul>
+<p><strong>Common Log Entries:</strong></p>
+<ul>
+<li><code>SAML_VALIDATION_FAILED</code> - SAML response rejected</li>
+<li><code>ATTRIBUTE_MAPPING_ERROR</code> - Required attribute missing</li>
+<li><code>IDP_UNREACHABLE</code> - Can&#x27;t reach Auth0 metadata URL</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="auth0-logs">Auth0 Logs<a href="#auth0-logs" class="hash-link" aria-label="Direct link to Auth0 Logs" title="Direct link to Auth0 Logs">​</a></h3>
+<p><strong>Access Auth0 Logs:</strong></p>
+<ul>
+<li>Auth0 Dashboard → <strong>Monitoring</strong> → <strong>Logs</strong></li>
+<li>Filter by application: [Your Flex App]</li>
+</ul>
+<p><strong>Key Events:</strong></p>
+<ul>
+<li><code>Success Login</code> - SSO flow completed</li>
+<li><code>Failed Login</code> - Authentication failed</li>
+<li><code>Error</code> - Action or SAML errors</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-security-best-practices">🔐 Security Best Practices<a href="#-security-best-practices" class="hash-link" aria-label="Direct link to 🔐 Security Best Practices" title="Direct link to 🔐 Security Best Practices">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="certificate-management">Certificate Management<a href="#certificate-management" class="hash-link" aria-label="Direct link to Certificate Management" title="Direct link to Certificate Management">​</a></h3>
+<p><strong>SAML certificates expire:</strong></p>
+<ul>
+<li>Monitor Auth0 certificate expiration dates</li>
+<li>Set calendar reminders for renewal</li>
+<li>Test SSO after certificate renewal</li>
+</ul>
+<p><strong>Rotation Process:</strong></p>
+<ol>
+<li>Auth0 generates new certificate</li>
+<li>Update Flex SSO with new metadata URL</li>
+<li>Flex automatically fetches new certificate</li>
+<li>Test SSO login</li>
+</ol>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="session-management">Session Management<a href="#session-management" class="hash-link" aria-label="Direct link to Session Management" title="Direct link to Session Management">​</a></h3>
+<p><strong>Session timeouts:</strong></p>
+<ul>
+<li>Configure in Flex Admin → Settings</li>
+<li>Recommended: 8-12 hours for agents</li>
+<li>Force logout after business hours (optional)</li>
+</ul>
+<p><strong>Multi-Factor Authentication (MFA):</strong></p>
+<ul>
+<li>Configure in Auth0, not Flex</li>
+<li>Auth0 Dashboard → <strong>Security</strong> → <strong>Multi-factor Auth</strong></li>
+<li>Recommended for admin and supervisor roles</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-related-documentation">📖 Related Documentation<a href="#-related-documentation" class="hash-link" aria-label="Direct link to 📖 Related Documentation" title="Direct link to 📖 Related Documentation">​</a></h2>
+<ul>
+<li><strong>Auth0 Configuration:</strong> <a href="/platform-developers/authentication/auth0-configuration">Complete Auth0 Setup Guide</a></li>
+<li><strong>Pattern A:</strong> <a href="/platform-developers/authentication/pattern-a-multi-program">Multi-Program Setup</a></li>
+<li><strong>Pattern B:</strong> <a href="/platform-developers/authentication/pattern-b-isolated">Isolated Organizations</a></li>
+<li><strong>Testing:</strong> <a href="/platform-developers/authentication/testing-checklist">Comprehensive Testing Checklist</a></li>
+<li><strong>Troubleshooting:</strong> <a href="/platform-developers/authentication/troubleshooting">Authentication Troubleshooting</a></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-external-references">📚 External References<a href="#-external-references" class="hash-link" aria-label="Direct link to 📚 External References" title="Direct link to 📚 External References">​</a></h2>
+<ul>
+<li><a href="https://www.twilio.com/docs/flex/admin-guide/setup/sso-configuration" target="_blank" rel="noopener noreferrer">Twilio Flex SSO Documentation</a></li>
+<li><a href="https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html" target="_blank" rel="noopener noreferrer">SAML 2.0 Specification</a></li>
+<li><a href="https://auth0.com/docs/authenticate/protocols/saml/saml-configuration" target="_blank" rel="noopener noreferrer">Auth0 SAML Configuration</a></li>
+</ul>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Testing Tip</div><div class="admonitionContent_BuS1"><p>Always test SSO with a test user first before configuring production accounts. This prevents accidentally locking out real users during configuration issues.</p></div></div></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/platform-developers/authentication/auth0-configuration"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Auth0 Configuration</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/platform-developers/authentication/troubleshooting"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Troubleshooting</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#-purpose" class="table-of-contents__link toc-highlight">🎯 Purpose</a></li><li><a href="#️-sso-architecture" class="table-of-contents__link toc-highlight">🏗️ SSO Architecture</a></li><li><a href="#-prerequisites-checklist" class="table-of-contents__link toc-highlight">📋 Prerequisites Checklist</a></li><li><a href="#-configuration-steps" class="table-of-contents__link toc-highlight">🚀 Configuration Steps</a><ul><li><a href="#step-1-access-twilio-flex-console" class="table-of-contents__link toc-highlight">Step 1: Access Twilio Flex Console</a></li><li><a href="#step-2-configure-sso-settings" class="table-of-contents__link toc-highlight">Step 2: Configure SSO Settings</a></li><li><a href="#step-3-add-identity-provider-auth0" class="table-of-contents__link toc-highlight">Step 3: Add Identity Provider (Auth0)</a></li><li><a href="#step-4-configure-attribute-mapping" class="table-of-contents__link toc-highlight">Step 4: Configure Attribute Mapping</a></li><li><a href="#step-5-configure-vanity-domain" class="table-of-contents__link toc-highlight">Step 5: Configure Vanity Domain</a></li><li><a href="#step-6-configure-auth0-callback-urls" class="table-of-contents__link toc-highlight">Step 6: Configure Auth0 Callback URLs</a></li><li><a href="#step-7-test-sso-configuration" class="table-of-contents__link toc-highlight">Step 7: Test SSO Configuration</a></li></ul></li><li><a href="#-advanced-configuration" class="table-of-contents__link toc-highlight">🔧 Advanced Configuration</a><ul><li><a href="#multiple-identity-providers-advanced" class="table-of-contents__link toc-highlight">Multiple Identity Providers (Advanced)</a></li><li><a href="#just-in-time-jit-provisioning" class="table-of-contents__link toc-highlight">Just-In-Time (JIT) Provisioning</a></li></ul></li><li><a href="#-debugging-sso-issues" class="table-of-contents__link toc-highlight">🔍 Debugging SSO Issues</a><ul><li><a href="#issue-redirect-loop-after-login" class="table-of-contents__link toc-highlight">Issue: Redirect Loop After Login</a></li><li><a href="#issue-invalid-saml-response-error" class="table-of-contents__link toc-highlight">Issue: &quot;Invalid SAML Response&quot; Error</a></li><li><a href="#issue-user-has-no-roles-in-flex" class="table-of-contents__link toc-highlight">Issue: User Has No Roles in Flex</a></li><li><a href="#issue-team-visibility-not-working-pattern-a" class="table-of-contents__link toc-highlight">Issue: Team Visibility Not Working (Pattern A)</a></li></ul></li><li><a href="#-monitoring-sso-health" class="table-of-contents__link toc-highlight">📊 Monitoring SSO Health</a><ul><li><a href="#twilio-console-logs" class="table-of-contents__link toc-highlight">Twilio Console Logs</a></li><li><a href="#auth0-logs" class="table-of-contents__link toc-highlight">Auth0 Logs</a></li></ul></li><li><a href="#-security-best-practices" class="table-of-contents__link toc-highlight">🔐 Security Best Practices</a><ul><li><a href="#certificate-management" class="table-of-contents__link toc-highlight">Certificate Management</a></li><li><a href="#session-management" class="table-of-contents__link toc-highlight">Session Management</a></li></ul></li><li><a href="#-related-documentation" class="table-of-contents__link toc-highlight">📖 Related Documentation</a></li><li><a href="#-external-references" class="table-of-contents__link toc-highlight">📚 External References</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Connie Links</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://connie.one" target="_blank" rel="noopener noreferrer" class="footer__link-item">Learn More<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://portal.connie.team" target="_blank" rel="noopener noreferrer" class="footer__link-item">Log In<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/ConnieML/connieRTC-flex" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Connie Corp.</div></div></div></footer></div>
+</body>
+</html>
