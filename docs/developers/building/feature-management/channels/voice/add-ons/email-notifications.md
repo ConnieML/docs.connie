@@ -27,6 +27,47 @@ Send voicemail recordings and transcripts directly to staff email addresses when
 - ✅ **Direct to Voicemail**: Email every recorded message
 - ⚠️ **Direct**: Only applicable if voicemail add-on also enabled
 
+---
+
+## Critical: Common Setup Mistakes
+
+:::danger Most Common Failure: Wrong API Key Type
+**90% of Mailgun setup failures** are caused by using the wrong API key. Mailgun has TWO types of API keys:
+
+| Key Type | Location | Use For |
+|----------|----------|---------|
+| **Private API Key** | Settings → API Keys | Account management (DO NOT USE) |
+| **Domain Sending Key** | Domain → Sending Keys | Sending emails (USE THIS ONE) |
+
+**If you get 401/403 errors**, you're probably using the private API key instead of the domain sending key.
+:::
+
+### Quick Diagnosis
+
+```bash
+# Test your API key
+curl -s -w "\nHTTP Status: %{http_code}\n" \
+  --user "api:YOUR_API_KEY" \
+  https://api.mailgun.net/v3/YOUR_DOMAIN/messages \
+  -F from='test@YOUR_DOMAIN' \
+  -F to='your@email.com' \
+  -F subject='Test' \
+  -F text='Test'
+
+# Expected: HTTP Status: 200
+# If 401/403: Wrong API key type
+```
+
+### How to Get the Correct Key
+
+1. Go to Mailgun Dashboard → **Sending** → **Domains**
+2. Click on your domain (e.g., `voicemail.yourorg.com`)
+3. Go to **Domain settings** → **Sending keys** tab
+4. Click **Add sending key** (or use existing)
+5. Copy the **API Send Key** (NOT the Key ID)
+
+---
+
 ## Technical Implementation
 
 ### Email Service Providers

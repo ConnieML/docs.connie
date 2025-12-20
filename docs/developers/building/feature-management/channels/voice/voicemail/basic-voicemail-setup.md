@@ -1,45 +1,34 @@
 ---
 sidebar_label: Basic Voicemail Setup
 sidebar_position: 5
-title: "Option A: Basic Voicemail Setup"
+title: "Basic Voicemail Setup"
 ---
 
-# Option A: Basic Voicemail Setup
+# Basic Voicemail Setup
 
-This guide shows you how to implement basic voicemail functionality using the ConnieRTC template features.
+:::info Redirected Content
+This page has been superseded by the new documentation structure.
 
-:::info Coming Soon
-This setup guide is currently under development. For now, basic voicemail functionality is available through the standard callback-and-voicemail template feature.
+**For voicemail-only setup, see:** [Voicemail-Only Configuration](./voicemail-only-configuration)
 
-Contact your Connie support team for assistance with basic voicemail configuration.
+The new guide covers:
+- Dedicated feature deployment (`voicemail-only-with-email/`)
+- Parameter approach (`?voicemailOnly=true`)
+- Human Developer Track (step-by-step UI instructions)
+- AI Agent Track (CLI commands)
 :::
 
-## Quick Setup
+## Quick Links
 
-Basic voicemail is included in the standard `callback-and-voicemail` template feature. Simply enable it with minimal configuration:
+- **[Implementation Guide](./voicemail-implementation-guide)** - Start here to understand the architecture
+- **[Voicemail-Only Configuration](./voicemail-only-configuration)** - Full setup guide for direct-to-voicemail
+- **[Callback + Wait Setup](./callback-voicemail-setup)** - Queue experience with caller options
 
-```json
-{
-  "features": {
-    "callback_and_voicemail": {
-      "enabled": true,
-      "allow_requeue": false,
-      "max_attempts": 1,
-      "auto_select_task": true
-    }
-  }
-}
-```
+## Why the Change?
 
-## Next Steps
+The previous documentation presented voicemail options as three separate "types" (Options A, B, C). The new structure correctly separates:
 
-:::warning Legacy Documentation
-This page is for legacy implementations. **For new implementations:**
-- [Voice Overview](../overview) - Modern modular voice system
-- [Direct to Voicemail Workflow](../workflows/voicemail-only) - Clean implementation guide
-:::
+1. **Base Experiences** (Voicemail Only vs Callback + Wait)
+2. **Add-ons** (Email Notifications, Transcription)
 
-For more advanced voicemail options, see:
-- [Legacy Implementation Guide](../voicemail-implementation-guide) - Legacy architecture overview
-- [Callback + Voicemail Setup](./callback-voicemail-setup) - Professional wait experience  
-- [Email-Enabled Voicemail](./email-providers/mailgun-setup) - With email notifications
+This makes it clear that email and transcription can be added to ANY base experience.

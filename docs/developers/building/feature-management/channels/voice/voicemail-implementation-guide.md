@@ -5,12 +5,11 @@ title: "Legacy Voicemail Implementation Guide"
 ---
 
 :::warning Legacy Documentation
-This page contains legacy documentation for the previous voicemail architecture. 
+This page contains legacy documentation for the previous voicemail architecture.
 
-**For new implementations, please use the updated modular voice system:**
-- [Voice Channel Overview](./overview) - Modern modular architecture
-- [Core Workflows](./workflows/) - Choose your base workflow
-- [Add-On Features](./add-ons/) - Add email, transcription, etc.
+**For current implementations, please use:**
+- [Voicemail Documentation](/developers/building/feature-management/channels/voice/voicemail/) - Complete voicemail guides
+- [Implementation Guide](/developers/building/feature-management/channels/voice/voicemail/voicemail-implementation-guide) - Architecture and decision charts
 :::
 
 # Legacy Voicemail Implementation Guide
@@ -21,17 +20,28 @@ This guide helps you choose and implement the right voicemail solution for older
 
 The voice system has been restructured for better clarity and modularity. Here's how the old options map to the new system:
 
-### Old Option A: Basic Voicemail → New: [Direct to Voicemail](/developers/building/feature-management/channels/voice/workflows/voicemail-only)
+### Old Option A: Basic Voicemail → New: [Voicemail-Only](/developers/building/feature-management/channels/voice/voicemail/voicemail-only-configuration)
 - Same functionality, clearer implementation guide
 - Better troubleshooting and configuration options
+- Two implementation paths: dedicated feature or parameter approach
 
-### Old Option B: Callback + Voicemail → New: [Direct + Options](/developers/building/feature-management/channels/voice/workflows/direct-with-options)
+### Old Option B: Callback + Voicemail → New: [Callback + Wait](/developers/building/feature-management/channels/voice/voicemail/callback-voicemail-setup)
 - Enhanced with better hold music and queue management
 - More flexible callback options
 
-### Old Option C: Callback + Voicemail + Email → New: [Direct + Options](/developers/building/feature-management/channels/voice/workflows/direct-with-options) + [Email Notifications](/developers/building/feature-management/channels/voice/add-ons/email-notifications)
-- Modular approach allows easier customization  
+### Old Option C: Callback + Voicemail + Email → New: [Callback + Wait](/developers/building/feature-management/channels/voice/voicemail/callback-voicemail-setup) + [Email Notifications](/developers/building/feature-management/channels/voice/add-ons/email-notifications)
+- Modular approach allows easier customization
 - Better email provider options and setup guides
+
+## Key Architecture Change
+
+**Old Model:** Three separate "Options" (A, B, C)
+
+**New Model:** Base Experience + Add-ons
+- **Base Experiences:** Voicemail Only OR Callback + Wait
+- **Add-ons:** Email Notifications, Transcription (apply to ANY base)
+
+This makes it clear that email and transcription are features that can be added to either base experience.
 
 ## Legacy Decision Tree
 
@@ -52,17 +62,17 @@ The new modular architecture provides:
 ## Implementation Resources
 
 ### New Architecture (Recommended)
-- [Voice Overview](./overview) - Start here for new implementations
-- [Core Workflows](./workflows/) - Base call handling patterns
-- [Add-On Features](./add-ons/) - Email, transcription, CRM integration
-- [Troubleshooting](./troubleshooting/) - Common issues and solutions
+- [Voicemail Overview](/developers/building/feature-management/channels/voice/voicemail/) - Start here for new implementations
+- [Implementation Guide](/developers/building/feature-management/channels/voice/voicemail/voicemail-implementation-guide) - Architecture and decision charts
+- [Email Notifications Add-On](/developers/building/feature-management/channels/voice/add-ons/email-notifications) - Email setup
+- [Transcription Add-On](/developers/building/feature-management/channels/voice/add-ons/transcription) - Audio-to-text
 
 ### Legacy Resources (Existing Deployments)
-- [Email Provider Setup](./voicemail/) - For existing Option C implementations
-- [Legacy Mailgun Setup](./voicemail/email-providers/mailgun-setup) - Detailed legacy guide
+- [Mailgun Setup](/developers/building/feature-management/channels/voice/voicemail/email-providers/mailgun-setup) - Email provider configuration
+- [SendGrid Setup](/developers/building/feature-management/channels/voice/voicemail/email-providers/sendgrid-setup) - Alternative email provider
 
 ## Need Help?
 
-- **New Implementations**: Follow the [Voice Overview](./overview) guide
+- **New Implementations**: Follow the [Voicemail Overview](/developers/building/feature-management/channels/voice/voicemail/)
 - **Existing Deployments**: Continue using current setup or plan migration
 - **Professional Services**: Contact your Connie Professional Services representative

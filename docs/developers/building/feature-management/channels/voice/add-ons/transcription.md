@@ -71,7 +71,7 @@ exports.handler = async (context, event, callback) => {
     CallSid,
     From
   } = event;
-  
+
   if (TranscriptionStatus === 'completed') {
     // Process completed transcription
     await processTranscription({
@@ -81,10 +81,75 @@ exports.handler = async (context, event, callback) => {
       call_sid: CallSid
     });
   }
-  
+
   callback(null, 'Transcription processed');
 };
 ```
+
+---
+
+## Critical Fix: TranscriptionText May Be Missing
+
+:::danger Critical Implementation Note
+Twilio's `transcribeCallback` does **NOT** always include `TranscriptionText` in the event payload. Your function **MUST** fetch it from `TranscriptionUrl` when missing.
+:::
+
+This issue was discovered during Connie Care Team 877 setup (December 2025). Without this fix, transcriptions may silently fail.
+
+### The Problem
+
+```javascript
+// This WILL fail sometimes - TranscriptionText may be undefined
+const transcriptionText = event.TranscriptionText;
+// transcriptionText is undefined, but TranscriptionUrl exists
+```
+
+### The Solution
+
+```javascript
+const axios = require('axios');
+
+exports.handler = async (context, event, callback) => {
+  let transcriptionText = event.TranscriptionText;
+
+  // CRITICAL: Fetch transcription if not in payload
+  if (!transcriptionText && event.TranscriptionUrl) {
+    try {
+      const response = await axios.get(event.TranscriptionUrl + '.json', {
+        auth: {
+          username: context.ACCOUNT_SID,
+          password: context.AUTH_TOKEN
+        }
+      });
+      transcriptionText = response.data.transcription_text;
+      console.log('Fetched transcription from URL:', transcriptionText?.substring(0, 50));
+    } catch (error) {
+      console.error('Failed to fetch transcription:', error.message);
+    }
+  }
+
+  // Now use transcriptionText safely
+  if (transcriptionText) {
+    await processTranscription({
+      text: transcriptionText,
+      caller: event.From,
+      recording_url: event.RecordingUrl,
+      call_sid: event.CallSid
+    });
+  }
+
+  callback(null, 'Transcription processed');
+};
+```
+
+### Key Points
+
+1. **Always check** if `TranscriptionText` is undefined
+2. **Use TranscriptionUrl** with `.json` suffix to fetch the transcription
+3. **Authenticate** with Account SID and Auth Token
+4. **Handle errors** gracefully - don't let missing transcription break email delivery
+
+---
 
 ## Advanced Features
 
