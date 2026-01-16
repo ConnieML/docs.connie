@@ -16,7 +16,7 @@ Find your documentation path based on how you interact with ConnieRTC:
 
 <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginTop: '30px', marginBottom: '30px'}}>
 
-  {/* CBO Users Card */}
+  {/* End Users Card */}
   <div style={{
     border: '2px solid #4CAF50',
     borderRadius: '12px',
@@ -24,13 +24,13 @@ Find your documentation path based on how you interact with ConnieRTC:
     backgroundColor: '#f0f8f0',
     boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
   }}>
-    <h3 style={{color: '#2e7d32', marginTop: 0}}>👥 CBO Users</h3>
+    <h3 style={{color: '#2e7d32', marginTop: 0}}>👥 End Users</h3>
     <p style={{fontSize: '14px', color: '#555', minHeight: '60px'}}>
       I work at a nonprofit and use ConnieRTC daily to serve our community
     </p>
     <div style={{borderTop: '1px solid #c8e6c9', paddingTop: '16px', marginTop: '16px'}}>
       <div style={{marginBottom: '12px'}}>
-        <a href="/cbo-users/staff-agents" style={{
+        <a href="/end-users/staff-agents" style={{
           display: 'flex',
           alignItems: 'center',
           padding: '10px 16px',
@@ -54,7 +54,7 @@ Find your documentation path based on how you interact with ConnieRTC:
       </div>
 
       <div style={{marginBottom: '12px'}}>
-        <a href="/cbo-users/supervisors/overview" style={{
+        <a href="/end-users/supervisors/overview" style={{
           display: 'flex',
           alignItems: 'center',
           padding: '10px 16px',
@@ -78,7 +78,7 @@ Find your documentation path based on how you interact with ConnieRTC:
       </div>
 
       <div>
-        <a href="/cbo-users/administrators/overview" style={{
+        <a href="/end-users/administrators/getting-started" style={{
           display: 'flex',
           alignItems: 'center',
           padding: '10px 16px',
@@ -95,8 +95,8 @@ Find your documentation path based on how you interact with ConnieRTC:
             borderRadius: '50%',
             marginRight: '12px',
             border: '2px solid white'
-          }} alt="CBO Administrator" />
-          <span>CBO Administrators</span>
+          }} alt="Administrator" />
+          <span>Administrators</span>
         </a>
         <p style={{fontSize: '12px', color: '#666', margin: '4px 0'}}>Configure system and manage users</p>
       </div>
@@ -209,8 +209,8 @@ Find your documentation path based on how you interact with ConnieRTC:
 }}>
   <h3 style={{marginTop: 0, color: '#333'}}>🎯 Not Sure Where to Start?</h3>
   <ul style={{marginBottom: 0}}>
-    <li><strong>Running a nonprofit?</strong> You're a CBO User - start with <a href="/cbo-users/administrators/overview">CBO Administrators</a></li>
-    <li><strong>Taking calls/chats?</strong> You're a Staff Agent - go to <a href="/cbo-users/staff-agents">Staff Agents</a></li>
+    <li><strong>Running a nonprofit?</strong> Start with <a href="/end-users/administrators/getting-started">Administrators</a></li>
+    <li><strong>Taking calls/chats?</strong> You're a Staff Agent - go to <a href="/end-users/staff-agents">Staff Agents</a></li>
     <li><strong>New to ConnieRTC?</strong> Check out <a href="/getting-started/system-requirements">Getting Started</a></li>
     <li><strong>You're an AI?</strong> Access <a href="/ai-agents/structured-data">AI Agent Resources</a></li>
   </ul>

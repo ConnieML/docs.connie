@@ -37,4 +37,4 @@ Common issue resolution guides, SSO troubleshooting, voice/voicemail diagnostics
 
 ---
 
-**Note:** If you're a CBO user looking for help with ConnieRTC, please visit the [CBO Users](/cbo-users/staff-agents) documentation instead.
+**Note:** If you're a CBO user looking for help with ConnieRTC, please visit the [CBO Users](/end-users/staff-agents) documentation instead.
