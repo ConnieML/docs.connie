@@ -4,6 +4,22 @@
  * work well for content-centric websites.
  */
 
+/* Main category styling - bold headers for primary sections */
+.sidebar-category-main > .menu__list-item-collapsible > .menu__link,
+.sidebar-category-main > div > .menu__link {
+  font-weight: 700 !important;
+  font-size: 0.95rem;
+  color: #2e7d32 !important; /* Green to match End Users card */
+}
+
+/* TechOps category styling */
+.techops-category > .menu__list-item-collapsible > .menu__link,
+.techops-category > div > .menu__link {
+  font-weight: 700 !important;
+  font-size: 0.95rem;
+  color: #555 !important;
+}
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #d21a0d;

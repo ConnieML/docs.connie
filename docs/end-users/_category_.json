@@ -1,7 +1,8 @@
 {
-  "label": "End Users",
+  "label": "👥 End Users",
   "position": 5,
   "collapsible": true,
-  "collapsed": true,
+  "collapsed": false,
+  "className": "sidebar-category-main",
   "description": "Documentation for Connie end users"
 }
