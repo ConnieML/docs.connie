@@ -15,12 +15,12 @@ The _Connie Realtime Center (aka ConnieRTC) is a comprehensive digital communica
 Find your documentation path based on how you interact with ConnieRTC:
 
 <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginTop: '30px', marginBottom: '30px'}}>
-  
+
   {/* CBO Users Card */}
   <div style={{
-    border: '2px solid #4CAF50', 
-    borderRadius: '12px', 
-    padding: '24px', 
+    border: '2px solid #4CAF50',
+    borderRadius: '12px',
+    padding: '24px',
     backgroundColor: '#f0f8f0',
     boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
   }}>
@@ -52,7 +52,7 @@ Find your documentation path based on how you interact with ConnieRTC:
         </a>
         <p style={{fontSize: '12px', color: '#666', margin: '4px 0'}}>Handle calls, chats, and client interactions</p>
       </div>
-      
+
       <div style={{marginBottom: '12px'}}>
         <a href="/cbo-users/supervisors/overview" style={{
           display: 'flex',
@@ -76,7 +76,7 @@ Find your documentation path based on how you interact with ConnieRTC:
         </a>
         <p style={{fontSize: '12px', color: '#666', margin: '4px 0'}}>Monitor teams and manage schedules</p>
       </div>
-      
+
       <div>
         <a href="/cbo-users/administrators/overview" style={{
           display: 'flex',
@@ -103,20 +103,20 @@ Find your documentation path based on how you interact with ConnieRTC:
     </div>
   </div>
 
-  {/* Platform Developers Card */}
+  {/* Getting Started Card */}
   <div style={{
-    border: '2px solid #2196F3', 
-    borderRadius: '12px', 
-    padding: '24px', 
+    border: '2px solid #2196F3',
+    borderRadius: '12px',
+    padding: '24px',
     backgroundColor: '#e8f5ff',
     boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
   }}>
-    <h3 style={{color: '#1565c0', marginTop: 0}}>💻 Platform Developers</h3>
+    <h3 style={{color: '#1565c0', marginTop: 0}}>📚 Getting Started</h3>
     <p style={{fontSize: '14px', color: '#555', minHeight: '60px'}}>
-      I build on ConnieRTC - either internally at Connie or as an external developer/ISV
+      New to ConnieRTC? Start here to understand the platform and its features
     </p>
     <div style={{borderTop: '1px solid #90caf9', paddingTop: '16px', marginTop: '16px'}}>
-      <a href="/platform-developers/getting-started" style={{
+      <a href="/getting-started/system-requirements" style={{
         display: 'block',
         padding: '12px 20px',
         backgroundColor: '#2196F3',
@@ -127,10 +127,10 @@ Find your documentation path based on how you interact with ConnieRTC:
         fontWeight: 'bold',
         marginBottom: '12px'
       }}>
-        🚀 Start Building
+        System Requirements
       </a>
       <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px'}}>
-        <a href="/platform-developers/apis" style={{
+        <a href="/getting-started/feature-library/overview" style={{
           display: 'block',
           padding: '8px',
           backgroundColor: '#42A5F5',
@@ -140,9 +140,9 @@ Find your documentation path based on how you interact with ConnieRTC:
           textAlign: 'center',
           fontSize: '14px'
         }}>
-          APIs & SDKs
+          Feature Library
         </a>
-        <a href="/platform-developers/customization" style={{
+        <a href="/getting-started/roles-permissions" style={{
           display: 'block',
           padding: '8px',
           backgroundColor: '#42A5F5',
@@ -152,64 +152,23 @@ Find your documentation path based on how you interact with ConnieRTC:
           textAlign: 'center',
           fontSize: '14px'
         }}>
-          Customization
+          Roles & Permissions
         </a>
       </div>
     </div>
   </div>
 
-  {/* Connie Support Team Card */}
-  <div style={{
-    border: '2px solid #FF9800', 
-    borderRadius: '12px', 
-    padding: '24px', 
-    backgroundColor: '#fff3e0',
-    boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
-  }}>
-    <h3 style={{color: '#e65100', marginTop: 0}}>🛠️ Connie Support Team</h3>
-    <p style={{fontSize: '14px', color: '#555', minHeight: '60px'}}>
-      I provide technical support to CBO users and need troubleshooting guides
-    </p>
-    <div style={{borderTop: '1px solid #ffcc80', paddingTop: '16px', marginTop: '16px'}}>
-      <a href="/support-team/knowledge-base" style={{
-        display: 'block',
-        padding: '12px 20px',
-        backgroundColor: '#FF9800',
-        color: 'white',
-        textDecoration: 'none',
-        borderRadius: '6px',
-        textAlign: 'center',
-        fontWeight: 'bold',
-        marginBottom: '12px'
-      }}>
-        📚 Knowledge Base
-      </a>
-      <a href="/support-team/troubleshooting" style={{
-        display: 'block',
-        padding: '10px 16px',
-        backgroundColor: '#FFB74D',
-        color: 'white',
-        textDecoration: 'none',
-        borderRadius: '6px',
-        textAlign: 'center',
-        fontWeight: '500'
-      }}>
-        🔧 Troubleshooting Guides
-      </a>
-    </div>
-  </div>
-
   {/* AI Agents Card */}
   <div style={{
-    border: '2px solid #9C27B0', 
-    borderRadius: '12px', 
-    padding: '24px', 
+    border: '2px solid #9C27B0',
+    borderRadius: '12px',
+    padding: '24px',
     backgroundColor: '#f3e5f5',
     boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
   }}>
     <h3 style={{color: '#6a1b9a', marginTop: 0}}>🤖 AI Agents</h3>
     <p style={{fontSize: '14px', color: '#555', minHeight: '60px'}}>
-      I'm an AI assistant helping any of the above users with ConnieRTC
+      I'm an AI assistant helping users with ConnieRTC
     </p>
     <div style={{borderTop: '1px solid #ce93d8', paddingTop: '16px', marginTop: '16px'}}>
       <a href="/ai-agents/structured-data" style={{
@@ -252,8 +211,7 @@ Find your documentation path based on how you interact with ConnieRTC:
   <ul style={{marginBottom: 0}}>
     <li><strong>Running a nonprofit?</strong> You're a CBO User - start with <a href="/cbo-users/administrators/overview">CBO Administrators</a></li>
     <li><strong>Taking calls/chats?</strong> You're a Staff Agent - go to <a href="/cbo-users/staff-agents">Staff Agents</a></li>
-    <li><strong>Writing code?</strong> You're a Platform Developer - check out <a href="/platform-developers/getting-started">Platform Developers</a></li>
-    <li><strong>Helping users?</strong> You're Connie Support - visit <a href="/support-team/knowledge-base">Support Team</a></li>
+    <li><strong>New to ConnieRTC?</strong> Check out <a href="/getting-started/system-requirements">Getting Started</a></li>
     <li><strong>You're an AI?</strong> Access <a href="/ai-agents/structured-data">AI Agent Resources</a></li>
   </ul>
 </div>
@@ -266,7 +224,7 @@ This documentation covers all the key components and features of the ConnieRTC p
 - **Feature-Rich**: Many of the most common features requested by ConnieRTC customers [are already packaged in the template](/getting-started/feature-library/overview)
 - **Modular Design**: Each feature is self-contained and easily removed if desired  
 - **Admin Control**: Features can be turned on and off using an [administration panel](/getting-started/feature-library/admin-ui)
-- **Quick Deployment**: You can [deploy this solution and use it to build in just a few minutes](/developers/install-template) by providing your account SID, API key, and API secret
+- **Quick Deployment**: You can deploy this solution and use it to build in just a few minutes by providing your account SID, API key, and API secret
 
 ## Why Choose ConnieRTC?
 

@@ -1,0 +1,11 @@
+{
+  "label": "Connie TechOps",
+  "position": 90,
+  "collapsed": false,
+  "collapsible": true,
+  "className": "techops-category",
+  "link": {
+    "type": "doc",
+    "id": "techops/overview"
+  }
+}
