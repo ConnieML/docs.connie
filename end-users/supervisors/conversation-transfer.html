@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-end-users/supervisors/conversation-transfer" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Managing Conversation Transfers | Connie Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.connie.one/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.connie.one/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.connie.one/end-users/supervisors/conversation-transfer"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Managing Conversation Transfers | Connie Documentation"><meta data-rh="true" name="description" content="As a supervisor, you need to understand how conversation transfers work, monitor transfer patterns, and help agents use this feature effectively."><meta data-rh="true" property="og:description" content="As a supervisor, you need to understand how conversation transfers work, monitor transfer patterns, and help agents use this feature effectively."><link data-rh="true" rel="icon" href="/img/logos/connie-rtc-icon.png"><link data-rh="true" rel="canonical" href="https://docs.connie.one/end-users/supervisors/conversation-transfer"><link data-rh="true" rel="alternate" href="https://docs.connie.one/end-users/supervisors/conversation-transfer" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.connie.one/end-users/supervisors/conversation-transfer" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Managing Conversation Transfers","item":"https://docs.connie.one/end-users/supervisors/conversation-transfer"}]}</script><link rel="stylesheet" href="https://assets.twilio.com/public_assets/paste-fonts/1.5.1/fonts.css"><link rel="stylesheet" href="/assets/css/styles.4a88184e.css">
+<script src="/assets/js/runtime~main.0eb46865.js" defer="defer"></script>
+<script src="/assets/js/main.7a755f69.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logos/connie-rtc-icon.png" alt="Connie Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logos/connie-rtc-icon.png" alt="Connie Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Connie Documentation</b></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/ConnieML/connieRTC-flex" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="dsla-search-wrapper"><div class="dsla-search-field" data-tags="default,docs-default-current"></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/end-users/supervisors/overview">Supervisors</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/end-users/supervisors/overview">Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/end-users/supervisors/conversation-transfer">Managing Conversation Transfers</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Supervisors</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Managing Conversation Transfers</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Managing Conversation Transfers</h1></header>
+<p>As a supervisor, you need to understand how conversation transfers work, monitor transfer patterns, and help agents use this feature effectively.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-overview-for-supervisors">📋 Overview for Supervisors<a href="#-overview-for-supervisors" class="hash-link" aria-label="Direct link to 📋 Overview for Supervisors" title="Direct link to 📋 Overview for Supervisors">​</a></h2>
+<p>Conversation transfer allows your agents to:</p>
+<ul>
+<li><strong>Cold transfer:</strong> Immediately move conversations to another agent/queue</li>
+<li><strong>Warm transfer:</strong> Stay connected until the receiving agent joins</li>
+<li><strong>Add context notes</strong> to help receiving agents</li>
+<li><strong>Transfer all conversation types:</strong> Voice, SMS, webchat, WhatsApp</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-monitoring-agent-transfers">👥 Monitoring Agent Transfers<a href="#-monitoring-agent-transfers" class="hash-link" aria-label="Direct link to 👥 Monitoring Agent Transfers" title="Direct link to 👥 Monitoring Agent Transfers">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="transfer-patterns-to-watch">Transfer Patterns to Watch<a href="#transfer-patterns-to-watch" class="hash-link" aria-label="Direct link to Transfer Patterns to Watch" title="Direct link to Transfer Patterns to Watch">​</a></h3>
+<ul>
+<li><strong>Excessive transfers:</strong> Agent might need additional training</li>
+<li><strong>Transfer reasons:</strong> Are agents transferring for the right reasons?</li>
+<li><strong>Successful completion:</strong> Are transfers being accepted and resolved?</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="key-metrics">Key Metrics<a href="#key-metrics" class="hash-link" aria-label="Direct link to Key Metrics" title="Direct link to Key Metrics">​</a></h3>
+<ul>
+<li>Transfer rate by agent</li>
+<li>Average transfer time</li>
+<li>Transfer success/failure rates</li>
+<li>Client satisfaction after transfers</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="nss-production-success-metrics-benchmarks">NSS Production Success Metrics (Benchmarks)<a href="#nss-production-success-metrics-benchmarks" class="hash-link" aria-label="Direct link to NSS Production Success Metrics (Benchmarks)" title="Direct link to NSS Production Success Metrics (Benchmarks)">​</a></h3>
+<p>Based on successful NSS deployment:</p>
+<ul>
+<li><strong>Transfer Success Rate:</strong> Target &gt;95% (anything below 90% indicates system issues)</li>
+<li><strong>Transfer Completion Time:</strong> Target under 10 seconds for cold transfers, under 30 seconds for warm transfers</li>
+<li><strong>Agent Acceptance Rate:</strong> Target &gt;90% (agents accepting transfers when available)</li>
+<li><strong>Client Satisfaction:</strong> No negative impact from transfers (maintain or improve scores)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="red-flag-metrics-immediate-escalation-required---nss-validated">Red Flag Metrics (Immediate Escalation Required - NSS VALIDATED)<a href="#red-flag-metrics-immediate-escalation-required---nss-validated" class="hash-link" aria-label="Direct link to Red Flag Metrics (Immediate Escalation Required - NSS VALIDATED)" title="Direct link to Red Flag Metrics (Immediate Escalation Required - NSS VALIDATED)">​</a></h3>
+<ul>
+<li>Transfer success rate drops below 90% (NSS threshold)</li>
+<li>ANY &quot;TaskRouter error: Bad Request&quot; reports from agents (indicates workflow SID issues)</li>
+<li>Transfer times consistently over 30 seconds</li>
+<li>Client complaints about multiple transfers or disconnections</li>
+<li>TaskRouter dashboard showing &gt;10% failed transfer tasks</li>
+<li>Agent reports of missing transfer notifications</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-training-your-agents">🎯 Training Your Agents<a href="#-training-your-agents" class="hash-link" aria-label="Direct link to 🎯 Training Your Agents" title="Direct link to 🎯 Training Your Agents">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="best-practices-to-teach">Best Practices to Teach<a href="#best-practices-to-teach" class="hash-link" aria-label="Direct link to Best Practices to Teach" title="Direct link to Best Practices to Teach">​</a></h3>
+<ol>
+<li><strong>Always explain to clients</strong> what&#x27;s happening during transfer</li>
+<li><strong>Use warm transfers</strong> for complex situations</li>
+<li><strong>Add helpful notes</strong> for receiving agents</li>
+<li><strong>Know when to transfer</strong> vs. when to escalate to you</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="common-agent-mistakes">Common Agent Mistakes<a href="#common-agent-mistakes" class="hash-link" aria-label="Direct link to Common Agent Mistakes" title="Direct link to Common Agent Mistakes">​</a></h3>
+<ul>
+<li><strong>Cold transferring complex issues</strong> without context</li>
+<li><strong>Not explaining to clients</strong> what&#x27;s happening</li>
+<li><strong>Transferring too quickly</strong> without attempting to help first</li>
+<li><strong>Forgetting to add notes</strong> about the situation</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-supervisor-controls">⚙️ Supervisor Controls<a href="#️-supervisor-controls" class="hash-link" aria-label="Direct link to ⚙️ Supervisor Controls" title="Direct link to ⚙️ Supervisor Controls">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="when-agents-transfer-to-you">When Agents Transfer to You<a href="#when-agents-transfer-to-you" class="hash-link" aria-label="Direct link to When Agents Transfer to You" title="Direct link to When Agents Transfer to You">​</a></h3>
+<ul>
+<li>You&#x27;ll receive a notification with the conversation context</li>
+<li>Review any notes the agent added</li>
+<li>You can accept, decline, or redirect to another agent</li>
+<li>Consider if this is a training opportunity for the agent</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="managing-transfer-queues">Managing Transfer Queues<a href="#managing-transfer-queues" class="hash-link" aria-label="Direct link to Managing Transfer Queues" title="Direct link to Managing Transfer Queues">​</a></h3>
+<ul>
+<li>Monitor queue wait times</li>
+<li>Ensure adequate staffing for transfer queues</li>
+<li>Train agents on proper queue selection</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-transfer-analytics">📊 Transfer Analytics<a href="#-transfer-analytics" class="hash-link" aria-label="Direct link to 📊 Transfer Analytics" title="Direct link to 📊 Transfer Analytics">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reports-to-review">Reports to Review<a href="#reports-to-review" class="hash-link" aria-label="Direct link to Reports to Review" title="Direct link to Reports to Review">​</a></h3>
+<ul>
+<li><strong>Transfer volume by time of day</strong></li>
+<li><strong>Most common transfer reasons</strong></li>
+<li><strong>Agent transfer patterns</strong></li>
+<li><strong>Customer satisfaction scores post-transfer</strong></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="red-flags-to-address">Red Flags to Address<a href="#red-flags-to-address" class="hash-link" aria-label="Direct link to Red Flags to Address" title="Direct link to Red Flags to Address">​</a></h3>
+<ul>
+<li>High transfer rates without resolution</li>
+<li>Clients complaining about multiple transfers</li>
+<li>Agents avoiding certain types of conversations</li>
+<li>Long hold times for transfers</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-troubleshooting-agent-issues">🛠️ Troubleshooting Agent Issues<a href="#️-troubleshooting-agent-issues" class="hash-link" aria-label="Direct link to 🛠️ Troubleshooting Agent Issues" title="Direct link to 🛠️ Troubleshooting Agent Issues">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="my-transfers-arent-working">&quot;My transfers aren&#x27;t working&quot;<a href="#my-transfers-arent-working" class="hash-link" aria-label="Direct link to &quot;My transfers aren&#x27;t working&quot;" title="Direct link to &quot;My transfers aren&#x27;t working&quot;">​</a></h3>
+<ol>
+<li>Check if agent has proper permissions</li>
+<li>Verify they&#x27;re not in Do Not Disturb mode</li>
+<li>Confirm transfer queues are properly configured</li>
+<li>Test the transfer process yourself</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="clients-are-getting-frustrated-with-transfers">&quot;Clients are getting frustrated with transfers&quot;<a href="#clients-are-getting-frustrated-with-transfers" class="hash-link" aria-label="Direct link to &quot;Clients are getting frustrated with transfers&quot;" title="Direct link to &quot;Clients are getting frustrated with transfers&quot;">​</a></h3>
+<ol>
+<li>Review agent transfer techniques</li>
+<li>Ensure warm transfers are being used appropriately</li>
+<li>Check if agents are explaining the process</li>
+<li>Consider additional customer service training</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="other-agents-arent-accepting-transfers">&quot;Other agents aren&#x27;t accepting transfers&quot;<a href="#other-agents-arent-accepting-transfers" class="hash-link" aria-label="Direct link to &quot;Other agents aren&#x27;t accepting transfers&quot;" title="Direct link to &quot;Other agents aren&#x27;t accepting transfers&quot;">​</a></h3>
+<ol>
+<li>Review team workload distribution</li>
+<li>Check if receiving agents understand transfer notifications</li>
+<li>Consider queue-based transfers instead of agent-specific</li>
+<li>Address any team dynamics issues</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-performance-management">🎯 Performance Management<a href="#-performance-management" class="hash-link" aria-label="Direct link to 🎯 Performance Management" title="Direct link to 🎯 Performance Management">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="transfer-related-coaching-points">Transfer-Related Coaching Points<a href="#transfer-related-coaching-points" class="hash-link" aria-label="Direct link to Transfer-Related Coaching Points" title="Direct link to Transfer-Related Coaching Points">​</a></h3>
+<ul>
+<li><strong>Transfer frequency:</strong> Too many or too few transfers</li>
+<li><strong>Transfer timing:</strong> When in the conversation to transfer</li>
+<li><strong>Client communication:</strong> How transfers are explained</li>
+<li><strong>Documentation:</strong> Quality of transfer notes</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="recognition-opportunities">Recognition Opportunities<a href="#recognition-opportunities" class="hash-link" aria-label="Direct link to Recognition Opportunities" title="Direct link to Recognition Opportunities">​</a></h3>
+<ul>
+<li>Agents who handle complex transfers well</li>
+<li>Successful warm transfer handoffs</li>
+<li>Agents who reduce transfer rates through skill development</li>
+<li>Creative problem-solving before transferring</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-system-configuration">🔧 System Configuration<a href="#-system-configuration" class="hash-link" aria-label="Direct link to 🔧 System Configuration" title="Direct link to 🔧 System Configuration">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="settings-you-can-control">Settings You Can Control<a href="#settings-you-can-control" class="hash-link" aria-label="Direct link to Settings You Can Control" title="Direct link to Settings You Can Control">​</a></h3>
+<ul>
+<li>Transfer timeout periods</li>
+<li>Queue assignments for your team</li>
+<li>Agent availability for receiving transfers</li>
+<li>Transfer notification preferences</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="working-with-itadmin">Working with IT/Admin<a href="#working-with-itadmin" class="hash-link" aria-label="Direct link to Working with IT/Admin" title="Direct link to Working with IT/Admin">​</a></h3>
+<ul>
+<li>Request new transfer queues</li>
+<li>Modify agent permissions</li>
+<li>Update transfer workflows</li>
+<li>Report system issues</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-escalation-path">📞 Escalation Path<a href="#-escalation-path" class="hash-link" aria-label="Direct link to 📞 Escalation Path" title="Direct link to 📞 Escalation Path">​</a></h2>
+<p><strong>For system issues (NSS Production Guidance):</strong></p>
+<ul>
+<li><strong>&quot;TaskRouter error: Bad Request&quot; reports:</strong> IMMEDIATE escalation to Platform Developer</li>
+<li><strong>Transfer success rate drops below 90%:</strong> Contact Connie Support with URGENT priority</li>
+<li><strong>Individual agent transfer failures:</strong> Check workflow SID configuration first</li>
+<li><strong>General system issues:</strong> Contact Connie Support with conversation SIDs and error details</li>
+</ul>
+<p><strong>For training needs:</strong> Work with your manager
+<strong>For policy questions:</strong> Refer to CBO Administrator documentation
+<strong>For technical configuration:</strong> Contact IT or Platform Administrator</p>
+<p><strong>Information to Gather for Escalations:</strong></p>
+<ul>
+<li>Conversation SIDs where transfers failed</li>
+<li>Agent names involved in transfer attempts</li>
+<li>Exact timestamp when issues started</li>
+<li>Error messages or screenshots</li>
+<li>Transfer success rate from dashboard</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-quick-supervisor-checklist">💡 Quick Supervisor Checklist<a href="#-quick-supervisor-checklist" class="hash-link" aria-label="Direct link to 💡 Quick Supervisor Checklist" title="Direct link to 💡 Quick Supervisor Checklist">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="daily-operations">Daily Operations<a href="#daily-operations" class="hash-link" aria-label="Direct link to Daily Operations" title="Direct link to Daily Operations">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Agents know when to use cold vs warm transfers</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Transfer notes are being used effectively</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Clients are being kept informed during transfers</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Transfer rates are reasonable for your team</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Receiving agents are responsive to transfer requests</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->You&#x27;re monitoring transfer patterns for training opportunities</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="post-system-update-validation-critical">Post-System Update Validation (CRITICAL)<a href="#post-system-update-validation-critical" class="hash-link" aria-label="Direct link to Post-System Update Validation (CRITICAL)" title="Direct link to Post-System Update Validation (CRITICAL)">​</a></h3>
+<p>When IT notifies you of ConnieRTC updates affecting transfers:</p>
+<p><strong>First 30 Minutes After Update:</strong></p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Test transfers yourself</strong> - don&#x27;t rely on agent reports</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Monitor for &quot;TaskRouter error: Bad Request&quot; messages</strong></li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Check transfer success rate dashboard</strong> - should maintain &gt;95%</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Verify agent notifications working</strong> - agents should receive transfer alerts</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Test both cold and warm transfers</strong></li>
+</ul>
+<p><strong>First 2 Hours After Update:</strong></p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Review all transfer attempts</strong> - look for failure patterns</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Ask agents to report any issues immediately</strong></li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Check client satisfaction scores</strong> - no negative impact from transfers</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Monitor queue wait times</strong> - transfers shouldn&#x27;t increase wait times</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Document any issues for IT escalation</strong></li>
+</ul>
+<p><strong>First Day After Update:</strong></p>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Analyze transfer patterns</strong> - compare to pre-update baseline</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Review agent feedback</strong> - any new confusion or difficulties?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Check error logs</strong> for transfer-related issues</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <strong>Plan additional training</strong> if new issues emerge</li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/end-users/supervisors/overview"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Overview</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#-overview-for-supervisors" class="table-of-contents__link toc-highlight">📋 Overview for Supervisors</a></li><li><a href="#-monitoring-agent-transfers" class="table-of-contents__link toc-highlight">👥 Monitoring Agent Transfers</a><ul><li><a href="#transfer-patterns-to-watch" class="table-of-contents__link toc-highlight">Transfer Patterns to Watch</a></li><li><a href="#key-metrics" class="table-of-contents__link toc-highlight">Key Metrics</a></li><li><a href="#nss-production-success-metrics-benchmarks" class="table-of-contents__link toc-highlight">NSS Production Success Metrics (Benchmarks)</a></li><li><a href="#red-flag-metrics-immediate-escalation-required---nss-validated" class="table-of-contents__link toc-highlight">Red Flag Metrics (Immediate Escalation Required - NSS VALIDATED)</a></li></ul></li><li><a href="#-training-your-agents" class="table-of-contents__link toc-highlight">🎯 Training Your Agents</a><ul><li><a href="#best-practices-to-teach" class="table-of-contents__link toc-highlight">Best Practices to Teach</a></li><li><a href="#common-agent-mistakes" class="table-of-contents__link toc-highlight">Common Agent Mistakes</a></li></ul></li><li><a href="#️-supervisor-controls" class="table-of-contents__link toc-highlight">⚙️ Supervisor Controls</a><ul><li><a href="#when-agents-transfer-to-you" class="table-of-contents__link toc-highlight">When Agents Transfer to You</a></li><li><a href="#managing-transfer-queues" class="table-of-contents__link toc-highlight">Managing Transfer Queues</a></li></ul></li><li><a href="#-transfer-analytics" class="table-of-contents__link toc-highlight">📊 Transfer Analytics</a><ul><li><a href="#reports-to-review" class="table-of-contents__link toc-highlight">Reports to Review</a></li><li><a href="#red-flags-to-address" class="table-of-contents__link toc-highlight">Red Flags to Address</a></li></ul></li><li><a href="#️-troubleshooting-agent-issues" class="table-of-contents__link toc-highlight">🛠️ Troubleshooting Agent Issues</a><ul><li><a href="#my-transfers-arent-working" class="table-of-contents__link toc-highlight">&quot;My transfers aren&#39;t working&quot;</a></li><li><a href="#clients-are-getting-frustrated-with-transfers" class="table-of-contents__link toc-highlight">&quot;Clients are getting frustrated with transfers&quot;</a></li><li><a href="#other-agents-arent-accepting-transfers" class="table-of-contents__link toc-highlight">&quot;Other agents aren&#39;t accepting transfers&quot;</a></li></ul></li><li><a href="#-performance-management" class="table-of-contents__link toc-highlight">🎯 Performance Management</a><ul><li><a href="#transfer-related-coaching-points" class="table-of-contents__link toc-highlight">Transfer-Related Coaching Points</a></li><li><a href="#recognition-opportunities" class="table-of-contents__link toc-highlight">Recognition Opportunities</a></li></ul></li><li><a href="#-system-configuration" class="table-of-contents__link toc-highlight">🔧 System Configuration</a><ul><li><a href="#settings-you-can-control" class="table-of-contents__link toc-highlight">Settings You Can Control</a></li><li><a href="#working-with-itadmin" class="table-of-contents__link toc-highlight">Working with IT/Admin</a></li></ul></li><li><a href="#-escalation-path" class="table-of-contents__link toc-highlight">📞 Escalation Path</a></li><li><a href="#-quick-supervisor-checklist" class="table-of-contents__link toc-highlight">💡 Quick Supervisor Checklist</a><ul><li><a href="#daily-operations" class="table-of-contents__link toc-highlight">Daily Operations</a></li><li><a href="#post-system-update-validation-critical" class="table-of-contents__link toc-highlight">Post-System Update Validation (CRITICAL)</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Connie Links</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://connie.one" target="_blank" rel="noopener noreferrer" class="footer__link-item">Learn More<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://portal.connie.team" target="_blank" rel="noopener noreferrer" class="footer__link-item">Log In<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/ConnieML/connieRTC-flex" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Connie Corp.</div></div></div></footer></div>
+</body>
+</html>
