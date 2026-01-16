@@ -74,17 +74,12 @@ const sidebars = {
   techops: [
     {
       type: 'html',
-      value: '<hr style="margin: 16px 0; border: none; border-top: 2px solid #e0e0e0;" />',
-      defaultStyle: true,
-    },
-    {
-      type: 'html',
-      value: '<span style="font-size: 11px; color: #666; text-transform: uppercase; letter-spacing: 0.5px; padding: 0 12px;">Internal Documentation</span>',
+      value: '<div style="margin: 32px 0 16px 0; padding: 12px; background: linear-gradient(to right, #f5f5f5, transparent); border-left: 3px solid #666;"><span style="font-size: 11px; color: #666; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">⚙️ Internal Only</span></div>',
       defaultStyle: true,
     },
     {
       type: 'category',
-      label: 'Connie TechOps',
+      label: '⚙️ Connie TechOps',
       collapsed: false,
       link: {
         type: 'doc',
