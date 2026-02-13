@@ -6,20 +6,20 @@ title: "Facebook Messenger Channel Setup Guide"
 
 # Facebook Messenger Channel Setup Guide
 
-This guide walks Connie administrators and AI agents through the complete process of activating Facebook Messenger as a communication channel on a ConnieRTC Flex instance.
+This guide walks Connie administrators and AI agents through the complete process of activating Facebook Messenger as a communication channel on a ConnieRTC instance.
 
 ## Overview
 
-The Facebook Messenger channel allows community members to message your organization through your Facebook Page. Messages are routed through an interactive department menu and land as tasks in the Flex agent queue — just like voice, email, WhatsApp, and web channels.
+The Facebook Messenger channel allows community members to message your organization through your Facebook Page. Messages are routed through an interactive department menu and land as tasks in the Connie agent queue — just like voice, email, WhatsApp, and web channels.
 
 ### How It Works
 
 ```mermaid
 flowchart LR
-    A["Client messages\nFacebook Page"] --> B["Twilio receives\nvia Messenger API"]
+    A["Client messages\nFacebook Page"] --> B["Connie receives\nvia Messenger API"]
     B --> C["Conversations\nAddress"]
     C --> D["Studio Flow\n(Dept Menu)"]
-    D --> E["Send to Flex\n(Task Created)"]
+    D --> E["Send to Connie\n(Task Created)"]
     E --> F["Agent accepts\n& responds"]
 
     style A fill:#0084FF
@@ -31,41 +31,41 @@ flowchart LR
 ```
 
 1. A community member sends a message to your Facebook Page via Messenger
-2. Twilio receives the message through the Facebook Messenger API
+2. Connie receives the message through the Facebook Messenger API
 3. The Conversations Address routes it to your Studio Flow
 4. The Studio Flow presents an interactive department menu (reply 1, 2, or 3)
-5. Based on the reply, a task is created in Flex with the correct department label
+5. Based on the reply, a task is created in Connie with the correct department label
 6. An agent accepts the task and has a two-way Messenger conversation
 
 ## Prerequisites
 
 Before starting, ensure you have:
 
-- [ ] **Twilio Account** with Flex 2.x (Conversations API) enabled
-- [ ] **Twilio CLI** installed and authenticated to the target account
+- [ ] **Connie Account** with Conversations API enabled
+- [ ] **Connie CLI** installed and authenticated to the target account
 - [ ] **Facebook Page** for the CBO (this is the Page community members will message)
 - [ ] **Meta Business Manager** account ([business.meta.com](https://business.meta.com)) with admin access to the Facebook Page
-- [ ] **Flex Plugin** deployed (ConnieRTC flex-project-template)
+- [ ] **Connie Plugin** deployed (ConnieRTC flex-project-template)
 
 :::info One Page Per CBO
-Each CBO needs its own dedicated Facebook Page for Messenger. A Facebook Page can only be connected to one Twilio account at a time.
+Each CBO needs its own dedicated Facebook Page for Messenger. A Facebook Page can only be connected to one Connie account at a time.
 :::
 
 ---
 
-## Step 1: Connect Your Facebook Page to Twilio
+## Step 1: Connect Your Facebook Page to Connie
 
-Unlike WhatsApp (which uses phone numbers), Facebook Messenger uses your organization's Facebook Page as the sender identity. You connect the Page through Twilio Console's Facebook Messenger setup.
+Unlike WhatsApp (which uses phone numbers), Facebook Messenger uses your organization's Facebook Page as the sender identity. You connect the Page through the Connie Console's Facebook Messenger setup.
 
 ### 1.1 Start the Connection Flow
 
-1. Navigate to **Twilio Console → Messaging → Senders → Facebook Messenger Senders**
+1. Navigate to **Connie Console → Messaging → Senders → Facebook Messenger Senders**
 2. Click **"Get Started"** (or **"Connect a Facebook Page"** if you've connected before)
 
-<!-- PLACEHOLDER: Screenshot of Twilio Console Facebook Messenger Senders page -->
+<!-- PLACEHOLDER: Screenshot of Connie Console Facebook Messenger Senders page -->
 <div style={{border: '2px dashed #ccc', borderRadius: '8px', padding: '40px', textAlign: 'center', margin: '20px 0', backgroundColor: '#f9f9f9'}}>
   <p style={{color: '#666', fontSize: '14px'}}>📸 <strong>Screenshot Placeholder</strong></p>
-  <p style={{color: '#999', fontSize: '12px'}}>Twilio Console → Messaging → Senders → Facebook Messenger Senders → "Get Started"</p>
+  <p style={{color: '#999', fontSize: '12px'}}>Connie Console → Messaging → Senders → Facebook Messenger Senders → "Get Started"</p>
 </div>
 
 ### 1.2 Authenticate with Facebook
@@ -87,12 +87,12 @@ Unlike WhatsApp (which uses phone numbers), Facebook Messenger uses your organiz
 
 1. Choose the **Business Portfolio** (Meta Business Manager) that owns the Facebook Page
 2. Confirm the connection
-3. Twilio will display the connected Page with its Page ID
+3. Connie will display the connected Page with its Page ID
 
-<!-- PLACEHOLDER: Screenshot of successful Facebook Page connection in Twilio Console -->
+<!-- PLACEHOLDER: Screenshot of successful Facebook Page connection in Connie Console -->
 <div style={{border: '2px dashed #ccc', borderRadius: '8px', padding: '40px', textAlign: 'center', margin: '20px 0', backgroundColor: '#f9f9f9'}}>
   <p style={{color: '#666', fontSize: '14px'}}>📸 <strong>Screenshot Placeholder</strong></p>
-  <p style={{color: '#999', fontSize: '12px'}}>Twilio Console showing connected Facebook Page with Page ID and ONLINE status</p>
+  <p style={{color: '#999', fontSize: '12px'}}>Connie Console showing connected Facebook Page with Page ID and ONLINE status</p>
 </div>
 
 ### 1.4 Verify Sender Status
@@ -110,7 +110,7 @@ You should see your Page with `"status": "ONLINE"`. Note the **Sender SID** (sta
 
 ## Step 2: Add Sender to Messaging Service
 
-The Facebook Messenger sender must be added to the Flex Conversations messaging service, just like WhatsApp and SMS senders.
+The Facebook Messenger sender must be added to the Connie Conversations messaging service, just like WhatsApp and SMS senders.
 
 ### 2.1 Find the Default Messaging Service
 
@@ -152,7 +152,7 @@ flowchart TD
     SV --> CONF
     SD --> CONF
     SG --> CONF
-    CONF --> FLEX[Send to Flex]
+    CONF --> FLEX[Send to Connie]
 
     style T fill:#e1f5fe
     style WM fill:#e8f5e9
@@ -334,7 +334,7 @@ twilio api:studio:v2:flows:create \
 Note the returned Flow SID (starts with `FW`).
 
 :::warning Critical: incomingMessage vs incomingConversationMessage
-The trigger must route `incomingConversationMessage` to the welcome message — NOT `incomingMessage`. Facebook Messenger via Conversations API uses `incomingConversationMessage`. If both events route to Flex, you'll get **duplicate tasks** for every Messenger message.
+The trigger must route `incomingConversationMessage` to the welcome message — NOT `incomingMessage`. Facebook Messenger via Conversations API uses `incomingConversationMessage`. If both events route to Connie, you'll get **duplicate tasks** for every Messenger message.
 :::
 
 ---
@@ -375,9 +375,9 @@ Replace:
 
 ---
 
-## Step 5: Configure the Flex Plugin (Optional)
+## Step 5: Configure the Connie Plugin (Optional)
 
-To give Messenger tasks custom branding in Flex (blue icon, "Messenger" label), create a channel definition in the Flex plugin.
+To give Messenger tasks custom branding in Connie (blue icon, "Messenger" label), create a channel definition in the Connie plugin.
 
 ### 5.1 Create Messenger Channel Definition
 
@@ -414,7 +414,7 @@ export const MessengerChannel = (manager: Flex.Manager) => {
 };
 ```
 
-### 5.2 Update Flex Configuration
+### 5.2 Update Connie Configuration
 
 Add Messenger to `ui_attributes.[cbo].json`:
 
@@ -465,9 +465,9 @@ Reply with **1**, **2**, or **3**.
 You should receive:
 > "Thank you! A member of our [Department] team will be with you shortly."
 
-### 6.3 Verify in Flex
+### 6.3 Verify in Connie
 
-1. Log into the Flex agent dashboard
+1. Log into the Connie agent dashboard
 2. A new task should appear in your queue
 3. The task should show:
    - **Channel**: Messenger (blue branding if plugin is deployed)
@@ -476,17 +476,17 @@ You should receive:
 4. Accept the task and send a reply
 5. Verify the reply arrives back in the sender's Messenger conversation
 
-<!-- PLACEHOLDER: Screenshot of Facebook Messenger task in Flex agent queue -->
+<!-- PLACEHOLDER: Screenshot of Facebook Messenger task in Connie agent queue -->
 <div style={{border: '2px dashed #ccc', borderRadius: '8px', padding: '40px', textAlign: 'center', margin: '20px 0', backgroundColor: '#f9f9f9'}}>
   <p style={{color: '#666', fontSize: '14px'}}>📸 <strong>Screenshot Placeholder</strong></p>
-  <p style={{color: '#999', fontSize: '12px'}}>Flex UI showing Facebook Messenger task with blue channel branding, department label, and active conversation</p>
+  <p style={{color: '#999', fontSize: '12px'}}>Connie UI showing Facebook Messenger task with blue channel branding, department label, and active conversation</p>
 </div>
 
 ---
 
 ## Troubleshooting
 
-### Facebook Page Not Appearing in Twilio Setup
+### Facebook Page Not Appearing in Connie Setup
 
 **Cause**: The Facebook account used to log in doesn't have admin access to the Page, or the Page is owned by a different Meta Business Manager.
 
@@ -496,7 +496,7 @@ You should receive:
 
 **Cause**: Facebook access tokens can expire or be invalidated when Page permissions change, the Facebook user who connected changes their password, or Meta revokes app access.
 
-**Symptoms**: Messages stop arriving in Twilio. Sender status may show OFFLINE.
+**Symptoms**: Messages stop arriving in Connie. Sender status may show OFFLINE.
 
 **Fix**:
 1. Check sender status via API:
@@ -504,7 +504,7 @@ You should receive:
    curl -u "$ACCOUNT_SID:$AUTH_TOKEN" \
      "https://messaging.twilio.com/v2/Channels/Senders?Channel=messenger"
    ```
-2. If OFFLINE, reconnect the Page through Twilio Console:
+2. If OFFLINE, reconnect the Page through the Connie Console:
    - Navigate to **Messaging → Senders → Facebook Messenger Senders**
    - Remove the disconnected Page
    - Re-add it using **"Connect a Facebook Page"**
@@ -514,9 +514,9 @@ You should receive:
 Unlike WhatsApp (which uses a stable API key), Facebook Messenger connections can break when tokens expire. Set up monitoring to check sender status periodically. A monthly check is recommended at minimum.
 :::
 
-### Duplicate Tasks in Flex
+### Duplicate Tasks in Connie
 
-**Cause**: Both `incomingMessage` and `incomingConversationMessage` trigger events are routing to Flex.
+**Cause**: Both `incomingMessage` and `incomingConversationMessage` trigger events are routing to Connie.
 
 **Fix**: In the Studio Flow trigger, only `incomingConversationMessage` should have a `next` target. The `incomingMessage` event should have no `next` value (empty transition). This is identical to the WhatsApp fix.
 
@@ -530,7 +530,7 @@ Unlike WhatsApp (which uses a stable API key), Facebook Messenger connections ca
 
 **Cause**: Token expiry (see above), or Meta has disconnected the webhook due to delivery failures or policy violations.
 
-**Fix**: Reconnect the Page through Twilio Console. If the issue persists, check the Meta App Dashboard for any policy notifications or required actions.
+**Fix**: Reconnect the Page through the Connie Console. If the issue persists, check the Meta App Dashboard for any policy notifications or required actions.
 
 ---
 
@@ -546,11 +546,11 @@ curl -u "$ACCOUNT_SID:$AUTH_TOKEN" \
   "https://messaging.twilio.com/v2/Channels/Senders?Channel=messenger"
 ```
 
-If status is anything other than ONLINE, reconnect the Page through Twilio Console.
+If status is anything other than ONLINE, reconnect the Page through the Connie Console.
 
 ### Facebook Page Changes
 
-If the CBO changes their Facebook Page name, profile picture, or other Page settings, these changes are reflected automatically in Messenger conversations. No Twilio-side updates are needed.
+If the CBO changes their Facebook Page name, profile picture, or other Page settings, these changes are reflected automatically in Messenger conversations. No Connie-side updates are needed.
 
 If the CBO **transfers Page ownership** to a different Meta Business Manager, the Messenger connection will break and needs to be re-established.
 
@@ -577,13 +577,13 @@ Use this checklist when setting up Facebook Messenger for a new CBO:
 
 - [ ] Verify CBO has a Facebook Page with admin access
 - [ ] Verify Meta Business Manager owns the Facebook Page
-- [ ] Connect Facebook Page in Twilio Console
+- [ ] Connect Facebook Page in Connie Console
 - [ ] Verify sender is ONLINE via API
-- [ ] Add sender to Flex Conversations messaging service
+- [ ] Add sender to Connie Conversations messaging service
 - [ ] Create and deploy Studio Flow (customize org name, departments)
 - [ ] Create Conversations Address linking Page to flow
-- [ ] Deploy Messenger channel definition in Flex plugin (if not already deployed)
-- [ ] Test end-to-end: Messenger message → department menu → Flex task → agent reply
+- [ ] Deploy Messenger channel definition in Connie plugin (if not already deployed)
+- [ ] Test end-to-end: Messenger message → department menu → Connie task → agent reply
 - [ ] Confirm no duplicate tasks
 - [ ] Schedule monthly token health checks
 - [ ] Train CBO staff on Messenger task handling
@@ -622,11 +622,11 @@ curl -X POST "https://conversations.twilio.com/v1/Configuration/Addresses" \
   -d "AutoCreation.StudioFlowSid=$FW_SID" \
   -d "AutoCreation.StudioRetryCount=3"
 
-# 6. Test — send a Messenger message to the Page and verify task in Flex
+# 6. Test — send a Messenger message to the Page and verify task in Connie
 ```
 
 :::info Note on Step 1 (Page Connection)
-Facebook Page connection (Step 1 in the full guide) requires interactive OAuth through the Twilio Console and cannot be fully automated via API. An administrator must complete this step manually. All subsequent steps can be automated.
+Facebook Page connection (Step 1 in the full guide) requires interactive OAuth through the Connie Console and cannot be fully automated via API. An administrator must complete this step manually. All subsequent steps can be automated.
 :::
 
 ---

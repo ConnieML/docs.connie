@@ -6,17 +6,17 @@ title: "Social Media Channels"
 
 # Social Media Channels
 
-Connect with your community on the platforms they use every day. ConnieRTC integrates with major social messaging platforms, routing conversations directly into your Flex agent queue alongside voice, email, fax, and web channels.
+Connect with your community on the platforms they use every day. ConnieRTC integrates with major social messaging platforms, routing conversations directly into your Connie agent queue alongside voice, email, fax, and web channels.
 
 ## How Social Media Channels Work
 
 ```mermaid
 flowchart LR
     A[Community Member] --> B[Social Platform]
-    B --> C[Twilio Conversations API]
+    B --> C[Connie Conversations API]
     C --> D[Studio Flow]
     D --> E[Department Routing]
-    E --> F[Flex Agent Queue]
+    E --> F[Connie Agent Queue]
 
     style A fill:#e1f5fe
     style B fill:#e8f5e9
@@ -28,10 +28,10 @@ flowchart LR
 
 **The Complete Process**:
 - **Community Member** sends a message via WhatsApp or Facebook Messenger
-- **Twilio Conversations API** receives the inbound message from the social platform
+- **Connie Conversations API** receives the inbound message from the social platform
 - **Studio Flow** presents an interactive menu (department selection) to the sender
 - **Department Routing** sets task attributes based on the sender's selection
-- **Flex Agent Queue** receives the task with full channel branding and context
+- **Connie Agent Queue** receives the task with full channel branding and context
 
 ## Available Social Media Channels
 
@@ -42,7 +42,7 @@ flowchart LR
         <h3>💬 WhatsApp</h3>
       </div>
       <div className="card__body">
-        <p>The world's most popular messaging app with 2+ billion users. Route WhatsApp Business messages directly into Flex with department-based routing.</p>
+        <p>The world's most popular messaging app with 2+ billion users. Route WhatsApp Business messages directly into Connie with department-based routing.</p>
         <ul>
           <li><strong>Status</strong>: ✅ Live</li>
           <li><strong>Requirements</strong>: Meta Business Manager, WhatsApp Business Account</li>
@@ -59,7 +59,7 @@ flowchart LR
         <h3>💙 Facebook Messenger</h3>
       </div>
       <div className="card__body">
-        <p>Reach community members through your organization's Facebook Page. Messages route into Flex as tasks with full conversation history.</p>
+        <p>Reach community members through your organization's Facebook Page. Messages route into Connie as tasks with full conversation history.</p>
         <ul>
           <li><strong>Status</strong>: ✅ Live</li>
           <li><strong>Requirements</strong>: Facebook Page, Meta Business Manager</li>
@@ -79,7 +79,7 @@ flowchart LR
 - **Asynchronous Communication**: Clients can message anytime, agents respond when available
 
 ### Unified Agent Experience
-- **Single Dashboard**: Social media messages appear in the same Flex queue as voice, email, and web
+- **Single Dashboard**: Social media messages appear in the same Connie queue as voice, email, and web
 - **Consistent Routing**: Department-based routing works identically across all social channels
 - **Full Context**: Agents see channel type, department selection, and conversation history
 
@@ -99,7 +99,7 @@ flowchart TD
         FB[Facebook Messenger]
     end
 
-    subgraph "Twilio Layer"
+    subgraph "Connie Layer"
         SENDER[WhatsApp Sender / FB Page]
         MS[Messaging Service]
         CA[Conversations Address]
@@ -112,7 +112,7 @@ flowchart TD
     end
 
     subgraph "Agent Layer"
-        FLEX[Flex UI]
+        FLEX[Connie UI]
         PLUGIN[Channel Plugin]
     end
 
@@ -142,7 +142,7 @@ flowchart TD
 
 1. **Choose your channel**: [WhatsApp](/end-users/administrators/channels/social-media/whatsapp) or [Facebook Messenger](/end-users/administrators/channels/social-media/facebook-messenger)
 2. **Follow the setup guide**: Each guide walks through every step from account setup to testing
-3. **Test end-to-end**: Send a test message and verify it appears in Flex
+3. **Test end-to-end**: Send a test message and verify it appears in Connie
 4. **Train your team**: Ensure agents know how to handle social media tasks
 
 ---

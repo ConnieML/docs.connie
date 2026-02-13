@@ -6,20 +6,20 @@ title: "WhatsApp Channel Setup Guide"
 
 # WhatsApp Channel Setup Guide
 
-This guide walks Connie administrators and AI agents through the complete process of activating WhatsApp as a communication channel on a ConnieRTC Flex instance.
+This guide walks Connie administrators and AI agents through the complete process of activating WhatsApp as a communication channel on a ConnieRTC instance.
 
 ## Overview
 
-The WhatsApp channel allows community members to message your organization via WhatsApp. Messages are routed through an interactive department menu and land as tasks in the Flex agent queue — just like voice, email, and web channels.
+The WhatsApp channel allows community members to message your organization via WhatsApp. Messages are routed through an interactive department menu and land as tasks in the Connie agent queue — just like voice, email, and web channels.
 
 ### How It Works
 
 ```mermaid
 flowchart LR
-    A["Client sends\nWhatsApp message"] --> B["Twilio receives\nvia WABA"]
+    A["Client sends\nWhatsApp message"] --> B["Connie receives\nvia WABA"]
     B --> C["Conversations\nAddress"]
     C --> D["Studio Flow\n(Dept Menu)"]
-    D --> E["Send to Flex\n(Task Created)"]
+    D --> E["Send to Connie\n(Task Created)"]
     E --> F["Agent accepts\n& responds"]
 
     style A fill:#25D366
@@ -31,22 +31,22 @@ flowchart LR
 ```
 
 1. A community member sends a WhatsApp message to your organization's number
-2. Twilio receives the message via the WhatsApp Business API
+2. Connie receives the message via the WhatsApp Business API
 3. The Conversations Address routes it to your Studio Flow
 4. The Studio Flow presents an interactive department menu (reply 1, 2, or 3)
-5. Based on the reply, a task is created in Flex with the correct department label
+5. Based on the reply, a task is created in Connie with the correct department label
 6. An agent accepts the task and has a two-way WhatsApp conversation
 
 ## Prerequisites
 
 Before starting, ensure you have:
 
-- [ ] **Twilio Account** with Flex 2.x (Conversations API) enabled
-- [ ] **Twilio CLI** installed and authenticated to the target account
+- [ ] **Connie Account** with Conversations API enabled
+- [ ] **Connie CLI** installed and authenticated to the target account
 - [ ] **Meta Business Manager** account ([business.meta.com](https://business.meta.com))
 - [ ] **Facebook Account** with admin access to the Meta Business Manager
-- [ ] **Twilio Phone Number** to register as the WhatsApp sender
-- [ ] **Flex Plugin** deployed (ConnieRTC flex-project-template)
+- [ ] **Connie Phone Number** to register as the WhatsApp sender
+- [ ] **Connie Plugin** deployed (ConnieRTC flex-project-template)
 
 :::info Important: One Number Per CBO
 Each CBO needs its own dedicated phone number for WhatsApp. A phone number can only be registered as a WhatsApp sender on one WhatsApp Business Account (WABA) at a time. Numbers cannot be shared across CBOs.
@@ -56,7 +56,7 @@ Each CBO needs its own dedicated phone number for WhatsApp. A phone number can o
 
 ## Step 1: Register the WhatsApp Sender
 
-The WhatsApp sender is the phone number that will receive and send WhatsApp messages for your organization. This requires linking your Twilio account with Meta's WhatsApp Business API.
+The WhatsApp sender is the phone number that will receive and send WhatsApp messages for your organization. This requires linking your Connie account with Meta's WhatsApp Business API.
 
 ### 1.1 Prepare the Phone Number
 
@@ -86,15 +86,15 @@ If webhooks or Conversations Addresses are active on the number, Meta's verifica
 
 ### 1.2 Start the Registration Flow
 
-1. Navigate to **Twilio Console → Messaging → Senders → WhatsApp Senders**
+1. Navigate to **Connie Console → Messaging → Senders → WhatsApp Senders**
 2. Click **"Get Started"** (or **"Create new sender"** if you've registered before)
-3. In Step 1, select **"Select Twilio number"**
+3. In Step 1, select **"Select Connie number"**
 4. Choose the phone number you prepared in Step 1.1
 
-<!-- PLACEHOLDER: Screenshot of Twilio Console WhatsApp Senders page with "Get Started" button -->
+<!-- PLACEHOLDER: Screenshot of Connie Console WhatsApp Senders page with "Get Started" button -->
 <div style={{border: '2px dashed #ccc', borderRadius: '8px', padding: '40px', textAlign: 'center', margin: '20px 0', backgroundColor: '#f9f9f9'}}>
   <p style={{color: '#666', fontSize: '14px'}}>📸 <strong>Screenshot Placeholder</strong></p>
-  <p style={{color: '#999', fontSize: '12px'}}>Twilio Console → Messaging → Senders → WhatsApp Senders → "Get Started"</p>
+  <p style={{color: '#999', fontSize: '12px'}}>Connie Console → Messaging → Senders → WhatsApp Senders → "Get Started"</p>
 </div>
 
 ### 1.3 Link Your Meta Business Manager
@@ -102,7 +102,7 @@ If webhooks or Conversations Addresses are active on the number, Meta's verifica
 1. Click **"Continue with Facebook"**
 2. In the Meta popup, select your **Business Portfolio** (Meta Business Manager)
 3. Select your existing **WhatsApp Business Account** or create a new one
-4. If Twilio shows a warning about a specific WABA ID, make sure you select that WABA
+4. If the Console shows a warning about a specific WABA ID, make sure you select that WABA
 
 <!-- PLACEHOLDER: Screenshot of Meta Business Manager selection popup -->
 <div style={{border: '2px dashed #ccc', borderRadius: '8px', padding: '40px', textAlign: 'center', margin: '20px 0', backgroundColor: '#f9f9f9'}}>
@@ -113,11 +113,11 @@ If webhooks or Conversations Addresses are active on the number, Meta's verifica
 ### 1.4 Add Your Phone Number
 
 1. When prompted for phone number type, select **"Use a new or existing WhatsApp number"**
-2. Enter your Twilio phone number
-3. Select **"Phone call"** for verification (recommended for Twilio numbers)
+2. Enter your Connie phone number
+3. Select **"Phone call"** for verification (recommended for Connie numbers)
 
-:::tip Phone Call Verification for Twilio Numbers
-Since your number is a Twilio virtual number, you need to set up temporary call forwarding to receive the verification call:
+:::tip Phone Call Verification for Connie Numbers
+Since your number is a Connie virtual number, you need to set up temporary call forwarding to receive the verification call:
 
 ```bash
 # Forward calls to your mobile number temporarily
@@ -135,7 +135,7 @@ After verification completes, restore the original webhook (see Step 1.5).
 <!-- PLACEHOLDER: Screenshot of successful registration confirmation -->
 <div style={{border: '2px dashed #ccc', borderRadius: '8px', padding: '40px', textAlign: 'center', margin: '20px 0', backgroundColor: '#f9f9f9'}}>
   <p style={{color: '#666', fontSize: '14px'}}>📸 <strong>Screenshot Placeholder</strong></p>
-  <p style={{color: '#999', fontSize: '12px'}}>Twilio Console → WhatsApp Senders → Registration Success with sender listed as ONLINE</p>
+  <p style={{color: '#999', fontSize: '12px'}}>Connie Console → WhatsApp Senders → Registration Success with sender listed as ONLINE</p>
 </div>
 
 ### 1.5 Restore Phone Number Configuration
@@ -172,7 +172,7 @@ You should see your number with `"status": "ONLINE"`.
 
 ## Step 2: Add Sender to Messaging Service
 
-The WhatsApp sender must be added to the Flex Conversations messaging service.
+The WhatsApp sender must be added to the Connie Conversations messaging service.
 
 ### 2.1 Find the Default Messaging Service
 
@@ -202,7 +202,7 @@ The Studio Flow handles the interactive department menu. When a WhatsApp message
 1. Sends a welcome message with department options
 2. Waits for the sender's reply
 3. Sets task attributes based on their selection
-4. Routes the conversation to Flex
+4. Routes the conversation to Connie
 
 ### 3.1 Flow Architecture
 
@@ -219,7 +219,7 @@ flowchart TD
     SV --> CONF
     SD --> CONF
     SG --> CONF
-    CONF --> FLEX[Send to Flex]
+    CONF --> FLEX[Send to Connie]
 
     style T fill:#e1f5fe
     style WM fill:#e8f5e9
@@ -401,7 +401,7 @@ twilio api:studio:v2:flows:create \
 Note the returned Flow SID (starts with `FW`).
 
 :::warning Critical: incomingMessage vs incomingConversationMessage
-The trigger must route `incomingConversationMessage` to the welcome message — NOT `incomingMessage`. WhatsApp via Conversations API uses `incomingConversationMessage`. If both events route to Flex, you'll get **duplicate tasks** for every WhatsApp message.
+The trigger must route `incomingConversationMessage` to the welcome message — NOT `incomingMessage`. WhatsApp via Conversations API uses `incomingConversationMessage`. If both events route to Connie, you'll get **duplicate tasks** for every WhatsApp message.
 :::
 
 ---
@@ -432,9 +432,9 @@ The Conversations Address API validates phone numbers. If you get error `51001 (
 
 ---
 
-## Step 5: Configure the Flex Plugin (Optional)
+## Step 5: Configure the Connie Plugin (Optional)
 
-To give WhatsApp tasks custom branding in Flex (green icon, "WhatsApp" label), create a channel definition in the Flex plugin.
+To give WhatsApp tasks custom branding in Connie (green icon, "WhatsApp" label), create a channel definition in the Connie plugin.
 
 ### 5.1 Create WhatsApp Channel Definition
 
@@ -471,7 +471,7 @@ export const WhatsAppChannel = (manager: Flex.Manager) => {
 };
 ```
 
-### 5.2 Update Flex Configuration
+### 5.2 Update Connie Configuration
 
 Add WhatsApp to `ui_attributes.[cbo].json`:
 
@@ -521,9 +521,9 @@ Reply with **1**, **2**, or **3**.
 You should receive:
 > "Thank you! A member of our [Department] team will be with you shortly."
 
-### 6.3 Verify in Flex
+### 6.3 Verify in Connie
 
-1. Log into the Flex agent dashboard
+1. Log into the Connie agent dashboard
 2. A new task should appear in your queue
 3. The task should show:
    - **Channel**: WhatsApp (green branding if plugin is deployed)
@@ -532,10 +532,10 @@ You should receive:
 4. Accept the task and send a reply
 5. Verify the reply arrives back on the sender's WhatsApp
 
-<!-- PLACEHOLDER: Screenshot of WhatsApp task in Flex agent queue -->
+<!-- PLACEHOLDER: Screenshot of WhatsApp task in Connie agent queue -->
 <div style={{border: '2px dashed #ccc', borderRadius: '8px', padding: '40px', textAlign: 'center', margin: '20px 0', backgroundColor: '#f9f9f9'}}>
   <p style={{color: '#666', fontSize: '14px'}}>📸 <strong>Screenshot Placeholder</strong></p>
-  <p style={{color: '#999', fontSize: '12px'}}>Flex UI showing WhatsApp task with green channel branding, department label, and active conversation</p>
+  <p style={{color: '#999', fontSize: '12px'}}>Connie UI showing WhatsApp task with green channel branding, department label, and active conversation</p>
 </div>
 
 ---
@@ -554,9 +554,9 @@ You should receive:
 
 **Fix**: Complete WhatsApp sender registration first (Step 1). Only real phone numbers pass Conversations Address validation. Meta test numbers in the 555 area code will be rejected.
 
-### Duplicate Tasks in Flex
+### Duplicate Tasks in Connie
 
-**Cause**: Both `incomingMessage` and `incomingConversationMessage` trigger events are routing to Flex.
+**Cause**: Both `incomingMessage` and `incomingConversationMessage` trigger events are routing to Connie.
 
 **Fix**: In the Studio Flow trigger, only `incomingConversationMessage` should have a `next` target. The `incomingMessage` event should have no `next` value (empty transition).
 
@@ -576,7 +576,7 @@ If the API shows ONLINE, you're fine. If OFFLINE, check `offline_reasons` in the
 During registration, Meta may assign a test number (e.g., +15558785981) instead of your real number. This happens when you select "Use a display name only" instead of "Use a new or existing WhatsApp number." Test numbers:
 - Cannot be used for Conversations Addresses (validation fails)
 - Are only useful for limited API testing
-- Should be deleted from both Twilio and Meta WhatsApp Manager
+- Should be deleted from both Connie and Meta WhatsApp Manager
 
 **Fix**: Delete the test sender, clear the WABA via Meta WhatsApp Manager, and re-register using "Use a new or existing WhatsApp number."
 
@@ -586,16 +586,16 @@ During registration, Meta may assign a test number (e.g., +15558785981) instead 
 
 Use this checklist when setting up WhatsApp for a new CBO:
 
-- [ ] Identify Twilio account and phone number for the CBO
+- [ ] Identify Connie account and phone number for the CBO
 - [ ] Temporarily strip webhooks from the phone number
-- [ ] Register WhatsApp sender via Twilio Console + Meta Embedded Signup
+- [ ] Register WhatsApp sender via Connie Console + Meta Embedded Signup
 - [ ] Verify sender is ONLINE via API
 - [ ] Restore phone number webhooks
-- [ ] Add sender to Flex Conversations messaging service
+- [ ] Add sender to Connie Conversations messaging service
 - [ ] Create and deploy Studio Flow (customize org name, departments)
 - [ ] Create Conversations Address linking sender to flow
-- [ ] Deploy WhatsApp channel definition in Flex plugin (if not already deployed)
-- [ ] Test end-to-end: WhatsApp message → department menu → Flex task → agent reply
+- [ ] Deploy WhatsApp channel definition in Connie plugin (if not already deployed)
+- [ ] Test end-to-end: WhatsApp message → department menu → Connie task → agent reply
 - [ ] Confirm no duplicate tasks
 - [ ] Train CBO staff on WhatsApp task handling
 
@@ -633,9 +633,9 @@ curl -X POST "https://conversations.twilio.com/v1/Configuration/Addresses" \
   -d "AutoCreation.StudioFlowSid=$FW_SID" \
   -d "AutoCreation.StudioRetryCount=3"
 
-# 6. Test — send a WhatsApp message to the number and verify task in Flex
+# 6. Test — send a WhatsApp message to the number and verify task in Connie
 ```
 
 ---
 
-*WhatsApp channel setup is a repeatable process for every CBO. Follow this guide exactly and use the checklist to ensure nothing is missed. Contact the Connie CTO for assistance with any steps that require Twilio support intervention.*
+*WhatsApp channel setup is a repeatable process for every CBO. Follow this guide exactly and use the checklist to ensure nothing is missed. Contact the Connie CTO for assistance with any steps that require support intervention.*
