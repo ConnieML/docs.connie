@@ -28,27 +28,92 @@ This guide provisions a new Twilio Flex account on the shared ConnieRTC platform
 - Self-hosted Flex UI with dynamic per-account configuration
 - Redirect-based SSO (no iframes, no popups)
 
-### Architecture (v2.0 — Shared Platform)
+### Legacy Architecture (Basecamp-B — Sunset)
 
-```
-User → clientname.connie.team
-         │
-         ▼
-  CloudFront (E7QKED61KY1F9)         ← shared across ALL accounts
-         │
-         ├─ /assets/appConfig.js      ← CloudFront Function generates per-host
-         ├─ /logout-success.html      ← CloudFront Function handles logout chain
-         └─ /* (all other paths)      ← S3 origin: connie-flex-ui bucket
-                                         (shared Flex UI build)
-         │
-         ▼
-  Flex UI loads appConfig.js → reads accountSid, connection, clientId
-         │
-         ▼
-  Redirect to Auth0 (portal.connie.team) → SAML → Twilio SSO → authenticated
+Every new account required creating a full stack of dedicated infrastructure. Adding a single client meant provisioning 4+ new AWS resources, custom HTML pages, and account-specific configuration — all managed independently.
+
+```mermaid
+flowchart TB
+    subgraph account1["Lifeline Account"]
+        s3a["S3 Bucket\n(lifeline-connie-team)"]
+        cfa["CloudFront Distribution\n(dedicated)"]
+        html1["Custom Landing Page\n+ iframe wrapper HTML"]
+        s3a --> cfa
+        html1 --> s3a
+    end
+
+    subgraph account2["CareTeam Account"]
+        s3b["S3 Bucket\n(careteam-connie-team)"]
+        cfb["CloudFront Distribution\n(dedicated)"]
+        html2["Custom Landing Page\n+ iframe wrapper HTML"]
+        s3b --> cfb
+        html2 --> s3b
+    end
+
+    subgraph account3["Each New Account..."]
+        s3c["New S3 Bucket"]
+        cfc["New CloudFront Distribution"]
+        html3["New HTML Pages"]
+        s3c --> cfc
+        html3 --> s3c
+    end
+
+    cfa --> flex["Twilio Flex\n(flex.twilio.com)"]
+    cfb --> flex
+    cfc --> flex
+
+    flex -->|"popup window"| auth0["Auth0 Login\n(popup)"]
+
+    style account1 fill:#fff3e0,stroke:#e65100
+    style account2 fill:#fff3e0,stroke:#e65100
+    style account3 fill:#fff3e0,stroke:#e65100
+    style flex fill:#e3f2fd,stroke:#1565c0
+    style auth0 fill:#fce4ec,stroke:#c62828
 ```
 
-All accounts share one CloudFront distribution, one S3 bucket, and one CloudFront Function. Per-account config is driven entirely by the `Host` header.
+**Pain points:** Every account multiplied infrastructure. 4 accounts = 4 S3 buckets, 4 CloudFront distributions, 12+ HTML files, 4 SSL configs. Iframe embedding required popup-based login, which browsers increasingly block.
+
+---
+
+### Current Architecture (v26.02 — Shared Platform)
+
+All accounts share one set of infrastructure. Adding a new client means adding one DNS record, one CloudFront alias, and one entry in a config function — no new resources to create or manage.
+
+```mermaid
+flowchart TB
+    user1(("Agent visits\nlifeline.connie.team"))
+    user2(("Agent visits\ncareteam.connie.team"))
+    user3(("Agent visits\nnss.connie.team"))
+    user4(("Agent visits\nhhovv.connie.team"))
+
+    user1 & user2 & user3 & user4 --> cf
+
+    subgraph shared["Shared Platform (one of everything)"]
+        cf["CloudFront\n(single distribution)"]
+        func["CloudFront Function\n(reads hostname → returns\naccount-specific config)"]
+        s3["S3 Bucket\n(connie-flex-ui)\nShared Flex UI build"]
+        cf --> func
+        cf --> s3
+    end
+
+    s3 --> flexui["Self-Hosted Flex UI\n(loads in browser)"]
+    func -->|"appConfig.js\n(per account)"| flexui
+
+    flexui -->|"redirect\n(no popup)"| auth0["Auth0 Login\n(portal.connie.team)"]
+    auth0 -->|"SAML response"| twilio["Twilio SSO"]
+    twilio -->|"authenticated"| flexui
+
+    style shared fill:#e8f5e9,stroke:#2e7d32
+    style flexui fill:#e3f2fd,stroke:#1565c0
+    style auth0 fill:#f3e5f5,stroke:#6a1b9a
+    style twilio fill:#e3f2fd,stroke:#1565c0
+    style user1 fill:#fff,stroke:#666
+    style user2 fill:#fff,stroke:#666
+    style user3 fill:#fff,stroke:#666
+    style user4 fill:#fff,stroke:#666
+```
+
+**Key difference:** Infrastructure stays flat no matter how many accounts we add. The CloudFront Function dynamically generates the right configuration based on which subdomain the agent visits — no per-account resources, no iframes, no popups.
 
 ### What This Guide Creates
 
