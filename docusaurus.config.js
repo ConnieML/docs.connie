@@ -18,7 +18,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "ConnieML", // Usually your GitHub org/user name.
-  projectName: "connieRTC-flex", // Usually your repo name.
+  projectName: "docs.connie", // Usually your repo name.
   trailingSlash: false,
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
@@ -77,7 +77,7 @@ const config = {
         },
         items: [
           {
-            href: "https://github.com/ConnieML/connieRTC-flex",
+            href: "https://github.com/ConnieML/docs.connie",
             label: "GitHub",
             position: "right",
           },
@@ -104,7 +104,7 @@ const config = {
             items: [
               {
                 label: "GitHub",
-                href: "https://github.com/ConnieML/connieRTC-flex",
+                href: "https://github.com/ConnieML/docs.connie",
               },
             ],
           },
