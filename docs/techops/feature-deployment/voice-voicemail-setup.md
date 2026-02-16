@@ -165,8 +165,8 @@ curl -s -w "\nHTTP Status: %{http_code}\n" \
 ### Step 1: Clone Repository
 
 ```bash
-git clone https://github.com/ConnieML/connieRTC-flex.git
-cd connieRTC-flex/serverless-functions
+git clone https://github.com/ConnieML/basecamp-v26.02.git
+cd basecamp-v26.02/serverless-functions
 npm install
 ```
 

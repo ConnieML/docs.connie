@@ -107,7 +107,7 @@ Caller → Queue with Hold Music
 ```bash
 # Verify directory
 pwd
-# Expected: /path/to/connieRTC-basecamp
+# Expected: /path/to/basecamp-v26.02
 
 # Check environment
 cat serverless-functions/.env | grep -E "ACCOUNT_SID|WORKFLOW"

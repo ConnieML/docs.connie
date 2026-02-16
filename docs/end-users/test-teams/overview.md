@@ -34,7 +34,7 @@ While we're building dedicated test teams docs, you can:
 
 ## Quick Links
 
-- **Bug Reports**: [Submit issues via GitHub](https://github.com/ConnieML/connieRTC-flex/issues)
+- **Bug Reports**: [Submit issues via GitHub](https://github.com/ConnieML/basecamp-v26.02/issues)
 - **Feature Requests**: [Request new functionality](mailto:features@connie.technology)
 - **Testing Environment**: [Access staging systems](https://staging.connie.technology)
 

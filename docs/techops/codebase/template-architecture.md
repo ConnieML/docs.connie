@@ -19,8 +19,8 @@ Welcome to ConnieRTC codebase reference! This section covers the template archit
 
 ```bash
 # Clone the repository
-git clone https://github.com/ConnieML/connieRTC-flex
-cd connieRTC-flex
+git clone https://github.com/ConnieML/basecamp-v26.02
+cd basecamp-v26.02
 
 # Install dependencies
 npm install

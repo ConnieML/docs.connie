@@ -76,7 +76,7 @@ TWILIO_FLEX_INTERNAL_CALL_WORKFLOW_SID
 Open your terminal and navigate to the serverless functions directory:
 
 ```bash
-cd /path/to/connieRTC-basecamp/serverless-functions
+cd /path/to/basecamp-v26.02/serverless-functions
 ```
 
 ### Step 2: Run the deployment script
@@ -139,7 +139,7 @@ After deployment, verify the functions are working:
 ```bash
 # Verify you're in the correct directory
 pwd
-# Expected: .../connieRTC-basecamp/serverless-functions
+# Expected: .../basecamp-v26.02/serverless-functions
 
 # Verify deploy script exists and is executable
 ls -la deploy.sh
@@ -152,7 +152,7 @@ grep -E "nss|conniecareteam|hhovv|devsandbox" deploy.sh | head -10
 
 ```bash
 # Navigate to serverless-functions
-cd /path/to/connieRTC-basecamp/serverless-functions
+cd /path/to/basecamp-v26.02/serverless-functions
 
 # Deploy with auto-confirm (pipe "yes" to script)
 ./deploy.sh <account> <<< "yes"

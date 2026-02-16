@@ -211,7 +211,7 @@ Need help choosing or implementing a fax provider? Our team can assess your need
 
 ## 🔄 Future Provider Additions
 
-ConnieRTC's carrier-agnostic architecture makes it easy to add new providers. If you need a specific fax provider not listed here, please [submit a feature request](https://github.com/ConnieML/connieRTC-flex/issues).
+ConnieRTC's carrier-agnostic architecture makes it easy to add new providers. If you need a specific fax provider not listed here, please [submit a feature request](https://github.com/ConnieML/basecamp-v26.02/issues).
 
 Current provider requests under evaluation:
 - RingCentral Fax

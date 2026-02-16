@@ -297,7 +297,7 @@ Need help choosing or implementing a web forms provider? Our team can assess you
 
 ## 🔄 Future Provider Additions
 
-ConnieRTC's flexible architecture makes it easy to add new web forms providers. If you need a specific provider not listed here, please [submit a feature request](https://github.com/ConnieML/connieRTC-flex/issues).
+ConnieRTC's flexible architecture makes it easy to add new web forms providers. If you need a specific provider not listed here, please [submit a feature request](https://github.com/ConnieML/basecamp-v26.02/issues).
 
 Current provider requests under evaluation:
 - Google Forms (limitations: no HIPAA compliance)

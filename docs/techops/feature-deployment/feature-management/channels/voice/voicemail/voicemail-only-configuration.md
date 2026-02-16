@@ -117,7 +117,7 @@ Use this path for new accounts or when you want a clean, dedicated voicemail-onl
 ```bash
 # Verify you're in the correct directory
 pwd
-# Expected: /path/to/connieRTC-basecamp
+# Expected: /path/to/basecamp-v26.02
 
 # Check account configuration
 cat serverless-functions/.env | grep -E "ACCOUNT_SID|MAILGUN"

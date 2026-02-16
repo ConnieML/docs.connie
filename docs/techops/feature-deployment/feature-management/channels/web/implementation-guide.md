@@ -1098,7 +1098,7 @@ const debugTaskAttributes = (taskData) => {
 - **Best Practices:** Proven patterns from successful deployments
 
 ### Technical Support
-- **Developer Community:** [GitHub Discussions](https://github.com/ConnieML/connieRTC-flex/discussions)
+- **Developer Community:** [GitHub Discussions](https://github.com/ConnieML/basecamp-v26.02/discussions)
 - **Professional Services:** Custom implementation and training
 - **24/7 Support:** Available for production issues
 

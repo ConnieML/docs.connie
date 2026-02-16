@@ -220,7 +220,7 @@ For complete deployment instructions including troubleshooting and account setup
 
 ```bash
 # 1. Ensure you're in the correct account directory
-cd /path/to/connieRTC-basecamp/serverless-functions
+cd /path/to/basecamp-v26.02/serverless-functions
 
 # 2. Deploy serverless functions (CRITICAL: use deploy.sh, not npm run deploy)
 ./deploy.sh <account-name>
