@@ -28,54 +28,7 @@ This guide provisions a new Twilio Flex account on the shared ConnieRTC platform
 - Self-hosted Flex UI with dynamic per-account configuration
 - Redirect-based SSO (no iframes, no popups)
 
-### Legacy Architecture (Basecamp-B — Sunset)
-
-Every new account required creating a full stack of dedicated infrastructure. Adding a single client meant provisioning 4+ new AWS resources, custom HTML pages, and account-specific configuration — all managed independently.
-
-```mermaid
-flowchart TB
-    subgraph account1["Lifeline Account"]
-        s3a["S3 Bucket\n(lifeline-connie-team)"]
-        cfa["CloudFront Distribution\n(dedicated)"]
-        html1["Custom Landing Page\n+ iframe wrapper HTML"]
-        s3a --> cfa
-        html1 --> s3a
-    end
-
-    subgraph account2["CareTeam Account"]
-        s3b["S3 Bucket\n(careteam-connie-team)"]
-        cfb["CloudFront Distribution\n(dedicated)"]
-        html2["Custom Landing Page\n+ iframe wrapper HTML"]
-        s3b --> cfb
-        html2 --> s3b
-    end
-
-    subgraph account3["Each New Account..."]
-        s3c["New S3 Bucket"]
-        cfc["New CloudFront Distribution"]
-        html3["New HTML Pages"]
-        s3c --> cfc
-        html3 --> s3c
-    end
-
-    cfa --> flex["Twilio Flex\n(flex.twilio.com)"]
-    cfb --> flex
-    cfc --> flex
-
-    flex -->|"popup window"| auth0["Auth0 Login\n(popup)"]
-
-    style account1 fill:#fff3e0,stroke:#e65100
-    style account2 fill:#fff3e0,stroke:#e65100
-    style account3 fill:#fff3e0,stroke:#e65100
-    style flex fill:#e3f2fd,stroke:#1565c0
-    style auth0 fill:#fce4ec,stroke:#c62828
-```
-
-**Pain points:** Every account multiplied infrastructure. 4 accounts = 4 S3 buckets, 4 CloudFront distributions, 12+ HTML files, 4 SSL configs. Iframe embedding required popup-based login, which browsers increasingly block.
-
----
-
-### Current Architecture (v26.02 — Shared Platform)
+### Architecture (v26.02 — Shared Platform)
 
 All accounts share one set of infrastructure. Adding a new client means adding one DNS record, one CloudFront alias, and one entry in a config function — no new resources to create or manage.
 
