@@ -8,9 +8,9 @@ title: Conversation Transfer (Technical Reference)
 :::info Multiple Documentation Versions Available
 This page contains technical reference information. For user-friendly guides tailored to your role, see:
 
-- **[CBO Staff Agents](/cbo-users/staff-agents/transferring-tasks)** - How to transfer conversations
-- **[Supervisors](/cbo-users/supervisors/conversation-transfer)** - Managing team transfers  
-- **[CBO Administrators](/cbo-users/administrators/conversation-transfer)** - System configuration
+- **[CBO Staff Agents](/end-users/staff-agents/transferring-tasks)** - How to transfer conversations
+- **[Supervisors](/end-users/supervisors/conversation-transfer)** - Managing team transfers  
+- **[CBO Administrators](/end-users/administrators/conversation-transfer)** - System configuration
 - **[Platform Developers](/platform-developers/conversation-transfer)** - Implementation details
 - **[Support Team](/support-team/conversation-transfer-troubleshooting)** - Troubleshooting guide
 - **[AI Agents](/ai-agents/conversation-transfer.json)** - Structured data reference

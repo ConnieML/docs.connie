@@ -28,12 +28,12 @@ Your supervisor can help with:
 Before reaching out for help, check these resources:
 
 ### Staff Agent Documentation
-- **[Getting Started](/cbo-users/staff-agents/getting-started)** - Login and initial setup
-- **[Handling Tasks](/cbo-users/staff-agents/handling-tasks)** - Managing inquiries and referrals
-- **[Transferring Tasks](/cbo-users/staff-agents/transferring-tasks)** - How to transfer conversations
-- **[Recording Notes](/cbo-users/staff-agents/recording-notes)** - Documentation best practices
-- **[FAQ](/cbo-users/staff-agents/faq)** - Common questions answered
-- **[Troubleshooting](/cbo-users/staff-agents/troubleshooting)** - Fix common issues yourself
+- **[Getting Started](/end-users/staff-agents/getting-started)** - Login and initial setup
+- **[Handling Tasks](/end-users/staff-agents/handling-tasks)** - Managing inquiries and referrals
+- **[Transferring Tasks](/end-users/staff-agents/transferring-tasks)** - How to transfer conversations
+- **[Recording Notes](/end-users/staff-agents/recording-notes)** - Documentation best practices
+- **[FAQ](/end-users/staff-agents/faq)** - Common questions answered
+- **[Troubleshooting](/end-users/staff-agents/troubleshooting)** - Fix common issues yourself
 
 ### Try Basic Troubleshooting
 Many issues can be resolved quickly:
@@ -133,7 +133,7 @@ Ask your supervisor about:
 |-------------------------|----------------|
 | Daily work questions | Your supervisor |
 | Login/password issues | Your supervisor → IT if needed |
-| How to use a feature | Check [documentation](/cbo-users/staff-agents/) first |
+| How to use a feature | Check [documentation](/end-users/staff-agents/) first |
 | Technical problems | Your supervisor → IT if needed |
 | Training | Your supervisor |
 | Policy questions | Your supervisor |
@@ -141,9 +141,9 @@ Ask your supervisor about:
 
 ## 🔗 Related Resources
 
-- **[Staff Agent Documentation](/cbo-users/staff-agents/)** - Complete guides
-- **[Troubleshooting Guide](/cbo-users/staff-agents/troubleshooting)** - Fix common issues
-- **[FAQ](/cbo-users/staff-agents/faq)** - Quick answers
+- **[Staff Agent Documentation](/end-users/staff-agents/)** - Complete guides
+- **[Troubleshooting Guide](/end-users/staff-agents/troubleshooting)** - Fix common issues
+- **[FAQ](/end-users/staff-agents/faq)** - Quick answers
 - **[Get Support Overview](/get-support/overview)** - All support options
 
 ---

@@ -1,7 +1,7 @@
 ---
 sidebar_label: "FAQ"
 title: "Staff Agent FAQ"
-sidebar_position: 7
+sidebar_position: 11
 ---
 
 # Staff Agent Frequently Asked Questions
@@ -53,7 +53,7 @@ When your status is set to **"Available"**, new tasks will appear in your **Inbo
 - **Assigning** = You're giving the entire task/inquiry to someone else to own
 - **Transferring** = You're handing off an active conversation (call or chat) to someone else
 
-See [Transferring Tasks](/cbo-users/staff-agents/transferring-tasks) for more details.
+See [Transferring Tasks](/end-users/staff-agents/transferring-tasks) for more details.
 
 ### How long do I have to respond to an inquiry?
 
@@ -119,7 +119,7 @@ Include enough detail that **another staff member could pick up where you left o
 - What's next (follow-up needed)
 - Who's responsible
 
-See [Recording Notes](/cbo-users/staff-agents/recording-notes) for more guidance.
+See [Recording Notes](/end-users/staff-agents/recording-notes) for more guidance.
 
 ### Can I edit or delete notes after saving them?
 
@@ -198,7 +198,7 @@ This depends on your organization's IT policies. Some organizations require VPN 
    - Refresh your browser
    - Clear cache
    - Check internet connection
-   - See [Troubleshooting](/cbo-users/staff-agents/troubleshooting)
+   - See [Troubleshooting](/end-users/staff-agents/troubleshooting)
 
 2. **If problem persists:**
    - Contact your supervisor
@@ -207,11 +207,11 @@ This depends on your organization's IT policies. Some organizations require VPN 
 
 ### Where can I learn more about using Connie?
 
-- **[Getting Started](/cbo-users/staff-agents/getting-started)** - Initial setup and login
-- **[Handling Tasks](/cbo-users/staff-agents/handling-tasks)** - Managing inquiries and referrals
-- **[Transferring Tasks](/cbo-users/staff-agents/transferring-tasks)** - Transferring conversations
-- **[Recording Notes](/cbo-users/staff-agents/recording-notes)** - Documentation best practices
-- **[Troubleshooting](/cbo-users/staff-agents/troubleshooting)** - Common issues and solutions
+- **[Getting Started](/end-users/staff-agents/getting-started)** - Initial setup and login
+- **[Handling Tasks](/end-users/staff-agents/handling-tasks)** - Managing inquiries and referrals
+- **[Transferring Tasks](/end-users/staff-agents/transferring-tasks)** - Transferring conversations
+- **[Recording Notes](/end-users/staff-agents/recording-notes)** - Documentation best practices
+- **[Troubleshooting](/end-users/staff-agents/troubleshooting)** - Common issues and solutions
 
 ### Who do I contact for support?
 
@@ -275,7 +275,7 @@ This depends on your organization's policies. Some organizations allow remote ac
 ## 💡 Still Have Questions?
 
 - **Ask your supervisor** - They know your organization's specific processes
-- **Check other guides** - See the full [Staff Agent Documentation](/cbo-users/staff-agents/)
+- **Check other guides** - See the full [Staff Agent Documentation](/end-users/staff-agents/)
 - **Contact support** - [Get Support](/get-support/overview) for technical issues
 - **Suggest improvements** - Help us improve these docs by reporting gaps or unclear information
 

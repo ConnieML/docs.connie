@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Handling Tasks"
 title: "Handling Tasks (Referrals & Inquiries)"
-sidebar_position: 3
+sidebar_position: 8
 ---
 
 # Handling Tasks (Referrals & Inquiries)
@@ -86,7 +86,7 @@ If the inquiry needs specialized assistance:
 
 After responding or assigning:
 
-1. **Add notes** about your interaction (see [Recording Notes](/cbo-users/staff-agents/recording-notes))
+1. **Add notes** about your interaction (see [Recording Notes](/end-users/staff-agents/recording-notes))
 2. **Update task status** if applicable
 3. **Set follow-up reminders** if needed
 
@@ -96,8 +96,8 @@ After responding or assigning:
 |--------|----------------|-------|
 | **Reply** | You can handle the inquiry | Reply → Type message → Send |
 | **Assign** | Someone else should handle it | Assign to Staff → Select staff → Add note |
-| **Transfer** | Need to hand off mid-conversation | See [Transferring Tasks](/cbo-users/staff-agents/transferring-tasks) |
-| **Add Note** | Document any action | See [Recording Notes](/cbo-users/staff-agents/recording-notes) |
+| **Transfer** | Need to hand off mid-conversation | See [Transferring Tasks](/end-users/staff-agents/transferring-tasks) |
+| **Add Note** | Document any action | See [Recording Notes](/end-users/staff-agents/recording-notes) |
 
 ## 💡 Best Practices for Handling Tasks
 
@@ -150,6 +150,6 @@ If you're unsure how to handle an inquiry:
 
 ---
 
-**Need to transfer a conversation?** See [Transferring Tasks](/cbo-users/staff-agents/transferring-tasks)
+**Need to transfer a conversation?** See [Transferring Tasks](/end-users/staff-agents/transferring-tasks)
 
-**Questions?** Check our [FAQ](/cbo-users/staff-agents/faq) or [Get Support](/get-support/overview)
+**Questions?** Check our [FAQ](/end-users/staff-agents/faq) or [Get Support](/get-support/overview)

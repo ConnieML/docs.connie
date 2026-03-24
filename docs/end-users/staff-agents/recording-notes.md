@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Recording Notes"
 title: "Recording Notes"
-sidebar_position: 5
+sidebar_position: 9
 ---
 
 # Recording Notes
@@ -177,6 +177,6 @@ Check with your supervisor about:
 
 ---
 
-**Next:** Learn about [Troubleshooting](/cbo-users/staff-agents/troubleshooting) common issues
+**Next:** Learn about [Troubleshooting](/end-users/staff-agents/troubleshooting) common issues
 
-**Questions?** Check our [FAQ](/cbo-users/staff-agents/faq) or [Get Support](/get-support/overview)
+**Questions?** Check our [FAQ](/end-users/staff-agents/faq) or [Get Support](/get-support/overview)

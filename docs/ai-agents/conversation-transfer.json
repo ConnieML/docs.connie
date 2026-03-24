@@ -93,7 +93,7 @@
   "audiences": {
     "cbo_users": {
       "agents": {
-        "url": "/cbo-users/agents/conversation-transfer",
+        "url": "/end-users/agents/conversation-transfer",
         "key_tasks": [
           "transfer_conversation_to_agent",
           "transfer_conversation_to_queue", 
@@ -109,7 +109,7 @@
         ]
       },
       "supervisors": {
-        "url": "/cbo-users/supervisors/conversation-transfer",
+        "url": "/end-users/supervisors/conversation-transfer",
         "key_tasks": [
           "monitor_agent_transfers",
           "review_transfer_patterns",
@@ -124,7 +124,7 @@
         ]
       },
       "administrators": {
-        "url": "/cbo-users/administrators/conversation-transfer",
+        "url": "/end-users/administrators/conversation-transfer",
         "key_tasks": [
           "enable_conversation_transfer_feature",
           "configure_transfer_queues",

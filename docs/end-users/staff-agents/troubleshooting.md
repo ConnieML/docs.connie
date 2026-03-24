@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Troubleshooting"
 title: "Troubleshooting Common Issues"
-sidebar_position: 6
+sidebar_position: 10
 ---
 
 # Troubleshooting Common Issues
@@ -138,7 +138,7 @@ This guide helps you resolve common problems you might encounter while using Con
 
 ## 🔄 Transfer Issues
 
-See detailed transfer troubleshooting in [Transferring Tasks](/cbo-users/staff-agents/transferring-tasks#️-common-issues)
+See detailed transfer troubleshooting in [Transferring Tasks](/end-users/staff-agents/transferring-tasks#️-common-issues)
 
 Quick summary:
 - **Transfer button grayed out** → Cancel any pending invites
@@ -234,14 +234,14 @@ Browser: Chrome Version 120 on Windows 10
 
 ## 🔍 Still Need Help?
 
-- **Check the [FAQ](/cbo-users/staff-agents/faq)** for common questions
+- **Check the [FAQ](/end-users/staff-agents/faq)** for common questions
 - **Ask your supervisor** - they may have seen the issue before
 - **Contact Connie Support** - see [Get Support](/get-support/overview) for options
 - **Review other guides:**
-  - [Getting Started](/cbo-users/staff-agents/getting-started)
-  - [Handling Tasks](/cbo-users/staff-agents/handling-tasks)
-  - [Transferring Tasks](/cbo-users/staff-agents/transferring-tasks)
-  - [Recording Notes](/cbo-users/staff-agents/recording-notes)
+  - [Getting Started](/end-users/staff-agents/getting-started)
+  - [Handling Tasks](/end-users/staff-agents/handling-tasks)
+  - [Transferring Tasks](/end-users/staff-agents/transferring-tasks)
+  - [Recording Notes](/end-users/staff-agents/recording-notes)
 
 ---
 
