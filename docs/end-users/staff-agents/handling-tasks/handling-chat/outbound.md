@@ -42,6 +42,6 @@ After your conversation is done:
 
 ---
 
-**Related:** [Inbound Messages](/end-users/staff-agents/handling-chat/inbound) | [Transferring Tasks](/end-users/staff-agents/transferring-tasks)
+**Related:** [Inbound Messages](/end-users/staff-agents/handling-tasks/handling-chat/inbound) | [Transferring Tasks](/end-users/staff-agents/transferring-tasks)
 
 **Need help?** Check our [FAQ](/end-users/staff-agents/faq) or visit [Get Support](/get-support/overview)

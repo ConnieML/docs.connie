@@ -1,4 +1,5 @@
 {
   "label": "Handling Chat & SMS",
-  "position": 5
+  "position": 5,
+  "collapsed": true
 }

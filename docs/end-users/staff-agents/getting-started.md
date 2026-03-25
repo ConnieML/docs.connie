@@ -110,9 +110,9 @@ Your status **must reflect "Available"** to view and manage incoming tasks!
 ## 🎯 Next Steps
 
 Now that you're set up, learn how to:
-- **[Handling Calls](/end-users/staff-agents/handling-calls)** — Accept calls, use the dialpad, transfers
-- **[Handling Emails](/end-users/staff-agents/handling-emails)** — Send and receive emails
-- **[Handling Chat & SMS](/end-users/staff-agents/handling-chat)** — Text messages and webchat
+- **[Handling Calls](/end-users/staff-agents/handling-tasks/handling-calls)** — Accept calls, use the dialpad, transfers
+- **[Handling Emails](/end-users/staff-agents/handling-tasks/handling-emails)** — Send and receive emails
+- **[Handling Chat & SMS](/end-users/staff-agents/handling-tasks/handling-chat)** — Text messages and webchat
 - **[Transfer Conversations](/end-users/staff-agents/transferring-tasks)** — Hand off tasks to other agents
 - **[Record Notes](/end-users/staff-agents/recording-notes)** — Document your interactions
 

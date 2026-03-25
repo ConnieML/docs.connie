@@ -10,8 +10,8 @@ Connie lets you make and receive phone calls directly from your browser. No spec
 
 This section covers everything you need to know about working with voice calls in Connie:
 
-- **[Inbound Calls](/end-users/staff-agents/handling-calls/inbound)** — Accepting calls, on-call controls, voicemail
-- **[Outbound Calls](/end-users/staff-agents/handling-calls/outbound)** — Using the dialpad, placing calls, transfers
+- **[Inbound Calls](/end-users/staff-agents/handling-tasks/handling-calls/inbound)** — Accepting calls, on-call controls, voicemail
+- **[Outbound Calls](/end-users/staff-agents/handling-tasks/handling-calls/outbound)** — Using the dialpad, placing calls, transfers
 
 ## Before You Start
 

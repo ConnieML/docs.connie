@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Handling Faxes"
 title: "Handling Faxes"
-sidebar_position: 6
+sidebar_position: 4
 ---
 
 # Handling Faxes
@@ -50,6 +50,6 @@ Same as email:
 
 ---
 
-**Related:** [Handling Emails](/end-users/staff-agents/handling-emails) (same workflow)
+**Related:** [Handling Emails](/end-users/staff-agents/handling-tasks/handling-emails) (same workflow)
 
 **Need help?** Check our [FAQ](/end-users/staff-agents/faq) or visit [Get Support](/get-support/overview)

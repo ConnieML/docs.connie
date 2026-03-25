@@ -10,8 +10,8 @@ Connie lets you communicate with clients through text-based channels — includi
 
 This section covers:
 
-- **[Inbound Messages](/end-users/staff-agents/handling-chat/inbound)** — Receiving and replying to client messages
-- **[Outbound Messages](/end-users/staff-agents/handling-chat/outbound)** — Starting new text conversations
+- **[Inbound Messages](/end-users/staff-agents/handling-tasks/handling-chat/inbound)** — Receiving and replying to client messages
+- **[Outbound Messages](/end-users/staff-agents/handling-tasks/handling-chat/outbound)** — Starting new text conversations
 
 ## Key Difference from Calls
 

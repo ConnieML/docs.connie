@@ -51,6 +51,6 @@ If you expect the client to reply, note that in your disposition or comments so 
 
 ---
 
-**Related:** [Inbound Emails](/end-users/staff-agents/handling-emails/inbound) | [Handling Faxes](/end-users/staff-agents/handling-faxes)
+**Related:** [Inbound Emails](/end-users/staff-agents/handling-tasks/handling-emails/inbound) | [Handling Faxes](/end-users/staff-agents/handling-tasks/handling-faxes)
 
 **Need help?** Check our [FAQ](/end-users/staff-agents/faq) or visit [Get Support](/get-support/overview)

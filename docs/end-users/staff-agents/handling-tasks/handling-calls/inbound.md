@@ -92,6 +92,6 @@ Once completed, the task is removed from your queue and placed in a temporary "R
 
 ---
 
-**Next:** Learn about [Making Outbound Calls](/end-users/staff-agents/handling-calls/outbound)
+**Next:** Learn about [Making Outbound Calls](/end-users/staff-agents/handling-tasks/handling-calls/outbound)
 
 **Need help?** Check our [FAQ](/end-users/staff-agents/faq) or visit [Get Support](/get-support/overview)

@@ -29,10 +29,10 @@ Ready to begin? Navigate through the sections below to learn how to use Connie e
 - **[Getting Started](/end-users/staff-agents/getting-started)** — Log in, set up 2FA, and configure your availability
 
 ### Handle Tasks by Channel
-- **[Handling Calls](/end-users/staff-agents/handling-calls)** — Accept inbound calls, use the dialpad, make outbound calls, transfers
-- **[Handling Emails](/end-users/staff-agents/handling-emails)** — Receive, reply, and compose emails
-- **[Handling Faxes](/end-users/staff-agents/handling-faxes)** — Send and receive faxes (works like email)
-- **[Handling Chat & SMS](/end-users/staff-agents/handling-chat)** — Text messages, webchat, WhatsApp, and more
+- **[Handling Calls](/end-users/staff-agents/handling-tasks/handling-calls)** — Accept inbound calls, use the dialpad, make outbound calls, transfers
+- **[Handling Emails](/end-users/staff-agents/handling-tasks/handling-emails)** — Receive, reply, and compose emails
+- **[Handling Faxes](/end-users/staff-agents/handling-tasks/handling-faxes)** — Send and receive faxes (works like email)
+- **[Handling Chat & SMS](/end-users/staff-agents/handling-tasks/handling-chat)** — Text messages, webchat, WhatsApp, and more
 
 ### Work with Your Team
 - **[Transferring Tasks](/end-users/staff-agents/transferring-tasks)** — Warm and cold transfers to other agents or queues

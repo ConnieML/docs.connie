@@ -71,6 +71,6 @@ Unlike calls, ending a chat doesn't disconnect instantly — the client can stil
 
 ---
 
-**Next:** Learn about [Starting Outbound Messages](/end-users/staff-agents/handling-chat/outbound)
+**Next:** Learn about [Starting Outbound Messages](/end-users/staff-agents/handling-tasks/handling-chat/outbound)
 
 **Need help?** Check our [FAQ](/end-users/staff-agents/faq) or visit [Get Support](/get-support/overview)

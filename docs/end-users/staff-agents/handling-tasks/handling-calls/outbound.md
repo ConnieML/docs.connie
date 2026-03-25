@@ -89,6 +89,6 @@ Outbound calls follow the same wrap-up process as inbound calls:
 
 ---
 
-**Related:** [Inbound Calls](/end-users/staff-agents/handling-calls/inbound) | [Transferring Tasks](/end-users/staff-agents/transferring-tasks)
+**Related:** [Inbound Calls](/end-users/staff-agents/handling-tasks/handling-calls/inbound) | [Transferring Tasks](/end-users/staff-agents/transferring-tasks)
 
 **Need help?** Check our [FAQ](/end-users/staff-agents/faq) or visit [Get Support](/get-support/overview)

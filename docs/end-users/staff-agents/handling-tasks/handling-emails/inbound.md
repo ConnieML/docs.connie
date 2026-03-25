@@ -62,6 +62,6 @@ The task moves to your "Recent" panel and is available for review for 30 days.
 
 ---
 
-**Next:** Learn about [Sending Outbound Emails](/end-users/staff-agents/handling-emails/outbound)
+**Next:** Learn about [Sending Outbound Emails](/end-users/staff-agents/handling-tasks/handling-emails/outbound)
 
 **Need help?** Check our [FAQ](/end-users/staff-agents/faq) or visit [Get Support](/get-support/overview)

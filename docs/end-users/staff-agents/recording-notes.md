@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Recording Notes"
 title: "Recording Notes"
-sidebar_position: 9
+sidebar_position: 5
 ---
 
 # Recording Notes

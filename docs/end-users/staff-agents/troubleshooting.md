@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Troubleshooting"
 title: "Troubleshooting Common Issues"
-sidebar_position: 10
+sidebar_position: 6
 ---
 
 # Troubleshooting Common Issues
