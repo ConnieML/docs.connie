@@ -219,3 +219,42 @@ header h1 {
   content: "🧪 ";
   margin-right: 0.5rem;
 }
+
+/* ─── TechOps visual separation in sidebar ─── */
+.theme-doc-sidebar-menu > .techops-category {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--ifm-color-gray-300);
+}
+
+.techops-category > .menu__list-item-collapsible > .menu__link {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ifm-color-gray-600);
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  background: var(--ifm-color-gray-100);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.techops-category > .menu__list-item-collapsible > .menu__link:hover {
+  background: var(--ifm-color-gray-200);
+  color: var(--ifm-color-gray-800);
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .theme-doc-sidebar-menu > .techops-category {
+  border-top-color: var(--ifm-color-gray-700);
+}
+
+[data-theme='dark'] .techops-category > .menu__list-item-collapsible > .menu__link {
+  color: var(--ifm-color-gray-500);
+  background: var(--ifm-color-gray-900);
+}
+
+[data-theme='dark'] .techops-category > .menu__list-item-collapsible > .menu__link:hover {
+  background: var(--ifm-color-gray-800);
+  color: var(--ifm-color-gray-300);
+}
