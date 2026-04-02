@@ -265,11 +265,14 @@ curl -s --request PATCH \
       "samlp": {
         "audience": "urn:flex:<JQ_CONNECTION_SID>",
         "recipient": "https://login.flex.us1.twilio.com/login/callback?connection=<JQ_CONNECTION_SID>",
+        "nameIdentifierFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress",
         "nameIdentifierProbes": ["email"],
         "signatureAlgorithm": "rsa-sha256",
         "digestAlgorithm": "sha256",
-        "passthroughClaimsWithNoMapping": true,
-        "mapUnknownClaimsAsIs": true,
+        "passthroughClaimsWithNoMapping": false,
+        "mapUnknownClaimsAsIs": false,
+        "signResponse": true,
+        "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
         "lifetimeInSeconds": 3600
       }
     }
@@ -278,6 +281,21 @@ curl -s --request PATCH \
 
 :::danger MANDATORY: nameIdentifierProbes
 `"nameIdentifierProbes": ["email"]` is **non-negotiable**. Without it, Auth0 sends its internal user ID (`auth0|abc123...`) as the SAML NameID. Twilio then creates a phantom worker with that ID as its name. Phantom workers incur Twilio billing costs.
+:::
+
+:::danger MANDATORY: Passthrough Must Be DISABLED
+`"passthroughClaimsWithNoMapping"` and `"mapUnknownClaimsAsIs"` must both be `false`.
+
+**What happens if set to `true`:** All `app_metadata` fields (organization, program, skill, role, flex, etc.) are dumped into the SAML assertion as raw claims — alongside the attributes explicitly set by the Post Login Action. This creates attribute collisions that **silently break new user provisioning**:
+
+- **Existing users continue to work** (their worker identity is already bound)
+- **New users get "Log in failed"** with HTTP 400 on the OAuth token exchange
+- **Auth0 logs show successful authentication** — the failure is invisible on the IdP side
+- **Extremely difficult to diagnose** — looks like an SSO config issue but isn't
+
+The Post Login Action (Phase 3.5) already maps all required attributes explicitly. Passthrough adds nothing and introduces collision risk.
+
+**Incident 2026-04-01 (NSS):** 3+ hours of downtime for new user provisioning. Root cause: `passthroughClaimsWithNoMapping: true`. Fix: set to `false`.
 :::
 
 ### 3.4 Download SAML Certificate
@@ -444,6 +462,7 @@ curl -X POST "https://taskrouter.twilio.com/v1/Workspaces/<WORKSPACE_SID>/Worker
 [ ] Auth0
     [ ] App created with oidc_conformant: true
     [ ] SAML addon with nameIdentifierProbes: ["email"]
+    [ ] SAML passthrough DISABLED (passthroughClaimsWithNoMapping: false)
     [ ] Removed from google-oauth2 connection
     [ ] Grant types: authorization_code, implicit, refresh_token only
 
@@ -510,6 +529,30 @@ curl -X POST "https://taskrouter.twilio.com/v1/Workspaces/<WORKSPACE_SID>/Worker
 - `plugin_service_enabled` must be `true`
 - Must include the full `custom_data.features` block, not just `loginPopup`
 
+### New user gets "Log in failed" but existing users work fine
+
+**This is the most dangerous failure mode** — Auth0 logs show successful authentication, but Flex rejects with HTTP 400 on the OAuth token exchange. Existing users are unaffected because their worker identities are already bound.
+
+**Cause:** `passthroughClaimsWithNoMapping` is set to `true` in the Auth0 SAML addon. This leaks all `app_metadata` fields as raw SAML claims, colliding with the Post Login Action's explicit attribute mapping.
+
+**Fix:**
+
+```bash
+curl -s -X PATCH "https://dev-kvn1kviua124ipex.us.auth0.com/api/v2/clients/<AUTH0_CLIENT_ID>" \
+  -H "Authorization: Bearer <TOKEN>" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "addons": {
+      "samlp": {
+        "passthroughClaimsWithNoMapping": false,
+        "mapUnknownClaimsAsIs": false
+      }
+    }
+  }'
+```
+
+New user should be able to log in immediately after this change. No need to delete/recreate the Auth0 user.
+
 ---
 
 ## Quick Reference Commands
@@ -540,5 +583,6 @@ curl -s "https://flex-api.twilio.com/v1/Configuration" \
 
 ---
 
-**Document Version:** 2.0
-**Last Updated:** February 16, 2026
+**Document Version:** 2.1
+**Last Updated:** April 1, 2026
+**Changelog:** v2.1 - CRITICAL: SAML passthrough must be disabled. Added incident report, troubleshooting, updated SAML addon config.
