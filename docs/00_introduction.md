@@ -192,9 +192,22 @@ Find your documentation path based on how you interact with ConnieRTC:
         textDecoration: 'none',
         borderRadius: '6px',
         textAlign: 'center',
-        fontWeight: '500'
+        fontWeight: '500',
+        marginBottom: '12px'
       }}>
         🔌 Complete API Reference
+      </a>
+      <a href="/techops/troubleshooting/runbook-index" style={{
+        display: 'block',
+        padding: '10px 16px',
+        backgroundColor: '#6A1B9A',
+        color: 'white',
+        textDecoration: 'none',
+        borderRadius: '6px',
+        textAlign: 'center',
+        fontWeight: '500'
+      }}>
+        📖 Runbook Index
       </a>
     </div>
   </div>
