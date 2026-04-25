@@ -10,6 +10,8 @@ How to write a new runbook for a Connie feature, get it on docs.connie.one, and 
 
 For human authors and AI agents alike. If you're touching docs.connie for the first time, read this before you write anything.
 
+> **Implements [Runbook Authoring Standard v1.0](https://vault.chrisberno.dev/techops/standards/runbook-authoring)** (the enterprise standard owned by the CDO and applied across all org docs platforms). This guide is the Connie/Docusaurus-specific implementation — it adds platform-specific gotchas (numeric prefix slug stripping, MDX caveats, GitHub Pages publishing pipeline) on top of the canonical 5-file anatomy and 7-section action-runbook template defined at the enterprise level.
+
 ---
 
 ## Where docs.connie lives
