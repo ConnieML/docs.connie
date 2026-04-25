@@ -6,13 +6,60 @@ title: "Wait Experience + Admin Email — Troubleshooting"
 
 # Troubleshooting Runbook
 
-**Audience:** Connie agent investigating reported problems with a live Wait Experience + Admin Email deployment.
-
-**How to use:** Find the symptom in the table of contents, follow the diagnostic steps. If multiple symptoms apply, start with the most caller-visible one.
+**Use this runbook when:** A live Wait Experience + Admin Email deployment is misbehaving — caller complaint, missing email, broken CRM pop, or unexplained config drift. **Find the symptom in the section list, follow the diagnostic steps.** If multiple symptoms apply, start with the most caller-visible one.
 
 ---
 
-## Diagnostic toolkit (run these first)
+## 1. Role / Authority
+
+Run as **CTO-Connie**. Diagnostic commands are read-only and safe to run without CEO approval. **Any fix that touches live config, redeploys serverless, or modifies a Studio Flow requires CEO approval first** — no exceptions, even when the fix seems trivial.
+
+If you suspect cross-account contamination (Symptom: "CCT/DevSandbox config changed unexpectedly"), **stop all other work, escalate to CEO immediately**, and follow the high-severity path in that section.
+
+---
+
+## 2. Required Parameters
+
+Gather **before diagnosing**:
+
+| Parameter | Why you need it |
+|---|---|
+| Connie client account name | Selects the right Twilio profile (`twilio profiles:use <ClientName>`) |
+| Reported symptom | Match to a section below; if no match, see [§7 If Your Variant Differs](#7-if-your-variant-differs) |
+| When it started | Narrows the timeline; correlate with deploy log and `git log` |
+| Sample call SID (if available) | Lets you pull exact Studio execution + serverless logs for that call |
+| Reporting party | CEO, client admin, agent, automated alert? Determines escalation path. |
+| Reproducibility | One-off, intermittent, or 100% repro? Affects diagnostic strategy. |
+
+If "when it started" coincides with a recent deploy or change-request, **review the dev-log for that deploy first** — most live issues trace to the most recent deploy.
+
+---
+
+## 3. Read First
+
+1. `~/projects/connie/rtc/basecamp-v26.02/CLAUDE.md` — Flex Configuration Safety Protocol applies if you end up making fixes.
+2. The dev-log for the most recent deploy/change in `~/projects/connie/rtc/dev-logs/wait-experience-<client>-*` — the most-likely cause is whatever changed last.
+3. `~/projects/connie/rtc/PAC.md` — current SIDs, Mailgun domain, env file paths for the target client.
+4. [Setup runbook](/getting-started/channels/voice/voice-features/wait-experience-with-email/setup) — for understanding what *should* be in place.
+
+---
+
+## 4. Safety Rails for This Change
+
+Troubleshooting is read-only by default. The moment you cross from diagnose to fix, the Setup-runbook safety rails apply in full:
+
+- **Diagnostic commands are safe** (curl GETs, `twilio api:* list`, `twilio serverless:logs --tail`, `jq`-style filters). Run freely.
+- **Fix commands are NOT safe without CEO approval.** Redeploy, config write, Studio Flow republish, env file edit — all require explicit go-ahead.
+- **Capture a PRE-fix snapshot** before any change, even an "obvious" one. The fix may have unintended consequences worth diffing.
+- **NEVER write directly to the Flex Configuration API.** Drift fixes go through the deploy pipeline or `/template-admin`.
+- **Cross-account contamination is HIGH severity.** Stop investigating anything else, escalate to CEO, and follow the dedicated section below before further commands.
+- **Check the right profile is active.** `twilio profiles:use <ClientName>` before every command. Wrong profile = wrong account = potential second incident.
+
+---
+
+## 5. Procedure
+
+### Diagnostic toolkit (run these first)
 
 ```bash
 # Confirm correct profile
@@ -34,7 +81,7 @@ curl -u "$API_KEY:$API_SECRET" https://flex-api.twilio.com/v1/Configuration | jq
 
 ---
 
-## Symptom: Caller hears nothing / dead air after greeting
+### Symptom: Caller hears nothing / dead air after greeting
 
 **Most likely cause:** Wait URL is broken, malformed, or unreachable.
 
@@ -54,7 +101,7 @@ curl -u "$API_KEY:$API_SECRET" https://flex-api.twilio.com/v1/Configuration | jq
 
 ---
 
-## Symptom: Callbacks/voicemails arrive in the wrong queue
+### Symptom: Callbacks/voicemails arrive in the wrong queue
 
 **Most likely cause:** Missing or wrong `WorkflowSid` query param in the Wait URL.
 
@@ -72,7 +119,7 @@ curl -u "$API_KEY:$API_SECRET" https://flex-api.twilio.com/v1/Configuration | jq
 
 ---
 
-## Symptom: Admin email not arriving
+### Symptom: Admin email not arriving
 
 **Most likely cause** (in order of frequency):
 
@@ -98,7 +145,7 @@ curl -u "$API_KEY:$API_SECRET" https://flex-api.twilio.com/v1/Configuration | jq
 
 ---
 
-## Symptom: Voicemail recording is missing or empty in admin email
+### Symptom: Voicemail recording is missing or empty in admin email
 
 **Most likely cause:** The function's recording fetch happened before Twilio finished writing the recording.
 
@@ -115,7 +162,7 @@ curl -u "$API_KEY:$API_SECRET" https://flex-api.twilio.com/v1/Configuration | jq
 
 ---
 
-## Symptom: Transcription text missing from admin email
+### Symptom: Transcription text missing from admin email
 
 **Most likely cause:** Twilio transcription service is async; the email may have been sent before transcription completed.
 
@@ -132,7 +179,7 @@ curl -u "$API_KEY:$API_SECRET" https://flex-api.twilio.com/v1/Configuration | jq
 
 ---
 
-## Symptom: Caller's CRM screen doesn't pop / shows generic page
+### Symptom: Caller's CRM screen doesn't pop / shows generic page
 
 **Most likely cause:** `profile_url` is not set on the task attributes, OR the CRM container `url` is hardcoded instead of using the Liquid template.
 
@@ -150,7 +197,7 @@ curl -u "$API_KEY:$API_SECRET" https://flex-api.twilio.com/v1/Configuration | jq
 
 ---
 
-## Symptom: Configuration drift — source files don't match live
+### Symptom: Configuration drift — source files don't match live
 
 **Most likely cause:** Someone wrote directly to the Configuration API, or made changes via `/template-admin` that weren't reflected in source files.
 
@@ -171,7 +218,7 @@ diff <(cat flex-config/ui_attributes.<client>.json | jq '.custom_data') live.jso
 
 ---
 
-## Symptom: Cross-account contamination (CCT/DevSandbox config changed unexpectedly)
+### Symptom: Cross-account contamination (CCT/DevSandbox config changed unexpectedly)
 
 **Severity: HIGH.** Stop investigating other things and chase this first.
 
@@ -193,7 +240,7 @@ diff <(cat flex-config/ui_attributes.<client>.json | jq '.custom_data') live.jso
 
 ---
 
-## When to escalate
+### When to escalate
 
 Escalate to CEO immediately if:
 
@@ -204,3 +251,38 @@ Escalate to CEO immediately if:
 - Any change request involves modifying the H2H direct-to-voicemail flow on NSS production (`+17259999678`).
 
 For lower-severity issues, file a GitHub issue on `ConnieML/basecamp-v26.02` and reference this troubleshooting guide.
+
+---
+
+## 6. Definition of Done
+
+A troubleshooting session is **not** done when "the symptom stopped." It's done when:
+
+- [ ] **Root cause identified** (not just "it's working again now"). If you can't articulate what specifically caused the symptom, you don't have a root cause yet.
+- [ ] **Fix applied** (if any) following the §4 Safety Rails — CEO-approved, PRE/POST snapshots captured, defensive baselines unchanged.
+- [ ] **Retest verifies the symptom is resolved.** Reproduce the original failing path and confirm it now passes.
+- [ ] **No regression introduced.** Run the §6 Definition of Done verification from the [Setup runbook](/getting-started/channels/voice/voice-features/wait-experience-with-email/setup#6-definition-of-done) — at least the test-call + admin-email items — to confirm nothing else broke.
+- [ ] **Source/live config diff is empty** if the fix touched flex-config.
+- [ ] **Incident logged** in `~/projects/connie/rtc/docs/incidents/` if the issue had customer impact, was caused by a deploy, or surfaces a doctrine gap that needs codifying.
+- [ ] **Lessons captured.** If the root cause exposes a doctrine gap, propose a CLAUDE.md update or a new runbook section. If the fix involved a non-obvious step, add a row to the "Common gotchas" section of the relevant runbook.
+- [ ] **Reporter notified** of the resolution — CEO, client admin, agent, or whoever opened the ticket. Don't leave the reporter wondering whether the issue is fixed.
+- [ ] **CEO sign-off** on the resolution.
+
+If you reach "the symptom stopped but I don't know why," that's **not** done. Intermittent failures with unidentified root causes recur — keep investigating, escalate to CEO if you need to allocate more time.
+
+---
+
+## 7. If Your Variant Differs
+
+This runbook covers symptoms specific to the **Wait Experience + Admin Email** config. If the troubled deployment is a different routing config, the symptoms below may not apply or the diagnostic paths may differ:
+
+| Variant | What likely differs |
+|---|---|
+| Voicemail-only *(📝 TBD)* | No Wait URL, no `WorkflowSid` query param logic, no Studio hold-experience widgets — symptoms about hold music, callback queues, etc. don't apply. |
+| Callback-only *(📝 TBD)* | No voicemail recording symptoms; admin email symptoms differ (no audio attachment) |
+| Voicemail OR Callback (no email) | All voicemail/callback diagnostic paths apply, but skip the admin-email section entirely |
+| Custom Hold Music add-on | Adds a new failure mode — custom audio file unreachable, wrong format, expired CDN URL. Diagnose at the asset URL level. |
+
+If you're troubleshooting a variant that doesn't yet have its own troubleshoot runbook, **the diagnostic toolkit at the top of this runbook still applies** (Twilio CLI commands, serverless log tail, config snapshot) — they're config-agnostic. But the symptom sections are config-specific. Use them as inspiration, not gospel.
+
+If you discover a new symptom-and-fix pattern while troubleshooting, add it as a new `### Symptom: ...` subsection in the right runbook (this one or the variant's). Future agents will look here first.

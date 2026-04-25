@@ -43,6 +43,28 @@ If a feature genuinely doesn't have one of the four (e.g., no "change" pathway b
 
 ---
 
+## What goes inside each runbook (the 7-section template)
+
+A runbook procedure isn't enough. AI agents (and humans new to the system) need the **wrapper** around the procedure as much as the steps themselves. Every action runbook (Setup / Change / Cancel / Troubleshoot) **must** have these seven sections, in this order:
+
+| # | Section | Purpose |
+|---|---|---|
+| 1 | **Role / Authority** | Which executive role the agent operates as (e.g., CTO-Connie, CDO). Reading this first prevents wrong-role escalation. |
+| 2 | **Required Parameters** | Explicit checklist of inputs the operator MUST gather from the CEO/stakeholder **before starting**. Forces the agent to ask, not assume. |
+| 3 | **Read First** | Cross-references to authoritative docs the operator must read before procedure: the relevant CLAUDE.md, the product overview, adjacent runbooks. |
+| 4 | **Safety Rails for This Change** | Concrete don'ts specific to *this* change type, not generic advice. Quote the relevant CLAUDE.md doctrine inline. |
+| 5 | **Procedure** | The step-by-step. Phased is fine; numbered is fine. This is what most existing runbooks already have — keep it. |
+| 6 | **Definition of Done** | Testable verification. Not "deploy succeeded" — "test call lands in queue, hold music plays, pressing * drops to voicemail, admin email arrives in inbox." Specific commands or interactions, not vibes. |
+| 7 | **If Your Variant Differs** | Pointer to this authoring guide + a callout that variants get their own file set, not edits to this one. |
+
+The product page (`01_overview.md`) does NOT need this template — it's a marketing/context page, not a procedure. The template applies to the four action runbooks only.
+
+**Why this matters:** the gap between "runbook content" and "promptable runbook" is exactly these seven sections. A procedure-only runbook reads like a recipe; a 7-section runbook reads like a complete delegation. AI agents that pick up a 7-section runbook can run with it without follow-up questions. Procedure-only runbooks force the agent (or the CEO) to fill the gaps every time.
+
+**Reference implementation:** the [Wait Experience + Admin Email setup runbook](/getting-started/channels/voice/voice-features/wait-experience-with-email/setup) is the canonical example of the 7-section structure applied to a real Connie feature. Pattern-match against that file when authoring new runbooks.
+
+---
+
 ## File placement
 
 Put the runbook files **inside the feature's existing docs tree**, not in this `troubleshooting/` directory.
@@ -136,6 +158,7 @@ This is the single most common broken-link pattern when copying runbooks from on
 When you create a new runbook set:
 
 - [ ] Five files in the feature's directory: `01_overview.md`, `02_setup.md`, `03_change.md`, `04_cancel.md`, `05_troubleshoot.md`.
+- [ ] **Each action runbook (setup/change/cancel/troubleshoot) has all 7 sections** in the order specified above: Role / Authority, Required Parameters, Read First, Safety Rails for This Change, Procedure, Definition of Done, If Your Variant Differs. No exceptions — fill each section even if briefly.
 - [ ] `_category_.json` with `link.type: generated-index` and a meaningful `description`.
 - [ ] Cross-links use **absolute paths with stripped numeric prefixes**.
 - [ ] Add a row to the [Runbook Index](/techops/troubleshooting/runbook-index) under the matching channel/feature section.
