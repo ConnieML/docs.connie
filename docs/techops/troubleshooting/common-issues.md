@@ -1,12 +1,12 @@
 ---
 sidebar_label: Common Issues
-sidebar_position: 1
-title: "Common Issues & Runbooks"
+sidebar_position: 2
+title: "Common Issues"
 ---
 
-# Common Issues & Runbooks
+# Common Issues
 
-Quick reference guide for common ConnieRTC support issues and their resolutions.
+Symptom-driven quick reference for common ConnieRTC support issues and their resolutions. For full deploy/change/cancel/troubleshoot runbooks per feature, see the [Runbook Index](/techops/troubleshooting/runbook-index).
 
 ---
 
