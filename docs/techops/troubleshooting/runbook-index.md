@@ -64,11 +64,13 @@ For common breakage patterns that don't yet have a dedicated runbook (e.g., "cal
 
 ## Authoring rules
 
-When you create a new runbook:
+**Full guide:** [Authoring & Publishing Runbooks](/techops/troubleshooting/authoring-runbooks) — file structure, frontmatter, cross-link rules, build/deploy pipeline, gotchas.
+
+Quick rules:
 
 1. **Place the file inside the feature's docs tree.** Example: `docs/getting-started/channels/voice/voice-features/<feature>/<runbook>.md`. Don't put runbooks in this `troubleshooting/` directory — that's for symptom-driven references and this index.
 2. **Add a row to this index** in the matching channel/feature section above.
-3. **Use absolute Docusaurus paths** in the table: `/getting-started/channels/voice/voice-features/.../setup` — never relative (`../setup`).
+3. **Use absolute Docusaurus paths** in the table: `/getting-started/channels/voice/voice-features/.../setup` — never relative (`../setup`). Also strip numeric prefixes (`/setup` not `/02_setup`).
 4. **Use the four standard runbook types:** 🛠️ Setup, ✏️ Change, 🗑️ Cancel, 🚨 Troubleshoot. If a feature only has some of the four, leave the missing ones as `—`.
 5. **Mirror the inline runbook table** on the channel/feature hub page (e.g., `/getting-started/channels/voice` has its own runbook table near the top — keep it in sync with this index).
 
