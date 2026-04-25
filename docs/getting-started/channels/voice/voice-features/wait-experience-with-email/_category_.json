@@ -1,0 +1,12 @@
+{
+  "label": "Wait Experience + Admin Email",
+  "position": 1,
+  "collapsed": true,
+  "collapsible": true,
+  "link": {
+    "type": "generated-index",
+    "title": "Wait Experience + Admin Email",
+    "description": "Voice Direct config: callers held in queue with option to switch to callback or voicemail without losing queue position. Voicemail recording + transcript emailed to admin.",
+    "slug": "/getting-started/channels/voice/voice-features/wait-experience-with-email"
+  }
+}

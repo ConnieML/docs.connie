@@ -1,0 +1,12 @@
+{
+  "label": "Voice Features",
+  "position": 2,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "Voice Features",
+    "description": "Optional configurations and add-ons that extend the default Voice Direct to Queue behavior. Mix and match a routing config with one or more add-ons to shape the caller experience your line needs.",
+    "slug": "/getting-started/channels/voice/voice-features"
+  }
+}
