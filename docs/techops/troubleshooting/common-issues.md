@@ -122,6 +122,66 @@ curl -s --user "api:[KEY]" \
 
 ---
 
+## Flex UI / Plugin Issues
+
+### "NotificationManager: Notification already registered" in Status Report
+
+**Symptoms:**
+- Red "Operational issue detected" banner appears in the Flex Status Report sidebar (top-right of the agent desktop)
+- Downloaded error report contains `NotificationManager: Notification already registered` with `twilioErrorCode: 45600`
+- Stack trace points to `addHook` in `plugin-flex-ts-template-v2/.../utils/feature-loader/notifications.ts`
+- Functional impact is usually nil (notifications still fire), but agents see the persistent error indicator
+
+**Root Cause:** Two ConnieRTC features registered the same Flex notification ID. Twilio's `flex.Notifications.registerNotification(id)` throws on the second registration. The basecamp feature-loader fans out to every enabled feature's `notificationHook`; if two features hand back overlapping IDs, the boot sequence trips this error.
+
+The most common offender is having **both** `callback_and_voicemail` and `callback_and_voicemail_with_email` enabled on the same account — both define `CallbackErrorCallingCustomer`, `CallbackErrorRequeuingCallbackTask`, and `CallbackOutboundDialingNotEnabled` as their notification IDs.
+
+**Investigation:**
+
+```bash
+# 1. Identify duplicate notification ID strings across features
+cd ~/projects/connie/rtc/basecamp-v26.02
+grep -rh "^\s*[A-Z][A-Za-z0-9_]* = ['\"]" plugin-flex-ts-template-v2/src/feature-library --include="*.ts" --include="*.tsx" \
+  | grep -oE "['\"][^'\"]+['\"]" | sort | uniq -c | sort -rn | awk '$1 > 1'
+
+# 2. Locate which features define each duplicate ID
+grep -rn "= ['\"]<duplicated-id-string>['\"]" plugin-flex-ts-template-v2/src/feature-library
+
+# 3. Confirm both conflicting features are enabled in the live Flex Configuration
+curl -s -u "$ACCOUNT_SID:$AUTH_TOKEN" \
+  "https://flex-api.twilio.com/v1/Configuration" \
+  | python3 -c "
+import sys,json
+d=json.load(sys.stdin)
+features = d.get('ui_attributes',{}).get('custom_data',{}).get('features',{})
+for k,v in features.items():
+    if v.get('enabled'): print(f'  {k}: enabled')"
+```
+
+**Fix (preferred — config only, no redeploy):**
+
+1. Open the `/template-admin` panel on the affected Flex account. **Do not** write the Flex Configuration API directly — see the basecamp Flex Configuration Safety Protocol.
+2. Find the legacy/redundant feature card (e.g., **Callback and Voicemail** when **Callback and Voicemail with Email** is also enabled).
+3. Toggle `enabled` **off**, save.
+4. Hard-reload Flex (Cmd+Shift+R) — the Status Report banner should clear.
+
+**Mandatory follow-up — sync source to live:**
+
+The admin-panel toggle is live-only. The next deploy through the basecamp pipeline will re-enable the feature unless the source override is also added to the per-account file:
+
+```jsonc
+// flex-config/ui_attributes.<account>.json, under custom_data.features:
+"callback_and_voicemail": { "enabled": false },
+```
+
+Then verify source matches live by pulling `GET /v1/Configuration` and diffing the `ui_attributes.custom_data.features` block. Source/live drift on this setting silently regresses the fix on the next deploy.
+
+**Fix (alternative — code-level, requires plugin redeploy):** Rename the conflicting IDs in one of the two features so they no longer collide. More work, but addresses the architectural overlap rather than choosing one feature.
+
+**Reference incident:** NSS, 2026-04-27 — both callback features enabled simultaneously, error surfaced in the Flex Status Report. Resolved by disabling `callback_and_voicemail` in the NSS-specific override (kept the `_with_email` variant which is the superset).
+
+---
+
 ## Quick Diagnostic Commands
 
 ```bash
