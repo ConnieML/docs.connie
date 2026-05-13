@@ -24,10 +24,15 @@ Want to be notified when supervisor documentation is available?
 
 [**Join the Supervisor Beta Program →**](mailto:supervisors@connie.technology?subject=Supervisor%20Documentation%20Beta)
 
+## Available now
+
+- **[Display names](/end-users/administrators/managing-your-team/display-names)** — how agent names render across internal vs external surfaces, and how to fix one that's showing wrong
+- **[Conversation transfer (supervisor view)](/end-users/supervisors/conversation-transfer)** — supervising and configuring conversation transfers across your team
+
 ## Current Resources
 
 While we're building dedicated supervisor docs, you can:
-- Use the **[CBO Admin guides](../cbo-admins/getting-started)** for system setup
+- Use the **[Administrator guides](/end-users/administrators/getting-started)** for system setup
 - Join our **[Community Forum](https://community.connie.technology)** for peer support
 - Contact **[Professional Services](mailto:services@connie.technology)** for immediate help
 
