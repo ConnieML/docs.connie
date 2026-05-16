@@ -182,35 +182,6 @@ Then verify source matches live by pulling `GET /v1/Configuration` and diffing t
 
 ---
 
-## Teams View (Supervisor) Issues
-
-### Department / Team filter shows Twilio's native defaults instead of the configured values
-
-**Symptoms:** `/teams` view's Filter pane → Department dropdown shows `Customer Service / Finance / General Management / Human Resources / Marketing / Operations / Purchasing / Recruiting / Sales` instead of the values deployed in the account's `flex-config/ui_attributes.<account>.json` under `custom_data.common.departments`. Same issue can affect the **Team** filter. Hard-refresh, incognito, basecamp plugin redeploy — none of them fix it.
-
-**60-second diagnosis (DevTools console on the affected /teams page):**
-
-```javascript
-(() => {
-  const F = window.Twilio?.Flex || window.Flex;
-  const filters = F.TeamsView.defaultProps.filters;
-  const dept = filters.find(f => f?.fieldName === 'department_name' || /department/i.test(f?.id ?? ''));
-  return { options: dept?.options?.map(o => o?.value ?? o), fieldName: dept?.fieldName };
-})();
-```
-
-If `options` returns Twilio's native defaults, the basecamp `teams_view_filters` feature's hook is not winning over Flex SDK defaults — direct override is required.
-
-**Cause:** basecamp's `teamsFilterHook` (in `plugin-flex-ts-template-v2/src/feature-library/teams-view-filters/`) registers custom filters via the hook contract, but in current Flex SDK versions that path does NOT replace `Flex.TeamsView.defaultProps.filters`. Native defaults stay in place.
-
-**Fix:** Account-scoped Flex plugin that reassigns `Flex.TeamsView.defaultProps.filters` at init, reading values from `custom_data.common.{departments,teams}`. Full pattern + reference implementation + deploy steps in **[Teams View Filter Override](/techops/codebase/teams-view-filter-override)**.
-
-**Do not** "fix" this by direct `POST /v1/Configuration` writes or by renaming Worker `attributes.department` → `department_name` — see the safety-rails section of the override doc for why.
-
-**Reference incident:** NSS, 2026-05-15. Plugin scaffold at `~/projects/connie/clients/nss/flex-plugins/nss-teams-filters/`.
-
----
-
 ## Quick Diagnostic Commands
 
 ```bash
