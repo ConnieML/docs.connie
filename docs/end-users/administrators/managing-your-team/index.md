@@ -23,6 +23,6 @@ As a Connie administrator, you manage who is on your team, what they can do, and
 - [Roles & permissions](/getting-started/roles-permissions) — concept page on what each role can do
 - [Supervisor overview](/end-users/supervisors/overview) — the view your supervisors get into the same data
 
-## Coming online
+## Status
 
-The "Add an agent," "Assign skills," "Manage teams & queues," and "Remove or deactivate" pages are scaffolded but not yet fully authored. They will fill in as the internal runbook migration completes (CON-TBD). The **Display names** page is fully published and ready to use today.
+All five pages in this section are authored and ready to use. Screenshot placeholders remain in several pages, marked clearly for Andrea to populate; the procedural content is complete.
