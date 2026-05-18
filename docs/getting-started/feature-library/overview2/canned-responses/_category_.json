@@ -1,0 +1,12 @@
+{
+  "label": "Canned Responses",
+  "position": 1,
+  "collapsed": true,
+  "collapsible": true,
+  "link": {
+    "type": "generated-index",
+    "title": "Canned Responses",
+    "description": "Per-account library of pre-written agent replies, surfaced in the CRM Panel or Message Input Actions for chat and email tasks.",
+    "slug": "/getting-started/feature-library/overview2/canned-responses"
+  }
+}
