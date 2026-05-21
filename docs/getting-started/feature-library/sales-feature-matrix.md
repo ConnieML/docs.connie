@@ -21,24 +21,28 @@ import TabItem from "@theme/TabItem";
 
 ## 🎯 Platform Capabilities Overview
 
+> **Select your role below** to see exactly how Connie helps you get your work done.
+
+<Tabs queryString="role">
+
+<TabItem value="admin" label="📊 CBO Admin" default>
+
+### Organization Setup & Management
+
 <div style={{overflowX: 'auto'}}>
-<table style={{width: '100%', minWidth: '800px'}}>
+<table style={{width: '100%', minWidth: '700px'}}>
 <thead>
 <tr style={{background: '#f5f5f5'}}>
-<th style={{width: '15%', position: 'sticky', left: 0, background: '#f5f5f5', zIndex: 1}}>Role</th>
-<th style={{width: '8%'}}>ID</th>
-<th style={{width: '25%'}}>When I need to...</th>
-<th style={{width: '25%'}}>So that I can...</th>
+<th style={{width: '10%'}}>ID</th>
+<th style={{width: '28%'}}>When I need to...</th>
+<th style={{width: '27%'}}>So that I can...</th>
 <th style={{width: '25%'}}>Connie provides...</th>
-<th style={{width: '12%'}}>Status</th>
+<th style={{width: '10%'}}>Status</th>
 </tr>
 </thead>
 <tbody>
 
-<tr><td colspan="6" style={{background: '#e3f2fd', fontWeight: 'bold', fontSize: '1.1em'}}>📊 CBO Admin - Organization Setup & Management</td></tr>
-
 <tr>
-<td rowspan="7" style={{fontWeight: 'bold', verticalAlign: 'middle', background: '#f9f9f9'}}>CBO Admin</td>
 <td><code>CBA-1</code></td>
 <td>Sign up for Connie</td>
 <td>Start engaging customers</td>
@@ -94,10 +98,30 @@ import TabItem from "@theme/TabItem";
 <td><span style={{background: '#4caf50', color: 'white', padding: '2px 8px', borderRadius: '4px', fontSize: '0.85em'}}>Available Now</span></td>
 </tr>
 
-<tr><td colspan="6" style={{background: '#f3e5f5', fontWeight: 'bold', fontSize: '1.1em'}}>👥 CBO Manager - Team & Performance Management</td></tr>
+</tbody>
+</table>
+</div>
+
+</TabItem>
+
+<TabItem value="manager" label="👥 CBO Manager">
+
+### Team & Performance Management
+
+<div style={{overflowX: 'auto'}}>
+<table style={{width: '100%', minWidth: '700px'}}>
+<thead>
+<tr style={{background: '#f5f5f5'}}>
+<th style={{width: '10%'}}>ID</th>
+<th style={{width: '28%'}}>When I need to...</th>
+<th style={{width: '27%'}}>So that I can...</th>
+<th style={{width: '25%'}}>Connie provides...</th>
+<th style={{width: '10%'}}>Status</th>
+</tr>
+</thead>
+<tbody>
 
 <tr>
-<td rowspan="8" style={{fontWeight: 'bold', verticalAlign: 'middle', background: '#f9f9f9'}}>CBO Manager</td>
 <td><code>CPM-1</code></td>
 <td>View real-time dashboard</td>
 <td>Manage operations effectively</td>
@@ -161,10 +185,30 @@ import TabItem from "@theme/TabItem";
 <td><span style={{background: '#4caf50', color: 'white', padding: '2px 8px', borderRadius: '4px', fontSize: '0.85em'}}>Available Now</span></td>
 </tr>
 
-<tr><td colspan="6" style={{background: '#e8f5e9', fontWeight: 'bold', fontSize: '1.1em'}}>🎧 CBO Staff Agent - Client Service Delivery</td></tr>
+</tbody>
+</table>
+</div>
+
+</TabItem>
+
+<TabItem value="agent" label="🎧 CBO Staff Agent">
+
+### Client Service Delivery
+
+<div style={{overflowX: 'auto'}}>
+<table style={{width: '100%', minWidth: '700px'}}>
+<thead>
+<tr style={{background: '#f5f5f5'}}>
+<th style={{width: '10%'}}>ID</th>
+<th style={{width: '28%'}}>When I need to...</th>
+<th style={{width: '27%'}}>So that I can...</th>
+<th style={{width: '25%'}}>Connie provides...</th>
+<th style={{width: '10%'}}>Status</th>
+</tr>
+</thead>
+<tbody>
 
 <tr>
-<td rowspan="12" style={{fontWeight: 'bold', verticalAlign: 'middle', background: '#f9f9f9'}}>CBO Agent</td>
 <td><code>CSA-1</code></td>
 <td>Log in from any browser</td>
 <td>Start working</td>
@@ -230,7 +274,7 @@ import TabItem from "@theme/TabItem";
 
 <tr>
 <td><code>CSA-9</code></td>
-<td>Use canned responses</td>
+<td><a href="/end-users/staff-agents/handling-tasks/handling-chat/using-canned-responses">Use canned responses</a></td>
 <td>Reply quickly & consistently</td>
 <td>✅ Template library<br/>✅ Quick insert<br/>✅ Personalization</td>
 <td><span style={{background: '#4caf50', color: 'white', padding: '2px 8px', borderRadius: '4px', fontSize: '0.85em'}}>Available Now</span></td>
@@ -263,6 +307,10 @@ import TabItem from "@theme/TabItem";
 </tbody>
 </table>
 </div>
+
+</TabItem>
+
+</Tabs>
 
 ## 📊 Channel Capabilities Matrix
 
