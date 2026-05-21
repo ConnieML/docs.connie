@@ -210,7 +210,7 @@ import TabItem from "@theme/TabItem";
 
 <tr>
 <td><code>CSA-1</code></td>
-<td>Log in from any browser</td>
+<td><a href="/end-users/staff-agents/getting-started">Log in from any browser</a></td>
 <td>Start working</td>
 <td>✅ Web-based desktop<br/>✅ Single sign-on<br/>✅ Auto-resume state</td>
 <td><span style={{background: '#4caf50', color: 'white', padding: '2px 8px', borderRadius: '4px', fontSize: '0.85em'}}>Available Now</span></td>
@@ -226,7 +226,7 @@ import TabItem from "@theme/TabItem";
 
 <tr>
 <td><code>CSA-3</code></td>
-<td>Get notified of new tasks</td>
+<td><a href="/end-users/staff-agents/handling-tasks/">Get notified of new tasks</a></td>
 <td>Respond quickly</td>
 <td>✅ Desktop notifications<br/>✅ Sound alerts<br/>✅ Screen pop</td>
 <td><span style={{background: '#4caf50', color: 'white', padding: '2px 8px', borderRadius: '4px', fontSize: '0.85em'}}>Available Now</span></td>
@@ -234,7 +234,7 @@ import TabItem from "@theme/TabItem";
 
 <tr style={{background: '#fafafa'}}>
 <td><code>CSA-4</code></td>
-<td>Handle voice calls</td>
+<td><a href="/end-users/staff-agents/handling-tasks/handling-calls/">Handle voice calls</a></td>
 <td>Help clients by phone</td>
 <td>✅ Call controls<br/>✅ Hold/mute<br/>✅ Recording</td>
 <td><span style={{background: '#4caf50', color: 'white', padding: '2px 8px', borderRadius: '4px', fontSize: '0.85em'}}>Available Now</span></td>
@@ -242,7 +242,7 @@ import TabItem from "@theme/TabItem";
 
 <tr>
 <td><code>CSA-5</code></td>
-<td>Manage SMS conversations</td>
+<td><a href="/end-users/staff-agents/handling-tasks/handling-chat/">Manage SMS conversations</a></td>
 <td>Text with clients</td>
 <td>✅ Two-way messaging<br/>✅ MMS support<br/>✅ Templates</td>
 <td><span style={{background: '#4caf50', color: 'white', padding: '2px 8px', borderRadius: '4px', fontSize: '0.85em'}}>Available Now</span></td>
@@ -250,7 +250,7 @@ import TabItem from "@theme/TabItem";
 
 <tr style={{background: '#fafafa'}}>
 <td><code>CSA-6</code></td>
-<td>Handle web chats</td>
+<td><a href="/end-users/staff-agents/handling-tasks/handling-chat/">Handle web chats</a></td>
 <td>Provide instant help</td>
 <td>✅ Live chat<br/>✅ File sharing<br/>✅ Typing indicators</td>
 <td><span style={{background: '#4caf50', color: 'white', padding: '2px 8px', borderRadius: '4px', fontSize: '0.85em'}}>Available Now</span></td>
@@ -266,7 +266,7 @@ import TabItem from "@theme/TabItem";
 
 <tr style={{background: '#fafafa'}}>
 <td><code>CSA-8</code></td>
-<td>Transfer to specialists</td>
+<td><a href="/end-users/staff-agents/transferring-tasks">Handoff / Transfer Tasks</a></td>
 <td>Get clients right help</td>
 <td>✅ Warm transfer<br/>✅ Queue transfer<br/>✅ Context sharing</td>
 <td><span style={{background: '#4caf50', color: 'white', padding: '2px 8px', borderRadius: '4px', fontSize: '0.85em'}}>Available Now</span></td>
@@ -282,7 +282,7 @@ import TabItem from "@theme/TabItem";
 
 <tr style={{background: '#fafafa'}}>
 <td><code>CSA-10</code></td>
-<td>Document interactions</td>
+<td><a href="/end-users/staff-agents/recording-notes">Document interactions</a></td>
 <td>Track service delivery</td>
 <td>✅ Disposition codes<br/>✅ Call notes<br/>✅ Tags</td>
 <td><span style={{background: '#4caf50', color: 'white', padding: '2px 8px', borderRadius: '4px', fontSize: '0.85em'}}>Available Now</span></td>
@@ -298,7 +298,7 @@ import TabItem from "@theme/TabItem";
 
 <tr style={{background: '#fafafa'}}>
 <td><code>CSA-0</code></td>
-<td>Get help quickly</td>
+<td><a href="/end-users/staff-agents/faq">Get help quickly</a></td>
 <td>Get back to helping clients</td>
 <td>✅ In-app help<br/>✅ Knowledge base<br/>✅ Team chat</td>
 <td><span style={{background: '#4caf50', color: 'white', padding: '2px 8px', borderRadius: '4px', fontSize: '0.85em'}}>Available Now</span></td>
