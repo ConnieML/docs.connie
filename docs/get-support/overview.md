@@ -52,11 +52,11 @@ Our 5-tier system ensures you get the right level of support for your needs:
   <div className="col col--6 margin-bottom--lg">
     <div className="card">
       <div className="card__body">
-        <h3>🎫 Trouble Tickets (L3)</h3>
+        <h3>🎫 Support Ticket System (L3)</h3>
         <p><strong>Formal Support Requests</strong></p>
         <p>Submit detailed support tickets for technical issues and configuration help</p>
         <p><strong>Best for:</strong> Bug reports, technical problems, configuration assistance</p>
-        <p><a href="/get-support/tickets" className="button button--primary">Submit Ticket</a></p>
+        <p><a href="/get-support/support-ticket-system/submitting-a-ticket" className="button button--primary">Submit Ticket</a></p>
       </div>
     </div>
   </div>

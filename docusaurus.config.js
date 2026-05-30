@@ -54,6 +54,14 @@ const config = {
       "@docusaurus/plugin-client-redirects",
       {
         toExtensions: ["html"],
+        redirects: [
+          {
+            // Retired the standalone "Trouble Tickets (L3)" page; its content
+            // now lives in the Support Ticket System (L3) subcategory.
+            from: "/get-support/tickets",
+            to: "/get-support/support-ticket-system/submitting-a-ticket",
+          },
+        ],
       },
     ],
     'docusaurus-plugin-sass'
