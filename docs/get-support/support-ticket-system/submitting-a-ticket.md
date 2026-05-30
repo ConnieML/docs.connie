@@ -49,34 +49,38 @@ A clear ticket gets resolved faster. Include:
 
 ## How to submit a ticket — step by step
 
-### 1. Open the Support panel
+### 1. Open the Support portal
 
-When you have **no active task**, the right-hand panel shows **Connie Support**.
+When you have **no active task**, the right-hand panel shows **CONNIE+**. Click **Get Support**.
 
-> 📸 **[Screenshot: the agent desktop with "No active tasks" on the left and the "Connie Support" panel on the right, showing the "Filing for: \<Your Account\>" badge]** — _to be added_
+![The CONNIE+ panel in the no-active-task view, with the Get Support button](/img/support-tickets/01-no-task-panel.png)
+
+That opens the **Connie Support Portal** — self-help options up top ("Start Here"), and under **Get Support** a **Submit Support Ticket** card.
+
+![The Connie Support Portal showing the Submit Support Ticket card, Show All Tickets, and Quick Ticket Lookup](/img/support-tickets/02-support-portal.png)
 
 ### 2. Click **Create New Ticket**
 
-This opens the ticket form. The form already knows which account you're filing for (you'll see a **"Filing for: \<Your Account\>"** badge), and it may pre-fill your name and email.
+In the **Submit Support Ticket** card, click **Create New Ticket**. The form already knows which account you're filing for — you'll see a **"Filing for: \<Your Account\>"** badge — and it may pre-fill your name and email.
 
-> 📸 **[Screenshot: the "Create New Ticket" / support form with the "Filing for" badge]** — _to be added_
+![The Create New Ticket form with the Filing for badge](/img/support-tickets/03-create-ticket-form.png)
 
 ### 3. Fill out the form
 
 Complete each field:
 
-- **Subject** — a short, specific title.
-- **Description** — what happened, what you expected, and steps (see "How to write a good ticket" above).
+- **What's the issue?** — a short, specific title.
+- **Tell us more** — what happened, what you expected, and steps (see "How to write a good ticket" above).
 - **Your name** and **email** — so the Care Team can reach you. Use an inbox you check.
 - **Phone** — in case they need to call.
 
-> 📸 **[Screenshot: the filled-in ticket form ready to send]** — _to be added_
+![A filled-in ticket form ready to send](/img/support-tickets/03b-ticket-form-filled.png)
 
 ### 4. Send it
 
 Click **Send**. You'll see an on-screen confirmation with your **ticket number**, and you'll get an **email confirmation** shortly.
 
-> 📸 **[Screenshot: the "Ticket #___ submitted successfully" confirmation with the "See all my tickets" and "Back to Connie" buttons]** — _to be added_
+![The Ticket submitted successfully confirmation, with See all my tickets and Back to Connie buttons](/img/support-tickets/04-ticket-submitted.png)
 
 ### 5. From the confirmation screen you can:
 

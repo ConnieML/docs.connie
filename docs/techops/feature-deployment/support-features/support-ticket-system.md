@@ -10,13 +10,13 @@ The **Connie Support Ticket System** is one of Connie's built-in Support Options
 
 This page is for **Connie account administrators**. For the step-by-step staff guide, see [Submitting a Ticket](/get-support/support-ticket-system/submitting-a-ticket). For fixing problems, see [Ticketing System Troubleshooting](/techops/troubleshooting/ticketing-system).
 
-> 📸 **[Screenshot: the Support panel in the no-active-task view, showing "Create New Ticket" and the "Filing for: \<Your Account\>" badge]** — _to be added_
+![The CONNIE+ panel in the no-active-task view, with the Get Support button that opens the Connie Support Portal](/img/support-tickets/01-no-task-panel.png)
 
 ---
 
 ## What it is
 
-When a staff member has no active task, the right-hand panel in Connie shows the **Connie Support** portal. From there your team can:
+When a staff member has no active task, the right-hand panel shows the **CONNIE+** panel; clicking **Get Support** opens the **Connie Support Portal**. From there your team can:
 
 - **Create a new ticket** — submit a support request through a simple form.
 - **See all tickets** — view every ticket for **your account** (not other organizations').
@@ -44,7 +44,7 @@ This isolation is automatic — there's nothing for an administrator to switch o
 
 **Ticket statuses:** Open · In Progress · Waiting · Resolved · Closed.
 
-> 📸 **[Screenshot: the ticket-submitted confirmation showing the ticket number and the "See all my tickets" / "Back to Connie" buttons]** — _to be added_
+![The ticket-submitted confirmation showing the ticket number and the See all my tickets and Back to Connie buttons](/img/support-tickets/04-ticket-submitted.png)
 
 ## What an administrator should know
 
