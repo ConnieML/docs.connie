@@ -19,6 +19,21 @@ After you [submit a ticket](/get-support/support-ticket-system/submitting-a-tick
 
 > Replies you receive are the Care Team's **customer-facing** messages. Any private notes the team writes internally are never shown to you — you only see what's meant for you.
 
+### Response times
+
+**Typical turnaround for a ticket is about 1 business day**, and it can flux based on ticket volume.
+
+If you need **faster, guaranteed response times**, contact your **account manager** and ask about **advanced support packages**. These add priority handling with committed response targets — for example:
+
+| Priority | Target response *(advanced support packages only)* |
+|---|---|
+| **Critical** — system down or security concern | 2 hours |
+| **High** — a major feature is broken | 4 business hours |
+| **Medium** — functionality impaired | 1 business day |
+| **Low** — questions or minor issues | 2–3 business days |
+
+*The faster targets above are available with paid advanced support packages. Standard tickets default to the ~1 business day typical turnaround. Ask your account manager about upgrading.*
+
 ---
 
 ## How to check a ticket's status
