@@ -8,6 +8,10 @@ title: "Checking & Managing Your Tickets"
 
 After you [submit a ticket](/get-support/support-ticket-system/submitting-a-ticket), here's what to expect and how to follow it through — checking status, and how a ticket gets closed or reopened.
 
+:::tip Prefer to watch?
+The [video walkthrough](/get-support/support-ticket-system/submitting-a-ticket#video-walkthrough) covers both submitting **and** tracking a ticket in about 80 seconds.
+:::
+
 ---
 
 ## What to expect after submitting

@@ -8,6 +8,20 @@ title: "Submitting a Support Ticket"
 
 A support ticket is the best way to get **tracked, scoped help** from the Connie Care Team. You submit it right from inside Connie, you get a ticket number, and you can follow it through to resolution. This guide shows you **when** to file a ticket, **how to write a good one**, and the **steps** to submit it.
 
+## 🎥 Video walkthrough {#video-walkthrough}
+
+A quick 80-second tour — opening a ticket and tracking it, start to finish.
+
+<video
+controls
+preload="metadata"
+poster="https://admin-connie-one-uploads.s3.amazonaws.com/training/connie-ticketing-poster.jpg"
+style={{width: '100%', maxWidth: '900px', borderRadius: '8px', display: 'block', margin: '1rem 0'}}>
+<source src="https://admin-connie-one-uploads.s3.amazonaws.com/training/connie-ticketing.mp4" type="video/mp4" />
+<track kind="captions" src="/captions/connie-ticketing.vtt" srcLang="en" label="English" default />
+Your browser doesn't support embedded video — <a href="https://admin-connie-one-uploads.s3.amazonaws.com/training/connie-ticketing.mp4">download the walkthrough</a> instead.
+</video>
+
 ---
 
 ## When to submit a ticket
