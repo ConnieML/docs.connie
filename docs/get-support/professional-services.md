@@ -2,6 +2,7 @@
 sidebar_label: Professional Services (L5)
 sidebar_position: 6
 title: "Professional Services"
+description: "Expert implementation & consulting — partner with Connie experts for strategic, enterprise-level solutions."
 ---
 
 <div style={{display: 'flex', alignItems: 'center', marginBottom: '24px'}}>

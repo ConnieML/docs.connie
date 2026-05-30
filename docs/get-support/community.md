@@ -2,6 +2,7 @@
 sidebar_label: Community Support (L2)
 sidebar_position: 3
 title: "Community Support"
+description: "Peer-to-peer help — connect with experienced Connie users and share knowledge in the community."
 ---
 
 <div style={{display: 'flex', alignItems: 'center', marginBottom: '24px'}}>

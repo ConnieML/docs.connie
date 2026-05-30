@@ -2,6 +2,7 @@
 sidebar_label: Knowledge Base (L1)
 sidebar_position: 2
 title: "Knowledge Base"
+description: "Self-service documentation — your first stop for quick answers, available 24/7."
 ---
 
 <div style={{display: 'flex', alignItems: 'center', marginBottom: '24px'}}>
