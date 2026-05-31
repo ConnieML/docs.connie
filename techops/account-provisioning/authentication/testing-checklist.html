@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Authentication Testing Checklist | Connie Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.connie.one/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.connie.one/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.connie.one/techops/account-provisioning/authentication/testing-checklist"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Authentication Testing Checklist | Connie Documentation"><meta data-rh="true" name="description" content="Comprehensive testing protocol for validating Auth0 + Twilio Flex SSO configuration."><meta data-rh="true" property="og:description" content="Comprehensive testing protocol for validating Auth0 + Twilio Flex SSO configuration."><link data-rh="true" rel="icon" href="/img/logos/connie-rtc-icon.png"><link data-rh="true" rel="canonical" href="https://docs.connie.one/techops/account-provisioning/authentication/testing-checklist"><link data-rh="true" rel="alternate" href="https://docs.connie.one/techops/account-provisioning/authentication/testing-checklist" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.connie.one/techops/account-provisioning/authentication/testing-checklist" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"⚙️ Connie TechOps","item":"https://docs.connie.one/techops/overview"},{"@type":"ListItem","position":2,"name":"Testing Checklist","item":"https://docs.connie.one/techops/account-provisioning/authentication/testing-checklist"}]}</script><link rel="stylesheet" href="https://assets.twilio.com/public_assets/paste-fonts/1.5.1/fonts.css"><link rel="stylesheet" href="/assets/css/styles.0069209e.css">
-<script src="/assets/js/runtime~main.e3743cfd.js" defer="defer"></script>
-<script src="/assets/js/main.67abfc98.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.77b76beb.js" defer="defer"></script>
+<script src="/assets/js/main.5f5f448a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -49,8 +49,8 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="documentation-ready">Documentation Ready<a href="#documentation-ready" class="hash-link" aria-label="Direct link to Documentation Ready" title="Direct link to Documentation Ready">​</a></h3>
 <ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> <a href="/platform-developers/authentication/overview">Overview Guide</a> for reference</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> <a href="/platform-developers/authentication/troubleshooting">Troubleshooting Guide</a> for issues</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <a href="/techops/account-provisioning/authentication/overview">Overview Guide</a> for reference</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <a href="/techops/account-provisioning/authentication/troubleshooting">Troubleshooting Guide</a> for issues</li>
 <li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Notepad for recording results</li>
 </ul>
 <hr>
@@ -80,7 +80,7 @@
 <li>Check callback URLs in Auth0</li>
 <li>Verify user has <code>flex.roles: [&quot;admin&quot;]</code></li>
 <li>Review Auth0 logs for errors</li>
-<li>See: <a href="/platform-developers/authentication/troubleshooting#-login-failures">Login Failures</a></li>
+<li>See: <a href="/techops/account-provisioning/authentication/troubleshooting#-login-failures">Login Failures</a></li>
 </ul>
 <hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="test-12-supervisor-user-login">Test 1.2: Supervisor User Login<a href="#test-12-supervisor-user-login" class="hash-link" aria-label="Direct link to Test 1.2: Supervisor User Login" title="Direct link to Test 1.2: Supervisor User Login">​</a></h3>
@@ -105,7 +105,7 @@
 <li>Verify <code>flex.roles: [&quot;supervisor&quot;]</code> in user metadata</li>
 <li>Check Auth0 Action passes <code>roles</code> attribute</li>
 <li>Check SAML attribute mapping in Flex</li>
-<li>See: <a href="/platform-developers/authentication/troubleshooting#-permission-issues">Permission Issues</a></li>
+<li>See: <a href="/techops/account-provisioning/authentication/troubleshooting#-permission-issues">Permission Issues</a></li>
 </ul>
 <hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="test-13-agent-user-login">Test 1.3: Agent User Login<a href="#test-13-agent-user-login" class="hash-link" aria-label="Direct link to Test 1.3: Agent User Login" title="Direct link to Test 1.3: Agent User Login">​</a></h3>
@@ -130,7 +130,7 @@
 <ul>
 <li>Verify <code>flex.roles: [&quot;agent&quot;]</code> in user metadata</li>
 <li>Ensure no extra roles accidentally assigned</li>
-<li>See: <a href="/platform-developers/authentication/troubleshooting#-permission-issues">Permission Issues</a></li>
+<li>See: <a href="/techops/account-provisioning/authentication/troubleshooting#-permission-issues">Permission Issues</a></li>
 </ul>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="-test-suite-2-team-visibility-pattern-a-only">✅ Test Suite 2: Team Visibility (Pattern A Only)<a href="#-test-suite-2-team-visibility-pattern-a-only" class="hash-link" aria-label="Direct link to ✅ Test Suite 2: Team Visibility (Pattern A Only)" title="Direct link to ✅ Test Suite 2: Team Visibility (Pattern A Only)">​</a></h2>
@@ -167,7 +167,7 @@
 <li>Verify agents have same <code>flex.team</code> value</li>
 <li>Verify agents have logged in at least once</li>
 <li>Check Auth0 Action includes team attribute code</li>
-<li>See: <a href="/platform-developers/authentication/troubleshooting#-team-visibility-problems">Team Visibility Problems</a></li>
+<li>See: <a href="/techops/account-provisioning/authentication/troubleshooting#-team-visibility-problems">Team Visibility Problems</a></li>
 </ul>
 <hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="test-22-admin-sees-all-teams">Test 2.2: Admin Sees All Teams<a href="#test-22-admin-sees-all-teams" class="hash-link" aria-label="Direct link to Test 2.2: Admin Sees All Teams" title="Direct link to Test 2.2: Admin Sees All Teams">​</a></h3>
@@ -190,7 +190,7 @@
 <li>Verify admin user does NOT have <code>flex.team</code> in metadata</li>
 <li>If team attribute present, remove it</li>
 <li>Admin must re-login after metadata change</li>
-<li>See: <a href="/platform-developers/authentication/troubleshooting#admin-user-only-sees-own-team">Admin User Only Sees Own Team</a></li>
+<li>See: <a href="/techops/account-provisioning/authentication/troubleshooting#admin-user-only-sees-own-team">Admin User Only Sees Own Team</a></li>
 </ul>
 <hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="test-23-agent-team-membership">Test 2.3: Agent Team Membership<a href="#test-23-agent-team-membership" class="hash-link" aria-label="Direct link to Test 2.3: Agent Team Membership" title="Direct link to Test 2.3: Agent Team Membership">​</a></h3>
@@ -219,7 +219,7 @@
 <li>Verify agents have exact same <code>flex.team</code> value as supervisor</li>
 <li>Have agents re-login to update worker attributes</li>
 <li>Check Twilio TaskRouter → Workers for team attributes</li>
-<li>See: <a href="/platform-developers/authentication/troubleshooting#supervisor-sees-wrong-team-members">Supervisor Sees Wrong Team Members</a></li>
+<li>See: <a href="/techops/account-provisioning/authentication/troubleshooting#supervisor-sees-wrong-team-members">Supervisor Sees Wrong Team Members</a></li>
 </ul>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="-test-suite-3-organizational-isolation-pattern-b-only">✅ Test Suite 3: Organizational Isolation (Pattern B Only)<a href="#-test-suite-3-organizational-isolation-pattern-b-only" class="hash-link" aria-label="Direct link to ✅ Test Suite 3: Organizational Isolation (Pattern B Only)" title="Direct link to ✅ Test Suite 3: Organizational Isolation (Pattern B Only)">​</a></h2>
@@ -252,7 +252,7 @@
 <li>Verify separate Auth0 tenants are being used</li>
 <li>Check Twilio account SIDs are different</li>
 <li>Verify Flex instances are separate</li>
-<li>See: <a href="/platform-developers/authentication/troubleshooting#users-from-organization-b-appearing-in-organization-a">Users from Organization B Appearing in Organization A</a></li>
+<li>See: <a href="/techops/account-provisioning/authentication/troubleshooting#users-from-organization-b-appearing-in-organization-a">Users from Organization B Appearing in Organization A</a></li>
 </ul>
 <hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="test-32-organization-b-user-isolation">Test 3.2: Organization B User Isolation<a href="#test-32-organization-b-user-isolation" class="hash-link" aria-label="Direct link to Test 3.2: Organization B User Isolation" title="Direct link to Test 3.2: Organization B User Isolation">​</a></h3>
@@ -276,7 +276,7 @@
 <li>Verify using separate Auth0 tenant for Organization B</li>
 <li>Check vanity domains point to correct Flex instances</li>
 <li>Verify SSO configuration references correct tenant</li>
-<li>See: <a href="/platform-developers/authentication/pattern-b-isolated">Pattern B Documentation</a></li>
+<li>See: <a href="/techops/account-provisioning/authentication/pattern-b-isolated">Pattern B Documentation</a></li>
 </ul>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="-test-suite-4-saml-attribute-validation">✅ Test Suite 4: SAML Attribute Validation<a href="#-test-suite-4-saml-attribute-validation" class="hash-link" aria-label="Direct link to ✅ Test Suite 4: SAML Attribute Validation" title="Direct link to ✅ Test Suite 4: SAML Attribute Validation">​</a></h2>
@@ -309,7 +309,7 @@
 <li>Verify Auth0 Action is deployed</li>
 <li>Check Action code matches pattern (A or B)</li>
 <li>Verify user&#x27;s app_metadata has required fields</li>
-<li>See: <a href="/platform-developers/authentication/auth0-configuration">Auth0 Configuration</a></li>
+<li>See: <a href="/techops/account-provisioning/authentication/auth0-configuration">Auth0 Configuration</a></li>
 </ul>
 <hr>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="test-42-verify-worker-attributes-in-twilio">Test 4.2: Verify Worker Attributes in Twilio<a href="#test-42-verify-worker-attributes-in-twilio" class="hash-link" aria-label="Direct link to Test 4.2: Verify Worker Attributes in Twilio" title="Direct link to Test 4.2: Verify Worker Attributes in Twilio">​</a></h3>
@@ -337,7 +337,7 @@
 <li>User needs to re-login to create/update worker</li>
 <li>Check attribute mapping in Flex SSO settings</li>
 <li>Verify SAML attributes passed by Auth0</li>
-<li>See: <a href="/platform-developers/authentication/twilio-flex-sso">Twilio Flex SSO</a></li>
+<li>See: <a href="/techops/account-provisioning/authentication/twilio-flex-sso">Twilio Flex SSO</a></li>
 </ul>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="-test-suite-5-logout-and-re-authentication">✅ Test Suite 5: Logout and Re-authentication<a href="#-test-suite-5-logout-and-re-authentication" class="hash-link" aria-label="Direct link to ✅ Test Suite 5: Logout and Re-authentication" title="Direct link to ✅ Test Suite 5: Logout and Re-authentication">​</a></h2>
@@ -494,7 +494,7 @@ Don&#x27;t continue to later tests if foundational tests fail</p>
 </li>
 <li>
 <p><strong>Diagnose Issue</strong>
-Use <a href="/platform-developers/authentication/troubleshooting">Troubleshooting Guide</a></p>
+Use <a href="/techops/account-provisioning/authentication/troubleshooting">Troubleshooting Guide</a></p>
 </li>
 <li>
 <p><strong>Fix Configuration</strong>
@@ -512,12 +512,12 @@ Note what was changed and why in results template</p>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="-related-documentation">📖 Related Documentation<a href="#-related-documentation" class="hash-link" aria-label="Direct link to 📖 Related Documentation" title="Direct link to 📖 Related Documentation">​</a></h2>
 <ul>
-<li><strong>Overview:</strong> <a href="/platform-developers/authentication/overview">Identity Architecture</a></li>
-<li><strong>Pattern A:</strong> <a href="/platform-developers/authentication/pattern-a-multi-program">Multi-Program Setup</a></li>
-<li><strong>Pattern B:</strong> <a href="/platform-developers/authentication/pattern-b-isolated">Isolated Organizations</a></li>
-<li><strong>Auth0 Config:</strong> <a href="/platform-developers/authentication/auth0-configuration">Auth0 Configuration</a></li>
-<li><strong>Flex SSO:</strong> <a href="/platform-developers/authentication/twilio-flex-sso">Twilio Flex SSO</a></li>
-<li><strong>Troubleshooting:</strong> <a href="/platform-developers/authentication/troubleshooting">Authentication Troubleshooting</a></li>
+<li><strong>Overview:</strong> <a href="/techops/account-provisioning/authentication/overview">Identity Architecture</a></li>
+<li><strong>Pattern A:</strong> <a href="/techops/account-provisioning/authentication/pattern-a-multi-program">Multi-Program Setup</a></li>
+<li><strong>Pattern B:</strong> <a href="/techops/account-provisioning/authentication/pattern-b-isolated">Isolated Organizations</a></li>
+<li><strong>Auth0 Config:</strong> <a href="/techops/account-provisioning/authentication/auth0-configuration">Auth0 Configuration</a></li>
+<li><strong>Flex SSO:</strong> <a href="/techops/account-provisioning/authentication/twilio-flex-sso">Twilio Flex SSO</a></li>
+<li><strong>Troubleshooting:</strong> <a href="/techops/account-provisioning/authentication/troubleshooting">Authentication Troubleshooting</a></li>
 </ul>
 <hr>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Testing Best Practice</div><div class="admonitionContent_BuS1"><p>Test with real user accounts that will be used in production. Testing with dummy accounts can miss issues that only appear with actual users and realistic metadata.</p></div></div>

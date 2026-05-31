@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Authentication Troubleshooting Guide | Connie Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.connie.one/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.connie.one/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.connie.one/techops/account-provisioning/authentication/troubleshooting"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Authentication Troubleshooting Guide | Connie Documentation"><meta data-rh="true" name="description" content="Comprehensive troubleshooting guide for Auth0 + Twilio Flex SSO issues."><meta data-rh="true" property="og:description" content="Comprehensive troubleshooting guide for Auth0 + Twilio Flex SSO issues."><link data-rh="true" rel="icon" href="/img/logos/connie-rtc-icon.png"><link data-rh="true" rel="canonical" href="https://docs.connie.one/techops/account-provisioning/authentication/troubleshooting"><link data-rh="true" rel="alternate" href="https://docs.connie.one/techops/account-provisioning/authentication/troubleshooting" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.connie.one/techops/account-provisioning/authentication/troubleshooting" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"⚙️ Connie TechOps","item":"https://docs.connie.one/techops/overview"},{"@type":"ListItem","position":2,"name":"Troubleshooting","item":"https://docs.connie.one/techops/account-provisioning/authentication/troubleshooting"}]}</script><link rel="stylesheet" href="https://assets.twilio.com/public_assets/paste-fonts/1.5.1/fonts.css"><link rel="stylesheet" href="/assets/css/styles.0069209e.css">
-<script src="/assets/js/runtime~main.e3743cfd.js" defer="defer"></script>
-<script src="/assets/js/main.67abfc98.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.77b76beb.js" defer="defer"></script>
+<script src="/assets/js/main.5f5f448a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
@@ -36,13 +36,13 @@
 Pattern A (multi-program) architecture used when Pattern B (isolated organizations) was required.</p>
 <p><strong>Diagnosis:</strong></p>
 <ol>
-<li>Review <a href="/platform-developers/authentication/overview#-decision-matrix-which-pattern">Decision Matrix</a></li>
+<li>Review <a href="/techops/account-provisioning/authentication/overview#-decision-matrix-which-pattern">Decision Matrix</a></li>
 <li>Confirm organizations are legally independent entities</li>
 <li>Check Auth0 tenant - are users from multiple orgs present?</li>
 </ol>
 <p><strong>Fix: Migrate to Pattern B</strong></p>
 <p><strong>Step 1: Create Separate Auth0 Tenant for Organization B</strong></p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Follow: Pattern B Documentation</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Guide: /platform-developers/authentication/pattern-b-isolated</span><br></span></code></pre></div></div>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Follow: Pattern B Documentation</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Guide: /techops/account-provisioning/authentication/pattern-b-isolated</span><br></span></code></pre></div></div>
 <p><strong>Step 2: Recreate Organization B Users</strong></p>
 <ul>
 <li>Add Organization B users to new Auth0 tenant</li>
@@ -69,7 +69,7 @@ Pattern A (multi-program) architecture used when Pattern B (isolated organizatio
 </ul>
 <p><strong>Prevention:</strong></p>
 <ul>
-<li>Always use <a href="/platform-developers/authentication/overview#-decision-matrix-which-pattern">Decision Matrix</a> before onboarding</li>
+<li>Always use <a href="/techops/account-provisioning/authentication/overview#-decision-matrix-which-pattern">Decision Matrix</a> before onboarding</li>
 <li>Document pattern choice with rationale</li>
 <li>Review with CEO when uncertain</li>
 </ul>
@@ -98,7 +98,7 @@ Pattern B (isolated) used when Pattern A (multi-program) was sufficient.</p>
 <li>Simpler maintenance</li>
 </ul>
 <p><strong>Migration Path:</strong></p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Follow: Pattern A Documentation</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Guide: /platform-developers/authentication/pattern-a-multi-program</span><br></span></code></pre></div></div>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Follow: Pattern A Documentation</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Guide: /techops/account-provisioning/authentication/pattern-a-multi-program</span><br></span></code></pre></div></div>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="-login-failures">🔐 Login Failures<a href="#-login-failures" class="hash-link" aria-label="Direct link to 🔐 Login Failures" title="Direct link to 🔐 Login Failures">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="login-redirect-loop">Login Redirect Loop<a href="#login-redirect-loop" class="hash-link" aria-label="Direct link to Login Redirect Loop" title="Direct link to Login Redirect Loop">​</a></h3>
@@ -452,8 +452,8 @@ SAML certificate expired or Flex has old certificate.</p>
 <p>If troubleshooting steps don&#x27;t resolve the issue:</p>
 <p><strong>Step 1: Check Documentation</strong></p>
 <ul>
-<li>Review <a href="/platform-developers/authentication/overview">Overview</a></li>
-<li>Confirm pattern choice with <a href="/platform-developers/authentication/overview#-decision-matrix-which-pattern">Decision Matrix</a></li>
+<li>Review <a href="/techops/account-provisioning/authentication/overview">Overview</a></li>
+<li>Confirm pattern choice with <a href="/techops/account-provisioning/authentication/overview#-decision-matrix-which-pattern">Decision Matrix</a></li>
 <li>Re-read applicable pattern guide</li>
 </ul>
 <p><strong>Step 2: Collect Diagnostic Info</strong></p>
@@ -473,12 +473,12 @@ SAML certificate expired or Flex has old certificate.</p>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="-related-documentation">📖 Related Documentation<a href="#-related-documentation" class="hash-link" aria-label="Direct link to 📖 Related Documentation" title="Direct link to 📖 Related Documentation">​</a></h2>
 <ul>
-<li><strong>Overview:</strong> <a href="/platform-developers/authentication/overview">Identity Architecture</a></li>
-<li><strong>Pattern A:</strong> <a href="/platform-developers/authentication/pattern-a-multi-program">Multi-Program Setup</a></li>
-<li><strong>Pattern B:</strong> <a href="/platform-developers/authentication/pattern-b-isolated">Isolated Organizations</a></li>
-<li><strong>Auth0 Config:</strong> <a href="/platform-developers/authentication/auth0-configuration">Auth0 Configuration Guide</a></li>
-<li><strong>Flex SSO:</strong> <a href="/platform-developers/authentication/twilio-flex-sso">Twilio Flex SSO Setup</a></li>
-<li><strong>Testing:</strong> <a href="/platform-developers/authentication/testing-checklist">Testing Checklist</a></li>
+<li><strong>Overview:</strong> <a href="/techops/account-provisioning/authentication/overview">Identity Architecture</a></li>
+<li><strong>Pattern A:</strong> <a href="/techops/account-provisioning/authentication/pattern-a-multi-program">Multi-Program Setup</a></li>
+<li><strong>Pattern B:</strong> <a href="/techops/account-provisioning/authentication/pattern-b-isolated">Isolated Organizations</a></li>
+<li><strong>Auth0 Config:</strong> <a href="/techops/account-provisioning/authentication/auth0-configuration">Auth0 Configuration Guide</a></li>
+<li><strong>Flex SSO:</strong> <a href="/techops/account-provisioning/authentication/twilio-flex-sso">Twilio Flex SSO Setup</a></li>
+<li><strong>Testing:</strong> <a href="/techops/account-provisioning/authentication/testing-checklist">Testing Checklist</a></li>
 </ul>
 <hr>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Prevention is Better Than Cure</div><div class="admonitionContent_BuS1"><p>Most authentication issues stem from:</p><ol>
