@@ -48,11 +48,11 @@ Choose your web forms service provider below to view setup instructions and inte
   
   <div style={{textAlign: 'center', width: '200px'}}>
     <div style={{height: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '10px'}}>
-      <Link to="/end-users/cbo-admins/channels/web/web-forms/adobe-acrobat-sign">
+      <Link to="/end-users/administrators/channels/web/web-forms/adobe-acrobat-sign">
         <img src="/img/providers/adobe-logo-placeholder.png" alt="Adobe Acrobat Sign" style={{maxWidth: '180px', maxHeight: '60px', objectFit: 'contain'}} />
       </Link>
     </div>
-    <Link to="/end-users/cbo-admins/channels/web/web-forms/adobe-acrobat-sign" style={{textDecoration: 'none', fontWeight: 'bold'}}>
+    <Link to="/end-users/administrators/channels/web/web-forms/adobe-acrobat-sign" style={{textDecoration: 'none', fontWeight: 'bold'}}>
       Setup Guide Available
     </Link>
     <div style={{fontSize: '12px', color: '#666', marginTop: '5px'}}>

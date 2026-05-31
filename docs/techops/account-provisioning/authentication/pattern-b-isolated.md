@@ -70,7 +70,7 @@ Before beginning setup:
 - ✅ Confirmed that organizations are legally independent
 
 :::warning Check Your Pattern
-Before proceeding, verify this is the correct pattern using the [Decision Matrix](/platform-developers/authentication/overview#-decision-matrix-which-pattern).
+Before proceeding, verify this is the correct pattern using the [Decision Matrix](/techops/account-provisioning/authentication/overview#-decision-matrix-which-pattern).
 
 **Common Mistake:** Using Pattern B when Pattern A (multi-program) is actually needed.
 :::
@@ -231,7 +231,7 @@ exports.onExecutePostLogin = async (event, api) => {
 };
 ```
 
-**Note:** Pattern B typically does NOT need team attributes unless the organization internally uses multi-program structure. If they do, see [Pattern A](/platform-developers/authentication/pattern-a-multi-program) for team attribute configuration.
+**Note:** Pattern B typically does NOT need team attributes unless the organization internally uses multi-program structure. If they do, see [Pattern A](/techops/account-provisioning/authentication/pattern-a-multi-program) for team attribute configuration.
 
 **4.3 Deploy the Action**
 - Click **Deploy**
@@ -298,7 +298,7 @@ Location: Auth0 → User Management → Users → Create User
 
 ### Step 6: Configure Twilio Flex SSO
 
-See: [Twilio Flex SSO Configuration](/platform-developers/authentication/twilio-flex-sso) for detailed SSO setup steps.
+See: [Twilio Flex SSO Configuration](/techops/account-provisioning/authentication/twilio-flex-sso) for detailed SSO setup steps.
 
 **Key Differences for Pattern B:**
 - Use the **new Auth0 tenant's** SAML metadata URL
@@ -326,7 +326,7 @@ After configuration, validate that organizations are completely isolated.
 - Organization B users see only Organization B data
 - No shared Teams View or resources
 
-See: [Testing Checklist](/platform-developers/authentication/testing-checklist) for comprehensive testing protocol.
+See: [Testing Checklist](/techops/account-provisioning/authentication/testing-checklist) for comprehensive testing protocol.
 
 ---
 
@@ -409,7 +409,7 @@ Location: Auth0 → User Management → Users (with search/filter)
 ### ❌ Confusing Pattern A vs Pattern B
 **Symptom:** Over-complicated setup or insufficient isolation
 **Cause:** Wrong pattern chosen for use case
-**Fix:** Review [Decision Matrix](/platform-developers/authentication/overview#-decision-matrix-which-pattern)
+**Fix:** Review [Decision Matrix](/techops/account-provisioning/authentication/overview#-decision-matrix-which-pattern)
 
 ---
 
@@ -431,7 +431,7 @@ Location: Auth0 → User Management → Users (with search/filter)
 
 ## 🆘 Troubleshooting
 
-See: [Authentication Troubleshooting Guide](/platform-developers/authentication/troubleshooting) for detailed debugging steps.
+See: [Authentication Troubleshooting Guide](/techops/account-provisioning/authentication/troubleshooting) for detailed debugging steps.
 
 **Pattern B Specific Issues:**
 
@@ -447,10 +447,10 @@ See: [Authentication Troubleshooting Guide](/platform-developers/authentication/
 
 ## 📖 Next Steps
 
-- **Configure Auth0:** [Auth0 Configuration Reference](/platform-developers/authentication/auth0-configuration)
-- **Setup Flex SSO:** [Twilio Flex SSO Guide](/platform-developers/authentication/twilio-flex-sso)
-- **Test Deployment:** [Testing Checklist](/platform-developers/authentication/testing-checklist)
+- **Configure Auth0:** [Auth0 Configuration Reference](/techops/account-provisioning/authentication/auth0-configuration)
+- **Setup Flex SSO:** [Twilio Flex SSO Guide](/techops/account-provisioning/authentication/twilio-flex-sso)
+- **Test Deployment:** [Testing Checklist](/techops/account-provisioning/authentication/testing-checklist)
 
 :::tip Pattern A Instead?
-If your client has multiple programs within a single legal entity, consider [Pattern A: Multi-Program Setup](/platform-developers/authentication/pattern-a-multi-program) for simpler management.
+If your client has multiple programs within a single legal entity, consider [Pattern A: Multi-Program Setup](/techops/account-provisioning/authentication/pattern-a-multi-program) for simpler management.
 :::

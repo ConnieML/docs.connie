@@ -129,8 +129,8 @@ These features will require modification for usage in a production setting. They
 
 | Feature                                              | Description                                                                                         | Availability |
 | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------ |
-| [Chat-to-Video Escalation](chat-to-video-escalation) | _provide agents ability to elevate a chat conversation to a video conversation with screen sharing_ | 🔬 |
-| [Multi-call](multi-call)                             | _allow agents to receive a transferred call while already on a call_                                | 🔬 |
+| [Chat-to-Video Escalation](overview2/chat-to-video-escalation) | _provide agents ability to elevate a chat conversation to a video conversation with screen sharing_ | 🔬 |
+| [Multi-call](overview2/multi-call)                             | _allow agents to receive a transferred call while already on a call_                                | 🔬 |
 
 </TabItem>
 </Tabs>

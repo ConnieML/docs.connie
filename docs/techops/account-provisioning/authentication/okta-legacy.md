@@ -23,7 +23,7 @@ This documentation is preserved for:
 
 This legacy documentation demonstrates that ConnieRTC **supports both Auth0 and OKTA** as identity providers. The architectural patterns and principles described in this authentication section apply to OKTA as well as Auth0.
 
-**Current Recommendation:** Use [Auth0 Configuration](/platform-developers/authentication/auth0-configuration) for active deployments.
+**Current Recommendation:** Use [Auth0 Configuration](/techops/account-provisioning/authentication/auth0-configuration) for active deployments.
 
 ---
 
@@ -143,7 +143,7 @@ If future requirements necessitate OKTA:
 
 ## 📊 OKTA Pattern Support
 
-Both [Pattern A (Multi-Program)](/platform-developers/authentication/pattern-a-multi-program) and [Pattern B (Isolated Organizations)](/platform-developers/authentication/pattern-b-isolated) work with OKTA:
+Both [Pattern A (Multi-Program)](/techops/account-provisioning/authentication/pattern-a-multi-program) and [Pattern B (Isolated Organizations)](/techops/account-provisioning/authentication/pattern-b-isolated) work with OKTA:
 
 ### Pattern A with OKTA
 
@@ -296,10 +296,10 @@ ConnieRTC's authentication architecture was designed with **provider agnosticism
 
 ## 📖 Related Documentation
 
-- **Current Standard:** [Auth0 Configuration](/platform-developers/authentication/auth0-configuration)
-- **Architecture Overview:** [Identity & Multi-Tenant Architecture](/platform-developers/authentication/overview)
-- **Pattern A:** [Multi-Program Setup](/platform-developers/authentication/pattern-a-multi-program)
-- **Pattern B:** [Isolated Organizations](/platform-developers/authentication/pattern-b-isolated)
+- **Current Standard:** [Auth0 Configuration](/techops/account-provisioning/authentication/auth0-configuration)
+- **Architecture Overview:** [Identity & Multi-Tenant Architecture](/techops/account-provisioning/authentication/overview)
+- **Pattern A:** [Multi-Program Setup](/techops/account-provisioning/authentication/pattern-a-multi-program)
+- **Pattern B:** [Isolated Organizations](/techops/account-provisioning/authentication/pattern-b-isolated)
 
 ---
 
@@ -308,7 +308,7 @@ ConnieRTC's authentication architecture was designed with **provider agnosticism
 **Considering OKTA for your deployment?**
 
 Before implementing OKTA:
-1. Review [Decision Matrix](/platform-developers/authentication/overview#-decision-matrix-which-pattern) for pattern choice
+1. Review [Decision Matrix](/techops/account-provisioning/authentication/overview#-decision-matrix-which-pattern) for pattern choice
 2. Consult with Connie CTO on implementation strategy
 3. Consider Auth0 vs OKTA for your specific requirements
 4. Document rationale for provider choice
@@ -324,5 +324,5 @@ This documentation exists to demonstrate ConnieRTC's **provider-agnostic archite
 :::
 
 :::tip Currently Using Auth0?
-You're in the right place! Follow the [Auth0 Configuration Guide](/platform-developers/authentication/auth0-configuration) for active deployment documentation.
+You're in the right place! Follow the [Auth0 Configuration Guide](/techops/account-provisioning/authentication/auth0-configuration) for active deployment documentation.
 :::

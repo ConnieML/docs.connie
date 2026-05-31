@@ -20,5 +20,5 @@ Advanced email configuration options are currently under development.
 ## Current Options
 
 For now, see the main email provider setup guides:
-- [Mailgun Setup](./mailgun-setup)
+- Mailgun Setup
 - [SendGrid Setup](./sendgrid-setup)

@@ -13,7 +13,7 @@ This workflow encapsulates the logic for deploying the entire template. It can b
 1. Validates that the environment secrets and variables required for deployment are present and valid, and that the ConnieRTC account is configured properly
 1. Sets the `ENVIRONMENT` variable based on the selected environment
 1. Deploys all serverless services and add-ons
-   - As part of this process, the setup script executes in order to generate the environment file used by the deployment. See [serverless configuration](/techops/codebase/template-utilities/configuration#serverless-configuration) for details on how this works.
+   - As part of this process, the setup script executes in order to generate the environment file used by the deployment. See serverless configuration for details on how this works.
    - To deploy add-ons, `npm run deploy-addons` is executed from the top level directory.
    - Within the serverless package(s), the `npm run deploy` command is executed to perform the deployment. This is performed after deploying add-ons.
 1. Deploys Terraform
@@ -44,7 +44,7 @@ Determines whether the source of truth for configuration is the repository or th
 
 Location: `.github/examples/merge_deploy.yaml`
 
-This workflow is an example of how you can call the [Deploy ConnieRTC](#deploy-flex) workflow in response to events. This example will deploy whenever a commit is pushed to the `main` or `develop` branches, using the 'production' environment when pushing to the main branch, or 'dev' environment when pushing to the develop branch.
+This workflow is an example of how you can call the Deploy ConnieRTC workflow in response to events. This example will deploy whenever a commit is pushed to the `main` or `develop` branches, using the 'production' environment when pushing to the main branch, or 'dev' environment when pushing to the develop branch.
 
 To use this workflow, move it to the `.github/workflows` directory and make the necessary adjustments for your use case.
 

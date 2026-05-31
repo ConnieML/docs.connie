@@ -12,8 +12,8 @@ Connie provides comprehensive web-based communication solutions designed specifi
 
 ### Web Forms Integration
 Transform your website forms into automated workflows that create tasks directly in ConnieRTC.
-- [Web Forms Provider Selection](/end-users/cbo-admins/channels/web/web-forms/select-provider)
-- [Adobe Acrobat Sign Setup](/end-users/cbo-admins/channels/web/web-forms/adobe-acrobat-sign)
+- [Web Forms Provider Selection](/end-users/administrators/channels/web/web-forms/select-provider)
+- [Adobe Acrobat Sign Setup](/end-users/administrators/channels/web/web-forms/adobe-acrobat-sign)
 
 ## How Web Integration Works
 

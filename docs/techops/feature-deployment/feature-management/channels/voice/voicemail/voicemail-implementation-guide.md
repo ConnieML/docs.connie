@@ -307,7 +307,7 @@ if (!transcriptionText && event.TranscriptionUrl) {
 - [Transcription](/techops/feature-deployment/feature-management/channels/voice/add-ons/transcription)
 
 ### Email Provider Setup
-- [Mailgun Setup](./email-providers/mailgun-setup)
+- Mailgun Setup
 - [SendGrid Setup](./email-providers/sendgrid-setup)
 
 ### Troubleshooting

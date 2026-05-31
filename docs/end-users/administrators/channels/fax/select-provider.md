@@ -45,13 +45,13 @@ Choose your fax service provider below to view setup instructions and integratio
   
   <div style={{textAlign: 'center', width: '200px'}}>
     <div style={{height: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '10px'}}>
-      <Link to="/developers/backend/fax/sinch-implementation">
+      <span>
         <img src="/img/providers/sinch-logo-placeholder.png" alt="Sinch Fax" style={{maxWidth: '180px', maxHeight: '60px', objectFit: 'contain'}} />
-      </Link>
+      </span>
     </div>
-    <Link to="/developers/backend/fax/sinch-implementation" style={{textDecoration: 'none', fontWeight: 'bold'}}>
+    <span style={{textDecoration: 'none', fontWeight: 'bold'}}>
       Setup Guide Available
-    </Link>
+    </span>
     <div style={{fontSize: '12px', color: '#666', marginTop: '5px'}}>
       ✅ Production Ready<br/>
       💰 $0.045/page

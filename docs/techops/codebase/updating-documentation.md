@@ -29,7 +29,7 @@ Our documentation is organized by audience:
 docs/docs/
 ├── 00_introduction.md           # Landing page with audience selection
 ├── end-users/                   # End-user documentation
-│   ├── cbo-admins/             # CBO administrators
+│   ├── administrators/             # CBO administrators
 │   ├── supervisors/            # Team supervisors
 │   └── staff-agents/           # Call center agents
 ├── techops/                     # Internal operations (this section)
@@ -82,7 +82,7 @@ Edit Markdown files in `docs/docs/` using your preferred editor:
 
 ```bash
 # Example: Update CBO admin getting started guide
-vim docs/docs/end-users/cbo-admins/getting-started.md
+vim docs/docs/end-users/administrators/getting-started.md
 ```
 
 ### 2. Preview Changes

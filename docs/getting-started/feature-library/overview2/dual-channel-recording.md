@@ -7,7 +7,7 @@ import PluginLibraryFeature from "./_plugin-library-feature.md";
 :::info Native feature available
 Native dual-channel recording is now available and can be enabled via the Twilio Console. The first agent to join the call will be on the left channel, and the other participants on the right channel. See [the changelog entry](https://www.twilio.com/en-us/changelog/dual-channel-voice-conference-recordings) for more details, including restrictions and instructions to enable.
 
-This template feature will remain available for use cases that are not supported by the native feature. If you need the conditional recording functionality that this feature provides, you can use [the `conditional-recording` feature](/getting-started/feature-library/conditional-recording) instead, which works with the native recording functionality.
+This template feature will remain available for use cases that are not supported by the native feature. If you need the conditional recording functionality that this feature provides, you can use [the `conditional-recording` feature](/getting-started/feature-library/overview2/conditional-recording) instead, which works with the native recording functionality.
 :::
 
 <PluginLibraryFeature />

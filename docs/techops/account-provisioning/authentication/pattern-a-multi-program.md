@@ -250,7 +250,7 @@ Location: Actions → Add Flex Roles to SAML → Top right
 
 ### Step 4: Configure Twilio Flex SSO
 
-See: [Twilio Flex SSO Configuration](/platform-developers/authentication/twilio-flex-sso) for detailed SSO setup steps.
+See: [Twilio Flex SSO Configuration](/techops/account-provisioning/authentication/twilio-flex-sso) for detailed SSO setup steps.
 
 **Quick Reference:**
 1. Configure SAML application in Auth0
@@ -281,7 +281,7 @@ After configuration, validate that team-based visibility works correctly.
 - Expected: Sees ALL program teams in Teams View
 - Expected: Full administrative controls
 
-See: [Testing Checklist](/platform-developers/authentication/testing-checklist) for comprehensive testing protocol.
+See: [Testing Checklist](/techops/account-provisioning/authentication/testing-checklist) for comprehensive testing protocol.
 
 ---
 
@@ -395,7 +395,7 @@ No changes to Auth0 Action or Flex configuration required—team attributes hand
 
 ## 🆘 Troubleshooting
 
-See: [Authentication Troubleshooting Guide](/platform-developers/authentication/troubleshooting) for detailed debugging steps.
+See: [Authentication Troubleshooting Guide](/techops/account-provisioning/authentication/troubleshooting) for detailed debugging steps.
 
 **Quick Checks:**
 1. Verify user metadata in Auth0 includes `flex.team`
@@ -408,10 +408,10 @@ See: [Authentication Troubleshooting Guide](/platform-developers/authentication/
 
 ## 📖 Next Steps
 
-- **Configure Auth0:** [Auth0 Configuration Reference](/platform-developers/authentication/auth0-configuration)
-- **Setup Flex SSO:** [Twilio Flex SSO Guide](/platform-developers/authentication/twilio-flex-sso)
-- **Test Deployment:** [Testing Checklist](/platform-developers/authentication/testing-checklist)
+- **Configure Auth0:** [Auth0 Configuration Reference](/techops/account-provisioning/authentication/auth0-configuration)
+- **Setup Flex SSO:** [Twilio Flex SSO Guide](/techops/account-provisioning/authentication/twilio-flex-sso)
+- **Test Deployment:** [Testing Checklist](/techops/account-provisioning/authentication/testing-checklist)
 
 :::tip Pattern B Instead?
-If your client requires complete organizational isolation (separate legal entities), use [Pattern B: Isolated Organizations](/platform-developers/authentication/pattern-b-isolated) instead.
+If your client requires complete organizational isolation (separate legal entities), use [Pattern B: Isolated Organizations](/techops/account-provisioning/authentication/pattern-b-isolated) instead.
 :::

@@ -59,7 +59,7 @@ Voicemail in ConnieRTC follows a **Base Experience + Add-ons** model:
 
 | Provider | Description |
 |----------|-------------|
-| [Mailgun Setup](/techops/feature-deployment/feature-management/channels/voice/voicemail/email-providers/mailgun-setup) | Recommended provider for most organizations |
+| Mailgun Setup | Recommended provider for most organizations |
 | [SendGrid Setup](/techops/feature-deployment/feature-management/channels/voice/voicemail/email-providers/sendgrid-setup) | Alternative provider |
 
 ## Common Configurations

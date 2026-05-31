@@ -28,7 +28,7 @@ Want to be notified when test teams documentation is available?
 ## Current Resources
 
 While we're building dedicated test teams docs, you can:
-- Review the **[CBO Admin guides](../cbo-admins/getting-started)** for system understanding
+- Review the **[CBO Admin guides](../administrators/getting-started)** for system understanding
 - Join our **[Community Forum](https://community.connie.technology)** for testing discussions
 - Contact **[Quality Assurance Team](mailto:qa@connie.technology)** for testing support
 

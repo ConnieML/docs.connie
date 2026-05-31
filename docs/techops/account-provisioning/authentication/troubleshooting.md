@@ -34,7 +34,7 @@ This guide is organized by **symptom** → **diagnosis** → **fix** for common 
 Pattern A (multi-program) architecture used when Pattern B (isolated organizations) was required.
 
 **Diagnosis:**
-1. Review [Decision Matrix](/platform-developers/authentication/overview#-decision-matrix-which-pattern)
+1. Review [Decision Matrix](/techops/account-provisioning/authentication/overview#-decision-matrix-which-pattern)
 2. Confirm organizations are legally independent entities
 3. Check Auth0 tenant - are users from multiple orgs present?
 
@@ -43,7 +43,7 @@ Pattern A (multi-program) architecture used when Pattern B (isolated organizatio
 **Step 1: Create Separate Auth0 Tenant for Organization B**
 ```
 Follow: Pattern B Documentation
-Guide: /platform-developers/authentication/pattern-b-isolated
+Guide: /techops/account-provisioning/authentication/pattern-b-isolated
 ```
 
 **Step 2: Recreate Organization B Users**
@@ -67,7 +67,7 @@ Guide: /platform-developers/authentication/pattern-b-isolated
 - Notify users of any URL changes
 
 **Prevention:**
-- Always use [Decision Matrix](/platform-developers/authentication/overview#-decision-matrix-which-pattern) before onboarding
+- Always use [Decision Matrix](/techops/account-provisioning/authentication/overview#-decision-matrix-which-pattern) before onboarding
 - Document pattern choice with rationale
 - Review with CEO when uncertain
 
@@ -99,7 +99,7 @@ Pattern B (isolated) used when Pattern A (multi-program) was sufficient.
 **Migration Path:**
 ```
 Follow: Pattern A Documentation
-Guide: /platform-developers/authentication/pattern-a-multi-program
+Guide: /techops/account-provisioning/authentication/pattern-a-multi-program
 ```
 
 ---
@@ -708,8 +708,8 @@ When authentication issues occur, work through this checklist:
 If troubleshooting steps don't resolve the issue:
 
 **Step 1: Check Documentation**
-- Review [Overview](/platform-developers/authentication/overview)
-- Confirm pattern choice with [Decision Matrix](/platform-developers/authentication/overview#-decision-matrix-which-pattern)
+- Review [Overview](/techops/account-provisioning/authentication/overview)
+- Confirm pattern choice with [Decision Matrix](/techops/account-provisioning/authentication/overview#-decision-matrix-which-pattern)
 - Re-read applicable pattern guide
 
 **Step 2: Collect Diagnostic Info**
@@ -728,12 +728,12 @@ If troubleshooting steps don't resolve the issue:
 
 ## 📖 Related Documentation
 
-- **Overview:** [Identity Architecture](/platform-developers/authentication/overview)
-- **Pattern A:** [Multi-Program Setup](/platform-developers/authentication/pattern-a-multi-program)
-- **Pattern B:** [Isolated Organizations](/platform-developers/authentication/pattern-b-isolated)
-- **Auth0 Config:** [Auth0 Configuration Guide](/platform-developers/authentication/auth0-configuration)
-- **Flex SSO:** [Twilio Flex SSO Setup](/platform-developers/authentication/twilio-flex-sso)
-- **Testing:** [Testing Checklist](/platform-developers/authentication/testing-checklist)
+- **Overview:** [Identity Architecture](/techops/account-provisioning/authentication/overview)
+- **Pattern A:** [Multi-Program Setup](/techops/account-provisioning/authentication/pattern-a-multi-program)
+- **Pattern B:** [Isolated Organizations](/techops/account-provisioning/authentication/pattern-b-isolated)
+- **Auth0 Config:** [Auth0 Configuration Guide](/techops/account-provisioning/authentication/auth0-configuration)
+- **Flex SSO:** [Twilio Flex SSO Setup](/techops/account-provisioning/authentication/twilio-flex-sso)
+- **Testing:** [Testing Checklist](/techops/account-provisioning/authentication/testing-checklist)
 
 ---
 

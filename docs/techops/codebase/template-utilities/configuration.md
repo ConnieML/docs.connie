@@ -175,11 +175,11 @@ There are two strategies for managing the configuration, which are mutually excl
 
 #### Admin UI
 
-You can use the [admin-ui feature](/getting-started/feature-library/admin-ui), which is the default management style, to manage the configuration from within the ConnieRTC UI. This method is preferable when configuration needs to be changed frequently, or when non-developers need to be able to view and update the configuration.
+You can use the [admin-ui feature](/getting-started/feature-library/overview2/admin-ui), which is the default management style, to manage the configuration from within the ConnieRTC UI. This method is preferable when configuration needs to be changed frequently, or when non-developers need to be able to view and update the configuration.
 
 :::tip Developer Tip 
 
-When running [locally](#local-environment), the admin-ui feature directly ignores what is in `appConfig.js` and shows only what is in [hosted ConnieRTC configuration](https://www.twilio.com/docs/flex/developer/config/flex-configuration-rest-api#ui_attributes) or what has been overridden using the [per-worker feature overrides](/getting-started/feature-library/admin-ui#how-does-it-work).  This can cause confusion, and for that reason, admin-ui is disabled by default via `appConfig.js` when running the template locally.
+When running [locally](#local-environment), the admin-ui feature directly ignores what is in `appConfig.js` and shows only what is in [hosted ConnieRTC configuration](https://www.twilio.com/docs/flex/developer/config/flex-configuration-rest-api#ui_attributes) or what has been overridden using the [per-worker feature overrides](/getting-started/feature-library/overview2/admin-ui#how-does-it-work).  This can cause confusion, and for that reason, admin-ui is disabled by default via `appConfig.js` when running the template locally.
 
 ::: 
 
@@ -189,7 +189,7 @@ When using this strategy, configuration can still be updated from outside the Ad
 
 Alternatively, you can also choose to manage the configuration via version control. This method is preferable when change control procedures are required within your organization, as configuration is stored and managed within the code repository, and deployed as part of the standard deployment scripts.
 
-As the default management style is to use the [admin-ui feature](/getting-started/feature-library/admin-ui), when doing a deploy of flex-config, it will only deploy the *net new* changes by merging the new config with that which is deployed already. To override this behavior, and deploy exactly what is in version control, you can select the `Override config set by Admin UI Panel?` option when deploying via the GitHub Actions script:
+As the default management style is to use the [admin-ui feature](/getting-started/feature-library/overview2/admin-ui), when doing a deploy of flex-config, it will only deploy the *net new* changes by merging the new config with that which is deployed already. To override this behavior, and deploy exactly what is in version control, you can select the `Override config set by Admin UI Panel?` option when deploying via the GitHub Actions script:
 
 <img src={GithubOverrideConfig} style={{width: 250}} />
 <br/><br/>

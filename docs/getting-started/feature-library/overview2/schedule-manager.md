@@ -26,7 +26,7 @@ To allow for greater scalability than provided by Twilio Sync and some other sol
 
 ## Installation
 
-If you have performed [the recommended steps to deploy the template](/developers/install-template), or followed the steps to [deploy from your local machine](/developers/building/deployment/local-deployment), the schedule manager has already been deployed for you.
+If you have performed the recommended steps to deploy the template, or followed the steps to deploy from your local machine, the schedule manager has already been deployed for you.
 
 <details>
 <summary>Manual instructions for reference</summary>

@@ -80,7 +80,7 @@ Connie automatically:
 
 **Features involved:** Voice Direct, Workflow Manager, Unified Channel Manager
 
-[→ Set up automated call handling](/solutions/call-management)
+→ Set up automated call handling
 
 </details>
 
@@ -95,7 +95,7 @@ Connie enables:
 
 **Features involved:** SMS Channel, Unified Channel Manager, Canned Responses
 
-[→ Enable texting on your number](/solutions/sms-enablement)
+→ Enable texting on your number
 
 </details>
 
@@ -110,7 +110,7 @@ Connie provides:
 
 **Features involved:** Fax Channel, Email Notifications, Workflow Manager
 
-[→ Set up digital fax](/solutions/digital-fax)
+→ Set up digital fax
 
 </details>
 
@@ -125,7 +125,7 @@ Connie offers:
 
 **Features involved:** Schedule Manager, Voice Direct, Mobile Access
 
-[→ Configure after-hours coverage](/solutions/after-hours)
+→ Configure after-hours coverage
 
 </details>
 

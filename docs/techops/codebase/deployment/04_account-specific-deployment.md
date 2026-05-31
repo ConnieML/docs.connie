@@ -370,7 +370,7 @@ twilio serverless:list --properties serviceSid,friendlyName
 - [CI Deployment](/techops/codebase/deployment/ci-deployment) - GitHub Actions deployment
 - [Local Deployment](/techops/codebase/deployment/local-deployment) - Local development deployment
 - [Voicemail Implementation](/techops/feature-deployment/feature-management/channels/voice/voicemail/voicemail-implementation-guide) - Uses this deployment protocol
-- [Twilio Profile Management](/developers/building/twilio-profile-management) - CLI profile setup
+- Twilio Profile Management - CLI profile setup
 
 ---
 

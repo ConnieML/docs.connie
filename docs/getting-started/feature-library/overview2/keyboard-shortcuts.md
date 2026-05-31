@@ -79,7 +79,7 @@ Twilio ConnieRTC comes with a list of default shortcuts which can be found [here
 
 ### Custom keyboard shortcuts
 
-The following list of custom shortcuts are all custom values preconfigured as a part of this feature using a [keyboard-shortcuts ConnieRTC hook](/developers/building/flex-hooks/keyboard-shortcuts).
+The following list of custom shortcuts are all custom values preconfigured as a part of this feature using a keyboard-shortcuts ConnieRTC hook.
 
 | Action                            | Description                                                                                                                                                                                                                | Shortcut               |
 | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |

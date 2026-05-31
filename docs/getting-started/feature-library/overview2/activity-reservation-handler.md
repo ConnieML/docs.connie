@@ -69,7 +69,7 @@ The reason we cannot change the agent's state directly to the correct resolved s
 }
 ```
 
-This feature depends on a configured set of Activities for the different ACD states. After [enabling](/developers/building/template-utilities/configuration#configuration-management) the feature the following configuration is required
+This feature depends on a configured set of Activities for the different ACD states. After enabling the feature the following configuration is required
 
 The following are the descriptions of the configuration objects and what they represent 
 
@@ -88,11 +88,11 @@ this object allows the administrator to customize which activity names to use fo
 
 #### terraform
 
-A terraform deploy will deploy the default Activities that are assigned. If you wish to change these you can [modify the terraform definitions](/developers/building/template-utilities/terraform) to create the activities you wish to use and you can modify the feature configuration using your preferred [configuration management](/developers/building/template-utilities/configuration) method.
+A terraform deploy will deploy the default Activities that are assigned. If you wish to change these you can modify the terraform definitions to create the activities you wish to use and you can modify the feature configuration using your preferred configuration management method.
 
 #### manual setup 
 
-If you are not using terraform you can create the activities manually in the [console](https://twilio.com/console).  You can then modify the feature configuration using your preferred [configuration management](/developers/building/template-utilities/configuration) method.
+If you are not using terraform you can create the activities manually in the [console](https://twilio.com/console).  You can then modify the feature configuration using your preferred configuration management method.
 
 ## Custom Changes
 
@@ -119,7 +119,7 @@ As we want to place a worker into a variant of the `On A Task` activity while th
 
 #### supervisor worker updates
 
-As vanilla ConnieRTC enables a supervisor to move an agents activity from the TeamsView.  It is possible for such a change to interfere with the agents-Activity correctly reflecting the agents tasks-in-flight.  Although "system activities" such as `On A Task` are rejected if the supervisor tries to select them.  To preserve existing functionality, non "system activities" are not.  The state change will be pushed and the `workerActivityUpdated` event handler on the agents side will then push the agent back into the correct "system activity" they are supposed to be in. Note [Known Issue 2](#issue-two). If a supervisor wishes to move an agent to a non "system activity" while the agent has tasks in flight, the agent will first need to make sure the tasks are completed.  This can be accomplished by enabling the [supervisor-complete-reservation](/getting-started/feature-library/supervisor-complete-reservation) feature.
+As vanilla ConnieRTC enables a supervisor to move an agents activity from the TeamsView.  It is possible for such a change to interfere with the agents-Activity correctly reflecting the agents tasks-in-flight.  Although "system activities" such as `On A Task` are rejected if the supervisor tries to select them.  To preserve existing functionality, non "system activities" are not.  The state change will be pushed and the `workerActivityUpdated` event handler on the agents side will then push the agent back into the correct "system activity" they are supposed to be in. Note [Known Issue 2](#issue-two). If a supervisor wishes to move an agent to a non "system activity" while the agent has tasks in flight, the agent will first need to make sure the tasks are completed.  This can be accomplished by enabling the [supervisor-complete-reservation](/getting-started/feature-library/overview2/supervisor-complete-reservation) feature.
 
 
 ### sequence diagram

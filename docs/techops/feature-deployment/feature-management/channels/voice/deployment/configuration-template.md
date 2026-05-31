@@ -391,7 +391,7 @@ With this configuration template complete:
 1. **Validate Information**: Confirm all details with client stakeholders
 2. **Technical Verification**: Verify Connie account access and resources  
 3. **Begin Deployment**: Use [Pre-Deployment Checklist](/techops/feature-deployment/feature-management/channels/voice/deployment/pre-deployment-checklist)
-4. **Schedule Deployment**: Follow [Direct+ Deployment Guide](/techops/feature-deployment/feature-management/channels/voice/deployment/direct-plus-deployment-guide)
+4. **Schedule Deployment**: Follow Direct+ Deployment Guide
 
 ---
 

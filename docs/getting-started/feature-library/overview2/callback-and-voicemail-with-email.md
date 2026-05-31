@@ -91,7 +91,7 @@ Enable the feature in your ConnieRTC configuration:
 ### Mailgun Configuration
 
 For detailed Mailgun setup instructions, see:
-- [Mailgun Setup Guide](../developers/building/feature-management/channels/voice/voicemail/email-providers/mailgun-setup)
+- Mailgun Setup Guide
 
 Key steps include:
 
@@ -265,9 +265,9 @@ For high-volume deployments:
 ## Related Documentation
 
 - [Callback and Voicemail (Standard)](./callback-and-voicemail.md)
-- [Mailgun Email Setup](../developers/building/feature-management/channels/voice/voicemail/email-providers/mailgun-setup)
-- [SendGrid Email Setup](../developers/building/feature-management/channels/voice/voicemail/email-providers/sendgrid-setup)
-- [Voice Channel Overview](../end-users/cbo-admins/channels/voice/)
+- Mailgun Email Setup
+- [SendGrid Email Setup](/techops/feature-deployment/feature-management/channels/voice/voicemail/email-providers/sendgrid-setup)
+- [Voice Channel Overview](/end-users/administrators/channels/voice/)
 
 ## Support and Maintenance
 

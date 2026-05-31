@@ -1,7 +1,7 @@
 ---
 sidebar_label: "FAQ"
 title: "Staff Agent FAQ"
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 # Staff Agent Frequently Asked Questions

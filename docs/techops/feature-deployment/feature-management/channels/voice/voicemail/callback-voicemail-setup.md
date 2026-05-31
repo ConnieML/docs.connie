@@ -381,4 +381,4 @@ Common issues:
 - [Account-Specific Deployment](/techops/codebase/deployment/account-specific-deployment) - Deployment protocol
 - [Email Notifications](/techops/feature-deployment/feature-management/channels/voice/add-ons/email-notifications) - Email add-on
 - [Transcription](/techops/feature-deployment/feature-management/channels/voice/add-ons/transcription) - Transcription add-on
-- [Mailgun Setup](./email-providers/mailgun-setup) - Detailed Mailgun configuration
+- Mailgun Setup - Detailed Mailgun configuration

@@ -68,7 +68,7 @@ The new modular architecture provides:
 - [Transcription Add-On](/techops/feature-deployment/feature-management/channels/voice/add-ons/transcription) - Audio-to-text
 
 ### Legacy Resources (Existing Deployments)
-- [Mailgun Setup](/techops/feature-deployment/feature-management/channels/voice/voicemail/email-providers/mailgun-setup) - Email provider configuration
+- Mailgun Setup - Email provider configuration
 - [SendGrid Setup](/techops/feature-deployment/feature-management/channels/voice/voicemail/email-providers/sendgrid-setup) - Alternative email provider
 
 ## Need Help?

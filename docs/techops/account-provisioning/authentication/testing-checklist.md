@@ -46,8 +46,8 @@ Before beginning tests, ensure these are ready:
 - [ ] Incognito/private browser windows available
 
 ### Documentation Ready
-- [ ] [Overview Guide](/platform-developers/authentication/overview) for reference
-- [ ] [Troubleshooting Guide](/platform-developers/authentication/troubleshooting) for issues
+- [ ] [Overview Guide](/techops/account-provisioning/authentication/overview) for reference
+- [ ] [Troubleshooting Guide](/techops/account-provisioning/authentication/troubleshooting) for issues
 - [ ] Notepad for recording results
 
 ---
@@ -79,7 +79,7 @@ Before beginning tests, ensure these are ready:
 - Check callback URLs in Auth0
 - Verify user has `flex.roles: ["admin"]`
 - Review Auth0 logs for errors
-- See: [Login Failures](/platform-developers/authentication/troubleshooting#-login-failures)
+- See: [Login Failures](/techops/account-provisioning/authentication/troubleshooting#-login-failures)
 
 ---
 
@@ -105,7 +105,7 @@ Before beginning tests, ensure these are ready:
 - Verify `flex.roles: ["supervisor"]` in user metadata
 - Check Auth0 Action passes `roles` attribute
 - Check SAML attribute mapping in Flex
-- See: [Permission Issues](/platform-developers/authentication/troubleshooting#-permission-issues)
+- See: [Permission Issues](/techops/account-provisioning/authentication/troubleshooting#-permission-issues)
 
 ---
 
@@ -131,7 +131,7 @@ Before beginning tests, ensure these are ready:
 **On Failure:**
 - Verify `flex.roles: ["agent"]` in user metadata
 - Ensure no extra roles accidentally assigned
-- See: [Permission Issues](/platform-developers/authentication/troubleshooting#-permission-issues)
+- See: [Permission Issues](/techops/account-provisioning/authentication/troubleshooting#-permission-issues)
 
 ---
 
@@ -179,7 +179,7 @@ If you're using Pattern B (Isolated Organizations), skip this test suite. Team v
 - Verify agents have same `flex.team` value
 - Verify agents have logged in at least once
 - Check Auth0 Action includes team attribute code
-- See: [Team Visibility Problems](/platform-developers/authentication/troubleshooting#-team-visibility-problems)
+- See: [Team Visibility Problems](/techops/account-provisioning/authentication/troubleshooting#-team-visibility-problems)
 
 ---
 
@@ -203,7 +203,7 @@ If you're using Pattern B (Isolated Organizations), skip this test suite. Team v
 - Verify admin user does NOT have `flex.team` in metadata
 - If team attribute present, remove it
 - Admin must re-login after metadata change
-- See: [Admin User Only Sees Own Team](/platform-developers/authentication/troubleshooting#admin-user-only-sees-own-team)
+- See: [Admin User Only Sees Own Team](/techops/account-provisioning/authentication/troubleshooting#admin-user-only-sees-own-team)
 
 ---
 
@@ -231,7 +231,7 @@ If you're using Pattern B (Isolated Organizations), skip this test suite. Team v
 - Verify agents have exact same `flex.team` value as supervisor
 - Have agents re-login to update worker attributes
 - Check Twilio TaskRouter → Workers for team attributes
-- See: [Supervisor Sees Wrong Team Members](/platform-developers/authentication/troubleshooting#supervisor-sees-wrong-team-members)
+- See: [Supervisor Sees Wrong Team Members](/techops/account-provisioning/authentication/troubleshooting#supervisor-sees-wrong-team-members)
 
 ---
 
@@ -266,7 +266,7 @@ If you're using Pattern A (Multi-Program), skip this test suite. This validates 
 - Verify separate Auth0 tenants are being used
 - Check Twilio account SIDs are different
 - Verify Flex instances are separate
-- See: [Users from Organization B Appearing in Organization A](/platform-developers/authentication/troubleshooting#users-from-organization-b-appearing-in-organization-a)
+- See: [Users from Organization B Appearing in Organization A](/techops/account-provisioning/authentication/troubleshooting#users-from-organization-b-appearing-in-organization-a)
 
 ---
 
@@ -291,7 +291,7 @@ If you're using Pattern A (Multi-Program), skip this test suite. This validates 
 - Verify using separate Auth0 tenant for Organization B
 - Check vanity domains point to correct Flex instances
 - Verify SSO configuration references correct tenant
-- See: [Pattern B Documentation](/platform-developers/authentication/pattern-b-isolated)
+- See: [Pattern B Documentation](/techops/account-provisioning/authentication/pattern-b-isolated)
 
 ---
 
@@ -343,7 +343,7 @@ If you're using Pattern A (Multi-Program), skip this test suite. This validates 
 - Verify Auth0 Action is deployed
 - Check Action code matches pattern (A or B)
 - Verify user's app_metadata has required fields
-- See: [Auth0 Configuration](/platform-developers/authentication/auth0-configuration)
+- See: [Auth0 Configuration](/techops/account-provisioning/authentication/auth0-configuration)
 
 ---
 
@@ -382,7 +382,7 @@ If you're using Pattern A (Multi-Program), skip this test suite. This validates 
 - User needs to re-login to create/update worker
 - Check attribute mapping in Flex SSO settings
 - Verify SAML attributes passed by Auth0
-- See: [Twilio Flex SSO](/platform-developers/authentication/twilio-flex-sso)
+- See: [Twilio Flex SSO](/techops/account-provisioning/authentication/twilio-flex-sso)
 
 ---
 
@@ -592,7 +592,7 @@ If any test fails:
    Don't continue to later tests if foundational tests fail
 
 2. **Diagnose Issue**
-   Use [Troubleshooting Guide](/platform-developers/authentication/troubleshooting)
+   Use [Troubleshooting Guide](/techops/account-provisioning/authentication/troubleshooting)
 
 3. **Fix Configuration**
    Make necessary changes to Auth0, Flex, or user metadata
@@ -607,12 +607,12 @@ If any test fails:
 
 ## 📖 Related Documentation
 
-- **Overview:** [Identity Architecture](/platform-developers/authentication/overview)
-- **Pattern A:** [Multi-Program Setup](/platform-developers/authentication/pattern-a-multi-program)
-- **Pattern B:** [Isolated Organizations](/platform-developers/authentication/pattern-b-isolated)
-- **Auth0 Config:** [Auth0 Configuration](/platform-developers/authentication/auth0-configuration)
-- **Flex SSO:** [Twilio Flex SSO](/platform-developers/authentication/twilio-flex-sso)
-- **Troubleshooting:** [Authentication Troubleshooting](/platform-developers/authentication/troubleshooting)
+- **Overview:** [Identity Architecture](/techops/account-provisioning/authentication/overview)
+- **Pattern A:** [Multi-Program Setup](/techops/account-provisioning/authentication/pattern-a-multi-program)
+- **Pattern B:** [Isolated Organizations](/techops/account-provisioning/authentication/pattern-b-isolated)
+- **Auth0 Config:** [Auth0 Configuration](/techops/account-provisioning/authentication/auth0-configuration)
+- **Flex SSO:** [Twilio Flex SSO](/techops/account-provisioning/authentication/twilio-flex-sso)
+- **Troubleshooting:** [Authentication Troubleshooting](/techops/account-provisioning/authentication/troubleshooting)
 
 ---
 

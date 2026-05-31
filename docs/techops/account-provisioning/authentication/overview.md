@@ -162,16 +162,16 @@ Use this decision matrix to determine the correct pattern for your client:
 ## 📋 Implementation Roadmap
 
 ### For Pattern A (Multi-Program):
-1. Read: [Pattern A: Multi-Program Setup](/platform-developers/authentication/pattern-a-multi-program)
-2. Configure: [Auth0 Configuration](/platform-developers/authentication/auth0-configuration)
-3. Setup: [Twilio Flex SSO](/platform-developers/authentication/twilio-flex-sso)
-4. Test: [Testing Checklist](/platform-developers/authentication/testing-checklist)
+1. Read: [Pattern A: Multi-Program Setup](/techops/account-provisioning/authentication/pattern-a-multi-program)
+2. Configure: [Auth0 Configuration](/techops/account-provisioning/authentication/auth0-configuration)
+3. Setup: [Twilio Flex SSO](/techops/account-provisioning/authentication/twilio-flex-sso)
+4. Test: [Testing Checklist](/techops/account-provisioning/authentication/testing-checklist)
 
 ### For Pattern B (Isolated):
-1. Read: [Pattern B: Isolated Organizations](/platform-developers/authentication/pattern-b-isolated)
-2. Configure: [Auth0 Configuration](/platform-developers/authentication/auth0-configuration)
-3. Setup: [Twilio Flex SSO](/platform-developers/authentication/twilio-flex-sso)
-4. Test: [Testing Checklist](/platform-developers/authentication/testing-checklist)
+1. Read: [Pattern B: Isolated Organizations](/techops/account-provisioning/authentication/pattern-b-isolated)
+2. Configure: [Auth0 Configuration](/techops/account-provisioning/authentication/auth0-configuration)
+3. Setup: [Twilio Flex SSO](/techops/account-provisioning/authentication/twilio-flex-sso)
+4. Test: [Testing Checklist](/techops/account-provisioning/authentication/testing-checklist)
 
 ---
 
@@ -186,7 +186,7 @@ Connie supports multiple SSO providers:
 
 Both providers support the architectural patterns described in this guide. Current deployments use Auth0.
 
-See: [OKTA Legacy Documentation](/platform-developers/authentication/okta-legacy) for historical reference.
+See: [OKTA Legacy Documentation](/techops/account-provisioning/authentication/okta-legacy) for historical reference.
 
 ---
 
@@ -214,9 +214,9 @@ This guidance applies to **Pattern A** scenarios. Pattern B requires separate te
 ## 🆘 Need Help?
 
 - **Pattern confusion?** Review the decision matrix above
-- **Users appearing in wrong org?** See [Troubleshooting Guide](/platform-developers/authentication/troubleshooting)
-- **SAML issues?** Check [Auth0 Configuration](/platform-developers/authentication/auth0-configuration)
-- **Testing failures?** Follow [Testing Checklist](/platform-developers/authentication/testing-checklist)
+- **Users appearing in wrong org?** See [Troubleshooting Guide](/techops/account-provisioning/authentication/troubleshooting)
+- **SAML issues?** Check [Auth0 Configuration](/techops/account-provisioning/authentication/auth0-configuration)
+- **Testing failures?** Follow [Testing Checklist](/techops/account-provisioning/authentication/testing-checklist)
 
 ---
 
@@ -224,8 +224,8 @@ This guidance applies to **Pattern A** scenarios. Pattern B requires separate te
 
 Choose your pattern and dive into the detailed implementation guide:
 
-- **Multi-Program Setup** → [Pattern A Documentation](/platform-developers/authentication/pattern-a-multi-program)
-- **Isolated Organizations** → [Pattern B Documentation](/platform-developers/authentication/pattern-b-isolated)
+- **Multi-Program Setup** → [Pattern A Documentation](/techops/account-provisioning/authentication/pattern-a-multi-program)
+- **Isolated Organizations** → [Pattern B Documentation](/techops/account-provisioning/authentication/pattern-b-isolated)
 
 :::tip Professional Services Available
 If you prefer assistance with authentication setup for complex deployments, Connie professional services are available. Contact your Connie representative for details.

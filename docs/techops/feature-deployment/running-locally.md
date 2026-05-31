@@ -47,7 +47,7 @@ npm start
 ```
 
 :::info Feature Limitation
-the admin panel is disabled by default when working locally. See the [admin panel docs](/getting-started/feature-library/admin-ui) for more information
+the admin panel is disabled by default when working locally. See the [admin panel docs](/getting-started/feature-library/overview2/admin-ui) for more information
 :::
 
 :::caution Development Gotcha

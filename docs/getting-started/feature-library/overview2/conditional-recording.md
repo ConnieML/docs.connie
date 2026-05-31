@@ -8,7 +8,7 @@ ConnieRTC includes a built-in call recording feature which can be enabled via th
 However, for regulatory compliance purposes, some implementations may need to prevent recording certain calls. This feature adds that capability to the built-in call recording feature, by preventing recording based on task queue or based on the presence of certain task attributes. The task attributes and/or task queues that should be excluded from recording are configurable.
 
 :::info dual-channel-recording feature
-The `conditional-recording` feature works with the native call recording functionality. It is not applicable in conjunction with [the template's `dual-channel-recording` feature](/getting-started/feature-library/dual-channel-recording), which has its own conditional recording functionality.
+The `conditional-recording` feature works with the native call recording functionality. It is not applicable in conjunction with [the template's `dual-channel-recording` feature](/getting-started/feature-library/overview2/dual-channel-recording), which has its own conditional recording functionality.
 :::
 
 ## setup and dependencies

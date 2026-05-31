@@ -16,7 +16,7 @@ These steps require a [currently-maintained version of ConnieRTC UI 2.x](https:/
 :::
 
 1. [Create your own repository](https://github.com/twilio-professional-services/flex-project-template/generate) using the template.
-   - (Optional) After creating your repo, you may also want to [attach the history to your new repository](/techops/codebase/merge-future-updates) to be able to later pull in future updates--this can also be done later.
+   - (Optional) After creating your repo, you may also want to attach the history to your new repository to be able to later pull in future updates--this can also be done later.
 
    - _NOTE_ If you are on the free GitHub tier, the repository will need to be public. If you are on the free tier and still want to use a private repo you will need to clone the deploy script to have dedicated secrets per environment
 2. [Create a Twilio API key and secret](https://www.twilio.com/docs/glossary/what-is-an-api-key#how-can-i-create-api-keys) for your account, which we will use in the next step.
@@ -49,10 +49,10 @@ These deploy steps will set up TaskRouter and Studio configuration to allow more
 | Name | Existing or New | Description |
 | -----| --------------------| ------------|
 | Template Example Assign to Anyone | New | Used by example Studio flows and demonstrate filters for example queues|
-| Template Example Chat Transfer | New | Workflow that supports the [conversation transfer](/getting-started/feature-library/conversation-transfer) feature |
-| Template Example Callback | New | Workflow that supports the requeuing of callbacks and voicemails from the [callback and voicemail](/getting-started/feature-library/callback-and-voicemail) feature |
-| Template Example Internal Calls | New | Workflow that supports the [internal call](/getting-started/feature-library/internal-call) feature|
-| Template Example Park/Resume | New | Workflow that supports the [park interaction](/getting-started/feature-library/park-interaction) feature|
+| Template Example Chat Transfer | New | Workflow that supports the [conversation transfer](/getting-started/feature-library/overview2/conversation-transfer) feature |
+| Template Example Callback | New | Workflow that supports the requeuing of callbacks and voicemails from the [callback and voicemail](/getting-started/feature-library/overview2/callback-and-voicemail) feature |
+| Template Example Internal Calls | New | Workflow that supports the [internal call](/getting-started/feature-library/overview2/internal-call) feature|
+| Template Example Park/Resume | New | Workflow that supports the [park interaction](/getting-started/feature-library/overview2/park-interaction) feature|
 
 </TabItem>
 
@@ -63,7 +63,7 @@ These deploy steps will set up TaskRouter and Studio configuration to allow more
 | Template Example Everyone | New | Same as out-of-box ConnieRTC version  |
 | Template Example Sales| New | Sample queue for "Sales" calls |
 | Template Example Support | New | Sample queue for "Support" calls |
-| Template Example Internal Calls | New | Queue that supports the [internal call](/getting-started/feature-library/internal-call) feature|
+| Template Example Internal Calls | New | Queue that supports the [internal call](/getting-started/feature-library/overview2/internal-call) feature|
 
 </TabItem>
 
@@ -71,10 +71,10 @@ These deploy steps will set up TaskRouter and Studio configuration to allow more
 
 | Name | Existing or New  | Description |
 | -----| --------------------| ------------|
-| On A Task | New | Activity to support the [activity reservation handler](/getting-started/feature-library/activity-reservation-handler) feature |
-| On A Task, No ACD | New | Activity to support the [activity reservation handler](/getting-started/feature-library/activity-reservation-handler) feature |
-| Wrap Up | New | Activity to support the [activity reservation handler](/getting-started/feature-library/activity-reservation-handler) feature |
-| Wrap Up, No ACD | New | Activity to support the [activity reservation handler](/getting-started/feature-library/activity-reservation-handler) feature |
+| On A Task | New | Activity to support the [activity reservation handler](/getting-started/feature-library/overview2/activity-reservation-handler) feature |
+| On A Task, No ACD | New | Activity to support the [activity reservation handler](/getting-started/feature-library/overview2/activity-reservation-handler) feature |
+| Wrap Up | New | Activity to support the [activity reservation handler](/getting-started/feature-library/overview2/activity-reservation-handler) feature |
+| Wrap Up, No ACD | New | Activity to support the [activity reservation handler](/getting-started/feature-library/overview2/activity-reservation-handler) feature |
 
 </TabItem>
 
@@ -95,9 +95,9 @@ These deploy steps will set up TaskRouter and Studio configuration to allow more
 
 | Name | Existing or New  | Description |
 | -----| --------------------| ------------|
-| Template Example Callback Flow | New | Example usage of the [callback and voicemail](/getting-started/feature-library/callback-and-voicemail) feature, adding a callback or voicemail option while waiting in queue |
-| Template Example Messaging with Parking Flow | New | Example for the [park interaction](/getting-started/feature-library/park-interaction) feature, using a workflow that supports the routing of parked interactions |
-| Template Example Schedule Flow | New | Example usage of the [schedule manager](/getting-started/feature-library/schedule-manager) feature, adding a schedule lookup with different responses based on the result |
+| Template Example Callback Flow | New | Example usage of the [callback and voicemail](/getting-started/feature-library/overview2/callback-and-voicemail) feature, adding a callback or voicemail option while waiting in queue |
+| Template Example Messaging with Parking Flow | New | Example for the [park interaction](/getting-started/feature-library/overview2/park-interaction) feature, using a workflow that supports the routing of parked interactions |
+| Template Example Schedule Flow | New | Example usage of the [schedule manager](/getting-started/feature-library/overview2/schedule-manager) feature, adding a schedule lookup with different responses based on the result |
 
 </details>
 
@@ -111,7 +111,7 @@ Unchecking this means features mentioned in the resource descriptions above will
 
 7. Run the workflow.
    - This will deploy the assets to your environment with the default features enabled. See [Feature library Information](/getting-started/feature-library/overview) for further details of whats enabled by default.
-   - Environment properties will be automatically populated based on the deployed ConnieRTC configuration, including service and workflow SIDs. See [this page](/techops/codebase/template-utilities/configuration#influencing-the-automatic-configuration) for information on how to influence this configuration.
+   - Environment properties will be automatically populated based on the deployed ConnieRTC configuration, including service and workflow SIDs. See this page for information on how to influence this configuration.
 
 
 All done! Once the workflow successfully completes, the template has been installed.

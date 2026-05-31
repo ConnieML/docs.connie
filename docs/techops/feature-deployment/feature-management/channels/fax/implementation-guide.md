@@ -39,7 +39,7 @@ Choose the option that best fits your client's requirements:
 - Dedicated fax number provisioning
 - Email routing rules
 
-**Next steps:** → [Set up Basic Inbound Fax](/techops/codebase/fax/sinch-implementation)
+**Next steps:** → Set up Basic Inbound Fax
 
 ---
 
@@ -56,7 +56,7 @@ Choose the option that best fits your client's requirements:
 - ConnieRTC UI components for fax sending
 - Task routing for inbound faxes
 
-**Next steps:** → [Set up Bidirectional Fax](/techops/codebase/fax/sinch-implementation)
+**Next steps:** → Set up Bidirectional Fax
 
 ---
 
@@ -82,7 +82,7 @@ Choose the option that best fits your client's requirements:
 - Enhanced security features
 - Compliance reporting
 
-**Next steps:** → [Set up Full Fax Integration](/techops/codebase/fax/sinch-implementation)
+**Next steps:** → Set up Full Fax Integration
 
 ---
 

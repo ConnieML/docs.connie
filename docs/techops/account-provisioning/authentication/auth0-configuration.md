@@ -14,7 +14,7 @@ This guide provides detailed Auth0 configuration steps applicable to both Patter
 
 **Prerequisites:**
 - Auth0 tenant with admin access
-- Understanding of your deployment pattern ([Pattern A](/platform-developers/authentication/pattern-a-multi-program) or [Pattern B](/platform-developers/authentication/pattern-b-isolated))
+- Understanding of your deployment pattern ([Pattern A](/techops/account-provisioning/authentication/pattern-a-multi-program) or [Pattern B](/techops/account-provisioning/authentication/pattern-b-isolated))
 - Twilio Flex instance details
 
 ---
@@ -576,11 +576,11 @@ Before declaring configuration complete:
 
 ## 📖 Related Documentation
 
-- **Pattern A Setup:** [Multi-Program Configuration](/platform-developers/authentication/pattern-a-multi-program)
-- **Pattern B Setup:** [Isolated Organizations](/platform-developers/authentication/pattern-b-isolated)
-- **Flex SSO:** [Twilio Flex SSO Configuration](/platform-developers/authentication/twilio-flex-sso)
-- **Testing:** [Testing Checklist](/platform-developers/authentication/testing-checklist)
-- **Troubleshooting:** [Authentication Troubleshooting](/platform-developers/authentication/troubleshooting)
+- **Pattern A Setup:** [Multi-Program Configuration](/techops/account-provisioning/authentication/pattern-a-multi-program)
+- **Pattern B Setup:** [Isolated Organizations](/techops/account-provisioning/authentication/pattern-b-isolated)
+- **Flex SSO:** [Twilio Flex SSO Configuration](/techops/account-provisioning/authentication/twilio-flex-sso)
+- **Testing:** [Testing Checklist](/techops/account-provisioning/authentication/testing-checklist)
+- **Troubleshooting:** [Authentication Troubleshooting](/techops/account-provisioning/authentication/troubleshooting)
 
 ---
 

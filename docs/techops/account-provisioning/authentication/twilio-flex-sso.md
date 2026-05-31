@@ -10,7 +10,7 @@ Complete guide to configuring SAML-based Single Sign-On for Twilio Flex using Au
 
 ## 🎯 Purpose
 
-This guide covers the Twilio Flex side of SSO configuration. Complete Auth0 configuration first using the [Auth0 Configuration Guide](/platform-developers/authentication/auth0-configuration).
+This guide covers the Twilio Flex side of SSO configuration. Complete Auth0 configuration first using the [Auth0 Configuration Guide](/techops/account-provisioning/authentication/auth0-configuration).
 
 **Prerequisites:**
 - Auth0 tenant configured with SAML application
@@ -496,11 +496,11 @@ Location: Twilio Console → TaskRouter → Workers
 
 ## 📖 Related Documentation
 
-- **Auth0 Configuration:** [Complete Auth0 Setup Guide](/platform-developers/authentication/auth0-configuration)
-- **Pattern A:** [Multi-Program Setup](/platform-developers/authentication/pattern-a-multi-program)
-- **Pattern B:** [Isolated Organizations](/platform-developers/authentication/pattern-b-isolated)
-- **Testing:** [Comprehensive Testing Checklist](/platform-developers/authentication/testing-checklist)
-- **Troubleshooting:** [Authentication Troubleshooting](/platform-developers/authentication/troubleshooting)
+- **Auth0 Configuration:** [Complete Auth0 Setup Guide](/techops/account-provisioning/authentication/auth0-configuration)
+- **Pattern A:** [Multi-Program Setup](/techops/account-provisioning/authentication/pattern-a-multi-program)
+- **Pattern B:** [Isolated Organizations](/techops/account-provisioning/authentication/pattern-b-isolated)
+- **Testing:** [Comprehensive Testing Checklist](/techops/account-provisioning/authentication/testing-checklist)
+- **Troubleshooting:** [Authentication Troubleshooting](/techops/account-provisioning/authentication/troubleshooting)
 
 ---
 

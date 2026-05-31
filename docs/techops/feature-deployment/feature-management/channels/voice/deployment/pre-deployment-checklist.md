@@ -280,7 +280,7 @@ npm run build
 ## Ready for Deployment
 
 :::tip Deployment Readiness
-✅ If ALL items above are checked, you are ready to proceed with the [Direct+ Deployment Guide](/techops/feature-deployment/feature-management/channels/voice/deployment/direct-plus-deployment-guide).
+✅ If ALL items above are checked, you are ready to proceed with the Direct+ Deployment Guide.
 
 ❌ If ANY items are incomplete, resolve them before starting deployment to avoid failures and rollbacks.
 :::

@@ -53,7 +53,7 @@ Choose the provider that best fits your organization's requirements:
 - Email routing configuration
 - Studio Flow deployment
 
-**Implementation:** → [Adobe Acrobat Sign Setup Guide](/techops/codebase/web/adobe-implementation)
+**Implementation:** → Adobe Acrobat Sign Setup Guide
 
 ---
 
@@ -285,7 +285,7 @@ Consider these factors when choosing your web forms provider:
 
 ## 📞 Ready to Implement?
 
-- **Adobe Users:** → [Continue to Adobe Setup Guide](/techops/codebase/web/adobe-implementation)
+- **Adobe Users:** → Continue to Adobe Setup Guide
 - **Formstack/Typeform Users:** Join our [provider waitlist](https://connie.one/contact) for early access
 - **Need Guidance:** [Schedule consultation](https://connie.one/contact) with our implementation team
 

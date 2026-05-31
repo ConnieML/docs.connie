@@ -268,9 +268,9 @@ import TabItem from "@theme/TabItem";
   <div style={{padding: '15px', background: '#e3f2fd', borderRadius: '8px'}}>
     <h4>📊 CBO Admin</h4>
     <ul style={{fontSize: '0.9em', marginBottom: 0}}>
-      <li><a href="/end-users/cbo-admins/getting-started">Getting Started Guide</a></li>
-      <li><a href="/end-users/cbo-admins/channels/voice">Voice Setup</a></li>
-      <li><a href="/end-users/cbo-admins/channels/fax/select-provider">Fax Setup</a></li>
+      <li><a href="/end-users/administrators/getting-started">Getting Started Guide</a></li>
+      <li><a href="/end-users/administrators/channels/voice">Voice Setup</a></li>
+      <li><a href="/end-users/administrators/channels/fax/select-provider">Fax Setup</a></li>
     </ul>
   </div>
 
