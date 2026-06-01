@@ -12,7 +12,14 @@ import RoleHero from '@site/src/components/RoleHero';
 You answer and handle conversations across every channel — calls, chat, SMS, email, and fax. This guide gets you logged in and ready to take your first task.
 </RoleHero>
 
-This guide walks you through your first login and initial setup of your Connie account.
+<div style={{display: 'flex', gap: '28px', alignItems: 'flex-start', flexWrap: 'wrap'}}>
+  <div style={{flex: '1 1 320px'}}>
+
+This guide walks you through your first login and initial setup of your Connie account — from your very first sign-in to taking your first task.
+
+  </div>
+  <img src="/img/avatars/agent-persona.png" alt="A friendly Connie staff agent" style={{width: '160px', flexShrink: 0, alignSelf: 'center'}} />
+</div>
 
 ## 🚀 Step 1: Access the Connie Web Portal
 
@@ -121,6 +128,10 @@ Now that you're set up, learn how to:
 - **[Handling Chat & SMS](/end-users/staff-agents/handling-tasks/handling-chat)** — Text messages and webchat
 - **[Transfer Conversations](/end-users/staff-agents/transferring-tasks)** — Hand off tasks to other agents
 - **[Record Notes](/end-users/staff-agents/recording-notes)** — Document your interactions
+
+<div style={{textAlign: 'center', margin: '36px 0 8px'}}>
+  <img src="/img/scenes/connie-call-center.jpg" alt="The Connie team at work" style={{maxWidth: '100%', borderRadius: '12px'}} />
+</div>
 
 ---
 

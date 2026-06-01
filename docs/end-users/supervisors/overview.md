@@ -12,7 +12,14 @@ import RoleHero from '@site/src/components/RoleHero';
 You monitor your team in real time, coach for quality, and pull the reports your funders and leadership need. This section is your starting point.
 </RoleHero>
 
+<div style={{display: 'flex', gap: '28px', alignItems: 'flex-start', flexWrap: 'wrap'}}>
+  <div style={{flex: '1 1 320px'}}>
+
 Welcome, Supervisors! This section will help you manage your team and optimize your ConnieRTC deployment.
+
+  </div>
+  <img src="/img/avatars/supervisor-persona.png" alt="A Connie supervisor / program manager" style={{width: '160px', flexShrink: 0, alignSelf: 'center'}} />
+</div>
 
 ## Coming Soon
 
