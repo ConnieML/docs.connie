@@ -1,10 +1,10 @@
 ---
-title: "Concepts & Glossary"
+title: "Connie Datacenter Concepts and Glossary"
 sidebar_label: Concepts & Glossary
 sidebar_position: 2
 ---
 
-# Concepts & Glossary
+# Connie Datacenter Concepts and Glossary
 
 Plain-language reference for every term used across the Connie Datacenter guides. Each of the six audience guides links here rather than re-defining terms, so a definition lives in exactly one place.
 
