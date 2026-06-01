@@ -20,7 +20,7 @@ sidebar_position: 1
 <!-- One umbrella for every reporting surface. Reporting is consolidated here; the End Users → Supervisors and → Administrators sections point here rather than duplicate. -->
 
 ## The Two Tiers
-<!-- 🟦 Standard = reselling native Twilio Flex Insights, surfaced cleanly in the Connie/Flex UI, included with every account. 🟪 Advanced = the connie.plus custom layer that pulls Insights data via API and reformats it for funder / county / grant / board audiences. The Flex Insights API is the seam between the two. -->
+<!-- Tier = PURPOSE + AUDIENCE, not implementation layer. 🟦 Standard = operational reporting for those running the center (sups/admins): native Flex Insights surfaced in the Connie/Flex UI, included with every account. 🟪 Advanced = outcomes for external audiences (funders/county/board/grants) via the connie.plus custom layer. Within Advanced: Impact = marquee use case (community outcomes), Raw-Data/Custom = enabling capability (connie.plus pipeline pulling Insights via API). The Flex Insights API is the seam. TRAP to state: an Impact dashboard built inside native Insights is still Advanced by purpose — don't pull it back into Standard. See Glossary. -->
 
 ## Surfaces Map
 <!-- Real-time → Queues Stats + Teams View (native Flex). Historical → Flex Insights (GoodData/Ytica warehouse). Advanced → connie.plus Datacenter (connie.plus/data-center). Table: surface → tier → audience → what it answers. -->

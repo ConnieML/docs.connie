@@ -24,6 +24,9 @@ See **[Concepts & Glossary](/connie-datacenter/concepts-glossary)** for all metr
 ## Configure Views & Columns
 <!-- /template-admin Feature Settings: queues_stats_metrics (Assigned/Wrapping/Agent-activity columns), Teams View Department column. SAFETY: use /template-admin for NSS-style config, NOT the deploy pipeline. -->
 
+## Configure Service Levels (SLAs)
+<!-- Connie Admin → "Configure Service Levels" → "Add custom levels". Per queue + per channel, in seconds: SLA Threshold + Short Abandoned Time. Admin-role gated. Drives the real-time Queues Stats SLA column. NOT set in config files (config only controls which SLA tiles display + Teams handle-time thresholds). Real-time SLA (Service Level Preferences) and historical SLA are separate. See Glossary → Service Level (SLA). -->
+
 ## Manage Insights Roles
 <!-- Insights user roles / who can see what (links to Twilio Insights user-roles doc). -->
 
