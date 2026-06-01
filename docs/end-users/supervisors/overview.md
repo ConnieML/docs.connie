@@ -13,9 +13,7 @@ Welcome, Supervisors! This section will help you manage your team and optimize y
 Comprehensive supervisor documentation is currently in development. This section will include:
 
 - **Team Management**: Monitor agent performance and call quality
-- **Real-time Dashboards**: Track key metrics and KPIs
 - **Quality Assurance**: Tools for call monitoring and coaching
-- **Reporting**: Generate insights for leadership and funders
 - **Configuration**: Customize system settings for your team
 
 ## Get Notified
@@ -26,6 +24,7 @@ Want to be notified when supervisor documentation is available?
 
 ## Available now
 
+- **[Reporting & Analytics → Connie Datacenter](/connie-datacenter/)** — the home for all supervisor reporting: real-time dashboards (Queues Stats, Teams View), historical Insights, drill-down, and funder-ready output. Section structure and surfaces are live; detailed step-by-step guides are being filled in.
 - **[Display names](/end-users/administrators/managing-your-team/display-names)** — how agent names render across internal vs external surfaces, and how to fix one that's showing wrong
 - **[Conversation transfer (supervisor view)](/end-users/supervisors/conversation-transfer)** — supervising and configuring conversation transfers across your team
 

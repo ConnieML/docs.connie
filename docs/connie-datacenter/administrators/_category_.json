@@ -1,0 +1,7 @@
+{
+  "label": "Administrators",
+  "position": 4,
+  "collapsible": true,
+  "collapsed": true,
+  "description": "Provision and configure reporting — Standard (Insights setup) and Advanced (connie.plus Datacenter)."
+}
