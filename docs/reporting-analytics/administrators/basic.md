@@ -1,18 +1,20 @@
 ---
-title: "Administrators — Standard Reporting"
-sidebar_label: Standard
+title: "Administrators — Basic Reporting"
+sidebar_label: Basic
 sidebar_position: 1
 ---
 
-# Administrators — Standard Reporting
+# Administrators — Basic Reporting
+
+> 📦 **Basic — included with every Connie account.** Accessed from the **left nav** in the Connie UI (Queues Stats, Teams View, native Insights dashboards). For Supervisors & Administrators.
 
 > **STUB — scaffold only.** Outline and source pointers below; prose to follow.
 
 **Purpose (one line):** How an Administrator provisions native Insights, configures the views/columns supervisors see, manages Insights roles, schedules report emails, and handles per-tenant setup.
 
-**Audience / Tier:** Administrators · 🟦 Standard.
+**Audience / Tier:** Administrators · 🟦 Basic (included).
 
-See **[Concepts & Glossary](/connie-datacenter/concepts-glossary)** for all metric definitions used below.
+See **[Concepts & Glossary](/reporting-analytics/concepts-glossary)** for all metric definitions used below.
 
 ---
 

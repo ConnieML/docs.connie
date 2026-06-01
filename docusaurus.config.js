@@ -62,6 +62,17 @@ const config = {
             from: "/get-support/tickets",
             to: "/get-support/support-ticket-system/submitting-a-ticket",
           },
+          // Renamed the reporting umbrella from "Connie Datacenter" to
+          // "Reporting & Analytics" (Connie Data Center is now the Advanced
+          // tier, not the umbrella). Preserve the short-lived old URLs.
+          { from: "/connie-datacenter", to: "/reporting-analytics" },
+          { from: "/connie-datacenter/concepts-glossary", to: "/reporting-analytics/concepts-glossary" },
+          { from: "/connie-datacenter/supervisors/basic", to: "/reporting-analytics/supervisors/basic" },
+          { from: "/connie-datacenter/supervisors/advanced", to: "/reporting-analytics/supervisors/advanced" },
+          { from: "/connie-datacenter/administrators/basic", to: "/reporting-analytics/administrators/basic" },
+          { from: "/connie-datacenter/administrators/advanced", to: "/reporting-analytics/administrators/advanced" },
+          { from: "/connie-datacenter/ai-agents/basic", to: "/reporting-analytics/ai-agents/basic" },
+          { from: "/connie-datacenter/ai-agents/advanced", to: "/reporting-analytics/ai-agents/advanced" },
         ],
       },
     ],

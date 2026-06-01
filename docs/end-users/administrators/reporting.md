@@ -6,11 +6,11 @@ sidebar_position: 8
 
 # Reporting & Analytics
 
-> **All Connie reporting lives in the [📊 Connie Datacenter](/connie-datacenter/).**
+> **All Connie reporting lives in [📊 Reporting & Analytics](/reporting-analytics/).**
 
-Administrator reporting — provisioning Insights, configuring views/columns and roles, scheduling report emails, and the connie.plus Advanced layer — is documented in one place to avoid duplication.
+Administrator reporting — provisioning Insights, configuring views/columns and roles, scheduling report emails, and the Connie Data Center (Advanced) layer — is documented in one place to avoid duplication.
 
-- **Start here:** [Connie Datacenter — Overview](/connie-datacenter/)
-- **Your Standard guide:** [Administrators — Standard Reporting](/connie-datacenter/administrators/basic)
-- **Your Advanced guide:** [Administrators — Advanced Analytics](/connie-datacenter/administrators/advanced)
-- **Terms & metrics:** [Concepts & Glossary](/connie-datacenter/concepts-glossary)
+- **Start here:** [Reporting & Analytics — Overview](/reporting-analytics/)
+- **Your Basic guide (included):** [Administrators — Basic Reporting](/reporting-analytics/administrators/basic)
+- **Connie Data Center (Advanced — paid):** [Administrators — Connie Data Center (Advanced)](/reporting-analytics/administrators/advanced)
+- **Terms & metrics:** [Concepts & Glossary](/reporting-analytics/concepts-glossary)

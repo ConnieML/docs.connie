@@ -1,18 +1,20 @@
 ---
-title: "AI Agents — Flex Insights API & Custom Pipelines"
-sidebar_label: Advanced
+title: "AI Agents — Connie Data Center (Advanced)"
+sidebar_label: Connie Data Center
 sidebar_position: 2
 ---
 
-# AI Agents — Flex Insights API & Custom Pipelines
+# AI Agents — Connie Data Center (Advanced)
+
+> 📦 **Connie Data Center (Advanced) — paid upgrade (additional fee).** The programmatic engine behind the Connie Data Center: pull Insights data via API and build funder / county / impact + custom reports. **Requires an account upgrade** — gated to upgraded accounts.
 
 > **STUB — scaffold only.** Outline and source pointers below; prose to follow.
 
-**Purpose (one line):** The developer/agent reference for the Flex Insights API (SST→TT), the data model, querying reports, and building the custom reports / funder-data pipeline that powers Advanced.
+**Purpose (one line):** The developer/agent reference for the Flex Insights API (SST→TT), the data model, querying reports, and building the custom reports / funder-data pipeline that powers **Connie Data Center (Advanced)**.
 
-**Audience / Tier:** Developers & AI agents · 🟪 Advanced.
+**Audience / Tier:** Developers & AI agents · 🟪 Connie Data Center (Advanced) · paid upgrade.
 
-See **[Concepts & Glossary](/connie-datacenter/concepts-glossary)** for all metric definitions used below.
+See **[Concepts & Glossary](/reporting-analytics/concepts-glossary)** for all metric definitions used below.
 
 ---
 

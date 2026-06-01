@@ -1,18 +1,20 @@
 ---
-title: "Supervisors — Standard Reporting"
-sidebar_label: Standard
+title: "Supervisors — Basic Reporting"
+sidebar_label: Basic
 sidebar_position: 1
 ---
 
-# Supervisors — Standard Reporting
+# Supervisors — Basic Reporting
+
+> 📦 **Basic — included with every Connie account.** Accessed from the **left nav** in the Connie UI (Queues Stats, Teams View, native Insights dashboards). For Supervisors & Administrators.
 
 > **STUB — scaffold only.** Outline and source pointers below; prose to follow.
 
-**Purpose (one line):** How a Program Manager / Supervisor monitors real-time activity, reads native Insights, filters, drills down, and exports — using the Standard tier included with every account.
+**Purpose (one line):** How a Program Manager / Supervisor monitors real-time activity, reads native Insights, filters, drills down, and exports — using the **Basic** tier included with every account.
 
-**Audience / Tier:** Supervisors & Program Managers · 🟦 Standard.
+**Audience / Tier:** Supervisors & Program Managers · 🟦 Basic (included).
 
-See **[Concepts & Glossary](/connie-datacenter/concepts-glossary)** for all metric definitions used below.
+See **[Concepts & Glossary](/reporting-analytics/concepts-glossary)** for all metric definitions used below.
 
 ---
 
@@ -27,17 +29,17 @@ See **[Concepts & Glossary](/connie-datacenter/concepts-glossary)** for all metr
 ## Filter by Date Range & Variables
 <!-- Drop-down variables (date range, queue, channel) to scope a report. Reference V0.1 user story #3. -->
 
-![Parse by defined variables such as Date Range (V0.1 baseline)](/img/connie-datacenter/03-filter-by-date-range.png)
+![Parse by defined variables such as Date Range (V0.1 baseline)](/img/reporting-analytics/03-filter-by-date-range.png)
 
 ## Drill Down: KPI → Conversation Segment
 <!-- The core capability — from a top-level KPI down to an individual conversation segment. -->
 
-![Data displayed graphically once called (V0.1 baseline)](/img/connie-datacenter/04-data-displayed-graphically.png)
+![Data displayed graphically once called (V0.1 baseline)](/img/reporting-analytics/04-data-displayed-graphically.png)
 
 ## Run & Export a Report
 <!-- Run a report, then export/download (XLSX / CSV). Reference V0.1 user story #5. -->
 
-![Export capability — XLSX / CSV (V0.1 baseline)](/img/connie-datacenter/05-export-capability.png)
+![Export capability — XLSX / CSV (V0.1 baseline)](/img/reporting-analytics/05-export-capability.png)
 
 ---
 

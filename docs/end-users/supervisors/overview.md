@@ -24,7 +24,7 @@ Want to be notified when supervisor documentation is available?
 
 ## Available now
 
-- **[Reporting & Analytics → Connie Datacenter](/connie-datacenter/)** — the home for all supervisor reporting: real-time dashboards (Queues Stats, Teams View), historical Insights, drill-down, and funder-ready output. Section structure and surfaces are live; detailed step-by-step guides are being filled in.
+- **[Reporting & Analytics](/reporting-analytics/)** — the home for all supervisor reporting: real-time dashboards (Queues Stats, Teams View), historical Insights, drill-down, and funder-ready output. Section structure and surfaces are live; detailed step-by-step guides are being filled in.
 - **[Display names](/end-users/administrators/managing-your-team/display-names)** — how agent names render across internal vs external surfaces, and how to fix one that's showing wrong
 - **[Conversation transfer (supervisor view)](/end-users/supervisors/conversation-transfer)** — supervising and configuring conversation transfers across your team
 

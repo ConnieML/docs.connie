@@ -1,18 +1,20 @@
 ---
-title: "AI Agents — Standard Data Access"
-sidebar_label: Standard
+title: "AI Agents — Basic Data Access"
+sidebar_label: Basic
 sidebar_position: 1
 ---
 
-# AI Agents — Standard Data Access
+# AI Agents — Basic Data Access
+
+> 📦 **Basic — included with every Connie account.** Programmatic counterpart to the Basic reporting surfaces (Queues Stats, Teams View, native Insights). For developers & AI agents.
 
 > **STUB — scaffold only.** Outline and source pointers below; prose to follow.
 
-**Purpose (one line):** How a developer or AI agent reads operational reporting data through structured, supported access — the programmatic counterpart to the Standard tier.
+**Purpose (one line):** How a developer or AI agent reads operational reporting data through structured, supported access — the programmatic counterpart to the **Basic** tier.
 
-**Audience / Tier:** Developers & AI agents · 🟦 Standard.
+**Audience / Tier:** Developers & AI agents · 🟦 Basic (included).
 
-See **[Concepts & Glossary](/connie-datacenter/concepts-glossary)** for all metric definitions used below.
+See **[Concepts & Glossary](/reporting-analytics/concepts-glossary)** for all metric definitions used below.
 
 ---
 
