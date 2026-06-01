@@ -4,7 +4,13 @@ title: "Getting Started with Connie"
 sidebar_position: 2
 ---
 
+import RoleHero from '@site/src/components/RoleHero';
+
 # Getting Started with Connie
+
+<RoleHero avatar="/img/avatars/agent-avatar.png" role="Staff Agent">
+You answer and handle conversations across every channel — calls, chat, SMS, email, and fax. This guide gets you logged in and ready to take your first task.
+</RoleHero>
 
 This guide walks you through your first login and initial setup of your Connie account.
 

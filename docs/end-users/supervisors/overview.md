@@ -4,7 +4,13 @@ sidebar_position: 1
 title: "Supervisors - Overview"
 ---
 
+import RoleHero from '@site/src/components/RoleHero';
+
 # Supervisor Documentation
+
+<RoleHero avatar="/img/avatars/supervisor-avatar.png" role="Supervisor / Program Manager">
+You monitor your team in real time, coach for quality, and pull the reports your funders and leadership need. This section is your starting point.
+</RoleHero>
 
 Welcome, Supervisors! This section will help you manage your team and optimize your ConnieRTC deployment.
 
