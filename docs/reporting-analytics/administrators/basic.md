@@ -28,7 +28,12 @@ Basic Reporting lives **inside Flex** — there's nothing extra to install. You'
 | **Dashboards** | 🕓 Historical reports, including your curated **Standard Reporting** view |
 | **Analyze** | 🕓 Build your own report from scratch (drag-and-drop) |
 
-{/* SCREENSHOT SLOT (CDO/CEO): Flex left-nav with the reporting icons highlighted — to be grabbed from Flex (this one couldn't be captured from Insights). Drop it in here using the same centered-image style used elsewhere on this page. */}
+{/* SCREENSHOT SLOT (CDO/CEO): Flex left-nav with the reporting icons highlighted.
+     ⚠️ CAPTURE FROM THE LIFELINE DEMO TENANT (fake data) — NEVER a real client account.
+     docs.connie.one is PUBLIC: no real client name, staff names, user names, or tokens
+     may ever appear. If a real account is unavoidable, white-box every instance and
+     re-verify each image before publishing (the 02/03/04 images on this page were
+     redacted that way). Drop the image in using the same centered-image style below. */}
 
 :::tip Start with the curated view, not the firehose
 Your account comes with a **Standard Reporting** dashboard already built for you. Start there — it answers the everyday questions out of the box. Reach for **Analyze** only when you need something custom.
