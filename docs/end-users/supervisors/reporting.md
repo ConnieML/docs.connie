@@ -11,6 +11,6 @@ sidebar_position: 8
 Supervisor and Program Manager reporting — real-time monitoring, historical Insights, filtering, drill-down, and exports — is documented in one place to avoid duplication.
 
 - **Start here:** [Reporting & Analytics — Overview](/reporting-analytics/)
-- **Your Basic guide (included):** [Supervisors — Basic Reporting](/reporting-analytics/supervisors/basic)
+- **Your Basic guide (included):** [Basic Reporting](/reporting-analytics/administrators/basic)
 - **Advanced (paid):** [Supervisors — Advanced](/reporting-analytics/supervisors/advanced)
 - **Terms & metrics:** [Concepts & Glossary](/reporting-analytics/concepts-glossary)
