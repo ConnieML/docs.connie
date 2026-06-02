@@ -1,18 +1,18 @@
 ---
-title: "Supervisors — Connie Data Center (Advanced)"
-sidebar_label: Connie Data Center
+title: "Supervisors — Advanced"
+sidebar_label: Advanced
 sidebar_position: 2
 ---
 
-# Supervisors — Connie Data Center (Advanced)
+# Supervisors — Advanced
 
-> 📦 **Connie Data Center (Advanced) — paid upgrade (additional fee).** Accessed from the Connie Data Center destination: funder / county / impact reports + custom / raw data. **Requires an account upgrade** — gated to upgraded accounts.
+> 📦 **Advanced — paid upgrade (additional fee).** Funder / county / impact reports + custom / raw data. **Requires an account upgrade** — gated to upgraded accounts.
 
 > **STUB — scaffold only.** Outline and source pointers below; prose to follow.
 
-**Purpose (one line):** How a Supervisor / Program Manager pulls program-specific reports and works the **Connie Data Center (Advanced)** dashboards for funder-, county-, and grant-ready output.
+**Purpose (one line):** How a Supervisor / Program Manager pulls program-specific reports and works the **Advanced** dashboards for funder-, county-, and grant-ready output.
 
-**Audience / Tier:** Supervisors & Program Managers · 🟪 Connie Data Center (Advanced) · paid upgrade.
+**Audience / Tier:** Supervisors & Program Managers · 🟪 Advanced · paid upgrade.
 
 See **[Concepts & Glossary](/reporting-analytics/concepts-glossary)** for all metric definitions used below.
 

@@ -1,16 +1,16 @@
 ---
-title: "AI Agents — Connie Data Center (Advanced)"
-sidebar_label: Connie Data Center
+title: "AI Agents — Advanced"
+sidebar_label: Advanced
 sidebar_position: 2
 ---
 
-# AI Agents — Connie Data Center (Advanced)
+# AI Agents — Advanced
 
-> 📦 **Connie Data Center (Advanced) — paid upgrade (additional fee).** The programmatic engine behind the Connie Data Center: pull reporting data via API and build funder / county / impact + custom reports. **Requires an account upgrade** — gated to upgraded accounts.
+> 📦 **Advanced — paid upgrade (additional fee).** The programmatic engine behind Advanced: pull reporting data via API and build funder / county / impact + custom reports. **Requires an account upgrade** — gated to upgraded accounts.
 
-**Purpose:** The developer reference for programmatic access to Connie's historical reporting data — authentication, the data model, querying reports, and building the custom pipelines that power **Connie Data Center (Advanced)**.
+**Purpose:** The developer reference for programmatic access to Connie's historical reporting data — authentication, the data model, querying reports, and building the custom pipelines that power **Advanced**.
 
-**Audience / Tier:** Developers & AI agents · 🟪 Connie Data Center (Advanced) · paid upgrade.
+**Audience / Tier:** Developers & AI agents · 🟪 Advanced · paid upgrade.
 
 See **[Concepts & Glossary](/reporting-analytics/concepts-glossary)** for all metric and dimension definitions used below.
 
@@ -20,7 +20,7 @@ See **[Concepts & Glossary](/reporting-analytics/concepts-glossary)** for all me
 
 ## What this is
 
-Connie's **historical reporting** is powered by **Twilio Flex Insights**, which runs on the **GoodData / Ytica** analytics platform. The Connie Data Center (Advanced) tier reads from that warehouse over its API, then reformats the results into funder-, county-, and grant-ready deliverables.
+Connie's **historical reporting** is powered by **Twilio Flex Insights**, which runs on the **GoodData / Ytica** analytics platform. The Advanced tier reads from that warehouse over its API, then reformats the results into funder-, county-, and grant-ready deliverables.
 
 :::caution This is a different API from the rest of Twilio
 Flex Insights does **not** use your Twilio Account SID / Auth Token / API keys. It uses GoodData's own **two-step token login (SST → TT)** against `analytics.ytica.com`. Everything on this page targets that API, not the standard Twilio REST API.
@@ -30,7 +30,7 @@ Flex Insights does **not** use your Twilio Account SID / Auth Token / API keys. 
 
 You'll need:
 
-- An account on the **Connie Data Center (Advanced)** tier (this is a gated, paid upgrade).
+- An account on the **Advanced** tier (this is a gated, paid upgrade).
 - A **Flex Insights user** for your account (the login your reporting warehouse was provisioned with).
 - Your account's **GoodData workspace ID** (see [Find your workspace](#find-your-workspace-id) below — each account has its own).
 
@@ -125,13 +125,13 @@ curl -s -b "GDCAuthTT=$TT" -H "Accept: application/json" -H "Content-Type: appli
 
 ## Custom reports & the funder-data pipeline
 
-The Connie Data Center (Advanced) layer builds funder-ready output by:
+The Advanced layer builds funder-ready output by:
 
 1. **Curating dimensions** — re-pointing a report's grouping to the dimension a funder needs (e.g. grouping by **Department** instead of Team).
 2. **Creating report definitions programmatically** — `POST` a report definition to `/gdc/md/<workspace>/obj`, then a report that references it, then executing it to verify.
 3. **Pulling + reformatting** — the resulting rows are pulled into the connie.plus pipeline and reshaped into county / funder / grant / board deliverables.
 
-This is the seam that makes Connie Data Center "Advanced": native Insights produces operational dashboards; this pipeline turns the same data into external-audience reports.
+This is the seam that powers Advanced: native Insights produces operational dashboards; this pipeline turns the same data into external-audience reports.
 
 ## Endpoint reference
 

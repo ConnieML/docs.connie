@@ -12,5 +12,5 @@ Supervisor and Program Manager reporting — real-time monitoring, historical In
 
 - **Start here:** [Reporting & Analytics — Overview](/reporting-analytics/)
 - **Your Basic guide (included):** [Supervisors — Basic Reporting](/reporting-analytics/supervisors/basic)
-- **Connie Data Center (Advanced — paid):** [Supervisors — Connie Data Center (Advanced)](/reporting-analytics/supervisors/advanced)
+- **Advanced (paid):** [Supervisors — Advanced](/reporting-analytics/supervisors/advanced)
 - **Terms & metrics:** [Concepts & Glossary](/reporting-analytics/concepts-glossary)

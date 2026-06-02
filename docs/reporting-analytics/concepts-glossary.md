@@ -14,7 +14,7 @@ If a term appears in a reporting guide and isn't defined here, it belongs here �
 
 <!-- ============================================================
 RATIFY LOG (CDO, 2026-06-01) — items needing CTO-Connie / CEO sign-off before this page is treated as authoritative. Kept as source comments so the live page stays client-clean. Search "RATIFY:" to find each in context.
-  NAMING UPDATE (CEO addendum, 2026-06-01): customer-facing tier names are now BASIC (included, left-nav) and CONNIE DATA CENTER (ADVANCED) (paid upgrade, gated). "Connie Data Center" = the Advanced/premium destination, NOT the umbrella. Umbrella section = "Reporting & Analytics" (folder reporting-analytics/). Items 1–4 below were ratified under the older Standard/Advanced labels; the operational-vs-external-audience meaning is unchanged — only the labels were renamed (Standard→Basic, Advanced→Connie Data Center).
+  NAMING UPDATE (CEO addendum, 2026-06-01): customer-facing tier names are now BASIC (included, left-nav) and CONNIE DATA CENTER (ADVANCED) (paid upgrade, gated). "Advanced" = the Advanced/premium destination, NOT the umbrella. Umbrella section = "Reporting & Analytics" (folder reporting-analytics/). Items 1–4 below were ratified under the older Standard/Advanced labels; the operational-vs-external-audience meaning is unchanged — only the labels were renamed (Standard→Basic, Advanced→Advanced).
   1. RESOLVED (CEO, 2026-06-01): Real-time has NO fixed interval — it streams off the live event stream. Teams View = live as-it-happens. Queues View = ~15s queue metrics / 1–3s "Now" tiles. The 60-min figure is the Historical (Adhoc) pull ONLY — a separate mechanism, never a real-time cadence. Retention number intentionally omitted until separately confirmed for native Insights.
   2. RESOLVED (CEO, 2026-06-01): Connie DOES surface SLA. Admin-set via Service Level Preferences ("Configure Service Levels" → "Add custom levels"), per queue + per channel, in seconds: SLA Threshold + Short Abandoned Time. Drives the real-time Queues SLA column. NOT in config files (config only controls which SLA tiles show + Teams handle-time thresholds). Real-time SLA (Service Level Preferences) and historical SLA (Connie Analytics) are SEPARATE metrics with separate thresholds. Config is an Administrators → Basic item.
   3. RESOLVED (CEO, 2026-06-01): Map confirmed. Real-Time + Historical → Standard (operational). Impact + Raw-Data/Custom → Advanced. Tier = PURPOSE + AUDIENCE, not implementation layer (an Impact dashboard built in native Insights is still Advanced). Within Advanced: Impact = marquee use case (outcomes for external audiences), Raw-Data/Custom = enabling capability (the connie.plus pipeline).
@@ -38,24 +38,24 @@ The **60-minute** figure you may see refers to the **Historical (Adhoc)** data p
 
 ---
 
-## Basic vs. Connie Data Center (Advanced)
+## Basic vs. Advanced
 
 Connie reporting comes in two tiers.
 
 The tier line is **purpose + audience**, not which tool builds the report.
 
 - **🟦 Basic — operational reporting, included with every Connie account.** For the people *running* the contact center (supervisors, admins). Answers *"How is my center running?"* — queues, SLA, handle time, agent activity. Native Flex Insights surfaced cleanly in the Connie UI, accessed from the **left nav**.
-- **🟪 Connie Data Center (Advanced) — outcomes for external audiences; a paid upgrade.** For funders, county, board, grants. Answers *"What impact are we having, and can I hand it to a funder?"* The connie.plus custom layer pulls your data out of Insights via API and reformats it into funder-ready deliverables. Native Insights produces operational dashboards; it does **not** produce funder-ready impact reports. Closing that gap is the entire reason the Connie Data Center exists. Accessed from the Connie Data Center destination; **gated to upgraded accounts**.
+- **🟪 Advanced — outcomes for external audiences; a paid upgrade.** For funders, county, board, grants. Answers *"What impact are we having, and can I hand it to a funder?"* The connie.plus custom layer pulls your data out of Insights via API and reformats it into funder-ready deliverables. Native Insights produces operational dashboards; it does **not** produce funder-ready impact reports. Closing that gap is the entire reason the Advanced tier exists. A paid upgrade, gated to upgraded accounts.
 
-Within the **Connie Data Center (Advanced)** tier there are two kinds of work:
+Within the **Advanced** tier there are two kinds of work:
 
 - **Impact — the marquee use case (the *what / why*).** Your CBO's effect on the communities it serves: closed-loop resolution, SDOH outcomes, community-referral coordination. This is what funders, boards, and counties want to see.
 - **Raw Data / Custom — the enabling capability (the *how*).** Pull raw data via the Insights API and build/export anything (the connie.plus pipeline). The engine behind Impact.
 
-The **Flex Insights API is the seam** between the tiers: Basic is *"look at the dashboards"*; Connie Data Center is *"we pull your data and make it funder-ready."*
+The **Flex Insights API is the seam** between the tiers: Basic is *"look at the dashboards"*; Advanced is *"we pull your data and make it funder-ready."*
 
 :::caution Tier = purpose, not where it's built
-A report's tier is set by **who it's for and why**, *not* by which tool produced it. A community-impact dashboard built inside native Insights today is still **Connie Data Center (Advanced)** — its purpose is an external-audience outcome. Don't let "it's built in Insights" pull Impact back into Basic.
+A report's tier is set by **who it's for and why**, *not* by which tool produced it. A community-impact dashboard built inside native Insights today is still **Advanced** — its purpose is an external-audience outcome. Don't let "it's built in Insights" pull Impact back into Basic.
 :::
 
 ---
@@ -181,14 +181,14 @@ Connie's underlying reporting breaks into four categories. Tier is assigned by *
 |---|---|---|
 | **Real-Time** (live dashboards) | 🟦 Basic | Operational — running the center |
 | **Historical** (adhoc dashboards & reports) | 🟦 Basic | Operational — trends over time |
-| **Impact** (community-impact dashboards) | 🟪 Connie Data Center | **Marquee use case** — outcomes for funders / board / county |
-| **Custom / Raw Data** (export & reformat) | 🟪 Connie Data Center | **Enabling capability** — the connie.plus data pipeline |
+| **Impact** (community-impact dashboards) | 🟪 Advanced | **Marquee use case** — outcomes for funders / board / county |
+| **Custom / Raw Data** (export & reformat) | 🟪 Advanced | **Enabling capability** — the connie.plus data pipeline |
 
 ---
 
 ## Glossary index (A–Z)
 
-Abandoned Conversations % · Abandon Time · Agent · Agent Location · Agent Role · Agent Team · AvgTalk · AvgWrap · Basic · Channel · Connie Data Center (Advanced) · Department · Drill-Down · Experience Time · Follow-up · Handled · Handling Department · Handling Time · Historical · Hold Time · Impact · KPI · Missed · Queue · Queue Time · Quality % · Real-time · Rejected · Service Level (SLA) · Short Abandoned Time · SLA Threshold · Talk Time · Task Lifecycle · Wrap Time
+Abandoned Conversations % · Abandon Time · Advanced · Agent · Agent Location · Agent Role · Agent Team · AvgTalk · AvgWrap · Basic · Channel · Department · Drill-Down · Experience Time · Follow-up · Handled · Handling Department · Handling Time · Historical · Hold Time · Impact · KPI · Missed · Queue · Queue Time · Quality % · Real-time · Rejected · Service Level (SLA) · Short Abandoned Time · SLA Threshold · Talk Time · Task Lifecycle · Wrap Time
 
 ---
 

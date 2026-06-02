@@ -1,18 +1,18 @@
 ---
-title: "Administrators — Connie Data Center (Advanced)"
-sidebar_label: Connie Data Center
+title: "Administrators — Advanced"
+sidebar_label: Advanced
 sidebar_position: 2
 ---
 
-# Administrators — Connie Data Center (Advanced)
+# Administrators — Advanced
 
-> 📦 **Connie Data Center (Advanced) — paid upgrade (additional fee).** Accessed from the Connie Data Center destination: funder / county / impact reports + custom / raw data. **Requires an account upgrade** — gated to upgraded accounts.
+> 📦 **Advanced — paid upgrade (additional fee).** Funder / county / impact reports + custom / raw data. **Requires an account upgrade** — gated to upgraded accounts.
 
 > **STUB — scaffold only.** Outline and source pointers below; prose to follow.
 
-**Purpose (one line):** How an Administrator configures the **Connie Data Center**, builds funder/county report templates, and stands up the data pipeline that feeds the Advanced tier.
+**Purpose (one line):** How an Administrator configures the **Advanced**, builds funder/county report templates, and stands up the data pipeline that feeds the Advanced tier.
 
-**Audience / Tier:** Administrators · 🟪 Connie Data Center (Advanced) · paid upgrade.
+**Audience / Tier:** Administrators · 🟪 Advanced · paid upgrade.
 
 See **[Concepts & Glossary](/reporting-analytics/concepts-glossary)** for all metric definitions used below.
 
@@ -20,8 +20,8 @@ See **[Concepts & Glossary](/reporting-analytics/concepts-glossary)** for all me
 
 ## Intended H2 outline
 
-## Configure the Connie Data Center
-<!-- Stand up / configure the Connie Data Center (Advanced) surface at connie.plus/data-center for a tenant. Reference the Lifeline build. -->
+## Configure the Advanced layer
+<!-- Stand up / configure the Advanced surface at connie.plus/data-center for a tenant. Reference the Lifeline build. -->
 
 ## Funder / County Report Templates
 <!-- Build the reformatting templates that turn raw Insights data into funder-ready / grant-compliance / board deliverables. -->
