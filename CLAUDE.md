@@ -75,6 +75,18 @@ docs/
 5. **VALIDATE ALL URLS**: Every deliverable URL must be tested and working before deployment
 6. **NO "MISSION COMPLETE"**: Until CEO confirms all deliverables are accessible and functional
 
+### **FAQ Pages — Standard Pattern (repeatable across the docs)**
+
+FAQs follow ONE consistent convention so they're never randomly placed:
+
+- **Location:** a single `faq.md` at the **root of a top-level section** (e.g. `reporting-analytics/faq.md`, `get-support/faq.md`). One FAQ per section — not scattered inside sub-pages.
+- **Position:** **always last** in the section — `sidebar_position: 90`, `sidebar_label: "FAQ"`.
+- **Format:** every question is a collapsible **`<details><summary>Question</summary>` … `</details>`** accordion (Docusaurus themes these natively — no plugin). Leave a blank line after `<summary>` and before `</details>` so the answer renders as markdown (lists/tables work inside).
+- **Structure:** `# <Section> — Frequently Asked Questions` → one-line intro that links to the section's full guide → questions grouped under `## 🗂 Category` headers → a `## 💡 Still have questions?` footer with 2–3 links (full guide, glossary, [Get Support](/get-support/overview)).
+- **Content rule:** answers must be **accurate and sourced** from existing docs — link to the detailed guide rather than duplicating it. **Never fabricate FAQ answers.** Keep each answer short (a FAQ is a fast pointer, not a manual).
+
+Reference implementations: `end-users/staff-agents/faq.md`, `reporting-analytics/faq.md`, `get-support/faq.md`.
+
 ## **🚀 CDO Capabilities**
 
 ### **UAT Package Creation**
