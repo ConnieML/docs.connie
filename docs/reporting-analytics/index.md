@@ -8,6 +8,20 @@ sidebar_position: 1
 
 Connie reporting comes in two tiers.
 
+## 🎥 Welcome to Connie Reporting {#video-walkthrough}
+
+A quick tour of **Basic Reporting** — what every Connie account gets out of the box, and when you might step up to Advanced.
+
+<video
+controls
+preload="metadata"
+poster="https://admin-connie-one-uploads.s3.amazonaws.com/training/connie-reporting-basic-poster.jpg"
+style={{width: '100%', maxWidth: '900px', borderRadius: '8px', display: 'block', margin: '1rem 0'}}>
+<source src="https://admin-connie-one-uploads.s3.amazonaws.com/training/connie-reporting-basic.mp4" type="video/mp4" />
+<track kind="captions" src="/captions/connie-reporting-basic.vtt" srcLang="en" label="English" default />
+Your browser doesn't support embedded video — <a href="https://admin-connie-one-uploads.s3.amazonaws.com/training/connie-reporting-basic.mp4">download the walkthrough</a> instead.
+</video>
+
 ## 🟦 Basic
 
 *Included with every Connie account.*
