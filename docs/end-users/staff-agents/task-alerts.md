@@ -11,6 +11,22 @@ description: "Get a friendly desktop pop-up when a new task arrives — so you d
 
 **Connie Task Alerts** are a friendly heads-up: when a new task is routed to you, your computer shows a **desktop pop-up** — even when Connie is in the background and you're working in another window. Glance at it, finish what you're doing, and come back to Connie when you're ready.
 
+## 🎥 Video walkthrough {#video-walkthrough}
+
+A quick 90-second tour — what Task Alerts are, what the pop-up looks like, and how to turn them on or off right from Chrome.
+
+<video
+controls
+preload="metadata"
+poster="https://admin-connie-one-uploads.s3.amazonaws.com/training/connie-task-alerts-poster.jpg"
+style={{width: '100%', maxWidth: '900px', borderRadius: '8px', display: 'block', margin: '1rem 0'}}>
+<source src="https://admin-connie-one-uploads.s3.amazonaws.com/training/connie-task-alerts.mp4" type="video/mp4" />
+<track kind="captions" src="/captions/connie-task-alerts.vtt" srcLang="en" label="English" default />
+Your browser doesn't support embedded video — <a href="https://admin-connie-one-uploads.s3.amazonaws.com/training/connie-task-alerts.mp4">download the walkthrough</a> instead.
+</video>
+
+---
+
 :::info Who turns this on?
 Task Alerts have two switches, and **both** have to be on for you to see pop-ups:
 
