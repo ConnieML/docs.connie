@@ -97,6 +97,11 @@ const config = {
         },
         items: [
           {
+            to: "/whats-new",
+            label: "What's New",
+            position: "left",
+          },
+          {
             href: "https://github.com/ConnieML/docs.connie",
             label: "GitHub",
             position: "right",
