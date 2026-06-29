@@ -53,8 +53,8 @@ The `contacts` feature has several settings:
 
 ## How does it work?
 
-The contacts [view](https://www.twilio.com/docs/flex/developer/ui/custom-views-and-routes) is added to the [view collection](https://assets.flex.twilio.com/docs/releases/flex-ui/2.4.1/programmable-components/components/ViewCollection/) and a new SideLink component is added to the [navigation menu](https://assets.flex.twilio.com/docs/releases/flex-ui/2.4.1/programmable-components/components/SideNav/).
+The contacts view is added to the Connie agent workspace, and a new link to it is added to the navigation menu.
 
-If the recent contacts functionality is enabled, for every task that is completed, the task and call data is added to the `Contacts_Recent_(worker SID)` Sync map. Clicking on the phone icon in the actions column for a recent contact triggers the [StartOutboundCall action](https://assets.flex.twilio.com/docs/releases/flex-ui/2.4.1/ui-actions/Actions/#StartOutboundCall) to make the outbound call. This button is only visible for completed calls (voice tasks).
+If the recent contacts functionality is enabled, for every task that is completed, the task and call data is added to that worker's recent-contacts directory (`Contacts_Recent_(worker ID)`). Clicking on the phone icon in the actions column for a recent contact starts an outbound call to that contact. This button is only visible for completed calls (voice tasks).
 
-The shared contacts directory is stored in a Sync map called `Contacts_(account SID)`. Personal contact directories are stored in a Sync map called `Contacts_(worker SID)`. The contents of these maps are added to Redux, and updates to them are automatically pushed into Redux as well. This allows other features, such as `custom-transfer-directory`, to easily tap in to the contacts directories.
+The shared contacts directory is stored per account (`Contacts_(account ID)`), and personal contact directories are stored per worker (`Contacts_(worker ID)`). Contact data is loaded into the agent workspace in real time, and any updates are pushed automatically. This allows other features, such as `custom-transfer-directory`, to easily tap in to the contacts directories.
