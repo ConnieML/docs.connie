@@ -3,6 +3,7 @@ title: "What's New"
 sidebar_label: "What's New"
 sidebar_position: 1
 description: "The latest Connie features and improvements — what changed, and where to learn more."
+hide_table_of_contents: true
 ---
 
 {/* ⚠️ AUTO-GENERATED — do not edit by hand.
@@ -12,6 +13,22 @@ description: "The latest Connie features and improvements — what changed, and 
 # 🎉 What's New in Connie
 
 The latest Connie features and improvements — newest first. Each item links to the full guide in these docs.
+
+---
+
+## 2026-06-29 · 📇 Connie Contacts
+
+**What changed:** Connie now has a built-in **contacts directory** — recent contacts, your own personal contacts, and shared team contacts, right inside Connie. Search, view, and **click-to-dial** any contact, and (where transfers are enabled) reach them on a cold or warm transfer.
+
+🔗 [Connie Contacts](https://docs.connie.one/getting-started/feature-library/overview2/contacts#overview)
+
+---
+
+## 2026-06-25 · ✨ Demo Task Launcher
+
+**What changed:** A self-serve, PIN-gated **Demo Task Launcher** that fires real practice tasks — **voicemail, email, fax, and voice** — into a Connie training desk. Pair it to your phone with a quick QR scan and run a hands-on demo or agent-training session in seconds.
+
+![The Demo Task Launcher firing live practice tasks into a Connie agent desktop](https://docs.connie.one/img/whats-new/connie-demo-task-launcher.gif)
 
 ---
 

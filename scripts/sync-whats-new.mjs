@@ -31,6 +31,7 @@ title: "What's New"
 sidebar_label: "What's New"
 sidebar_position: 1
 description: "The latest Connie features and improvements — what changed, and where to learn more."
+hide_table_of_contents: true
 ---
 
 {/* ⚠️ AUTO-GENERATED — do not edit by hand.
@@ -69,7 +70,10 @@ async function main() {
     .split('\n')
     .filter((line) => {
       const t = line.trim();
-      if (t.startsWith('![')) return false; // vault-local images
+      // Keep images that point to a public, fully-qualified asset (e.g. a gif/screenshot
+      // hosted at https://docs.connie.one/img/...), so they render on the public page.
+      // Strip vault-local images (./changelog-assets/...) — those are internal-only.
+      if (t.startsWith('![')) return /\]\(https?:\/\//.test(t);
       if (t.includes('](/operations')) return false; // gated vault links
       if (/^\*—\s/.test(t)) return false; // leftover author signatures
       return true;
