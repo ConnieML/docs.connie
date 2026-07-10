@@ -36,6 +36,7 @@ Ready to begin? Navigate through the sections below to learn how to use Connie e
 
 ### Work with Your Team
 - **[Transferring Tasks](/end-users/staff-agents/transferring-tasks)** — Warm and cold transfers to other agents or queues
+- **[Handing Off Tasks](/end-users/staff-agents/handing-off-tasks)** — Route a voicemail, fax, or form to another Connie team (Transfer) or an outside partner (Hand Off)
 - **[Parking Tasks](/end-users/staff-agents/parking-tasks)** — Keep a task alive while you wait on a follow-up
 - **[Recording Notes](/end-users/staff-agents/recording-notes)** — Document your work properly
 
