@@ -16,6 +16,16 @@ The latest Connie features and improvements — newest first. Each item links to
 
 ---
 
+## 2026-07-10 · ✨ Out-of-Network Task Hand Offs
+
+**What changed:** Agents can now **hand off** a voicemail, fax, or form task to an **outside partner organization** — Connie emails them the recording + transcript (or the PDF) as a referral. (Async tasks can also be **transferred in-network** to another Connie queue.)
+
+![Connie task header — the new Out-of-Network Task Hand Off button, alongside the in-network Transfer and the Parking Lot](https://docs.connie.one/img/whats-new/out-of-network-task-handoffs.png)
+
+🔗 [Handing Off Tasks](https://docs.connie.one/end-users/staff-agents/handing-off-tasks)
+
+---
+
 ## 2026-06-29 · 📇 Connie Contacts
 
 **What changed:** Connie now has a built-in **contacts directory** — recent contacts, your own personal contacts, and shared team contacts, right inside Connie. Search, view, and **click-to-dial** any contact, and (where transfers are enabled) reach them on a cold or warm transfer.
