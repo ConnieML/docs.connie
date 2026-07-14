@@ -94,9 +94,9 @@ This one trips people up, so be precise: **whether you can download depends on w
 | Surface | Export today? | How |
 |---|---|---|
 | **Native Insights dashboards** | ✅ **Yes** | Dashboard menu → **Export to PDF** or **Export to XLSX** |
-| **connie.plus Data Center reports** | ⏳ **Not yet** | Raw-data download is **in development — available by June 15, 2026** |
+| **connie.plus Data Center reports** | ⏳ **Not yet** | Raw-data download is on the roadmap; no release date is committed |
 
-There's **no blanket "you can't download."** From a **native Insights dashboard**, export to PDF or XLSX from the dashboard menu (the same menu shown in [Customizing dashboards](#3-customizing-dashboards), above). The **connie.plus Data Center** raw-data download arrives **June 15, 2026**.
+There's **no blanket "you can't download."** From a **native Insights dashboard**, export to PDF or XLSX from the dashboard menu (the same menu shown in [Customizing dashboards](#3-customizing-dashboards), above). Raw-data download from the **connie.plus Data Center** is on the roadmap, with no committed release date.
 
 ---
 

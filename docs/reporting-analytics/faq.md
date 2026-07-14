@@ -86,7 +86,7 @@ About **24 months** of history is available. The exact window can change — che
 **It depends on which surface you're on** — there's no blanket "no download":
 
 - **Native Insights dashboards** — ✅ **yes**, export to **PDF** or **XLSX** from the dashboard menu.
-- **connie.plus Data Center reports** — ⏳ **not yet**. Raw-data download is in development, **available by June 15, 2026**.
+- **connie.plus Data Center reports** — ⏳ **not yet**. Raw-data download is on the roadmap; no release date is committed.
 
 See [Exporting & downloading](/reporting-analytics/administrators/basic#6-exporting--downloading-).
 
