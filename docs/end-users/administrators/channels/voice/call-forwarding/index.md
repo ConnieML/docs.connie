@@ -41,6 +41,14 @@ To forward your current business number to Connie, you'll need to either **PORT*
 
 If porting isn't an option yet, or you wish to take a more staged approach to your Connie transition, you can set up call forwarding through your existing provider, directing calls to your Connie number. Connie also allows you to configure call forwarding rules within your account, including setting specific forwarding numbers and ring times.
 
+:::warning Ask your provider for "unconditional" forwarding
+Whichever provider you use, request **unconditional** call forwarding — often labeled **"Always Forward"** or **"Forward All Calls."**
+
+Conditional options such as *forward when busy* or *forward when no answer* are the most common cause of a setup that appears to succeed but doesn't. They produce no error: your line still rings and callers still get answered, but the calls reach your old phone system instead of Connie, and your team sees nothing arrive.
+
+**Then confirm it with your Connie administrator.** A call dialed directly to your Connie number is indistinguishable by ear from a forwarded one — same greeting, same routing. Only your Connie administrator can confirm from Connie's records that a call genuinely arrived through the forward.
+:::
+
 ## View Specific Business Call Forwarding Instructions by Provider
 
 Choose your current phone provider below to view step-by-step forwarding instructions:
@@ -113,10 +121,10 @@ Choose your current phone provider below to view step-by-step forwarding instruc
 ## Next Steps
 
 After setting up call forwarding:
-1. **Test Your Setup**: Make test calls to ensure forwarding works correctly
+1. **Test Your Setup**: Make test calls to your existing business number — then **ask your Connie administrator to confirm the call arrived through the forward.** Do not treat the line as live until they have
 2. **Train Your Team**: Familiarize staff with Connie's interface and features
 3. **Monitor Performance**: Track call quality and any issues
-4. **Plan for Porting**: Consider moving your number directly to Connie for full features
+4. **Plan for Porting**: When you're ready to move your number directly to Connie, **contact the Connie Care team** — porting is handled as a guided process with your provider, not a self-service change
 
 ## Need Help?
 
