@@ -267,7 +267,7 @@ For high-volume deployments:
 - [Callback and Voicemail (Standard)](./callback-and-voicemail.md)
 - Mailgun Email Setup
 - [SendGrid Email Setup](/techops/feature-deployment/feature-management/channels/voice/voicemail/email-providers/sendgrid-setup)
-- [Voice Channel Overview](/end-users/administrators/channels/voice/)
+- [Voice Channel Overview](/end-users/administrators/channels/voice)
 
 ## Support and Maintenance
 

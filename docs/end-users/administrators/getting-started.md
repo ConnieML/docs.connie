@@ -104,7 +104,7 @@ As an Administrator you provision and configure reporting for your team. Real-ti
 
 - **[Conversation Transfer](/end-users/administrators/conversation-transfer)** — configure how your team hands off conversations
 - **[Manage your team](/end-users/administrators/managing-your-team/display-names)** — display names and how agents appear across surfaces
-- **[Reporting & Analytics](/reporting-analytics/)** — set up dashboards and reports
+- **[Reporting & Analytics](/reporting-analytics)** — set up dashboards and reports
 - **[Supervisor guide](/end-users/supervisors/overview)** · **[Staff Agent guide](/end-users/staff-agents/getting-started)** — the other two roles
 
 ---

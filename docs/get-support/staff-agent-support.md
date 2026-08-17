@@ -133,7 +133,7 @@ Ask your supervisor about:
 |-------------------------|----------------|
 | Daily work questions | Your supervisor |
 | Login/password issues | Your supervisor → IT if needed |
-| How to use a feature | Check [documentation](/end-users/staff-agents/) first |
+| How to use a feature | Check [documentation](/end-users/staff-agents) first |
 | Technical problems | Your supervisor → IT if needed |
 | Training | Your supervisor |
 | Policy questions | Your supervisor |
@@ -141,7 +141,7 @@ Ask your supervisor about:
 
 ## 🔗 Related Resources
 
-- **[Staff Agent Documentation](/end-users/staff-agents/)** - Complete guides
+- **[Staff Agent Documentation](/end-users/staff-agents)** - Complete guides
 - **[Troubleshooting Guide](/end-users/staff-agents/troubleshooting)** - Fix common issues
 - **[FAQ](/end-users/staff-agents/faq)** - Quick answers
 - **[Get Support Overview](/get-support/overview)** - All support options

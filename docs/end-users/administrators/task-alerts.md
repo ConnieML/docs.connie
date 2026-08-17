@@ -79,4 +79,4 @@ If the feature is on for the org but an agent still isn't seeing pop-ups, it's a
 
 - [Agent Setup Guide](/end-users/staff-agents/task-alerts)
 - [Advanced Troubleshooting](/end-users/administrators/task-alerts-troubleshooting)
-- [Managing Your Team](/end-users/administrators/managing-your-team/)
+- [Managing Your Team](/end-users/administrators/managing-your-team)

@@ -374,7 +374,7 @@ This depends on your organization's policies. Some organizations allow remote ac
 ## 💡 Still Have Questions?
 
 - **Ask your supervisor** - They know your organization's specific processes
-- **Check other guides** - See the full [Staff Agent Documentation](/end-users/staff-agents/)
+- **Check other guides** - See the full [Staff Agent Documentation](/end-users/staff-agents)
 - **Contact support** - [Get Support](/get-support/overview) for technical issues
 - **Suggest improvements** - Help us improve these docs by reporting gaps or unclear information
 

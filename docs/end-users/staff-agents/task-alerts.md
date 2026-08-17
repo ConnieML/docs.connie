@@ -115,5 +115,5 @@ Still stuck? See **[Connie Task Alerts — Advanced Troubleshooting](/end-users/
 ## Related
 
 - [Getting Started](/end-users/staff-agents/getting-started) — set your status to Available
-- [Handling Tasks](/end-users/staff-agents/handling-tasks/) — what to do once a task arrives
+- [Handling Tasks](/end-users/staff-agents/handling-tasks) — what to do once a task arrives
 - [Administrators: Activate Connie Task Alerts](/end-users/administrators/task-alerts) — the org-level switch

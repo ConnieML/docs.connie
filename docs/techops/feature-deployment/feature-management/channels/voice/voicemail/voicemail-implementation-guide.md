@@ -311,7 +311,7 @@ if (!transcriptionText && event.TranscriptionUrl) {
 - [SendGrid Setup](./email-providers/sendgrid-setup)
 
 ### Troubleshooting
-- [Voice Troubleshooting](/techops/feature-deployment/feature-management/channels/voice/troubleshooting/)
+- [Voice Troubleshooting](/techops/feature-deployment/feature-management/channels/voice/troubleshooting)
 
 :::tip Professional Services
 If you prefer to have our team handle the implementation, professional services are available for all voicemail configurations. Contact your Connie representative for details.

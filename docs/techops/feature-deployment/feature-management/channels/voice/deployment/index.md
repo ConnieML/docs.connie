@@ -43,7 +43,7 @@ This deployment kit is specifically designed to be followed by Claude agents. Ea
 
 ### 🚀 Implementation Guide  
 - **Direct+ Deployment Guide** - Complete step-by-step deployment process
-- **[Deployment Assets](/techops/feature-deployment/feature-management/channels/voice/deployment/assets/)** - Ready-to-use templates, scripts, and configuration files
+- **[Deployment Assets](/techops/feature-deployment/feature-management/channels/voice/deployment/assets)** - Ready-to-use templates, scripts, and configuration files
 
 ### 🧪 Testing & Validation
 - **Automated testing scripts** for pre and post-deployment validation
@@ -106,7 +106,7 @@ export ACCOUNT_SID='...' PHONE_NUMBER='...' # ... set all vars
    - Step-by-step implementation process
    - Built-in validation and troubleshooting
 
-4. **Use [Deployment Assets](/techops/feature-deployment/feature-management/channels/voice/deployment/assets/)**
+4. **Use [Deployment Assets](/techops/feature-deployment/feature-management/channels/voice/deployment/assets)**
    - Ready-to-use scripts and templates
    - Automated testing and validation tools
 
@@ -230,7 +230,7 @@ export ACCOUNT_SID='...' PHONE_NUMBER='...' # ... set all vars
 
 1. **New to Direct+ deployments:** Start with [Configuration Template](/techops/feature-deployment/feature-management/channels/voice/deployment/configuration-template)
 2. **Experienced deployer:** Jump to [Pre-Deployment Checklist](/techops/feature-deployment/feature-management/channels/voice/deployment/pre-deployment-checklist) 
-3. **Need deployment assets:** Browse [Ready-to-Use Assets](/techops/feature-deployment/feature-management/channels/voice/deployment/assets/)
+3. **Need deployment assets:** Browse [Ready-to-Use Assets](/techops/feature-deployment/feature-management/channels/voice/deployment/assets)
 4. **Technical reference:** See Deployment Guide
 
 **Questions or issues?**

@@ -8,7 +8,7 @@ title: "Legacy Voicemail Implementation Guide"
 This page contains legacy documentation for the previous voicemail architecture.
 
 **For current implementations, please use:**
-- [Voicemail Documentation](/techops/feature-deployment/feature-management/channels/voice/voicemail/) - Complete voicemail guides
+- [Voicemail Documentation](/techops/feature-deployment/feature-management/channels/voice/voicemail) - Complete voicemail guides
 - [Implementation Guide](/techops/feature-deployment/feature-management/channels/voice/voicemail/voicemail-implementation-guide) - Architecture and decision charts
 :::
 
@@ -62,7 +62,7 @@ The new modular architecture provides:
 ## Implementation Resources
 
 ### New Architecture (Recommended)
-- [Voicemail Overview](/techops/feature-deployment/feature-management/channels/voice/voicemail/) - Start here for new implementations
+- [Voicemail Overview](/techops/feature-deployment/feature-management/channels/voice/voicemail) - Start here for new implementations
 - [Implementation Guide](/techops/feature-deployment/feature-management/channels/voice/voicemail/voicemail-implementation-guide) - Architecture and decision charts
 - [Email Notifications Add-On](/techops/feature-deployment/feature-management/channels/voice/add-ons/email-notifications) - Email setup
 - [Transcription Add-On](/techops/feature-deployment/feature-management/channels/voice/add-ons/transcription) - Audio-to-text
@@ -73,6 +73,6 @@ The new modular architecture provides:
 
 ## Need Help?
 
-- **New Implementations**: Follow the [Voicemail Overview](/techops/feature-deployment/feature-management/channels/voice/voicemail/)
+- **New Implementations**: Follow the [Voicemail Overview](/techops/feature-deployment/feature-management/channels/voice/voicemail)
 - **Existing Deployments**: Continue using current setup or plan migration
 - **Professional Services**: Contact your Connie Professional Services representative
