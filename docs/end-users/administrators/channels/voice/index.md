@@ -31,7 +31,7 @@ The Connie Voice platform offers three progressive experience levels:
 
 ### Call Forwarding
 Forward your existing business phone number to Connie without changing your main number.
-- [Call Forwarding Overview](/end-users/administrators/channels/voice/call-forwarding/)
+- [Call Forwarding Overview](/end-users/administrators/channels/voice/call-forwarding)
 - [Cox Communications Setup](/end-users/administrators/channels/voice/call-forwarding/cox-communications)
 - [Xfinity Business Setup](/end-users/administrators/channels/voice/call-forwarding/xfinity-business)
 

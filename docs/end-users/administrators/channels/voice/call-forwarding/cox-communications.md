@@ -101,7 +101,7 @@ Your Connie administrator can check Connie's records and confirm whether the cal
 ## Next Steps
 
 After setting up call forwarding:
-- [Return to the call forwarding overview](/end-users/administrators/channels/voice/call-forwarding/)
+- [Return to the call forwarding overview](/end-users/administrators/channels/voice/call-forwarding)
 - [Administrator getting started guide](/end-users/administrators/getting-started)
 - Ask your Connie administrator to confirm the forward is verified on Connie's side
 
