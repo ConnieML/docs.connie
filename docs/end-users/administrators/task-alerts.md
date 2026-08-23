@@ -7,6 +7,15 @@ description: "Turn Connie Task Alerts on or off for your whole organization from
 
 # Connie Task Alerts — Activate / Deactivate
 
+:::info Tasks stay for 96 hours
+A task that arrives while you're closed will **still be waiting for four full days** — long enough to survive a weekend, and a holiday weekend. Close Friday at 5:30 PM, an email lands at 5:31 PM, and it's still there when someone starts Monday morning.
+
+Live phone calls and web chats are the exception; their window is much shorter, because someone is on the line right now.
+
+Need a different window for a program or channel? Custom settings are available — contact your Connie account representative or the [Connie Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
+:::
+
+
 **Connie Task Alerts** give your agents a friendly desktop pop-up when a new task is routed to them — so they don't have to keep one eye on Connie all day while they're working in their EMR, email, or anywhere else. When a task arrives they get a **"Connie — New Task"** notification in the corner of their screen, even when Connie is in the background.
 
 This page is for **administrators and supervisors**: how to turn the feature **on or off for your whole organization** from the Admin panel.

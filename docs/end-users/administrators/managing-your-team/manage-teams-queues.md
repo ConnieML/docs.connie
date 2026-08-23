@@ -6,6 +6,15 @@ title: "Manage Teams & Queues"
 
 # Manage Teams & Queues
 
+:::info Tasks stay for 96 hours
+A task that arrives while you're closed will **still be waiting for four full days** — long enough to survive a weekend, and a holiday weekend. Close Friday at 5:30 PM, an email lands at 5:31 PM, and it's still there when someone starts Monday morning.
+
+Live phone calls and web chats are the exception; their window is much shorter, because someone is on the line right now.
+
+Need a different window for a program or channel? Custom settings are available — contact your Connie account representative or the [Connie Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
+:::
+
+
 **Teams** are how supervisors *see* their people — the filter in Teams View, the grouping in reports, the cohort for performance dashboards. **Queues** are how work *finds* people — the pool of skill+channel+priority criteria that decides which agent gets a given task. They're two different things solving two different problems, and getting that distinction clear up front saves a lot of confusion later.
 
 | | Teams | Queues |

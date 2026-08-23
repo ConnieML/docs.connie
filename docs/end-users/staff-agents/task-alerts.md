@@ -7,6 +7,15 @@ description: "Get a friendly desktop pop-up when a new task arrives — so you d
 
 # Connie Task Alerts
 
+:::info Tasks stay for 96 hours
+A task that arrives while you're closed will **still be waiting for four full days** — long enough to survive a weekend, and a holiday weekend. Close Friday at 5:30 PM, an email lands at 5:31 PM, and it's still there when someone starts Monday morning.
+
+Live phone calls and web chats are the exception; their window is much shorter, because someone is on the line right now.
+
+Need a different window for a program or channel? Custom settings are available — contact your Connie account representative or the [Connie Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
+:::
+
+
 **Connie isn't meant to be stared at all day.** Like most people at a nonprofit, you're juggling — email, your EMR, a spreadsheet, a phone call, a walk-in. You shouldn't have to keep one eye glued to the Connie tab waiting for work to show up.
 
 **Connie Task Alerts** are a friendly heads-up: when a new task is routed to you, your computer shows a **desktop pop-up** — even when Connie is in the background and you're working in another window. Glance at it, finish what you're doing, and come back to Connie when you're ready.

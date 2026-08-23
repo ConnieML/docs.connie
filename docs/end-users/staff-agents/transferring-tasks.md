@@ -6,6 +6,15 @@ sidebar_position: 4
 
 # Transferring Tasks
 
+:::info Tasks stay for 96 hours
+A task that arrives while you're closed will **still be waiting for four full days** — long enough to survive a weekend, and a holiday weekend. Close Friday at 5:30 PM, an email lands at 5:31 PM, and it's still there when someone starts Monday morning.
+
+Live phone calls and web chats are the exception; their window is much shorter, because someone is on the line right now.
+
+Need a different window for a program or channel? Custom settings are available — contact your Connie account representative or the [Connie Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
+:::
+
+
 As a staff agent, you can transfer conversations (calls and chats) to other agents or supervisors when you need help or when a client needs specialized assistance.
 
 ## 🔧 What You Need to Know

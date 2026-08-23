@@ -6,6 +6,15 @@ sidebar_position: 5
 
 # Handing Off Voicemail, Fax & Form Tasks
 
+:::info Tasks stay for 96 hours
+A task that arrives while you're closed will **still be waiting for four full days** — long enough to survive a weekend, and a holiday weekend. Close Friday at 5:30 PM, an email lands at 5:31 PM, and it's still there when someone starts Monday morning.
+
+Live phone calls and web chats are the exception; their window is much shorter, because someone is on the line right now.
+
+Need a different window for a program or channel? Custom settings are available — contact your Connie account representative or the [Connie Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
+:::
+
+
 When you accept a **voicemail**, **fax**, or **form submission**, you're not stuck with it. You can move it two ways — keep it **inside your Connie network** (a Connie queue or teammate) or **send it to an outside partner** — and everything travels with it (the recording and transcript for a voicemail, the PDF for a fax or form).
 
 > This page covers **voicemail, fax, and form** tasks. For transferring a **live call or chat**, see [Transferring Tasks](/end-users/staff-agents/transferring-tasks).

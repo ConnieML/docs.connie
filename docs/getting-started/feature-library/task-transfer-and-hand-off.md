@@ -8,6 +8,15 @@ import TabItem from '@theme/TabItem';
 
 # Task Transfer & Hand Off
 
+:::info Tasks stay for 96 hours
+A task that arrives while you're closed will **still be waiting for four full days** — long enough to survive a weekend, and a holiday weekend. Close Friday at 5:30 PM, an email lands at 5:31 PM, and it's still there when someone starts Monday morning.
+
+Live phone calls and web chats are the exception; their window is much shorter, because someone is on the line right now.
+
+Need a different window for a program or channel? Custom settings are available — contact your Connie account representative or the [Connie Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
+:::
+
+
 **Move any task to the right place — a Connie teammate, another team, or an outside partner — with everything intact.**
 
 Some requests don't belong with the first person who receives them. A voicemail, fax, or web-form request might need a different team, a specialist, or a partner organization that offers the service your client needs. **Task Transfer & Hand Off** lets an agent route an accepted task to the right destination — and the recording, transcript, or PDF travels with it, so nobody starts over.
