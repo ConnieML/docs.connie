@@ -12,6 +12,7 @@ This section covers everything you need to know about working with voice calls i
 
 - **[Inbound Calls](/end-users/staff-agents/handling-tasks/handling-calls/inbound)** — Accepting calls, on-call controls, voicemail
 - **[Outbound Calls](/end-users/staff-agents/handling-tasks/handling-calls/outbound)** — Using the dialpad, placing calls, transfers
+- **[Send a Caller to Voicemail](/end-users/staff-agents/handling-tasks/handling-calls/send-to-voicemail)** — Offer a ringing caller the voicemail greeting when nobody can take the call
 
 ## Before You Start
 
