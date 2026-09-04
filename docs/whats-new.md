@@ -16,6 +16,16 @@ The latest Connie features and improvements — newest first. Each item links to
 
 ---
 
+## 2026-09-04 · ✨ Send a Caller to Voicemail
+
+**What changed:** When a call is ringing and nobody can take it, an agent can now send that caller **straight to voicemail** from the task card — instead of leaving them holding. The message comes back to the queue like any other voicemail, with the caller's details attached. It ends the call for the whole team, so Connie asks for confirmation first.
+
+![A ringing call in Connie showing the new Send to Voicemail button beside the green answer and red decline buttons](https://docs.connie.one/img/whats-new/agent-send-to-voicemail.png)
+
+🔗 [Sending a Caller to Voicemail](https://docs.connie.one/end-users/staff-agents/handling-tasks/handling-calls/send-to-voicemail) · [Turning it on (administrators)](https://docs.connie.one/end-users/administrators/channels/voice/voicemail/agent-send-to-voicemail)
+
+---
+
 ## 2026-07-10 · ✨ Out-of-Network Task Hand Offs
 
 **What changed:** Agents can now **hand off** a voicemail, fax, or form task to an **outside partner organization** — Connie emails them the recording + transcript (or the PDF) as a referral. (Async tasks can also be **transferred in-network** to another Connie queue.)
