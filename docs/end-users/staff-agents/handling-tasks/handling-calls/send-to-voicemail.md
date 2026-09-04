@@ -13,11 +13,13 @@ than wait.
 **Send to Voicemail** lets you offer that caller the voicemail greeting straight away, instead of
 leaving them on hold listening to music.
 
-:::warning This ends the call for your whole team
-This is **not** a personal "not me" button. When you send a caller to voicemail, they leave the queue
-entirely — the ringing task disappears for **everyone**, and no one else can pick it up.
+:::warning Nobody can answer this caller after you do it
+This is **not** a personal "not me" button. It doesn't hand the call to a colleague — it takes the
+caller **out of the queue**. After this, no one on your team can pick them up. Their only remaining
+way to reach you is the message they leave.
 
-That's the point of the feature. Just be sure it's what you want before you confirm.
+If you just don't want to take this particular call, the **red X** is the button you want — that
+passes the same caller along to the next available person.
 :::
 
 ## When to use it
