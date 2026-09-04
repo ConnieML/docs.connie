@@ -33,27 +33,31 @@ the caller out of the queue and gives them the greeting.
 
 ## How to do it
 
-**1. Find the button on the ringing call.**
+<a href="/img/staff-agents/send-to-voicemail-steps.png" target="_blank">
+  <img src="/img/staff-agents/send-to-voicemail-steps.png" alt="Three steps: click the ringing call without accepting it, click the round voicemail icon, then confirm in the dialog" style={{width: '100%', border: '1px solid #ddd', borderRadius: '8px'}} />
+</a>
 
-It sits to the right of the usual green accept and red decline buttons, with a voicemail icon. Hover
-over it and it tells you what it is.
+*Click the image to open it full size.*
+
+**1. Click the ringing call — do not accept it.**
+
+Open the call in the middle panel by clicking it in your task list. **Don't press the green
+checkmark** — accepting the call answers it, and this button is only for a call that's still ringing.
+
+**2. Click the voicemail icon.**
+
+It sits to the right of the green accept and red decline buttons. It only appears for a live call
+that's still waiting — never on a call you've already answered.
+
+**3. Confirm.**
+
+Connie spells out what's about to happen before doing it. Nothing has happened yet at this point —
+**Keep it ringing** backs out with no harm done. Choose **Send to voicemail** and the caller hears
+your organization's greeting.
 
 <div style={{textAlign: 'center'}}>
-  <img src="/img/staff-agents/send-to-voicemail-button.png" alt="An incoming call in Connie, showing the green accept button, the red decline button, and the round Send to Voicemail button beside them" style={{maxWidth: '700px', border: '1px solid #ddd', borderRadius: '8px'}} />
+  <img src="/img/staff-agents/send-to-voicemail-confirm.png" alt="Confirmation dialog reading: Send this caller to voicemail? This ends the call for the whole team, not just for you. The caller will be asked to leave a message, and nobody else will be able to answer this call." style={{maxWidth: '620px', border: '1px solid #ddd', borderRadius: '8px'}} />
 </div>
-
-**2. Click it, and read the confirmation.**
-
-Connie asks you to confirm, and spells out what's about to happen. Nothing has happened yet at this
-point — **Keep it ringing** backs out with no harm done.
-
-<div style={{textAlign: 'center'}}>
-  <img src="/img/staff-agents/send-to-voicemail-confirm.png" alt="Confirmation dialog reading: Send this caller to voicemail? This ends the call for the whole team, not just for you. The caller will be asked to leave a message, and nobody else will be able to answer this call." style={{maxWidth: '700px', border: '1px solid #ddd', borderRadius: '8px'}} />
-</div>
-
-**3. Choose **Send to voicemail**.**
-
-The caller hears your organization's voicemail greeting and can leave a message.
 
 ## What happens next
 
