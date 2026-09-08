@@ -16,6 +16,14 @@ The latest Connie features and improvements — newest first. Each item links to
 
 ---
 
+## 2026-09-07 · 🔧 Callers Reliably Offered Voicemail and Callback While on Hold
+
+**What changed:** A caller waiting on hold could be told the option to leave a voicemail or request a callback was **"not available at this time"** — and then, a moment later, be offered it anyway. Choosing it at that point could end the call. Callers are now offered the option consistently, and it works when they take it.
+
+🔗 [Voice Experience Options](https://docs.connie.one/end-users/administrators/channels/voice/voicemail/voicemail-options-guide)
+
+---
+
 ## 2026-09-04 · ✨ Send a Caller to Voicemail
 
 **What changed:** When a call is ringing and nobody can take it, an agent can now send that caller **straight to voicemail** from the task card — instead of leaving them holding. The message comes back to the queue like any other voicemail, with the caller's details attached. It ends the call for the whole team, so Connie asks for confirmation first.
