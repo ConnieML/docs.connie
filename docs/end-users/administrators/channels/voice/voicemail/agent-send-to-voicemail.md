@@ -17,6 +17,15 @@ A caller rings. Nobody can take it — the team is busy, or it's a one-person sh
 leaving that person on hold, an agent sends them to voicemail, and the message comes back as a
 voicemail task in the queue with the caller's details attached.
 
+This is what appears on a ringing call once it's on — the round voicemail icon, to the right of the
+green accept and red decline buttons your agents already know:
+
+<a href="/img/features/agent-send-to-voicemail/01-ringing-card-control-present.png" target="_blank">
+  <img src="/img/features/agent-send-to-voicemail/01-ringing-card-control-present.png" alt="A ringing call in Connie showing three buttons beneath it: green accept, red decline, and a round voicemail icon" style={{width: '100%', border: '1px solid #ddd', borderRadius: '8px'}} />
+</a>
+
+*Click any image on this page to open it full size.*
+
 Your agents' guide to using it:
 **[Sending a Caller to Voicemail](/end-users/staff-agents/handling-tasks/handling-calls/send-to-voicemail)**.
 
@@ -34,6 +43,13 @@ your agents already have the **decline** button, which passes a call along witho
 Connie asks the agent to confirm before anything happens, and the confirmation says plainly that the
 call ends for the team. **That wording is deliberate and shouldn't be softened** — it is what stops a
 mis-click becoming a lost caller.
+
+<div style={{textAlign: 'center'}}>
+  <img src="/img/features/agent-send-to-voicemail/02-confirmation-dialog.png" alt="Confirmation dialog reading: Send this caller to voicemail? This ends the call for the whole team, not just for you. The caller will be asked to leave a message, and nobody else will be able to answer this call. Buttons: Keep it ringing, Send to voicemail." style={{maxWidth: '720px', border: '1px solid #ddd', borderRadius: '8px'}} />
+</div>
+
+Nothing has happened at this point. **Keep it ringing** backs out and the call carries on hunting for
+an agent.
 
 ## What it does to your reporting
 
@@ -92,6 +108,40 @@ afternoon. We can supply the wording.
 - **It can be switched off instantly** if it isn't working for your team — no deploy, no downtime.
 - **The button only ever appears on a ringing voice call.** It is never offered on emails, faxes,
   chats, or on a call an agent has already accepted.
+
+### Where it deliberately doesn't appear
+
+Worth knowing before the first "the button is missing" question reaches you — in both cases below,
+the feature is switched on and working exactly as designed.
+
+<a href="/img/features/agent-send-to-voicemail/04-accepted-call-control-absent.png" target="_blank">
+  <img src="/img/features/agent-send-to-voicemail/04-accepted-call-control-absent.png" alt="A call the agent has already accepted, showing only hold and hang up controls — no voicemail icon" style={{width: '100%', border: '1px solid #ddd', borderRadius: '8px'}} />
+</a>
+
+**On a call that's already been accepted** — only hold and hang up. Once an agent has answered, the
+caller is in a conversation, not waiting in a queue, and there is nothing to send to voicemail.
+
+<a href="/img/features/agent-send-to-voicemail/03-email-task-control-absent.png" target="_blank">
+  <img src="/img/features/agent-send-to-voicemail/03-email-task-control-absent.png" alt="An email task open in Connie, with no voicemail icon among its controls" style={{width: '100%', border: '1px solid #ddd', borderRadius: '8px'}} />
+</a>
+
+**On an email, fax or chat task** — there is no live caller on the line to redirect.
+
+### Switching it off
+
+It comes off the same way it went on, and the change is immediate — agents see the button disappear
+on their next ringing call, with no deploy and no downtime:
+
+<div style={{display: 'flex', gap: '12px', flexWrap: 'wrap'}}>
+  <a href="/img/features/agent-send-to-voicemail/06-flag-back-on-control-returns.png" target="_blank" style={{flex: '1 1 320px'}}>
+    <img src="/img/features/agent-send-to-voicemail/06-flag-back-on-control-returns.png" alt="A ringing call with the feature on — accept, decline and voicemail icon" style={{width: '100%', border: '1px solid #ddd', borderRadius: '8px'}} />
+  </a>
+  <a href="/img/features/agent-send-to-voicemail/05-flag-off-control-gone.png" target="_blank" style={{flex: '1 1 320px'}}>
+    <img src="/img/features/agent-send-to-voicemail/05-flag-off-control-gone.png" alt="The same ringing call with the feature off — only accept and decline" style={{width: '100%', border: '1px solid #ddd', borderRadius: '8px'}} />
+  </a>
+</div>
+
+*On (left) and off (right). Accept and decline are untouched either way.*
 
 ---
 

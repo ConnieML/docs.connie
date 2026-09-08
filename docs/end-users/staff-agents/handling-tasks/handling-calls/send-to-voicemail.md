@@ -85,6 +85,27 @@ the original call.
 | **"That call is no longer waiting"** | A teammate accepted it, or the caller hung up, in the moment between your click and your confirm. Nothing went wrong and nothing was lost. |
 | **The button is greyed out briefly** | It's working. It goes back to normal once the caller has been moved. |
 
+### Two places it's *meant* to be missing
+
+Nothing is broken in either of these. They're the two most common reasons people go looking for the
+button and don't find it.
+
+<a href="/img/features/agent-send-to-voicemail/04-accepted-call-control-absent.png" target="_blank">
+  <img src="/img/features/agent-send-to-voicemail/04-accepted-call-control-absent.png" alt="A call already accepted, showing only the hold and hang up buttons — no voicemail icon" style={{width: '100%', border: '1px solid #ddd', borderRadius: '8px'}} />
+</a>
+
+**On a call you've already answered.** Once you press the green checkmark you're in the conversation
+— there's no longer a waiting caller to send anywhere. If you need to get this caller to voicemail
+now, the honest move is to tell them and take a message yourself.
+
+<a href="/img/features/agent-send-to-voicemail/03-email-task-control-absent.png" target="_blank">
+  <img src="/img/features/agent-send-to-voicemail/03-email-task-control-absent.png" alt="An email task open in Connie with no voicemail icon among its controls" style={{width: '100%', border: '1px solid #ddd', borderRadius: '8px'}} />
+</a>
+
+**On an email, fax or chat.** There's nobody on the line to redirect. These wait in your queue for
+four days — see [How Long a Task Stays in Your
+Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last).
+
 ## Questions people ask
 
 **Can I undo it?**
