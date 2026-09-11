@@ -13,6 +13,24 @@ This feature adds a contacts directory to ConnieRTC. The contacts directory cons
 
 Contacts can be viewed, managed, and dialed using the contacts view added to ConnieRTC. In addition, a "Call Contact" section is added to the outbound dialer panel, allowing easy dialing of contacts from any view. Also, if the `custom-transfer-directory` feature is enabled, contacts are available in the transfer panel for cold or warm transfer, and shared contacts can be configured to disable cold and/or warm transfer capability.
 
+:::info Connie — the shared directory is also the external referral list
+This page is the configuration reference for the feature. It does not describe the feature's most
+operationally important consequence, so it is stated here:
+
+**A shared contact's `email` field is what makes it a referral target.** Connie's Universal Task
+Routing "Refer out" action sends an async task (voicemail, fax, web form) to an outside partner
+**by email**, and it only offers shared contacts that carry an email address. A shared contact with
+no email is still fully callable and transferable — it simply never appears as a referral option,
+and neither the agent nor the administrator is told why.
+
+A shared directory with zero emailed contacts means external referral is **dark on that account**
+even though the feature is deployed and enabled.
+
+**Administrator guidance (how to build and maintain that list, including the spreadsheet import):**
+[Shared Contacts & External Referrals](/end-users/administrators/shared-contacts-and-referrals) ·
+**What agents see:** [Handing Off Voicemail, Fax & Form Tasks](/end-users/staff-agents/handing-off-tasks)
+:::
+
 ## User experience
 
 Recent contacts:
