@@ -73,6 +73,17 @@ Typing partners in one at a time is fine for three contacts and miserable for fo
 The spreadsheet import is switched on per organization. If you don't see it next to **Add contact** in your contacts directory, it isn't enabled on your account yet — ask your Connie representative or the [Connie Care Team](/get-support/overview).
 :::
 
+### Where to find it
+
+In Connie, open **Contacts** from the left sidebar, then the **Shared Contacts** tab. If the import
+is switched on for your organization, you'll see **Import from CSV** next to **Add contact**.
+
+<a href="/img/features/shared-contacts-csv-import/01-where-to-find-import.png" target="_blank">
+  <img src="/img/features/shared-contacts-csv-import/01-where-to-find-import.png" alt="The Shared Contacts tab showing the Import from CSV button beside Add contact, and the import dialog it opens" style={{width: '100%', border: '1px solid #ddd', borderRadius: '8px'}} />
+</a>
+
+<p><em>Contacts → Shared Contacts → Import from CSV. Click the image to enlarge.</em></p>
+
 ### The file
 
 Start from the **Connie contacts template** — it's in **Admin Tools** inside Connie, along with step-by-step instructions for exporting what you already have out of Outlook, Outlook on the web, Google Contacts, or a spreadsheet you already keep. The template opens in Excel, Numbers, or Google Sheets.
@@ -94,6 +105,13 @@ If you already have a contact list exported from somewhere else, **send it as it
 5. You get a count back: *created · updated · rejected*.
 
 **Nothing is written until you confirm the preview.** You can walk away at that point and nothing has changed.
+
+<a href="/img/features/shared-contacts-csv-import/02-import-dialog.jpg" target="_blank">
+  <img src="/img/features/shared-contacts-csv-import/02-import-dialog.jpg" alt="The import dialog, showing the blank template download, the file chooser, and a disabled Import button before any file is selected" style={{width: '100%', border: '1px solid #ddd', borderRadius: '8px'}} />
+</a>
+
+<p><em>The import window. The blank template is downloadable from here, and the Import button stays
+disabled until you've chosen a file and reviewed what it contains.</em></p>
 
 ### The five rules worth knowing before you start
 
@@ -125,6 +143,14 @@ Don't type `N/A` or `none` in an empty cell. An empty cell is what Connie expect
 A filled-in template is **real contact details for real people** — names, direct lines, work addresses — sitting in a file on somebody's laptop and, usually, in an email thread. It isn't client health information, but it isn't nothing either. Keep it where you'd keep a staff roster: don't forward it beyond the people building the list, and delete stray copies once the import is done.
 
 ## 👀 What your staff will see
+
+Your contacts directory, once it's populated. Everyone on your team can see and use these; only
+admins and supervisors can change them.
+
+<a href="/img/features/shared-contacts-csv-import/03-shared-contacts-list.jpg" target="_blank">
+  <img src="/img/features/shared-contacts-csv-import/03-shared-contacts-list.jpg" alt="The Shared Contacts directory listing partner organizations with their phone numbers and per-row actions" style={{width: '100%', border: '1px solid #ddd', borderRadius: '8px'}} />
+</a>
+
 
 Once a contact is in the shared directory:
 
