@@ -55,7 +55,7 @@ The partner gets a **"Referral from [your organization]"** email with the item a
 - **Voicemail** → the recording **and** the transcript.
 - **Fax / Form** → the **PDF**.
 
-> Only partners that have an **email on file** appear in the list. Ask your administrator to add a partner's email if you don't see them.
+> Only partners that have an **email on file** appear in the list. Ask your administrator to add a partner's email if you don't see them — that's covered in [Shared Contacts & External Referrals](/end-users/administrators/shared-contacts-and-referrals).
 
 ## ⏸️ Holding a Voicemail (Don't Hand It Off)
 
@@ -73,7 +73,7 @@ If you just need to **wait** — a callback, a doctor's office, more research �
 Agents handle **one task per channel at a time**. If the person you sent it to already has a task of that type open (for example, another email/fax), your task **waits in the queue** until they free up — this is normal, not an error. It will land as soon as they finish their current one.
 
 **"Which partners can I refer to?"**
-Only partners with an **email on file** show in the Refer-out list. Your administrator manages partner contacts and their emails.
+Only partners with an **email on file** show in the Refer-out list. Your administrator manages partner contacts and their emails — see **[Shared Contacts & External Referrals](/end-users/administrators/shared-contacts-and-referrals)** for how that list is built and maintained.
 
 **"Did the partner actually get it?"**
 The referral is sent immediately. If a partner says it didn't arrive, ask them to check spam, then let your supervisor know.
