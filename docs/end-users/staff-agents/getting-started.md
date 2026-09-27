@@ -126,7 +126,7 @@ Now that you're set up, learn how to:
 - **[Handling Calls](/end-users/staff-agents/handling-tasks/handling-calls)** — Accept calls, use the dialpad, transfers
 - **[Handling Emails](/end-users/staff-agents/handling-tasks/handling-emails)** — Send and receive emails
 - **[Handling Chat & SMS](/end-users/staff-agents/handling-tasks/handling-chat)** — Text messages and webchat
-- **[Transfer Conversations](/end-users/staff-agents/transferring-tasks)** — Hand off tasks to other agents
+- **[Send a Task On](/end-users/staff-agents/task-sender)** — Use the **Send** button to Transfer, Hand off or Refer out
 - **[Record Notes](/end-users/staff-agents/recording-notes)** — Document your interactions
 
 <div style={{textAlign: 'center', margin: '36px 0 8px'}}>

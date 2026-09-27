@@ -25,13 +25,13 @@ You can also initiate outbound calls directly from a task — for example, click
 
 ## Warm Transfers vs Cold Transfers
 
-When you need to transfer a call to another agent or team, you have two options:
+When you need to transfer a call to another agent or team, press the **Send** button at the top of the call and choose **Transfer**. (On a call, Transfer is the only choice, because someone is on the line. See [Connie Task Sender](/end-users/staff-agents/task-sender).) You then have two options:
 
 ### Cold Transfer (Quick Handoff)
 
 A cold transfer sends the call to another agent immediately — you don't speak to the receiving agent first.
 
-1. Click the **Transfer** button (forward arrow icon) during the call
+1. Press **Send**, then **Transfer**, during the call
 2. Choose **Agent** or **Queues** tab
 3. Select the person or team from the list
 4. Click **Cold Transfer**
@@ -46,7 +46,7 @@ Use cold transfers when:
 
 A warm transfer lets you speak with the receiving agent before handing off the call — so you can brief them on the situation.
 
-1. Click the **Transfer** button during the call
+1. Press **Send**, then **Transfer**, during the call
 2. Select the agent or queue
 3. Click **Invite to Join** (or the warm transfer icon)
 4. You're now in a three-way conversation with the caller and the other agent
@@ -83,12 +83,12 @@ Outbound calls follow the same wrap-up process as inbound calls:
 | Action | How to Do It |
 |--------|-------------|
 | Place an outbound call | Dialpad icon → Enter number → Call |
-| Cold transfer | Transfer button → Select agent/queue → Cold Transfer |
-| Warm transfer | Transfer button → Select agent/queue → Invite to Join → Brief → Leave |
+| Cold transfer | Send → Transfer → Select agent/queue → Cold Transfer |
+| Warm transfer | Send → Transfer → Select agent/queue → Invite to Join → Brief → Leave |
 | Callback from voicemail | Accept voicemail task → Click "Place Call Now" button |
 
 ---
 
-**Related:** [Inbound Calls](/end-users/staff-agents/handling-tasks/handling-calls/inbound) | [Transferring Tasks](/end-users/staff-agents/transferring-tasks)
+**Related:** [Inbound Calls](/end-users/staff-agents/handling-tasks/handling-calls/inbound) | [Transferring Tasks](/end-users/staff-agents/transferring-tasks) | [Connie Task Sender](/end-users/staff-agents/task-sender)
 
 **Need help?** Check our [FAQ](/end-users/staff-agents/faq) or visit [Get Support](/get-support/overview)

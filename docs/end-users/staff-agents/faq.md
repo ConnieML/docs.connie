@@ -67,12 +67,29 @@ When your status is set to **"Available"**, new tasks will appear in your **Inbo
 </details>
 
 <details>
-<summary>What's the difference between assigning and transferring?</summary>
+<summary>How do I send a task to someone else?</summary>
 
-- **Assigning** = You're giving the entire task/inquiry to someone else to own
-- **Transferring** = You're handing off an active conversation (call or chat) to someone else
+Press the **Send** button at the top of the task. You'll see up to three choices:
 
-See [Transferring Tasks](/end-users/staff-agents/transferring-tasks) for more details.
+- **Transfer** — to a coworker or department in Connie. Connie keeps track of it.
+- **Hand off** — by email to a coworker who doesn't use Connie. The task closes in Connie.
+- **Refer out** — by email to someone at another organization. The task closes in Connie.
+
+Easy way to remember it: **Transfer keeps it. Hand off and Refer out let it go.** See [Connie Task Sender](/end-users/staff-agents/task-sender).
+
+</details>
+
+<details>
+<summary>Why can't I hand off or refer out a phone call, chat or text?</summary>
+
+Because a real person is waiting with you right now. Hand off and Refer out work by email, and you can't email someone who is on the phone with you. Use **Transfer** instead (or connect a caller to an outside number using the **External** tab or the dial pad). See [Which tasks can use which choice](/end-users/staff-agents/task-sender#which-tasks-can-use-which-choice).
+
+</details>
+
+<details>
+<summary>Someone isn't in my Hand off or Refer out list. Why?</summary>
+
+Only contacts with an **email address** saved appear there. Ask your admin or supervisor to add one. See [Who shows up in the list?](/end-users/staff-agents/handing-off-tasks#-who-shows-up-in-the-list)
 
 </details>
 
@@ -285,7 +302,8 @@ This depends on your organization's IT policies. Some organizations require VPN 
 
 - **[Getting Started](/end-users/staff-agents/getting-started)** - Initial setup and login
 - **[Handling Tasks](/end-users/staff-agents/handling-tasks)** - Managing inquiries and referrals
-- **[Transferring Tasks](/end-users/staff-agents/transferring-tasks)** - Transferring conversations
+- **[Connie Task Sender](/end-users/staff-agents/task-sender)** - Transfer, Hand off and Refer out with the Send button
+- **[Transferring Tasks](/end-users/staff-agents/transferring-tasks)** - Transferring to a coworker or department
 - **[Recording Notes](/end-users/staff-agents/recording-notes)** - Documentation best practices
 - **[Troubleshooting](/end-users/staff-agents/troubleshooting)** - Common issues and solutions
 

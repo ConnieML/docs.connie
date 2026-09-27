@@ -30,7 +30,8 @@ Before reaching out for help, check these resources:
 ### Staff Agent Documentation
 - **[Getting Started](/end-users/staff-agents/getting-started)** - Login and initial setup
 - **[Handling Tasks](/end-users/staff-agents/handling-tasks)** - Managing inquiries and referrals
-- **[Transferring Tasks](/end-users/staff-agents/transferring-tasks)** - How to transfer conversations
+- **[Connie Task Sender](/end-users/staff-agents/task-sender)** - Transfer, Hand off or Refer out with the Send button
+- **[Transferring Tasks](/end-users/staff-agents/transferring-tasks)** - How to transfer to a coworker or department
 - **[Recording Notes](/end-users/staff-agents/recording-notes)** - Documentation best practices
 - **[FAQ](/end-users/staff-agents/faq)** - Common questions answered
 - **[Troubleshooting](/end-users/staff-agents/troubleshooting)** - Fix common issues yourself

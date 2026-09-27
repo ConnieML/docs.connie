@@ -12,31 +12,37 @@ Your **shared contact directory** is the list every member of your staff sees in
 This page covers what belongs in it, the one field that decides whether a partner can receive referrals at all, and how to load a whole list from a spreadsheet instead of typing contacts one at a time.
 
 :::danger The single most important thing on this page
-**A contact can only receive a referral if it has an email address.**
+**A contact can only receive a Hand off or a referral if it has an email address.**
 
 A referral leaves Connie as an **email**. A contact with no email address on file is still perfectly useful — your staff can call it and transfer callers to it — but it **will not appear** when an agent tries to refer a case out. It is invisible to that part of the product.
 
 If a partner organization should be able to receive referrals and nobody has put an email address on their contact, **your staff cannot refer to them and will not be told why.** The partner simply isn't on the list.
 :::
 
-## 🔀 Two different things your staff can do — know which is which
+## 🔀 Three things your staff can do — know which is which
 
-When an agent finishes with a voicemail, fax, or web form and it belongs somewhere else, they have two choices. They are not the same, and only one of them needs an email address.
+Every task in Connie has one **Send** button — the [Connie Task Sender](/end-users/staff-agents/task-sender). It offers up to three choices. Only two of them need an email address.
 
-| | **Task Transfer (In-Network)** | **Task Hand Off (Out-of-Network)** |
-|---|---|---|
-| What it is | Moves the task to another **Connie queue or teammate** | **Emails** the item to an **outside partner** |
-| Who receives it | Someone inside your organization, working in Connie | A partner organization that isn't on Connie |
-| What they call it on screen | *Hand off to a queue* | *Refer out to a partner* |
-| Needs an email on the contact? | **No** | **Yes — no email, no referral** |
-| What travels with it | The voicemail recording + transcript, or the fax/form PDF | The same — attached to the referral email |
-| Comes back? | It stays in Connie; you can see it in reporting | **One-way for now** — there is no reply thread back into Connie |
+| | **Transfer** | **Hand off** | **Refer out** |
+|---|---|---|---|
+| What it is | Moves the task to a **coworker or department in Connie** | **Emails** it to a coworker at your organization who **doesn't use Connie** | **Emails** it to someone at **another organization** |
+| Which contacts appear | Connie coworkers and departments | Contacts whose email is at **your own organization** | Contacts with **any other** email address |
+| Needs an email on the contact? | **No** | **Yes** | **Yes — no email, no referral** |
+| Works on | Every task | Voicemail, fax, web form, email | Voicemail, fax, web form, email |
+| What travels with it | The whole task | The recording + transcript, the fax/form document, or the full email with attachments | The same |
+| Does Connie keep track? | **Yes** — it stays in Connie | **No** — it leaves Connie and closes | **No** — it leaves Connie and closes |
 
-:::caution An out-of-network referral leaves your building
-Once the referral email is sent, the item is in a partner's inbox and out of Connie's reach. There is no delivery receipt inside the product and no reply thread back. Treat the email address on a contact with the same care you would treat handing someone a paper file — a typo sends a client's information to a stranger.
+If the person replies to a Hand off or Refer out email, the reply comes back into Connie as a **new task**. Phone calls, web chats and texts can only be transferred, because someone is waiting on the line.
+
+:::note The Task Sender is switched on per organization
+The Connie team switches the Task Sender on for each organization. If your staff don't see a **Send** button at the top of their tasks, contact the [Connie Care Team](/get-support/overview).
 :::
 
-Your staff's version of this is documented at **[Handing Off Voicemail, Fax & Form Tasks](/end-users/staff-agents/handing-off-tasks)** — worth reading once so you know exactly what they see.
+:::caution A Hand off or Refer out leaves your building
+Once the email is sent, the item is in someone else's inbox and out of Connie's reach. The task closes in Connie, and nobody here will be reminded about it. Treat the email address on a contact with the same care you would treat handing someone a paper file — a typo sends a client's information to a stranger.
+:::
+
+Your staff's version of this is documented at **[Connie Task Sender](/end-users/staff-agents/task-sender)** — worth reading once so you know exactly what they see.
 
 ## 📇 What a contact holds
 
@@ -156,12 +162,12 @@ Once a contact is in the shared directory:
 
 - It appears in the **contacts directory** for every agent, with the organization and department beside the name.
 - It can be **called** and **transferred to**, subject to the two transfer settings.
-- **If it has an email address**, it appears when an agent chooses **Refer out to a partner** on a voicemail, fax, or form task.
+- **If it has an email address**, it appears when an agent chooses **Hand off** (email at your own organization) or **Refer out** (any other email) on a voicemail, fax, web form or email task.
 - **If it doesn't**, it simply isn't in that list. The agent sees the partners that do have one.
 
-The partner receives a **"Referral from [your organization]"** email with the voicemail recording and transcript, or the fax/form PDF, attached.
+The person receives an email with everything attached: the voicemail recording and transcript, the fax or form document, or the full email with its attachments.
 
-➡️ The staff-side procedure, in their words: **[Handing Off Voicemail, Fax & Form Tasks](/end-users/staff-agents/handing-off-tasks)**
+➡️ The staff-side procedure, in their words: **[Connie Task Sender](/end-users/staff-agents/task-sender)**
 
 ## ⚠️ Common questions
 
@@ -175,14 +181,14 @@ Check the preview for a warning about an unrecognized column heading. If the `em
 No, and on purpose. An import only adds and updates. Delete contacts individually in the contacts directory so a half-finished spreadsheet can never wipe your directory.
 
 **"Did the partner actually receive the referral?"**
-Connie sends it immediately, but there's no delivery receipt in the product and no reply thread back. If a partner says it didn't arrive, ask them to check spam first, then contact the [Connie Care Team](/get-support/overview).
+Connie sends it immediately, but there's no delivery receipt in the product. If they reply, the reply comes back into Connie as a new task. If a partner says it didn't arrive, ask them to check spam first, then contact the [Connie Care Team](/get-support/overview).
 
 **"Who is allowed to do this?"**
 Administrators and supervisors maintain the shared directory. Agents can see it and use it, but not change it.
 
 ## 🎯 Next steps
 
-- **[Handing Off Voicemail, Fax & Form Tasks](/end-users/staff-agents/handing-off-tasks)** — what your staff see and do
+- **[Connie Task Sender](/end-users/staff-agents/task-sender)** — what your staff see and do
 - **[Conversation Transfer](/end-users/administrators/conversation-transfer)** — configuring in-network transfers for live conversations
 - **[Manage your team](/end-users/administrators/managing-your-team/display-names)** — how your own people appear across Connie
 - **[Administrator Getting Started](/end-users/administrators/getting-started)** — the full admin setup path

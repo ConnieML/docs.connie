@@ -5,6 +5,10 @@ title: "Managing Conversation Transfers"
 
 # Managing Conversation Transfers
 
+:::info Connie Task Sender
+Your agents now move every task with one **Send** button at the top of the task: **Transfer** keeps it in Connie (a coworker or department); **Hand off** and **Refer out** email it to someone outside Connie and close the task. Phone calls, web chats and texts can only be transferred. If an agent transfers to a department that is closed, Connie asks them first. Every move is recorded, so reports show what was transferred, handed off or referred out. The Task Sender is switched on per organization by the Connie team. Full agent guide: [Connie Task Sender](/end-users/staff-agents/task-sender).
+:::
+
 As a supervisor, you need to understand how conversation transfers work, monitor transfer patterns, and help agents use this feature effectively.
 
 ## 📋 Overview for Supervisors
@@ -28,15 +32,15 @@ Conversation transfer allows your agents to:
 - Transfer success/failure rates
 - Client satisfaction after transfers
 
-### NSS Production Success Metrics (Benchmarks)
-Based on successful NSS deployment:
+### Production Success Metrics (Benchmarks)
+Based on production deployments:
 - **Transfer Success Rate:** Target >95% (anything below 90% indicates system issues)
 - **Transfer Completion Time:** Target under 10 seconds for cold transfers, under 30 seconds for warm transfers
 - **Agent Acceptance Rate:** Target >90% (agents accepting transfers when available)
 - **Client Satisfaction:** No negative impact from transfers (maintain or improve scores)
 
-### Red Flag Metrics (Immediate Escalation Required - NSS VALIDATED)
-- Transfer success rate drops below 90% (NSS threshold)
+### Red Flag Metrics (Immediate Escalation Required)
+- Transfer success rate drops below 90%
 - ANY "TaskRouter error: Bad Request" reports from agents (indicates workflow SID issues)
 - Transfer times consistently over 30 seconds
 - Client complaints about multiple transfers or disconnections
@@ -134,7 +138,7 @@ Based on successful NSS deployment:
 
 ## 📞 Escalation Path
 
-**For system issues (NSS Production Guidance):**
+**For system issues (Production Guidance):**
 - **"TaskRouter error: Bad Request" reports:** IMMEDIATE escalation to Platform Developer
 - **Transfer success rate drops below 90%:** Contact Connie Support with URGENT priority
 - **Individual agent transfer failures:** Check workflow SID configuration first

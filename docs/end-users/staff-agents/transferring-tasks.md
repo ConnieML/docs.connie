@@ -6,6 +6,10 @@ sidebar_position: 4
 
 # Transferring Tasks
 
+:::tip New: one Send button for every task
+Every task now has a **Send** button at the top. **Send → Transfer** moves the task to a coworker or a department in Connie, and Connie keeps track of it. For the full picture, including **Hand off** and **Refer out**, see **[Connie Task Sender](/end-users/staff-agents/task-sender)**.
+:::
+
 :::info Tasks stay for 96 hours
 A task that arrives while you're closed will **still be waiting for four full days** — long enough to survive a weekend, and a holiday weekend. Close Friday at 5:30 PM, an email lands at 5:31 PM, and it's still there when someone starts Monday morning.
 
@@ -14,63 +18,54 @@ Live phone calls and web chats are the exception; their window is much shorter, 
 Need a different window for a program or channel? Custom settings are available — contact your Connie account representative or the [Connie Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
 :::
 
-
-As a staff agent, you can transfer conversations (calls and chats) to other agents or supervisors when you need help or when a client needs specialized assistance.
+**Transfer** sends a task to a coworker or a department in Connie. It stays in Connie, so nothing gets lost. You can transfer any kind of task: a phone call, web chat, text message, voicemail, fax, web form or email.
 
 ## 🔧 What You Need to Know
 
-- Works with calls, SMS, webchat, and WhatsApp
-- You can transfer to specific agents or to a queue (team)
-- Two types: **Cold transfer** (immediate) and **Warm transfer** (stay connected until they join)
-- Your conversation history transfers with the client
+- Press **Send**, then **Transfer**. It works on every kind of task.
+- You can transfer to a **coworker** or to a **department** (the next free person there picks it up).
+- On a phone call you can talk to the coworker first (**warm**) or pass it straight over (**cold**).
+- The conversation history goes with the task.
+- If the department is **closed**, Connie asks you first. See [the closed-department message](/end-users/staff-agents/task-sender#this-department-is-closed-right-now).
 
-## 📞 How to Transfer a Call or Chat
+## 📞 Transfer a Phone Call, Web Chat or Text
 
-### Step 1: Click the Transfer Button
-Look for the **Transfer** icon in your conversation window (usually looks like an arrow or forward symbol).
+Someone is waiting with you, so **Transfer** is the only choice on the Send menu.
 
-### Step 2: Choose Your Transfer Type
+1. Press **Send**, then **Transfer**.
+2. The transfer list opens. Pick a coworker (**Agent** tab) or a department (**Queues** tab).
+3. On a phone call, choose how to pass it on:
+   - **Cold transfer:** the call goes straight over and your task finishes.
+   - **Warm transfer:** you talk to your coworker first, explain the situation, then leave the call.
 
-**Cold Transfer (Quick):**
-- Select the agent or queue from the dropdown
-- Click **Transfer**
-- You're immediately disconnected and the call/chat goes to them
+![The Transfer list with Agent and Queues tabs and a list of departments](/img/features/task-sender/transfer-list-queues.png)
 
-**Warm Transfer (Recommended):**
-- Select the agent or queue from the dropdown  
-- Click **Invite to Join**
-- Stay in the conversation until the new agent accepts
-- Brief them on the situation
-- Leave when ready
+Need to connect a caller to someone **outside** Connie? Use the **External** tab or the dial pad.
 
-### Step 3: Add a Note (Optional but Helpful)
-Before transferring, add a quick note about:
-- Why you're transferring
-- What the client needs
-- Any important background information
+## 📠 Transfer a Voicemail, Fax, Web Form or Email
+
+1. Press **Send**, then **Transfer**.
+2. Choose a **department** or a **coworker** from the list.
+3. Fax, web form and email: choose a **disposition** (and add a note if you like). This records how you handled it, because your copy closes as soon as you transfer it.
+4. Press **Transfer**.
+5. Voicemail: after the transfer, pick your disposition in wrap-up and press **Complete**.
+
+Want to send it to someone who **doesn't use Connie**? That's **Hand off** or **Refer out**. See [Handing Off & Referring Out](/end-users/staff-agents/handing-off-tasks).
 
 ## 💡 Best Practices
 
 ### When to Transfer
-- Client needs specialized help you can't provide
-- Escalation to supervisor required
-- Language barrier (transfer to bilingual agent)
-- You're going off-shift and conversation isn't resolved
+- The client needs help you can't give
+- Your supervisor needs to step in
+- The client would be better served in another language
+- You're going off shift and the task isn't finished
 
 ### Transfer Tips
-- **Always explain to the client** what's happening
-- **Use warm transfers** when the situation is complex
-- **Add helpful notes** for the receiving agent
-- **Stay professional** - avoid saying "I don't know how to help"
-
-### ConnieRTC-Specific Best Practices (NSS PRODUCTION INSIGHTS)
-- **Test after any system updates** - transfers are sensitive to configuration changes (workflow SID issues common)
-- **If transfers start failing** - stop trying and notify supervisor immediately (likely system issue, not agent error)
-- **Use queue transfers over agent transfers** when possible - more reliable routing and better load distribution
-- **Keep transfer notes brief but specific** - helps receiving agent get up to speed quickly
-- **Don't transfer multiple times** - if first transfer fails, escalate to supervisor instead of retrying
-- **"TaskRouter error: Bad Request" = System Issue** - this error means backend configuration problem, not something you did wrong
-- **Monitor transfer success rate** - if multiple transfers fail in short time, alert supervisor of possible system issue
+- **Tell the client** what's happening before you transfer
+- **Use a warm transfer** on calls when the situation is complex, so nobody has to repeat their story
+- **Add a note** so your coworker can pick up where you left off
+- **Transferring to a department** is usually best — the next free person gets it
+- **If a transfer fails,** don't keep retrying. Tell your supervisor.
 
 ### What to Say to Clients
 **For Calls:**
@@ -81,71 +76,41 @@ Before transferring, add a quick note about:
 
 ## 🔍 What Happens Next
 
-1. **If transferring to a specific agent:** They get a notification and can accept or decline
-2. **If transferring to a queue:** The next available agent in that team gets it
-3. **Your conversation history:** Automatically transfers with the client
-4. **Your stats:** The transfer is recorded in your activity
+1. **To a coworker:** they get a notification and can accept it.
+2. **To a department:** the next free person there picks it up. If everyone is busy, it waits for the next free person.
+3. **History:** the conversation history goes with the task.
+4. **Reports:** every transfer is recorded.
 
 ## ⚠️ Common Issues
 
-**"Transfer button is grayed out"**
-- You might have an active warm transfer waiting
-- Cancel any pending invites first
+**"I don't see the Send button"**
+- The Task Sender is switched on for each organization by the Connie team. Ask your supervisor.
 
-**"Agent didn't accept the transfer"**
+**"Connie says the department is closed"**
+- Press **Cancel** to keep the task, or **Transfer anyway** if you still want to send it.
+
+**"My coworker didn't accept the transfer"**
 - They might be busy or offline
-- Try transferring to a queue instead
+- Try transferring to a department instead
 - Ask your supervisor for help
 
-**"Transfer fails with error message" (NSS PRODUCTION EXPERIENCE)**
-- **Most common cause:** System configuration issue (workflow SID problem)
-- **What you see:** "TaskRouter error: Bad Request" or similar error messages
-- **What to do:** Contact your supervisor immediately - this is NOT an agent error
-- **Important:** Note the exact time and take a screenshot if possible
-- **Don't worry:** This is usually fixed quickly by IT/Admin team (typically 5-15 minutes)
-- **NSS Learning:** This error indicates backend configuration needs updating, not user error
+**"The transfer failed with an error message"**
+- This is usually a system problem, not something you did wrong
+- Note the time and take a screenshot if you can
+- Tell your supervisor right away, and don't keep retrying
 
-**"Client got disconnected during transfer"**
-- For calls: They should get a callback automatically
-- For chats: The conversation continues when they reconnect
-- Log the issue with your supervisor
-
-## ✅ How to Test Your Transfers
-
-### After ConnieRTC System Updates (NSS VALIDATION PROTOCOL)
-If your IT team tells you there was a system update, test transfers right away:
-
-**Quick Transfer Test (2 minutes) - CRITICAL FOR NSS:**
-1. **Find a colleague** who can help test
-2. **Start a test chat** (use ConnieRTC test mode if available)
-3. **Try a cold transfer** to your colleague
-4. **Verify they receive it** and can accept within 5 seconds
-5. **Test a warm transfer** - both of you should see each other in the conversation
-6. **Test conversation history** - make sure all previous messages transfer
-7. **Report results** to supervisor immediately
-
-**What Success Looks Like (NSS Benchmarks):**
-- Transfer completes in under 10 seconds
-- No error messages appear (especially no "TaskRouter error: Bad Request")
-- Receiving agent gets notification within 5 seconds
-- Both agents can see complete chat history
-- Client stays connected throughout
-- Transfer button remains available for additional transfers
-
-**If Something's Wrong (NSS ESCALATION PROCESS):**
-- Take a screenshot of any error messages immediately
-- Note the exact time when you tested (include timezone)
-- Note which type of transfer failed (cold vs warm)
-- Report to supervisor with: "Transfer test failed at [time] with [error message]"
-- **CRITICAL:** If you see "TaskRouter error: Bad Request" - this indicates system configuration issue requiring immediate IT attention
+**"The client got disconnected during the transfer"**
+- For calls: they may get a callback automatically
+- For chats: the conversation continues when they reconnect
+- Let your supervisor know
 
 ## 🚀 Quick Reference
 
 | Action | Steps |
 |--------|--------|
-| **Cold Transfer** | Transfer button → Select agent/queue → Transfer |
-| **Warm Transfer** | Transfer button → Select agent/queue → Invite → Brief → Leave |
-| **Add Note** | Select transfer option → Type in note field → Transfer |
-| **Cancel Transfer** | Find pending invite → Click Cancel |
+| **Transfer a call, chat or text** | Send → Transfer → Agent or Queues tab → pick → transfer |
+| **Warm transfer a call** | Send → Transfer → pick → talk to them first → leave the call |
+| **Transfer a voicemail, fax, form or email** | Send → Transfer → pick department or coworker → disposition → Transfer |
+| **Send it outside Connie** | See [Handing Off & Referring Out](/end-users/staff-agents/handing-off-tasks) |
 
-Need help with transfers? Ask your supervisor or contact Connie Support!
+Need help with transfers? Ask your supervisor or [contact Connie Support](/get-support/overview).

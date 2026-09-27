@@ -138,12 +138,15 @@ This guide helps you resolve common problems you might encounter while using Con
 
 ## 🔄 Transfer Issues
 
-See detailed transfer troubleshooting in [Transferring Tasks](/end-users/staff-agents/transferring-tasks#️-common-issues)
+Every task has one **Send** button for Transfer, Hand off and Refer out. See [Connie Task Sender](/end-users/staff-agents/task-sender) and [Transferring Tasks](/end-users/staff-agents/transferring-tasks#️-common-issues).
 
 Quick summary:
-- **Transfer button grayed out** → Cancel any pending invites
-- **Agent didn't accept** → Try transferring to a queue instead
-- **Transfer fails with error** → Contact supervisor immediately (likely system issue)
+- **No Send button** → The Task Sender is switched on for each organization by the Connie team. Ask your supervisor.
+- **Only "Transfer" on the Send menu** → Normal on a phone call, web chat or text. Hand off and Refer out are for voicemail, fax, web form and email.
+- **Someone is missing from the Hand off / Refer out list** → They have no email address saved. Ask your admin to add one.
+- **"This department is closed right now"** → Press **Cancel** to keep the task, or **Transfer anyway**.
+- **Coworker didn't accept** → Try transferring to a department instead
+- **Transfer fails with error** → Contact supervisor immediately (likely a system issue)
 
 ## 🖥️ Performance Issues
 
@@ -240,6 +243,7 @@ Browser: Chrome Version 120 on Windows 10
 - **Review other guides:**
   - [Getting Started](/end-users/staff-agents/getting-started)
   - [Handling Tasks](/end-users/staff-agents/handling-tasks)
+  - [Connie Task Sender](/end-users/staff-agents/task-sender)
   - [Transferring Tasks](/end-users/staff-agents/transferring-tasks)
   - [Recording Notes](/end-users/staff-agents/recording-notes)
 

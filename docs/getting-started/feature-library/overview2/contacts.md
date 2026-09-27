@@ -17,18 +17,19 @@ Contacts can be viewed, managed, and dialed using the contacts view added to Con
 This page is the configuration reference for the feature. It does not describe the feature's most
 operationally important consequence, so it is stated here:
 
-**A shared contact's `email` field is what makes it a referral target.** Connie's Universal Task
-Routing "Refer out" action sends an async task (voicemail, fax, web form) to an outside partner
-**by email**, and it only offers shared contacts that carry an email address. A shared contact with
-no email is still fully callable and transferable — it simply never appears as a referral option,
-and neither the agent nor the administrator is told why.
+**A contact's `email` field is what makes it a Hand off or Refer out target.** The
+[Connie Task Sender](/end-users/staff-agents/task-sender)'s **Hand off** and **Refer out** choices send
+a voicemail, fax, web form or email task **by email**, and they only offer contacts that carry an
+email address (Hand off: addresses at the agent's own organization; Refer out: everyone else). A
+contact with no email is still fully callable and transferable — it simply never appears in those
+lists, and neither the agent nor the administrator is told why.
 
-A shared directory with zero emailed contacts means external referral is **dark on that account**
-even though the feature is deployed and enabled.
+A shared directory with zero emailed contacts means Refer out is **dark on that account**
+even though the feature is switched on.
 
 **Administrator guidance (how to build and maintain that list, including the spreadsheet import):**
 [Shared Contacts & External Referrals](/end-users/administrators/shared-contacts-and-referrals) ·
-**What agents see:** [Handing Off Voicemail, Fax & Form Tasks](/end-users/staff-agents/handing-off-tasks)
+**What agents see:** [Connie Task Sender](/end-users/staff-agents/task-sender) · [Handing Off & Referring Out](/end-users/staff-agents/handing-off-tasks)
 :::
 
 ## User experience

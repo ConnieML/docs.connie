@@ -32,7 +32,7 @@ You have several tools available during a call:
 | **Hold** (pause icon) | Puts the caller on hold — they hear hold music. Click again to take them off hold. |
 | **Mute** (microphone icon) | Mutes your microphone so the caller can't hear you. Click again to unmute. |
 | **Keypad** | Opens a number pad so you can press digits during the call (useful if you need to interact with another phone system). |
-| **Transfer** | Transfers the call to another agent or queue. See [Transferring Tasks](/end-users/staff-agents/transferring-tasks). |
+| **Send → Transfer** | Transfers the call to a coworker or department. The **Send** button is at the top of the call. See [Connie Task Sender](/end-users/staff-agents/task-sender). |
 | **Hang Up** (red phone icon) | Ends the call. |
 
 ### Placing a Caller on Hold
@@ -86,7 +86,7 @@ Once completed, the task is removed from your queue and placed in a temporary "R
 | Put on hold | Hold button (pause icon) during call |
 | Mute yourself | Mute button (microphone icon) during call |
 | Use keypad | Keypad button during call |
-| Transfer | Transfer button → select agent or queue |
+| Transfer | Send → Transfer → select agent or queue |
 | Hang up | Red phone icon |
 | Complete task | Hang up → Select disposition → Add notes → Complete |
 

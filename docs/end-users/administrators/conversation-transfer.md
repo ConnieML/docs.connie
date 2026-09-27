@@ -5,6 +5,10 @@ title: "Conversation Transfer System Configuration"
 
 # Conversation Transfer System Configuration
 
+:::info Connie Task Sender
+Staff now move every task with one **Send** button at the top of the task: **Transfer** (to a coworker or department in Connie), **Hand off** (by email to a coworker who doesn't use Connie) or **Refer out** (by email to another organization). Phone calls, web chats and texts can only be transferred. The Task Sender is switched on per organization by the Connie team. What staff see: [Connie Task Sender](/end-users/staff-agents/task-sender). Hand off and Refer out lists come from your contacts' email addresses: [Shared Contacts & External Referrals](/end-users/administrators/shared-contacts-and-referrals).
+:::
+
 As a CBO Administrator, you control how conversation transfers work across your organization, set up transfer queues, and ensure your staff can effectively move conversations when needed.
 
 ## 🎛️ System Overview
@@ -108,7 +112,7 @@ Control who can transfer and receive transfers:
 4. **CRITICAL:** Verify TWILIO_FLEX_CHAT_TRANSFER_WORKFLOW_SID environment variable
 5. Test with admin account to isolate issue
 
-**NSS Production Resolution Process:**
+**Production Resolution Process:**
 1. **Check Workflow SID Configuration:**
    ```bash
    # Verify environment variable is set
@@ -156,12 +160,12 @@ If you have multiple CBOs or departments:
 3. Set up account-specific queues
 4. Implement proper routing between accounts
 
-**IMPORTANT - NSS Implementation Experience (PRODUCTION VALIDATED):**
-Each CBO account requires its own unique workflow SID. You cannot share workflow SIDs between accounts. This was the primary cause of the "TaskRouter error: Bad Request" issues resolved in NSS production.
+**IMPORTANT - Implementation Experience (PRODUCTION VALIDATED):**
+Each CBO account requires its own unique workflow SID. You cannot share workflow SIDs between accounts. This was the primary cause of the "TaskRouter error: Bad Request" issues resolved in production.
 
 **Multi-Account Workflow SID Management (PROVEN APPROACH):**
 ```bash
-# Example for multiple CBOs (NSS production pattern)
+# Example for multiple CBOs (production pattern)
 TWILIO_FLEX_CHAT_TRANSFER_WORKFLOW_SID_CBO1=WWxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 TWILIO_FLEX_CHAT_TRANSFER_WORKFLOW_SID_CBO2=WWyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
 TWILIO_FLEX_CHAT_TRANSFER_WORKFLOW_SID_CBO3=WWzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
@@ -170,7 +174,7 @@ TWILIO_FLEX_CHAT_TRANSFER_WORKFLOW_SID_CBO3=WWzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
 TWILIO_FLEX_CHAT_TRANSFER_WORKFLOW_SID=WWxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-**Deployment Best Practices for Multi-Account (NSS VALIDATED):**
+**Deployment Best Practices for Multi-Account:**
 1. **Test each account separately** before enabling transfers across accounts
 2. **Document workflow SIDs** for each CBO in your deployment notes with account names
 3. **Set up monitoring** for transfer success rates per account (target >95% each)
@@ -249,7 +253,7 @@ Ensure all staff understand:
 - [ ] Transfer analytics and reporting set up
 - [ ] Staff trained on transfer procedures
 
-### Post-Deployment (NSS Production Validation)
+### Post-Deployment (Production Validation)
 - [ ] **Test cold transfers within 15 minutes of deployment**
 - [ ] **Test warm transfers with multiple participants**
 - [ ] **Verify no "TaskRouter error: Bad Request" messages**
@@ -274,7 +278,7 @@ Ensure all staff understand:
 
 ## 🚨 Emergency Contact Protocol
 
-**For Critical Transfer Failures (NSS Production Guidance):**
+**For Critical Transfer Failures (Production Guidance):**
 - **"TaskRouter error: Bad Request" across multiple agents:** IMMEDIATE escalation to Platform Developer
 - **Complete transfer system failure:** Contact Connie Support with URGENT priority
 - **Single CBO transfer issues:** Start with workflow SID verification process above

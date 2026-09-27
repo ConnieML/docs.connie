@@ -56,16 +56,15 @@ When you're done:
 - You can handle **multiple chat and SMS conversations** at the same time
 - You can work on chats **while on a phone call**
 
-### Assigning to Another Staff Member
+### Sending a Task to Someone Else
 
-If a task needs someone else's expertise:
+If a task needs someone else, press the **Send** button at the top of the task. Connie shows you only the choices that make sense for that task:
 
-1. Click **"Assign to Staff"**
-2. Select the staff member from the dropdown
-3. Add a brief note explaining why
-4. Click **"Assign"**
+- **Transfer** — to a coworker or a department in Connie. It stays in Connie.
+- **Hand off** — by email to a coworker who doesn't use Connie. It leaves Connie and closes.
+- **Refer out** — by email to someone at another organization. It leaves Connie and closes.
 
-For handing off an **active conversation**, see [Transferring Tasks](/end-users/staff-agents/transferring-tasks).
+Phone calls, web chats and texts can only be transferred, because someone is waiting with you. See **[Connie Task Sender](/end-users/staff-agents/task-sender)** for the step-by-step.
 
 ## Best Practices
 

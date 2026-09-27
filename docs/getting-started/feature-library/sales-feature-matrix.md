@@ -266,9 +266,9 @@ import TabItem from "@theme/TabItem";
 
 <tr style={{background: '#fafafa'}}>
 <td><code>CSA-8</code></td>
-<td><a href="/end-users/staff-agents/transferring-tasks">Handoff / Transfer Tasks</a></td>
+<td><a href="/end-users/staff-agents/task-sender">Task Sender: Transfer / Hand off / Refer out</a></td>
 <td>Get clients right help</td>
-<td>✅ Warm transfer<br/>✅ Queue transfer<br/>✅ Context sharing</td>
+<td>✅ One Send button<br/>✅ Warm &amp; department transfer<br/>✅ Email hand off &amp; referral</td>
 <td><span style={{background: '#4caf50', color: 'white', padding: '2px 8px', borderRadius: '4px', fontSize: '0.85em'}}>Available Now</span></td>
 </tr>
 

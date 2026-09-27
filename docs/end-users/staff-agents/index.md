@@ -35,8 +35,9 @@ Ready to begin? Navigate through the sections below to learn how to use Connie e
 - **[Handling Chat & SMS](/end-users/staff-agents/handling-tasks/handling-chat)** — Text messages, webchat, WhatsApp, and more
 
 ### Work with Your Team
-- **[Transferring Tasks](/end-users/staff-agents/transferring-tasks)** — Warm and cold transfers to other agents or queues
-- **[Handing Off Tasks](/end-users/staff-agents/handing-off-tasks)** — Route a voicemail, fax, or form to another Connie team (Transfer) or an outside partner (Hand Off)
+- **[Connie Task Sender](/end-users/staff-agents/task-sender)** — One **Send** button: Transfer, Hand off or Refer out
+- **[Transferring Tasks](/end-users/staff-agents/transferring-tasks)** — Send a task to a coworker or department in Connie (warm or cold on calls)
+- **[Handing Off & Referring Out](/end-users/staff-agents/handing-off-tasks)** — Email a voicemail, fax, form or email to a coworker without Connie or to another organization
 - **[Parking Tasks](/end-users/staff-agents/parking-tasks)** — Keep a task alive while you wait on a follow-up
 - **[Recording Notes](/end-users/staff-agents/recording-notes)** — Document your work properly
 

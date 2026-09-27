@@ -8,7 +8,8 @@ title: Conversation Transfer (Technical Reference)
 :::info Multiple Documentation Versions Available
 This page contains technical reference information. For user-friendly guides tailored to your role, see:
 
-- **[CBO Staff Agents](/end-users/staff-agents/transferring-tasks)** - How to transfer conversations
+- **[CBO Staff Agents](/end-users/staff-agents/task-sender)** - The Send button: Transfer, Hand off, Refer out
+- **[Transferring Tasks](/end-users/staff-agents/transferring-tasks)** - How to transfer conversations
 - **[Supervisors](/end-users/supervisors/conversation-transfer)** - Managing team transfers  
 - **[CBO Administrators](/end-users/administrators/conversation-transfer)** - System configuration
 - **Platform Developers** - Implementation details

@@ -1,12 +1,12 @@
 ---
-sidebar_label: Task Transfer & Hand Off
+sidebar_label: Task Sender (Transfer & Hand Off)
 sidebar_position: 3
-title: "Task Transfer & Hand Off"
+title: "Connie Task Sender: Transfer, Hand off & Refer out"
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Task Transfer & Hand Off
+# Connie Task Sender: Transfer, Hand off & Refer out
 
 :::info Tasks stay for 96 hours
 A task that arrives while you're closed will **still be waiting for four full days** — long enough to survive a weekend, and a holiday weekend. Close Friday at 5:30 PM, an email lands at 5:31 PM, and it's still there when someone starts Monday morning.
@@ -17,30 +17,42 @@ Need a different window for a program or channel? Custom settings are available 
 :::
 
 
-**Move any task to the right place — a Connie teammate, another team, or an outside partner — with everything intact.**
+**One Send button on every task. Transfer it, hand it off, or refer it out — with everything intact.**
 
-Some requests don't belong with the first person who receives them. A voicemail, fax, or web-form request might need a different team, a specialist, or a partner organization that offers the service your client needs. **Task Transfer & Hand Off** lets an agent route an accepted task to the right destination — and the recording, transcript, or PDF travels with it, so nobody starts over.
+Some requests don't belong with the first person who receives them. A call, chat, voicemail, fax, web form or email might need a different department, a specialist, a coworker who doesn't use Connie, or a partner organization that offers the service your client needs. The **Connie Task Sender** puts all of that behind one **Send** button at the top of every task, and shows only the choices that make sense for that task.
 
 ## Why It Matters
 
-Voicemails, faxes, and form submissions are **asynchronous** — the person isn't waiting on the line, so there's no live call to "transfer" the usual way. Before this feature, these tasks were stuck wherever they first landed: the only option was to complete them. Task Transfer & Hand Off fixes that, so no request is trapped and every one reaches the person — or organization — that can actually help.
+Before, moving a task meant different buttons in different places depending on the channel, and some tasks could only be completed where they landed. Now every task has the same button, no request is trapped, and every move is recorded so reports show what was transferred, handed off or referred out.
 
-## Two Ways to Route a Task
+## Three Choices, One Button
 
-| | Where it goes | How it travels |
+| Choice | Where it goes | Does Connie keep track? |
 |---|---|---|
-| **Task Transfer** *(In-Network)* | Another Connie **queue or teammate** — anyone with a Connie seat | The task moves **live and native**; it lands in their worklist with the recording/PDF intact |
-| **Task Hand Off** *(Out-of-Network)* | An **outside partner** organization (not on Connie) | The task is **packaged and emailed** — a "Referral from [your org]" with the recording + transcript, or the PDF, attached |
+| **Transfer** | A coworker or a department in Connie | **Yes.** It stays in Connie. |
+| **Hand off** | By email to a coworker at your organization who does **not** use Connie | **No.** It leaves Connie and closes. |
+| **Refer out** | By email to someone at **another organization** (a clinic, a partner agency, a caseworker) | **No.** It leaves Connie and closes. |
 
-> The only difference is whether the recipient has a **Connie seat**. If they do, it's a live **Transfer**. If they don't, it's a **Hand Off** by email.
+> **Transfer keeps it. Hand off and Refer out let it go.** If the person replies to a Hand off or Refer out email, the reply comes back into Connie as a new task.
+
+```mermaid
+flowchart LR
+    S([Send]) --> T[Transfer]
+    S --> H[Hand off]
+    S --> R[Refer out]
+    T --> K[Stays in Connie]
+    H --> L[Leaves Connie by email]
+    R --> L
+```
 
 ## Works With
 
-- ✅ **Voicemail** — the recording *and* transcript go with it
-- ✅ **Fax** — the PDF goes with it
-- ✅ **Web-form / referral submissions** — the PDF goes with it
+| Task type | Transfer | Hand off | Refer out |
+|---|---|---|---|
+| Phone call, web chat, text message | ✅ | ❌ | ❌ |
+| Voicemail, fax, web form, email | ✅ | ✅ | ✅ |
 
-Live calls and live chat/SMS keep their existing transfer — see [Transferring Tasks](/end-users/staff-agents/transferring-tasks).
+Live calls, chats and texts can only be transferred, because a real person is waiting. What travels with a Hand off or Refer out: the recording and transcript for a voicemail, the document for a fax or form, or the full email with its attachments.
 
 ---
 
@@ -49,32 +61,26 @@ Live calls and live chat/SMS keep their existing transfer — see [Transferring 
 
 ## For Staff Agents
 
-On an accepted voicemail, fax, or form task, tap the **route icon** in the task header and choose:
-
-- **Transfer** to a Connie queue or teammate, or
-- **Hand Off** to an outside partner by email.
-
-Everything attached to the task travels with it. Full step-by-step: **[Handing Off Tasks](/end-users/staff-agents/handing-off-tasks)**.
+Press **Send** at the top of the task and pick **Transfer**, **Hand off** or **Refer out**. Full step-by-step, with screenshots: **[Connie Task Sender](/end-users/staff-agents/task-sender)**.
 
 </TabItem>
 <TabItem value="admins" label="👑 Administrators">
 
 ## For Administrators
 
-Task Transfer & Hand Off is enabled **per organization**. To turn it on:
+The Task Sender is switched on per organization by the Connie team. To get the most out of it:
 
-- Enable the feature for your account and choose which **queues** appear as transfer targets.
-- Add your **referral partners** to Shared Contacts **with an email address** — only partners that have an email appear in the Hand Off list.
+- Keep your **Shared Contacts** up to date **with email addresses** — only contacts with an email appear under Hand off and Refer out. See [Shared Contacts & External Referrals](/end-users/administrators/shared-contacts-and-referrals).
 
-Your Connie Care Team handles the technical enablement.
+Talk to your Connie Care Team to turn it on or change it.
 
 </TabItem>
 </Tabs>
 
 ## Availability
 
-🚧 **Beta** — live and proven, enabled per organization on request. Talk to your Connie Care Team to turn it on.
+✅ **Available** — switched on per organization by the Connie team. Talk to your Connie Care Team to turn it on.
 
 ---
 
-*Related: [Handing Off Tasks](/end-users/staff-agents/handing-off-tasks) (agent how-to) · [Transferring Tasks](/end-users/staff-agents/transferring-tasks) (live calls & chat).*
+*Related: [Connie Task Sender](/end-users/staff-agents/task-sender) (agent how-to) · [Transferring Tasks](/end-users/staff-agents/transferring-tasks) · [Handing Off & Referring Out](/end-users/staff-agents/handing-off-tasks).*
