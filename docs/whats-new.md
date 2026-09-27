@@ -16,6 +16,16 @@ The latest Connie features and improvements — newest first. Each item links to
 
 ---
 
+## 2026-09-27 · ✨ Connie Task Sender: One Send Button for Every Task
+
+**What changed:** Every task now has one **Send** button with up to three choices: **Transfer** to a coworker or department in Connie (Connie keeps track), **Hand off** by email to a coworker who doesn't use Connie, or **Refer out** by email to another organization. Connie shows only the choices that fit the task, warns before you transfer to a closed department, and brings any reply back in as a new task.
+
+![The Send button at the top of a task in Connie, opened to show the Transfer choice](https://docs.connie.one/img/whats-new/connie-task-sender.png)
+
+🔗 [Connie Task Sender](https://docs.connie.one/end-users/staff-agents/task-sender)
+
+---
+
 ## 2026-09-07 · 🔧 Callers Reliably Offered Voicemail and Callback While on Hold
 
 **What changed:** A caller waiting on hold could be told the option to leave a voicemail or request a callback was **"not available at this time"** — and then, a moment later, be offered it anyway. Choosing it at that point could end the call. Callers are now offered the option consistently, and it works when they take it.
