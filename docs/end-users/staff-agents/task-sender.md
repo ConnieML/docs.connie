@@ -108,12 +108,12 @@ Good to know: Connie only warns about **closed** departments. If a department is
 ## Good to know
 
 - **Hand off and Refer out close the task in Connie.** Connie will not remind anyone or follow up.
-- **If the person replies** to an email you sent on, the reply comes back into Connie as a **new task**.
+- **Replies to that email do not come back into Connie.** It is sent from a Connie address, not from your own inbox. If you need an answer, ask the person to call or email you directly. (If the client who first wrote to you writes in again, that arrives as a **new task**.)
 - **A contact with no email** will not appear under Hand off or Refer out. Ask your admin to add one.
-- **Every move is recorded**, so reports show what was transferred, handed off or referred out.
+- **Every move is recorded** on the task: what was transferred, handed off or referred out, by whom and when.
 
 :::note Don't see the Send button?
-The Task Sender is switched on for each organization by the Connie team. If your screen still looks different, ask your supervisor.
+The Task Sender is switched on for each organization by the Connie team. Until it is switched on for you, a voicemail, fax or web form shows a **Route this task** button (a small share icon) at the top instead. It opens one box with two parts: **Hand off to a queue** moves the task to another department in Connie, and **Refer out to a partner** emails it to a Shared Contact that has an email address. Phone calls, chats, texts and emails keep the transfer arrow. If you're not sure which one you have, ask your supervisor.
 :::
 
 ## Need help?

@@ -32,10 +32,10 @@ Every task in Connie has one **Send** button — the [Connie Task Sender](/end-u
 | What travels with it | The whole task | The recording + transcript, the fax/form document, or the full email with attachments | The same |
 | Does Connie keep track? | **Yes** — it stays in Connie | **No** — it leaves Connie and closes | **No** — it leaves Connie and closes |
 
-If the person replies to a Hand off or Refer out email, the reply comes back into Connie as a **new task**. Phone calls, web chats and texts can only be transferred, because someone is waiting on the line.
+**Replies to a Hand off or Refer out email do not come back into Connie.** The email is sent from a Connie address (Connie Referrals), not from your staff member's inbox, so a partner who needs to answer should call or email your organization directly. Phone calls, web chats and texts can only be transferred, because someone is waiting on the line.
 
 :::note The Task Sender is switched on per organization
-The Connie team switches the Task Sender on for each organization. If your staff don't see a **Send** button at the top of their tasks, contact the [Connie Care Team](/get-support/overview).
+The Connie team switches the Task Sender on for each organization. If your staff don't see a **Send** button at the top of their tasks, contact the [Connie Care Team](/get-support/overview). Until it is switched on, staff use the older **Route this task** button on voicemail, fax and web form tasks. Its **Refer out to a partner** list shows **Shared Contacts with an email address only**; an agent's private My Contacts never appear there.
 :::
 
 :::caution A Hand off or Refer out leaves your building
@@ -181,7 +181,7 @@ Check the preview for a warning about an unrecognized column heading. If the `em
 No, and on purpose. An import only adds and updates. Delete contacts individually in the contacts directory so a half-finished spreadsheet can never wipe your directory.
 
 **"Did the partner actually receive the referral?"**
-Connie sends it immediately, but there's no delivery receipt in the product. If they reply, the reply comes back into Connie as a new task. If a partner says it didn't arrive, ask them to check spam first, then contact the [Connie Care Team](/get-support/overview).
+Connie sends it immediately, but there's no delivery receipt in the product, and a reply to that email does not come back into Connie. If a partner says it didn't arrive, ask them to check spam first, then contact the [Connie Care Team](/get-support/overview).
 
 **"Who is allowed to do this?"**
 Administrators and supervisors maintain the shared directory. Agents can see it and use it, but not change it.

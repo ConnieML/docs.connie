@@ -57,8 +57,8 @@ If you just need to **wait** — a callback, a doctor's office, more research �
 ## 🔍 What Happens Next
 
 - The person receives an email with everything attached.
-- **If they reply**, the reply comes back into Connie as a **new task**.
-- The task drops off your list, and the move is recorded, so reports show what was handed off or referred out.
+- **Replies to that email do not come back into Connie.** It is sent from a Connie address, not from your own inbox. If you need an answer, ask the person to call or email you directly. (If the client who first wrote to you writes in again, that arrives as a **new task**.)
+- The task drops off your list, and the move is recorded on the task: what was handed off or referred out, by whom and when.
 
 ## ⚠️ Common Questions
 
@@ -66,7 +66,7 @@ If you just need to **wait** — a callback, a doctor's office, more research �
 They don't have an email address saved. Ask your admin or supervisor to add one.
 
 **"I don't see Hand off or Refer out on the Send menu."**
-You're probably on a phone call, web chat or text — those can only be transferred. If you're on a voicemail, fax, form or email and still don't see them, ask your supervisor. The Task Sender is switched on for each organization by the Connie team.
+You're probably on a phone call, web chat or text — those can only be transferred. If you're on a voicemail, fax, form or email and still don't see them, the Task Sender may not be switched on for your organization yet; the Connie team switches it on for each organization. Until it is switched on for you, a voicemail, fax or web form shows a **Route this task** button (a small share icon) at the top instead. It opens one box with two parts: **Hand off to a queue** moves the task to another department in Connie, and **Refer out to a partner** emails it to a Shared Contact that has an email address. Phone calls, chats, texts and emails keep the transfer arrow.
 
 **"Did they actually get it?"**
 The email is sent right away. If someone says it didn't arrive, ask them to check their spam folder, then let your supervisor know.

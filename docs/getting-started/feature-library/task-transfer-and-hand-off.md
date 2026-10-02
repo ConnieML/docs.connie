@@ -23,7 +23,7 @@ Some requests don't belong with the first person who receives them. A call, chat
 
 ## Why It Matters
 
-Before, moving a task meant different buttons in different places depending on the channel, and some tasks could only be completed where they landed. Now every task has the same button, no request is trapped, and every move is recorded so reports show what was transferred, handed off or referred out.
+Before, moving a task meant different buttons in different places depending on the channel, and some tasks could only be completed where they landed. Now every task has the same button, no request is trapped, and every move is recorded on the task: what was transferred, handed off or referred out, by whom and when.
 
 ## Three Choices, One Button
 
@@ -33,7 +33,7 @@ Before, moving a task meant different buttons in different places depending on t
 | **Hand off** | By email to a coworker at your organization who does **not** use Connie | **No.** It leaves Connie and closes. |
 | **Refer out** | By email to someone at **another organization** (a clinic, a partner agency, a caseworker) | **No.** It leaves Connie and closes. |
 
-> **Transfer keeps it. Hand off and Refer out let it go.** If the person replies to a Hand off or Refer out email, the reply comes back into Connie as a new task.
+> **Transfer keeps it. Hand off and Refer out let it go.** Replies to a Hand off or Refer out email do not come back into Connie; the person should contact your organization directly.
 
 ```mermaid
 flowchart LR

@@ -6,7 +6,7 @@ title: "Managing Conversation Transfers"
 # Managing Conversation Transfers
 
 :::info Connie Task Sender
-Your agents now move every task with one **Send** button at the top of the task: **Transfer** keeps it in Connie (a coworker or department); **Hand off** and **Refer out** email it to someone outside Connie and close the task. Phone calls, web chats and texts can only be transferred. If an agent transfers to a department that is closed, Connie asks them first. Every move is recorded, so reports show what was transferred, handed off or referred out. The Task Sender is switched on per organization by the Connie team. Full agent guide: [Connie Task Sender](/end-users/staff-agents/task-sender).
+Your agents now move every task with one **Send** button at the top of the task: **Transfer** keeps it in Connie (a coworker or department); **Hand off** and **Refer out** email it to someone outside Connie and close the task. Phone calls, web chats and texts can only be transferred. If an agent transfers to a department that is closed, Connie asks them first. Every move is recorded on the task: what was transferred, handed off or referred out, by whom and when. The Task Sender is switched on per organization by the Connie team. Full agent guide: [Connie Task Sender](/end-users/staff-agents/task-sender).
 :::
 
 As a supervisor, you need to understand how conversation transfers work, monitor transfer patterns, and help agents use this feature effectively.
