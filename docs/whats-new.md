@@ -16,6 +16,14 @@ The latest Connie features and improvements — newest first. Each item links to
 
 ---
 
+## 2026-10-07 · ✨ Hold Time Limit: Callers Reach Voicemail Instead of Waiting Indefinitely
+
+**What changed:** A program can now set a maximum hold time. When a caller reaches it, Connie asks them to leave a message, and the voicemail arrives in that program's queue with the recording, transcript and email as usual. Every program also gets a safety net: a caller whose place in the queue ends while they are still holding is now sent to voicemail instead of being left on hold music no one can answer.
+
+🔗 [Hold Time Limit](https://docs.connie.one/end-users/administrators/channels/voice/voicemail/hold-time-limit) · [How Long a Task Stays in Your Queue](https://docs.connie.one/end-users/staff-agents/handling-tasks/how-long-tasks-last)
+
+---
+
 ## 2026-09-27 · ✨ Connie Task Sender: One Send Button for Every Task
 
 **What changed:** Every task now has one **Send** button with up to three choices: **Transfer** to a coworker or department in Connie (Connie keeps track), **Hand off** by email to a coworker who doesn't use Connie, or **Refer out** by email to another organization. Connie shows only the choices that fit the task, warns before you transfer to a closed department, and brings any reply back in as a new task.

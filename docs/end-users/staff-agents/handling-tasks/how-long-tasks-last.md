@@ -33,6 +33,7 @@ That last row is the reason for 96 rather than 72. If Monday is a holiday and yo
 - **Anything that arrives while you're closed will still be waiting** when you get back — over a weekend, and over a three-day weekend.
 - **This applies to everything that waits for a person**: email, fax, web referrals, website contact forms, text messages, and voicemail.
 - **Live phone calls and web chats are different.** Those have a much shorter window, because someone is on the line right now. Nobody holds on a phone line over a weekend.
+- **A caller is never left holding after their window closes.** If a live call's window ends while the caller is still on hold, Connie sends them to voicemail, so their message lands in your queue for 96 hours like any other. Your program can also set a shorter [hold time limit](/end-users/administrators/channels/voice/voicemail/hold-time-limit).
 
 :::warning A task expiring is silent
 When a task reaches the end of its window, it closes **quietly**. There's no alert, no email, and it won't appear in your reports. That's exactly why the window is set generously — and why long-pending items are worth a look when you start your shift.
