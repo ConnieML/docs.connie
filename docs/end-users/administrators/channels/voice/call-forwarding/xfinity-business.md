@@ -1,10 +1,10 @@
 ---
 sidebar_label: Xfinity Business
 sidebar_position: 3
-title: "Forward Xfinity Business Phone to Connie"
+title: "Forward Xfinity Business Phone to ThreadConnect"
 ---
 
-# Forward Xfinity Business Phone to Connie
+# Forward Xfinity Business Phone to ThreadConnect
 
 This guide walks you through setting up call forwarding from your Xfinity Business phone number to your Connie phone system.
 

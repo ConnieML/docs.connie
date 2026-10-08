@@ -1,6 +1,6 @@
 ---
 sidebar_label: Template Installation
-title: Install the ConnieRTC Template
+title: Install the ThreadConnect Template
 sidebar_position: 1
 ---
 import Tabs from "@theme/Tabs";

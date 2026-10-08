@@ -8,7 +8,7 @@ hide_table_of_contents: true
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
-# Connie Features Mapped to Your Daily Jobs
+# ThreadConnect Features Mapped to Your Daily Jobs
 
 > **Every feature exists to help you complete a specific job.** Select your role to see how Connie helps you get your work done.
 

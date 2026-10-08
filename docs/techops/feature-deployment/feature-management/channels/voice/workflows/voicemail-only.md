@@ -1,10 +1,10 @@
 ---
-sidebar_label: Connie Voice Direct + Voicemail Setup  
+sidebar_label: ThreadConnect Voice Direct + Voicemail Setup  
 sidebar_position: 2
-title: "Connie Voice Direct + Voicemail Setup"
+title: "ThreadConnect Voice Direct + Voicemail Setup"
 ---
 
-# Connie Voice Direct + Voicemail Setup
+# ThreadConnect Voice Direct + Voicemail Setup
 
 **Connie Voice Direct + Voicemail** provides custom wait/hold experience, custom greetings, hold music, department routing, and off-hours voicemail routing. This implementation can route all calls directly to voicemail or provide professional queue experiences before voicemail collection.
 

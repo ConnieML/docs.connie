@@ -5,9 +5,9 @@ const { github: lightCodeTheme, dracula: darkCodeTheme } = require("prism-react-
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Connie Documentation",
-  tagline: "Connie Professional Services",
-  favicon: "img/logos/connie-rtc-icon.png",
+  title: "ThreadConnect Documentation",
+  tagline: "ThreadConnect by Nevada Senior Services",
+  favicon: "img/logos/threadconnect-icon.svg",
 
   // Set the production url of your site here
   url: "https://docs.connie.one",
@@ -90,10 +90,11 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "Connie Documentation",
+        title: "Documentation",
         logo: {
-          alt: "Connie Logo",
-          src: "img/logos/connie-rtc-icon.png",
+          alt: "ThreadConnect",
+          src: "img/logos/threadconnect-logo.svg",
+          srcDark: "img/logos/threadconnect-logo-white.svg",
         },
         items: [
           {
@@ -112,7 +113,7 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Connie Links",
+            title: "ThreadConnect",
             items: [
               {
                 label: "Learn More",

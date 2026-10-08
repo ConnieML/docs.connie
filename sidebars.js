@@ -80,7 +80,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '⚙️ Connie TechOps',
+      label: '⚙️ ThreadConnect TechOps',
       collapsed: false,
       link: {
         type: 'doc',

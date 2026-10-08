@@ -164,7 +164,7 @@ cd /path/to/basecamp-v26.02/serverless-functions
 # Deploy to Nevada Senior Services
 ./deploy.sh nss <<< "yes"
 
-# Deploy to Connie Care Team
+# Deploy to ThreadConnect Care Team
 ./deploy.sh conniecareteam <<< "yes"
 
 # Deploy to HHOVV

@@ -1,12 +1,12 @@
 ---
 sidebar_label: "Getting Started"
-title: "Getting Started with Connie"
+title: "Getting Started with ThreadConnect"
 sidebar_position: 2
 ---
 
 import RoleHero from '@site/src/components/RoleHero';
 
-# Getting Started with Connie
+# Getting Started with ThreadConnect
 
 <RoleHero avatar="/img/avatars/agent-avatar.png" role="Staff Agent">
 You answer and handle conversations across every channel — calls, chat, SMS, email, and fax. This guide gets you logged in and ready to take your first task.

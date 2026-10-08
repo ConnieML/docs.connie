@@ -1,10 +1,10 @@
 ---
 sidebar_label: Cox Communications
 sidebar_position: 2
-title: "Forward Cox Communications Business Phone to Connie"
+title: "Forward Cox Communications Business Phone to ThreadConnect"
 ---
 
-# Forward Cox Communications Business Phone to Connie
+# Forward Cox Communications Business Phone to ThreadConnect
 
 This guide walks you through setting up call forwarding from your Cox Communications business phone number to your Connie phone system.
 

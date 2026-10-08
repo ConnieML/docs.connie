@@ -1,10 +1,10 @@
 ---
-sidebar_label: Connie Voice Direct + Wait Experience Setup
+sidebar_label: ThreadConnect Voice Direct + Wait Experience Setup
 sidebar_position: 3
-title: "Connie Voice Direct + Wait Experience Setup"
+title: "ThreadConnect Voice Direct + Wait Experience Setup"
 ---
 
-# Connie Voice Direct + Wait Experience Setup
+# ThreadConnect Voice Direct + Wait Experience Setup
 
 **Connie Voice Direct + Wait Experience** provides the most advanced options menu where callers can choose callback or voicemail while retaining their queue position. This creates three possible outcomes for callers.
 

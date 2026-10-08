@@ -1,10 +1,10 @@
 ---
-sidebar_label: Connie Voice Direct Setup
+sidebar_label: ThreadConnect Voice Direct Setup
 sidebar_position: 1
-title: "Connie Voice Direct Setup"
+title: "ThreadConnect Voice Direct Setup"
 ---
 
-# Connie Voice Direct Setup
+# ThreadConnect Voice Direct Setup
 
 **Connie Voice Direct** is the basic implementation in the Connie Voice experience framework - calls are immediately queued, rejected during non-business hours, and works out-of-the-box.
 

@@ -2,12 +2,12 @@
 id: task-sender
 slug: /end-users/staff-agents/task-sender
 sidebar_label: "Task Sender (Send button)"
-title: "Connie Task Sender: Transfer, Hand off, Refer out"
+title: "ThreadConnect Task Sender: Transfer, Hand off, Refer out"
 description: "One Send button for every task. Transfer it to a coworker or department in Connie, hand it off to a coworker who doesn't use Connie, or refer it out to another organization."
 sidebar_position: 3.5
 ---
 
-# Connie Task Sender
+# ThreadConnect Task Sender
 
 ## What is the Task Sender?
 

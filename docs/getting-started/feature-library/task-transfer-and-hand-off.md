@@ -1,12 +1,12 @@
 ---
 sidebar_label: Task Sender (Transfer & Hand Off)
 sidebar_position: 3
-title: "Connie Task Sender: Transfer, Hand off & Refer out"
+title: "ThreadConnect Task Sender: Transfer, Hand off & Refer out"
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Connie Task Sender: Transfer, Hand off & Refer out
+# ThreadConnect Task Sender: Transfer, Hand off & Refer out
 
 :::info Tasks stay for 96 hours
 A task that arrives while you're closed will **still be waiting for four full days** — long enough to survive a weekend, and a holiday weekend. Close Friday at 5:30 PM, an email lands at 5:31 PM, and it's still there when someone starts Monday morning.

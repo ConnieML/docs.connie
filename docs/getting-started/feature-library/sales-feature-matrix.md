@@ -1,7 +1,7 @@
 ---
 sidebar_label: Feature Matrix (Sales View)
 sidebar_position: 0.7
-title: Connie Platform Capabilities by Role
+title: ThreadConnect Platform Capabilities by Role
 hide_table_of_contents: true
 ---
 
@@ -10,7 +10,7 @@ import TabItem from "@theme/TabItem";
 
 <div style={{textAlign: 'center'}}>
 
-# Connie Prototype v2.0 Feature Matrix
+# ThreadConnect Prototype v2.0 Feature Matrix
 
 </div>
 

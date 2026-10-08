@@ -1,10 +1,10 @@
 ---
 sidebar_label: "Staff Agents"
-title: "Welcome to Connie Staff Agent Documentation"
+title: "Welcome to ThreadConnect Staff Agent Documentation"
 sidebar_position: 1
 ---
 
-# Welcome to Connie Staff Agent Documentation
+# Welcome to ThreadConnect Staff Agent Documentation
 
 ## What is Connie?
 

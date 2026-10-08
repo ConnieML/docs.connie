@@ -1,10 +1,10 @@
 ---
 sidebar_label: "Display Names"
 sidebar_position: 2
-title: "Your Display Name in Connie"
+title: "Your Display Name in ThreadConnect"
 ---
 
-# Your Display Name in Connie
+# Your Display Name in ThreadConnect
 
 For security and privacy reasons, Connie shows two different versions of every agent's name depending on who is looking. **Internal surfaces** (the ones your team sees) show the full "First Last" — that's what you, your teammates, and your supervisors need to do the work. **External surfaces** (the ones the people you serve see) show an abstracted version like "Olivia T." instead of "Olivia Thompson" — that protects your staff from being personally identifiable to third parties outside your organization.
 

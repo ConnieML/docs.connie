@@ -1,14 +1,14 @@
 ---
 sidebar_label: Interactive Overview (Mockup)
 sidebar_position: 0.5
-title: Connie Capabilities - Interactive View
+title: ThreadConnect Capabilities - Interactive View
 hide_table_of_contents: true
 ---
 
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
-# What Can Connie Do For Your Organization?
+# What Can ThreadConnect Do For Your Organization?
 
 <div className="role-selector" style={{background: '#f0f4f8', padding: '20px', borderRadius: '8px', marginBottom: '30px'}}>
   <h3>Select Your Role:</h3>

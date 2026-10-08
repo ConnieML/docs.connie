@@ -1,7 +1,7 @@
 ---
 sidebar_label: Overview
 sidebar_position: 0
-title: ConnieRTC hooks overview
+title: ThreadConnect hooks overview
 ---
 
 The plugin works by cycling through each of the `feature-library` directories at initialization, and calling each feature's `register` function, which in turn cycles through each of the modules in the `flex-hooks` directory of the feature.

@@ -1,11 +1,11 @@
 ---
-sidebar_label: "Connie Task Alerts"
+sidebar_label: "ThreadConnect Task Alerts"
 sidebar_position: 6.5
-title: "Connie Task Alerts"
+title: "ThreadConnect Task Alerts"
 description: "Get a friendly desktop pop-up when a new task arrives — so you don't have to watch Connie all day."
 ---
 
-# Connie Task Alerts
+# ThreadConnect Task Alerts
 
 :::info Tasks stay for 96 hours
 A task that arrives while you're closed will **still be waiting for four full days** — long enough to survive a weekend, and a holiday weekend. Close Friday at 5:30 PM, an email lands at 5:31 PM, and it's still there when someone starts Monday morning.

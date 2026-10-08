@@ -258,3 +258,31 @@ header h1 {
   background: var(--ifm-color-gray-800);
   color: var(--ifm-color-gray-300);
 }
+
+/* ThreadConnect high-level rebrand (2026-10-08): colors only, layered over the Paste base.
+   Teal #048E99 fails AA for text on white, so links/primary text use #037A84. */
+:root {
+  --ifm-color-primary: #037A84;
+  --ifm-color-primary-dark: #036E77;
+  --ifm-color-primary-darker: #02626A;
+  --ifm-color-primary-darkest: #00393E;
+  --ifm-color-primary-light: #048E99;
+  --ifm-color-primary-lighter: #4FB0B8;
+  --ifm-color-primary-lightest: #B4DDD9;
+  --ifm-link-color: #037A84;
+  --ifm-navbar-background-color: #FFFFFF;
+  --ifm-footer-background-color: #00393E;
+}
+.footer--dark { --ifm-footer-background-color: #00393E; }
+.navbar__logo { height: 2.4rem; }
+html[data-theme='dark'] {
+  --ifm-color-primary: #4FB0B8;
+  --ifm-color-primary-dark: #3FA3AB;
+  --ifm-color-primary-darker: #3A9AA2;
+  --ifm-color-primary-darkest: #2F7F86;
+  --ifm-color-primary-light: #6CBFC6;
+  --ifm-color-primary-lighter: #8BCDD2;
+  --ifm-color-primary-lightest: #B4DDD9;
+  --ifm-link-color: #6CBFC6;
+  --ifm-navbar-background-color: #00393E;
+}

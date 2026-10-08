@@ -1,10 +1,10 @@
 ---
 sidebar_label: Deployment Kit
 sidebar_position: 2
-title: "Connie Voice Direct + Wait Experience Deployment Kit"
+title: "ThreadConnect Voice Direct + Wait Experience Deployment Kit"
 ---
 
-# Connie Voice Direct + Wait Experience Deployment Kit
+# ThreadConnect Voice Direct + Wait Experience Deployment Kit
 
 Complete deployment solution for implementing the Connie Voice Direct + Wait Experience workflow (callback-and-voicemail-with-email) on new Connie accounts. This kit provides everything needed for reliable, repeatable deployments.
 

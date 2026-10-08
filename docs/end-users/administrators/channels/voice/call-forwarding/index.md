@@ -1,12 +1,12 @@
 ---
 sidebar_label: Overview
 sidebar_position: 1
-title: "Business Call Forwarding to Connie"
+title: "Business Call Forwarding to ThreadConnect"
 ---
 
 import Link from '@docusaurus/Link';
 
-# Business Call Forwarding to Connie
+# Business Call Forwarding to ThreadConnect
 
 ## Introduction
 

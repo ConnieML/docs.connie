@@ -1,10 +1,10 @@
 ---
 sidebar_label: Overview
 sidebar_position: 0
-title: "Connie TechOps"
+title: "ThreadConnect TechOps"
 ---
 
-# Connie TechOps
+# ThreadConnect TechOps
 
 **Internal documentation for Connie staff and technical operations.**
 

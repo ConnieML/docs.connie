@@ -1,11 +1,11 @@
 ---
 sidebar_label: "Task Alerts — Troubleshooting"
 sidebar_position: 6
-title: "Connie Task Alerts — Advanced Troubleshooting"
+title: "ThreadConnect Task Alerts — Advanced Troubleshooting"
 description: "Why desktop alerts don't show, and how to fix it — for agents and admins. Covers Chrome, macOS, Windows, and Focus/Do-Not-Disturb."
 ---
 
-# Connie Task Alerts — Advanced Troubleshooting
+# ThreadConnect Task Alerts — Advanced Troubleshooting
 
 **Purpose:** get an on-screen desktop pop-up (with sound) when a new task is routed to you in Connie, even when Chrome isn't your focused window.
 

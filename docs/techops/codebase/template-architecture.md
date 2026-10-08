@@ -1,10 +1,10 @@
 ---
 sidebar_label: Template Architecture
 sidebar_position: 1
-title: "ConnieRTC Template Architecture"
+title: "ThreadConnect Template Architecture"
 ---
 
-# ConnieRTC Template Architecture
+# ThreadConnect Template Architecture
 
 Welcome to ConnieRTC codebase reference! This section covers the template architecture and development patterns used across the platform.
 

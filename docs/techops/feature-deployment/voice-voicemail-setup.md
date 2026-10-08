@@ -1,10 +1,10 @@
 ---
 sidebar_label: Voice & Voicemail Setup
 sidebar_position: 4
-title: "Connie Voicemail Setup Guide"
+title: "ThreadConnect Voicemail Setup Guide"
 ---
 
-# Connie Voicemail Setup Guide
+# ThreadConnect Voicemail Setup Guide
 
 **Version:** 2.0
 **Last Updated:** 2026-01-15

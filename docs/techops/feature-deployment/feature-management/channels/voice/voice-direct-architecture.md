@@ -1,10 +1,10 @@
 ---
 sidebar_label: Voice Direct Architecture
 sidebar_position: 1
-title: "ConnieRTC Voice Direct Service Architecture"
+title: "ThreadConnect Voice Direct Service Architecture"
 ---
 
-# ConnieRTC Voice Direct Service Architecture
+# ThreadConnect Voice Direct Service Architecture
 
 This document provides generic, client-agnostic Mermaid diagrams that illustrate the ConnieRTC Voice Direct service architecture for developer documentation and implementation reference.
 

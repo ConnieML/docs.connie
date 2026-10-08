@@ -1,6 +1,6 @@
 ---
 sidebar_label: schedule-manager
-title: Connie Schedule Manager
+title: ThreadConnect Schedule Manager
 ---
 import PluginLibraryFeature from "./_plugin-library-feature.md";
 

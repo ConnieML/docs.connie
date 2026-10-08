@@ -633,7 +633,7 @@ curl -X POST "https://conversations.twilio.com/v1/Configuration/Addresses" \
   -d "AutoCreation.StudioFlowSid=$FW_SID" \
   -d "AutoCreation.StudioRetryCount=3"
 
-# 6. Test — send a WhatsApp message to the number and verify task in Connie
+# 6. Test — send a WhatsApp message to the number and verify task in ThreadConnect
 ```
 
 ---

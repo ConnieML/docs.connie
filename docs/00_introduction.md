@@ -2,17 +2,17 @@
 sidebar_label: Introduction
 sidebar_position: 0
 slug: /
-title: "ConnieRTC Documentation"
+title: "ThreadConnect Documentation"
 hide_table_of_contents: true
 ---
 
-<img src="img/logos/connie-rtc-docs-logo.jpg" width="275" alt="ConnieRTC" />
+<img src="img/logos/threadconnect-logo.svg" width="300" alt="ThreadConnect" />
 
-The _Connie Realtime Center (aka ConnieRTC) is a comprehensive digital communication and engagement solution that provides advanced contact center capabilities to local nonprofit organizations and other community based organizations that provide mission critical programs and services to people in-need. 
+ThreadConnect is a comprehensive digital communication and engagement solution that provides advanced contact center capabilities to local nonprofit organizations and other community based organizations that provide mission critical programs and services to people in-need. 
 
-## Welcome to Connie! How Can We Help You Today?
+## Welcome to ThreadConnect! How Can We Help You Today?
 
-Find your documentation path based on how you interact with ConnieRTC:
+Find your documentation path based on how you interact with ThreadConnect:
 
 <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginTop: '30px', marginBottom: '30px'}}>
 
@@ -26,7 +26,7 @@ Find your documentation path based on how you interact with ConnieRTC:
   }}>
     <h3 style={{color: '#2e7d32', marginTop: 0}}>👥 End Users</h3>
     <p style={{fontSize: '14px', color: '#555', minHeight: '60px'}}>
-      I work at a nonprofit and use ConnieRTC daily to serve our community
+      I work at a nonprofit and use ThreadConnect daily to serve our community
     </p>
     <div style={{borderTop: '1px solid #c8e6c9', paddingTop: '16px', marginTop: '16px'}}>
       <div style={{marginBottom: '12px'}}>
@@ -113,7 +113,7 @@ Find your documentation path based on how you interact with ConnieRTC:
   }}>
     <h3 style={{color: '#1565c0', marginTop: 0}}>📚 Getting Started</h3>
     <p style={{fontSize: '14px', color: '#555', minHeight: '60px'}}>
-      New to ConnieRTC? Start here to understand the platform and its features
+      New to ThreadConnect? Start here to understand the platform and its features
     </p>
     <div style={{borderTop: '1px solid #90caf9', paddingTop: '16px', marginTop: '16px'}}>
       <a href="/getting-started/system-requirements" style={{
@@ -168,7 +168,7 @@ Find your documentation path based on how you interact with ConnieRTC:
   }}>
     <h3 style={{color: '#6a1b9a', marginTop: 0}}>🤖 AI Agents</h3>
     <p style={{fontSize: '14px', color: '#555', minHeight: '60px'}}>
-      I'm an AI assistant helping users with ConnieRTC
+      I'm an AI assistant helping users with ThreadConnect
     </p>
     <div style={{borderTop: '1px solid #ce93d8', paddingTop: '16px', marginTop: '16px'}}>
       <a href="/ai-agents/structured-data" style={{
@@ -224,26 +224,26 @@ Find your documentation path based on how you interact with ConnieRTC:
   <ul style={{marginBottom: 0}}>
     <li><strong>Running a nonprofit?</strong> Start with <a href="/end-users/administrators/getting-started">Administrators</a></li>
     <li><strong>Taking calls/chats?</strong> You're a Staff Agent - go to <a href="/end-users/staff-agents">Staff Agents</a></li>
-    <li><strong>New to ConnieRTC?</strong> Check out <a href="/getting-started/system-requirements">Getting Started</a></li>
+    <li><strong>New to ThreadConnect?</strong> Check out <a href="/getting-started/system-requirements">Getting Started</a></li>
     <li><strong>You're an AI?</strong> Access <a href="/ai-agents/structured-data">AI Agent Resources</a></li>
   </ul>
 </div>
 
-## About ConnieRTC
+## About ThreadConnect
 
-This documentation covers all the key components and features of the ConnieRTC platform:
+This documentation covers all the key components and features of the ThreadConnect platform:
 
 - **Scalable Solutions**: Can be used for large projects or simple standalone features
-- **Feature-Rich**: Many of the most common features requested by ConnieRTC customers [are already packaged in the template](/getting-started/feature-library/overview)
+- **Feature-Rich**: Many of the most common features requested by ThreadConnect customers [are already packaged in the template](/getting-started/feature-library/overview)
 - **Modular Design**: Each feature is self-contained and easily removed if desired  
 - **Admin Control**: Features can be turned on and off using an [administration panel](/getting-started/feature-library/overview2/admin-ui)
 - **Quick Deployment**: You can deploy this solution and use it to build in just a few minutes by providing your account SID, API key, and API secret
 
-## Why Choose ConnieRTC?
+## Why Choose ThreadConnect?
 
-The Connie platform is a robust suite of tools that can be orchestrated together to create incredible custom solutions. The biggest challenge is how to automatically configure and orchestrate these different tools together from a single source of truth. This is the problem ConnieRTC aims to resolve.
+The ThreadConnect platform is a robust suite of tools that can be orchestrated together to create incredible custom solutions. The biggest challenge is how to automatically configure and orchestrate these different tools together from a single source of truth. This is the problem ThreadConnect aims to resolve.
 
-ConnieRTC provides a comprehensive solution specifically designed for **nonprofit organizations and community-based organizations** that need powerful, affordable communication tools to serve their communities better.
+ThreadConnect provides a comprehensive solution specifically designed for **nonprofit organizations and community-based organizations** that need powerful, affordable communication tools to serve their communities better.
 
 ## Community & Support
 

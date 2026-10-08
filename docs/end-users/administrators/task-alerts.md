@@ -1,11 +1,11 @@
 ---
-sidebar_label: "Connie Task Alerts"
+sidebar_label: "ThreadConnect Task Alerts"
 sidebar_position: 5
-title: "Connie Task Alerts (Activate / Deactivate)"
+title: "ThreadConnect Task Alerts (Activate / Deactivate)"
 description: "Turn Connie Task Alerts on or off for your whole organization from the Admin panel."
 ---
 
-# Connie Task Alerts — Activate / Deactivate
+# ThreadConnect Task Alerts — Activate / Deactivate
 
 :::info Tasks stay for 96 hours
 A task that arrives while you're closed will **still be waiting for four full days** — long enough to survive a weekend, and a holiday weekend. Close Friday at 5:30 PM, an email lands at 5:31 PM, and it's still there when someone starts Monday morning.
