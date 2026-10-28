@@ -32,6 +32,8 @@ The Playback Machine lives inside **ThreadConnect**. You must be signed in to Th
 4. Click **Data & Reporting**.
 5. Find the card called **Playback Machine**.
 
+![The ThreadConnect Datacenter page with the Playback Machine card and its four buttons: Load Voicemails, Load Faxes, Load Forms and All Media](/img/staff-agents/playback-machine/01-data-reporting-card.png)
+
 The card has four buttons:
 
 | Button | What it opens |
@@ -54,11 +56,15 @@ Messages callers left for your team.
 - You see the date, who called, and how long the message is.
 - The list shows **voicemails only**. Recorded phone calls are not listed here.
 
+![The Voicemails list showing date received, caller number, message length and a Play button for each voicemail](/img/staff-agents/playback-machine/03-voicemails.png)
+
 ### Faxes
 
 Faxes your team sent or received.
 
 - You see the date, the other fax number, whether it came in or went out, and the number of pages.
+
+![The Faxes list showing date, fax number, direction, page count and a View PDF button for each fax](/img/staff-agents/playback-machine/04-faxes.png)
 
 ### Forms
 
@@ -67,9 +73,13 @@ Web forms that clients filled out and signed (Adobe forms).
 - You see the date, the **name of the form**, and **who signed it**.
 - If ThreadConnect can't tell who signed, you'll see a dash (**—**) instead of a name.
 
+![The Forms list showing date, form name, signer and an Open PDF button for each signed form](/img/staff-agents/playback-machine/05-forms.png)
+
 ### All Media
 
 One list with voicemails, faxes and forms mixed together, newest first.
+
+![The All Media list with filter buttons for All, Voicemail, Fax and Form, each with a count, and a Play or Open PDF button on every row](/img/staff-agents/playback-machine/02-all-media.png)
 
 Use the buttons at the top to narrow it down:
 
@@ -78,6 +88,8 @@ Use the buttons at the top to narrow it down:
 - **Refresh** checks for anything new.
 
 Each button shows a count, so you can see at a glance how many of each there are.
+
+![The All Media list filtered to Voicemail, showing only the three voicemails with their Play buttons](/img/staff-agents/playback-machine/06-all-media-filtered.png)
 
 ---
 
