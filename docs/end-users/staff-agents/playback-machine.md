@@ -13,6 +13,13 @@ Sometimes you need something that came in days ago. A voicemail you want to hear
 
 The **Playback Machine** keeps these in one place. You can play a voicemail or open a fax or form, any time, without needing the original task.
 
+:::tip What's new
+- **Everything in one place.** Voicemails, faxes and forms in one list, newest first.
+- **Forms are new.** Signed web forms now sit right beside your voicemails and faxes.
+- **Private by design.** Only staff signed in to ThreadConnect can see your messages.
+- **Nothing to install.** It's already in your ThreadConnect panel.
+:::
+
 ---
 
 ## Where to find it
@@ -127,4 +134,4 @@ The Playback Machine does not have a link you can share or bookmark. Opened anyw
 
 ## Need help?
 
-Contact your supervisor or the [Connie Care Team](/get-support/overview). You can also check **[Troubleshooting](/end-users/staff-agents/troubleshooting)**.
+Contact your supervisor or the [ThreadConnect support team](/get-support/overview). You can also check **[Troubleshooting](/end-users/staff-agents/troubleshooting)**.
