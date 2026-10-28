@@ -124,7 +124,7 @@ Reverse-chronological (newest on top), with an open/closed status (✓ / ○) at
 
 ## 2026-05-29 · ⚡ Reporting — query & display updates
 
-**What changed:** Reporting query and display updates based on NSS feedback — cleaner queries and a clearer at-a-glance view of the numbers that matter.
+**What changed:** Reporting query and display updates based on partner feedback — cleaner queries and a clearer at-a-glance view of the numbers that matter.
 
 🔗 [Reporting & Analytics](https://docs.connie.one/reporting-analytics)
 
