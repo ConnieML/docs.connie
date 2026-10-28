@@ -16,6 +16,14 @@ The latest Connie features and improvements — newest first. Each item links to
 
 ---
 
+## 2026-10-28 · ✨ The Playback Machine Is Back, Now With Forms
+
+**What changed:** The Playback Machine is back for Lifeline and NSS. Staff can play a voicemail or open a fax or a signed web form from the last 30 days, all in one list, newest first, with the new forms feed alongside voicemails and faxes. It now shows data only to staff who are signed in to ThreadConnect for their own organization, so there is no public link to it.
+
+🔗 [Finding Past Voicemails, Faxes and Forms](https://docs.connie.one/end-users/staff-agents/playback-machine)
+
+---
+
 ## 2026-10-07 · ✨ Hold Time Limit: Callers Reach Voicemail Instead of Waiting Indefinitely
 
 **What changed:** A program can now set a maximum hold time. When a caller reaches it, Connie asks them to leave a message, and the voicemail arrives in that program's queue with the recording, transcript and email as usual. Every program also gets a safety net: a caller whose place in the queue ends while they are still holding is now sent to voicemail instead of being left on hold music no one can answer.
