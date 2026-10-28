@@ -134,4 +134,4 @@ The Playback Machine does not have a link you can share or bookmark. Opened anyw
 
 ## Need help?
 
-Contact your supervisor or the [ThreadConnect support team](/get-support/overview). You can also check **[Troubleshooting](/end-users/staff-agents/troubleshooting)**.
+Contact your supervisor or [ThreadConnect Support](/get-support/overview). You can also check **[Troubleshooting](/end-users/staff-agents/troubleshooting)**.
