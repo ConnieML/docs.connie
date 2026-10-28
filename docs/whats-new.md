@@ -18,7 +18,7 @@ The latest Connie features and improvements — newest first. Each item links to
 
 ## 2026-10-28 · ✨ The Playback Machine Is Back, Now With Forms
 
-**What changed:** The Playback Machine is back for Lifeline and NSS. Staff can play a voicemail or open a fax or a signed web form from the last 30 days, all in one list, newest first, with the new forms feed alongside voicemails and faxes. It now shows data only to staff who are signed in to ThreadConnect for their own organization, so there is no public link to it.
+**What changed:** The Playback Machine is back, now live for partner organizations. Staff can play a voicemail or open a fax or a signed web form from the last 30 days, all in one list, newest first, with the new forms feed alongside voicemails and faxes. It now shows data only to staff who are signed in to ThreadConnect for their own organization, so there is no public link to it.
 
 🔗 [Finding Past Voicemails, Faxes and Forms](https://docs.connie.one/end-users/staff-agents/playback-machine)
 
