@@ -53,7 +53,7 @@ Keyboard shortcuts are built in. There are no dependencies or setup steps requir
 
 ThreadConnect supports keyboard shortcuts for the most common actions performed by agents. The official documentation can be found [here](https://www.twilio.com/docs/flex/end-user-guide/keyboard-shortcuts).
 
-The 2.1 ThreadConnect UI exposes various APIs to interact with the default keyboard shortcuts, as well as adding custom ones. The official documentation can be found [here](https://www.twilio.com/docs/flex/developer/ui/modify-keyboard-shortcuts).
+ThreadConnect exposes various APIs to interact with the default keyboard shortcuts, as well as adding custom ones. The official documentation can be found [here](https://www.twilio.com/docs/flex/developer/ui/modify-keyboard-shortcuts).
 
 ### How are you persisting changes between refreshes?
 
