@@ -27,4 +27,4 @@ The default email templates include:
 
 ## Need Custom Templates Now?
 
-Contact your Connie support team for custom email template development.
+Contact your ThreadConnect support team for custom email template development.

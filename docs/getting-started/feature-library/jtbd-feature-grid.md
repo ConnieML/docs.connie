@@ -10,7 +10,7 @@ import TabItem from "@theme/TabItem";
 
 # ThreadConnect Features Mapped to Your Daily Jobs
 
-> **Every feature exists to help you complete a specific job.** Select your role to see how Connie helps you get your work done.
+> **Every feature exists to help you complete a specific job.** Select your role to see how ThreadConnect helps you get your work done.
 
 <Tabs queryString="role">
 
@@ -20,14 +20,14 @@ import TabItem from "@theme/TabItem";
 
 ### 🎯 Your Primary Jobs
 
-| When I need to... | So that I can... | Connie helps with... | Setup Time |
+| When I need to... | So that I can... | ThreadConnect helps with... | Setup Time |
 |-------------------|------------------|---------------------|------------|
 | **Set up our account** | Begin serving clients | ✅ Guided setup wizard<br/>✅ Phone number provisioning<br/>✅ Channel configuration | 30 mins |
 | **Manage phone numbers** | Direct customers to us | ✅ Local number selection<br/>✅ Number porting<br/>✅ Call forwarding setup | 15 mins |
 | **Configure channels** | Meet clients where they are | ✅ Voice setup<br/>✅ SMS enablement<br/>✅ Email integration<br/>✅ Fax configuration | 20 mins/channel |
 | **Manage team access** | Ensure security & efficiency | ✅ User provisioning<br/>✅ Role assignment<br/>✅ Permission management | 5 mins/user |
 | **Track usage & costs** | Stay within budget | ✅ Usage dashboards<br/>✅ Cost reports<br/>✅ Alert configuration | 10 mins |
-| **Get support** | Resolve issues quickly | ✅ In-app help<br/>✅ Documentation<br/>✅ Connie Care Team access | Immediate |
+| **Get support** | Resolve issues quickly | ✅ In-app help<br/>✅ Documentation<br/>✅ ThreadConnect Care Team access | Immediate |
 
 ### 📋 Your Setup Checklist
 
@@ -85,7 +85,7 @@ import TabItem from "@theme/TabItem";
 
 ### 🎯 Your Primary Jobs
 
-| When I need to... | So that I can... | Connie helps with... | Frequency |
+| When I need to... | So that I can... | ThreadConnect helps with... | Frequency |
 |-------------------|------------------|---------------------|-----------|
 | **Monitor real-time activity** | Manage operations effectively | ✅ Live dashboard<br/>✅ Queue metrics<br/>✅ Agent status view | Continuous |
 | **Assign skills to agents** | Route tasks appropriately | ✅ Skill management<br/>✅ Dynamic routing<br/>✅ Load balancing | Daily |
@@ -148,7 +148,7 @@ import TabItem from "@theme/TabItem";
 
 ### 🎯 Your Primary Jobs
 
-| When I need to... | So that I can... | Connie helps with... | Daily Use |
+| When I need to... | So that I can... | ThreadConnect helps with... | Daily Use |
 |-------------------|------------------|---------------------|-----------|
 | **Log in and get to work** | Start helping clients | ✅ Single sign-on<br/>✅ Agent desktop<br/>✅ Status management | Every shift |
 | **Manage my availability** | Control when I receive tasks | ✅ Available/Break/Away states<br/>✅ Activity codes<br/>✅ Auto-logout | Continuous |
@@ -163,7 +163,7 @@ import TabItem from "@theme/TabItem";
 <summary><strong>Getting Started (CSA-1, CSA-2)</strong></summary>
 
 **Login Process:**
-1. Navigate to your Connie URL
+1. Navigate to your ThreadConnect URL
 2. Enter credentials
 3. Land on agent desktop
 4. Set initial status
@@ -221,13 +221,13 @@ import TabItem from "@theme/TabItem";
 
 </TabItem>
 
-<TabItem value="platform" label="🔧 Connie Platform Admin">
+<TabItem value="platform" label="🔧 ThreadConnect Platform Admin">
 
-## Connie Platform Admin: Supporting All CBOs
+## ThreadConnect Platform Admin: Supporting All CBOs {#connie-platform-admin-supporting-all-cbos}
 
 ### 🎯 Your Primary Jobs
 
-| When I need to... | So that I can... | Connie helps with... |
+| When I need to... | So that I can... | ThreadConnect helps with... |
 |-------------------|------------------|---------------------|
 | **Manage CBO accounts** | Provide platform support | Account provisioning, configuration, troubleshooting |
 | **Monitor platform health** | Ensure service quality | System dashboards, alerts, performance metrics |
@@ -300,4 +300,4 @@ import TabItem from "@theme/TabItem";
 
 **Ready to implement?** Check the setup checklists and feature guides for your role.
 
-**Need help?** Every role has access to the Connie Care Team - find the support link in your dashboard.
+**Need help?** Every role has access to the ThreadConnect Care Team - find the support link in your dashboard.

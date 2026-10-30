@@ -7,7 +7,7 @@ sidebar_position: 4
 # Transferring Tasks
 
 :::tip New: one Send button for every task
-Every task now has a **Send** button at the top. **Send → Transfer** moves the task to a coworker or a department in Connie, and Connie keeps track of it. For the full picture, including **Hand off** and **Refer out**, see **[Connie Task Sender](/end-users/staff-agents/task-sender)**.
+Every task now has a **Send** button at the top. **Send → Transfer** moves the task to a coworker or a department in ThreadConnect, and ThreadConnect keeps track of it. For the full picture, including **Hand off** and **Refer out**, see **[ThreadConnect Task Sender](/end-users/staff-agents/task-sender)**.
 :::
 
 :::info Tasks stay for 96 hours
@@ -15,10 +15,10 @@ A task that arrives while you're closed will **still be waiting for four full da
 
 Live phone calls and web chats are the exception; their window is much shorter, because someone is on the line right now.
 
-Need a different window for a program or channel? Custom settings are available — contact your Connie account representative or the [Connie Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
+Need a different window for a program or channel? Custom settings are available — contact your ThreadConnect account representative or the [ThreadConnect Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
 :::
 
-**Transfer** sends a task to a coworker or a department in Connie. It stays in Connie, so nothing gets lost. You can transfer any kind of task: a phone call, web chat, text message, voicemail, fax, web form or email.
+**Transfer** sends a task to a coworker or a department in ThreadConnect. It stays in ThreadConnect, so nothing gets lost. You can transfer any kind of task: a phone call, web chat, text message, voicemail, fax, web form or email.
 
 ## 🔧 What You Need to Know
 
@@ -26,7 +26,7 @@ Need a different window for a program or channel? Custom settings are available 
 - You can transfer to a **coworker** or to a **department** (the next free person there picks it up).
 - On a phone call you can talk to the coworker first (**warm**) or pass it straight over (**cold**).
 - The conversation history goes with the task.
-- If the department is **closed**, Connie asks you first. See [the closed-department message](/end-users/staff-agents/task-sender#this-department-is-closed-right-now).
+- If the department is **closed**, ThreadConnect asks you first. See [the closed-department message](/end-users/staff-agents/task-sender#this-department-is-closed-right-now).
 
 ## 📞 Transfer a Phone Call, Web Chat or Text
 
@@ -40,7 +40,7 @@ Someone is waiting with you, so **Transfer** is the only choice on the Send menu
 
 ![The Transfer list with Agent and Queues tabs and a list of departments](/img/features/task-sender/transfer-list-queues.png)
 
-Need to connect a caller to someone **outside** Connie? Use the **External** tab or the dial pad.
+Need to connect a caller to someone **outside** ThreadConnect? Use the **External** tab or the dial pad.
 
 ## 📠 Transfer a Voicemail, Fax, Web Form or Email
 
@@ -50,7 +50,7 @@ Need to connect a caller to someone **outside** Connie? Use the **External** tab
 4. Press **Transfer**.
 5. Voicemail: after the transfer, pick your disposition in wrap-up and press **Complete**.
 
-Want to send it to someone who **doesn't use Connie**? That's **Hand off** or **Refer out**. See [Handing Off & Referring Out](/end-users/staff-agents/handing-off-tasks).
+Want to send it to someone who **doesn't use ThreadConnect**? That's **Hand off** or **Refer out**. See [Handing Off & Referring Out](/end-users/staff-agents/handing-off-tasks).
 
 ## 💡 Best Practices
 
@@ -84,9 +84,9 @@ Want to send it to someone who **doesn't use Connie**? That's **Hand off** or **
 ## ⚠️ Common Issues
 
 **"I don't see the Send button"**
-- The Task Sender is switched on for each organization by the Connie team. Ask your supervisor.
+- The Task Sender is switched on for each organization by the ThreadConnect team. Ask your supervisor.
 
-**"Connie says the department is closed"**
+**"ThreadConnect says the department is closed"**
 - Press **Cancel** to keep the task, or **Transfer anyway** if you still want to send it.
 
 **"My coworker didn't accept the transfer"**
@@ -111,6 +111,6 @@ Want to send it to someone who **doesn't use Connie**? That's **Hand off** or **
 | **Transfer a call, chat or text** | Send → Transfer → Agent or Queues tab → pick → transfer |
 | **Warm transfer a call** | Send → Transfer → pick → talk to them first → leave the call |
 | **Transfer a voicemail, fax, form or email** | Send → Transfer → pick department or coworker → disposition → Transfer |
-| **Send it outside Connie** | See [Handing Off & Referring Out](/end-users/staff-agents/handing-off-tasks) |
+| **Send it outside ThreadConnect** | See [Handing Off & Referring Out](/end-users/staff-agents/handing-off-tasks) |
 
-Need help with transfers? Ask your supervisor or [contact Connie Support](/get-support/overview).
+Need help with transfers? Ask your supervisor or [contact ThreadConnect Support](/get-support/overview).

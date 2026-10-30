@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # AI Agents — Basic Data Access
 
-> 📦 **Basic — included with every Connie account.** Programmatic counterpart to the Basic reporting surfaces (Queues Stats, Teams View, native Insights). For developers & AI agents.
+> 📦 **Basic — included with every ThreadConnect account.** Programmatic counterpart to the Basic reporting surfaces (Queues Stats, Teams View, native Insights). For developers & AI agents.
 
 > **STUB — scaffold only.** Outline and source pointers below; prose to follow.
 

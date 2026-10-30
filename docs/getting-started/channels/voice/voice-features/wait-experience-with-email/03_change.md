@@ -22,7 +22,7 @@ Gather from the CEO/requester **before starting**:
 
 | Parameter | Why you need it |
 |---|---|
-| Connie client account name | Which sub-account the change applies to |
+| ThreadConnect client account name | Which sub-account the change applies to |
 | Phone number (or queue) being changed | Scope of the change |
 | Change type | Match to a row in [Change types](#change-types) below; if no match, see [§7 If Your Variant Differs](#7-if-your-variant-differs) |
 | Current value | What's live now (capture in PRE snapshot) |

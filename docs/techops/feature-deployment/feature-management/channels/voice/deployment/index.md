@@ -6,15 +6,15 @@ title: "ThreadConnect Voice Direct + Wait Experience Deployment Kit"
 
 # ThreadConnect Voice Direct + Wait Experience Deployment Kit
 
-Complete deployment solution for implementing the Connie Voice Direct + Wait Experience workflow (callback-and-voicemail-with-email) on new Connie accounts. This kit provides everything needed for reliable, repeatable deployments.
+Complete deployment solution for implementing the ThreadConnect Voice Direct + Wait Experience workflow (callback-and-voicemail-with-email) on new ThreadConnect accounts. This kit provides everything needed for reliable, repeatable deployments.
 
 :::tip For Claude Agents
 This deployment kit is specifically designed to be followed by Claude agents. Each guide includes step-by-step instructions, validation commands, and troubleshooting procedures.
 :::
 
-## What is Connie Voice Direct + Wait Experience?
+## What is ThreadConnect Voice Direct + Wait Experience? {#what-is-connie-voice-direct--wait-experience}
 
-**Connie Voice Direct + Wait Experience** is the professional-grade voice workflow that provides:
+**ThreadConnect Voice Direct + Wait Experience** is the professional-grade voice workflow that provides:
 - 📞 **Direct agent connection** with professional hold music
 - ⭐ **In-queue options** - Press * for callback or voicemail
 - 📧 **Email notifications** with voicemail recordings as attachments

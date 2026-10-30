@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Receiving and Replying to Emails
 
-When a client sends an email to your organization, Connie routes it to an available agent just like a call or chat.
+When a client sends an email to your organization, ThreadConnect routes it to an available agent just like a call or chat.
 
 ## Receiving an Email Task
 

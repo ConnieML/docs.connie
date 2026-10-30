@@ -11,7 +11,7 @@ A task that arrives while you're closed will **still be waiting for four full da
 
 Live phone calls and web chats are the exception; their window is much shorter, because someone is on the line right now.
 
-Need a different window for a program or channel? Custom settings are available — contact your Connie account representative or the [Connie Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
+Need a different window for a program or channel? Custom settings are available — contact your ThreadConnect account representative or the [ThreadConnect Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
 :::
 
 
@@ -101,4 +101,4 @@ A self-serve team membership editor is on the roadmap. Queue reconfiguration wil
 
 ## Further reading (technical admins)
 
-For the underlying Twilio Flex Teams and TaskRouter Workflow primitives that drive Connie's team / queue model, see the [Twilio Flex Teams admin guide](https://www.twilio.com/docs/flex/admin-guide/setup/teams) and the [TaskRouter Workflows documentation](https://www.twilio.com/docs/taskrouter/api/workflow). Connie's day-to-day admin surface is wrapped in basecamp-managed configuration; the concepts map directly.
+For the underlying Twilio Flex Teams and TaskRouter Workflow primitives that drive ThreadConnect's team / queue model, see the [Twilio Flex Teams admin guide](https://www.twilio.com/docs/flex/admin-guide/setup/teams) and the [TaskRouter Workflows documentation](https://www.twilio.com/docs/taskrouter/api/workflow). ThreadConnect's day-to-day admin surface is wrapped in basecamp-managed configuration; the concepts map directly.

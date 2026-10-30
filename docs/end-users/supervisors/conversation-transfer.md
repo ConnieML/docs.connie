@@ -5,8 +5,8 @@ title: "Managing Conversation Transfers"
 
 # Managing Conversation Transfers
 
-:::info Connie Task Sender
-Your agents now move every task with one **Send** button at the top of the task: **Transfer** keeps it in Connie (a coworker or department); **Hand off** and **Refer out** email it to someone outside Connie and close the task. Phone calls, web chats and texts can only be transferred. If an agent transfers to a department that is closed, Connie asks them first. Every move is recorded on the task: what was transferred, handed off or referred out, by whom and when. The Task Sender is switched on per organization by the Connie team. Full agent guide: [Connie Task Sender](/end-users/staff-agents/task-sender).
+:::info ThreadConnect Task Sender
+Your agents now move every task with one **Send** button at the top of the task: **Transfer** keeps it in ThreadConnect (a coworker or department); **Hand off** and **Refer out** email it to someone outside ThreadConnect and close the task. Phone calls, web chats and texts can only be transferred. If an agent transfers to a department that is closed, ThreadConnect asks them first. Every move is recorded on the task: what was transferred, handed off or referred out, by whom and when. The Task Sender is switched on per organization by the ThreadConnect team. Full agent guide: [ThreadConnect Task Sender](/end-users/staff-agents/task-sender).
 :::
 
 As a supervisor, you need to understand how conversation transfers work, monitor transfer patterns, and help agents use this feature effectively.
@@ -140,9 +140,9 @@ Based on production deployments:
 
 **For system issues (Production Guidance):**
 - **"TaskRouter error: Bad Request" reports:** IMMEDIATE escalation to Platform Developer
-- **Transfer success rate drops below 90%:** Contact Connie Support with URGENT priority
+- **Transfer success rate drops below 90%:** Contact ThreadConnect Support with URGENT priority
 - **Individual agent transfer failures:** Check workflow SID configuration first
-- **General system issues:** Contact Connie Support with conversation SIDs and error details
+- **General system issues:** Contact ThreadConnect Support with conversation SIDs and error details
 
 **For training needs:** Work with your manager
 **For policy questions:** Refer to CBO Administrator documentation

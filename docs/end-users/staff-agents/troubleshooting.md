@@ -6,7 +6,7 @@ sidebar_position: 7
 
 # Troubleshooting Common Issues
 
-This guide helps you resolve common problems you might encounter while using Connie.
+This guide helps you resolve common problems you might encounter while using ThreadConnect.
 
 ## 🔐 Login Issues
 
@@ -138,10 +138,10 @@ This guide helps you resolve common problems you might encounter while using Con
 
 ## 🔄 Transfer Issues
 
-Every task has one **Send** button for Transfer, Hand off and Refer out. See [Connie Task Sender](/end-users/staff-agents/task-sender) and [Transferring Tasks](/end-users/staff-agents/transferring-tasks#️-common-issues).
+Every task has one **Send** button for Transfer, Hand off and Refer out. See [ThreadConnect Task Sender](/end-users/staff-agents/task-sender) and [Transferring Tasks](/end-users/staff-agents/transferring-tasks#️-common-issues).
 
 Quick summary:
-- **No Send button** → The Task Sender is switched on for each organization by the Connie team. Ask your supervisor.
+- **No Send button** → The Task Sender is switched on for each organization by the ThreadConnect team. Ask your supervisor.
 - **Only "Transfer" on the Send menu** → Normal on a phone call, web chat or text. Hand off and Refer out are for voicemail, fax, web form and email.
 - **Someone is missing from the Hand off / Refer out list** → They have no email address saved. Ask your admin to add one.
 - **"This department is closed right now"** → Press **Cancel** to keep the task, or **Transfer anyway**.
@@ -150,7 +150,7 @@ Quick summary:
 
 ## 🖥️ Performance Issues
 
-### Connie is Running Slowly
+### ThreadConnect is Running Slowly {#connie-is-running-slowly}
 
 **Problem:** Pages load slowly, delays in actions
 
@@ -180,14 +180,14 @@ Quick summary:
 
 ### Screen Not Loading or Blank Page
 
-**Problem:** Connie displays a blank screen or won't load
+**Problem:** ThreadConnect displays a blank screen or won't load
 
 **Solutions:**
 1. **Hard refresh** - Ctrl+Shift+R (Windows) or Cmd+Shift+R (Mac)
 2. **Clear cache and cookies** for portal.connie.team
 3. **Try incognito/private window** to test if it's a cache issue
 4. **Check browser compatibility** - use supported browsers
-5. **Disable browser extensions** - some extensions conflict with Connie
+5. **Disable browser extensions** - some extensions conflict with ThreadConnect
 
 ## 🔧 Browser Compatibility
 
@@ -223,7 +223,7 @@ Help support help you faster by providing:
 3. **What you were doing** - Steps you took before the error
 4. **Error messages** - Exact text or screenshot
 5. **What you tried** - Troubleshooting steps you already attempted
-6. **Browser and device** - What you're using to access Connie
+6. **Browser and device** - What you're using to access ThreadConnect
 
 **Example:**
 ```
@@ -239,11 +239,11 @@ Browser: Chrome Version 120 on Windows 10
 
 - **Check the [FAQ](/end-users/staff-agents/faq)** for common questions
 - **Ask your supervisor** - they may have seen the issue before
-- **Contact Connie Support** - see [Get Support](/get-support/overview) for options
+- **Contact ThreadConnect Support** - see [Get Support](/get-support/overview) for options
 - **Review other guides:**
   - [Getting Started](/end-users/staff-agents/getting-started)
   - [Handling Tasks](/end-users/staff-agents/handling-tasks)
-  - [Connie Task Sender](/end-users/staff-agents/task-sender)
+  - [ThreadConnect Task Sender](/end-users/staff-agents/task-sender)
   - [Transferring Tasks](/end-users/staff-agents/transferring-tasks)
   - [Recording Notes](/end-users/staff-agents/recording-notes)
 

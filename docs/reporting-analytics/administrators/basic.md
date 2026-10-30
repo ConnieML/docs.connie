@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # Basic Reporting
 
-> 📦 **Basic — included with every Connie account.** It lives inside Flex, costs nothing extra, and needs no setup. It's role-gated to administrators and supervisors.
+> 📦 **Basic — included with every ThreadConnect account.** It lives inside Flex, costs nothing extra, and needs no setup. It's role-gated to administrators and supervisors.
 
 Basic Reporting answers one question: **"What happened?"** It comes in two halves:
 
@@ -46,7 +46,7 @@ Reporting is **role-gated**:
 - ✅ **Administrators and supervisors** with the **Insights role** can see it.
 - ❌ **Agents cannot** — reporting never appears in an agent's view.
 
-Adding a new supervisor is a quick, per-account step — **[ask your Connie team](#getting-help)** to grant the Insights role to their account.
+Adding a new supervisor is a quick, per-account step — **[ask your ThreadConnect team](#getting-help)** to grant the Insights role to their account.
 
 ## 3. Customizing dashboards
 
@@ -85,7 +85,7 @@ The quick-pick buttons stop at **365 days**. To see the **full history**, use th
 
 ## 5. How far back the data goes
 
-About **24 months** of history is available. The exact window can change, so if you need to rely on a specific date range, **[check with your Connie team](#getting-help)** first.
+About **24 months** of history is available. The exact window can change, so if you need to rely on a specific date range, **[check with your ThreadConnect team](#getting-help)** first.
 
 ## 6. Exporting & downloading 📌
 
@@ -123,9 +123,9 @@ Full definitions live in the **[Concepts & Glossary](/reporting-analytics/concep
 
 ## Getting help {#getting-help}
 
-- **Need a new supervisor added** to reporting? Ask your Connie team to grant the Insights role.
-- **Want a custom dashboard built** for your program? Connie can build curated dashboards for you — just ask.
+- **Need a new supervisor added** to reporting? Ask your ThreadConnect team to grant the Insights role.
+- **Want a custom dashboard built** for your program? ThreadConnect can build curated dashboards for you — just ask.
 
 ---
 
-**Need help?** Visit **[Get Support](/get-support/overview)** or reach out to your Connie team.
+**Need help?** Visit **[Get Support](/get-support/overview)** or reach out to your ThreadConnect team.

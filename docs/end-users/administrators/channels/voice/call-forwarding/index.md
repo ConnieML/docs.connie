@@ -10,17 +10,17 @@ import Link from '@docusaurus/Link';
 
 ## Introduction
 
-We're excited to offer your nonprofit a modern, flexible call center experience using Connie—without requiring you to move your main business phone number from your current provider. Forwarding your business phone number allows you quickly and easily start leveraging most of Connie's features, while ensuring no disruption to your callers and minimal risk to your operations. 
+We're excited to offer your nonprofit a modern, flexible call center experience using ThreadConnect—without requiring you to move your main business phone number from your current provider. Forwarding your business phone number allows you quickly and easily start leveraging most of ThreadConnect's features, while ensuring no disruption to your callers and minimal risk to your operations. 
 
-Business call forwarding is a great way to kick off your Connie journey, but it is not recommended as a permanent setup. Please read on to learn more about how call forwarding works or contact the Connie Care team to discuss your strategy.
+Business call forwarding is a great way to kick off your ThreadConnect journey, but it is not recommended as a permanent setup. Please read on to learn more about how call forwarding works or contact the ThreadConnect Care team to discuss your strategy.
 
 ## How It Works
 
 ```mermaid
 flowchart LR
-    A[Customer Calls Existing Business No. COX] --> B[Call forwards to Connie Number]
-    B --> C[Connie Receives Call]
-    C --> D[Connie packages task & routes to ConnieRTC Staff processing]
+    A[Customer Calls Existing Business No. COX] --> B[Call forwards to ThreadConnect Number]
+    B --> C[ThreadConnect Receives Call]
+    C --> D[ThreadConnect packages task & routes to ConnieRTC Staff processing]
     
     style A fill:#e1f5fe
     style B fill:#f3e5f5
@@ -30,23 +30,23 @@ flowchart LR
 
 **The Process**:
 - **Keep Your Main Number**: Your existing business number remains with your current provider
-- **Forward Calls**: Your provider forwards all incoming calls to a new Connie number
-- **Answer in Connie**: Your team answers calls within Connie's platform, leveraging advanced features tailored for nonprofit efficiency
+- **Forward Calls**: Your provider forwards all incoming calls to a new ThreadConnect number
+- **Answer in ThreadConnect**: Your team answers calls within ThreadConnect's platform, leveraging advanced features tailored for nonprofit efficiency
 - **Outbound Calls**: Your main number appears as the caller ID for outbound calls, maintaining consistency
-- **Seamless Integration**: Experience all of Connie's features without disrupting your existing phone setup
+- **Seamless Integration**: Experience all of ThreadConnect's features without disrupting your existing phone setup
 
-## Detailed Steps for Call Forwarding to Connie
+## Detailed Steps for Call Forwarding to ThreadConnect {#detailed-steps-for-call-forwarding-to-connie}
 
-To forward your current business number to Connie, you'll need to either **PORT** the number to Connie or **FORWARD** calls from your existing provider to your Connie number. 
+To forward your current business number to ThreadConnect, you'll need to either **PORT** the number to ThreadConnect or **FORWARD** calls from your existing provider to your ThreadConnect number. 
 
-If porting isn't an option yet, or you wish to take a more staged approach to your Connie transition, you can set up call forwarding through your existing provider, directing calls to your Connie number. Connie also allows you to configure call forwarding rules within your account, including setting specific forwarding numbers and ring times.
+If porting isn't an option yet, or you wish to take a more staged approach to your ThreadConnect transition, you can set up call forwarding through your existing provider, directing calls to your ThreadConnect number. ThreadConnect also allows you to configure call forwarding rules within your account, including setting specific forwarding numbers and ring times.
 
 :::warning Ask your provider for "unconditional" forwarding
 Whichever provider you use, request **unconditional** call forwarding — often labeled **"Always Forward"** or **"Forward All Calls."**
 
-Conditional options such as *forward when busy* or *forward when no answer* are the most common cause of a setup that appears to succeed but doesn't. They produce no error: your line still rings and callers still get answered, but the calls reach your old phone system instead of Connie, and your team sees nothing arrive.
+Conditional options such as *forward when busy* or *forward when no answer* are the most common cause of a setup that appears to succeed but doesn't. They produce no error: your line still rings and callers still get answered, but the calls reach your old phone system instead of ThreadConnect, and your team sees nothing arrive.
 
-**Then confirm it with your Connie administrator.** A call dialed directly to your Connie number is indistinguishable by ear from a forwarded one — same greeting, same routing. Only your Connie administrator can confirm from Connie's records that a call genuinely arrived through the forward.
+**Then confirm it with your ThreadConnect administrator.** A call dialed directly to your ThreadConnect number is indistinguishable by ear from a forwarded one — same greeting, same routing. Only your ThreadConnect administrator can confirm from ThreadConnect's records that a call genuinely arrived through the forward.
 :::
 
 ## View Specific Business Call Forwarding Instructions by Provider
@@ -97,14 +97,14 @@ Choose your current phone provider below to view step-by-step forwarding instruc
 
 </div>
 
-*Don't see your provider? Contact the Connie Care team for assistance with your specific setup.*
+*Don't see your provider? Contact the ThreadConnect Care team for assistance with your specific setup.*
 
 ## Important Considerations
 
 ### Before You Begin
 - ✅ Verify your current provider supports call forwarding
 - ✅ Confirm any additional charges for call forwarding
-- ✅ Have your Connie phone number ready (provided by your administrator)
+- ✅ Have your ThreadConnect phone number ready (provided by your administrator)
 - ✅ Test during off-peak hours to minimize disruption
 
 ### Potential Limitations
@@ -115,25 +115,25 @@ Choose your current phone provider below to view step-by-step forwarding instruc
 
 ### Recommended Timeline
 1. **Week 1**: Set up forwarding and test basic functionality
-2. **Week 2-3**: Train staff on Connie platform features
-3. **Week 4+**: Evaluate performance and consider porting number directly to Connie
+2. **Week 2-3**: Train staff on ThreadConnect platform features
+3. **Week 4+**: Evaluate performance and consider porting number directly to ThreadConnect
 
 ## Next Steps
 
 After setting up call forwarding:
-1. **Test Your Setup**: Make test calls to your existing business number — then **ask your Connie administrator to confirm the call arrived through the forward.** Do not treat the line as live until they have
-2. **Train Your Team**: Familiarize staff with Connie's interface and features
+1. **Test Your Setup**: Make test calls to your existing business number — then **ask your ThreadConnect administrator to confirm the call arrived through the forward.** Do not treat the line as live until they have
+2. **Train Your Team**: Familiarize staff with ThreadConnect's interface and features
 3. **Monitor Performance**: Track call quality and any issues
-4. **Plan for Porting**: When you're ready to move your number directly to Connie, **contact the Connie Care team** — porting is handled as a guided process with your provider, not a self-service change
+4. **Plan for Porting**: When you're ready to move your number directly to ThreadConnect, **contact the ThreadConnect Care team** — porting is handled as a guided process with your provider, not a self-service change
 
 ## Need Help?
 
-**Connie Care Team**: Contact us for personalized assistance with your call forwarding setup
+**ThreadConnect Care Team**: Contact us for personalized assistance with your call forwarding setup
 
 **Technical Support**: Available for troubleshooting and configuration questions
 
-**Training Resources**: Access our comprehensive guides for maximizing your Connie experience
+**Training Resources**: Access our comprehensive guides for maximizing your ThreadConnect experience
 
 ---
 
-*Call forwarding is a temporary solution to help you get started with Connie quickly. For the full range of features and optimal performance, we recommend porting your number directly to Connie when you're ready.*
+*Call forwarding is a temporary solution to help you get started with ThreadConnect quickly. For the full range of features and optimal performance, we recommend porting your number directly to ThreadConnect when you're ready.*

@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # Basic Reporting
 
-> 📦 **Basic — included with every Connie account.**
+> 📦 **Basic — included with every ThreadConnect account.**
 
 In **Basic**, supervisors and administrators have the **same reporting** — the same dashboards, Analyze, exports, and time frames. So it's documented in one place to keep things simple.
 

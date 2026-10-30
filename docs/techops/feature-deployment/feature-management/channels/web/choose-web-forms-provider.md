@@ -290,7 +290,7 @@ Consider these factors when choosing your web forms provider:
 - **Need Guidance:** [Schedule consultation](https://connie.one/contact) with our implementation team
 
 :::info Professional Services
-Need help choosing or implementing a web forms provider? Our team can assess your needs and handle the complete setup including WordPress configuration, Adobe integration, and staff training. Contact your Connie representative for professional services options.
+Need help choosing or implementing a web forms provider? Our team can assess your needs and handle the complete setup including WordPress configuration, Adobe integration, and staff training. Contact your ThreadConnect representative for professional services options.
 :::
 
 ---

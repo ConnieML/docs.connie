@@ -6,7 +6,7 @@ title: "Voice Channel Examples"
 
 # Voice Channel Examples
 
-Real-world implementations showing how different organizations use Connie's voice features.
+Real-world implementations showing how different organizations use ThreadConnect's voice features.
 
 ## Small Organization Examples
 

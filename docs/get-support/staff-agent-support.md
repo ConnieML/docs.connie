@@ -6,7 +6,7 @@ sidebar_position: 6
 
 # Support for Staff Agents
 
-If you're a staff agent using Connie and need help, this page will guide you to the right support resources.
+If you're a staff agent using ThreadConnect and need help, this page will guide you to the right support resources.
 
 ## 🆘 Quick Support Guide
 
@@ -30,7 +30,7 @@ Before reaching out for help, check these resources:
 ### Staff Agent Documentation
 - **[Getting Started](/end-users/staff-agents/getting-started)** - Login and initial setup
 - **[Handling Tasks](/end-users/staff-agents/handling-tasks)** - Managing inquiries and referrals
-- **[Connie Task Sender](/end-users/staff-agents/task-sender)** - Transfer, Hand off or Refer out with the Send button
+- **[ThreadConnect Task Sender](/end-users/staff-agents/task-sender)** - Transfer, Hand off or Refer out with the Send button
 - **[Transferring Tasks](/end-users/staff-agents/transferring-tasks)** - How to transfer to a coworker or department
 - **[Recording Notes](/end-users/staff-agents/recording-notes)** - Documentation best practices
 - **[FAQ](/end-users/staff-agents/faq)** - Common questions answered
@@ -61,11 +61,11 @@ They can help with:
 
 **Your supervisor will provide contact information for your IT support team.**
 
-### Connie Platform Support
+### ThreadConnect Platform Support {#connie-platform-support}
 
-If your supervisor and IT team determine the issue is with the Connie platform itself, they will escalate to Connie support on your behalf.
+If your supervisor and IT team determine the issue is with the ThreadConnect platform itself, they will escalate to ThreadConnect support on your behalf.
 
-**Staff agents should not contact Connie platform support directly** - always go through your supervisor or IT department.
+**Staff agents should not contact ThreadConnect platform support directly** - always go through your supervisor or IT department.
 
 ## 📧 When Reporting Issues
 
@@ -122,7 +122,7 @@ Ask your supervisor about:
 
 ### ❌ Don't Do This
 - Skip troubleshooting steps and immediately escalate
-- Contact Connie support directly (bypass your supervisor)
+- Contact ThreadConnect support directly (bypass your supervisor)
 - Report the same issue to multiple people simultaneously
 - Leave out important details about the problem
 - Get frustrated with support teams trying to help

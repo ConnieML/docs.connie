@@ -6,11 +6,11 @@ sidebar_position: 1
 
 # Reporting & Analytics
 
-Connie reporting comes in two tiers.
+ThreadConnect reporting comes in two tiers.
 
-## 🎥 Welcome to Connie Reporting {#video-walkthrough}
+## 🎥 Welcome to ThreadConnect Reporting {#video-walkthrough}
 
-A quick tour of **Basic Reporting** — what every Connie account gets out of the box, and when you might step up to Advanced.
+A quick tour of **Basic Reporting** — what every ThreadConnect account gets out of the box, and when you might step up to Advanced.
 
 <video
 controls
@@ -24,7 +24,7 @@ Your browser doesn't support embedded video — <a href="https://admin-connie-on
 
 ## 🟦 Basic
 
-*Included with every Connie account.*
+*Included with every ThreadConnect account.*
 
 - **Real-time** — live activity in Teams View
 - **Historical** — reporting by channel type

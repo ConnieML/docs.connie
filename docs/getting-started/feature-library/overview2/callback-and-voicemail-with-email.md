@@ -40,7 +40,7 @@ When a voicemail is recorded:
 
 1. The voicemail is processed normally through ConnieRTC workflows
 2. A separate email function is triggered asynchronously
-3. The recording is fetched from Connie's servers
+3. The recording is fetched from ThreadConnect's servers
 4. An email is composed with the recording as a .wav attachment
 5. The email is sent via the configured email provider (Mailgun)
 6. Both processes complete independently for resilience
@@ -56,7 +56,7 @@ When a voicemail is recorded:
 
 ### Environment Variables
 
-The feature requires these additional environment variables in your Connie Functions:
+The feature requires these additional environment variables in your ThreadConnect Functions:
 
 ```bash
 # Email Configuration

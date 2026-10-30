@@ -6,7 +6,7 @@ title: "Web Services for Your Organization"
 
 # Web Services for Your Organization
 
-Connie provides comprehensive web-based communication solutions designed specifically for nonprofit and community-based organizations to capture and process online interactions seamlessly.
+ThreadConnect provides comprehensive web-based communication solutions designed specifically for nonprofit and community-based organizations to capture and process online interactions seamlessly.
 
 ## Available Web Features
 
@@ -143,10 +143,10 @@ flowchart LR
 - **Staff Training**: Comprehensive training on web form workflows in ConnieRTC
 
 ### Ongoing Support
-- **Connie Care Team**: Available for troubleshooting and optimization
+- **ThreadConnect Care Team**: Available for troubleshooting and optimization
 - **Technical Documentation**: Detailed guides for administrators and staff
 - **Community Resources**: Access to best practices and user community
 
 ---
 
-*Web services integration enables your nonprofit to capture and process online interactions professionally and efficiently. Contact the Connie Care team to get started with web forms for your organization.*
+*Web services integration enables your nonprofit to capture and process online interactions professionally and efficiently. Contact the ThreadConnect Care team to get started with web forms for your organization.*

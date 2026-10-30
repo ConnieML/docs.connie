@@ -1,6 +1,6 @@
 # Add-On Template
 
-Use this template when adding new voice add-ons to Connie.
+Use this template when adding new voice add-ons to ThreadConnect.
 
 ## Steps:
 1. Copy this `_template` folder 

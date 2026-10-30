@@ -11,13 +11,13 @@ A task that arrives while you're closed will **still be waiting for four full da
 
 Live phone calls and web chats are the exception; their window is much shorter, because someone is on the line right now.
 
-Need a different window for a program or channel? Custom settings are available — contact your Connie account representative or the [Connie Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
+Need a different window for a program or channel? Custom settings are available — contact your ThreadConnect account representative or the [ThreadConnect Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
 :::
 
 
-Faxes in Connie are handled almost identically to emails. If you know how to handle email tasks, you already know how to handle faxes.
+Faxes in ThreadConnect are handled almost identically to emails. If you know how to handle email tasks, you already know how to handle faxes.
 
-## How Faxes Work in Connie
+## How Faxes Work in ThreadConnect {#how-faxes-work-in-connie}
 
 When a fax comes in, it appears in your Task Queue just like any other task. The only differences from email:
 

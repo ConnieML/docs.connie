@@ -722,7 +722,7 @@ If troubleshooting steps don't resolve the issue:
 **Step 3: Contact Support**
 - **Twilio Support:** For Flex SSO configuration issues
 - **Auth0 Support:** For Auth0-specific SAML issues
-- **Connie Support:** For pattern guidance and architecture questions
+- **ThreadConnect Support:** For pattern guidance and architecture questions
 
 ---
 

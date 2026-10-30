@@ -13,12 +13,12 @@ This feature adds a contacts directory to ConnieRTC. The contacts directory cons
 
 Contacts can be viewed, managed, and dialed using the contacts view added to ConnieRTC. In addition, a "Call Contact" section is added to the outbound dialer panel, allowing easy dialing of contacts from any view. Also, if the `custom-transfer-directory` feature is enabled, contacts are available in the transfer panel for cold or warm transfer, and shared contacts can be configured to disable cold and/or warm transfer capability.
 
-:::info Connie — the shared directory is also the external referral list
+:::info ThreadConnect — the shared directory is also the external referral list
 This page is the configuration reference for the feature. It does not describe the feature's most
 operationally important consequence, so it is stated here:
 
 **A contact's `email` field is what makes it a Hand off or Refer out target.** The
-[Connie Task Sender](/end-users/staff-agents/task-sender)'s **Hand off** and **Refer out** choices send
+[ThreadConnect Task Sender](/end-users/staff-agents/task-sender)'s **Hand off** and **Refer out** choices send
 a voicemail, fax, web form or email task **by email**, and they only offer contacts that carry an
 email address (Hand off: addresses at the agent's own organization; Refer out: everyone else). A
 contact with no email is still fully callable and transferable — it simply never appears in those
@@ -29,7 +29,7 @@ even though the feature is switched on.
 
 **Administrator guidance (how to build and maintain that list, including the spreadsheet import):**
 [Shared Contacts & External Referrals](/end-users/administrators/shared-contacts-and-referrals) ·
-**What agents see:** [Connie Task Sender](/end-users/staff-agents/task-sender) · [Handing Off & Referring Out](/end-users/staff-agents/handing-off-tasks)
+**What agents see:** [ThreadConnect Task Sender](/end-users/staff-agents/task-sender) · [Handing Off & Referring Out](/end-users/staff-agents/handing-off-tasks)
 :::
 
 ## User experience
@@ -72,7 +72,7 @@ The `contacts` feature has several settings:
 
 ## How does it work?
 
-The contacts view is added to the Connie agent workspace, and a new link to it is added to the navigation menu.
+The contacts view is added to the ThreadConnect agent workspace, and a new link to it is added to the navigation menu.
 
 If the recent contacts functionality is enabled, for every task that is completed, the task and call data is added to that worker's recent-contacts directory (`Contacts_Recent_(worker ID)`). Clicking on the phone icon in the actions column for a recent contact starts an outbound call to that contact. This button is only visible for completed calls (voice tasks).
 

@@ -8,14 +8,14 @@ title: "Runbook Index"
 
 **The map for "where is the runbook for X?"**
 
-Every live Connie runbook is listed below. Runbooks themselves live inside their channel or feature page in the docs tree — this index is the one-click lookup that gets you there.
+Every live ThreadConnect runbook is listed below. Runbooks themselves live inside their channel or feature page in the docs tree — this index is the one-click lookup that gets you there.
 
 ---
 
 ## Who this is for
 
 - **End-users (nonprofit staff)** — you don't need this page. Go to [Channels](/getting-started/channels/voice) or the [Feature Library](/getting-started/feature-library/jtbd-feature-grid).
-- **Operators (humans or AI agents) deploying, changing, cancelling, or fixing a Connie feature on a live account** — start here. Find the row, jump to the runbook.
+- **Operators (humans or AI agents) deploying, changing, cancelling, or fixing a ThreadConnect feature on a live account** — start here. Find the row, jump to the runbook.
 - **Authors writing a new runbook** — log it here. See [Authoring rules](#authoring-rules) at the bottom.
 
 ---
@@ -68,10 +68,10 @@ For common breakage patterns that don't yet have a dedicated runbook (e.g., "cal
 |---|---|---|
 | **Runbook Authoring Standard v1.0** | [vault.chrisberno.dev/techops/standards/runbook-authoring](https://vault.chrisberno.dev/techops/standards/runbook-authoring) | Enterprise standard (CDO-owned). Defines the 5-file anatomy and the mandatory 7-section action-runbook template that applies to every project, every docs platform. |
 | **Action Runbook Template (canonical)** | `chrisberno-dev-vault/techops/templates/runbook-action-template.md` | Copy-and-fill template implementing the standard. Use this as the starting file for any new Setup/Change/Cancel/Troubleshoot runbook. |
-| **Connie / Docusaurus authoring guide** | [Authoring & Publishing Runbooks](/techops/troubleshooting/authoring-runbooks) | This-platform-specific implementation of the enterprise standard. Adds Docusaurus gotchas, the docs.connie publishing pipeline, and the cross-link rules. |
-| **Connie reference implementation** | [Wait Experience + Admin Email Setup](/getting-started/channels/voice/voice-features/wait-experience-with-email/setup) | The canonical Connie example of the 7-section template applied to a real shipped feature. Pattern-match against this when authoring new Connie runbooks. |
+| **ThreadConnect / Docusaurus authoring guide** | [Authoring & Publishing Runbooks](/techops/troubleshooting/authoring-runbooks) | This-platform-specific implementation of the enterprise standard. Adds Docusaurus gotchas, the docs.connie publishing pipeline, and the cross-link rules. |
+| **ThreadConnect reference implementation** | [Wait Experience + Admin Email Setup](/getting-started/channels/voice/voice-features/wait-experience-with-email/setup) | The canonical ThreadConnect example of the 7-section template applied to a real shipped feature. Pattern-match against this when authoring new ThreadConnect runbooks. |
 
-**When the enterprise standard updates,** the Connie authoring guide and any retroactive runbook upgrades roll forward from there. Project-level deviations from the 7-section template are not allowed without CDO escalation.
+**When the enterprise standard updates,** the ThreadConnect authoring guide and any retroactive runbook upgrades roll forward from there. Project-level deviations from the 7-section template are not allowed without CDO escalation.
 
 ---
 

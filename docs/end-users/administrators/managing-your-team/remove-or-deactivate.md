@@ -6,7 +6,7 @@ title: "Remove or Deactivate an Agent"
 
 # Remove or Deactivate an Agent
 
-When an agent leaves your organization, takes extended leave, or changes role, you can take them out of Connie cleanly. There are two ways to do that, and the choice matters for both compliance and for getting them back later if circumstances change.
+When an agent leaves your organization, takes extended leave, or changes role, you can take them out of ThreadConnect cleanly. There are two ways to do that, and the choice matters for both compliance and for getting them back later if circumstances change.
 
 | | Deactivation | Removal |
 |---|---|---|
@@ -31,12 +31,12 @@ Run through these before opening the ticket. Skipping any of them creates work f
 
 ## How the offboarding flow works
 
-Order matters. Connie uses Single Sign-On (SSO), so revoking the SSO access first prevents the agent from re-authenticating and re-provisioning themselves after you deactivate the Worker record.
+Order matters. ThreadConnect uses Single Sign-On (SSO), so revoking the SSO access first prevents the agent from re-authenticating and re-provisioning themselves after you deactivate the Worker record.
 
 | Step | What happens |
 |---|---|
 | 1. SSO access revoked | Deployment team removes the agent from the organization's SSO allowlist. They can no longer sign in. |
-| 2. Active sessions terminated | Any active Connie session (browser tab still open) is signed out within minutes. |
+| 2. Active sessions terminated | Any active ThreadConnect session (browser tab still open) is signed out within minutes. |
 | 3. Worker record deactivated (or removed) | The routing engine stops considering them for new work. Open queues skip them. |
 | 4. Team memberships preserved (deactivation) or cleared (removal) | Deactivation keeps team rosters intact for reporting context; removal cleans them out. |
 | 5. Historical reports unchanged | All past activity (tasks handled, time logged, performance) stays in reports under the agent's original display name. |
@@ -59,8 +59,8 @@ You don't need to do these — they happen as a consequence of step 1 or 3 above
 
 ## What you DO need to do
 
-- **Reassign their in-flight work** — Connie doesn't auto-reroute tasks an agent was actively holding. Active calls drop when the session terminates; open trouble tickets need explicit reassignment. Reassign before the deactivation step, not after.
-- **Communicate to the team** — supervisors and teammates need to know who's covering the gap. Connie won't tell them.
+- **Reassign their in-flight work** — ThreadConnect doesn't auto-reroute tasks an agent was actively holding. Active calls drop when the session terminates; open trouble tickets need explicit reassignment. Reassign before the deactivation step, not after.
+- **Communicate to the team** — supervisors and teammates need to know who's covering the gap. ThreadConnect won't tell them.
 
 ## How to open the request today
 
@@ -108,4 +108,4 @@ A self-serve offboarding panel is on the roadmap. Today's ticket process exists 
 
 ## Further reading (technical admins)
 
-For the underlying Twilio Flex Worker lifecycle and TaskRouter activity model that drive deactivation and removal behavior, see the [Twilio Flex Teams admin guide](https://www.twilio.com/docs/flex/admin-guide/setup/teams) and the [TaskRouter Workers documentation](https://www.twilio.com/docs/taskrouter/api/worker). Connie's offboarding flow layers the SSO-first ordering on top of these primitives.
+For the underlying Twilio Flex Worker lifecycle and TaskRouter activity model that drive deactivation and removal behavior, see the [Twilio Flex Teams admin guide](https://www.twilio.com/docs/flex/admin-guide/setup/teams) and the [TaskRouter Workers documentation](https://www.twilio.com/docs/taskrouter/api/worker). ThreadConnect's offboarding flow layers the SSO-first ordering on top of these primitives.

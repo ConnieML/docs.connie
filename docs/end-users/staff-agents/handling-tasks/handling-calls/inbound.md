@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Accepting and Handling Inbound Calls
 
-When a client calls your organization, Connie routes the call to an available agent. Here's what happens from your side.
+When a client calls your organization, ThreadConnect routes the call to an available agent. Here's what happens from your side.
 
 ## Receiving a Call
 
@@ -32,7 +32,7 @@ You have several tools available during a call:
 | **Hold** (pause icon) | Puts the caller on hold — they hear hold music. Click again to take them off hold. |
 | **Mute** (microphone icon) | Mutes your microphone so the caller can't hear you. Click again to unmute. |
 | **Keypad** | Opens a number pad so you can press digits during the call (useful if you need to interact with another phone system). |
-| **Send → Transfer** | Transfers the call to a coworker or department. The **Send** button is at the top of the call. See [Connie Task Sender](/end-users/staff-agents/task-sender). |
+| **Send → Transfer** | Transfers the call to a coworker or department. The **Send** button is at the top of the call. See [ThreadConnect Task Sender](/end-users/staff-agents/task-sender). |
 | **Hang Up** (red phone icon) | Ends the call. |
 
 ### Placing a Caller on Hold
@@ -65,7 +65,7 @@ You can then call the client back directly from the Task Manager using the callb
 
 When the conversation is done:
 
-1. **Hang up** from Connie (click the red phone icon) or the caller hangs up on their end
+1. **Hang up** from ThreadConnect (click the red phone icon) or the caller hangs up on their end
 2. The task enters **Wrap Up** — this is your time to finish notes before taking the next call
 3. Select a **Disposition** (closing code) that describes the outcome — for example, "Resolved," "Follow-up Required," or "Escalation"
 4. Add any **notes** about the conversation (optional but recommended)

@@ -11,7 +11,7 @@ A task that arrives while you're closed will **still be waiting for four full da
 
 Live phone calls and web chats are the exception; their window is much shorter, because someone is on the line right now.
 
-Need a different window for a program or channel? Custom settings are available — contact your Connie account representative or the [Connie Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
+Need a different window for a program or channel? Custom settings are available — contact your ThreadConnect account representative or the [ThreadConnect Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
 :::
 
 
@@ -53,9 +53,9 @@ Parking keeps the conversation alive and its full history intact, while letting 
 
 While you're handling the conversation, click the **Park** button at the top of the task.
 
-### 2. Tell Connie what you're waiting on
+### 2. Tell ThreadConnect what you're waiting on {#2-tell-connie-what-youre-waiting-on}
 
-Connie asks **"What are you waiting on?"** Type a short note — for example, *waiting on the clinic to fax records*. This is optional, but it's worth doing: your note shows up in the parking lot so anyone can see, at a glance, what each parked task is waiting for.
+ThreadConnect asks **"What are you waiting on?"** Type a short note — for example, *waiting on the clinic to fax records*. This is optional, but it's worth doing: your note shows up in the parking lot so anyone can see, at a glance, what each parked task is waiting for.
 
 ### 3. You're done
 

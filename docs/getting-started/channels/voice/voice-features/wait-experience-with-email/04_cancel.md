@@ -7,7 +7,7 @@ title: "Wait Experience + Admin Email — Cancellation"
 # Cancellation Runbook
 
 **Use this runbook when:**
-- Client is canceling Connie service entirely.
+- Client is canceling ThreadConnect service entirely.
 - Client wants to switch this number to a simpler config (e.g. Voicemail-only).
 - A test/staging deployment needs to be removed.
 
@@ -27,7 +27,7 @@ Gather from the CEO **in writing before starting**:
 
 | Parameter | Why you need it |
 |---|---|
-| Connie client account name | Which sub-account the cancellation applies to |
+| ThreadConnect client account name | Which sub-account the cancellation applies to |
 | Phone number being torn down | Scope; also affects whether to release or retain |
 | Cancellation type | Full teardown (Path A), config switch (Path B), or test/staging removal (Path C) — see Decision tree below |
 | Phone number disposition | **Release** (return to Twilio pool) vs. **retain** (port out, reuse for new config). Affects order of operations. |
@@ -76,7 +76,7 @@ If any of these are missing — especially the written CEO approval — **stop**
 
 ### Decision tree
 
-#### Path A — Full teardown (client canceling Connie)
+#### Path A — Full teardown (client canceling ThreadConnect) {#path-a--full-teardown-client-canceling-connie}
 
 Order of operations matters. Going inside-out (caller-experience first, infrastructure last) prevents callers from hitting broken flows.
 

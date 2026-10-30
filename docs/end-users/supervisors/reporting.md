@@ -6,7 +6,7 @@ sidebar_position: 8
 
 # Reporting & Analytics
 
-> **All Connie reporting lives in [📊 Reporting & Analytics](/reporting-analytics).**
+> **All ThreadConnect reporting lives in [📊 Reporting & Analytics](/reporting-analytics).**
 
 Supervisor and Program Manager reporting — real-time monitoring, historical Insights, filtering, drill-down, and exports — is documented in one place to avoid duplication.
 

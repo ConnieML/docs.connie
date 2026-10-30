@@ -6,12 +6,12 @@ title: "Forward Xfinity Business Phone to ThreadConnect"
 
 # Forward Xfinity Business Phone to ThreadConnect
 
-This guide walks you through setting up call forwarding from your Xfinity Business phone number to your Connie phone system.
+This guide walks you through setting up call forwarding from your Xfinity Business phone number to your ThreadConnect phone system.
 
 ## Prerequisites
 
 - ✅ Active Xfinity Business phone service
-- ✅ Connie phone number (provided by your Connie administrator)
+- ✅ ThreadConnect phone number (provided by your ThreadConnect administrator)
 - ✅ Access to Comcast Business VoiceEdge Portal (recommended) or your business phone
 - ✅ Administrative access to your Xfinity Business account
 
@@ -32,8 +32,8 @@ This method is quick and ideal for immediate setup.
 3. **Listen for the second dial tone**
    - This signals the system is ready to accept the forwarding number
 
-4. **Enter your Connie phone number**
-   - Dial the 10-digit number provided by Connie (e.g., 404-555-1234)
+4. **Enter your ThreadConnect phone number**
+   - Dial the 10-digit number provided by ThreadConnect (e.g., 404-555-1234)
    - Use 7 digits for local numbers in the same area code
    - Use 1 + area code for long-distance domestic numbers (e.g., 1-404-555-1234)
 
@@ -43,7 +43,7 @@ This method is quick and ideal for immediate setup.
    - If there's no answer or the line is busy, hang up and repeat within two minutes
 
 6. **Hang up**
-   - Call forwarding is now active, redirecting all incoming calls to Connie
+   - Call forwarding is now active, redirecting all incoming calls to ThreadConnect
 
 ### Option B: Using Comcast Business VoiceEdge Portal - Advanced Setup
 
@@ -61,11 +61,11 @@ This method offers more control and is suitable for managing settings online.
 
 3. **Configure forwarding options**
    - Enable call forwarding
-   - Enter your Connie phone number as the forwarding destination
+   - Enter your ThreadConnect phone number as the forwarding destination
    - Choose your forwarding preferences (see options below)
 
 4. **Set forwarding rules**
-   - **Always Forward**: All calls go directly to Connie
+   - **Always Forward**: All calls go directly to ThreadConnect
    - **Forward When Busy**: Only forward when your Xfinity line is busy
    - **Forward When No Answer**: Forward after a specified number of rings
    - **Forward When Unreachable**: Forward when service is unavailable
@@ -83,21 +83,21 @@ To turn off call forwarding:
 ## Test the Setup
 
 1. Call your Xfinity Business number from an external phone
-2. Verify the call reaches your Connie system
+2. Verify the call reaches your ThreadConnect system
 3. Test different forwarding scenarios if applicable
-4. Confirm caller ID appears correctly in Connie
+4. Confirm caller ID appears correctly in ThreadConnect
 
 ## Troubleshooting
 
 ### Common Issues
 
 **Calls not forwarding:**
-- Verify the Connie phone number is entered correctly (10-digit format)
+- Verify the ThreadConnect phone number is entered correctly (10-digit format)
 - Check that call forwarding is enabled in your settings
 - Ensure your Xfinity Business plan supports call forwarding
 
-**Calls forwarding but not reaching Connie:**
-- Contact your Connie administrator to verify the number is configured
+**Calls forwarding but not reaching ThreadConnect:**
+- Contact your ThreadConnect administrator to verify the number is configured
 - Check for any geographic restrictions on the forwarding number
 - Verify the forwarding number is active and operational
 
@@ -122,7 +122,7 @@ To turn off call forwarding:
 ## Next Steps
 
 After setting up call forwarding:
-- Configure voicemail in Connie (coming soon)
+- Configure voicemail in ThreadConnect (coming soon)
 - [Set up call routing rules](../../../getting-started)
 - Train your team on the new system (training guide coming soon)
 
@@ -130,8 +130,8 @@ After setting up call forwarding:
 
 If you encounter issues:
 1. Contact Xfinity Business Support: 1-800-COMCAST
-2. Reach out to your Connie administrator
-3. Check the Connie troubleshooting guide (coming soon)
+2. Reach out to your ThreadConnect administrator
+3. Check the ThreadConnect troubleshooting guide (coming soon)
 4. Visit [business.comcast.com/help-and-support/voice/](https://business.comcast.com/help-and-support/voice/) for additional resources
 
 ---

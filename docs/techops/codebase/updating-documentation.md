@@ -6,7 +6,7 @@ title: "Updating Documentation"
 
 # Updating Documentation
 
-This guide explains how to update the ConnieRTC documentation site. Perfect for Connie staff who need to add new features, fix content, or improve the documentation.
+This guide explains how to update the ConnieRTC documentation site. Perfect for ThreadConnect staff who need to add new features, fix content, or improve the documentation.
 
 ## Quick Reference
 
@@ -115,7 +115,7 @@ git push origin main
 ### Writing Style
 - **Clear and concise** - Users are often under pressure
 - **Action-oriented** - Tell users what to do, not just what things are
-- **Audience-specific** - CBO admins need different info than Connie staff
+- **Audience-specific** - CBO admins need different info than ThreadConnect staff
 
 ### Markdown Best Practices
 - Use **descriptive headings** for easy navigation

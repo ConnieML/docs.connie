@@ -6,13 +6,13 @@ title: "Voice Experience Options for Your Organization"
 
 # Voice Experience Options for Your Organization
 
-This guide helps you choose the right Connie Voice experience for your organization's needs. Each experience level provides different features and builds upon the previous level.
+This guide helps you choose the right ThreadConnect Voice experience for your organization's needs. Each experience level provides different features and builds upon the previous level.
 
 ## Which Voice Experience is Right for You?
 
-The Connie Voice framework offers three progressive experience levels:
+The ThreadConnect Voice framework offers three progressive experience levels:
 
-| Feature | Connie Voice Direct | Connie Voice Direct + Voicemail | Connie Voice Direct + Wait Experience |
+| Feature | ThreadConnect Voice Direct | ThreadConnect Voice Direct + Voicemail | ThreadConnect Voice Direct + Wait Experience |
 |---------|---------------------|----------------------------------|---------------------------------------|
 | 📞 **Basic Call Handling** | ✅ | ✅ | ✅ |
 | 🎵 **Custom Greetings & Hold Music** | ❌ | ✅ | ✅ |
@@ -26,7 +26,7 @@ The Connie Voice framework offers three progressive experience levels:
 
 ---
 
-## 📞 Experience Level 1: Connie Voice Direct
+## 📞 Experience Level 1: ThreadConnect Voice Direct {#-experience-level-1-connie-voice-direct}
 
 **What this provides:**
 - Basic implementation that works out-of-the-box
@@ -44,13 +44,13 @@ The Connie Voice framework offers three progressive experience levels:
 - Standard agent interface
 
 **Perfect for:**
-- ✅ Organizations getting started with Connie Voice
+- ✅ Organizations getting started with ThreadConnect Voice
 - ✅ Small teams with consistent staffing
 - ✅ Simple contact center needs requiring minimal setup
 
 ---
 
-## 📋 Experience Level 2: Connie Voice Direct + Voicemail
+## 📋 Experience Level 2: ThreadConnect Voice Direct + Voicemail {#-experience-level-2-connie-voice-direct--voicemail}
 
 **What this provides:**
 - Custom wait/hold experience with professional greetings
@@ -77,7 +77,7 @@ The Connie Voice framework offers three progressive experience levels:
 
 ---
 
-## ⭐ Experience Level 3: Connie Voice Direct + Wait Experience
+## ⭐ Experience Level 3: ThreadConnect Voice Direct + Wait Experience {#-experience-level-3-connie-voice-direct--wait-experience}
 
 **What this provides:**
 - Everything from Experience Level 2, plus:
@@ -115,8 +115,8 @@ The Connie Voice framework offers three progressive experience levels:
 ## 📋 Implementation Requirements
 
 ### For All Experience Levels:
-- ✅ Active Connie deployment from your service provider
-- ✅ Admin access to your organization's Connie system
+- ✅ Active ThreadConnect deployment from your service provider
+- ✅ Admin access to your organization's ThreadConnect system
 - ✅ Basic phone system configuration
 
 ### Additional for Experience Level 3 with Email:
@@ -130,13 +130,13 @@ The Connie Voice framework offers three progressive experience levels:
 
 ### Ready to Choose Your Experience Level?
 
-**For Connie Voice Direct (Experience Level 1):**
-Contact your Connie support team to activate basic call handling. This experience works immediately with minimal configuration.
+**For ThreadConnect Voice Direct (Experience Level 1):**
+Contact your ThreadConnect support team to activate basic call handling. This experience works immediately with minimal configuration.
 
-**For Connie Voice Direct + Voicemail (Experience Level 2):**
-Contact your Connie support team to configure professional greetings, hold music, and voicemail routing. Setup typically takes 1-2 business days.
+**For ThreadConnect Voice Direct + Voicemail (Experience Level 2):**
+Contact your ThreadConnect support team to configure professional greetings, hold music, and voicemail routing. Setup typically takes 1-2 business days.
 
-**For Connie Voice Direct + Wait Experience (Experience Level 3):**
+**For ThreadConnect Voice Direct + Wait Experience (Experience Level 3):**
 This advanced experience requires comprehensive setup including:
 1. Advanced options menu configuration
 2. Callback system implementation
@@ -145,7 +145,7 @@ This advanced experience requires comprehensive setup including:
 5. Complete workflow testing
 
 :::tip Professional Setup Available
-All Connie Voice experience levels can be professionally configured by your Connie support team. Setup timing varies by experience level selected.
+All ThreadConnect Voice experience levels can be professionally configured by your ThreadConnect support team. Setup timing varies by experience level selected.
 :::
 
 ---
@@ -158,33 +158,33 @@ All Connie Voice experience levels can be professionally configured by your Conn
 - **Experience Level 3**: Advanced caller options reduce interruptions and improve satisfaction
 
 ### Compliance & Documentation
-- **Experience Level 1**: Standard call handling and retention in Connie system
+- **Experience Level 1**: Standard call handling and retention in ThreadConnect system
 - **Experience Level 2**: Professional voicemail retention with transcription
 - **Experience Level 3**: Complete call outcome tracking with optional email backup for auditing
 
 ### Cost Considerations
-- **Experience Level 1**: Included in standard Connie service
-- **Experience Level 2**: Included in standard Connie service
+- **Experience Level 1**: Included in standard ThreadConnect service
+- **Experience Level 2**: Included in standard ThreadConnect service
 - **Experience Level 3**: Included in standard service; optional email features may require email provider (typically $35/month)
 
 ---
 
 ## 📞 Questions or Need Help?
 
-Your Connie support team is available to help you:
+Your ThreadConnect support team is available to help you:
 - Evaluate which experience level best fits your needs
 - Handle the complete technical setup and configuration
 - Provide training for your staff on the new experience
 - Ongoing support and maintenance
 
-**Contact your Connie representative to discuss voice experience options and schedule implementation.**
+**Contact your ThreadConnect representative to discuss voice experience options and schedule implementation.**
 
 ---
 
 ## 🔗 Related Resources
 
 - [Call Forwarding Setup](../call-forwarding/) - Configure call routing for your organization
-- [Getting Started Guide](../../../getting-started) - Initial Connie setup and configuration
+- [Getting Started Guide](../../../getting-started) - Initial ThreadConnect setup and configuration
 
 :::info Implementation Timeline
 - **Experience Level 1**: Available immediately with basic configuration  
@@ -192,4 +192,4 @@ Your Connie support team is available to help you:
 - **Experience Level 3**: 3-5 business days including advanced features and optional email setup
 :::
 
-Your Connie Voice experience will be professionally configured to match your organization's specific needs and branding.
+Your ThreadConnect Voice experience will be professionally configured to match your organization's specific needs and branding.

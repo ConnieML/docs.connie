@@ -26,4 +26,4 @@ Comprehensive monitoring guide is currently under development.
 
 ## Need Monitoring Setup?
 
-Contact your Connie support team for comprehensive monitoring configuration.
+Contact your ThreadConnect support team for comprehensive monitoring configuration.

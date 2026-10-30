@@ -6,7 +6,7 @@ sidebar_position: 3
 
 # Starting New Conversations
 
-You can start a new SMS or chat conversation with a client directly from Connie.
+You can start a new SMS or chat conversation with a client directly from ThreadConnect.
 
 ## Sending a New SMS
 

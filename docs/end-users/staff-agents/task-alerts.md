@@ -2,7 +2,7 @@
 sidebar_label: "ThreadConnect Task Alerts"
 sidebar_position: 6.5
 title: "ThreadConnect Task Alerts"
-description: "Get a friendly desktop pop-up when a new task arrives — so you don't have to watch Connie all day."
+description: "Get a friendly desktop pop-up when a new task arrives — so you don't have to watch ThreadConnect all day."
 ---
 
 # ThreadConnect Task Alerts
@@ -12,13 +12,13 @@ A task that arrives while you're closed will **still be waiting for four full da
 
 Live phone calls and web chats are the exception; their window is much shorter, because someone is on the line right now.
 
-Need a different window for a program or channel? Custom settings are available — contact your Connie account representative or the [Connie Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
+Need a different window for a program or channel? Custom settings are available — contact your ThreadConnect account representative or the [ThreadConnect Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
 :::
 
 
-**Connie isn't meant to be stared at all day.** Like most people at a nonprofit, you're juggling — email, your EMR, a spreadsheet, a phone call, a walk-in. You shouldn't have to keep one eye glued to the Connie tab waiting for work to show up.
+**ThreadConnect isn't meant to be stared at all day.** Like most people at a nonprofit, you're juggling — email, your EMR, a spreadsheet, a phone call, a walk-in. You shouldn't have to keep one eye glued to the ThreadConnect tab waiting for work to show up.
 
-**Connie Task Alerts** are a friendly heads-up: when a new task is routed to you, your computer shows a **desktop pop-up** — even when Connie is in the background and you're working in another window. Glance at it, finish what you're doing, and come back to Connie when you're ready.
+**ThreadConnect Task Alerts** are a friendly heads-up: when a new task is routed to you, your computer shows a **desktop pop-up** — even when ThreadConnect is in the background and you're working in another window. Glance at it, finish what you're doing, and come back to ThreadConnect when you're ready.
 
 ## 🎥 Video walkthrough {#video-walkthrough}
 
@@ -49,12 +49,12 @@ This page covers **your** half: getting the pop-ups to show up on your machine.
 
 ## What a Task Alert looks like
 
-When a new task arrives, you'll get a standard desktop notification from your browser titled **"Connie — New Task"** with the message *"A new task has arrived in your queue."* It appears in the corner of your screen (top-right on Mac, bottom-right on Windows), the same way a calendar or email alert does.
+When a new task arrives, you'll get a standard desktop notification from your browser titled **"ThreadConnect — New Task"** with the message *"A new task has arrived in your queue."* It appears in the corner of your screen (top-right on Mac, bottom-right on Windows), the same way a calendar or email alert does.
 
-It does **not** put anything new inside the Connie screen — Connie already shows you incoming tasks. The alert is purely for when you're looking **somewhere else**.
+It does **not** put anything new inside the ThreadConnect screen — ThreadConnect already shows you incoming tasks. The alert is purely for when you're looking **somewhere else**.
 
 :::note Supported browser
-Connie Task Alerts work in **Google Chrome**. Make sure you're using Chrome and signed in to Connie on a **standalone** Connie page (e.g. `your-org.connie.team`) — not Connie embedded inside another website.
+ThreadConnect Task Alerts work in **Google Chrome**. Make sure you're using Chrome and signed in to ThreadConnect on a **standalone** ThreadConnect page (e.g. `your-org.connie.team`) — not ThreadConnect embedded inside another website.
 :::
 
 ---
@@ -63,12 +63,12 @@ Connie Task Alerts work in **Google Chrome**. Make sure you're using Chrome and 
 
 Do these once, in order.
 
-### 1. Chrome — allow notifications for Connie
+### 1. Chrome — allow notifications for ThreadConnect {#1-chrome--allow-notifications-for-connie}
 
-1. In Chrome, open your Connie tab.
+1. In Chrome, open your ThreadConnect tab.
 2. Click the **tune / sliders icon** (or the 🔒) at the **left of the address bar** → **Site settings**.
 3. Set **Notifications → Allow**.
-4. Confirm you're in the **correct Chrome profile** (the avatar at the top-right) — the one you actually sign in to Connie with. Permissions are saved per profile, so a different profile won't carry them over.
+4. Confirm you're in the **correct Chrome profile** (the avatar at the top-right) — the one you actually sign in to ThreadConnect with. Permissions are saved per profile, so a different profile won't carry them over.
 
 The first time a task arrives after the feature is enabled, Chrome may also pop a small prompt asking to show notifications — click **Allow**.
 
@@ -98,10 +98,10 @@ A focus or Do-Not-Disturb mode will **silently swallow** every pop-up — this i
 
 ## Test it
 
-1. In Connie, set your status to **Available**.
-2. Switch to **another app or browser tab** so Connie is in the background.
-3. Have a task routed to you (ask a teammate to send a test, or call your Connie number).
-4. You should get an on-screen **"Connie — New Task"** pop-up, with a sound.
+1. In ThreadConnect, set your status to **Available**.
+2. Switch to **another app or browser tab** so ThreadConnect is in the background.
+3. Have a task routed to you (ask a teammate to send a test, or call your ThreadConnect number).
+4. You should get an on-screen **"ThreadConnect — New Task"** pop-up, with a sound.
 
 That's it — you're set.
 
@@ -111,13 +111,13 @@ That's it — you're set.
 
 Quick checks, in order:
 
-1. **Open your notification center first.** If you see Connie alerts **piled up there** but never saw them pop, the alert is arriving fine — a **Focus / Do Not Disturb** or **alert-style** setting is hiding it (Step 2 or 3 above). This is *not* a Connie or permissions problem.
+1. **Open your notification center first.** If you see ThreadConnect alerts **piled up there** but never saw them pop, the alert is arriving fine — a **Focus / Do Not Disturb** or **alert-style** setting is hiding it (Step 2 or 3 above). This is *not* a ThreadConnect or permissions problem.
    - *Mac:* click the **clock** (top-right) to open Notification Center.
    - *Windows:* click the **date/time** (bottom-right).
-2. **Confirm the feature is on for your org.** If no teammate is getting alerts either, ask your administrator to confirm Connie Task Alerts is **activated** for your organization.
-3. **Wrong Chrome profile?** Make sure you're signed in to Connie in the same profile where you clicked **Allow**.
+2. **Confirm the feature is on for your org.** If no teammate is getting alerts either, ask your administrator to confirm ThreadConnect Task Alerts is **activated** for your organization.
+3. **Wrong Chrome profile?** Make sure you're signed in to ThreadConnect in the same profile where you clicked **Allow**.
 
-Still stuck? See **[Connie Task Alerts — Advanced Troubleshooting](/end-users/administrators/task-alerts-troubleshooting)** (you can share it with your admin), or [Get Support](/get-support/overview).
+Still stuck? See **[ThreadConnect Task Alerts — Advanced Troubleshooting](/end-users/administrators/task-alerts-troubleshooting)** (you can share it with your admin), or [Get Support](/get-support/overview).
 
 ---
 
@@ -125,4 +125,4 @@ Still stuck? See **[Connie Task Alerts — Advanced Troubleshooting](/end-users/
 
 - [Getting Started](/end-users/staff-agents/getting-started) — set your status to Available
 - [Handling Tasks](/end-users/staff-agents/handling-tasks) — what to do once a task arrives
-- [Administrators: Activate Connie Task Alerts](/end-users/administrators/task-alerts) — the org-level switch
+- [Administrators: Activate ThreadConnect Task Alerts](/end-users/administrators/task-alerts) — the org-level switch

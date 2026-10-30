@@ -2,7 +2,7 @@
 sidebar_label: "ThreadConnect Task Alerts"
 sidebar_position: 5
 title: "ThreadConnect Task Alerts (Activate / Deactivate)"
-description: "Turn Connie Task Alerts on or off for your whole organization from the Admin panel."
+description: "Turn ThreadConnect Task Alerts on or off for your whole organization from the Admin panel."
 ---
 
 # ThreadConnect Task Alerts — Activate / Deactivate
@@ -12,11 +12,11 @@ A task that arrives while you're closed will **still be waiting for four full da
 
 Live phone calls and web chats are the exception; their window is much shorter, because someone is on the line right now.
 
-Need a different window for a program or channel? Custom settings are available — contact your Connie account representative or the [Connie Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
+Need a different window for a program or channel? Custom settings are available — contact your ThreadConnect account representative or the [ThreadConnect Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
 :::
 
 
-**Connie Task Alerts** give your agents a friendly desktop pop-up when a new task is routed to them — so they don't have to keep one eye on Connie all day while they're working in their EMR, email, or anywhere else. When a task arrives they get a **"Connie — New Task"** notification in the corner of their screen, even when Connie is in the background.
+**ThreadConnect Task Alerts** give your agents a friendly desktop pop-up when a new task is routed to them — so they don't have to keep one eye on ThreadConnect all day while they're working in their EMR, email, or anywhere else. When a task arrives they get a **"ThreadConnect — New Task"** notification in the corner of their screen, even when ThreadConnect is in the background.
 
 This page is for **administrators and supervisors**: how to turn the feature **on or off for your whole organization** from the Admin panel.
 
@@ -31,28 +31,28 @@ Activating here does **not** force pop-ups onto anyone. It simply *enables* the 
 
 ---
 
-## Activate Connie Task Alerts
+## Activate ThreadConnect Task Alerts {#activate-connie-task-alerts}
 
-1. In Connie, open the **Admin** panel — the **Admin** item in the left-hand navigation (the `/admin` section).
+1. In ThreadConnect, open the **Admin** panel — the **Admin** item in the left-hand navigation (the `/admin` section).
 2. You'll see a list of feature cards, each with an on/off toggle.
 3. Find the card named **"Browser notification."**
 
    :::note Naming
-   In the Admin panel this feature is labeled **"Browser notification"** — that's the internal name for **Connie Task Alerts**. They're the same thing. (We're standardizing on "Connie Task Alerts" in the docs and product.)
+   In the Admin panel this feature is labeled **"Browser notification"** — that's the internal name for **ThreadConnect Task Alerts**. They're the same thing. (We're standardizing on "ThreadConnect Task Alerts" in the docs and product.)
    :::
 
 4. Switch the **"Browser notification"** toggle **ON**.
-5. The change applies **organization-wide** and takes effect for agents the next time they reload Connie.
+5. The change applies **organization-wide** and takes effect for agents the next time they reload ThreadConnect.
 
 That's it — the feature is now active for your organization.
 
 ---
 
-## Deactivate Connie Task Alerts
+## Deactivate ThreadConnect Task Alerts {#deactivate-connie-task-alerts}
 
 1. Open the **Admin** panel → find **"Browser notification."**
 2. Switch the toggle **OFF**.
-3. Agents stop receiving desktop pop-ups after they reload Connie. Nothing else about their workflow changes — incoming tasks still appear inside Connie exactly as before.
+3. Agents stop receiving desktop pop-ups after they reload ThreadConnect. Nothing else about their workflow changes — incoming tasks still appear inside ThreadConnect exactly as before.
 
 ---
 
@@ -60,19 +60,19 @@ That's it — the feature is now active for your organization.
 
 Activating the feature is only half the job. Each agent must allow notifications on their own computer (a one-time setup, ~2 minutes). Point your team to:
 
-> **[Connie Task Alerts — Agent Setup Guide](/end-users/staff-agents/task-alerts)**
+> **[ThreadConnect Task Alerts — Agent Setup Guide](/end-users/staff-agents/task-alerts)**
 
 A few things worth telling agents up front:
 
-- It's **Chrome only**, and they must be signed in on a **standalone** Connie page (e.g. `your-org.connie.team`), not Connie embedded in another site.
-- The **#1 reason alerts "don't work"** is a **Focus / Do Not Disturb** mode silently hiding them — not a Connie problem. The agent guide and the [troubleshooting page](/end-users/administrators/task-alerts-troubleshooting) cover this.
+- It's **Chrome only**, and they must be signed in on a **standalone** ThreadConnect page (e.g. `your-org.connie.team`), not ThreadConnect embedded in another site.
+- The **#1 reason alerts "don't work"** is a **Focus / Do Not Disturb** mode silently hiding them — not a ThreadConnect problem. The agent guide and the [troubleshooting page](/end-users/administrators/task-alerts-troubleshooting) cover this.
 - Agents can turn notifications **on or off on their own machine** at any time — it's their screen.
 
 ---
 
 ## Rollout tip
 
-Task Alerts are a **heads-up, not a leash.** They're most useful for teams who multitask and aren't watching Connie continuously — which is most nonprofit teams. Consider a short note to staff explaining what the pop-up is and that they're in control of it on their own computer.
+Task Alerts are a **heads-up, not a leash.** They're most useful for teams who multitask and aren't watching ThreadConnect continuously — which is most nonprofit teams. Consider a short note to staff explaining what the pop-up is and that they're in control of it on their own computer.
 
 ---
 
@@ -80,7 +80,7 @@ Task Alerts are a **heads-up, not a leash.** They're most useful for teams who m
 
 If the feature is on for the org but an agent still isn't seeing pop-ups, it's almost always a setting on **their** computer (Focus mode, alert style, or Chrome permission). Walk through:
 
-> **[Connie Task Alerts — Advanced Troubleshooting](/end-users/administrators/task-alerts-troubleshooting)**
+> **[ThreadConnect Task Alerts — Advanced Troubleshooting](/end-users/administrators/task-alerts-troubleshooting)**
 
 ---
 

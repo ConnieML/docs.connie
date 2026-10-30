@@ -22,7 +22,7 @@ twilio serverless:logs --service-sid ZS906734499c94e8fb7c2eca7c708f8f6b --tail
 **Most voice issues are solved by reading these logs first!**
 :::
 
-Quick solutions for common issues with Connie's voice workflows and add-ons.
+Quick solutions for common issues with ThreadConnect's voice workflows and add-ons.
 
 ## Quick Diagnostic Checklist
 

@@ -6,19 +6,19 @@ sidebar_position: 90
 
 # Reporting & Analytics — Frequently Asked Questions
 
-Quick answers to common questions about Connie reporting. For the full walkthrough, see the **[Basic Reporting guide](/reporting-analytics/administrators/basic)**.
+Quick answers to common questions about ThreadConnect reporting. For the full walkthrough, see the **[Basic Reporting guide](/reporting-analytics/administrators/basic)**.
 
 ## 🚀 Getting started
 
 <details>
 <summary>Do I need to set anything up to use reporting?</summary>
 
-No. **Basic reporting is included with every Connie account** and lives inside Flex — there's nothing to install. Your account even comes with a curated **Standard Reporting** dashboard already built, so start there.
+No. **Basic reporting is included with every ThreadConnect account** and lives inside Flex — there's nothing to install. Your account even comes with a curated **Standard Reporting** dashboard already built, so start there.
 
 </details>
 
 <details>
-<summary>Where do I find reporting in Connie?</summary>
+<summary>Where do I find reporting in ThreadConnect?</summary>
 
 Inside Flex:
 
@@ -74,7 +74,7 @@ Use the **date filter** at the top of any dashboard: quick-picks for the last **
 <details>
 <summary>How far back does the data go?</summary>
 
-About **24 months** of history is available. The exact window can change — check with your Connie team if you need to rely on a specific date range.
+About **24 months** of history is available. The exact window can change — check with your ThreadConnect team if you need to rely on a specific date range.
 
 </details>
 
@@ -112,7 +112,7 @@ See [Exporting & downloading](/reporting-analytics/administrators/basic#6-export
 <details>
 <summary>How do I get Advanced?</summary>
 
-Advanced is a paid upgrade — talk to your Connie team about adding it for your account.
+Advanced is a paid upgrade — talk to your ThreadConnect team about adding it for your account.
 
 </details>
 
@@ -121,14 +121,14 @@ Advanced is a paid upgrade — talk to your Connie team about adding it for your
 <details>
 <summary>How do I give a new supervisor access to reporting?</summary>
 
-Ask your Connie team to grant the **Insights role** to that person's account — it's a quick per-account step.
+Ask your ThreadConnect team to grant the **Insights role** to that person's account — it's a quick per-account step.
 
 </details>
 
 <details>
-<summary>Can Connie build a custom dashboard for us?</summary>
+<summary>Can ThreadConnect build a custom dashboard for us?</summary>
 
-Yes. Connie can build curated dashboards tailored to your programs — just ask your Connie team.
+Yes. ThreadConnect can build curated dashboards tailored to your programs — just ask your ThreadConnect team.
 
 </details>
 
@@ -138,4 +138,4 @@ Yes. Connie can build curated dashboards tailored to your programs — just ask 
 
 - **Read the full guide** — [Basic Reporting](/reporting-analytics/administrators/basic)
 - **Look up a term** — [Concepts & Glossary](/reporting-analytics/concepts-glossary)
-- **Ask your Connie team** — or open a ticket via [Get Support](/get-support/overview)
+- **Ask your ThreadConnect team** — or open a ticket via [Get Support](/get-support/overview)

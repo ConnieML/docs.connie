@@ -6,7 +6,7 @@ sidebar_position: 8
 
 # Reporting & Analytics
 
-> **All Connie reporting lives in [📊 Reporting & Analytics](/reporting-analytics).**
+> **All ThreadConnect reporting lives in [📊 Reporting & Analytics](/reporting-analytics).**
 
 Administrator reporting — provisioning Insights, configuring views/columns and roles, scheduling report emails, and the Advanced layer — is documented in one place to avoid duplication.
 

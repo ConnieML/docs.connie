@@ -21,7 +21,7 @@ This is what appears on a ringing call once it's on — the round voicemail icon
 green accept and red decline buttons your agents already know:
 
 <a href="/img/features/agent-send-to-voicemail/01-ringing-card-control-present.png" target="_blank">
-  <img src="/img/features/agent-send-to-voicemail/01-ringing-card-control-present.png" alt="A ringing call in Connie showing three buttons beneath it: green accept, red decline, and a round voicemail icon" style={{width: '100%', border: '1px solid #ddd', borderRadius: '8px'}} />
+  <img src="/img/features/agent-send-to-voicemail/01-ringing-card-control-present.png" alt="A ringing call in ThreadConnect showing three buttons beneath it: green accept, red decline, and a round voicemail icon" style={{width: '100%', border: '1px solid #ddd', borderRadius: '8px'}} />
 </a>
 
 *Click any image on this page to open it full size.*
@@ -40,7 +40,7 @@ want. For a larger queue where you'd rather a call kept hunting for a free agent
 your agents already have the **decline** button, which passes a call along without ending it.
 :::
 
-Connie asks the agent to confirm before anything happens, and the confirmation says plainly that the
+ThreadConnect asks the agent to confirm before anything happens, and the confirmation says plainly that the
 call ends for the team. **That wording is deliberate and shouldn't be softened** — it is what stops a
 mis-click becoming a lost caller.
 
@@ -63,8 +63,8 @@ back to the original call, so the two read as one story.
 ## Who can use it
 
 By default, **every agent**. If you'd rather restrict it to supervisors or a particular role, that
-can be narrowed for your organization — it's a settings change, not a rebuild. Contact your Connie
-account representative or the [Connie Care Team](/get-support/overview).
+can be narrowed for your organization — it's a settings change, not a rebuild. Contact your ThreadConnect
+account representative or the [ThreadConnect Care Team](/get-support/overview).
 
 ## What has to be true first
 
@@ -75,15 +75,15 @@ turned on, your organization needs:
 |---|---|
 | **A voicemail experience already working on your voice line** | The feature hands the caller to the greeting you already have. See [Choose Your Voice Experience](/end-users/administrators/channels/voice/voicemail/voicemail-options-guide). |
 | **Callers routed through the queue/wait experience** | The button acts on a caller waiting in a queue. |
-| **A recent Connie release on your account** | Older accounts may need an update first; your account representative will confirm. |
+| **A recent ThreadConnect release on your account** | Older accounts may need an update first; your account representative will confirm. |
 
 If you're not sure whether your organization meets these, ask — it takes a few minutes to check and
 it's better answered before your team is told about the feature.
 
 ## Turning it on
 
-**Contact your Connie account representative or the
-[Connie Care Team](/get-support/overview)** and ask for **Agent Send to Voicemail** to be enabled.
+**Contact your ThreadConnect account representative or the
+[ThreadConnect Care Team](/get-support/overview)** and ask for **Agent Send to Voicemail** to be enabled.
 
 Tell us:
 
@@ -122,7 +122,7 @@ the feature is switched on and working exactly as designed.
 caller is in a conversation, not waiting in a queue, and there is nothing to send to voicemail.
 
 <a href="/img/features/agent-send-to-voicemail/03-email-task-control-absent.png" target="_blank">
-  <img src="/img/features/agent-send-to-voicemail/03-email-task-control-absent.png" alt="An email task open in Connie, with no voicemail icon among its controls" style={{width: '100%', border: '1px solid #ddd', borderRadius: '8px'}} />
+  <img src="/img/features/agent-send-to-voicemail/03-email-task-control-absent.png" alt="An email task open in ThreadConnect, with no voicemail icon among its controls" style={{width: '100%', border: '1px solid #ddd', borderRadius: '8px'}} />
 </a>
 
 **On an email, fax or chat task** — there is no live caller on the line to redirect.

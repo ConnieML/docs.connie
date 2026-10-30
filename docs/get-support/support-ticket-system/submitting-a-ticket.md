@@ -6,7 +6,7 @@ title: "Submitting a Support Ticket"
 
 # Submitting a Support Ticket
 
-A support ticket is the best way to get **tracked, scoped help** from the Connie Care Team. You submit it right from inside Connie, you get a ticket number, and you can follow it through to resolution. This guide shows you **when** to file a ticket, **how to write a good one**, and the **steps** to submit it.
+A support ticket is the best way to get **tracked, scoped help** from the ThreadConnect Care Team. You submit it right from inside ThreadConnect, you get a ticket number, and you can follow it through to resolution. This guide shows you **when** to file a ticket, **how to write a good one**, and the **steps** to submit it.
 
 ## 🎥 Video walkthrough {#video-walkthrough}
 
@@ -69,9 +69,9 @@ When you have **no active task**, the right-hand panel shows **CONNIE+**. Click 
 
 ![The CONNIE+ panel in the no-active-task view, with the Get Support button](/img/support-tickets/01-no-task-panel.png)
 
-That opens the **Connie Support Portal** — self-help options up top ("Start Here"), and under **Get Support** a **Submit Support Ticket** card.
+That opens the **ThreadConnect Support Portal** — self-help options up top ("Start Here"), and under **Get Support** a **Submit Support Ticket** card.
 
-![The Connie Support Portal showing the Submit Support Ticket card, Show All Tickets, and Quick Ticket Lookup](/img/support-tickets/02-support-portal.png)
+![The ThreadConnect Support Portal showing the Submit Support Ticket card, Show All Tickets, and Quick Ticket Lookup](/img/support-tickets/02-support-portal.png)
 
 ### 2. Click **Create New Ticket**
 
@@ -94,13 +94,13 @@ Complete each field:
 
 Click **Send**. You'll see an on-screen confirmation with your **ticket number**, and you'll get an **email confirmation** shortly.
 
-![The Ticket submitted successfully confirmation, with See all my tickets and Back to Connie buttons](/img/support-tickets/04-ticket-submitted.png)
+![The Ticket submitted successfully confirmation, with See all my tickets and Back to ThreadConnect buttons](/img/support-tickets/04-ticket-submitted.png)
 
 ### 5. From the confirmation screen you can:
 
 - **File another ticket** — start a new one.
 - **See all my tickets** — view all of your account's tickets.
-- **Back to Connie** — return to the support home.
+- **Back to ThreadConnect** — return to the support home.
 
 ---
 

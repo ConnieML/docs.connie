@@ -6,11 +6,11 @@ title: "Authoring & Publishing Runbooks"
 
 # Authoring & Publishing Runbooks
 
-How to write a new runbook for a Connie feature, get it on docs.connie.one, and into the [Runbook Index](/techops/troubleshooting/runbook-index).
+How to write a new runbook for a ThreadConnect feature, get it on docs.connie.one, and into the [Runbook Index](/techops/troubleshooting/runbook-index).
 
 For human authors and AI agents alike. If you're touching docs.connie for the first time, read this before you write anything.
 
-> **Implements [Runbook Authoring Standard v1.0](https://vault.chrisberno.dev/techops/standards/runbook-authoring)** (the enterprise standard owned by the CDO and applied across all org docs platforms). This guide is the Connie/Docusaurus-specific implementation — it adds platform-specific gotchas (numeric prefix slug stripping, MDX caveats, GitHub Pages publishing pipeline) on top of the canonical 5-file anatomy and 7-section action-runbook template defined at the enterprise level.
+> **Implements [Runbook Authoring Standard v1.0](https://vault.chrisberno.dev/techops/standards/runbook-authoring)** (the enterprise standard owned by the CDO and applied across all org docs platforms). This guide is the ThreadConnect/Docusaurus-specific implementation — it adds platform-specific gotchas (numeric prefix slug stripping, MDX caveats, GitHub Pages publishing pipeline) on top of the canonical 5-file anatomy and 7-section action-runbook template defined at the enterprise level.
 
 ---
 
@@ -25,13 +25,13 @@ For human authors and AI agents alike. If you're touching docs.connie for the fi
 | Publishing pipeline | GitHub Actions → `gh-pages` branch → GitHub Pages → CNAME → docs.connie.one |
 | Docusaurus version | v3.x |
 
-**Doctrine:** All Connie-customer-facing docs go in `docs.connie`. The `basecamp-v26.02/docs/` directory in the code repo is upstream Twilio template content — do **not** put Connie customizations there.
+**Doctrine:** All ThreadConnect-customer-facing docs go in `docs.connie`. The `basecamp-v26.02/docs/` directory in the code repo is upstream Twilio template content — do **not** put ThreadConnect customizations there.
 
 ---
 
 ## The standard runbook anatomy
 
-Every Connie feature gets a **product page + four runbooks**. Always five files. Always the same four runbook types.
+Every ThreadConnect feature gets a **product page + four runbooks**. Always five files. Always the same four runbook types.
 
 | File | Purpose | Audience |
 |---|---|---|
@@ -63,7 +63,7 @@ The product page (`01_overview.md`) does NOT need this template — it's a marke
 
 **Why this matters:** the gap between "runbook content" and "promptable runbook" is exactly these seven sections. A procedure-only runbook reads like a recipe; a 7-section runbook reads like a complete delegation. AI agents that pick up a 7-section runbook can run with it without follow-up questions. Procedure-only runbooks force the agent (or the CEO) to fill the gaps every time.
 
-**Reference implementation:** the [Wait Experience + Admin Email setup runbook](/getting-started/channels/voice/voice-features/wait-experience-with-email/setup) is the canonical example of the 7-section structure applied to a real Connie feature. Pattern-match against that file when authoring new runbooks.
+**Reference implementation:** the [Wait Experience + Admin Email setup runbook](/getting-started/channels/voice/voice-features/wait-experience-with-email/setup) is the canonical example of the 7-section structure applied to a real ThreadConnect feature. Pattern-match against that file when authoring new runbooks.
 
 ---
 
@@ -237,7 +237,7 @@ Not everything that documents a procedure is a runbook. Use judgment:
 - **End-user help** ("how do I take a call"): goes in `end-users/staff-agents/` or similar, not as a runbook.
 - **Project / sprint context**: belongs in `~/projects/connie/rtc/docs/dev-logs/` (the internal-team tree), not on docs.connie.
 
-The Runbook Index is for **Setup / Change / Cancel / Troubleshoot procedures tied to a deployable Connie feature**. Keep the bar there.
+The Runbook Index is for **Setup / Change / Cancel / Troubleshoot procedures tied to a deployable ThreadConnect feature**. Keep the bar there.
 
 ---
 
@@ -245,4 +245,4 @@ The Runbook Index is for **Setup / Change / Cancel / Troubleshoot procedures tie
 
 - [Runbook Index](/techops/troubleshooting/runbook-index) — the master map of every live runbook
 - [Common Issues](/techops/troubleshooting/common-issues) — symptom-driven quick reference
-- Connie code repo: `~/projects/connie/rtc/basecamp-v26.02/` (where Connie features actually live; see that repo's `CLAUDE.md` for the docs-vs-code split doctrine)
+- ThreadConnect code repo: `~/projects/connie/rtc/basecamp-v26.02/` (where ThreadConnect features actually live; see that repo's `CLAUDE.md` for the docs-vs-code split doctrine)

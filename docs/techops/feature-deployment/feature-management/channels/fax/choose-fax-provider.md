@@ -204,7 +204,7 @@ Consider these factors when choosing your fax provider:
 - **eFax/iFax Users:** Join our [provider waitlist](https://connie.one/contact) for early access
 
 :::info Professional Services
-Need help choosing or implementing a fax provider? Our team can assess your needs and handle the complete setup. Contact your Connie representative for professional services options.
+Need help choosing or implementing a fax provider? Our team can assess your needs and handle the complete setup. Contact your ThreadConnect representative for professional services options.
 :::
 
 ---

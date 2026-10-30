@@ -11,11 +11,11 @@ A task that arrives while you're closed will **still be waiting for four full da
 
 Live phone calls and web chats are the exception; their window is much shorter, because someone is on the line right now.
 
-Need a different window for a program or channel? Custom settings are available — contact your Connie account representative or the [Connie Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
+Need a different window for a program or channel? Custom settings are available — contact your ThreadConnect account representative or the [ThreadConnect Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
 :::
 
 
-Connie lets you send and receive emails directly within the same interface you use for calls and chats. You don't need to switch to a separate email program — everything stays in one place.
+ThreadConnect lets you send and receive emails directly within the same interface you use for calls and chats. You don't need to switch to a separate email program — everything stays in one place.
 
 This section covers:
 
@@ -23,7 +23,7 @@ This section covers:
 - **[Outbound Emails](/end-users/staff-agents/handling-tasks/handling-emails/outbound)** — Composing and sending new emails
 
 :::info Faxes Work the Same Way
-From an agent's perspective, **faxes are handled almost identically to emails** in Connie. The same steps for viewing, replying, and completing email tasks apply to fax tasks. The only difference is the channel icon in your Task Queue — you'll see a fax icon instead of an email icon.
+From an agent's perspective, **faxes are handled almost identically to emails** in ThreadConnect. The same steps for viewing, replying, and completing email tasks apply to fax tasks. The only difference is the channel icon in your Task Queue — you'll see a fax icon instead of an email icon.
 
 See [Handling Faxes](/end-users/staff-agents/handling-tasks/handling-faxes) for fax-specific details.
 :::

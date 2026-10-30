@@ -6,7 +6,7 @@ sidebar_position: 3
 
 # Composing and Sending Emails
 
-You can start a new email conversation with a client directly from Connie, without switching to another email program.
+You can start a new email conversation with a client directly from ThreadConnect, without switching to another email program.
 
 ## Starting a New Email
 

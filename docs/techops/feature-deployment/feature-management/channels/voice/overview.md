@@ -6,17 +6,17 @@ title: "Voice Channel"
 
 # Voice Channel
 
-Choose how callers connect with your organization using the Connie Voice experience framework. Start simple, add features as you grow.
+Choose how callers connect with your organization using the ThreadConnect Voice experience framework. Start simple, add features as you grow.
 
-## Connie Voice Experience Framework
+## ThreadConnect Voice Experience Framework {#connie-voice-experience-framework}
 
-The Connie Voice platform provides three core experience levels, each building on the previous with additional features:
+The ThreadConnect Voice platform provides three core experience levels, each building on the previous with additional features:
 
 <div className="row">
   <div className="col col--4 margin-bottom--lg">
     <div className="card">
       <div className="card__body">
-        <h3>📞 Connie Voice Direct</h3>
+        <h3>📞 ThreadConnect Voice Direct</h3>
         <p>Basic implementation - calls immediately queued, rejected during non-business hours. Works out-of-the-box.</p>
         <p><a href="./workflows/direct">Setup Guide</a> • <a href="./troubleshooting#direct">Troubleshooting</a></p>
       </div>
@@ -26,7 +26,7 @@ The Connie Voice platform provides three core experience levels, each building o
   <div className="col col--4 margin-bottom--lg">
     <div className="card">
       <div className="card__body">
-        <h3>📋 Connie Voice Direct + Voicemail</h3>
+        <h3>📋 ThreadConnect Voice Direct + Voicemail</h3>
         <p>Custom wait/hold experience, custom greetings, hold music, department routing, off-hours voicemail routing.</p>
         <p><a href="./workflows/voicemail-only">Setup Guide</a> • <a href="./troubleshooting#voicemail">Troubleshooting</a></p>
       </div>
@@ -36,7 +36,7 @@ The Connie Voice platform provides three core experience levels, each building o
   <div className="col col--4 margin-bottom--lg">
     <div className="card">
       <div className="card__body">
-        <h3>⭐ Connie Voice Direct + Wait Experience</h3>
+        <h3>⭐ ThreadConnect Voice Direct + Wait Experience</h3>
         <p>Advanced options menu - callers can choose callback or voicemail while retaining queue position.</p>
         <p><a href="./workflows/direct-with-options">Setup Guide</a> • <a href="./troubleshooting#wait-experience">Troubleshooting</a></p>
       </div>
@@ -56,8 +56,8 @@ The most advanced experience provides three possible outcomes for callers:
 
 The voice experiences are implemented using renamed Studio Flows with platform-standard naming:
 
-- **Connie Voice Direct + Voicemail (Auto-Route)**: All calls terminate in voicemail
-- **Connie Voice Direct + Wait Experience (with Email)**: Options menu with email notifications
+- **ThreadConnect Voice Direct + Voicemail (Auto-Route)**: All calls terminate in voicemail
+- **ThreadConnect Voice Direct + Wait Experience (with Email)**: Options menu with email notifications
 
 ## Legacy and Custom Options
 
@@ -65,7 +65,7 @@ The voice experiences are implemented using renamed Studio Flows with platform-s
   <div className="col col--6 margin-bottom--lg">
     <div className="card">
       <div className="card__body">
-        <h3>🤖 Connie Copilot</h3>
+        <h3>🤖 ThreadConnect Copilot</h3>
         <p>AI helps callers find the right service</p>
         <p><span className="badge badge--secondary">Coming Soon</span></p>
       </div>

@@ -30,13 +30,13 @@ ConnieRTC provides three voicemail implementation options, each building on the 
 
 ConnieRTC implements a progressive 3-tier voice experience model:
 
-### Tier 1: Connie Voice Direct
+### Tier 1: ThreadConnect Voice Direct {#tier-1-connie-voice-direct}
 - Calls immediately accepted and queued for agents
 - Rejects calls during non-business hours
 - No voicemail capability
 - **Implementation:** Basic Studio Flow
 
-### Tier 2: Connie Voice Direct with Voicemail (Auto-Route)
+### Tier 2: ThreadConnect Voice Direct with Voicemail (Auto-Route) {#tier-2-connie-voice-direct-with-voicemail-auto-route}
 - Custom greeting plays
 - All calls automatically routed to voicemail recording
 - Task created in Flex queue
@@ -44,7 +44,7 @@ ConnieRTC implements a progressive 3-tier voice experience model:
 - **Implementation:** `voicemail-only-with-email` feature
 - **Best For:** After-hours lines, overflow numbers, dedicated voicemail lines
 
-### Tier 3: Connie Voice Direct with Wait Experience
+### Tier 3: ThreadConnect Voice Direct with Wait Experience {#tier-3-connie-voice-direct-with-wait-experience}
 - Callers hear greeting and hold music
 - Press `*` for options menu
 - Press `1` for callback request

@@ -26,7 +26,7 @@ Gather from the CEO **before starting**. Do not infer defaults silently.
 
 | Parameter | Why you need it | Example |
 |---|---|---|
-| Connie client account name | Selects the Twilio CLI profile + the `.env.<account>` deploy target | `lifeline`, `NSS`, `ConnieCareTeam` |
+| ThreadConnect client account name | Selects the Twilio CLI profile + the `.env.<account>` deploy target | `lifeline`, `NSS`, `ConnieCareTeam` |
 | Authored client library JSON | The actual content to deploy. CEO-authored, brand-aligned, free of template variables unless explicitly required | `/Users/cjberno/Downloads/<client>-canned-responses-<date>.json` |
 | Placement preference | Where the dropdown renders for the agent | `"CRM"` or `"MessageInputActions"` (default `"CRM"` if Enhanced CRM Container is disabled, else `"MessageInputActions"`) |
 | Plugin version on the account | Confirms the Canned Responses feature code is shipped to this account; if not, plugin must be released first | `twilio flex:plugins:list` |
@@ -55,7 +55,7 @@ Specific to a Canned Responses deploy:
 - **Confirm the `.env.<account>` file exists** at `serverless-functions/.env.<account>` before running the deploy. The deploy script reads this file; if missing, it falls back to `.env` (which may target a different account or fail).
 - **Per-account isolation is real but the SOURCE file is shared.** `responses.private.json` is one file in the repo. When you replace it for account A and deploy, you have *temporarily* replaced what the repo holds — but each account's runtime is independent. Do not panic-revert the source file between deploys; just deploy your intended content per account in sequence. See [Troubleshoot Section 1](./troubleshoot#filename-and-path-gotchas) for the full filename discipline.
 - **No template variables (`{{task.X}}`, `{{worker.X}}`) without explicit CEO ask.** Static text is safer for client-authored content. If the CEO requests a variable, use `{{task.X}}` form NOT `{{task.attributes.X}}` — see [basecamp Flex template variable form discipline](https://github.com/ConnieML/connieRTC-basecamp/blob/main/CLAUDE.md) (G4). Wrong form = blank iframe / blank fill, no console error.
-- **No brand-firewall violations.** Connie client libraries must not reference SPOK, onreb, PeoplePerson, BeaverDam, or any cross-tenant brand. Client name and Connie contact details only.
+- **No brand-firewall violations.** ThreadConnect client libraries must not reference SPOK, onreb, PeoplePerson, BeaverDam, or any cross-tenant brand. Client name and ThreadConnect contact details only.
 - **CEO approval before deploy.** No exceptions, even when the JSON is "obviously correct."
 
 ---
@@ -120,7 +120,7 @@ Walk the JSON manually against [Section 7 — Format Spec](#7-format-spec--examp
 - [ ] Each response has `label` (string, ≤40 chars recommended) + `text` (string, no hard line breaks)
 - [ ] No template variables unless explicitly requested (and if so, `{{task.X}}` form, not `{{task.attributes.X}}`)
 - [ ] No brand-firewall violations (SPOK, onreb, etc.)
-- [ ] Contact references use Connie-routed identities (`<client>.connie.host`, `<client>.connie.team`, etc.) — not raw vendor or cross-tenant subdomains
+- [ ] Contact references use ThreadConnect-routed identities (`<client>.connie.host`, `<client>.connie.team`, etc.) — not raw vendor or cross-tenant subdomains
 
 If anything fails, send the file back to the CEO with the specific concerns called out. Don't silently fix and deploy.
 
@@ -246,7 +246,7 @@ Lifeline source: `~/projects/connie/rtc/basecamp-v26.02/serverless-functions/src
 - **Tone:** professional, warm, written for someone seeking help — not a sales pitch.
 - **Length:** 1–3 sentences per response. Longer than that and agents start editing before sending, which defeats the point.
 - **No template variables** by default. The plugin supports `{{task.X}}` and `{{worker.X}}` substitution but most client libraries are clearer as static text. Add variables only for high-value cases (e.g., personalized greeting).
-- **Always include a "Contact [Team]" response** with the routed Connie email + phone for the program. Agents use this to gracefully escalate when the question is out of scope.
+- **Always include a "Contact [Team]" response** with the routed ThreadConnect email + phone for the program. Agents use this to gracefully escalate when the question is out of scope.
 - **One section per service line** the client offers. Don't over-fragment — agents scan section names first to narrow the dropdown.
 
 ---

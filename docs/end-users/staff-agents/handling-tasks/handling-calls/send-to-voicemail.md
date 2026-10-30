@@ -53,7 +53,7 @@ that's still waiting — never on a call you've already answered.
 
 **3. Confirm.**
 
-Connie spells out what's about to happen before doing it. Nothing has happened yet at this point —
+ThreadConnect spells out what's about to happen before doing it. Nothing has happened yet at this point —
 **Keep it ringing** backs out with no harm done. Choose **Send to voicemail** and the caller hears
 your organization's greeting.
 
@@ -64,7 +64,7 @@ your organization's greeting.
 ## What happens next
 
 The caller's message comes back to your team as a **voicemail task** in the queue, the same as any
-voicemail. It carries the caller's number and, if Connie recognises them, their name and profile — so
+voicemail. It carries the caller's number and, if ThreadConnect recognises them, their name and profile — so
 whoever picks it up already knows who called.
 
 :::info It waits four full days
@@ -99,7 +99,7 @@ button and don't find it.
 now, the honest move is to tell them and take a message yourself.
 
 <a href="/img/features/agent-send-to-voicemail/03-email-task-control-absent.png" target="_blank">
-  <img src="/img/features/agent-send-to-voicemail/03-email-task-control-absent.png" alt="An email task open in Connie with no voicemail icon among its controls" style={{width: '100%', border: '1px solid #ddd', borderRadius: '8px'}} />
+  <img src="/img/features/agent-send-to-voicemail/03-email-task-control-absent.png" alt="An email task open in ThreadConnect with no voicemail icon among its controls" style={{width: '100%', border: '1px solid #ddd', borderRadius: '8px'}} />
 </a>
 
 **On an email, fax or chat.** There's nobody on the line to redirect. These wait in your queue for
@@ -109,7 +109,7 @@ Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last).
 ## Questions people ask
 
 **Can I undo it?**
-No. Once the caller has been sent to voicemail, they're out of the queue. That's why Connie asks you
+No. Once the caller has been sent to voicemail, they're out of the queue. That's why ThreadConnect asks you
 to confirm first.
 
 **Will my teammates know it was me?**

@@ -50,7 +50,7 @@ The `.private.json` extension makes it a private asset in Twilio Serverless (aut
 
 ### Why this discipline exists
 
-Each Connie sub-account has its own Twilio Serverless runtime. Deploying `responses.json` to account A's runtime does **not** touch account B's runtime — they are fully isolated at the Twilio account level. But the *source file in the repo* is shared at the repo level.
+Each ThreadConnect sub-account has its own Twilio Serverless runtime. Deploying `responses.json` to account A's runtime does **not** touch account B's runtime — they are fully isolated at the Twilio account level. But the *source file in the repo* is shared at the repo level.
 
 It is tempting to introduce per-account filename variants ("for safety / clarity / so we don't lose NSS's content when we deploy to Lifeline"). **Don't.** The plugin loader is hardcoded to one path. Per-account content lives in your authored-file archive outside the repo, not in per-account filename variants inside the repo.
 

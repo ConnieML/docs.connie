@@ -15,20 +15,20 @@ You answer and handle conversations across every channel — calls, chat, SMS, e
 <div style={{display: 'flex', gap: '28px', alignItems: 'flex-start', flexWrap: 'wrap'}}>
   <div style={{flex: '1 1 320px'}}>
 
-This guide walks you through your first login and initial setup of your Connie account — from your very first sign-in to taking your first task.
+This guide walks you through your first login and initial setup of your ThreadConnect account — from your very first sign-in to taking your first task.
 
   </div>
-  <img src="/img/avatars/agent-persona.png" alt="A friendly Connie staff agent" style={{width: '160px', flexShrink: 0, alignSelf: 'center'}} />
+  <img src="/img/avatars/agent-persona.png" alt="A friendly ThreadConnect staff agent" style={{width: '160px', flexShrink: 0, alignSelf: 'center'}} />
 </div>
 
-## 🚀 Step 1: Access the Connie Web Portal
+## 🚀 Step 1: Access the ThreadConnect Web Portal {#-step-1-access-the-connie-web-portal}
 
-1. Navigate to the Connie web portal: **[https://portal.connie.team](https://portal.connie.team)**
+1. Navigate to the ThreadConnect web portal: **[https://portal.connie.team](https://portal.connie.team)**
 2. You'll see the login screen
 
 ## 🔐 Step 2: Enter Your Credentials
 
-Your local Connie administrator should have provided you with temporary login credentials:
+Your local ThreadConnect administrator should have provided you with temporary login credentials:
 
 ### Username
 - **Your business email address** (this cannot be changed)
@@ -49,7 +49,7 @@ Your local Connie administrator should have provided you with temporary login cr
 
 ## 📱 Step 3: Set Up Google Authenticator (Two-Factor Authentication)
 
-Connie uses two-factor authentication (2FA) to keep your account secure. You'll need to download and set up Google Authenticator on your mobile device.
+ThreadConnect uses two-factor authentication (2FA) to keep your account secure. You'll need to download and set up Google Authenticator on your mobile device.
 
 <div style={{textAlign: 'center', margin: '20px 0'}}>
   <img src="/img/staff-agents/google-authenticator.png" alt="Google Authenticator Setup Steps" style={{maxWidth: '350px', border: '1px solid #ddd', borderRadius: '8px'}} />
@@ -70,21 +70,21 @@ Download the Google Authenticator app on your mobile device:
    - **Use Authenticator without an account** - No backup option
 4. **Tap the "+" icon** (bottom right corner)
 5. **Select "Scan a QR code"**
-6. **Scan the QR code** displayed on the Connie web portal
+6. **Scan the QR code** displayed on the ThreadConnect web portal
 
 <div style={{textAlign: 'center', margin: '20px 0'}}>
-  <img src="/img/staff-agents/authenticator-qr.png" alt="QR Code Scanning in Connie Portal" style={{maxWidth: '350px', border: '1px solid #ddd', borderRadius: '8px'}} />
+  <img src="/img/staff-agents/authenticator-qr.png" alt="QR Code Scanning in ThreadConnect Portal" style={{maxWidth: '350px', border: '1px solid #ddd', borderRadius: '8px'}} />
 </div>
 
 ### Complete Login
 
-1. Click **"Next"** on the Connie portal
+1. Click **"Next"** on the ThreadConnect portal
 2. **Enter the 6-digit code** displayed in Google Authenticator
-3. You'll be taken to your **Connie dashboard**
+3. You'll be taken to your **ThreadConnect dashboard**
 
 ## 🏠 Step 4: Access Your Organization's App
 
-From the Connie dashboard:
+From the ThreadConnect dashboard:
 
 1. Select **"My Apps"** from the navigation
 2. Select the app associated with **your CBO/agency**
@@ -130,7 +130,7 @@ Now that you're set up, learn how to:
 - **[Record Notes](/end-users/staff-agents/recording-notes)** — Document your interactions
 
 <div style={{textAlign: 'center', margin: '36px 0 8px'}}>
-  <img src="/img/scenes/connie-call-center.jpg" alt="The Connie team at work" style={{maxWidth: '100%', borderRadius: '12px'}} />
+  <img src="/img/scenes/connie-call-center.jpg" alt="The ThreadConnect team at work" style={{maxWidth: '100%', borderRadius: '12px'}} />
 </div>
 
 ---

@@ -2,13 +2,13 @@
 sidebar_label: "Hold Time Limit"
 sidebar_position: 3
 title: "Hold Time Limit — send waiting callers to voicemail"
-description: "Set a maximum time a caller waits on hold for a program before Connie offers them voicemail."
+description: "Set a maximum time a caller waits on hold for a program before ThreadConnect offers them voicemail."
 ---
 
 # Hold Time Limit
 
 A **hold time limit** caps how long a caller waits on hold for one of your programs. When the limit
-is reached, Connie takes the caller out of the queue and asks them to leave a message. The message
+is reached, ThreadConnect takes the caller out of the queue and asks them to leave a message. The message
 arrives as a voicemail task in the same program's queue.
 
 It is set **per program**. One program can have a 5-minute limit while another has none.
@@ -22,7 +22,7 @@ key for a callback or voicemail at any time. When the limit is reached they hear
 > When you are finished recording, you may hang up, or press the star key."*
 
 :::note It is close to the limit, not to the second
-Connie checks the limit each time the hold music comes round, so a caller reaches voicemail at the
+ThreadConnect checks the limit each time the hold music comes round, so a caller reaches voicemail at the
 limit or up to about a minute after it. A 5-minute limit means voicemail between 5 and 6 minutes.
 :::
 
@@ -39,7 +39,7 @@ The same voicemail task your team already works:
 ## What it does to your reporting
 
 A caller who reaches the limit is recorded as **`Hold limit reached - sent to voicemail`**. It is
-**not** counted as an abandoned call. The caller didn't give up; Connie moved them on so their message
+**not** counted as an abandoned call. The caller didn't give up; ThreadConnect moved them on so their message
 could be heard. The voicemail is linked to the original call, so the two can be read together.
 
 ## Decide this before you ask for it
@@ -53,7 +53,7 @@ team can return a message.
 ## How to set or change a limit
 
 Open a support ticket with the **program** (for example, "Adult Day Care") and the **limit in
-minutes**. The Connie Care Team sets it, places a test call to confirm it, and closes the ticket.
+minutes**. The ThreadConnect Care Team sets it, places a test call to confirm it, and closes the ticket.
 Removing or changing a limit works the same way.
 
 [Get support →](/get-support/overview)
@@ -61,7 +61,7 @@ Removing or changing a limit works the same way.
 ## Built-in protection on every program
 
 Every program that holds callers in a queue has a safety net, whether or not it has a limit. If a
-caller's place in the queue ends while they are still holding, Connie sends them to voicemail rather
+caller's place in the queue ends while they are still holding, ThreadConnect sends them to voicemail rather
 than leaving them listening to hold music that no agent can answer.
 
 Related: **[Agent Send to Voicemail](/end-users/administrators/channels/voice/voicemail/agent-send-to-voicemail)** lets an agent send a ringing caller

@@ -6,21 +6,21 @@ title: "User Roles & Permissions"
 
 # User Roles & Permissions
 
-Control access to your Connie platform through a comprehensive role-based permission system designed specifically for nonprofit organizations.
+Control access to your ThreadConnect platform through a comprehensive role-based permission system designed specifically for nonprofit organizations.
 
 ## Overview
 
-Every user in your Connie instance must be assigned a role. Each role comes with specific permissions that control access levels and capabilities within the platform. This ensures your team members have appropriate access to features based on their responsibilities.
+Every user in your ThreadConnect instance must be assigned a role. Each role comes with specific permissions that control access levels and capabilities within the platform. This ensures your team members have appropriate access to features based on their responsibilities.
 
 :::info Default Setup
-Upon provisioning of a new Connie account, default roles are automatically created for your organization. As an administrator, you have full control over roles, permissions, and user assignments.
+Upon provisioning of a new ThreadConnect account, default roles are automatically created for your organization. As an administrator, you have full control over roles, permissions, and user assignments.
 :::
 
 ---
 
 ## Standard Roles
 
-Connie comes with five pre-configured roles designed to match typical nonprofit organizational structures:
+ThreadConnect comes with five pre-configured roles designed to match typical nonprofit organizational structures:
 
 <div className="row">
   <div className="col col--6 margin-bottom--lg">
@@ -97,7 +97,7 @@ Connie comes with five pre-configured roles designed to match typical nonprofit 
 </div>
 
 :::warning Super Admin Access
-**Super Admin** role is reserved for Connie platform staff only and provides system-level access for technical support and maintenance.
+**Super Admin** role is reserved for ThreadConnect platform staff only and provides system-level access for technical support and maintenance.
 :::
 
 ---
@@ -149,7 +149,7 @@ Administrators can create custom permission sets for specialized roles:
 
 ### Dynamic Task Context
 
-Connie's CRM Container Component enhances agent productivity by providing real-time client context:
+ThreadConnect's CRM Container Component enhances agent productivity by providing real-time client context:
 
 <div style={{
   width: '100%',
@@ -170,7 +170,7 @@ Connie's CRM Container Component enhances agent productivity by providing real-t
 
 ### How CRM Integration Works
 
-1. **Data Collection**: During client onboarding, Connie collects identifying information
+1. **Data Collection**: During client onboarding, ThreadConnect collects identifying information
 2. **External Lookup**: System queries your CRM or database for additional client context
 3. **Task Context Attributes**: Retrieved data is packaged with the incoming interaction
 4. **Dynamic Display**: Agent workspace updates automatically with relevant client information

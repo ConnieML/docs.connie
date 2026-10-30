@@ -23,9 +23,9 @@ Automatically convert voicemail recordings to text for easier processing, search
 - Integration with text-based systems (CRM, ticketing)
 
 ## Compatible Workflows
-- ✅ **Connie Voice Direct + Wait Experience**: Transcribe voicemails from menu option
-- ✅ **Connie Voice Direct + Voicemail**: Transcribe all recorded messages
-- ⚠️ **Connie Voice Direct**: Only applicable if voicemail add-on also enabled
+- ✅ **ThreadConnect Voice Direct + Wait Experience**: Transcribe voicemails from menu option
+- ✅ **ThreadConnect Voice Direct + Voicemail**: Transcribe all recorded messages
+- ⚠️ **ThreadConnect Voice Direct**: Only applicable if voicemail add-on also enabled
 
 ## Technical Implementation
 
@@ -94,7 +94,7 @@ exports.handler = async (context, event, callback) => {
 Twilio's `transcribeCallback` does **NOT** always include `TranscriptionText` in the event payload. Your function **MUST** fetch it from `TranscriptionUrl` when missing.
 :::
 
-This issue was discovered during Connie Care Team 877 setup (December 2025). Without this fix, transcriptions may silently fail.
+This issue was discovered during ThreadConnect Care Team 877 setup (December 2025). Without this fix, transcriptions may silently fail.
 
 ### The Problem
 

@@ -6,12 +6,12 @@ title: "Identity & Multi-Tenant Architecture"
 
 # Identity & Multi-Tenant Architecture
 
-Complete guide to understanding and implementing authentication patterns for multi-tenant Connie deployments.
+Complete guide to understanding and implementing authentication patterns for multi-tenant ThreadConnect deployments.
 
 ## 🎯 Purpose of This Guide
 
-This documentation is designed for **Connie platform administrators** who are:
-- Onboarding new nonprofit clients to Connie
+This documentation is designed for **ThreadConnect platform administrators** who are:
+- Onboarding new nonprofit clients to ThreadConnect
 - Configuring Twilio Flex + SSO integration
 - Managing multi-program or multi-tenant deployments
 - Troubleshooting authentication and team visibility issues
@@ -22,7 +22,7 @@ This documentation is designed for **Connie platform administrators** who are:
 
 ## 🏗️ Two Deployment Patterns
 
-Connie supports two distinct multi-tenant patterns. Choosing the right one is critical for proper isolation and team visibility.
+ThreadConnect supports two distinct multi-tenant patterns. Choosing the right one is critical for proper isolation and team visibility.
 
 ### Pattern A: Single Organization, Multiple Programs
 
@@ -134,7 +134,7 @@ Use this decision matrix to determine the correct pattern for your client:
 
 **✅ Pattern B Scenarios:**
 - HHOVV as a completely separate client from NSS
-- Multiple independent nonprofit clients on Connie platform
+- Multiple independent nonprofit clients on ThreadConnect platform
 - Different legal entities requiring audit separation
 
 ---
@@ -177,7 +177,7 @@ Use this decision matrix to determine the correct pattern for your client:
 
 ## 🔐 Supported Identity Providers
 
-Connie supports multiple SSO providers:
+ThreadConnect supports multiple SSO providers:
 
 | Provider | Status | Pattern Support |
 |----------|--------|-----------------|
@@ -228,5 +228,5 @@ Choose your pattern and dive into the detailed implementation guide:
 - **Isolated Organizations** → [Pattern B Documentation](/techops/account-provisioning/authentication/pattern-b-isolated)
 
 :::tip Professional Services Available
-If you prefer assistance with authentication setup for complex deployments, Connie professional services are available. Contact your Connie representative for details.
+If you prefer assistance with authentication setup for complex deployments, ThreadConnect professional services are available. Contact your ThreadConnect representative for details.
 :::

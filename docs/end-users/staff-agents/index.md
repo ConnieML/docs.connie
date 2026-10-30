@@ -6,13 +6,13 @@ sidebar_position: 1
 
 # Welcome to ThreadConnect Staff Agent Documentation
 
-## What is Connie?
+## What is ThreadConnect? {#what-is-connie}
 
-Connie is a digital communication platform built by the American Society on Aging and other nonprofits just like yours. It lets community-based organizations (CBOs) quickly deploy powerful contact center solutions that modernize CBO operations and improve access for the people and communities they serve.
+ThreadConnect is a digital communication platform built by the American Society on Aging and other nonprofits just like yours. It lets community-based organizations (CBOs) quickly deploy powerful contact center solutions that modernize CBO operations and improve access for the people and communities they serve.
 
-## How Connie Empowers Your Work
+## How ThreadConnect Empowers Your Work {#how-connie-empowers-your-work}
 
-Connie simplifies communication for your organization. As an omnichannel platform, it empowers you to connect with clients seamlessly from a single browser-based screen, regardless of whether they prefer:
+ThreadConnect simplifies communication for your organization. As an omnichannel platform, it empowers you to connect with clients seamlessly from a single browser-based screen, regardless of whether they prefer:
 
 - **Phone calls**
 - **SMS text messaging**
@@ -23,7 +23,7 @@ Connie simplifies communication for your organization. As an omnichannel platfor
 
 ## Getting Started
 
-Ready to begin? Navigate through the sections below to learn how to use Connie effectively:
+Ready to begin? Navigate through the sections below to learn how to use ThreadConnect effectively:
 
 ### Set Up Your Account
 - **[Getting Started](/end-users/staff-agents/getting-started)** — Log in, set up 2FA, and configure your availability
@@ -35,9 +35,9 @@ Ready to begin? Navigate through the sections below to learn how to use Connie e
 - **[Handling Chat & SMS](/end-users/staff-agents/handling-tasks/handling-chat)** — Text messages, webchat, WhatsApp, and more
 
 ### Work with Your Team
-- **[Connie Task Sender](/end-users/staff-agents/task-sender)** — One **Send** button: Transfer, Hand off or Refer out
-- **[Transferring Tasks](/end-users/staff-agents/transferring-tasks)** — Send a task to a coworker or department in Connie (warm or cold on calls)
-- **[Handing Off & Referring Out](/end-users/staff-agents/handing-off-tasks)** — Email a voicemail, fax, form or email to a coworker without Connie or to another organization
+- **[ThreadConnect Task Sender](/end-users/staff-agents/task-sender)** — One **Send** button: Transfer, Hand off or Refer out
+- **[Transferring Tasks](/end-users/staff-agents/transferring-tasks)** — Send a task to a coworker or department in ThreadConnect (warm or cold on calls)
+- **[Handing Off & Referring Out](/end-users/staff-agents/handing-off-tasks)** — Email a voicemail, fax, form or email to a coworker without ThreadConnect or to another organization
 - **[Parking Tasks](/end-users/staff-agents/parking-tasks)** — Keep a task alive while you wait on a follow-up
 - **[Recording Notes](/end-users/staff-agents/recording-notes)** — Document your work properly
 

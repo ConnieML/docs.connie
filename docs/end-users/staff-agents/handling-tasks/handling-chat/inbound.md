@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Receiving and Replying to Messages
 
-When a client sends your organization a text message, webchat, or message on WhatsApp or Facebook Messenger, Connie routes it to an available agent.
+When a client sends your organization a text message, webchat, or message on WhatsApp or Facebook Messenger, ThreadConnect routes it to an available agent.
 
 ## Receiving a Message
 

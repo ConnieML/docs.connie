@@ -6,13 +6,13 @@ title: "Assign Skills to an Agent"
 
 # Assign Skills to an Agent
 
-Skills are how Connie decides which work goes to which agent. An agent with the *Spanish* skill receives Spanish-language tasks. An agent with the *Nursing* skill receives nursing-program tasks. An agent without a given skill is invisible to that pool of work — they won't see it, and supervisors don't have to manually route around them.
+Skills are how ThreadConnect decides which work goes to which agent. An agent with the *Spanish* skill receives Spanish-language tasks. An agent with the *Nursing* skill receives nursing-program tasks. An agent without a given skill is invisible to that pool of work — they won't see it, and supervisors don't have to manually route around them.
 
 Skills are the most important routing lever you control as an admin. Get them right and the queue takes care of itself.
 
-## What skills look like in Connie
+## What skills look like in ThreadConnect {#what-skills-look-like-in-connie}
 
-Connie deployments typically organize skills along three axes. Most agents carry skills from more than one axis.
+ThreadConnect deployments typically organize skills along three axes. Most agents carry skills from more than one axis.
 
 | Skill axis | Examples | Used to route by… |
 |---|---|---|
@@ -24,7 +24,7 @@ A new bilingual intake nurse at NSS, for example, might carry: *Spanish*, *Engli
 
 ## Channel capacity
 
-Beyond just "can this agent take this kind of work," Connie also tracks **how much of it** an agent can handle at once. This is channel capacity, and it's configured per-channel per-agent.
+Beyond just "can this agent take this kind of work," ThreadConnect also tracks **how much of it** an agent can handle at once. This is channel capacity, and it's configured per-channel per-agent.
 
 | Channel | Typical default capacity | Why |
 |---|---|---|
@@ -37,7 +37,7 @@ Capacities are set per agent during onboarding and adjusted when an agent moves 
 
 > 📸 **SCREENSHOT NEEDED — Andrea**
 > **File path to save as:** `/static/img/managing-your-team/agent-skills-and-capacity-config.png`
-> **What to capture:** The admin or supervisor view of an agent's skill list and per-channel capacity. If Connie surfaces this in Teams View detail, capture that; if it's only visible in the deployment team's backend, mock up a clean tabular representation.
+> **What to capture:** The admin or supervisor view of an agent's skill list and per-channel capacity. If ThreadConnect surfaces this in Teams View detail, capture that; if it's only visible in the deployment team's backend, mock up a clean tabular representation.
 > **Why this shot matters:** Admins need a visual anchor for "what does my agent's skill profile look like right now."
 > **Replace this whole quote-block with:**
 > `<div style={{textAlign: 'center', margin: '20px 0'}}><img src="/img/managing-your-team/agent-skills-and-capacity-config.png" alt="Agent skills and per-channel capacity configuration" style={{maxWidth: '800px', border: '1px solid #ddd', borderRadius: '8px'}} /></div>`
@@ -83,4 +83,4 @@ A self-serve skill editor for admins is on the product roadmap. Until then, the 
 
 ## Further reading (technical admins)
 
-The Twilio Flex documentation covers the underlying TaskRouter primitives that drive Connie's skill-based routing: see the [Twilio TaskRouter overview](https://www.twilio.com/docs/taskrouter) and the [Flex workers and skills guide](https://www.twilio.com/docs/flex/admin-guide/setup/teams). Connie wraps this in deployment-team-managed configuration; the concepts map cleanly but the day-to-day interface differs.
+The Twilio Flex documentation covers the underlying TaskRouter primitives that drive ThreadConnect's skill-based routing: see the [Twilio TaskRouter overview](https://www.twilio.com/docs/taskrouter) and the [Flex workers and skills guide](https://www.twilio.com/docs/flex/admin-guide/setup/teams). ThreadConnect wraps this in deployment-team-managed configuration; the concepts map cleanly but the day-to-day interface differs.

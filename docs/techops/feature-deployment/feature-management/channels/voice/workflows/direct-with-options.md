@@ -6,7 +6,7 @@ title: "ThreadConnect Voice Direct + Wait Experience Setup"
 
 # ThreadConnect Voice Direct + Wait Experience Setup
 
-**Connie Voice Direct + Wait Experience** provides the most advanced options menu where callers can choose callback or voicemail while retaining their queue position. This creates three possible outcomes for callers.
+**ThreadConnect Voice Direct + Wait Experience** provides the most advanced options menu where callers can choose callback or voicemail while retaining their queue position. This creates three possible outcomes for callers.
 
 ## Caller Experience & Three Outcomes
 
@@ -121,13 +121,13 @@ This workflow requires a more sophisticated Studio Flow:
 
 ## Studio Flow Implementation
 
-The Connie Voice Direct + Wait Experience is implemented using the Studio Flow:
-- **"Connie Voice Direct + Wait Experience (with Email)"** - Advanced options menu with email notifications
+The ThreadConnect Voice Direct + Wait Experience is implemented using the Studio Flow:
+- **"ThreadConnect Voice Direct + Wait Experience (with Email)"** - Advanced options menu with email notifications
 
 ## Current NSS Implementation
 
 The NSS (Northeastern Social Services) deployment provides a working example:
-- **Test Line** (+17254447060): Uses "Connie Voice Direct + Wait Experience (with Email)" Studio Flow
+- **Test Line** (+17254447060): Uses "ThreadConnect Voice Direct + Wait Experience (with Email)" Studio Flow
 - **Features**: Full options menu with email notification capabilities
 - **Outcomes**: Demonstrates all three caller outcome scenarios
 
@@ -142,7 +142,7 @@ This workflow supports all add-ons:
 
 ## Migration Paths
 
-### From Connie Voice Direct + Voicemail
+### From ThreadConnect Voice Direct + Voicemail {#from-connie-voice-direct--voicemail}
 - Add options menu during wait time
 - Implement callback system with queue retention
 - Test wait experience and outcome tracking

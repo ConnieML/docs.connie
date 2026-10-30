@@ -26,7 +26,7 @@ Gather from the CEO **before starting**. Do not infer or default these silently.
 
 | Parameter | Why you need it | Example |
 |---|---|---|
-| Connie client account name | Selects the Twilio sub-account profile | `ConnieCareTeam`, `NSS`, `LifelineNV` |
+| ThreadConnect client account name | Selects the Twilio sub-account profile | `ConnieCareTeam`, `NSS`, `LifelineNV` |
 | Phone number being converted | E.164 format; what calls hit | `+17025551234` |
 | Target TaskRouter queue | Where calls land after the wait experience | Existing Workflow SID, or "create new" + queue name |
 | Admin email destination | Where voicemail recordings + transcripts get emailed | `admin@client.org` |

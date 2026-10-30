@@ -7,24 +7,24 @@ description: "Why desktop alerts don't show, and how to fix it — for agents an
 
 # ThreadConnect Task Alerts — Advanced Troubleshooting
 
-**Purpose:** get an on-screen desktop pop-up (with sound) when a new task is routed to you in Connie, even when Chrome isn't your focused window.
+**Purpose:** get an on-screen desktop pop-up (with sound) when a new task is routed to you in ThreadConnect, even when Chrome isn't your focused window.
 
-**Supported browser:** Google Chrome. These steps assume Chrome, on a **standalone** Connie page (e.g. `your-org.connie.team`) — not Connie embedded inside another website.
+**Supported browser:** Google Chrome. These steps assume Chrome, on a **standalone** ThreadConnect page (e.g. `your-org.connie.team`) — not ThreadConnect embedded inside another website.
 
 :::danger The #1 gotcha
-A notification can be **delivered to your computer but never shown on screen** — it lands silently in the OS notification list instead. If alerts "aren't working," the fastest tell is to **open your notification center and look**: if Connie alerts are **piled up there** but you never saw them pop, it's a **display / Focus** setting — *not* Connie, and *not* a permissions problem.
+A notification can be **delivered to your computer but never shown on screen** — it lands silently in the OS notification list instead. If alerts "aren't working," the fastest tell is to **open your notification center and look**: if ThreadConnect alerts are **piled up there** but you never saw them pop, it's a **display / Focus** setting — *not* ThreadConnect, and *not* a permissions problem.
 :::
 
 ---
 
 ## ✅ Basic checklist (all agents — do these 3 in order)
 
-### 1. Chrome — allow notifications for your Connie site
+### 1. Chrome — allow notifications for your ThreadConnect site {#1-chrome--allow-notifications-for-your-connie-site}
 
-1. In Chrome, open your Connie tab (e.g. `your-org.connie.team`).
+1. In Chrome, open your ThreadConnect tab (e.g. `your-org.connie.team`).
 2. Click the **tune / sliders icon** (or 🔒) at the left of the address bar → **Site settings**.
 3. Set **Notifications → Allow**.
-4. Confirm you're in the **correct Chrome profile** (avatar, top-right) — the one you actually log in to Connie with. **Permissions are per-profile.**
+4. Confirm you're in the **correct Chrome profile** (avatar, top-right) — the one you actually log in to ThreadConnect with. **Permissions are per-profile.**
 
 ### 2a. Mac — turn on notifications + alert style
 
@@ -41,7 +41,7 @@ A notification can be **delivered to your computer but never shown on screen** �
 
 ### 3. Turn off / pass through "quiet" modes
 
-- **Mac:** Control Center (top-right) → make sure **Focus / Do Not Disturb** isn't active (no moon icon). To keep DND on but let Connie through, see **Layer 3** below.
+- **Mac:** Control Center (top-right) → make sure **Focus / Do Not Disturb** isn't active (no moon icon). To keep DND on but let ThreadConnect through, see **Layer 3** below.
 - **Windows:** **Settings → System → Notifications** → ensure **Do not disturb** is Off.
 
 > **Quick test:** switch to another app (Chrome in the background) → have a task routed to you → you should get an on-screen alert with sound.
@@ -52,15 +52,15 @@ A notification can be **delivered to your computer but never shown on screen** �
 
 Desktop alerts pass through **three independent layers**, and any one can silently kill them. Diagnose in this order.
 
-### Layer 1 — Is the notification even arriving? (rule out Connie / Chrome)
+### Layer 1 — Is the notification even arriving? (rule out ThreadConnect / Chrome) {#layer-1--is-the-notification-even-arriving-rule-out-connie--chrome}
 
-Open the OS notification list and look for piled-up Connie notifications:
+Open the OS notification list and look for piled-up ThreadConnect notifications:
 
 - **Mac:** click the **clock** (top-right) to open Notification Center.
 - **Windows:** click the **date/time** (bottom-right).
 
 :::tip
-If they're **stacked there but were never shown on screen** → delivery is fine; it's a display setting (Layer 2/3). **Do not touch Connie or site permissions.**
+If they're **stacked there but were never shown on screen** → delivery is fine; it's a display setting (Layer 2/3). **Do not touch ThreadConnect or site permissions.**
 :::
 
 ### Layer 2 — Alert / display style (the most common silent culprit)
@@ -71,13 +71,13 @@ If they're **stacked there but were never shown on screen** → delivery is fine
 
 ### Layer 3 — Focus / Do Not Disturb suppression
 
-- **Mac:** Focus modes each have their **own** allow-list. To keep DND on but let Connie through: **System Settings → Focus →** *(each mode you use, e.g. Do Not Disturb, Reduce Interruptions)* **→ Allowed Notifications → Apps → ➕ → add Google Chrome.** Adding it to one mode does **not** cover the others — add it to **every** mode you use, and watch for a **scheduled Focus** (e.g. an automatic 9am–5pm Do Not Disturb) that silently activates during work hours.
+- **Mac:** Focus modes each have their **own** allow-list. To keep DND on but let ThreadConnect through: **System Settings → Focus →** *(each mode you use, e.g. Do Not Disturb, Reduce Interruptions)* **→ Allowed Notifications → Apps → ➕ → add Google Chrome.** Adding it to one mode does **not** cover the others — add it to **every** mode you use, and watch for a **scheduled Focus** (e.g. an automatic 9am–5pm Do Not Disturb) that silently activates during work hours.
 - **Windows:** Settings → System → **Focus / Do not disturb** → check **automatic rules** (turns on during set hours, when an app is full-screen, when mirroring a display, when gaming). Disable the rules that fire during shifts, or add Chrome under **Set priority notifications**.
 
 ### Chrome-side advanced checks
 
-- `chrome://settings/content/notifications` — confirm your Connie domain is under **Allowed**, not **Blocked**, and that **"Sites can ask to send notifications"** is enabled.
-- **Profiles:** confirm you're logged in to Connie in the **same profile** that holds the Allow permission. A second/work profile without the permission is a common miss.
+- `chrome://settings/content/notifications` — confirm your ThreadConnect domain is under **Allowed**, not **Blocked**, and that **"Sites can ask to send notifications"** is enabled.
+- **Profiles:** confirm you're logged in to ThreadConnect in the **same profile** that holds the Allow permission. A second/work profile without the permission is a common miss.
 - `chrome://settings/system` — if available, ensure Chrome uses **native OS notifications** (so OS Focus/style settings apply).
 - **Chrome must be running** (even in the background / minimized) to receive a push. Fully quitting Chrome = no notification.
 
@@ -106,7 +106,7 @@ cat "$HOME/Library/DoNotDisturb/DB/Assertions.json"
 
 ## TL;DR
 
-- **Chrome →** Allow notifications for Connie.
+- **Chrome →** Allow notifications for ThreadConnect.
 - **Mac →** Notifications → Chrome → **Alerts** + sound.
 - **Windows →** Notifications → Chrome → **banners** + sound.
 - **Turn off Do Not Disturb** (or add Chrome to its allow-list).

@@ -10,7 +10,7 @@ import PluginLibraryFeature from "../_plugin-library-feature.md";
 
 # Canned Responses — Overview
 
-The Canned Responses feature gives Connie agents a per-account library of pre-written replies they can insert or send into the active conversation in one click. Each Connie sub-account ships with its own library — content is fully customizable per client.
+The Canned Responses feature gives ThreadConnect agents a per-account library of pre-written replies they can insert or send into the active conversation in one click. Each ThreadConnect sub-account ships with its own library — content is fully customizable per client.
 
 The library is delivered by a Twilio Serverless function (`chat-responses.js`) reading a single JSON asset (`responses.private.json`) hosted in each account's own serverless runtime. The Flex plugin renders the library either in the CRM Panel (table of categorized responses with Insert + Send buttons) or as a dropdown beneath the Message Input Actions, depending on per-account config.
 
@@ -33,7 +33,7 @@ When `location: "CRM"` is set, the canned responses render in the right-hand CRM
 - **Insert** — appends the response text to the message composer using the `SetInputText` action. Agent can edit before sending.
 - **Send** — sends the response directly into the active conversation using the `SendMessage` action.
 
-**Account constraint:** if Enhanced CRM Container is enabled on the account (Connie's hosted CRM iframe — `enhanced_crm_container.enabled: true`), the CRM Panel slot is occupied. In that case, use Message Input Actions placement instead, or expose Canned Responses as a tab inside Enhanced CRM (advanced).
+**Account constraint:** if Enhanced CRM Container is enabled on the account (ThreadConnect's hosted CRM iframe — `enhanced_crm_container.enabled: true`), the CRM Panel slot is occupied. In that case, use Message Input Actions placement instead, or expose Canned Responses as a tab inside Enhanced CRM (advanced).
 
 ### Message Input Actions
 
@@ -78,7 +78,7 @@ The Send button on an email task does **not** auto-dispatch the email — it fal
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-Each Connie sub-account has its own serverless runtime — there is no shared content layer. Deploying canned responses to Lifeline does **not** affect NSS, CCT, HHOVV, or any other account's runtime.
+Each ThreadConnect sub-account has its own serverless runtime — there is no shared content layer. Deploying canned responses to Lifeline does **not** affect NSS, CCT, HHOVV, or any other account's runtime.
 
 ## Runbooks
 

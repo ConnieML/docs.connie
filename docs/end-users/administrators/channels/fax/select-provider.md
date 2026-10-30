@@ -10,7 +10,7 @@ import Link from '@docusaurus/Link';
 
 ## Introduction
 
-ConnieRTC integrates with multiple fax service providers to give your nonprofit organization the flexibility to choose the solution that best fits your needs and budget. Our fax integration allows you to receive and send faxes directly through the Connie platform, creating seamless workflows for your staff.
+ConnieRTC integrates with multiple fax service providers to give your nonprofit organization the flexibility to choose the solution that best fits your needs and budget. Our fax integration allows you to receive and send faxes directly through the ThreadConnect platform, creating seamless workflows for your staff.
 
 ## How Fax Integration Works
 
@@ -84,7 +84,7 @@ Choose your fax service provider below to view setup instructions and integratio
 
 </div>
 
-*Don't see your preferred fax provider? Contact the Connie Care team to discuss integration options.*
+*Don't see your preferred fax provider? Contact the ThreadConnect Care team to discuss integration options.*
 
 ## Provider Comparison
 
@@ -144,7 +144,7 @@ Choose your fax service provider below to view setup instructions and integratio
 
 ## Need Help?
 
-**Connie Care Team**: Contact us for assistance choosing the right fax provider for your organization
+**ThreadConnect Care Team**: Contact us for assistance choosing the right fax provider for your organization
 
 **Technical Support**: Available for setup and configuration questions
 

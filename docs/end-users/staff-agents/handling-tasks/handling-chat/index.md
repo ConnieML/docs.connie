@@ -11,11 +11,11 @@ A task that arrives while you're closed will **still be waiting for four full da
 
 Live phone calls and web chats are the exception; their window is much shorter, because someone is on the line right now.
 
-Need a different window for a program or channel? Custom settings are available — contact your Connie account representative or the [Connie Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
+Need a different window for a program or channel? Custom settings are available — contact your ThreadConnect account representative or the [ThreadConnect Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
 :::
 
 
-Connie lets you communicate with clients through text-based channels — including SMS text messages, webchat, WhatsApp, and Facebook Messenger. All of these work in a similar way within the Connie interface.
+ThreadConnect lets you communicate with clients through text-based channels — including SMS text messages, webchat, WhatsApp, and Facebook Messenger. All of these work in a similar way within the ThreadConnect interface.
 
 This section covers:
 
@@ -27,5 +27,5 @@ This section covers:
 Unlike calls, you can have **multiple active chat and SMS conversations at the same time**. Each one appears as a separate task in your Task Queue, and you can switch between them by clicking on different tasks.
 
 :::info
-You can even handle chat tasks **while on a phone call**. Connie supports working on one call plus multiple message conversations simultaneously.
+You can even handle chat tasks **while on a phone call**. ThreadConnect supports working on one call plus multiple message conversations simultaneously.
 :::

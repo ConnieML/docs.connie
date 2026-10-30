@@ -24,7 +24,7 @@ Gather **before diagnosing**:
 
 | Parameter | Why you need it |
 |---|---|
-| Connie client account name | Selects the right Twilio profile (`twilio profiles:use <ClientName>`) |
+| ThreadConnect client account name | Selects the right Twilio profile (`twilio profiles:use <ClientName>`) |
 | Reported symptom | Match to a section below; if no match, see [§7 If Your Variant Differs](#7-if-your-variant-differs) |
 | When it started | Narrows the timeline; correlate with deploy log and `git log` |
 | Sample call SID (if available) | Lets you pull exact Studio execution + serverless logs for that call |
@@ -132,7 +132,7 @@ curl -u "$API_KEY:$API_SECRET" https://flex-api.twilio.com/v1/Configuration | jq
 **Diagnose:**
 
 1. Check Mailgun dashboard → Logs for the relevant domain → filter by recipient.
-2. If "delivered" in Mailgun: it's the recipient's spam folder, mail server, or filtering. Out of Connie's control.
+2. If "delivered" in Mailgun: it's the recipient's spam folder, mail server, or filtering. Out of ThreadConnect's control.
 3. If "rejected" or "failed": read the error reason. Most commonly invalid recipient or domain not verified.
 4. If no log entry at all: the function never called Mailgun. Check serverless logs for errors during the relevant call.
 
@@ -214,7 +214,7 @@ diff <(cat flex-config/ui_attributes.<client>.json | jq '.custom_data') live.jso
 - Or, if the live state is wrong: deploy with `OVERWRITE_CONFIG=true` to make source win.
 - Either way, **document why the drift happened** so it doesn't recur.
 
-**Prevention:** The deploy pipeline's `merge({}, common, env, current)` semantics make live always win on routine deploys. This is intentional. But it means source files can silently drift. A periodic drift check should be part of the monthly Connie audit.
+**Prevention:** The deploy pipeline's `merge({}, common, env, current)` semantics make live always win on routine deploys. This is intentional. But it means source files can silently drift. A periodic drift check should be part of the monthly ThreadConnect audit.
 
 ---
 

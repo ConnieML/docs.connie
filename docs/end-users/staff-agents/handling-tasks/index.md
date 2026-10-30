@@ -11,11 +11,11 @@ A task that arrives while you're closed will **still be waiting for four full da
 
 Live phone calls and web chats are the exception; their window is much shorter, because someone is on the line right now.
 
-Need a different window for a program or channel? Custom settings are available — contact your Connie account representative or the [Connie Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
+Need a different window for a program or channel? Custom settings are available — contact your ThreadConnect account representative or the [ThreadConnect Care Team](/get-support/overview). See **[How Long a Task Stays in Your Queue](/end-users/staff-agents/handling-tasks/how-long-tasks-last)**.
 :::
 
 
-Everything in Connie comes to you as a **task** — whether it's a phone call, an email, a text message, or a fax. Tasks appear in your **Task Queue** on the left side of the screen, and you accept them by clicking the green checkmark.
+Everything in ThreadConnect comes to you as a **task** — whether it's a phone call, an email, a text message, or a fax. Tasks appear in your **Task Queue** on the left side of the screen, and you accept them by clicking the green checkmark.
 
 This section covers how to handle tasks on each channel:
 
@@ -58,13 +58,13 @@ When you're done:
 
 ### Sending a Task to Someone Else
 
-If a task needs someone else, press the **Send** button at the top of the task. Connie shows you only the choices that make sense for that task:
+If a task needs someone else, press the **Send** button at the top of the task. ThreadConnect shows you only the choices that make sense for that task:
 
-- **Transfer** — to a coworker or a department in Connie. It stays in Connie.
-- **Hand off** — by email to a coworker who doesn't use Connie. It leaves Connie and closes.
-- **Refer out** — by email to someone at another organization. It leaves Connie and closes.
+- **Transfer** — to a coworker or a department in ThreadConnect. It stays in ThreadConnect.
+- **Hand off** — by email to a coworker who doesn't use ThreadConnect. It leaves ThreadConnect and closes.
+- **Refer out** — by email to someone at another organization. It leaves ThreadConnect and closes.
 
-Phone calls, web chats and texts can only be transferred, because someone is waiting with you. See **[Connie Task Sender](/end-users/staff-agents/task-sender)** for the step-by-step.
+Phone calls, web chats and texts can only be transferred, because someone is waiting with you. See **[ThreadConnect Task Sender](/end-users/staff-agents/task-sender)** for the step-by-step.
 
 ## Best Practices
 

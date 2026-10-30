@@ -43,7 +43,7 @@ We now have:
 | Account | Command | CLI Profile |
 |---------|---------|-------------|
 | Nevada Senior Services | `./deploy.sh nss` | NSS |
-| Connie Care Team | `./deploy.sh conniecareteam` | ConnieCareTeam |
+| ThreadConnect Care Team | `./deploy.sh conniecareteam` | ConnieCareTeam |
 | Helping Hands of Vegas Valley | `./deploy.sh hhovv` | HHOVV |
 | Development Sandbox | `./deploy.sh devsandbox` | DevSandBox |
 
@@ -52,7 +52,7 @@ We now have:
 | File | Account |
 |------|---------|
 | `.env.nss` | Nevada Senior Services |
-| `.env.conniecareteam` | Connie Care Team |
+| `.env.conniecareteam` | ThreadConnect Care Team |
 | `.env.hhovv` | Helping Hands of Vegas Valley |
 | `.env.devsandbox` | Development Sandbox |
 
@@ -87,7 +87,7 @@ cd /path/to/basecamp-v26.02/serverless-functions
 
 Replace `<account>` with one of:
 - `nss` - Nevada Senior Services
-- `conniecareteam` - Connie Care Team
+- `conniecareteam` - ThreadConnect Care Team
 - `hhovv` - Helping Hands of Vegas Valley
 - `devsandbox` - Development Sandbox
 

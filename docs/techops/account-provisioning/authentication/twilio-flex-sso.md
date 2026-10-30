@@ -193,7 +193,7 @@ Location: Flex → Single Sign-On → Attribute Mapping
 
 **5.2 Set Vanity Domain**
 
-**Option A: Connie Subdomain (Recommended)**
+**Option A: ThreadConnect Subdomain (Recommended)**
 ```
 https://nss.connie.team
 ```

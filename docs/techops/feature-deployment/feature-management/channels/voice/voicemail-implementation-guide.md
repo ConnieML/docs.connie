@@ -14,7 +14,7 @@ This page contains legacy documentation for the previous voicemail architecture.
 
 # Legacy Voicemail Implementation Guide
 
-This guide helps you choose and implement the right voicemail solution for older Connie Professional Services template deployments.
+This guide helps you choose and implement the right voicemail solution for older ThreadConnect Professional Services template deployments.
 
 ## Migration to New Architecture
 
@@ -75,4 +75,4 @@ The new modular architecture provides:
 
 - **New Implementations**: Follow the [Voicemail Overview](/techops/feature-deployment/feature-management/channels/voice/voicemail)
 - **Existing Deployments**: Continue using current setup or plan migration
-- **Professional Services**: Contact your Connie Professional Services representative
+- **Professional Services**: Contact your ThreadConnect Professional Services representative

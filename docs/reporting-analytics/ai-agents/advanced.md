@@ -8,7 +8,7 @@ sidebar_position: 2
 
 > 📦 **Advanced — paid upgrade (additional fee).** The programmatic engine behind Advanced: pull reporting data via API and build funder / county / impact + custom reports. **Requires an account upgrade** — gated to upgraded accounts.
 
-**Purpose:** The developer reference for programmatic access to Connie's historical reporting data — authentication, the data model, querying reports, and building the custom pipelines that power **Advanced**.
+**Purpose:** The developer reference for programmatic access to ThreadConnect's historical reporting data — authentication, the data model, querying reports, and building the custom pipelines that power **Advanced**.
 
 **Audience / Tier:** Developers & AI agents · 🟪 Advanced · paid upgrade.
 
@@ -20,7 +20,7 @@ See **[Concepts & Glossary](/reporting-analytics/concepts-glossary)** for all me
 
 ## What this is
 
-Connie's **historical reporting** is powered by **Twilio Flex Insights**, which runs on the **GoodData / Ytica** analytics platform. The Advanced tier reads from that warehouse over its API, then reformats the results into funder-, county-, and grant-ready deliverables.
+ThreadConnect's **historical reporting** is powered by **Twilio Flex Insights**, which runs on the **GoodData / Ytica** analytics platform. The Advanced tier reads from that warehouse over its API, then reformats the results into funder-, county-, and grant-ready deliverables.
 
 :::caution This is a different API from the rest of Twilio
 Flex Insights does **not** use your Twilio Account SID / Auth Token / API keys. It uses GoodData's own **two-step token login (SST → TT)** against `analytics.ytica.com`. Everything on this page targets that API, not the standard Twilio REST API.
@@ -86,7 +86,7 @@ curl -s -b "GDCAuthTT=$TT" -H "Accept: application/json" \
 
 ## The data model
 
-The warehouse exposes a rich data model — hundreds of attributes (dimensions) and metrics. The ones that matter for Connie reporting:
+The warehouse exposes a rich data model — hundreds of attributes (dimensions) and metrics. The ones that matter for ThreadConnect reporting:
 
 - **Dimensions** — Department, Handling Department, Agent Team, Handling Team, Queue, Agent, Communication Channel, Agent Location, Agent Role.
 - **Metrics** — Handled / Missed / Rejected, Talk / Wrap / Hold / Queue time, Handle vs. Experience Time, Abandoned %, Service Level.

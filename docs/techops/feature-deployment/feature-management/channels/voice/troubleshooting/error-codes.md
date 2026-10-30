@@ -6,7 +6,7 @@ title: "Voice Channel Error Codes"
 
 # Voice Channel Error Codes
 
-Comprehensive reference for diagnosing and fixing specific error codes in Connie's voice system.
+Comprehensive reference for diagnosing and fixing specific error codes in ThreadConnect's voice system.
 
 ## Twilio Platform Errors
 
@@ -18,7 +18,7 @@ Comprehensive reference for diagnosing and fixing specific error codes in Connie
 **Common Causes**:
 - Webhook URL is incorrect or inaccessible
 - SSL certificate issues
-- Firewall blocking Connie's requests
+- Firewall blocking ThreadConnect's requests
 - Server overload or downtime
 
 **Solutions**:

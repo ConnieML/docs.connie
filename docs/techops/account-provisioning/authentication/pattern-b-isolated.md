@@ -17,7 +17,7 @@ Use Pattern B when:
 - ✅ Independent billing and financial separation
 - ✅ Different vanity domains for each organization
 
-**Example:** HHOVV as a separate client from NSS, or any independent nonprofit on the Connie platform.
+**Example:** HHOVV as a separate client from NSS, or any independent nonprofit on the ThreadConnect platform.
 
 ---
 
@@ -390,7 +390,7 @@ Location: Auth0 → User Management → Users (with search/filter)
 - Domain: `hhovv.connie.team` (separate)
 - Users: HHOVV staff only
 
-**Result:** Complete organizational isolation achieved. NSS and HHOVV operate as independent Connie clients.
+**Result:** Complete organizational isolation achieved. NSS and HHOVV operate as independent ThreadConnect clients.
 
 ---
 

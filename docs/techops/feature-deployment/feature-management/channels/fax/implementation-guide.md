@@ -6,7 +6,7 @@ title: "Fax Implementation Guide - Choose Your Solution"
 
 # Fax Implementation Guide
 
-This guide helps you choose and implement the right fax solution for your client within their existing Connie deployment.
+This guide helps you choose and implement the right fax solution for your client within their existing ThreadConnect deployment.
 
 ## Which Fax Solution Does Your Client Need?
 
@@ -89,7 +89,7 @@ Choose the option that best fits your client's requirements:
 ## 🚀 Quick Start Prerequisites
 
 ### For All Options:
-- ✅ Admin access to your organization's Connie deployment
+- ✅ Admin access to your organization's ThreadConnect deployment
 - ✅ Sinch account with fax capabilities
 - ✅ Dedicated fax number (can be ported or new)
 - ✅ Email addresses for fax delivery
@@ -196,7 +196,7 @@ This ensures:
 Click on your preferred option above to get started with step-by-step implementation instructions tailored to your client's fax needs.
 
 :::tip Professional Services Available
-If you prefer to have our team handle the implementation, professional services are available for all fax options. Our team has extensive experience with Sinch integration and HIPAA-compliant fax solutions. Contact your Connie representative for details.
+If you prefer to have our team handle the implementation, professional services are available for all fax options. Our team has extensive experience with Sinch integration and HIPAA-compliant fax solutions. Contact your ThreadConnect representative for details.
 :::
 
 :::info Why Sinch for Fax?
@@ -231,4 +231,4 @@ If your client currently uses traditional fax machines:
 3. **Training**: Each option includes training materials
 4. **Support**: 30-day post-migration support included
 
-Contact your Connie representative to discuss migration planning.
+Contact your ThreadConnect representative to discuss migration planning.

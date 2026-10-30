@@ -72,7 +72,7 @@ import TabItem from "@theme/TabItem";
 <details>
 <summary><strong>🔥 "We're drowning in voicemails and missed calls"</strong></summary>
 
-Connie automatically:
+ThreadConnect automatically:
 - Captures every call as a trackable task
 - Transcribes voicemails for quick scanning
 - Routes urgent calls to available staff
@@ -87,7 +87,7 @@ Connie automatically:
 <details>
 <summary><strong>📱 "Our clients prefer texting but we only have a phone line"</strong></summary>
 
-Connie enables:
+ThreadConnect enables:
 - Text-enable your existing phone number
 - Handle SMS/MMS from the same interface as calls
 - Set up keyword auto-responses
@@ -102,7 +102,7 @@ Connie enables:
 <details>
 <summary><strong>🏥 "We still receive critical faxes but have no fax machine"</strong></summary>
 
-Connie provides:
+ThreadConnect provides:
 - Receive faxes as PDF emails
 - Send faxes from any computer
 - HIPAA-compliant transmission
@@ -117,7 +117,7 @@ Connie provides:
 <details>
 <summary><strong>🌙 "We need coverage outside business hours"</strong></summary>
 
-Connie offers:
+ThreadConnect offers:
 - 24/7 voicemail and message capture
 - Emergency call routing rules
 - On-call scheduling and escalation
@@ -168,14 +168,14 @@ Connie offers:
 <TabItem value="by-problem" label="By Problem">
 
 ### Communication Management
-| Challenge | Connie Solution | Key Features |
+| Challenge | ThreadConnect Solution | Key Features |
 |-----------|----------------|--------------|
 | Missed calls | Auto-capture & route | Voice Direct, Voicemail |
 | Slow response | Priority queuing | Workflow Manager |
 | Lost messages | Unified inbox | Channel Manager |
 
 ### Operational Efficiency
-| Challenge | Connie Solution | Key Features |
+| Challenge | ThreadConnect Solution | Key Features |
 |-----------|----------------|--------------|
 | Manual processes | Automation rules | Workflow Manager |
 | No metrics | Real-time dashboards | Analytics |
@@ -189,12 +189,12 @@ Connie offers:
 <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginTop: '40px'}}>
   <div style={{textAlign: 'center', padding: '30px', background: '#f8f9fa', borderRadius: '8px'}}>
     <h3>🚀 Quick Setup</h3>
-    <p>Get Connie running in under 30 minutes</p>
+    <p>Get ThreadConnect running in under 30 minutes</p>
     <a href="/getting-started/quick-setup" className="button button--primary">Start Setup Guide</a>
   </div>
   <div style={{textAlign: 'center', padding: '30px', background: '#f8f9fa', borderRadius: '8px'}}>
     <h3>📞 Book a Demo</h3>
-    <p>See Connie in action for your use case</p>
+    <p>See ThreadConnect in action for your use case</p>
     <a href="https://connie.one/demo" className="button button--secondary">Schedule Demo</a>
   </div>
 </div>

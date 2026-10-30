@@ -6,7 +6,7 @@ sidebar_position: 8
 
 # Staff Agent Frequently Asked Questions
 
-Quick answers to common questions about using Connie as a staff agent.
+Quick answers to common questions about using ThreadConnect as a staff agent.
 
 ## 🔐 Account & Access
 
@@ -36,9 +36,9 @@ Contact your supervisor or IT administrator immediately. They will need to reset
 </details>
 
 <details>
-<summary>Can I use Connie on my phone or tablet?</summary>
+<summary>Can I use ThreadConnect on my phone or tablet?</summary>
 
-Connie is optimized for **desktop/laptop browsers**. While you may be able to access it on mobile devices, the experience is best on a computer with a full screen. Check with your organization about mobile support and policies.
+ThreadConnect is optimized for **desktop/laptop browsers**. While you may be able to access it on mobile devices, the experience is best on a computer with a full screen. Check with your organization about mobile support and policies.
 
 </details>
 
@@ -71,11 +71,11 @@ When your status is set to **"Available"**, new tasks will appear in your **Inbo
 
 Press the **Send** button at the top of the task. You'll see up to three choices:
 
-- **Transfer** — to a coworker or department in Connie. Connie keeps track of it.
-- **Hand off** — by email to a coworker who doesn't use Connie. The task closes in Connie.
-- **Refer out** — by email to someone at another organization. The task closes in Connie.
+- **Transfer** — to a coworker or department in ThreadConnect. ThreadConnect keeps track of it.
+- **Hand off** — by email to a coworker who doesn't use ThreadConnect. The task closes in ThreadConnect.
+- **Refer out** — by email to someone at another organization. The task closes in ThreadConnect.
 
-Easy way to remember it: **Transfer keeps it. Hand off and Refer out let it go.** See [Connie Task Sender](/end-users/staff-agents/task-sender).
+Easy way to remember it: **Transfer keeps it. Hand off and Refer out let it go.** See [ThreadConnect Task Sender](/end-users/staff-agents/task-sender).
 
 </details>
 
@@ -106,7 +106,7 @@ Response time expectations vary by organization. Check with your supervisor for 
 <details>
 <summary>Can I see my task history?</summary>
 
-Yes, most Connie implementations include reporting and history features. Ask your supervisor how to access:
+Yes, most ThreadConnect implementations include reporting and history features. Ask your supervisor how to access:
 - Your completed tasks
 - Your performance metrics
 - Historical client interactions
@@ -118,8 +118,8 @@ Yes, most Connie implementations include reporting and history features. Ask you
 <details>
 <summary>What channels can I use to contact clients?</summary>
 
-Connie supports multiple channels:
-- 📞 **Phone calls** (VoIP through Connie)
+ThreadConnect supports multiple channels:
+- 📞 **Phone calls** (VoIP through ThreadConnect)
 - 💬 **SMS text messages**
 - 💻 **Webchat**
 - 📱 **WhatsApp**
@@ -131,7 +131,7 @@ The available channels depend on your organization's setup and the client's pref
 </details>
 
 <details>
-<summary>Can I make outbound calls through Connie?</summary>
+<summary>Can I make outbound calls through ThreadConnect?</summary>
 
 This depends on your organization's configuration and your permissions. Check with your supervisor about:
 - Outbound calling capabilities
@@ -156,7 +156,7 @@ Message read receipts depend on the communication channel:
 
 If you're bilingual and your organization supports it, yes! Check with your supervisor about:
 - Language capabilities in your organization
-- How to indicate your language skills in Connie
+- How to indicate your language skills in ThreadConnect
 - Translation resources if needed
 
 </details>
@@ -186,7 +186,7 @@ See [Recording Notes](/end-users/staff-agents/recording-notes) for more guidance
 <details>
 <summary>Can I edit or delete notes after saving them?</summary>
 
-This depends on your organization's Connie configuration. Some systems allow editing within a time window, while others lock notes once saved. Check with your supervisor about your organization's policy.
+This depends on your organization's ThreadConnect configuration. Some systems allow editing within a time window, while others lock notes once saved. Check with your supervisor about your organization's policy.
 
 </details>
 
@@ -261,19 +261,19 @@ Ask your supervisor about your organization's task routing rules.
 <details>
 <summary>Do I need to download any software?</summary>
 
-No! Connie is a **web-based platform** that runs entirely in your browser. The only app you need is **Google Authenticator** on your phone for two-factor authentication.
+No! ThreadConnect is a **web-based platform** that runs entirely in your browser. The only app you need is **Google Authenticator** on your phone for two-factor authentication.
 
 </details>
 
 <details>
-<summary>Why does Connie ask for microphone access?</summary>
+<summary>Why does ThreadConnect ask for microphone access?</summary>
 
-If you'll be making or receiving phone calls through Connie, your browser needs access to your computer's microphone. This allows you to speak with clients during calls.
+If you'll be making or receiving phone calls through ThreadConnect, your browser needs access to your computer's microphone. This allows you to speak with clients during calls.
 
 </details>
 
 <details>
-<summary>Can I use Connie with a VPN?</summary>
+<summary>Can I use ThreadConnect with a VPN?</summary>
 
 This depends on your organization's IT policies. Some organizations require VPN use, while others don't. Check with your IT administrator.
 
@@ -298,11 +298,11 @@ This depends on your organization's IT policies. Some organizations require VPN 
 </details>
 
 <details>
-<summary>Where can I learn more about using Connie?</summary>
+<summary>Where can I learn more about using ThreadConnect?</summary>
 
 - **[Getting Started](/end-users/staff-agents/getting-started)** - Initial setup and login
 - **[Handling Tasks](/end-users/staff-agents/handling-tasks)** - Managing inquiries and referrals
-- **[Connie Task Sender](/end-users/staff-agents/task-sender)** - Transfer, Hand off and Refer out with the Send button
+- **[ThreadConnect Task Sender](/end-users/staff-agents/task-sender)** - Transfer, Hand off and Refer out with the Send button
 - **[Transferring Tasks](/end-users/staff-agents/transferring-tasks)** - Transferring to a coworker or department
 - **[Recording Notes](/end-users/staff-agents/recording-notes)** - Documentation best practices
 - **[Troubleshooting](/end-users/staff-agents/troubleshooting)** - Common issues and solutions
@@ -315,7 +315,7 @@ This depends on your organization's IT policies. Some organizations require VPN 
 See [Get Support](/get-support/overview) for complete support options, including:
 - Your supervisor (first point of contact)
 - IT/technical support
-- Connie platform support
+- ThreadConnect platform support
 
 </details>
 
@@ -349,7 +349,7 @@ Your supervisor can provide details about your organization's specific performan
 <details>
 <summary>Can I see my performance stats?</summary>
 
-Most Connie implementations include reporting features. Ask your supervisor about accessing your:
+Most ThreadConnect implementations include reporting features. Ask your supervisor about accessing your:
 - Personal dashboard
 - Performance reports
 - Task completion rates
@@ -359,9 +359,9 @@ Most Connie implementations include reporting features. Ask your supervisor abou
 ## 🔒 Privacy & Security
 
 <details>
-<summary>Is Connie secure?</summary>
+<summary>Is ThreadConnect secure?</summary>
 
-Yes! Connie includes multiple security features:
+Yes! ThreadConnect includes multiple security features:
 - Two-factor authentication (2FA)
 - Encrypted communications
 - Secure data storage
@@ -381,7 +381,7 @@ Report it immediately to your supervisor. Do not:
 </details>
 
 <details>
-<summary>Can I access Connie from home?</summary>
+<summary>Can I access ThreadConnect from home?</summary>
 
 This depends on your organization's policies. Some organizations allow remote access, while others restrict access to office computers. Check with your supervisor and IT department.
 

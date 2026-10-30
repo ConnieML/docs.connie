@@ -97,7 +97,7 @@ Status: Resolved
 ### Remember:
 - 🔐 **Notes are part of the client record** - treat them as confidential
 - 🔐 **Follow HIPAA and privacy policies** - only include necessary information
-- 🔐 **Don't share client information** outside of Connie unless authorized
+- 🔐 **Don't share client information** outside of ThreadConnect unless authorized
 - 🔐 **Be mindful of sensitive information** - use appropriate discretion
 
 ## 📊 Note Categories (If Available)

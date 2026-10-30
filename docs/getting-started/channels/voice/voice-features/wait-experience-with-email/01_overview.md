@@ -6,9 +6,9 @@ title: "Wait Experience + Admin Email — Product Page"
 
 # Wait Experience + Admin Email
 
-**The full-featured Voice Direct configuration.** A caller who reaches your line is greeted by a Connie agent voice, placed on hold, and offered the option — at any time — to switch to a callback or voicemail without losing their place in the queue. If they choose voicemail, the recording and transcript are immediately emailed to your admin email address.
+**The full-featured Voice Direct configuration.** A caller who reaches your line is greeted by a ThreadConnect agent voice, placed on hold, and offered the option — at any time — to switch to a callback or voicemail without losing their place in the queue. If they choose voicemail, the recording and transcript are immediately emailed to your admin email address.
 
-This is what most Connie clients run on their main intake line.
+This is what most ThreadConnect clients run on their main intake line.
 
 ---
 
@@ -16,7 +16,7 @@ This is what most Connie clients run on their main intake line.
 
 1. **Call connects.** Caller hears the configured greeting in the configured voice.
 2. **Hold begins.** Caller hears your custom hold music (or generic music if no custom track is configured).
-3. **Periodic prompts.** Connie reminds the caller they can press `*` to switch to callback or voicemail.
+3. **Periodic prompts.** ThreadConnect reminds the caller they can press `*` to switch to callback or voicemail.
 4. **Three possible outcomes:**
    - **Caller stays on hold** until an agent picks up (normal call flow).
    - **Caller presses `*`** and chooses **callback** — leaves their number, hangs up, keeps their place in queue. When their place comes up, an agent calls them back.
@@ -50,13 +50,13 @@ This is what most Connie clients run on their main intake line.
 - An admin email address (or comma-separated list).
 - A Mailgun domain + API key with sending permission (Mailgun is the current email provider).
 - A configured TaskRouter Workflow for the queue.
-- The Connie deployment with the `callback-and-voicemail-with-email` feature flag enabled.
+- The ThreadConnect deployment with the `callback-and-voicemail-with-email` feature flag enabled.
 
 See the [Setup runbook](/getting-started/channels/voice/voice-features/wait-experience-with-email/setup) for step-by-step provisioning.
 
 ## Related runbooks
 
-- **[Setup](/getting-started/channels/voice/voice-features/wait-experience-with-email/setup)** — first-time provisioning of this config on a Connie account.
+- **[Setup](/getting-started/channels/voice/voice-features/wait-experience-with-email/setup)** — first-time provisioning of this config on a ThreadConnect account.
 - **[Change request](/getting-started/channels/voice/voice-features/wait-experience-with-email/change)** — modifying an existing deployment (swap hold music, add a queue, change admin email, etc.).
 - **[Cancellation](/getting-started/channels/voice/voice-features/wait-experience-with-email/cancel)** — tearing down or reverting to a simpler config.
 - **[Troubleshooting](/getting-started/channels/voice/voice-features/wait-experience-with-email/troubleshoot)** — what to check when callers report problems or admin emails stop arriving.

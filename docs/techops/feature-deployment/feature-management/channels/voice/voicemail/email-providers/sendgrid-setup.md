@@ -6,11 +6,11 @@ title: "SendGrid Email Integration Setup"
 
 # SendGrid Email Setup for Voicemail Notifications
 
-This guide helps you implement SendGrid integration to send automated email notifications when callers leave voicemails in your Connie system. Voicemail audio files will be automatically emailed to admin mailboxes for compliance and record-keeping.
+This guide helps you implement SendGrid integration to send automated email notifications when callers leave voicemails in your ThreadConnect system. Voicemail audio files will be automatically emailed to admin mailboxes for compliance and record-keeping.
 
 ## Prerequisites
 
-- ✅ Connie account with ConnieRTC enabled and a phone number configured
+- ✅ ThreadConnect account with ConnieRTC enabled and a phone number configured
 - ✅ SendGrid account (free tier available)
 - ✅ A domain name you control (or subdomain)
 - ✅ Access to your domain's DNS settings
@@ -87,7 +87,7 @@ DNS changes can take up to 48 hours to propagate. You can check verification sta
 1. In SendGrid dashboard, go to **Settings** → **API Keys**
 2. Click **Create API Key**
 3. Choose **Restricted Access**
-4. Give it a name like "Connie Voicemail Notifications"
+4. Give it a name like "ThreadConnect Voicemail Notifications"
 5. Set permissions:
    - **Mail Send**: Full Access
    - **Mail Settings**: Read Access (optional)
@@ -332,7 +332,7 @@ Send a test email to verify everything works:
 
 :::warning Update Required Values
 Before saving the flow, you'll need to update these placeholders:
-- `YOUR-FUNCTION-URL` - Your Connie Functions domain (Step 4)
+- `YOUR-FUNCTION-URL` - Your ThreadConnect Functions domain (Step 4)
 - `YOUR-WORKFLOW-SID` - Your ConnieRTC Workflow SID
 - `YOUR-CHANNEL-SID` - Your ConnieRTC Channel SID
 :::
@@ -486,7 +486,7 @@ exports.handler = async function(context, event, callback) {
 ### Connect to Your Phone Number
 
 1. In Twilio Console, go to **Phone Numbers** → **Manage** → **Active Numbers**
-2. Click on your Connie phone number
+2. Click on your ThreadConnect phone number
 3. In the **Voice Configuration** section:
    - Set **A call comes in** to your new Studio Flow
 4. Save the configuration
@@ -497,7 +497,7 @@ exports.handler = async function(context, event, callback) {
 
 ### Test the Complete Flow
 
-1. **Call your Connie number**
+1. **Call your ThreadConnect number**
 2. **Press 2** when prompted (for voicemail)
 3. **Leave a test message** and hang up
 4. **Check your admin email** - you should receive:

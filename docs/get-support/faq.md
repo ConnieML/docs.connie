@@ -6,18 +6,18 @@ sidebar_position: 90
 
 # Get Support — Frequently Asked Questions
 
-Quick answers about getting help with Connie. For the full picture, see the **[Support Overview](/get-support/overview)**.
+Quick answers about getting help with ThreadConnect. For the full picture, see the **[Support Overview](/get-support/overview)**.
 
 ## 🛟 Support options
 
 <details>
-<summary>What support options does Connie offer?</summary>
+<summary>What support options does ThreadConnect offer?</summary>
 
-Connie has a **5-tier support system**:
+ThreadConnect has a **5-tier support system**:
 
 1. **[Knowledge Base (L1)](/get-support/docs)** — self-service docs, available 24/7
-2. **[Community Support (L2)](/get-support/community)** — peer-to-peer help from other Connie users
-3. **[Support Tickets (L3)](/get-support/support-ticket-system/submitting-a-ticket)** — formal, tracked requests to the Connie Care Team
+2. **[Community Support (L2)](/get-support/community)** — peer-to-peer help from other ThreadConnect users
+3. **[Support Tickets (L3)](/get-support/support-ticket-system/submitting-a-ticket)** — formal, tracked requests to the ThreadConnect Care Team
 4. **[Live Chat (L4)](/get-support/live-chat)** — premium real-time help for urgent issues
 5. **[Professional Services (L5)](/get-support/professional-services)** — expert implementation & consulting
 
@@ -35,7 +35,7 @@ Start with the **[documentation](/get-support/docs)** (L1) and the search box at
 <details>
 <summary>How do I submit a support ticket?</summary>
 
-You file a ticket **right from inside Connie** — you get a ticket number and can follow it to resolution with the Connie Care Team. See **[Submitting a Ticket](/get-support/support-ticket-system/submitting-a-ticket)** (it includes a short video walkthrough).
+You file a ticket **right from inside ThreadConnect** — you get a ticket number and can follow it to resolution with the ThreadConnect Care Team. See **[Submitting a Ticket](/get-support/support-ticket-system/submitting-a-ticket)** (it includes a short video walkthrough).
 
 </details>
 
@@ -49,7 +49,7 @@ File a ticket when something needs **investigation or follow-up** (a bug, a tech
 <details>
 <summary>How do I check the status of a ticket I already submitted?</summary>
 
-See **[Checking & Managing Tickets](/get-support/support-ticket-system/checking-and-managing)** — you can look up a ticket's status, subject, and details from inside Connie.
+See **[Checking & Managing Tickets](/get-support/support-ticket-system/checking-and-managing)** — you can look up a ticket's status, subject, and details from inside ThreadConnect.
 
 </details>
 
@@ -65,14 +65,14 @@ Yes — **[Live Chat (L4)](/get-support/live-chat)** is the premium option for r
 <details>
 <summary>What is Professional Services?</summary>
 
-**[Professional Services (L5)](/get-support/professional-services)** is expert implementation and consulting — partner with Connie experts for strategic, enterprise-level work that goes beyond standard support.
+**[Professional Services (L5)](/get-support/professional-services)** is expert implementation and consulting — partner with ThreadConnect experts for strategic, enterprise-level work that goes beyond standard support.
 
 </details>
 
 <details>
 <summary>Is there a user community?</summary>
 
-Yes — **[Community Support (L2)](/get-support/community)** connects you with other Connie users to share best practices and solutions.
+Yes — **[Community Support (L2)](/get-support/community)** connects you with other ThreadConnect users to share best practices and solutions.
 
 </details>
 

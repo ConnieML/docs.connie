@@ -18,7 +18,7 @@ You monitor your team in real time, coach for quality, and pull the reports your
 Welcome, Supervisors! This section will help you manage your team and optimize your ConnieRTC deployment.
 
   </div>
-  <img src="/img/avatars/supervisor-persona.png" alt="A Connie supervisor / program manager" style={{width: '160px', flexShrink: 0, alignSelf: 'center'}} />
+  <img src="/img/avatars/supervisor-persona.png" alt="A ThreadConnect supervisor / program manager" style={{width: '160px', flexShrink: 0, alignSelf: 'center'}} />
 </div>
 
 ## Coming Soon

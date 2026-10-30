@@ -6,16 +6,16 @@ title: "ThreadConnect TechOps"
 
 # ThreadConnect TechOps
 
-**Internal documentation for Connie staff and technical operations.**
+**Internal documentation for ThreadConnect staff and technical operations.**
 
 ---
 
-This section contains operational documentation used by Connie's internal team to provision accounts, deploy features, and maintain infrastructure. This content is not intended for CBO end users.
+This section contains operational documentation used by ThreadConnect's internal team to provision accounts, deploy features, and maintain infrastructure. This content is not intended for CBO end users.
 
 ## Who Uses These Docs?
 
-- **Connie Engineering** - Platform deployment and feature configuration
-- **Connie Support** - Troubleshooting and runbook execution
+- **ThreadConnect Engineering** - Platform deployment and feature configuration
+- **ThreadConnect Support** - Troubleshooting and runbook execution
 - **Account Managers** - New client provisioning workflows
 
 ## Sections

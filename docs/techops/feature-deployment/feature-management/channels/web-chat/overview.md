@@ -6,17 +6,17 @@ title: "Web Chat Channel"
 
 # Web Chat Channel
 
-Enable real-time web chat communication for your organization using the Connie Web Chat experience framework. Provide immediate support through your website.
+Enable real-time web chat communication for your organization using the ThreadConnect Web Chat experience framework. Provide immediate support through your website.
 
-## Connie Web Chat Experience Framework
+## ThreadConnect Web Chat Experience Framework {#connie-web-chat-experience-framework}
 
-The Connie Web Chat platform provides three core experience levels, each building on the previous with additional features:
+The ThreadConnect Web Chat platform provides three core experience levels, each building on the previous with additional features:
 
 <div className="row">
   <div className="col col--4 margin-bottom--lg">
     <div className="card">
       <div className="card__body">
-        <h3>💬 Connie Web Chat Basic</h3>
+        <h3>💬 ThreadConnect Web Chat Basic</h3>
         <p>Essential chat functionality - direct connection with available agents. Simple implementation that works immediately.</p>
         <p><span className="badge badge--secondary">Setup Guide Coming Soon</span></p>
       </div>
@@ -26,7 +26,7 @@ The Connie Web Chat platform provides three core experience levels, each buildin
   <div className="col col--4 margin-bottom--lg">
     <div className="card">
       <div className="card__body">
-        <h3>🔔 Connie Web Chat + Auto-Response</h3>
+        <h3>🔔 ThreadConnect Web Chat + Auto-Response</h3>
         <p>Automated greetings and routing - welcome messages, department selection, estimated wait times.</p>
         <p><span className="badge badge--secondary">Setup Guide Coming Soon</span></p>
       </div>
@@ -36,7 +36,7 @@ The Connie Web Chat platform provides three core experience levels, each buildin
   <div className="col col--4 margin-bottom--lg">
     <div className="card">
       <div className="card__body">
-        <h3>⭐ Connie Web Chat + Full Experience</h3>
+        <h3>⭐ ThreadConnect Web Chat + Full Experience</h3>
         <p>Advanced features - pre-chat forms, file sharing, transcript emails, satisfaction surveys.</p>
         <p><span className="badge badge--secondary">Setup Guide Coming Soon</span></p>
       </div>
@@ -69,7 +69,7 @@ Web chat is delivered through an embeddable widget with platform-standard config
   <div className="col col--6 margin-bottom--lg">
     <div className="card">
       <div className="card__body">
-        <h3>🤖 Connie Copilot</h3>
+        <h3>🤖 ThreadConnect Copilot</h3>
         <p>AI assists with chat routing and initial responses</p>
         <p><span className="badge badge--secondary">Coming Soon</span></p>
       </div>

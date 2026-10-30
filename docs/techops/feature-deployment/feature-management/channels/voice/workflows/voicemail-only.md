@@ -6,7 +6,7 @@ title: "ThreadConnect Voice Direct + Voicemail Setup"
 
 # ThreadConnect Voice Direct + Voicemail Setup
 
-**Connie Voice Direct + Voicemail** provides custom wait/hold experience, custom greetings, hold music, department routing, and off-hours voicemail routing. This implementation can route all calls directly to voicemail or provide professional queue experiences before voicemail collection.
+**ThreadConnect Voice Direct + Voicemail** provides custom wait/hold experience, custom greetings, hold music, department routing, and off-hours voicemail routing. This implementation can route all calls directly to voicemail or provide professional queue experiences before voicemail collection.
 
 ## Caller Experience
 - Caller dials your number
@@ -84,13 +84,13 @@ This workflow uses the simplest possible Studio Flow:
 
 ## Studio Flow Implementation
 
-The Connie Voice Direct + Voicemail experience is implemented using the Studio Flow:
-- **"Connie Voice Direct + Voicemail (Auto-Route)"** - All calls terminate in voicemail
+The ThreadConnect Voice Direct + Voicemail experience is implemented using the Studio Flow:
+- **"ThreadConnect Voice Direct + Voicemail (Auto-Route)"** - All calls terminate in voicemail
 
 ## Current NSS Implementation
 
 The NSS (Northeastern Social Services) deployment provides a working example:
-- **Production Line** (+17259999678): Uses "Connie Voice Direct + Voicemail (Auto-Route)" Studio Flow
+- **Production Line** (+17259999678): Uses "ThreadConnect Voice Direct + Voicemail (Auto-Route)" Studio Flow
 - **Configuration**: All calls terminate in voicemail system
 - **Features**: Professional greeting with immediate voicemail collection
 
@@ -137,12 +137,12 @@ Route different message types:
 
 ## Migration Paths
 
-### From Connie Voice Direct
+### From ThreadConnect Voice Direct {#from-connie-voice-direct}
 - Add custom greetings and hold music
 - Implement department routing logic
 - Configure business hours awareness
 
-### To Connie Voice Direct + Wait Experience
+### To ThreadConnect Voice Direct + Wait Experience {#to-connie-voice-direct--wait-experience}
 - Add caller options menu (callback/voicemail choice)
 - Implement wait experience with hold music
 - Add queue position management

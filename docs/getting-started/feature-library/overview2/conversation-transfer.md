@@ -113,10 +113,10 @@ The conversation transfer feature was successfully deployed to NSS production on
 3. Validated both cold and warm transfer scenarios
 4. Confirmed proper task routing to target agents and queues
 
-### Connie-Specific Considerations
+### ThreadConnect-Specific Considerations {#connie-specific-considerations}
 
 **Environment Variable Management:**
-- Each Connie deployment requires its own specific workflow SID
+- Each ThreadConnect deployment requires its own specific workflow SID
 - The auto-detection script looks for workflows named "Chat Transfer" 
 - Manual configuration is required if workflow names differ from convention
 

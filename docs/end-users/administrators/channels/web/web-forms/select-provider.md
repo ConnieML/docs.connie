@@ -10,7 +10,7 @@ import Link from '@docusaurus/Link';
 
 ## Introduction
 
-ConnieRTC integrates with multiple web forms service providers to give your nonprofit organization the flexibility to create professional intake forms, referral forms, and data collection workflows. Our web forms integration allows you to capture form submissions and automatically route them to your staff through the Connie platform, creating seamless workflows for your organization.
+ConnieRTC integrates with multiple web forms service providers to give your nonprofit organization the flexibility to create professional intake forms, referral forms, and data collection workflows. Our web forms integration allows you to capture form submissions and automatically route them to your staff through the ThreadConnect platform, creating seamless workflows for your organization.
 
 ## How Web Forms Integration Works
 
@@ -87,7 +87,7 @@ Choose your web forms service provider below to view setup instructions and inte
 
 </div>
 
-*Don't see your preferred form provider? Contact the Connie Care team to discuss integration options.*
+*Don't see your preferred form provider? Contact the ThreadConnect Care team to discuss integration options.*
 
 ## Provider Comparison
 
@@ -197,7 +197,7 @@ Task Skill: "H2H.ORG Web Referral"
 
 ## Need Help?
 
-**Connie Care Team**: Contact us for assistance choosing the right forms provider for your organization
+**ThreadConnect Care Team**: Contact us for assistance choosing the right forms provider for your organization
 
 **Technical Support**: Available for setup and configuration questions
 

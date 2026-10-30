@@ -6,23 +6,23 @@ title: "Support Ticket System (Admin Guide)"
 
 # Support Ticket System — Administrator Guide
 
-The **Connie Support Ticket System** is one of Connie's built-in Support Options. It lets your staff submit support requests directly from inside Connie and get **scoped, secure help** — every ticket stays private to your account, and your team can track it from submission to resolution.
+The **ThreadConnect Support Ticket System** is one of ThreadConnect's built-in Support Options. It lets your staff submit support requests directly from inside ThreadConnect and get **scoped, secure help** — every ticket stays private to your account, and your team can track it from submission to resolution.
 
-This page is for **Connie account administrators**. For the step-by-step staff guide, see [Submitting a Ticket](/get-support/support-ticket-system/submitting-a-ticket). For fixing problems, see [Ticketing System Troubleshooting](/techops/troubleshooting/ticketing-system).
+This page is for **ThreadConnect account administrators**. For the step-by-step staff guide, see [Submitting a Ticket](/get-support/support-ticket-system/submitting-a-ticket). For fixing problems, see [Ticketing System Troubleshooting](/techops/troubleshooting/ticketing-system).
 
-![The CONNIE+ panel in the no-active-task view, with the Get Support button that opens the Connie Support Portal](/img/support-tickets/01-no-task-panel.png)
+![The CONNIE+ panel in the no-active-task view, with the Get Support button that opens the ThreadConnect Support Portal](/img/support-tickets/01-no-task-panel.png)
 
 ---
 
 ## What it is
 
-When a staff member has no active task, the right-hand panel shows the **CONNIE+** panel; clicking **Get Support** opens the **Connie Support Portal**. From there your team can:
+When a staff member has no active task, the right-hand panel shows the **CONNIE+** panel; clicking **Get Support** opens the **ThreadConnect Support Portal**. From there your team can:
 
 - **Create a new ticket** — submit a support request through a simple form.
 - **See all tickets** — view every ticket for **your account** (not other organizations').
 - **Track a ticket** — look up a single ticket's status by its number.
 
-Each request becomes a tracked ticket that the **Connie Care Team** (our support desk) receives, works, and resolves — with email updates along the way.
+Each request becomes a tracked ticket that the **ThreadConnect Care Team** (our support desk) receives, works, and resolves — with email updates along the way.
 
 ## Why it matters: scoped + secure by design
 
@@ -37,20 +37,20 @@ This isolation is automatic — there's nothing for an administrator to switch o
 ## The lifecycle of a ticket
 
 1. **Submit** — a staff member fills out the Create New Ticket form. They get an on-screen confirmation with a ticket number, plus an email confirmation.
-2. **Route** — the ticket arrives at the Connie Care Team's queue.
+2. **Route** — the ticket arrives at the ThreadConnect Care Team's queue.
 3. **Work** — a Care Team agent picks it up, may ask questions, and replies. Replies reach the filer by email.
 4. **Resolve / Close** — when the issue is handled, the ticket is closed.
 5. **Reopen** — if the person replies to the ticket email after it's closed, the ticket **automatically reopens** and returns to the Care Team queue.
 
 **Ticket statuses:** Open · In Progress · Waiting · Resolved · Closed.
 
-![The ticket-submitted confirmation showing the ticket number and the See all my tickets and Back to Connie buttons](/img/support-tickets/04-ticket-submitted.png)
+![The ticket-submitted confirmation showing the ticket number and the See all my tickets and Back to ThreadConnect buttons](/img/support-tickets/04-ticket-submitted.png)
 
 ## What an administrator should know
 
-- **No per-ticket setup.** Once your account is onboarded with Connie, the Support panel and scoping work automatically for every staff member.
-- **It appears in the no-active-task view.** Staff reach it from the right-hand panel when they have no active task. If your team doesn't see the Support panel, that points to an account-onboarding gap — open a ticket with Connie (see Troubleshooting).
-- **Email matters.** Ticket confirmations and Care Team replies are delivered by email. Make sure staff use a reliable inbox they check. (Some self-hosted email domains can intermittently delay these messages — if confirmations are unreliable, flag it to Connie.)
+- **No per-ticket setup.** Once your account is onboarded with ThreadConnect, the Support panel and scoping work automatically for every staff member.
+- **It appears in the no-active-task view.** Staff reach it from the right-hand panel when they have no active task. If your team doesn't see the Support panel, that points to an account-onboarding gap — open a ticket with ThreadConnect (see Troubleshooting).
+- **Email matters.** Ticket confirmations and Care Team replies are delivered by email. Make sure staff use a reliable inbox they check. (Some self-hosted email domains can intermittently delay these messages — if confirmations are unreliable, flag it to ThreadConnect.)
 - **Reopen by reply.** Staff don't need to file a new ticket if something they reported recurs after closing — replying to the original ticket email reopens it.
 - **Privacy is built in.** You don't need to configure anything to keep internal notes hidden from filers or to keep accounts isolated — it's enforced by the platform.
 
@@ -61,5 +61,5 @@ This isolation is automatic — there's nothing for an administrator to switch o
 
 ## Related
 
-- [Ticketing System Troubleshooting](/techops/troubleshooting/ticketing-system) — common issues, what you can fix locally vs. when to open a ticket with Connie.
-- [Get Support overview](/get-support/overview) — all of Connie's support options.
+- [Ticketing System Troubleshooting](/techops/troubleshooting/ticketing-system) — common issues, what you can fix locally vs. when to open a ticket with ThreadConnect.
+- [Get Support overview](/get-support/overview) — all of ThreadConnect's support options.

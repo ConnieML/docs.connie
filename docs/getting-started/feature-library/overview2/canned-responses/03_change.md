@@ -24,7 +24,7 @@ Gather from the CEO **before starting**.
 
 | Parameter | Why you need it | Example |
 |---|---|---|
-| Connie client account name | Selects the Twilio CLI profile + `.env.<account>` deploy target | `lifeline`, `NSS` |
+| ThreadConnect client account name | Selects the Twilio CLI profile + `.env.<account>` deploy target | `lifeline`, `NSS` |
 | Updated library JSON | The new content to deploy (full file, not a partial diff) | `/Users/cjberno/Downloads/<client>-canned-responses-UPDATED-<date>.json` |
 | Reason for the change | Audit context — "added Program Services section after Q4 program launch" | (free text) |
 | Logged-in test agent on the account | Needed for post-deploy smoke | CEO ready to log in to `<account>.connie.team` |
@@ -90,7 +90,7 @@ Walk the file against the schema in [Setup Section 7](./setup#7-format-spec--exa
 - [ ] Each response has `label` + `text`
 - [ ] No new template variables introduced without explicit CEO ask (and if so, `{{task.X}}` form)
 - [ ] No brand-firewall violations
-- [ ] Contact references use Connie-routed identities
+- [ ] Contact references use ThreadConnect-routed identities
 
 ### Phase 1 — Replace source + deploy
 

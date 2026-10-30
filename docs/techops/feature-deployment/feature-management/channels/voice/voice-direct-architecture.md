@@ -89,7 +89,7 @@ flowchart TB
 - **Client Phone Number**: The customer-facing phone number
 - **Studio Flow**: Minimal Studio flow for call routing
 - **Send to ConnieRTC Widget**: Studio widget that creates tasks and routes to agents
-- **TaskRouter**: Connie's task routing engine
+- **TaskRouter**: ThreadConnect's task routing engine
 - **Task Queue**: Specific queue based on routing logic
 
 ### Process Flow

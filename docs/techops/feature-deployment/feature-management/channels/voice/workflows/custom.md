@@ -33,7 +33,7 @@ Choose Custom Build when you need:
 ### Basic Setup
 
 1. **Create a New Studio Flow**
-   - Log into your Connie Console
+   - Log into your ThreadConnect Console
    - Navigate to Studio Flows
    - Click "Create new Flow"
    - Choose "Start from scratch"
@@ -45,7 +45,7 @@ Choose Custom Build when you need:
    - Test your flow thoroughly
 
 3. **Connect to Your Phone Number**
-   - Configure your Connie phone number to use your custom flow
+   - Configure your ThreadConnect phone number to use your custom flow
    - Update webhook URLs as needed
    - Test end-to-end functionality
 

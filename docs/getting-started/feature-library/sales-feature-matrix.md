@@ -16,12 +16,12 @@ import TabItem from "@theme/TabItem";
 
 <div style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', color: 'white', padding: '30px', borderRadius: '10px', marginBottom: '30px', textAlign: 'center'}}>
   <h2 style={{color: 'white', marginBottom: '10px'}}>Connect, Engage, Serve</h2>
-  <p style={{fontSize: '1.2em', marginBottom: 0}}>See exactly how Connie helps CBO Nonprofits Deliver Impact at Scale.</p>
+  <p style={{fontSize: '1.2em', marginBottom: 0}}>See exactly how ThreadConnect helps CBO Nonprofits Deliver Impact at Scale.</p>
 </div>
 
 ## 🎯 Platform Capabilities Overview
 
-> **Select your role below** to see exactly how Connie helps you get your work done.
+> **Select your role below** to see exactly how ThreadConnect helps you get your work done.
 
 <Tabs queryString="role">
 
@@ -36,7 +36,7 @@ import TabItem from "@theme/TabItem";
 <th style={{width: '10%'}}>ID</th>
 <th style={{width: '28%'}}>When I need to...</th>
 <th style={{width: '27%'}}>So that I can...</th>
-<th style={{width: '25%'}}>Connie provides...</th>
+<th style={{width: '25%'}}>ThreadConnect provides...</th>
 <th style={{width: '10%'}}>Status</th>
 </tr>
 </thead>
@@ -44,7 +44,7 @@ import TabItem from "@theme/TabItem";
 
 <tr>
 <td><code>CBA-1</code></td>
-<td>Sign up for Connie</td>
+<td>Sign up for ThreadConnect</td>
 <td>Start engaging customers</td>
 <td>✅ Guided setup wizard<br/>✅ Welcome email<br/>✅ Getting started page</td>
 <td><span style={{background: '#4caf50', color: 'white', padding: '2px 8px', borderRadius: '4px', fontSize: '0.85em'}}>Available Now</span></td>
@@ -94,7 +94,7 @@ import TabItem from "@theme/TabItem";
 <td><code>CBA-0</code></td>
 <td>Get account support</td>
 <td>Ensure business objectives</td>
-<td>✅ Documentation<br/>✅ Connie Care Team<br/>✅ Training resources</td>
+<td>✅ Documentation<br/>✅ ThreadConnect Care Team<br/>✅ Training resources</td>
 <td><span style={{background: '#4caf50', color: 'white', padding: '2px 8px', borderRadius: '4px', fontSize: '0.85em'}}>Available Now</span></td>
 </tr>
 
@@ -115,7 +115,7 @@ import TabItem from "@theme/TabItem";
 <th style={{width: '10%'}}>ID</th>
 <th style={{width: '28%'}}>When I need to...</th>
 <th style={{width: '27%'}}>So that I can...</th>
-<th style={{width: '25%'}}>Connie provides...</th>
+<th style={{width: '25%'}}>ThreadConnect provides...</th>
 <th style={{width: '10%'}}>Status</th>
 </tr>
 </thead>
@@ -202,7 +202,7 @@ import TabItem from "@theme/TabItem";
 <th style={{width: '10%'}}>ID</th>
 <th style={{width: '28%'}}>When I need to...</th>
 <th style={{width: '27%'}}>So that I can...</th>
-<th style={{width: '25%'}}>Connie provides...</th>
+<th style={{width: '25%'}}>ThreadConnect provides...</th>
 <th style={{width: '10%'}}>Status</th>
 </tr>
 </thead>
@@ -449,7 +449,7 @@ import TabItem from "@theme/TabItem";
 ## 📞 Ready to Transform Your Communications?
 
 <div style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', color: 'white', padding: '40px', borderRadius: '10px', marginTop: '40px', textAlign: 'center'}}>
-  <h2 style={{color: 'white', marginBottom: '20px'}}>See Connie in Action</h2>
+  <h2 style={{color: 'white', marginBottom: '20px'}}>See ThreadConnect in Action</h2>
   <p style={{fontSize: '1.2em', marginBottom: '30px'}}>
     Watch how real nonprofits use these features to serve their communities better.
   </p>

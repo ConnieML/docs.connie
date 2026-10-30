@@ -8,11 +8,11 @@ title: "Debugging Best Practices & Emergency Response"
 
 ## Overview
 
-This guide provides comprehensive debugging strategies for Connie serverless functions and features. Following these practices will prevent debugging emergencies and enable rapid resolution when issues occur.
+This guide provides comprehensive debugging strategies for ThreadConnect serverless functions and features. Following these practices will prevent debugging emergencies and enable rapid resolution when issues occur.
 
 ## Emergency Response Protocol
 
-### When Connie Features Break in Production
+### When ThreadConnect Features Break in Production {#when-connie-features-break-in-production}
 
 **Step 1: Immediate Diagnostics (First 2 minutes)**
 ```bash
@@ -47,7 +47,7 @@ twilio api:studio:v2:flows:executions:fetch --flow-sid [FLOW_SID] --sid [EXECUTI
 
 ### Required Logging Pattern for ALL Functions
 
-Every Connie serverless function MUST implement this logging pattern:
+Every ThreadConnect serverless function MUST implement this logging pattern:
 
 ```javascript
 exports.handler = async function(context, event, callback) {
@@ -137,7 +137,7 @@ twilio serverless:environments:list --service-sid [SERVICE_SID]
 
 ## Pre-Deployment Testing Checklist
 
-Before deploying ANY Connie feature:
+Before deploying ANY ThreadConnect feature:
 
 - [ ] **Entry/exit logging present** - Function logs start and completion
 - [ ] **Error handling with full context** - Comprehensive error logging
@@ -229,4 +229,4 @@ Following these debugging practices ensures:
 
 **Remember**: Without proper logging, emergencies take days to solve. With proper logging, they take minutes.
 
-Every Connie feature must be "emergency-ready" with comprehensive diagnostic logging.
+Every ThreadConnect feature must be "emergency-ready" with comprehensive diagnostic logging.

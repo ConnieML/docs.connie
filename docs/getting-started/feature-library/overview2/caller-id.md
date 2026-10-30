@@ -6,7 +6,7 @@ import PluginLibraryFeature from "./_plugin-library-feature.md";
 
 <PluginLibraryFeature />
 
-This feature enables the user to define which number on the Connie account to use when dialing outbound using the dialpad.
+This feature enables the user to define which number on the ThreadConnect account to use when dialing outbound using the dialpad.
 
 ## rtc-user-experience
 
@@ -20,7 +20,7 @@ the vanilla feature without any further customizations will look like this
 
 There are no additional dependencies for setup beyond ensuring the flag is enabled within the `flex-config` attributes.
 
-There is an optional configuration property (`include_outgoing_only_numbers`) controlling whether or not outgoing-only caller IDs (i.e. verified non-Connie phone numbers) are displayed in the dropdown. This is enabled by default, but can be disabled to hide these numbers.
+There is an optional configuration property (`include_outgoing_only_numbers`) controlling whether or not outgoing-only caller IDs (i.e. verified non-ThreadConnect phone numbers) are displayed in the dropdown. This is enabled by default, but can be disabled to hide these numbers.
 
 ```json
 "caller_id": {

@@ -6,9 +6,9 @@ sidebar_position: 1
 
 # Handling Calls
 
-Connie lets you make and receive phone calls directly from your browser. No special software or phone hardware is needed — just a headset and an internet connection.
+ThreadConnect lets you make and receive phone calls directly from your browser. No special software or phone hardware is needed — just a headset and an internet connection.
 
-This section covers everything you need to know about working with voice calls in Connie:
+This section covers everything you need to know about working with voice calls in ThreadConnect:
 
 - **[Inbound Calls](/end-users/staff-agents/handling-tasks/handling-calls/inbound)** — Accepting calls, on-call controls, voicemail
 - **[Outbound Calls](/end-users/staff-agents/handling-tasks/handling-calls/outbound)** — Using the dialpad, placing calls, transfers

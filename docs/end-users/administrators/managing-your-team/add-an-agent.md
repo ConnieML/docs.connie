@@ -6,7 +6,7 @@ title: "Add an Agent"
 
 # Add an Agent
 
-Adding an agent to Connie means: identifying the right person, setting them up so they can sign in, putting them on the right team, and giving them the right skills so the right work routes to them. Today this is a coordinated handoff between you (the admin) and your Connie deployment team. A self-serve admin panel is on the roadmap.
+Adding an agent to ThreadConnect means: identifying the right person, setting them up so they can sign in, putting them on the right team, and giving them the right skills so the right work routes to them. Today this is a coordinated handoff between you (the admin) and your ThreadConnect deployment team. A self-serve admin panel is on the roadmap.
 
 ## Before you start — admin checklist
 
@@ -15,19 +15,19 @@ Have these four things in hand before you open the ticket. The deployment team n
 | What | Why it matters |
 |---|---|
 | **Agent's full First Last name** | This sets the display name on every internal surface (Teams View, reports, notifications). Get it right the first time — see [Display names](/end-users/administrators/managing-your-team/display-names) for why this matters. |
-| **Agent's Connie email** (`@yourorg.org`) | This becomes their sign-in identity. The agent will receive an invitation email at this address. |
+| **Agent's ThreadConnect email** (`@yourorg.org`) | This becomes their sign-in identity. The agent will receive an invitation email at this address. |
 | **Role** | Staff Agent, Supervisor, or Admin — see [Roles & permissions](/getting-started/roles-permissions). |
 | **Team and skills** | Which team (e.g. *ADC-Jones*, *RAMP*, *Intake*) and which skills (e.g. *Spanish*, *Nursing*, *Webchat*) so the right work routes to them on day one. See [Assign skills](/end-users/administrators/managing-your-team/assign-skills) and [Manage teams & queues](/end-users/administrators/managing-your-team/manage-teams-queues). |
 
 ## How the onboarding flow works
 
-Connie uses Single Sign-On (SSO) for agent authentication. The Worker record — the thing that lets Connie route tasks to that person — is created the first time the agent signs in through SSO, not when the admin requests the account. This is important to understand because it changes what "ready" means.
+ThreadConnect uses Single Sign-On (SSO) for agent authentication. The Worker record — the thing that lets ThreadConnect route tasks to that person — is created the first time the agent signs in through SSO, not when the admin requests the account. This is important to understand because it changes what "ready" means.
 
 | Step | Who does it | What happens |
 |---|---|---|
 | 1. You open the request | Admin (you) | Ticket with the four items above. |
-| 2. Deployment team configures access | Connie deployment team | Adds the agent to your tenant's SSO allowlist; pre-stages the team and skill assignments. |
-| 3. Agent receives sign-in URL | Deployment team → agent | The agent gets their organization's Connie URL (e.g. `https://yourorg.connie.team`) and the prompt to sign in for the first time. |
+| 2. Deployment team configures access | ThreadConnect deployment team | Adds the agent to your tenant's SSO allowlist; pre-stages the team and skill assignments. |
+| 3. Agent receives sign-in URL | Deployment team → agent | The agent gets their organization's ThreadConnect URL (e.g. `https://yourorg.connie.team`) and the prompt to sign in for the first time. |
 | 4. Agent signs in for the first time | Agent | This first sign-in creates the Worker record and applies the pre-staged team and skill assignments. The agent now appears in Teams View and starts receiving work. |
 | 5. You verify | Admin (you) | Confirm the agent appears in your supervisor's Teams View with the correct name, team, and skills. |
 
@@ -77,4 +77,4 @@ A self-serve admin panel for agent onboarding is on the product roadmap. Until t
 
 ## Further reading (technical admins)
 
-For the platform-level details on how Teams, Workers, and channel routing work in the Twilio Flex layer underneath Connie, see the [Twilio Flex Teams admin guide](https://www.twilio.com/docs/flex/admin-guide/setup/teams). Connie's deployment model differs in several specifics (SSO-first provisioning, basecamp-managed configuration) but the underlying concepts are useful background.
+For the platform-level details on how Teams, Workers, and channel routing work in the Twilio Flex layer underneath ThreadConnect, see the [Twilio Flex Teams admin guide](https://www.twilio.com/docs/flex/admin-guide/setup/teams). ThreadConnect's deployment model differs in several specifics (SSO-first provisioning, basecamp-managed configuration) but the underlying concepts are useful background.

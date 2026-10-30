@@ -61,7 +61,7 @@ Email notifications and transcription are **add-ons**, not voicemail types. They
 **Best for:**
 - Dedicated voicemail lines (e.g., after-hours)
 - Overflow handling when all agents busy
-- Internal support lines (like Connie Care Team 877)
+- Internal support lines (like ThreadConnect Care Team 877)
 - Organizations without real-time queue capability
 
 **Codebase feature:**
@@ -182,7 +182,7 @@ Add-ons enhance the base experience. They are **independent** of which base you 
 
 ---
 
-### Example 3: Internal Support Line (Connie Care Team 877)
+### Example 3: Internal Support Line (ThreadConnect Care Team 877) {#example-3-internal-support-line-connie-care-team-877}
 
 **Scenario:** Internal support for child accounts
 
@@ -314,5 +314,5 @@ if (!transcriptionText && event.TranscriptionUrl) {
 - [Voice Troubleshooting](/techops/feature-deployment/feature-management/channels/voice/troubleshooting)
 
 :::tip Professional Services
-If you prefer to have our team handle the implementation, professional services are available for all voicemail configurations. Contact your Connie representative for details.
+If you prefer to have our team handle the implementation, professional services are available for all voicemail configurations. Contact your ThreadConnect representative for details.
 :::

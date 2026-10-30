@@ -6,7 +6,7 @@ title: "Voice Channel"
 
 # Voice Channel
 
-Connie's Voice channel is how callers reach your CBO by phone. A caller dials a number you provision, the call routes through ConnieRTC, and an agent on the Connie desktop answers. Out of the box this works without any configuration beyond wiring a phone number to a queue. From there, you can layer on optional features — wait experiences, voicemail, callbacks, admin email notifications, CRM screen-pop — to shape the caller experience for the way your organization actually operates.
+ThreadConnect's Voice channel is how callers reach your CBO by phone. A caller dials a number you provision, the call routes through ConnieRTC, and an agent on the ThreadConnect desktop answers. Out of the box this works without any configuration beyond wiring a phone number to a queue. From there, you can layer on optional features — wait experiences, voicemail, callbacks, admin email notifications, CRM screen-pop — to shape the caller experience for the way your organization actually operates.
 
 ## Out of the box: Voice Direct to Queue
 
@@ -14,7 +14,7 @@ The default Voice Direct configuration is the simplest possible setup:
 
 > **Caller dials → call hits the TaskRouter queue → first available agent picks up.**
 
-No hold music beyond the carrier default, no IVR, no voicemail option, no callback. If every agent is busy, the caller waits silently until someone is free. If no one is available, the call eventually times out per your queue's SLA. This is the right starting point for small teams with predictable, staffed call volume — and it's what every Connie account ships with.
+No hold music beyond the carrier default, no IVR, no voicemail option, no callback. If every agent is busy, the caller waits silently until someone is free. If no one is available, the call eventually times out per your queue's SLA. This is the right starting point for small teams with predictable, staffed call volume — and it's what every ThreadConnect account ships with.
 
 If you need anything beyond that — a wait experience, a voicemail option, callback support, an admin email when a caller leaves a message, multi-queue IVR routing — you compose those from the **Voice Features** matrix below.
 

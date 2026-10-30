@@ -6,7 +6,7 @@ title: "ThreadConnect Voice Direct Setup"
 
 # ThreadConnect Voice Direct Setup
 
-**Connie Voice Direct** is the basic implementation in the Connie Voice experience framework - calls are immediately queued, rejected during non-business hours, and works out-of-the-box.
+**ThreadConnect Voice Direct** is the basic implementation in the ThreadConnect Voice experience framework - calls are immediately queued, rejected during non-business hours, and works out-of-the-box.
 
 ## Caller Experience
 - Caller dials your number
@@ -75,9 +75,9 @@ This workflow can be enhanced with add-ons:
 
 ## Migration Path
 
-To upgrade from Connie Voice Direct to more advanced experiences:
-- **Connie Voice Direct + Voicemail**: Add custom wait/hold experience with voicemail routing
-- **Connie Voice Direct + Wait Experience**: Add advanced options menu with callback and voicemail choices
+To upgrade from ThreadConnect Voice Direct to more advanced experiences:
+- **ThreadConnect Voice Direct + Voicemail**: Add custom wait/hold experience with voicemail routing
+- **ThreadConnect Voice Direct + Wait Experience**: Add advanced options menu with callback and voicemail choices
 
 ## Troubleshooting
 

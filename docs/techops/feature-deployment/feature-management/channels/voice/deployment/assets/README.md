@@ -1,6 +1,6 @@
 # Direct+ Deployment Assets
 
-This directory contains ready-to-use templates, scripts, and configuration files for deploying the Direct+ workflow (callback-and-voicemail-with-email) to new Connie accounts.
+This directory contains ready-to-use templates, scripts, and configuration files for deploying the Direct+ workflow (callback-and-voicemail-with-email) to new ThreadConnect accounts.
 
 ## Files Overview
 
@@ -189,7 +189,7 @@ twilio api:core:incoming-phone-numbers:update \
 
 **Terraform Errors:**
 - Resource conflicts → Check existing resources
-- Permission errors → Verify Connie account permissions
+- Permission errors → Verify ThreadConnect account permissions
 - Variable validation → Check terraform.tfvars format
 
 **Studio Flow Issues:**

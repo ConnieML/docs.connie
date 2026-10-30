@@ -42,11 +42,11 @@ If you need **faster, guaranteed response times**, contact your **account manage
 
 ## How to check a ticket's status
 
-You have two ways, both from the **Connie Support Portal** (open the no-active-task panel → **Get Support**):
+You have two ways, both from the **ThreadConnect Support Portal** (open the no-active-task panel → **Get Support**):
 
 ### Look up one ticket by number — **Quick Ticket Lookup**
 
-1. Open the **Connie Support Portal**.
+1. Open the **ThreadConnect Support Portal**.
 2. In the **Submit Support Ticket** card, find **Quick Ticket Lookup**.
 3. Enter your **ticket number** and click **Track**.
 4. You'll see the ticket's **status, subject, and details** (it auto-refreshes every 30 seconds).
@@ -57,7 +57,7 @@ You have two ways, both from the **Connie Support Portal** (open the no-active-t
 
 ### See everything — **Show All Tickets**
 
-1. Open the **Connie Support Portal** (or use **"See all my tickets"** on the confirmation screen after submitting).
+1. Open the **ThreadConnect Support Portal** (or use **"See all my tickets"** on the confirmation screen after submitting).
 2. Click **Show All Tickets** — you'll see a list of **your account's** tickets.
 3. Use the **status filter tabs** (All · Open · In Progress · Waiting · Resolved · Closed) — switch to **All** to include closed and resolved tickets.
 
@@ -83,4 +83,4 @@ If an issue you reported **comes back after the ticket was closed**, you don't n
 
 ## Trouble checking or submitting?
 
-If something isn't working — Track says "not found" for a ticket you know exists, your list is empty, or you didn't get a confirmation email — your administrator can use the [Ticketing System Troubleshooting](/techops/troubleshooting/ticketing-system) guide, which covers what to check locally and when to contact Connie.
+If something isn't working — Track says "not found" for a ticket you know exists, your list is empty, or you didn't get a confirmation email — your administrator can use the [Ticketing System Troubleshooting](/techops/troubleshooting/ticketing-system) guide, which covers what to check locally and when to contact ThreadConnect.

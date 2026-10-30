@@ -201,7 +201,7 @@ email_template:
 
 ## Technical Environment Configuration
 
-### Connie Account Details
+### ThreadConnect Account Details {#connie-account-details}
 ```yaml
 twilio_configuration:
   account_sid: "AC____________________________________"
@@ -380,7 +380,7 @@ Once this template is complete, verify:
 - [ ] **Phone number configuration details confirmed**
 - [ ] **Email setup requirements documented**
 - [ ] **DNS access and permissions confirmed**
-- [ ] **Connie account details gathered**
+- [ ] **ThreadConnect account details gathered**
 - [ ] **Testing plan agreed upon**
 - [ ] **Go-live schedule established**
 - [ ] **Compliance requirements understood**
@@ -389,7 +389,7 @@ Once this template is complete, verify:
 With this configuration template complete:
 
 1. **Validate Information**: Confirm all details with client stakeholders
-2. **Technical Verification**: Verify Connie account access and resources  
+2. **Technical Verification**: Verify ThreadConnect account access and resources  
 3. **Begin Deployment**: Use [Pre-Deployment Checklist](/techops/feature-deployment/feature-management/channels/voice/deployment/pre-deployment-checklist)
 4. **Schedule Deployment**: Follow Direct+ Deployment Guide
 

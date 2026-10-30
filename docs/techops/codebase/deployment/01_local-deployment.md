@@ -57,7 +57,7 @@ npm run deploy
 If you customized `custom_data` in `appConfig.js` while running locally, and would like to deploy with those settings, be sure to make the same changes in your `flex-config/ui_attributes.local.json` file as well.
 :::
 
-Again, first double-check the .env matches your Connie CLI profile:
+Again, first double-check the .env matches your ThreadConnect CLI profile:
 
 ```bash
 cd ../flex-config/

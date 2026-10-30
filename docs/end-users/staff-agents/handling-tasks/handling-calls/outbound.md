@@ -6,7 +6,7 @@ sidebar_position: 3
 
 # Making Outbound Calls and Transfers
 
-Connie lets you place outbound calls to clients and transfer active calls to other agents or teams — all from the same browser window.
+ThreadConnect lets you place outbound calls to clients and transfer active calls to other agents or teams — all from the same browser window.
 
 ## Using the Dialpad
 
@@ -25,7 +25,7 @@ You can also initiate outbound calls directly from a task — for example, click
 
 ## Warm Transfers vs Cold Transfers
 
-When you need to transfer a call to another agent or team, press the **Send** button at the top of the call and choose **Transfer**. (On a call, Transfer is the only choice, because someone is on the line. See [Connie Task Sender](/end-users/staff-agents/task-sender).) You then have two options:
+When you need to transfer a call to another agent or team, press the **Send** button at the top of the call and choose **Transfer**. (On a call, Transfer is the only choice, because someone is on the line. See [ThreadConnect Task Sender](/end-users/staff-agents/task-sender).) You then have two options:
 
 ### Cold Transfer (Quick Handoff)
 
@@ -89,6 +89,6 @@ Outbound calls follow the same wrap-up process as inbound calls:
 
 ---
 
-**Related:** [Inbound Calls](/end-users/staff-agents/handling-tasks/handling-calls/inbound) | [Transferring Tasks](/end-users/staff-agents/transferring-tasks) | [Connie Task Sender](/end-users/staff-agents/task-sender)
+**Related:** [Inbound Calls](/end-users/staff-agents/handling-tasks/handling-calls/inbound) | [Transferring Tasks](/end-users/staff-agents/transferring-tasks) | [ThreadConnect Task Sender](/end-users/staff-agents/task-sender)
 
 **Need help?** Check our [FAQ](/end-users/staff-agents/faq) or visit [Get Support](/get-support/overview)

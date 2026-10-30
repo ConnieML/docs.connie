@@ -254,7 +254,7 @@ We can commit a `.env.<environment name here>` file, for example, `.env.dev`, to
 ## Setup script reference
 
 The setup script when run via `npm install` performs the following operations:
-1. Establish the Connie account to use
+1. Establish the ThreadConnect account to use
 2. Automatically populate the `.env.<environment name here>` file for each package
 3. Create and populate the `plugin-flex-ts-template-v2/public/appConfig.js` file if running locally
 4. Run `npm install` for each package, so that it is ready to use.

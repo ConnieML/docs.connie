@@ -22,7 +22,7 @@ Run as **CTO-Connie**. Live config change on a customer account.
 
 | Parameter | Why you need it | Example |
 |---|---|---|
-| Connie client account name | Selects the flex-config file | `lifeline`, `NSS` |
+| ThreadConnect client account name | Selects the flex-config file | `lifeline`, `NSS` |
 | Reason for disable | Audit trail | "Client migrating to AI-suggested replies instead of static library" |
 | Disable strategy | Soft (flag off, asset retained) vs Hard (flag off + asset removed) | "Soft" — recommended default |
 

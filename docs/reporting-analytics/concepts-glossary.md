@@ -9,7 +9,7 @@ sidebar_position: 2
 Plain-language reference for every term used across the Reporting & Analytics guides. Each of the six audience guides links here rather than re-defining terms, so a definition lives in exactly one place.
 
 :::tip One source of truth
-If a term appears in a reporting guide and isn't defined here, it belongs here — flag it to your Connie contact.
+If a term appears in a reporting guide and isn't defined here, it belongs here — flag it to your ThreadConnect contact.
 :::
 
 <!-- ============================================================
@@ -27,7 +27,7 @@ RATIFY LOG (CDO, 2026-06-01) — items needing CTO-Connie / CEO sign-off before 
 
 Two complementary views of the same underlying activity — driven by **completely separate mechanisms** on **different clocks**. Don't conflate their cadences.
 
-- **Real-time** — what is happening *right now*, streamed live off Connie's event stream. There is **no single fixed refresh interval**; updates arrive as events occur. Answers: *"What's going on this minute? Who's available, what's waiting?"*
+- **Real-time** — what is happening *right now*, streamed live off ThreadConnect's event stream. There is **no single fixed refresh interval**; updates arrive as events occur. Answers: *"What's going on this minute? Who's available, what's waiting?"*
   - **Teams View** — agent activity and status update **as they happen** (live stream).
   - **Queues Stats (Queues View)** — queue-level metrics refresh about every **15 seconds**; the **"Now" tiles** (active tasks, waiting tasks, available agents) refresh every **1–3 seconds**.
 - **Historical** — what *has happened* over time, and the trends inside it. Powered by **Flex Insights**, the reporting warehouse that accumulates every conversation. Answers: *"What happened last month, and is it getting better or worse?"*
@@ -40,11 +40,11 @@ The **60-minute** figure you may see refers to the **Historical (Adhoc)** data p
 
 ## Basic vs. Advanced
 
-Connie reporting comes in two tiers.
+ThreadConnect reporting comes in two tiers.
 
 The tier line is **purpose + audience**, not which tool builds the report.
 
-- **🟦 Basic — operational reporting, included with every Connie account.** For the people *running* the contact center (supervisors, admins). Answers *"How is my center running?"* — queues, SLA, handle time, agent activity. Native Flex Insights surfaced cleanly in the Connie UI, accessed from the **left nav**.
+- **🟦 Basic — operational reporting, included with every ThreadConnect account.** For the people *running* the contact center (supervisors, admins). Answers *"How is my center running?"* — queues, SLA, handle time, agent activity. Native Flex Insights surfaced cleanly in the ThreadConnect UI, accessed from the **left nav**.
 - **🟪 Advanced — outcomes for external audiences; a paid upgrade.** For funders, county, board, grants. Answers *"What impact are we having, and can I hand it to a funder?"* The connie.plus custom layer pulls your data out of Insights via API and reformats it into funder-ready deliverables. Native Insights produces operational dashboards; it does **not** produce funder-ready impact reports. Closing that gap is the entire reason the Advanced tier exists. A paid upgrade, gated to upgraded accounts.
 
 Within the **Advanced** tier there are two kinds of work:
@@ -62,7 +62,7 @@ A report's tier is set by **who it's for and why**, *not* by which tool produced
 
 ## The Drill-Down Model (KPI → Segment)
 
-The defining capability of Connie reporting. Every report lets you move from the **top-level number** down to the **single conversation** behind it:
+The defining capability of ThreadConnect reporting. Every report lets you move from the **top-level number** down to the **single conversation** behind it:
 
 ```
 KPI (e.g. "Avg Handle Time: 4:32")
@@ -77,7 +77,7 @@ Both out-of-the-box and custom views support this drill path. It's what turns a 
 
 ## Metric Definitions
 
-Connie's reporting is **lifecycle-based**: every task is tracked from arrival to completion and broken into segments, so the metrics below are all measurements of those segments.
+ThreadConnect's reporting is **lifecycle-based**: every task is tracked from arrival to completion and broken into segments, so the metrics below are all measurements of those segments.
 
 ### Time metrics
 
@@ -112,7 +112,7 @@ A voicemail or callback request is **not** counted as an abandon — these are t
 :::
 
 :::info Quality monitoring is coming
-As of **June 1, 2026**, Connie's **Quality Dimensions** — quality monitoring and reporting tooling — are in development. Customers will be notified when it's ready for **beta testing**. Until then, **Quality %** may appear blank.
+As of **June 1, 2026**, ThreadConnect's **Quality Dimensions** — quality monitoring and reporting tooling — are in development. Customers will be notified when it's ready for **beta testing**. Until then, **Quality %** may appear blank.
 :::
 
 ### Service Level (SLA)
@@ -123,18 +123,18 @@ As of **June 1, 2026**, Connie's **Quality Dimensions** — quality monitoring a
 - **Short Abandoned Time** — waits too short to count against SLA, so a quick hang-up doesn't hurt the number.
 
 :::note Real-time and historical SLA are separate
-The SLA shown in the real-time **Queues Stats** view is driven by **Service Level Preferences**. Connie's **historical** reporting has its **own** Service Level metric with separate threshold handling — the two are configured and calculated independently.
+The SLA shown in the real-time **Queues Stats** view is driven by **Service Level Preferences**. ThreadConnect's **historical** reporting has its **own** Service Level metric with separate threshold handling — the two are configured and calculated independently.
 :::
 
 :::tip Seeing SLA at 0%?
-A queue showing **0%** SLA usually means **no threshold is configured yet**, or every task ran past it. SLA targets are **not** set in Connie's config files (those only control which SLA tiles display and the Teams handle-time thresholds) — they're set in the admin UI. See **[Administrators → Basic Reporting](/reporting-analytics/administrators/basic)** to configure Service Levels.
+A queue showing **0%** SLA usually means **no threshold is configured yet**, or every task ran past it. SLA targets are **not** set in ThreadConnect's config files (those only control which SLA tiles display and the Teams handle-time thresholds) — they're set in the admin UI. See **[Administrators → Basic Reporting](/reporting-analytics/administrators/basic)** to configure Service Levels.
 :::
 
 ---
 
 ## Data-Model Dimensions
 
-The **axes** you group and filter reports by. (Insights carries 235 attributes total; these are the ones that matter for Connie's use case.)
+The **axes** you group and filter reports by. (Insights carries 235 attributes total; these are the ones that matter for ThreadConnect's use case.)
 
 | Dimension | What it groups by |
 |---|---|
@@ -155,14 +155,14 @@ Every conversation moves through these states; reporting segments map to them:
 
 **Pending** → **Reserved** → **Assigned** → **Wrap** → **Complete**
 
-- **Pending** — Connie is finding an available, qualified agent.
+- **Pending** — ThreadConnect is finding an available, qualified agent.
 - **Reserved** — offered to an agent, awaiting accept/reject.
 - **Assigned** — accepted; the agent owns it until they complete, park, reassign, escalate, or cancel it.
 - **Wrap** — conversation done; agent finishing after-task work.
 - **Complete** — closed.
 
 :::note Auto-abandon
-An assigned task left untouched for **two weeks** (no complete/park/reassign/escalate/cancel) is auto-terminated by Connie and reported as an abandoned task.
+An assigned task left untouched for **two weeks** (no complete/park/reassign/escalate/cancel) is auto-terminated by ThreadConnect and reported as an abandoned task.
 :::
 
 ---
@@ -173,11 +173,11 @@ Conversations are reported per channel and direction: **Voice, SMS/Text, Webchat
 
 ---
 
-## How Connie's reporting categories map to the two tiers
+## How ThreadConnect's reporting categories map to the two tiers {#how-connies-reporting-categories-map-to-the-two-tiers}
 
-Connie's underlying reporting breaks into four categories. Tier is assigned by **purpose and audience**, not by which tool builds the report:
+ThreadConnect's underlying reporting breaks into four categories. Tier is assigned by **purpose and audience**, not by which tool builds the report:
 
-| Connie category | Tier | Role |
+| ThreadConnect category | Tier | Role |
 |---|---|---|
 | **Real-Time** (live dashboards) | 🟦 Basic | Operational — running the center |
 | **Historical** (adhoc dashboards & reports) | 🟦 Basic | Operational — trends over time |

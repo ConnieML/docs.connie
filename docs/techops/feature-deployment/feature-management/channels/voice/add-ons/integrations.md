@@ -6,7 +6,7 @@ title: "Integrations Add-On"
 
 # Integrations Add-On
 
-Connect Connie's voice system with external services like CRM systems, databases, and third-party APIs to enhance caller experience with context and automation.
+Connect ThreadConnect's voice system with external services like CRM systems, databases, and third-party APIs to enhance caller experience with context and automation.
 
 ## What It Does
 - **CRM Lookup**: Automatically retrieve caller information from HubSpot, Salesforce, MySQL databases

@@ -14,7 +14,7 @@ Documentation for OKTA SSO integration with Twilio Flex.
 This documentation is preserved for:
 - Historical reference
 - Future migration path if needed
-- Demonstrating Connie's multi-provider support
+- Demonstrating ThreadConnect's multi-provider support
 :::
 
 ---
@@ -309,11 +309,11 @@ ConnieRTC's authentication architecture was designed with **provider agnosticism
 
 Before implementing OKTA:
 1. Review [Decision Matrix](/techops/account-provisioning/authentication/overview#-decision-matrix-which-pattern) for pattern choice
-2. Consult with Connie CTO on implementation strategy
+2. Consult with ThreadConnect CTO on implementation strategy
 3. Consider Auth0 vs OKTA for your specific requirements
 4. Document rationale for provider choice
 
-**Professional Services:** OKTA integration implementation available. Contact your Connie representative for details.
+**Professional Services:** OKTA integration implementation available. Contact your ThreadConnect representative for details.
 
 ---
 

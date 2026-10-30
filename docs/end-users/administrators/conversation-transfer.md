@@ -5,8 +5,8 @@ title: "Conversation Transfer System Configuration"
 
 # Conversation Transfer System Configuration
 
-:::info Connie Task Sender
-Staff now move every task with one **Send** button at the top of the task: **Transfer** (to a coworker or department in Connie), **Hand off** (by email to a coworker who doesn't use Connie) or **Refer out** (by email to another organization). Phone calls, web chats and texts can only be transferred. The Task Sender is switched on per organization by the Connie team. What staff see: [Connie Task Sender](/end-users/staff-agents/task-sender). Hand off and Refer out lists come from your contacts' email addresses: [Shared Contacts & External Referrals](/end-users/administrators/shared-contacts-and-referrals).
+:::info ThreadConnect Task Sender
+Staff now move every task with one **Send** button at the top of the task: **Transfer** (to a coworker or department in ThreadConnect), **Hand off** (by email to a coworker who doesn't use ThreadConnect) or **Refer out** (by email to another organization). Phone calls, web chats and texts can only be transferred. The Task Sender is switched on per organization by the ThreadConnect team. What staff see: [ThreadConnect Task Sender](/end-users/staff-agents/task-sender). Hand off and Refer out lists come from your contacts' email addresses: [Shared Contacts & External Referrals](/end-users/administrators/shared-contacts-and-referrals).
 :::
 
 As a CBO Administrator, you control how conversation transfers work across your organization, set up transfer queues, and ensure your staff can effectively move conversations when needed.
@@ -230,7 +230,7 @@ Ensure all staff understand:
 
 ## 📞 Getting Help
 
-**Technical Issues:** Contact Connie Support with:
+**Technical Issues:** Contact ThreadConnect Support with:
 - Error messages or screenshots
 - Steps to reproduce the problem
 - Affected user accounts
@@ -280,7 +280,7 @@ Ensure all staff understand:
 
 **For Critical Transfer Failures (Production Guidance):**
 - **"TaskRouter error: Bad Request" across multiple agents:** IMMEDIATE escalation to Platform Developer
-- **Complete transfer system failure:** Contact Connie Support with URGENT priority
+- **Complete transfer system failure:** Contact ThreadConnect Support with URGENT priority
 - **Single CBO transfer issues:** Start with workflow SID verification process above
 - **Cross-account transfer failures:** Check workflow SID configuration for each account
 
@@ -292,4 +292,4 @@ Ensure all staff understand:
 - Timestamp of when issues started
 - Number of agents affected
 
-Need technical assistance with configuration? Contact Connie Support or your Platform Developer with the above information ready.
+Need technical assistance with configuration? Contact ThreadConnect Support or your Platform Developer with the above information ready.

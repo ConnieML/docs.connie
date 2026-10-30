@@ -8,7 +8,7 @@ import Link from '@docusaurus/Link';
 
 # Choose Your Email Provider
 
-Select your email service provider to set up automated email notifications for voicemails and other Connie features.
+Select your email service provider to set up automated email notifications for voicemails and other ThreadConnect features.
 
 <div style={{
   display: 'flex',
