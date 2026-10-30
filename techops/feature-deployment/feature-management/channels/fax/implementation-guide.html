@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.8.1">
 <title data-rh="true">Fax Implementation Guide - Choose Your Solution | ThreadConnect Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.connie.one/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://docs.connie.one/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.connie.one/techops/feature-deployment/feature-management/channels/fax/implementation-guide"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Fax Implementation Guide - Choose Your Solution | ThreadConnect Documentation"><meta data-rh="true" name="description" content="This guide helps you choose and implement the right fax solution for your client within their existing ThreadConnect deployment."><meta data-rh="true" property="og:description" content="This guide helps you choose and implement the right fax solution for your client within their existing ThreadConnect deployment."><link data-rh="true" rel="icon" href="/img/logos/threadconnect-icon.svg"><link data-rh="true" rel="canonical" href="https://docs.connie.one/techops/feature-deployment/feature-management/channels/fax/implementation-guide"><link data-rh="true" rel="alternate" href="https://docs.connie.one/techops/feature-deployment/feature-management/channels/fax/implementation-guide" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.connie.one/techops/feature-deployment/feature-management/channels/fax/implementation-guide" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"⚙️ ThreadConnect TechOps","item":"https://docs.connie.one/techops/overview"},{"@type":"ListItem","position":2,"name":"Implementation Guide","item":"https://docs.connie.one/techops/feature-deployment/feature-management/channels/fax/implementation-guide"}]}</script><link rel="stylesheet" href="https://assets.twilio.com/public_assets/paste-fonts/1.5.1/fonts.css"><link rel="stylesheet" href="/assets/css/styles.81be34bd.css">
-<script src="/assets/js/runtime~main.1c86fb28.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.f7b916c4.js" defer="defer"></script>
 <script src="/assets/js/main.f6227c9c.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -15,7 +15,7 @@
 <p>This guide helps you choose and implement the right fax solution for your client within their existing ThreadConnect deployment.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="which-fax-solution-does-your-client-need">Which Fax Solution Does Your Client Need?<a href="#which-fax-solution-does-your-client-need" class="hash-link" aria-label="Direct link to Which Fax Solution Does Your Client Need?" title="Direct link to Which Fax Solution Does Your Client Need?">​</a></h2>
 <p>Choose the option that best fits your client&#x27;s requirements:</p>
-<table><thead><tr><th>Feature</th><th>Option A:<br>Basic Inbound Fax</th><th>Option B:<br>Bidirectional Fax</th><th>Option C:<br>Full Integration</th></tr></thead><tbody><tr><td>📥 <strong>Receive Faxes</strong></td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>📤 <strong>Send Faxes</strong></td><td>❌</td><td>✅</td><td>✅</td></tr><tr><td>📧 <strong>Email Delivery</strong></td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>🔄 <strong>ConnieRTC Task Routing</strong></td><td>❌</td><td>✅</td><td>✅</td></tr><tr><td>📎 <strong>PDF Attachments</strong></td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>🔐 <strong>HIPAA Compliance</strong></td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>🔧 <strong>Setup Complexity</strong></td><td>Simple</td><td>Moderate</td><td>Advanced</td></tr><tr><td>⚙️ <strong>Provider</strong></td><td>Sinch</td><td>Sinch</td><td>Sinch + Custom Integration</td></tr><tr><td>🕐 <strong>Setup Time</strong></td><td>20 minutes</td><td>45 minutes</td><td>2-3 hours</td></tr></tbody></table>
+<table><thead><tr><th>Feature</th><th>Option A:<br>Basic Inbound Fax</th><th>Option B:<br>Bidirectional Fax</th><th>Option C:<br>Full Integration</th></tr></thead><tbody><tr><td>📥 <strong>Receive Faxes</strong></td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>📤 <strong>Send Faxes</strong></td><td>❌</td><td>✅</td><td>✅</td></tr><tr><td>📧 <strong>Email Delivery</strong></td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>🔄 <strong>ThreadConnect Task Routing</strong></td><td>❌</td><td>✅</td><td>✅</td></tr><tr><td>📎 <strong>PDF Attachments</strong></td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>🔐 <strong>HIPAA Compliance</strong></td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>🔧 <strong>Setup Complexity</strong></td><td>Simple</td><td>Moderate</td><td>Advanced</td></tr><tr><td>⚙️ <strong>Provider</strong></td><td>Sinch</td><td>Sinch</td><td>Sinch + Custom Integration</td></tr><tr><td>🕐 <strong>Setup Time</strong></td><td>20 minutes</td><td>45 minutes</td><td>2-3 hours</td></tr></tbody></table>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="-choose-your-implementation-path">🎯 Choose Your Implementation Path<a href="#-choose-your-implementation-path" class="hash-link" aria-label="Direct link to 🎯 Choose Your Implementation Path" title="Direct link to 🎯 Choose Your Implementation Path">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="option-a-basic-inbound-fax">Option A: Basic Inbound Fax<a href="#option-a-basic-inbound-fax" class="hash-link" aria-label="Direct link to Option A: Basic Inbound Fax" title="Direct link to Option A: Basic Inbound Fax">​</a></h3>
@@ -36,14 +36,14 @@
 <p><strong>Perfect for:</strong> Organizations that need to both send and receive faxes with agent tracking.</p>
 <p><strong>What users experience:</strong></p>
 <ul>
-<li>Receive: Fax arrives → Creates task in ConnieRTC → Agent handles fax</li>
+<li>Receive: Fax arrives → Creates task in ThreadConnect → Agent handles fax</li>
 <li>Send: Agent initiates → Uploads document → Sends via Sinch API</li>
 </ul>
 <p><strong>What you&#x27;ll deploy:</strong></p>
 <ul>
 <li>Complete Professional Services Template fax feature</li>
 <li>Sinch API integration</li>
-<li>ConnieRTC UI components for fax sending</li>
+<li>ThreadConnect UI components for fax sending</li>
 <li>Task routing for inbound faxes</li>
 </ul>
 <p><strong>Next steps:</strong> → Set up Bidirectional Fax</p>
@@ -84,7 +84,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="additional-for-option-b">Additional for Option B:<a href="#additional-for-option-b" class="hash-link" aria-label="Direct link to Additional for Option B:" title="Direct link to Additional for Option B:">​</a></h3>
 <ul>
-<li>✅ ConnieRTC UI deployment access</li>
+<li>✅ ThreadConnect UI deployment access</li>
 <li>✅ Understanding of task routing configuration</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="additional-for-option-c">Additional for Option C:<a href="#additional-for-option-c" class="hash-link" aria-label="Direct link to Additional for Option C:" title="Direct link to Additional for Option C:">​</a></h3>
@@ -95,7 +95,7 @@
 </ul>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-implementation-overview">🏗️ Implementation Overview<a href="#️-implementation-overview" class="hash-link" aria-label="Direct link to 🏗️ Implementation Overview" title="Direct link to 🏗️ Implementation Overview">​</a></h2>
-<p>All fax options leverage <strong>Sinch&#x27;s carrier-grade fax infrastructure</strong> integrated with ConnieRTC&#x27;s multi-channel capabilities.</p>
+<p>All fax options leverage <strong>Sinch&#x27;s carrier-grade fax infrastructure</strong> integrated with ThreadConnect&#x27;s multi-channel capabilities.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-youre-not-doing">What You&#x27;re NOT Doing:<a href="#what-youre-not-doing" class="hash-link" aria-label="Direct link to What You&#x27;re NOT Doing:" title="Direct link to What You&#x27;re NOT Doing:">​</a></h3>
 <ul>
 <li>❌ Managing physical fax machines</li>
@@ -111,7 +111,7 @@
 </ul>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="-deployment-pattern-all-options">📋 Deployment Pattern (All Options)<a href="#-deployment-pattern-all-options" class="hash-link" aria-label="Direct link to 📋 Deployment Pattern (All Options)" title="Direct link to 📋 Deployment Pattern (All Options)">​</a></h2>
-<p>The deployment pattern follows ConnieRTC standards while incorporating Sinch-specific configuration:</p>
+<p>The deployment pattern follows ThreadConnect standards while incorporating Sinch-specific configuration:</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># 1. Configure Sinch credentials and numbers</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># (Templates provided in each guide)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># 2. Deploy serverless functions (if using Options B or C)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cd serverless-functions &amp;&amp; npm run deploy</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># 3. Apply infrastructure changes</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cd infra-as-code/terraform/environments/default</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">terraform apply -var-file=&quot;local.tfvars&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># 4. Test fax transmission</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># (Test scripts and numbers provided in each guide)</span><br></span></code></pre></div></div>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="-security--compliance-considerations">🔐 Security &amp; Compliance Considerations<a href="#-security--compliance-considerations" class="hash-link" aria-label="Direct link to 🔐 Security &amp; Compliance Considerations" title="Direct link to 🔐 Security &amp; Compliance Considerations">​</a></h2>
@@ -131,7 +131,7 @@
 </ul>
 <hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="-carrier-agnostic-architecture">📊 Carrier-Agnostic Architecture<a href="#-carrier-agnostic-architecture" class="hash-link" aria-label="Direct link to 📊 Carrier-Agnostic Architecture" title="Direct link to 📊 Carrier-Agnostic Architecture">​</a></h2>
-<p>ConnieRTC&#x27;s fax implementation follows our carrier-agnostic philosophy:</p>
+<p>ThreadConnect&#x27;s fax implementation follows our carrier-agnostic philosophy:</p>
 <!-- -->
 <p>This ensures:</p>
 <ul>
@@ -152,7 +152,7 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="-ready-to-choose">📠 Ready to Choose?<a href="#-ready-to-choose" class="hash-link" aria-label="Direct link to 📠 Ready to Choose?" title="Direct link to 📠 Ready to Choose?">​</a></h2>
 <p>Click on your preferred option above to get started with step-by-step implementation instructions tailored to your client&#x27;s fax needs.</p>
 <div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Professional Services Available</div><div class="admonitionContent_BuS1"><p>If you prefer to have our team handle the implementation, professional services are available for all fax options. Our team has extensive experience with Sinch integration and HIPAA-compliant fax solutions. Contact your ThreadConnect representative for details.</p></div></div>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Why Sinch for Fax?</div><div class="admonitionContent_BuS1"><p>ConnieRTC uses Sinch as our primary fax provider because:</p><ul>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Why Sinch for Fax?</div><div class="admonitionContent_BuS1"><p>ThreadConnect uses Sinch as our primary fax provider because:</p><ul>
 <li>Global coverage with local number support</li>
 <li>99.9% uptime SLA</li>
 <li>HIPAA-compliant infrastructure</li>
