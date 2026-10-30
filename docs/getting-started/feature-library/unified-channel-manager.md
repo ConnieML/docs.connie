@@ -10,7 +10,7 @@ import TabItem from '@theme/TabItem';
 
 **Seamlessly manage all communication channels from a single, intuitive interface**
 
-The Unified Channel Manager is the heart of ConnieRTC, enabling your nonprofit to handle voice calls, text messages, web chats, social media, emails, and faxes all from one unified agent desktop. No more switching between applications or losing context when helping clients across different channels.
+The Unified Channel Manager is the heart of ThreadConnect, enabling your nonprofit to handle voice calls, text messages, web chats, social media, emails, and faxes all from one unified agent desktop. No more switching between applications or losing context when helping clients across different channels.
 
 ## Why It Matters
 
@@ -123,7 +123,7 @@ Configure intelligent routing based on:
 ## For Staff Agents
 
 ### Overview  
-The Unified Channel Manager gives you one screen to handle all client communications. No more juggling multiple applications - everything you need is in your ConnieRTC workspace.
+The Unified Channel Manager gives you one screen to handle all client communications. No more juggling multiple applications - everything you need is in your ThreadConnect workspace.
 
 ### Your Unified Workspace
 

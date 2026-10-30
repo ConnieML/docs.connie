@@ -161,7 +161,7 @@ exports.handler = async (context, event, callback) => {
 **Description**: No agents available to handle the task
 
 **Diagnostic Steps**:
-1. Check agent availability in ConnieRTC interface
+1. Check agent availability in ThreadConnect interface
 2. Verify agent skills match task requirements
 3. Review agent capacity settings
 4. Check activity states (Available vs Away)

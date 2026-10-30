@@ -1,17 +1,17 @@
 Use a chat orchestrator hook to modify chat orchestration via `ChatOrchestrator.setOrchestrations`.
 
 ```ts
-import * as ConnieRTC from '@twilio/flex-ui';
+import * as ThreadConnectRTC from '@twilio/flex-ui';
 
 import { FlexOrchestrationEvent } from '../../../../types/feature-loader';
 
-export const chatOrchestratorHook = (flex: typeof ConnieRTC, manager: ConnieRTC.Manager) => ({
+export const chatOrchestratorHook = (flex: typeof ThreadConnectRTC, manager: ThreadConnectRTC.Manager) => ({
   event: FlexOrchestrationEvent.completed,
   handler: handleChatComplete,
 });
 
-const handleChatComplete = (task: ConnieRTC.ITask): any => {
-  return [ConnieRTC.ChatOrchestratorEvent.DeactivateConversation, ConnieRTC.ChatOrchestratorEvent.LeaveConversation];
+const handleChatComplete = (task: ThreadConnectRTC.ITask): any => {
+  return [ThreadConnectRTC.ChatOrchestratorEvent.DeactivateConversation, ThreadConnectRTC.ChatOrchestratorEvent.LeaveConversation];
 };
 ```
 

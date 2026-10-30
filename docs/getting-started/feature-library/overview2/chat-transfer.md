@@ -5,7 +5,7 @@ title: chat-transfer
 
 > **Important**
 > 
-> This feature is specifically for *Programmable Chat*, which is deprecated and no longer recommended for new deployments. Chat is now handled by *ConnieRTC Conversations*, and the replacement for the chat-transfer feature is [conversation-transfer](conversation-transfer).
+> This feature is specifically for *Programmable Chat*, which is deprecated and no longer recommended for new deployments. Chat is now handled by *ThreadConnect Conversations*, and the replacement for the chat-transfer feature is [conversation-transfer](conversation-transfer).
 
 This feature enables chat users to perform warm and cold transfers to individual agents or queues. It also introduces notifications into the chat channel for users joining or leaving chat, or starting a warm or cold transfer.
 

@@ -292,7 +292,7 @@ Connect: **Trigger** → **voicemail_only**
 The `voicemailOnly=true` parameter causes the function to:
 - Skip all callback and hold queue logic
 - Immediately prompt for voicemail recording
-- Create ConnieRTC task with voicemail attributes
+- Create ThreadConnect task with voicemail attributes
 - Send email to configured admins (uses existing Mailgun setup)
 
 ---

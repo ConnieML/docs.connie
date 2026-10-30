@@ -10,7 +10,7 @@ import Link from '@docusaurus/Link';
 
 ## Introduction
 
-ConnieRTC integrates with multiple web forms service providers to give your nonprofit organization the flexibility to create professional intake forms, referral forms, and data collection workflows. Our web forms integration allows you to capture form submissions and automatically route them to your staff through the ThreadConnect platform, creating seamless workflows for your organization.
+ThreadConnect integrates with multiple web forms service providers to give your nonprofit organization the flexibility to create professional intake forms, referral forms, and data collection workflows. Our web forms integration allows you to capture form submissions and automatically route them to your staff through the ThreadConnect platform, creating seamless workflows for your organization.
 
 ## How Web Forms Integration Works
 
@@ -18,9 +18,9 @@ ConnieRTC integrates with multiple web forms service providers to give your nonp
 flowchart LR
     A[Website Visitor] --> B[Web Form - Adobe/Formstack/Typeform]
     B --> C[Form Validation & Processing]
-    C --> D[Email to ConnieRTC]
+    C --> D[Email to ThreadConnect]
     D --> E[Twilio Studio Flow]
-    E --> F[ConnieRTC Task Queue]
+    E --> F[ThreadConnect Task Queue]
     F --> G[Staff Agent Review]
     
     style A fill:#e1f5fe
@@ -35,10 +35,10 @@ flowchart LR
 **The Process**:
 - **Form Submission**: Website visitors complete forms on your site
 - **Validation & Processing**: Your chosen provider validates and processes the submission
-- **Email Routing**: Form data is emailed to your ConnieRTC endpoint (e.g., `referrals@connie.host`)
-- **Automatic Processing**: ConnieRTC Studio Flow processes the email and form data
-- **Task Creation**: Each form submission becomes a task in your ConnieRTC queue for staff review
-- **Centralized Management**: All form submissions are tracked within ConnieRTC
+- **Email Routing**: Form data is emailed to your ThreadConnect endpoint (e.g., `referrals@connie.host`)
+- **Automatic Processing**: ThreadConnect Studio Flow processes the email and form data
+- **Task Creation**: Each form submission becomes a task in your ThreadConnect queue for staff review
+- **Centralized Management**: All form submissions are tracked within ThreadConnect
 
 ## Select Your Web Forms Provider
 
@@ -96,7 +96,7 @@ Choose your web forms service provider below to view setup instructions and inte
 | **Status** | ✅ Production Ready | 📋 Coming Soon | 📋 Coming Soon |
 | **Form Type** | PDF-based professional forms | Web-native forms | Interactive conversational forms |
 | **Email Integration** | ✅ Yes | TBD | TBD |
-| **ConnieRTC Task Creation** | ✅ Yes | TBD | TBD |
+| **ThreadConnect Task Creation** | ✅ Yes | TBD | TBD |
 | **PDF Generation** | ✅ Yes | TBD | TBD |
 | **Validation** | ✅ Professional validation | TBD | TBD |
 | **Workflow Integration** | ✅ WordPress + Adobe + Email | TBD | TBD |
@@ -104,9 +104,9 @@ Choose your web forms service provider below to view setup instructions and inte
 ## Key Features
 
 ### Seamless Workflow Integration
-- **Automatic Task Creation**: Form submissions automatically create tasks in ConnieRTC queue
+- **Automatic Task Creation**: Form submissions automatically create tasks in ThreadConnect queue
 - **Email Processing**: Studio Flow processes form emails with full data capture
-- **Centralized Management**: All form submissions tracked in ConnieRTC dashboard
+- **Centralized Management**: All form submissions tracked in ThreadConnect dashboard
 - **Professional Display**: Tasks show as "Web Form Submission" with proper attribution
 
 ### Professional Form Handling
@@ -137,7 +137,7 @@ Email: h2h.referrals@connie.host
     ↓ (Twilio Email Channel)
 Studio Flow: referrals@connie.host
     ↓ (processing & routing)
-ConnieRTC Task Queue
+ThreadConnectRTC Task Queue
     ↓ (staff assignment)
 Task Skill: "H2H.ORG Web Referral"
 ```
@@ -154,7 +154,7 @@ Task Skill: "H2H.ORG Web Referral"
 ### Before You Begin
 - ✅ Determine your expected monthly form submission volume
 - ✅ Verify any compliance requirements (HIPAA, etc.)
-- ✅ Have your ConnieRTC account configured for web forms integration
+- ✅ Have your ThreadConnect account configured for web forms integration
 - ✅ Ensure staff have appropriate email access for notifications
 - ✅ Plan your form routing strategy (which forms go to which departments)
 
@@ -163,7 +163,7 @@ Task Skill: "H2H.ORG Web Referral"
 - **Email Configuration**: Dedicated email addresses for form routing (e.g., `referrals@connie.host`)
 - **Twilio Email Channel**: Configured email channel for form processing
 - **Studio Flow**: Custom Studio Flow for form-to-task conversion
-- **ConnieRTC Access**: Active ConnieRTC accounts for task management
+- **ThreadConnect Access**: Active ThreadConnect accounts for task management
 
 ### Compliance & Security
 - **Data Protection**: All form data encrypted in transit and at rest
@@ -179,7 +179,7 @@ Task Skill: "H2H.ORG Web Referral"
 3. **Configure Email Routing**: Set up dedicated email addresses for form processing
 4. **Create Studio Flow**: Deploy the form processing Studio Flow
 5. **Test Your Setup**: Submit test forms to verify complete workflow
-6. **Train Your Team**: Ensure staff understand form submissions within ConnieRTC
+6. **Train Your Team**: Ensure staff understand form submissions within ThreadConnect
 
 ## Advanced Features
 
@@ -190,7 +190,7 @@ Task Skill: "H2H.ORG Web Referral"
 - **Professional Display**: Branded task names and descriptions
 
 ### Phase 2: Planned Enhancements
-- **Inline Form Preview**: View form submissions directly in ConnieRTC interface
+- **Inline Form Preview**: View form submissions directly in ThreadConnect interface
 - **CRM Container Integration**: Enhanced form data display within tasks
 - **Advanced Routing**: Complex routing based on form field values
 - **Analytics Dashboard**: Form submission metrics and analytics
@@ -207,4 +207,4 @@ Task Skill: "H2H.ORG Web Referral"
 
 ---
 
-*Web forms integration is available to all ConnieRTC customers. Contact our team to add form processing services to your nonprofit's communication platform.*
+*Web forms integration is available to all ThreadConnect customers. Contact our team to add form processing services to your nonprofit's communication platform.*

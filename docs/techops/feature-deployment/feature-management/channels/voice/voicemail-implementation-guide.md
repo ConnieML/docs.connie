@@ -48,7 +48,7 @@ This makes it clear that email and transcription are features that can be added 
 | Option | Features | Setup Complexity | Best For |
 |--------|----------|------------------|----------|
 | **A - Basic Voicemail** | Studio recording only | Simple | Quick setup, minimal features |
-| **B - Callback + Voicemail** | Voicemail + ConnieRTC task creation | Moderate | Most organizations |
+| **B - Callback + Voicemail** | Voicemail + ThreadConnect task creation | Moderate | Most organizations |
 | **C - Callback + Voicemail + Email** | Full notifications + email alerts | Advanced | Complete solution |
 
 ## Why We Changed

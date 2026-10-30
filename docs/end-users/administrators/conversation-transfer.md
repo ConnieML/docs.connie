@@ -224,7 +224,7 @@ Ensure all staff understand:
 
 ### Creating Training Materials
 1. Use actual transfer scenarios from your organization
-2. Include screenshots of your specific ConnieRTC setup
+2. Include screenshots of your specific ThreadConnect setup
 3. Create quick reference cards for common transfers
 4. Develop role-playing exercises for practice
 

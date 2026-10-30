@@ -6,7 +6,7 @@ sidebar_position: 4
 
 # Account-Specific Serverless Deployment
 
-This guide documents the **mandatory protocol** for deploying serverless functions to ConnieRTC accounts. Following this protocol prevents production outages caused by cross-account configuration errors.
+This guide documents the **mandatory protocol** for deploying serverless functions to ThreadConnect accounts. Following this protocol prevents production outages caused by cross-account configuration errors.
 
 :::danger Critical Protocol
 **NEVER** run `npm run deploy` directly. **ALWAYS** use `./deploy.sh <account>` to ensure you deploy to the correct account with the correct configuration.
@@ -102,7 +102,7 @@ The script will display:
 
 ```
 ========================================
-  ConnieRTC Serverless Deployment
+  ThreadConnectRTC Serverless Deployment
 ========================================
 
 Account:      Connie Care Team

@@ -6,7 +6,7 @@ title: "Common Issues"
 
 # Common Issues
 
-Symptom-driven quick reference for common ConnieRTC support issues and their resolutions. For full deploy/change/cancel/troubleshoot runbooks per feature, see the [Runbook Index](/techops/troubleshooting/runbook-index).
+Symptom-driven quick reference for common ThreadConnect support issues and their resolutions. For full deploy/change/cancel/troubleshoot runbooks per feature, see the [Runbook Index](/techops/troubleshooting/runbook-index).
 
 ---
 
@@ -132,7 +132,7 @@ curl -s --user "api:[KEY]" \
 - Stack trace points to `addHook` in `plugin-flex-ts-template-v2/.../utils/feature-loader/notifications.ts`
 - Functional impact is usually nil (notifications still fire), but agents see the persistent error indicator
 
-**Root Cause:** Two ConnieRTC features registered the same Flex notification ID. Twilio's `flex.Notifications.registerNotification(id)` throws on the second registration. The basecamp feature-loader fans out to every enabled feature's `notificationHook`; if two features hand back overlapping IDs, the boot sequence trips this error.
+**Root Cause:** Two ThreadConnect features registered the same Flex notification ID. Twilio's `flex.Notifications.registerNotification(id)` throws on the second registration. The basecamp feature-loader fans out to every enabled feature's `notificationHook`; if two features hand back overlapping IDs, the boot sequence trips this error.
 
 The most common offender is having **both** `callback_and_voicemail` and `callback_and_voicemail_with_email` enabled on the same account — both define `CallbackErrorCallingCustomer`, `CallbackErrorRequeuingCallbackTask`, and `CallbackOutboundDialingNotEnabled` as their notification IDs.
 

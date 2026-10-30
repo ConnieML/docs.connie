@@ -85,7 +85,7 @@ Caller → Queue with Hold Music
 
 1. Navigate to **Twilio Console** → **Studio** → **Flows**
 2. Open your voice flow (or create new)
-3. In the **Send to ConnieRTC** widget:
+3. In the **Send to ThreadConnect** widget:
    - **Hold Music TwiML URL**:
      ```
      https://[YOUR-DOMAIN]/features/callback-and-voicemail/studio/wait-experience
@@ -191,7 +191,7 @@ Follow the detailed Mailgun setup in [Email Notifications Add-on](/techops/featu
 
 #### Step 5: Configure Studio Flow
 
-In your Studio Flow's **Send to ConnieRTC** widget:
+In your Studio Flow's **Send to ThreadConnect** widget:
 - **Hold Music TwiML URL**:
   ```
   https://[YOUR-DOMAIN]/features/callback-and-voicemail-with-email/studio/wait-experience
@@ -348,7 +348,7 @@ Common issues:
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
 │  ┌──────────┐   ┌──────────────┐   ┌─────────────────────┐     │
-│  │ Incoming │ → │ Studio Flow  │ → │ Send to ConnieRTC   │     │
+│  │ Incoming │ → │ Studio Flow  │ → │ To ThreadConnect    │     │
 │  │   Call   │   │              │   │ (Hold Music URL)    │     │
 │  └──────────┘   └──────────────┘   └─────────────────────┘     │
 │                                              ↓                  │

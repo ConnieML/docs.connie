@@ -31,14 +31,14 @@ The feature extends the callback-and-voicemail functionality with an additional 
 
 1. **Caller Experience**: Identical to standard callback/voicemail feature
 2. **Voicemail Processing**: Standard Twilio recording and transcription
-3. **Task Creation**: Normal ConnieRTC task routing for agent handling
+3. **Task Creation**: Normal ThreadConnect task routing for agent handling
 4. **Email Notification**: Parallel process that sends voicemail via email
 
 ### Email Integration
 
 When a voicemail is recorded:
 
-1. The voicemail is processed normally through ConnieRTC workflows
+1. The voicemail is processed normally through ThreadConnect workflows
 2. A separate email function is triggered asynchronously
 3. The recording is fetched from ThreadConnect's servers
 4. An email is composed with the recording as a .wav attachment
@@ -67,7 +67,7 @@ MAILGUN_API_KEY=key-1234567890abcdef1234567890abcdef
 
 ### Feature Configuration
 
-Enable the feature in your ConnieRTC configuration:
+Enable the feature in your ThreadConnect configuration:
 
 ```json
 {
@@ -255,7 +255,7 @@ For high-volume deployments:
 |---------|---------------------|----------------------------------|
 | Callback Requests | ✅ | ✅ |
 | Voicemail Recording | ✅ | ✅ |
-| ConnieRTC Task Creation | ✅ | ✅ |
+| ThreadConnect Task Creation | ✅ | ✅ |
 | Agent Interface | ✅ | ✅ |
 | Email Notifications | ❌ | ✅ |
 | Voicemail Attachments | ❌ | ✅ |

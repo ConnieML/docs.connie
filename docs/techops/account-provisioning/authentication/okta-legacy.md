@@ -9,7 +9,7 @@ title: "OKTA SSO Configuration (Legacy)"
 Documentation for OKTA SSO integration with Twilio Flex.
 
 :::warning Not Currently Used
-**Current Status:** ConnieRTC currently uses **Auth0** for SSO. OKTA integration is not actively deployed.
+**Current Status:** ThreadConnect currently uses **Auth0** for SSO. OKTA integration is not actively deployed.
 
 This documentation is preserved for:
 - Historical reference
@@ -21,7 +21,7 @@ This documentation is preserved for:
 
 ## 🎯 Purpose
 
-This legacy documentation demonstrates that ConnieRTC **supports both Auth0 and OKTA** as identity providers. The architectural patterns and principles described in this authentication section apply to OKTA as well as Auth0.
+This legacy documentation demonstrates that ThreadConnect **supports both Auth0 and OKTA** as identity providers. The architectural patterns and principles described in this authentication section apply to OKTA as well as Auth0.
 
 **Current Recommendation:** Use [Auth0 Configuration](/techops/account-provisioning/authentication/auth0-configuration) for active deployments.
 
@@ -103,14 +103,14 @@ OKTA offers two approaches:
 
 ### Why Auth0 is Currently Used
 
-ConnieRTC initially evaluated both OKTA and Auth0 for SSO integration. Auth0 was selected for current deployments due to:
+ThreadConnect initially evaluated both OKTA and Auth0 for SSO integration. Auth0 was selected for current deployments due to:
 
 - Rapid prototyping and development flexibility
 - Simpler custom attribute management via Actions
 - Cost structure for nonprofit clients
 - Developer experience and documentation
 
-**Important:** This was a pragmatic choice for **current needs**, not a permanent commitment. ConnieRTC architecture remains identity-provider agnostic.
+**Important:** This was a pragmatic choice for **current needs**, not a permanent commitment. ThreadConnect architecture remains identity-provider agnostic.
 
 ---
 
@@ -258,7 +258,7 @@ Value: user.flexRoles
 
 ## ✅ Validation That OKTA Would Work
 
-ConnieRTC's authentication architecture was designed with **provider agnosticism** in mind:
+ThreadConnect's authentication architecture was designed with **provider agnosticism** in mind:
 
 **Evidence:**
 1. ✅ SAML 2.0 standard protocol (OKTA supports)
@@ -318,7 +318,7 @@ Before implementing OKTA:
 ---
 
 :::info Future-Proofing
-This documentation exists to demonstrate ConnieRTC's **provider-agnostic architecture**. We can support OKTA or Auth0 based on client needs, not vendor lock-in.
+This documentation exists to demonstrate ThreadConnect's **provider-agnostic architecture**. We can support OKTA or Auth0 based on client needs, not vendor lock-in.
 
 **Core Principle:** Identity provider is a configuration choice, not an architectural constraint.
 :::

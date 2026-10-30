@@ -6,7 +6,7 @@ title: "System Requirements"
 
 # System Requirements
 
-Ensure your organization's technology infrastructure meets these requirements for optimal ConnieRTC performance.
+Ensure your organization's technology infrastructure meets these requirements for optimal ThreadConnect performance.
 
 ## Operating System Requirements
 
@@ -34,7 +34,7 @@ Ensure your organization's technology infrastructure meets these requirements fo
 
 ## Supported Browsers
 
-ConnieRTC is optimized for modern web browsers with the latest security features and WebRTC support.
+ThreadConnect is optimized for modern web browsers with the latest security features and WebRTC support.
 
 ### Primary Support (Recommended)
 - **Google Chrome** 90+ ✅
@@ -76,7 +76,7 @@ If you experience connection issues, ensure your firewall allows:
 - WebSocket connections for real-time messaging
 
 :::warning Firewall Support
-If you cannot modify firewall settings, contact your IT administrator. ConnieRTC support cannot adjust your local network firewall settings.
+If you cannot modify firewall settings, contact your IT administrator. ThreadConnect support cannot adjust your local network firewall settings.
 :::
 
 ### Common ISP Firewall Documentation
@@ -89,7 +89,7 @@ If you cannot modify firewall settings, contact your IT administrator. ConnieRTC
 
 ## Bandwidth Requirements
 
-ConnieRTC requires stable internet connectivity for optimal performance across all communication channels.
+ThreadConnect requires stable internet connectivity for optimal performance across all communication channels.
 
 ### Minimum Requirements (Per Agent)
 - **Download**: 5 Mbps
@@ -144,7 +144,7 @@ Test your connection speed using:
 
 ## Mobile Device Support
 
-ConnieRTC offers limited mobile support for emergency access and basic functions.
+ThreadConnect offers limited mobile support for emergency access and basic functions.
 
 ### Supported Mobile Browsers
 - **iOS Safari** 14+ (iPhone/iPad)
@@ -161,7 +161,7 @@ ConnieRTC offers limited mobile support for emergency access and basic functions
 
 ### SSL/TLS
 - **Required**: TLS 1.2 or higher
-- **Certificates**: Valid SSL certificates for all ConnieRTC domains
+- **Certificates**: Valid SSL certificates for all ThreadConnect domains
 - **HSTS**: HTTP Strict Transport Security enabled
 
 ### Authentication
@@ -188,7 +188,7 @@ ConnieRTC offers limited mobile support for emergency access and basic functions
 **Browser Compatibility**
 - Update to latest browser version
 - Enable JavaScript and cookies
-- Disable ad blockers for ConnieRTC domains
+- Disable ad blockers for ThreadConnect domains
 
 ### Getting Help
 

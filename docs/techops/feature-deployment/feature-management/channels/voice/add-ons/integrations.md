@@ -135,7 +135,7 @@ exports.handler = async (context, event, callback) => {
 
 #### Agent Screen Population
 ```javascript
-// ConnieRTC plugin integration to display caller context
+// ThreadConnectRTC plugin integration to display caller context
 const CallerInfoPanel = ({ task }) => {
   const [callerData, setCallerData] = useState(null);
   

@@ -20,7 +20,7 @@ Business call forwarding is a great way to kick off your ThreadConnect journey, 
 flowchart LR
     A[Customer Calls Existing Business No. COX] --> B[Call forwards to ThreadConnect Number]
     B --> C[ThreadConnect Receives Call]
-    C --> D[ThreadConnect packages task & routes to ConnieRTC Staff processing]
+    C --> D[ThreadConnect packages task & routes to ThreadConnect Staff processing]
     
     style A fill:#e1f5fe
     style B fill:#f3e5f5

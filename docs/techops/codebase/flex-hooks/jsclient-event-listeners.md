@@ -1,7 +1,7 @@
-Use a JS client event listener hook to add your own handler for events from the various client SDKs within ConnieRTC.
+Use a JS client event listener hook to add your own handler for events from the various client SDKs within ThreadConnect.
 
 ```ts
-import * as ConnieRTC from '@twilio/flex-ui';
+import * as ThreadConnectRTC from '@twilio/flex-ui';
 import { Conversation } from '@twilio/conversations';
 
 import { FlexJsClient, ConversationEvent } from '../../../../../types/feature-loader';
@@ -9,8 +9,8 @@ import { FlexJsClient, ConversationEvent } from '../../../../../types/feature-lo
 export const clientName = FlexJsClient.conversationsClient;
 export const eventName = ConversationEvent.conversationJoined;
 export const jsClientHook = function exampleConversationJoinedHandler(
-  flex: typeof ConnieRTC,
-  manager: ConnieRTC.Manager,
+  flex: typeof ThreadConnectRTC,
+  manager: ThreadConnectRTC.Manager,
   conversation: Conversation,
 ) {
   // your code here

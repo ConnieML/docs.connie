@@ -10,7 +10,7 @@ This guide helps you implement SendGrid integration to send automated email noti
 
 ## Prerequisites
 
-- ✅ ThreadConnect account with ConnieRTC enabled and a phone number configured
+- ✅ ThreadConnect account with ThreadConnect enabled and a phone number configured
 - ✅ SendGrid account (free tier available)
 - ✅ A domain name you control (or subdomain)
 - ✅ Access to your domain's DNS settings
@@ -24,7 +24,7 @@ This implementation creates an automated workflow where:
 2. **Voicemail triggers serverless function** → Processes recording
 3. **Function calls SendGrid API** → Sends email with attachment
 4. **Admin receives notification** → With audio file attached
-5. **Original voicemail task** → Routes to ConnieRTC agents normally
+5. **Original voicemail task** → Routes to ThreadConnect agents normally
 
 The system maintains compliance records while keeping your normal workflow intact.
 
@@ -333,8 +333,8 @@ Send a test email to verify everything works:
 :::warning Update Required Values
 Before saving the flow, you'll need to update these placeholders:
 - `YOUR-FUNCTION-URL` - Your ThreadConnect Functions domain (Step 4)
-- `YOUR-WORKFLOW-SID` - Your ConnieRTC Workflow SID
-- `YOUR-CHANNEL-SID` - Your ConnieRTC Channel SID
+- `YOUR-WORKFLOW-SID` - Your ThreadConnect Workflow SID
+- `YOUR-CHANNEL-SID` - Your ThreadConnect Channel SID
 :::
 
 ---
@@ -503,7 +503,7 @@ exports.handler = async function(context, event, callback) {
 4. **Check your admin email** - you should receive:
    - Email notification with voicemail details
    - Attached .wav audio file
-5. **Check ConnieRTC** - the voicemail task should appear normally
+5. **Check ThreadConnect** - the voicemail task should appear normally
 
 ### Troubleshooting Common Issues
 
@@ -523,9 +523,9 @@ exports.handler = async function(context, event, callback) {
 - Check that your FROM_EMAIL is verified in SendGrid
 - Ensure DNS records are properly configured
 
-**Voicemail not routing to ConnieRTC?**
+**Voicemail not routing to ThreadConnect?**
 - Check your Workflow and Channel SIDs in the Studio Flow
-- Verify ConnieRTC configuration is correct
+- Verify ThreadConnect configuration is correct
 
 ---
 

@@ -6,7 +6,7 @@ title: "🛟 Get Support"
 
 # 🛟 Get Support
 
-ConnieRTC provides comprehensive support through our **5-tier support system** designed to help nonprofits and community-based organizations succeed. Each tier offers different levels of assistance, from self-service resources to enterprise-level professional services.
+ThreadConnect provides comprehensive support through our **5-tier support system** designed to help nonprofits and community-based organizations succeed. Each tier offers different levels of assistance, from self-service resources to enterprise-level professional services.
 
 <div style={{textAlign: 'center', margin: '32px 0'}}>
   <img src="/img/support/get-support-overview.png" alt="Get Support Overview" style={{maxWidth: '100%', height: 'auto'}} />
@@ -40,7 +40,7 @@ Our 5-tier system ensures you get the right level of support for your needs:
           <h3 style={{margin: '0'}}>Community Support (L2)</h3>
         </div>
         <p><strong>Peer-to-Peer Assistance</strong></p>
-        <p>Connect with other ConnieRTC users to share experiences and solutions</p>
+        <p>Connect with other ThreadConnect users to share experiences and solutions</p>
         <p><strong>Best for:</strong> Best practices, implementation tips, community insights</p>
         <p><a href="/get-support/community" className="button button--primary">Join Community</a></p>
       </div>

@@ -2,7 +2,7 @@
 title: Add-ons
 ---
 
-When building a Twilio ConnieRTC solution, you may have additional supporting packages that need to be deployed, such as web apps or services. These can be managed and deployed with the template using the `addons` directory. Packages within this directory will be processed by the setup script, which populates missing environment variables and installs dependencies. Packages within this directory will also be automatically deployed using the included workflows.
+When building a Twilio ThreadConnect solution, you may have additional supporting packages that need to be deployed, such as web apps or services. These can be managed and deployed with the template using the `addons` directory. Packages within this directory will be processed by the setup script, which populates missing environment variables and installs dependencies. Packages within this directory will also be automatically deployed using the included workflows.
 
 ## Included add-ons
 

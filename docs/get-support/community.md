@@ -10,7 +10,7 @@ description: "Peer-to-peer help — connect with experienced ThreadConnect users
   <h1 style={{margin: '0'}}>Community Support (L2)</h1>
 </div>
 
-**Peer-to-Peer Assistance** - Connect with experienced ConnieRTC users and share knowledge.
+**Peer-to-Peer Assistance** - Connect with experienced ThreadConnect users and share knowledge.
 
 <div style={{textAlign: 'center', margin: '24px 0'}}>
   <a href="https://join.slack.com/t/connie-xqe6685/shared_invite/zt-3cyphps44-jQ_XaSmM1tSkk03fbXiaVg" target="_blank" rel="noopener noreferrer">
@@ -24,7 +24,7 @@ Community Support is ideal when you want to:
 
 - **Learn best practices** from experienced nonprofit administrators
 - **Share implementation strategies** that work for your organization
-- **Get insights** on creative uses of ConnieRTC features
+- **Get insights** on creative uses of ThreadConnect features
 - **Connect with peers** facing similar challenges
 - **Contribute solutions** to help other community members
 
@@ -39,7 +39,7 @@ Community Support is ideal when you want to:
 
 ### 👥 Active User Community
 - **Nonprofit professionals** sharing real-world experiences
-- **ConnieRTC experts** offering implementation guidance  
+- **ThreadConnect experts** offering implementation guidance  
 - **Feature discussions** about upcoming capabilities
 - **Success stories** from organizations like yours
 
@@ -52,7 +52,7 @@ Community Support is ideal when you want to:
 ### 🏆 Recognition & Contribution
 - **Community badges** for helpful contributors
 - **Featured solutions** that benefit many users
-- **Direct connection** with ConnieRTC product team
+- **Direct connection** with ThreadConnect product team
 - **Early access** to beta features for active members
 
 ## Tips for Best Results
@@ -95,11 +95,11 @@ Consider moving to **Trouble Tickets (L3)** or **Live Chat (L4)** when:
 
 - Issues are **organization-specific** or involve sensitive data
 - Problems are **time-sensitive** and affecting operations
-- Solutions require **technical investigation** by ConnieRTC staff
+- Solutions require **technical investigation** by ThreadConnect staff
 - Community discussions aren't leading to **actionable answers**
 
 ---
 
 **Join the Community**: [connie.plus/support](https://connie.plus/support)
 
-*Connect with nonprofits using ConnieRTC to transform their communication capabilities.*
+*Connect with nonprofits using ThreadConnect to transform their communication capabilities.*

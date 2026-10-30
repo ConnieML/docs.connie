@@ -6,7 +6,7 @@ title: "SMS/Text Channel"
 
 # SMS/Text Channel
 
-Connect with your community through text messaging with ConnieRTC's SMS channel capabilities.
+Connect with your community through text messaging with ThreadConnect's SMS channel capabilities.
 
 ## Overview
 

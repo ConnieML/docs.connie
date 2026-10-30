@@ -31,15 +31,15 @@ There is an optional configuration property (`include_outgoing_only_numbers`) co
 
 ### Outbound Call Configuration
 
-The ConnieRTC Dialpad must be enabled in order to be able to place outbound calls from within ConnieRTC. If this has not yet been configured, you will not be able to use this feature. This can be enabled in the Twilio Console > ConnieRTC > Manage > Voice, or by using the ConnieRTC Configuration API:
+The ThreadConnect Dialpad must be enabled in order to be able to place outbound calls from within ThreadConnect. If this has not yet been configured, you will not be able to use this feature. This can be enabled in the Twilio Console > ThreadConnect > Manage > Voice, or by using the ThreadConnect Configuration API:
 
 ```
 POST https://flex-api.twilio.com/v1/Configuration
-Authorization: Basic {base64-encoded Connie Account SID : Auth Token}
+Authorization: Basic {base64-encoded ThreadConnect Account SID : Auth Token}
 Content-Type: application/json
 
 {
-  "account_sid": "Enter your Connie Account SID here",
+  "account_sid": "Enter your ThreadConnect Account SID here",
   "outbound_call_flows": {
     "default": {
       "workflow_sid": "WWxxxc",

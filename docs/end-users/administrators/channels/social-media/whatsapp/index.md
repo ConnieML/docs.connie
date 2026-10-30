@@ -6,7 +6,7 @@ title: "WhatsApp Channel Setup Guide"
 
 # WhatsApp Channel Setup Guide
 
-This guide walks ThreadConnect administrators and AI agents through the complete process of activating WhatsApp as a communication channel on a ConnieRTC instance.
+This guide walks ThreadConnect administrators and AI agents through the complete process of activating WhatsApp as a communication channel on a ThreadConnect instance.
 
 ## Overview
 
@@ -46,7 +46,7 @@ Before starting, ensure you have:
 - [ ] **Meta Business Manager** account ([business.meta.com](https://business.meta.com))
 - [ ] **Facebook Account** with admin access to the Meta Business Manager
 - [ ] **ThreadConnect Phone Number** to register as the WhatsApp sender
-- [ ] **ThreadConnect Plugin** deployed (ConnieRTC flex-project-template)
+- [ ] **ThreadConnect Plugin** deployed (ThreadConnect flex-project-template)
 
 :::info Important: One Number Per CBO
 Each CBO needs its own dedicated phone number for WhatsApp. A phone number can only be registered as a WhatsApp sender on one WhatsApp Business Account (WABA) at a time. Numbers cannot be shared across CBOs.

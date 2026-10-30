@@ -11,7 +11,7 @@ ThreadConnect provides comprehensive web-based communication solutions designed 
 ## Available Web Features
 
 ### Web Forms Integration
-Transform your website forms into automated workflows that create tasks directly in ConnieRTC.
+Transform your website forms into automated workflows that create tasks directly in ThreadConnect.
 - [Web Forms Provider Selection](/end-users/administrators/channels/web/web-forms/select-provider)
 - [Adobe Acrobat Sign Setup](/end-users/administrators/channels/web/web-forms/adobe-acrobat-sign)
 
@@ -23,7 +23,7 @@ Web services enable your organization to:
 flowchart LR
     A[Website Visitors] --> B[Online Forms]
     B --> C[Professional Processing]
-    C --> D[ConnieRTC Tasks]
+    C --> D[ThreadConnect Tasks]
     D --> E[Staff Assignment]
     
     style A fill:#e1f5fe
@@ -36,8 +36,8 @@ flowchart LR
 **The Complete Process**:
 - **Online Forms**: Visitors complete intake, referral, or application forms on your website
 - **Professional Processing**: Forms are validated and converted to professional PDF documents
-- **Automatic Routing**: Form submissions are automatically emailed to ConnieRTC endpoints
-- **Task Creation**: Each submission becomes a properly labeled task in your ConnieRTC queue
+- **Automatic Routing**: Form submissions are automatically emailed to ThreadConnect endpoints
+- **Task Creation**: Each submission becomes a properly labeled task in your ThreadConnect queue
 - **Staff Assignment**: Tasks are routed to appropriate staff based on form type and content
 
 ## Key Benefits
@@ -62,10 +62,10 @@ flowchart LR
 ## Getting Started
 
 1. **Choose Your Provider**: Select from available web forms providers
-2. **Configure Integration**: Set up your chosen provider with ConnieRTC
+2. **Configure Integration**: Set up your chosen provider with ThreadConnect
 3. **Create Studio Flow**: Deploy the form processing workflow
 4. **Test Your Setup**: Submit test forms to verify complete functionality
-5. **Train Your Team**: Ensure staff understand web form tasks in ConnieRTC
+5. **Train Your Team**: Ensure staff understand web form tasks in ThreadConnect
 
 ## Use Cases
 
@@ -91,13 +91,13 @@ flowchart LR
 - **Other Platforms**: Email-based integration works with any website platform
 - **Mobile Optimization**: Forms must be mobile-responsive for accessibility
 
-### ConnieRTC Configuration
+### ThreadConnect Configuration {#conniertc-configuration}
 - **Email Channel**: Dedicated email addresses for form processing (e.g., `forms@connie.host`)
 - **Studio Flow**: Custom workflow for form-to-task conversion
-- **ConnieRTC Queue**: Proper skill routing for different form types
+- **ThreadConnect Queue**: Proper skill routing for different form types
 
 ### Staff Requirements
-- **ConnieRTC Access**: Staff need active ConnieRTC ConnieRTC accounts
+- **ThreadConnect Access**: Staff need active ThreadConnect accounts
 - **PDF Viewing**: Ability to view and process PDF attachments
 - **Email Access**: For backup notifications and confirmations
 
@@ -140,7 +140,7 @@ flowchart LR
 ### Implementation Support
 - **Provider Selection**: Guidance on choosing the right forms provider for your needs
 - **Technical Setup**: Assistance with integration configuration and testing
-- **Staff Training**: Comprehensive training on web form workflows in ConnieRTC
+- **Staff Training**: Comprehensive training on web form workflows in ThreadConnect
 
 ### Ongoing Support
 - **ThreadConnect Care Team**: Available for troubleshooting and optimization

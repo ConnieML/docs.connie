@@ -6,7 +6,7 @@ title: "Fax Channel"
 
 # Fax Channel
 
-Handle fax communications digitally with ConnieRTC's modern fax integration capabilities.
+Handle fax communications digitally with ThreadConnect's modern fax integration capabilities.
 
 ## Overview
 

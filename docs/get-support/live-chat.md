@@ -41,7 +41,7 @@ Live Chat is your premium support option for:
 - **Time Zone Support**: Accommodates various nonprofit operating schedules
 
 ### 👨‍💻 Expert Agents
-- **ConnieRTC specialists** with deep platform knowledge
+- **ThreadConnect specialists** with deep platform knowledge
 - **Nonprofit experience** understanding your unique challenges  
 - **Technical expertise** across all system components
 - **Escalation access** to engineering team when needed
@@ -117,4 +117,4 @@ Consider other support tiers when:
 
 **Start Live Chat**: [connie.plus/support](https://connie.plus/support)
 
-*Get immediate help from ConnieRTC experts when you need it most.*
+*Get immediate help from ThreadConnect experts when you need it most.*

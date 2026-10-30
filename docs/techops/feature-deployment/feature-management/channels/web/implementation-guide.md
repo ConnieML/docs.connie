@@ -8,7 +8,7 @@ title: "Web Forms Implementation Guide"
 
 ## Overview
 
-This comprehensive guide covers implementing web forms integration within ConnieRTC. Web forms enable seamless website visitor interactions that automatically create tasks in Twilio ConnieRTC for staff processing, providing a complete digital intake and referral system.
+This comprehensive guide covers implementing web forms integration within ThreadConnect. Web forms enable seamless website visitor interactions that automatically create tasks in Twilio ThreadConnect for staff processing, providing a complete digital intake and referral system.
 
 ## Workflow Architecture
 
@@ -20,9 +20,9 @@ flowchart TB
     B --> C[Client-side Validation]
     C --> D[Provider Processing]
     D --> E[Document Generation]
-    E --> F[Email to ConnieRTC]
+    E --> F[Email to ThreadConnect]
     F --> G[Studio Flow Processing]
-    G --> H[Task Creation in ConnieRTC]
+    G --> H[Task Creation in ThreadConnect]
     H --> I[Staff Assignment & Processing]
     
     J[Website Admin] --> K[Form Configuration]
@@ -61,7 +61,7 @@ flowchart LR
     C --> D[PDF Document Generation]
     D --> E[Email: forms@connie.host]
     E --> F[Studio Flow Processing]
-    F --> G[ConnieRTC Task with PDF Attachment]
+    F --> G[ThreadConnect Task with PDF Attachment]
 ```
 
 **Technical Stack:**
@@ -77,7 +77,7 @@ flowchart LR
 ```mermaid
 flowchart LR
     A[Custom Form] --> B[Form Validation]
-    B --> C[ConnieRTC API Direct]
+    B --> C[ThreadConnect API Direct]
     C --> D[Immediate Task Creation]
     D --> E[Real-time Staff Notification]
 ```
@@ -93,7 +93,7 @@ flowchart TB
     A[Form Router] --> B[Intake Forms - Adobe]
     A --> C[Surveys - Typeform]
     A --> D[Applications - Formstack]
-    B --> E[ConnieRTC Email Processing]
+    B --> E[ThreadConnect Email Processing]
     C --> E
     D --> E
 ```
@@ -118,7 +118,7 @@ function handle_connie_form_submission($form_data) {
     $adobe_response = submit_to_adobe($adobe_payload);
     
     if ($adobe_response['success']) {
-        // Adobe will handle email notification to ConnieRTC
+        // Adobe will handle email notification to ThreadConnectRTC
         return ['status' => 'success', 'message' => 'Form submitted successfully'];
     } else {
         // Handle error case
@@ -264,7 +264,7 @@ function extractOrganization(emailAddress) {
     // Extract organization from email patterns
     if (emailAddress.includes('h2h.')) return 'H2H';
     if (emailAddress.includes('nss.')) return 'NSS';
-    return 'ConnieRTC';
+    return 'ThreadConnectRTC';
 }
 ```
 
@@ -447,7 +447,7 @@ function extractOrganization(emailAddress) {
       "properties": {
         "service": "YOUR_MESSAGING_SERVICE_SID",
         "to": "SUPERVISOR_PHONE_NUMBER",
-        "body": "EMERGENCY web form submission from {{widgets.process_form_email.parsed.client_name}}. Service needed: {{widgets.process_form_email.parsed.service_type}}. Task created in ConnieRTC queue.",
+        "body": "EMERGENCY web form submission from {{widgets.process_form_email.parsed.client_name}}. Service needed: {{widgets.process_form_email.parsed.service_type}}. Task created in ThreadConnectRTC queue.",
         "offset": { "x": 800, "y": 250 }
       }
     },
@@ -479,7 +479,7 @@ function extractOrganization(emailAddress) {
 
 ### 4. Task Management Configuration
 
-#### ConnieRTC Task Attributes
+#### ThreadConnect Task Attributes {#conniertc-task-attributes}
 ```javascript
 // Standard task attributes for web form submissions
 const webFormTaskAttributes = {
@@ -794,7 +794,7 @@ test('complete form submission workflow', async ({ page }) => {
   // Verify success message
   await expect(page.locator('.success-message')).toBeVisible();
   
-  // Verify task creation (would require API call to ConnieRTC)
+  // Verify task creation (would require API call to ThreadConnectRTC)
   // This would be implemented based on your testing environment
 });
 
@@ -1000,7 +1000,7 @@ const FormSecurity = {
 ### Common Issues & Solutions
 
 #### 1. Forms Submit But No Tasks Created
-**Symptoms:** WordPress form submits successfully, user sees confirmation, but no task appears in ConnieRTC.
+**Symptoms:** WordPress form submits successfully, user sees confirmation, but no task appears in ThreadConnect.
 
 **Debug Steps:**
 ```bash
@@ -1071,7 +1071,7 @@ const debugTaskAttributes = (taskData) => {
 ## Future Enhancements Roadmap
 
 ### Phase 1: Enhanced Form Processing (Q3 2024)
-- **Inline Form Preview:** Display form data directly in ConnieRTC task panel
+- **Inline Form Preview:** Display form data directly in ThreadConnect task panel
 - **Multi-language Support:** Forms available in Spanish, Chinese, and Arabic
 - **Advanced Validation:** Real-time field validation with custom rules
 
@@ -1109,4 +1109,4 @@ const debugTaskAttributes = (taskData) => {
 
 ---
 
-*This implementation guide provides comprehensive coverage of web forms integration within ConnieRTC. For specific provider implementations, refer to the individual provider documentation linked throughout this guide.*
+*This implementation guide provides comprehensive coverage of web forms integration within ThreadConnect. For specific provider implementations, refer to the individual provider documentation linked throughout this guide.*

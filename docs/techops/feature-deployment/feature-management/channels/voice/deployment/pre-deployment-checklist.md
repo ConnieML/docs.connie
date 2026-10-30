@@ -44,8 +44,8 @@ twilio profiles:list
 - CNAME records  
 - MX records
 
-### ConnieRTC Template Access
-- [ ] **Codebase Access**: Can access and modify ConnieRTC template files
+### ThreadConnect Template Access {#conniertc-template-access}
+- [ ] **Codebase Access**: Can access and modify ThreadConnect template files
 - [ ] **Serverless Functions**: Can deploy to Twilio Functions
 - [ ] **Terraform Access**: Can apply infrastructure changes
 - [ ] **Environment Variables**: Can modify Twilio Functions environment variables
@@ -93,7 +93,7 @@ twilio profiles:list
 ### Twilio Resources Discovery
 - [ ] **Workspace SID Located**: `WS________________________________`
 - [ ] **"Assign to Anyone" Workflow SID Located**: `WW________________________________`  
-- [ ] **ConnieRTC Service Available**: Confirmed ConnieRTC is active and accessible
+- [ ] **ThreadConnect Service Available**: Confirmed ThreadConnect is active and accessible
 - [ ] **TaskRouter Configured**: Confirmed TaskRouter workspace is operational
 
 **Validation Commands:**
@@ -158,7 +158,7 @@ twilio api:taskrouter:v1:workspaces:workflows:list \
 ### Test Environment Setup
 - [ ] **Test Phone Number Available**: Have phone number to make test calls
 - [ ] **Test Email Access**: Can check admin email address for test messages
-- [ ] **ConnieRTC Agent Access**: Have agent login to test task handling
+- [ ] **ThreadConnect Agent Access**: Have agent login to test task handling
 - [ ] **Recording Playback Method**: Way to test voicemail audio quality
 
 ### Rollback Planning
@@ -183,7 +183,7 @@ twilio api:taskrouter:v1:workspaces:workflows:list \
   - [ ] Audio quality acceptable in email attachments
   - [ ] Transcription accuracy adequate
   - [ ] Email formatting professional
-  - [ ] ConnieRTC task handling seamless
+  - [ ] ThreadConnect task handling seamless
 
 ---
 

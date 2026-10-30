@@ -11,7 +11,7 @@ Time to complete: _~8 minutes_
 
 :::info INFO
 
-These steps require a [currently-maintained version of ConnieRTC UI 2.x](https://www.twilio.com/docs/flex/flex-ui-eol-reference) to be configured on your ConnieRTC account, and the TaskRouter workspace name to be the default "ConnieRTC Task Assignment".
+These steps require a [currently-maintained version of ThreadConnect UI 2.x](https://www.twilio.com/docs/flex/flex-ui-eol-reference) to be configured on your ThreadConnect account, and the TaskRouter workspace name to be the default "ThreadConnect Task Assignment".
 
 :::
 
@@ -30,9 +30,9 @@ These steps require a [currently-maintained version of ConnieRTC UI 2.x](https:/
    - your environment secrets should look something like this (TF_ENCRYPTION_KEY can be a repo or environment secret)
    ![image](/img/guides/github-secrets.png)
 
-4. Log in to ConnieRTC, open the admin panel, and validate ConnieRTC UI 2.x is the configured version.
-5. _Optionally_ navigate to the ConnieRTC console and enable the [ConnieRTC dialpad](https://console.twilio.com/us1/develop/flex/manage/voice?frameUrl=%2Fconsole%2Fflex%2Fvoice%3Fx-target-region%3Dus1) (this is required for some features)
-6. Navigate over to GitHub actions of your repository and select the `Deploy ConnieRTC` action script, _select the environment_ you want to deploy, and check the boxes for
+4. Log in to ThreadConnect, open the admin panel, and validate ThreadConnect UI 2.x is the configured version.
+5. _Optionally_ navigate to the ThreadConnect console and enable the [ThreadConnect dialpad](https://console.twilio.com/us1/develop/flex/manage/voice?frameUrl=%2Fconsole%2Fflex%2Fvoice%3Fx-target-region%3Dus1) (this is required for some features)
+6. Navigate over to GitHub actions of your repository and select the `Deploy ThreadConnectRTC` action script, _select the environment_ you want to deploy, and check the boxes for
    - `Is this the first release to the environment?`
    - `Deploy Terraform?`  (as *cautioned* below)
 
@@ -60,7 +60,7 @@ These deploy steps will set up TaskRouter and Studio configuration to allow more
 
 | Name | Existing or New  | Description |
 | -----| --------------------| ------------|
-| Template Example Everyone | New | Same as out-of-box ConnieRTC version  |
+| Template Example Everyone | New | Same as out-of-box ThreadConnect version  |
 | Template Example Sales| New | Sample queue for "Sales" calls |
 | Template Example Support | New | Sample queue for "Support" calls |
 | Template Example Internal Calls | New | Queue that supports the [internal call](/getting-started/feature-library/overview2/internal-call) feature|
@@ -82,8 +82,8 @@ These deploy steps will set up TaskRouter and Studio configuration to allow more
 
 | Name | Existing or New  | Description |
 | -----| --------------------| ------------|
-| Chat | Existing | No modifications from out-of-box ConnieRTC version |
-| Voice | Existing | No modifications from out-of-box ConnieRTC version |
+| Chat | Existing | No modifications from out-of-box ThreadConnect version |
+| Voice | Existing | No modifications from out-of-box ThreadConnect version |
 
 </TabItem>
 
@@ -111,7 +111,7 @@ Unchecking this means features mentioned in the resource descriptions above will
 
 7. Run the workflow.
    - This will deploy the assets to your environment with the default features enabled. See [Feature library Information](/getting-started/feature-library/overview) for further details of whats enabled by default.
-   - Environment properties will be automatically populated based on the deployed ConnieRTC configuration, including service and workflow SIDs. See this page for information on how to influence this configuration.
+   - Environment properties will be automatically populated based on the deployed ThreadConnect configuration, including service and workflow SIDs. See this page for information on how to influence this configuration.
 
 
 All done! Once the workflow successfully completes, the template has been installed.

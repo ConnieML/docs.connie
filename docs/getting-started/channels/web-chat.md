@@ -6,7 +6,7 @@ title: "Web Chat Channel"
 
 # Web Chat Channel
 
-Provide real-time chat support directly on your website with ConnieRTC's Web Chat capabilities.
+Provide real-time chat support directly on your website with ThreadConnect's Web Chat capabilities.
 
 ## Overview
 

@@ -297,7 +297,7 @@ testing_plan:
     - [ ] Email notification delivery
     - [ ] Audio attachment quality
     - [ ] Transcription accuracy
-    - [ ] ConnieRTC task handling
+    - [ ] ThreadConnectRTC task handling
   
   acceptance_criteria:
     call_connection_success_rate: "______ %" # (typical: 99%+)

@@ -6,16 +6,16 @@ title: "ThreadConnect Voice Direct Service Architecture"
 
 # ThreadConnect Voice Direct Service Architecture
 
-This document provides generic, client-agnostic Mermaid diagrams that illustrate the ConnieRTC Voice Direct service architecture for developer documentation and implementation reference.
+This document provides generic, client-agnostic Mermaid diagrams that illustrate the ThreadConnect Voice Direct service architecture for developer documentation and implementation reference.
 
 ## Overview
 
-ConnieRTC Voice Direct services provide two primary workflows for handling incoming voice calls:
+ThreadConnect Voice Direct services provide two primary workflows for handling incoming voice calls:
 
 1. **Voice Direct + Voicemail**: Auto-routes callers to voicemail with task creation and email notifications
 2. **Voice Direct (Basic)**: Direct routing to task queues without voicemail options
 
-Both workflows are designed to be **client-agnostic** and use generic terminology that applies to any ConnieRTC deployment.
+Both workflows are designed to be **client-agnostic** and use generic terminology that applies to any ThreadConnect deployment.
 
 ## Voice Direct + Voicemail Architecture
 
@@ -28,7 +28,7 @@ flowchart TB
     C --> D[Record Voicemail Widget]
     D --> E[TwiML Redirect to Serverless Function]
     E --> F[Create Callback Task Function]
-    F --> G[Task Created in ConnieRTC]
+    F --> G[Task Created in ThreadConnect]
     F --> H[Send Voicemail Email Function]
     G --> I[Task Appears in Agent Queue]
     H --> J[Email Sent to Admin]
@@ -50,7 +50,7 @@ flowchart TB
 - **Client Phone Number**: The customer-facing phone number that routes to the Studio Flow
 - **Studio Flow**: Twilio Studio flow that orchestrates the voice experience
 - **Serverless Functions**: Backend logic for task creation and email processing
-- **ConnieRTC Task Queue**: Where voicemail tasks appear for agent processing
+- **ThreadConnect Task Queue**: Where voicemail tasks appear for agent processing
 - **Email Service**: Automated notifications sent to administrators
 
 ### Process Flow
@@ -58,19 +58,19 @@ flowchart TB
 1. **Call Initiation**: Customer calls the client's phone number
 2. **Studio Processing**: Studio flow plays greeting and initiates recording
 3. **Voicemail Capture**: Recording widget captures the customer's message
-4. **Task Creation**: Serverless function creates a task in ConnieRTC with voicemail details
+4. **Task Creation**: Serverless function creates a task in ThreadConnect with voicemail details
 5. **Email Notification**: Parallel process sends voicemail to admin email as attachment
 6. **Agent Processing**: Agent receives task with voicemail recording and handles accordingly
 
 ## Voice Direct (Basic) Architecture
 
-This streamlined workflow provides direct routing to ConnieRTC task queues without voicemail capabilities. It's designed for organizations that prefer immediate task creation without hold queues.
+This streamlined workflow provides direct routing to ThreadConnect task queues without voicemail capabilities. It's designed for organizations that prefer immediate task creation without hold queues.
 
 ```mermaid
 flowchart TB
     A[Incoming Call to Client Phone Number] --> B[Twilio Studio Flow]
     B --> C[Call Processing Logic]
-    C --> D[Send to ConnieRTC Widget]
+    C --> D[Send to ThreadConnect Widget]
     D --> E[Task Created in TaskRouter]
     E --> F[Task Routed to Appropriate Queue]
     F --> G[Agent Receives Direct Call Task]
@@ -88,7 +88,7 @@ flowchart TB
 
 - **Client Phone Number**: The customer-facing phone number
 - **Studio Flow**: Minimal Studio flow for call routing
-- **Send to ConnieRTC Widget**: Studio widget that creates tasks and routes to agents
+- **Send to ThreadConnect Widget**: Studio widget that creates tasks and routes to agents
 - **TaskRouter**: ThreadConnect's task routing engine
 - **Task Queue**: Specific queue based on routing logic
 
@@ -96,7 +96,7 @@ flowchart TB
 
 1. **Call Initiation**: Customer calls the client's phone number
 2. **Studio Processing**: Studio flow processes the call with minimal logic
-3. **Task Creation**: Send to ConnieRTC widget creates a task immediately
+3. **Task Creation**: Send to ThreadConnect widget creates a task immediately
 4. **Task Routing**: TaskRouter routes the task to the appropriate queue
 5. **Agent Assignment**: Available agent receives the task and connects to the live call
 6. **Call Handling**: Agent handles the customer call directly
@@ -129,7 +129,7 @@ MAILGUN_API_KEY=key-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 1. **Terraform Deployment**: Infrastructure as Code for consistent deployments
 2. **Serverless Functions**: Deployed via Twilio CLI or CI/CD pipeline
 3. **Studio Flow**: JSON configuration imported into Twilio Studio
-4. **ConnieRTC Configuration**: UI attributes and feature flags
+4. **ThreadConnect Configuration**: UI attributes and feature flags
 
 ## Feature Comparison
 
@@ -173,4 +173,4 @@ MAILGUN_API_KEY=key-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 - **API Authentication**: Proper credential management for all service integrations
 - **Data Retention**: Implement appropriate retention policies for recordings and tasks
 
-These architecture diagrams provide a foundation for understanding ConnieRTC Voice Direct services and can be customized for specific client implementations while maintaining the core architectural patterns.
+These architecture diagrams provide a foundation for understanding ThreadConnect Voice Direct services and can be customized for specific client implementations while maintaining the core architectural patterns.

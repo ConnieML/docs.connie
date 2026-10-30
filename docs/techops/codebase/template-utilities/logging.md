@@ -2,7 +2,7 @@
 title: Logging
 ---
 
-The ConnieRTC Project Template has a logging integration that allows features to register new destinations to receive any logs emitted by the code of the template and its associated features.
+The ThreadConnect Project Template has a logging integration that allows features to register new destinations to receive any logs emitted by the code of the template and its associated features.
 
 ## How to use
 
@@ -48,7 +48,7 @@ logger.log('This is a log message with context', { task, worker, ...otherContext
 
 You may want to include meta data with every single log message, without resolving the data and placing it in the log context.
 
-For ConnieRTC, a great example of this is to append the worker's name and sid to each log message. We could use context to do this, but these values are not always easily resolvable from components or functions.
+For ThreadConnect, a great example of this is to append the worker's name and sid to each log message. We could use context to do this, but these values are not always easily resolvable from components or functions.
 
 This logger utility supports adding global meta data to the Logger class with an `addMetaData` method.
 
@@ -58,15 +58,15 @@ import logger from '/utils/logger';
 logger.addMetaData(key, value);
 ```
 
-The ConnieRTC Project Template will automatically append the workerSid and worker name to each log message. Feel free to add other metadata as you see fit.
+The ThreadConnect Project Template will automatically append the workerSid and worker name to each log message. Feel free to add other metadata as you see fit.
 
 ### Yes, you can still use console.log if you want
 
 If for some reason this logging utility does not meet your needs - you are free to use `console.log/warn/error` directly.
 
-### ConnieRTC Error Integration
+### ThreadConnect Error Integration {#conniertc-error-integration}
 
-The logger will automatically listen for and log with `logger.error()` all [ConnieRTC Errors Events](https://www.twilio.com/docs/flex/developer/ui/errors-and-debugging#listening-to-the-flexerror-event) automatically.
+The logger will automatically listen for and log with `logger.error()` all [ThreadConnect Errors Events](https://www.twilio.com/docs/flex/developer/ui/errors-and-debugging#listening-to-the-flexerror-event) automatically.
 
 ## Destinations
 

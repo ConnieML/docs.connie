@@ -6,7 +6,7 @@ title: "Updating Documentation"
 
 # Updating Documentation
 
-This guide explains how to update the ConnieRTC documentation site. Perfect for ThreadConnect staff who need to add new features, fix content, or improve the documentation.
+This guide explains how to update the ThreadConnect documentation site. Perfect for ThreadConnect staff who need to add new features, fix content, or improve the documentation.
 
 ## Quick Reference
 

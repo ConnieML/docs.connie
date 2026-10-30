@@ -6,7 +6,7 @@ title: "Twilio Flex Account Provisioning with Auth0 SSO"
 
 # Twilio Flex Account Provisioning Guide
 
-**Provisioning a new Flex account on the shared ConnieRTC platform with Auth0 SSO**
+**Provisioning a new Flex account on the shared ThreadConnect platform with Auth0 SSO**
 
 ```
 Version: 2.0
@@ -22,7 +22,7 @@ Changelog: v2.0 - Complete rewrite for shared CloudFront + self-hosted Flex UI a
 
 ## Overview
 
-This guide provisions a new Twilio Flex account on the shared ConnieRTC platform:
+This guide provisions a new Twilio Flex account on the shared ThreadConnect platform:
 - Auth0 SSO authentication (SAML 2.0)
 - Vanity domain (`clientname.connie.team`) on shared infrastructure
 - Self-hosted Flex UI with dynamic per-account configuration

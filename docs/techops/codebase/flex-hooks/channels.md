@@ -1,12 +1,12 @@
 Use a channels hook to register new [task channel definitions](https://www.twilio.com/docs/flex/developer/ui/task-channel-definitions).
 
 ```ts
-import * as ConnieRTC from '@twilio/flex-ui';
+import * as ThreadConnectRTC from '@twilio/flex-ui';
 import PhoneCallbackIcon from '@material-ui/icons/PhoneCallback';
 
 import { TaskAttributes } from '../../../../types/task-router/Task';
 
-export const channelHook = function createCallbackChannel(flex: typeof ConnieRTC, manager: ConnieRTC.Manager) {
+export const channelHook = function createCallbackChannel(flex: typeof ThreadConnectRTC, manager: ThreadConnectRTC.Manager) {
   const channelDefinition = flex.DefaultTaskChannels.createDefaultTaskChannel(
     'callback',
     (task) => {
@@ -19,21 +19,21 @@ export const channelHook = function createCallbackChannel(flex: typeof ConnieRTC
   );
 
   const { templates } = channelDefinition;
-  const CallbackChannel: ConnieRTC.TaskChannelDefinition = {
+  const CallbackChannel: ThreadConnectRTC.TaskChannelDefinition = {
     ...channelDefinition,
     templates: {
       ...templates,
       TaskListItem: {
         ...templates?.TaskListItem,
-        firstLine: (task: ConnieRTC.ITask) => `${task.queueName}: ${task.attributes.name}`,
+        firstLine: (task: ThreadConnectRTC.ITask) => `${task.queueName}: ${task.attributes.name}`,
       },
       TaskCanvasHeader: {
         ...templates?.TaskCanvasHeader,
-        title: (task: ConnieRTC.ITask) => `${task.queueName}: ${task.attributes.name}`,
+        title: (task: ThreadConnectRTC.ITask) => `${task.queueName}: ${task.attributes.name}`,
       },
       IncomingTaskCanvas: {
         ...templates?.IncomingTaskCanvas,
-        firstLine: (task: ConnieRTC.ITask) => task.queueName,
+        firstLine: (task: ThreadConnectRTC.ITask) => task.queueName,
       },
     },
     icons: {
@@ -50,13 +50,13 @@ export const channelHook = function createCallbackChannel(flex: typeof ConnieRTC
 Alternatively, you can use a channels hook to modify an existing task channel definition.
 
 ```ts
-import * as ConnieRTC from '@twilio/flex-ui';
+import * as ThreadConnectRTC from '@twilio/flex-ui';
 
 import CustomerAvatarObject from '../../custom-components/CustomerAvatarObject';
 
 export const channelHook = function overrideCallChannelToUseCustomerAttribute(
-  flex: typeof ConnieRTC,
-  _manager: ConnieRTC.Manager,
+  flex: typeof ThreadConnectRTC,
+  _manager: ThreadConnectRTC.Manager,
 ) {
   const channelDefinition = flex.DefaultTaskChannels.Call;
   const { templates, icons } = channelDefinition;
@@ -65,11 +65,11 @@ export const channelHook = function overrideCallChannelToUseCustomerAttribute(
     ...templates,
     TaskListItem: {
       ...flex.DefaultTaskChannels.Call.templates?.TaskListItem,
-      firstLine: (task: ConnieRTC.ITask) => `(${task.attributes.customer}) ${task.defaultFrom}`,
+      firstLine: (task: ThreadConnectRTC.ITask) => `(${task.attributes.customer}) ${task.defaultFrom}`,
     },
     TaskCanvasHeader: {
       ...flex.DefaultTaskChannels.Call.templates?.TaskCanvasHeader,
-      title: (task: ConnieRTC.ITask) => `(${task.attributes.customer}) ${task.defaultFrom}`,
+      title: (task: ThreadConnectRTC.ITask) => `(${task.attributes.customer}) ${task.defaultFrom}`,
     },
   };
 

@@ -14,7 +14,7 @@ title: "ThreadConnect Voicemail Setup Guide"
 
 ## Overview
 
-ConnieRTC provides three voicemail implementation options, each building on the previous tier. This guide covers complete setup from Mailgun configuration through testing.
+ThreadConnect provides three voicemail implementation options, each building on the previous tier. This guide covers complete setup from Mailgun configuration through testing.
 
 ### Feature Packages
 
@@ -28,7 +28,7 @@ ConnieRTC provides three voicemail implementation options, each building on the 
 
 ## Voice Experience Framework
 
-ConnieRTC implements a progressive 3-tier voice experience model:
+ThreadConnect implements a progressive 3-tier voice experience model:
 
 ### Tier 1: ThreadConnect Voice Direct {#tier-1-connie-voice-direct}
 - Calls immediately accepted and queued for agents
@@ -78,7 +78,7 @@ ConnieRTC implements a progressive 3-tier voice experience model:
 - [ ] Twilio CLI installed and configured
 - [ ] Access to Twilio Console
 - [ ] Mailgun account (for email features)
-- [ ] GitHub access to ConnieRTC repository
+- [ ] GitHub access to ThreadConnect repository
 
 ### Required Information
 Before starting, gather:
@@ -436,4 +436,4 @@ curl -s --user "api:[KEY]" \
 
 ---
 
-*For questions or issues, contact ConnieRTC Engineering or escalate to CTO.*
+*For questions or issues, contact ThreadConnect Engineering or escalate to CTO.*

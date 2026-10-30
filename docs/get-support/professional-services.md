@@ -10,7 +10,7 @@ description: "Expert implementation & consulting — partner with ThreadConnect 
   <h1 style={{margin: '0'}}>Professional Services (L5)</h1>
 </div>
 
-**Expert Implementation & Consulting** - Partner with ConnieRTC experts for strategic implementations and enterprise-level solutions.
+**Expert Implementation & Consulting** - Partner with ThreadConnect experts for strategic implementations and enterprise-level solutions.
 
 ## When to Use Professional Services
 

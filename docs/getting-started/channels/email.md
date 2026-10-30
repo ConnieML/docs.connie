@@ -6,7 +6,7 @@ title: "Email Channel"
 
 # Email Channel
 
-Manage email communications efficiently with ConnieRTC's integrated email channel capabilities.
+Manage email communications efficiently with ThreadConnect's integrated email channel capabilities.
 
 ## Overview
 

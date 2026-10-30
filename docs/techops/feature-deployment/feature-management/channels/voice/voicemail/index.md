@@ -6,11 +6,11 @@ title: "Voicemail Documentation"
 
 # Voicemail Documentation
 
-This section covers voicemail implementation for ConnieRTC, including base experiences and add-on features.
+This section covers voicemail implementation for ThreadConnect, including base experiences and add-on features.
 
 ## Understanding the Architecture
 
-Voicemail in ConnieRTC follows a **Base Experience + Add-ons** model:
+Voicemail in ThreadConnect follows a **Base Experience + Add-ons** model:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐

@@ -6,7 +6,7 @@ title: "Facebook Messenger Channel Setup Guide"
 
 # Facebook Messenger Channel Setup Guide
 
-This guide walks ThreadConnect administrators and AI agents through the complete process of activating Facebook Messenger as a communication channel on a ConnieRTC instance.
+This guide walks ThreadConnect administrators and AI agents through the complete process of activating Facebook Messenger as a communication channel on a ThreadConnect instance.
 
 ## Overview
 
@@ -45,7 +45,7 @@ Before starting, ensure you have:
 - [ ] **ThreadConnect CLI** installed and authenticated to the target account
 - [ ] **Facebook Page** for the CBO (this is the Page community members will message)
 - [ ] **Meta Business Manager** account ([business.meta.com](https://business.meta.com)) with admin access to the Facebook Page
-- [ ] **ThreadConnect Plugin** deployed (ConnieRTC flex-project-template)
+- [ ] **ThreadConnect Plugin** deployed (ThreadConnect flex-project-template)
 
 :::info One Page Per CBO
 Each CBO needs its own dedicated Facebook Page for Messenger. A Facebook Page can only be connected to one ThreadConnect account at a time.

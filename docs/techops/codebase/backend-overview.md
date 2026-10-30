@@ -6,7 +6,7 @@ title: "Backend Architecture"
 
 # Backend Architecture
 
-ConnieRTC's backend is built on Twilio Serverless Functions for scalable, secure API operations.
+ThreadConnect's backend is built on Twilio Serverless Functions for scalable, secure API operations.
 
 ## Technology Stack
 

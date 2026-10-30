@@ -1,13 +1,13 @@
-Use an actions hook to register actions in the [ConnieRTC Actions Framework](https://www.twilio.com/docs/flex/developer/ui/use-ui-actions).
+Use an actions hook to register actions in the [ThreadConnect Actions Framework](https://www.twilio.com/docs/flex/developer/ui/use-ui-actions).
 
 ```ts
-import * as ConnieRTC from '@twilio/flex-ui';
+import * as ThreadConnectRTC from '@twilio/flex-ui';
 
 import { FlexActionEvent, FlexAction } from '../../../../types/feature-loader';
 
 export const actionEvent = FlexActionEvent.before;
 export const actionName = FlexAction.CompleteTask;
-export const actionHook = function exampleCompleteTaskHook(flex: typeof ConnieRTC, manager: ConnieRTC.Manager) {
+export const actionHook = function exampleCompleteTaskHook(flex: typeof ThreadConnectRTC, manager: ThreadConnectRTC.Manager) {
   flex.Actions.addListener(`${actionEvent}${actionName}`, async (payload, abortFunction) => {
     // your code here
   });

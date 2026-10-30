@@ -87,6 +87,6 @@ To upgrade from ThreadConnect Voice Direct to more advanced experiences:
 - **No ring tone**: Check Studio Flow routing logic
 
 ### Quick Fixes
-- Restart agent sessions in ConnieRTC
+- Restart agent sessions in ThreadConnect
 - Verify phone number configuration
 - Check TaskRouter activity status

@@ -6,7 +6,7 @@ title: "Social Media Channels"
 
 # Social Media Channels
 
-Connect with your community on the platforms they use every day. ConnieRTC integrates with major social messaging platforms, routing conversations directly into your ThreadConnect agent queue alongside voice, email, fax, and web channels.
+Connect with your community on the platforms they use every day. ThreadConnect integrates with major social messaging platforms, routing conversations directly into your ThreadConnect agent queue alongside voice, email, fax, and web channels.
 
 ## How Social Media Channels Work
 

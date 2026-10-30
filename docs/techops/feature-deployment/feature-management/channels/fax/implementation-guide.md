@@ -17,7 +17,7 @@ Choose the option that best fits your client's requirements:
 | 📥 **Receive Faxes** | ✅ | ✅ | ✅ |
 | 📤 **Send Faxes** | ❌ | ✅ | ✅ |
 | 📧 **Email Delivery** | ✅ | ✅ | ✅ |
-| 🔄 **ConnieRTC Task Routing** | ❌ | ✅ | ✅ |
+| 🔄 **ThreadConnect Task Routing** | ❌ | ✅ | ✅ |
 | 📎 **PDF Attachments** | ✅ | ✅ | ✅ |
 | 🔐 **HIPAA Compliance** | ✅ | ✅ | ✅ |
 | 🔧 **Setup Complexity** | Simple | Moderate | Advanced |
@@ -47,13 +47,13 @@ Choose the option that best fits your client's requirements:
 **Perfect for:** Organizations that need to both send and receive faxes with agent tracking.
 
 **What users experience:**
-- Receive: Fax arrives → Creates task in ConnieRTC → Agent handles fax
+- Receive: Fax arrives → Creates task in ThreadConnect → Agent handles fax
 - Send: Agent initiates → Uploads document → Sends via Sinch API
 
 **What you'll deploy:**
 - Complete Professional Services Template fax feature
 - Sinch API integration
-- ConnieRTC UI components for fax sending
+- ThreadConnect UI components for fax sending
 - Task routing for inbound faxes
 
 **Next steps:** → Set up Bidirectional Fax
@@ -95,7 +95,7 @@ Choose the option that best fits your client's requirements:
 - ✅ Email addresses for fax delivery
 
 ### Additional for Option B:
-- ✅ ConnieRTC UI deployment access
+- ✅ ThreadConnect UI deployment access
 - ✅ Understanding of task routing configuration
 
 ### Additional for Option C:
@@ -107,7 +107,7 @@ Choose the option that best fits your client's requirements:
 
 ## 🏗️ Implementation Overview
 
-All fax options leverage **Sinch's carrier-grade fax infrastructure** integrated with ConnieRTC's multi-channel capabilities.
+All fax options leverage **Sinch's carrier-grade fax infrastructure** integrated with ThreadConnect's multi-channel capabilities.
 
 ### What You're NOT Doing:
 - ❌ Managing physical fax machines
@@ -124,7 +124,7 @@ All fax options leverage **Sinch's carrier-grade fax infrastructure** integrated
 
 ## 📋 Deployment Pattern (All Options)
 
-The deployment pattern follows ConnieRTC standards while incorporating Sinch-specific configuration:
+The deployment pattern follows ThreadConnect standards while incorporating Sinch-specific configuration:
 
 ```bash
 # 1. Configure Sinch credentials and numbers
@@ -161,17 +161,17 @@ All fax options are designed with HIPAA compliance in mind:
 
 ## 📊 Carrier-Agnostic Architecture
 
-ConnieRTC's fax implementation follows our carrier-agnostic philosophy:
+ThreadConnect's fax implementation follows our carrier-agnostic philosophy:
 
 ```mermaid
 graph LR
-    A[Fax Number] --> B[ConnieRTC Routing]
+    A[Fax Number] --> B[ThreadConnect Routing]
     B --> C{Provider Selection}
     C --> D[Sinch Primary]
     C --> E[Backup Provider]
     D --> F[Delivery]
     E --> F
-    F --> G[Email/ConnieRTC/Integration]
+    F --> G[Email/ThreadConnect/Integration]
 ```
 
 This ensures:
@@ -200,7 +200,7 @@ If you prefer to have our team handle the implementation, professional services 
 :::
 
 :::info Why Sinch for Fax?
-ConnieRTC uses Sinch as our primary fax provider because:
+ThreadConnect uses Sinch as our primary fax provider because:
 - Global coverage with local number support
 - 99.9% uptime SLA
 - HIPAA-compliant infrastructure

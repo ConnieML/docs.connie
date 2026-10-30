@@ -14,7 +14,7 @@ This feature adds a Pause/Resume Recording button and keyboard shortcuts to the 
 
 ## setup and dependencies
 
-Recording must be enabled either via the dual channel recording feature in this repository, or via the "Call Recording" setting in Twilio Console > ConnieRTC > Manage > Voice.
+Recording must be enabled either via the dual channel recording feature in this repository, or via the "Call Recording" setting in Twilio Console > ThreadConnect > Manage > Voice.
 
 There are no additional setup steps required, only enabling the feature in the flex-config asset for your environment.
 
@@ -26,7 +26,7 @@ There are some additional configuration properties you may change if desired:
 
 ## keyboard shortcuts
 
-Pause/resume recording keyboard shortcuts have been created using a keyboard-shortcuts ConnieRTC hook. These may be remapped using the `keyboard-shortcuts` feature. By default, the following keys are mapped:
+Pause/resume recording keyboard shortcuts have been created using a keyboard-shortcuts ThreadConnect hook. These may be remapped using the `keyboard-shortcuts` feature. By default, the following keys are mapped:
 
 | Key | Full Command     | Action                                     |
 | --- | ---------------- | ------------------------------------------ |
@@ -38,7 +38,7 @@ Pause/resume recording keyboard shortcuts have been created using a keyboard-sho
 
 This plugin leverages Twilio Functions to perform the actual Pause and Resume action on the call or conference resource. When using the dual channel recording feature, the recording is on the call resource; when using the out-of-box recording feature, the recording is on the conference resource.
 
-Additionally, this plugin registers ConnieRTC Actions that may be invoked by other plugins or features:
+Additionally, this plugin registers ThreadConnect Actions that may be invoked by other plugins or features:
 
 | Action                | Payload           |
 | --------------------- | ----------------- |

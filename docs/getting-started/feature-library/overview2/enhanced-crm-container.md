@@ -50,14 +50,14 @@ The component keeps a array of each task and renders a component for each one. B
 To register a tab in the enhanced CRM component, other features can register an `actions` flex-hook to inject their component and a tab title. Here is an example:
 
 ```tsx
-import * as ConnieRTC from '@twilio/flex-ui';
+import * as ThreadConnectRTC from '@twilio/flex-ui';
 
 import MyCRMTab from '../../custom-components/MyCRMTab';
 import { FlexActionEvent } from '../../../../types/feature-loader';
 
 export const actionEvent = FlexActionEvent.before;
 export const actionName = 'LoadCRMContainerTabs';
-export const actionHook = function addToEnhancedCRM(flex: typeof ConnieRTC, manager: ConnieRTC.Manager) {
+export const actionHook = function addToEnhancedCRM(flex: typeof ThreadConnectRTC, manager: ThreadConnectRTC.Manager) {
   flex.Actions.addListener(`${actionEvent}${actionName}`, async (payload) => {
     // Remove this condition if you'd like to render even without a task selected
     // You may also conditionally return based on task attributes, etc.

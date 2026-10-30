@@ -166,7 +166,7 @@ Based on production deployments:
 - [ ] You're monitoring transfer patterns for training opportunities
 
 ### Post-System Update Validation (CRITICAL)
-When IT notifies you of ConnieRTC updates affecting transfers:
+When IT notifies you of ThreadConnect updates affecting transfers:
 
 **First 30 Minutes After Update:**
 - [ ] **Test transfers yourself** - don't rely on agent reports

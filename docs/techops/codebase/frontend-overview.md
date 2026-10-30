@@ -6,7 +6,7 @@ title: "Frontend Architecture"
 
 # Frontend Architecture
 
-ConnieRTC's frontend is built with modern web technologies for contact center functionality.
+ThreadConnect's frontend is built with modern web technologies for contact center functionality.
 
 ## Technology Stack
 

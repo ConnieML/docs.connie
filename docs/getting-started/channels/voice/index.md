@@ -6,7 +6,7 @@ title: "Voice Channel"
 
 # Voice Channel
 
-ThreadConnect's Voice channel is how callers reach your CBO by phone. A caller dials a number you provision, the call routes through ConnieRTC, and an agent on the ThreadConnect desktop answers. Out of the box this works without any configuration beyond wiring a phone number to a queue. From there, you can layer on optional features — wait experiences, voicemail, callbacks, admin email notifications, CRM screen-pop — to shape the caller experience for the way your organization actually operates.
+ThreadConnect's Voice channel is how callers reach your CBO by phone. A caller dials a number you provision, the call routes through ThreadConnect, and an agent on the ThreadConnect desktop answers. Out of the box this works without any configuration beyond wiring a phone number to a queue. From there, you can layer on optional features — wait experiences, voicemail, callbacks, admin email notifications, CRM screen-pop — to shape the caller experience for the way your organization actually operates.
 
 ## Out of the box: Voice Direct to Queue
 
@@ -72,7 +72,7 @@ See the [product page](/getting-started/channels/voice/voice-features/wait-exper
 
 ## Provider integration
 
-ConnieRTC supports multiple voice providers — Twilio (cloud), traditional carriers (Cox, Xfinity, Verizon, Spectrum), and direct SIP trunking. Voice features described above are exercised through Twilio's TaskRouter + Studio + Serverless stack regardless of which carrier delivers the underlying PSTN minutes.
+ThreadConnect supports multiple voice providers — Twilio (cloud), traditional carriers (Cox, Xfinity, Verizon, Spectrum), and direct SIP trunking. Voice features described above are exercised through Twilio's TaskRouter + Studio + Serverless stack regardless of which carrier delivers the underlying PSTN minutes.
 
 ## Best practices
 

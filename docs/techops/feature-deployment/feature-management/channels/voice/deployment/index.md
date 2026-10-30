@@ -18,7 +18,7 @@ This deployment kit is specifically designed to be followed by Claude agents. Ea
 - 📞 **Direct agent connection** with professional hold music
 - ⭐ **In-queue options** - Press * for callback or voicemail
 - 📧 **Email notifications** with voicemail recordings as attachments
-- 🎯 **Complete ConnieRTC integration** for seamless task management
+- 🎯 **Complete ThreadConnect integration** for seamless task management
 
 **Caller Experience:**
 1. Professional greeting → Queue with hold music
@@ -118,11 +118,11 @@ export ACCOUNT_SID='...' PHONE_NUMBER='...' # ... set all vars
 - [ ] Phone number connects to Studio Flow
 - [ ] Hold music plays during queue wait
 - [ ] * key activates options menu correctly
-- [ ] Callback option (1) creates tasks in ConnieRTC
+- [ ] Callback option (1) creates tasks in ThreadConnect
 - [ ] Voicemail option (2) records messages successfully
 - [ ] Email notifications arrive within 5 minutes
 - [ ] Email includes audio attachment and transcription
-- [ ] ConnieRTC agents can handle tasks normally
+- [ ] ThreadConnect agents can handle tasks normally
 
 ### Client Acceptance
 - [ ] Client successfully tests complete workflow
@@ -185,7 +185,7 @@ export ACCOUNT_SID='...' PHONE_NUMBER='...' # ... set all vars
 ### Testing Coverage
 - **Email Integration:** API authentication, delivery, attachments
 - **Voice Workflow:** Call flow, options menu, recording quality
-- **ConnieRTC Integration:** Task creation, routing, agent experience
+- **ThreadConnect Integration:** Task creation, routing, agent experience
 - **Error Handling:** Failure scenarios, rollback procedures
 
 ### Performance Standards

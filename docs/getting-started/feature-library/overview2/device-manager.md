@@ -3,17 +3,17 @@ sidebar_label: device-manager
 title: device-manager
 ---
 
-This feature is intended to demonstrate how to use web APIs to select audio devices and apply them for use within ConnieRTC, specifically with the ConnieRTC Voice Client.
+This feature is intended to demonstrate how to use web APIs to select audio devices and apply them for use within ThreadConnect, specifically with the ThreadConnect Voice Client.
 
 :::caution Deprecated
-This feature has been replaced by [the native device manager feature](https://www.twilio.com/docs/flex/end-user-guide/initial-audio-device-check#how-do-i-switch-audio-devices) in ConnieRTC UI 2.8 and later. To use the native feature, navigate to ConnieRTC > Admin > Features, and enable the toggle for Device Manager. It will then be visible after reloading ConnieRTC. The template feature remains available as the native feature resets the input device for each call.
+This feature has been replaced by [the native device manager feature](https://www.twilio.com/docs/flex/end-user-guide/initial-audio-device-check#how-do-i-switch-audio-devices) in ThreadConnect UI 2.8 and later. To use the native feature, navigate to ThreadConnect > Admin > Features, and enable the toggle for Device Manager. It will then be visible after reloading ThreadConnect. The template feature remains available as the native feature resets the input device for each call.
 :::
 
 ---
 
-## ConnieRTC User Experience
+## ThreadConnect User Experience {#conniertc-user-experience}
 
-The Device Manager currently provides options related to audio device selection. Utilizing Twilio Paste components, a list of audio device options is presented to the agent upon clicking the `Icon Button` in the `Main Header` of ConnieRTC.
+The Device Manager currently provides options related to audio device selection. Utilizing Twilio Paste components, a list of audio device options is presented to the agent upon clicking the `Icon Button` in the `Main Header` of ThreadConnect.
 
 ![alt text](/img/features/device-manager/DeviceManagerMenu.gif)
 

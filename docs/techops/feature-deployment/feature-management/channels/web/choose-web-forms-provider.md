@@ -6,7 +6,7 @@ title: "Choose Your Web Forms Provider - Multi-Platform Implementation"
 
 # Choose Your Web Forms Provider
 
-ConnieRTC follows a multi-platform philosophy, allowing you to select the web forms provider that best meets your nonprofit's specific needs, technical requirements, and budget constraints.
+ThreadConnect follows a multi-platform philosophy, allowing you to select the web forms provider that best meets your nonprofit's specific needs, technical requirements, and budget constraints.
 
 ## Provider Comparison
 
@@ -33,7 +33,7 @@ Choose the provider that best fits your organization's requirements:
 **Perfect for:** Organizations needing professional PDF documentation with complex form workflows.
 
 **Key Benefits:**
-- ✅ Already integrated with ConnieRTC template
+- ✅ Already integrated with ThreadConnect template
 - ✅ Professional PDF generation and branding
 - ✅ Proven reliability in production (Hospital 2 Home)
 - ✅ WordPress integration with validation layer
@@ -101,7 +101,7 @@ Choose the provider that best fits your organization's requirements:
 
 ## 🏗️ Integration Architecture
 
-All web forms providers integrate with ConnieRTC using a standardized email-to-task pattern:
+All web forms providers integrate with ThreadConnect using a standardized email-to-task pattern:
 
 ```mermaid
 graph TB
@@ -109,17 +109,17 @@ graph TB
     B --> C[Adobe PDF Generation]
     B --> D[Formstack Data Processing]
     B --> E[Typeform Response Processing]
-    C --> F[Email to ConnieRTC]
+    C --> F[Email to ThreadConnect]
     D --> F
     E --> F
     F --> G[Studio Flow Processing]
-    G --> H[ConnieRTC Task Creation]
+    G --> H[ThreadConnect Task Creation]
 ```
 
 ### Multi-Platform Benefits:
-- **No Vendor Lock-in:** Switch providers without changing ConnieRTC configuration
+- **No Vendor Lock-in:** Switch providers without changing ThreadConnect configuration
 - **Form Optimization:** Use different providers for different form types
-- **Unified Processing:** Same ConnieRTC task handling regardless of provider
+- **Unified Processing:** Same ThreadConnect task handling regardless of provider
 - **Consistent Experience:** Staff see uniform task presentation
 
 ---
@@ -128,7 +128,7 @@ graph TB
 
 ### For All Providers:
 - ✅ Website platform for form embedding
-- ✅ ConnieRTC admin access with email channel configured
+- ✅ ThreadConnect admin access with email channel configured
 - ✅ Dedicated email addresses for form routing (e.g., `forms@connie.host`)
 - ✅ Studio Flow deployment capability
 - ✅ Staff training on form task processing
@@ -225,7 +225,7 @@ flowchart LR
     B --> C[Adobe API Call]
     C --> D[PDF Generation]
     D --> E[Email with PDF Attachment]
-    E --> F[ConnieRTC Processing]
+    E --> F[ThreadConnect Processing]
 ```
 
 #### Formstack (Planned):
@@ -234,7 +234,7 @@ flowchart LR
     A[Formstack Form] --> B[Native Processing]
     B --> C[Webhook Trigger]
     C --> D[JSON Data Email]
-    D --> E[ConnieRTC Processing]
+    D --> E[ThreadConnect Processing]
 ```
 
 #### Typeform (Planned):
@@ -243,7 +243,7 @@ flowchart LR
     A[Typeform Interface] --> B[Response Collection]
     B --> C[Webhook Notification]
     C --> D[Formatted Email]
-    D --> E[ConnieRTC Processing]
+    D --> E[ThreadConnect Processing]
 ```
 
 ---
@@ -297,7 +297,7 @@ Need help choosing or implementing a web forms provider? Our team can assess you
 
 ## 🔄 Future Provider Additions
 
-ConnieRTC's flexible architecture makes it easy to add new web forms providers. If you need a specific provider not listed here, please [submit a feature request](https://github.com/ConnieML/basecamp-v26.02/issues).
+ThreadConnect's flexible architecture makes it easy to add new web forms providers. If you need a specific provider not listed here, please [submit a feature request](https://github.com/ConnieML/basecamp-v26.02/issues).
 
 Current provider requests under evaluation:
 - Google Forms (limitations: no HIPAA compliance)

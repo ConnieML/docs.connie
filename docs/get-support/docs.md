@@ -20,7 +20,7 @@ The Knowledge Base is perfect when you need:
 - **Step-by-step guides** for setup and configuration
 - **Feature documentation** and capabilities overview
 - **Troubleshooting help** for routine issues
-- **Best practices** for using ConnieRTC effectively
+- **Best practices** for using ThreadConnect effectively
 
 ## How to Access
 
@@ -60,7 +60,7 @@ The Knowledge Base is perfect when you need:
 ### 📋 Before You Search
 - **Identify your role** (admin, agent, supervisor, developer)
 - **Note specific error messages** or behaviors
-- **Have your ConnieRTC version** information ready
+- **Have your ThreadConnect version** information ready
 - **Consider your end goal** - what are you trying to accomplish?
 
 ### 🚀 When Documentation Doesn't Help

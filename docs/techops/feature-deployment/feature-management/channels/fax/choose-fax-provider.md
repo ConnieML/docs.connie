@@ -6,7 +6,7 @@ title: "Choose Your Fax Provider - Carrier-Agnostic Implementation"
 
 # Choose Your Fax Provider
 
-ConnieRTC follows a carrier-agnostic philosophy, allowing you to select the fax provider that best meets your nonprofit's specific needs, budget, and compliance requirements.
+ThreadConnect follows a carrier-agnostic philosophy, allowing you to select the fax provider that best meets your nonprofit's specific needs, budget, and compliance requirements.
 
 ## Provider Comparison
 
@@ -33,7 +33,7 @@ Choose the provider that best fits your organization's requirements:
 **Perfect for:** Organizations needing high-volume international faxing with advanced API features.
 
 **Key Benefits:**
-- ✅ Already integrated with ConnieRTC template
+- ✅ Already integrated with ThreadConnect template
 - ✅ Proven reliability at scale
 - ✅ Advanced webhook capabilities for real-time status
 - ✅ Superior international coverage
@@ -91,11 +91,11 @@ Choose the provider that best fits your organization's requirements:
 
 ## 🏗️ Integration Architecture
 
-All fax providers integrate with ConnieRTC using a standardized pattern:
+All fax providers integrate with ThreadConnect using a standardized pattern:
 
 ```mermaid
 graph LR
-    A[ConnieRTC Fax Feature] --> B{Provider Abstraction Layer}
+    A[ThreadConnect Fax Feature] --> B{Provider Abstraction Layer}
     B --> C[Sinch API]
     B --> D[eFax API]
     B --> E[iFax API]
@@ -108,7 +108,7 @@ graph LR
 - **No Vendor Lock-in:** Switch providers without code changes
 - **Rate Optimization:** Use multiple providers for best rates
 - **Failover Support:** Automatic fallback to secondary provider
-- **Unified Interface:** Same ConnieRTC features regardless of provider
+- **Unified Interface:** Same ThreadConnect features regardless of provider
 
 ---
 
@@ -117,7 +117,7 @@ graph LR
 ### For All Providers:
 - ✅ Dedicated fax number (can port existing)
 - ✅ API credentials from provider
-- ✅ ConnieRTC admin access
+- ✅ ThreadConnect admin access
 - ✅ Basic understanding of fax compliance requirements
 
 ### Provider-Specific Requirements:
@@ -211,7 +211,7 @@ Need help choosing or implementing a fax provider? Our team can assess your need
 
 ## 🔄 Future Provider Additions
 
-ConnieRTC's carrier-agnostic architecture makes it easy to add new providers. If you need a specific fax provider not listed here, please [submit a feature request](https://github.com/ConnieML/basecamp-v26.02/issues).
+ThreadConnect's carrier-agnostic architecture makes it easy to add new providers. If you need a specific fax provider not listed here, please [submit a feature request](https://github.com/ConnieML/basecamp-v26.02/issues).
 
 Current provider requests under evaluation:
 - RingCentral Fax

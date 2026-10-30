@@ -10,7 +10,7 @@ import Link from '@docusaurus/Link';
 
 ## Overview
 
-Adobe Acrobat Sign integration provides professional PDF-based web forms that seamlessly connect with ConnieRTC to automatically create tasks for your staff. This integration is ideal for intake forms, referral forms, application forms, and any documents requiring professional presentation and secure handling.
+Adobe Acrobat Sign integration provides professional PDF-based web forms that seamlessly connect with ThreadConnect to automatically create tasks for your staff. This integration is ideal for intake forms, referral forms, application forms, and any documents requiring professional presentation and secure handling.
 
 ## How It Works
 
@@ -24,7 +24,7 @@ flowchart TB
     D --> E[Professional PDF Generation]
     E --> F[Email: referrals@connie.host]
     F --> G[Twilio Studio Flow]
-    G --> H[ConnieRTC Task Creation]
+    G --> H[ThreadConnect Task Creation]
     H --> I[Staff Agent Review]
     
     style A fill:#e1f5fe
@@ -40,9 +40,9 @@ flowchart TB
 1. **Website Form**: Visitor completes form on your WordPress website
 2. **Validation**: WordPress provides user-friendly validation and experience
 3. **Adobe Processing**: Form data is sent to Adobe Acrobat Sign for professional PDF creation
-4. **Email Routing**: Completed form emailed to your ConnieRTC endpoint (e.g., `referrals@connie.host`)
+4. **Email Routing**: Completed form emailed to your ThreadConnect endpoint (e.g., `referrals@connie.host`)
 5. **Automatic Processing**: Studio Flow processes email and extracts form data
-6. **Task Creation**: Professional task created in ConnieRTC queue with proper skill routing
+6. **Task Creation**: Professional task created in ThreadConnect queue with proper skill routing
 7. **Staff Review**: Agent receives task showing "Web Form Submission" with complete form data
 
 ## Proven Success Example
@@ -64,7 +64,7 @@ flowchart TB
 ### Before You Begin
 - ✅ **WordPress Website**: Active WordPress site with form builder capability
 - ✅ **Adobe Account**: Adobe Acrobat Sign subscription (Professional or higher)
-- ✅ **ConnieRTC Account**: Active ConnieRTC with email channel configured
+- ✅ **ThreadConnect Account**: Active ThreadConnect with email channel configured
 - ✅ **Email Domain**: Dedicated email address for form routing (e.g., `referrals@connie.host`)
 - ✅ **Studio Flow**: Form processing Studio Flow deployed
 
@@ -73,7 +73,7 @@ flowchart TB
 - **Adobe Acrobat Sign**: Professional subscription with API access
 - **Twilio Email Channel**: Configured for your email domain
 - **Twilio Studio**: Custom Studio Flow for form processing
-- **Staff Training**: Team familiar with form submission tasks in ConnieRTC
+- **Staff Training**: Team familiar with form submission tasks in ThreadConnect
 
 ## Step-by-Step Setup Guide
 
@@ -91,7 +91,7 @@ flowchart TB
 5. **Save Template**: Name template clearly (e.g., "H2H Referral Form Template")
 
 #### 1.2 Configure Email Integration
-1. **Set Completion Actions**: Configure Adobe to email form completion to your ConnieRTC endpoint
+1. **Set Completion Actions**: Configure Adobe to email form completion to your ThreadConnect endpoint
 2. **Email Recipients**: Add your dedicated email (e.g., `referrals@connie.host`)
 3. **Email Format**: Select "PDF attachment" to ensure complete form data delivery
 4. **Subject Line Template**: Use format: "[ORG] Web Form - [FORM_TYPE]" for proper routing
@@ -119,14 +119,14 @@ flowchart TB
 
 #### 2.3 Testing & Validation
 1. **End-to-End Test**: Complete entire form submission process
-2. **Verify Email Delivery**: Confirm Adobe emails reach ConnieRTC endpoint
+2. **Verify Email Delivery**: Confirm Adobe emails reach ThreadConnect endpoint
 3. **Check PDF Quality**: Ensure Adobe generates professional PDF documents
 4. **Validate Data**: Verify all form fields captured correctly
 
-### Step 3: ConnieRTC Studio Flow Setup
+### Step 3: ThreadConnect Studio Flow Setup {#step-3-conniertc-studio-flow-setup}
 
 #### 3.1 Email Channel Configuration
-Ensure your ConnieRTC account has email channel properly configured:
+Ensure your ThreadConnect account has email channel properly configured:
 
 ```bash
 # Email address format for web forms
@@ -146,7 +146,7 @@ Use this template for your Studio Flow:
 **Key Components**:
 - **Email Trigger**: Activated by form completion emails
 - **Data Extraction**: Parse form data from PDF attachment
-- **Task Creation**: Create ConnieRTC task with proper skill routing
+- **Task Creation**: Create ThreadConnect task with proper skill routing
 - **Error Handling**: Alert administrators of processing failures
 
 **Task Attributes**:
@@ -176,7 +176,7 @@ Train staff to recognize web form tasks:
 2. **Form Review**: Open PDF attachment to review complete submission
 3. **CRM Entry**: Enter relevant data into your CRM system
 4. **Follow-up Actions**: Schedule callbacks, send confirmations, assign cases
-5. **Task Completion**: Mark task complete in ConnieRTC
+5. **Task Completion**: Mark task complete in ThreadConnect
 
 ## Advanced Configuration
 
@@ -225,10 +225,10 @@ Enhance form processing with CRM integration:
 - **Medium Volume**: 100-500 forms/month - Business plan recommended
 - **High Volume**: 500+ forms/month - Enterprise plan with custom pricing
 
-### ConnieRTC Processing
-- **Email Processing**: Included in ConnieRTC subscription
-- **Task Creation**: Standard ConnieRTC task costs apply
-- **Storage**: PDF attachments count toward ConnieRTC storage limits
+### ThreadConnect Processing {#conniertc-processing}
+- **Email Processing**: Included in ThreadConnect subscription
+- **Task Creation**: Standard ThreadConnect task costs apply
+- **Storage**: PDF attachments count toward ThreadConnect storage limits
 
 ## Security & Compliance
 
@@ -249,10 +249,10 @@ Enhance form processing with CRM integration:
 ### Common Issues
 
 #### Form Submissions Not Creating Tasks
-**Symptoms**: WordPress form submits successfully but no task appears in ConnieRTC
+**Symptoms**: WordPress form submits successfully but no task appears in ThreadConnect
 **Solutions**:
 - Verify Adobe form is receiving WordPress submission
-- Check Adobe email configuration points to correct ConnieRTC address
+- Check Adobe email configuration points to correct ThreadConnect address
 - Confirm Studio Flow is active and properly configured
 - Test email delivery manually
 
@@ -283,7 +283,7 @@ Enhance form processing with CRM integration:
 ### Debug Steps
 
 1. **Test Adobe Form**: Submit test form directly in Adobe interface
-2. **Check Email Delivery**: Verify test emails reach ConnieRTC endpoint
+2. **Check Email Delivery**: Verify test emails reach ThreadConnect endpoint
 3. **Monitor Studio Flow**: Use Studio Flow debugger to track execution
 4. **Review Task Attributes**: Inspect created tasks for proper data
 5. **Validate PDF Content**: Ensure PDF contains expected form data
@@ -293,7 +293,7 @@ Enhance form processing with CRM integration:
 ### Hospital 2 Home Success Story
 
 **Challenge**: Manual referral processing creating bottlenecks
-**Solution**: WordPress → Adobe → ConnieRTC automated workflow
+**Solution**: WordPress → Adobe → ThreadConnect automated workflow
 **Results**:
 - **95% reduction** in manual data entry
 - **~1 minute** processing time from submission to task
@@ -310,7 +310,7 @@ Email: h2h.referrals@connie.host
     ↓ (reliable delivery)
 Studio Flow: H2H Web Referrals
     ↓ (data processing)
-ConnieRTC Task: "H2H Web Referral"
+ThreadConnectRTC Task: "H2H Web Referral"
     ↓ (staff assignment)
 Skill Routing: "H2H.WEB_REFERRAL"
 ```
@@ -339,8 +339,8 @@ Skill Routing: "H2H.WEB_REFERRAL"
 ## Future Enhancements
 
 ### Phase 1: Enhanced UI (Q3 2024)
-- **Inline Form Preview**: Display form data directly in ConnieRTC task panel
-- **Field-by-Field Display**: Show form fields in structured format within ConnieRTC
+- **Inline Form Preview**: Display form data directly in ThreadConnect task panel
+- **Field-by-Field Display**: Show form fields in structured format within ThreadConnect
 - **Quick Actions**: Add buttons for common follow-up actions
 
 ### Phase 2: Advanced Analytics (Q4 2024)  
@@ -351,7 +351,7 @@ Skill Routing: "H2H.WEB_REFERRAL"
 ### Phase 3: CRM Deep Integration (Q1 2025)
 - **Auto-Matching**: Automatically match form submissions to existing clients
 - **Case Creation**: Auto-create cases in CRM from form submissions
-- **Status Updates**: Real-time status updates from ConnieRTC back to website
+- **Status Updates**: Real-time status updates from ThreadConnect back to website
 
 ## Support Resources
 
@@ -360,9 +360,9 @@ Skill Routing: "H2H.WEB_REFERRAL"
 - **API Documentation**: [secure.echosign.com/public/docs](https://secure.echosign.com/public/docs)
 - **Community Forums**: [community.adobe.com](https://community.adobe.com)
 
-### ConnieRTC Support
+### ThreadConnect Support {#conniertc-support}
 - **Care Team**: contact@connie.team
-- **Technical Documentation**: Available in ConnieRTC developer portal
+- **Technical Documentation**: Available in ThreadConnect developer portal
 - **Training Resources**: Comprehensive staff training materials
 
 ### WordPress Resources
@@ -372,4 +372,4 @@ Skill Routing: "H2H.WEB_REFERRAL"
 
 ---
 
-*Adobe Acrobat Sign integration provides professional-grade form processing for nonprofit organizations requiring secure, compliant, and branded form workflows. Contact the ConnieRTC team for implementation assistance.*
+*Adobe Acrobat Sign integration provides professional-grade form processing for nonprofit organizations requiring secure, compliant, and branded form workflows. Contact the ThreadConnect team for implementation assistance.*

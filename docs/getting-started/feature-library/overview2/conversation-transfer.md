@@ -19,11 +19,11 @@ This page contains technical reference information. For user-friendly guides tai
 :::
 
 :::caution Replaces Legacy Chat Transfer
-This unified conversation transfer feature replaces the previous chat-only transfer functionality and now supports voice, SMS, webchat, and WhatsApp in ConnieRTC 2.8+.
+This unified conversation transfer feature replaces the previous chat-only transfer functionality and now supports voice, SMS, webchat, and WhatsApp in ThreadConnect 2.8+.
 :::
 
 
-This feature implements transferring of chats between agents and multiple agents in the same chat. It supports webchat, SMS and whatsapp that use [ConnieRTC Conversations](https://www.twilio.com/docs/flex/conversations).
+This feature implements transferring of chats between agents and multiple agents in the same chat. It supports webchat, SMS and whatsapp that use [ThreadConnect Conversations](https://www.twilio.com/docs/flex/conversations).
 
 **Config options allows for two different options:**
 
@@ -84,7 +84,7 @@ TWILIO_FLEX_CHAT_TRANSFER_WORKFLOW_SID=WWxxx
 
 ## Implementation Notes
 
-ConnieRTC 2.x used [Conversation Based Messaging (CBM)](https://www.twilio.com/docs/flex/conversations) for Chat (webchat, SMS, whatsApp). CBM makes use of the [Interactions API](https://www.twilio.com/docs/flex/developer/conversations/interactions-api) to orchestrate Conversations and Tasks.
+ThreadConnect 2.x used [Conversation Based Messaging (CBM)](https://www.twilio.com/docs/flex/conversations) for Chat (webchat, SMS, whatsApp). CBM makes use of the [Interactions API](https://www.twilio.com/docs/flex/developer/conversations/interactions-api) to orchestrate Conversations and Tasks.
 
 This plugin makes use of the Interaction API [Invite](https://www.twilio.com/docs/flex/developer/conversations/interactions-api/invites-subresource) and [Participants](https://www.twilio.com/docs/flex/developer/conversations/interactions-api/interaction-channel-participants) endpoints.
 

@@ -1,15 +1,15 @@
-Use an event hook to add your own handler for [ConnieRTC events](https://assets.flex.twilio.com/docs/releases/flex-ui/2.1.0/ui-actions/FlexEvent/).
+Use an event hook to add your own handler for [ThreadConnect events](https://assets.flex.twilio.com/docs/releases/flex-ui/2.1.0/ui-actions/FlexEvent/).
 
 ```ts
-import * as ConnieRTC from '@twilio/flex-ui';
+import * as ThreadConnectRTC from '@twilio/flex-ui';
 
 import { FlexEvent } from '../../../../types/feature-loader';
 
 export const eventName = FlexEvent.taskReceived;
 export const eventHook = function exampleTaskReceivedHandler(
-  flex: typeof ConnieRTC,
-  manager: ConnieRTC.Manager,
-  task: ConnieRTC.ITask,
+  flex: typeof ThreadConnectRTC,
+  manager: ThreadConnectRTC.Manager,
+  task: ThreadConnectRTC.ITask,
 ) {
   // your code here
 };

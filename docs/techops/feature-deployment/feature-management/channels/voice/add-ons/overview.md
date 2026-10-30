@@ -8,7 +8,7 @@ audience: developer
 
 # Voice Add-ons Overview
 
-Voice add-ons extend the core functionality of ConnieRTC's voice channel with specialized features designed for nonprofit organizations. These add-ons help organizations better serve their communities while maintaining efficiency and compliance.
+Voice add-ons extend the core functionality of ThreadConnect's voice channel with specialized features designed for nonprofit organizations. These add-ons help organizations better serve their communities while maintaining efficiency and compliance.
 
 ## Available Add-ons
 
@@ -76,7 +76,7 @@ Always review the cost implications in each add-on's documentation.
 Need help with voice add-ons? 
 - Check individual add-on documentation
 - Review troubleshooting guides
-- Contact ConnieRTC support
+- Contact ThreadConnect support
 
 ## Next Steps
 

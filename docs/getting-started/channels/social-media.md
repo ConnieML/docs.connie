@@ -6,7 +6,7 @@ title: "Social Media Channel"
 
 # Social Media Channel
 
-Engage with your community across social media platforms with ConnieRTC's integrated social media management capabilities.
+Engage with your community across social media platforms with ThreadConnect's integrated social media management capabilities.
 
 ## Overview
 

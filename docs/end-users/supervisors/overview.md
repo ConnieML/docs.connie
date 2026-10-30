@@ -15,7 +15,7 @@ You monitor your team in real time, coach for quality, and pull the reports your
 <div style={{display: 'flex', gap: '28px', alignItems: 'flex-start', flexWrap: 'wrap'}}>
   <div style={{flex: '1 1 320px'}}>
 
-Welcome, Supervisors! This section will help you manage your team and optimize your ConnieRTC deployment.
+Welcome, Supervisors! This section will help you manage your team and optimize your ThreadConnect deployment.
 
   </div>
   <img src="/img/avatars/supervisor-persona.png" alt="A ThreadConnect supervisor / program manager" style={{width: '160px', flexShrink: 0, alignSelf: 'center'}} />

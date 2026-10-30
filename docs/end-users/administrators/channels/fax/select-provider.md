@@ -10,16 +10,16 @@ import Link from '@docusaurus/Link';
 
 ## Introduction
 
-ConnieRTC integrates with multiple fax service providers to give your nonprofit organization the flexibility to choose the solution that best fits your needs and budget. Our fax integration allows you to receive and send faxes directly through the ThreadConnect platform, creating seamless workflows for your staff.
+ThreadConnect integrates with multiple fax service providers to give your nonprofit organization the flexibility to choose the solution that best fits your needs and budget. Our fax integration allows you to receive and send faxes directly through the ThreadConnect platform, creating seamless workflows for your staff.
 
 ## How Fax Integration Works
 
 ```mermaid
 flowchart LR
     A[Incoming Fax] --> B[Fax Provider - Sinch/eFax/iFax]
-    B --> C[ConnieRTC Platform]
+    B --> C[ThreadConnect Platform]
     C --> D[Email Notification]
-    C --> E[ConnieRTC Task Queue]
+    C --> E[ThreadConnect Task Queue]
     E --> F[Staff Agent Review]
     
     style A fill:#e1f5fe
@@ -32,10 +32,10 @@ flowchart LR
 
 **The Process**:
 - **Receive Faxes**: Faxes are received by your chosen provider and converted to digital format
-- **Automatic Processing**: ConnieRTC automatically processes incoming faxes
-- **Task Creation**: Each fax becomes a task in your ConnieRTC queue for staff review
+- **Automatic Processing**: ThreadConnect automatically processes incoming faxes
+- **Task Creation**: Each fax becomes a task in your ThreadConnect queue for staff review
 - **Email Notifications**: Staff receive email alerts with fax attachments
-- **Centralized Management**: All fax communications are tracked within ConnieRTC
+- **Centralized Management**: All fax communications are tracked within ThreadConnect
 
 ## Select Your Fax Provider
 
@@ -93,16 +93,16 @@ Choose your fax service provider below to view setup instructions and integratio
 | **Status** | ✅ Production Ready | 🚧 Coming Soon | 🚧 Coming Soon |
 | **Cost per Page** | $0.045 | TBD | TBD |
 | **Email Integration** | ✅ Yes | TBD | TBD |
-| **ConnieRTC Task Creation** | ✅ Yes | TBD | TBD |
+| **ThreadConnect Task Creation** | ✅ Yes | TBD | TBD |
 | **PDF Attachments** | ✅ Yes | TBD | TBD |
 | **API Integration** | ✅ Full API | TBD | TBD |
 
 ## Key Features
 
 ### Seamless Workflow Integration
-- **Automatic Task Creation**: Incoming faxes automatically create tasks in ConnieRTC queue
+- **Automatic Task Creation**: Incoming faxes automatically create tasks in ThreadConnect queue
 - **Email Notifications**: Staff receive immediate email alerts with PDF attachments
-- **Centralized Management**: All fax communications tracked in ConnieRTC dashboard
+- **Centralized Management**: All fax communications tracked in ThreadConnect dashboard
 
 ### Professional Fax Handling
 - **High-Quality PDF Conversion**: Crystal clear document reproduction
@@ -112,20 +112,20 @@ Choose your fax service provider below to view setup instructions and integratio
 ### Cost-Effective Solution
 - **Pay-Per-Use**: Only pay for faxes actually sent/received
 - **No Monthly Minimums**: Flexible pricing for organizations of all sizes
-- **Transparent Billing**: Clear cost tracking within ConnieRTC platform
+- **Transparent Billing**: Clear cost tracking within ThreadConnect platform
 
 ## Important Considerations
 
 ### Before You Begin
 - ✅ Determine your expected monthly fax volume
 - ✅ Verify any compliance requirements (HIPAA, etc.)
-- ✅ Have your ConnieRTC account configured for fax integration
+- ✅ Have your ThreadConnect account configured for fax integration
 - ✅ Ensure staff have appropriate email access for notifications
 
 ### Technical Requirements
 - **Internet Connection**: Reliable internet for fax processing
 - **Email Setup**: Working email addresses for staff notifications
-- **ConnieRTC Access**: Active ConnieRTC accounts for task management
+- **ThreadConnect Access**: Active ThreadConnect accounts for task management
 - **PDF Viewing**: Ability to view PDF attachments
 
 ### Compliance & Security
@@ -138,9 +138,9 @@ Choose your fax service provider below to view setup instructions and integratio
 
 1. **Choose Your Provider**: Select from the available options above
 2. **Review Setup Guide**: Follow provider-specific configuration instructions
-3. **Configure Integration**: Set up ConnieRTC to work with your chosen provider
+3. **Configure Integration**: Set up ThreadConnect to work with your chosen provider
 4. **Test Your Setup**: Send and receive test faxes to verify functionality
-5. **Train Your Team**: Ensure staff understand the fax workflow within ConnieRTC
+5. **Train Your Team**: Ensure staff understand the fax workflow within ThreadConnect
 
 ## Need Help?
 
@@ -152,4 +152,4 @@ Choose your fax service provider below to view setup instructions and integratio
 
 ---
 
-*Fax integration is available to all ConnieRTC customers. Contact our team to add fax services to your nonprofit's communication platform.*
+*Fax integration is available to all ThreadConnect customers. Contact our team to add fax services to your nonprofit's communication platform.*

@@ -6,7 +6,7 @@ title: "ThreadConnect Template Architecture"
 
 # ThreadConnect Template Architecture
 
-Welcome to ConnieRTC codebase reference! This section covers the template architecture and development patterns used across the platform.
+Welcome to ThreadConnect codebase reference! This section covers the template architecture and development patterns used across the platform.
 
 ## Development Environment Setup
 
@@ -34,7 +34,7 @@ npm start
 
 ## Architecture Overview
 
-ConnieRTC follows a modular architecture:
+ThreadConnect follows a modular architecture:
 
 ```
 ├── plugin-flex-ts-template-v2/   # Frontend (React/TypeScript)
