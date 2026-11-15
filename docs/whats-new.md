@@ -16,6 +16,14 @@ The latest Connie features and improvements — newest first. Each item links to
 
 ---
 
+## 2026-11-15 · 🔧 Caller Profiles Stay With the Right Call, and Stay Private
+
+**What changed:** After a call was transferred and came back to the same staff member, ThreadConnect could keep showing the previous caller's profile on the next task until the page was reloaded. Each task now shows only its own caller's profile. Caller profiles also now load only for staff signed in to ThreadConnect.
+
+🔗 [Getting Started for Staff Agents](https://docs.connie.one/end-users/staff-agents/getting-started)
+
+---
+
 ## 2026-11-14 · ⚡ ThreadConnect Now Runs on Twilio Flex UI 2.18.1
 
 **What changed:** ThreadConnect moved from an older Twilio Flex UI version, which no longer receives fixes or security updates from Twilio, to Flex UI 2.18.1, the newest supported version. Calls, texts, callbacks, CRM profiles and every ThreadConnect feature work as before. The "end of life" warning some staff saw when signing in goes away as each organization's account is updated.
